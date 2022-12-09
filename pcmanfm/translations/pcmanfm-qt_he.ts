@@ -312,7 +312,11 @@ It can be left empty.</source>
 It is needed only when you want to use the created file in the main menu. Otherwise, you could leave it empty.
 
 Examples: AudioVideo, Audio, Video, Development, Education, Game, Graphics, Network, Office, Settings, System, Utility, Qt.</source>
-        <translation type="unfinished"></translation>
+        <translation>קטגוריות מופרדות בפסיקים שבהן תופיע הרשומה אם היא משמשת את התפריט הראשי של סביבת שולחן העבודה (למשל: כאשר שמים בתוך ‎~/.local/share/applications).
+
+נחוץ רק כאשר רוצים להשתמש בקובץ שנוצר בתפריט הראשי. אחרת, אפשר להשאיר את זה ריק.
+
+דוגמאות: שמעוידאו, שמע, וידאו, פיתוח, חינוך, משחקים, גרפיקה, רשת, כלימשרד, הגדרות, מערכת, כלים, Qt.</translation>
     </message>
 </context>
 <context>
