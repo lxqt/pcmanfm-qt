@@ -81,23 +81,23 @@ ViewFrame::ViewFrame(QWidget* parent):
 }
 
 void ViewFrame::createTopBar(bool usePathButtons) {
-    if(QVBoxLayout* vBox = qobject_cast<QVBoxLayout*>(layout())) {
-        if(usePathButtons) {
+    if (QVBoxLayout* vBox = qobject_cast<QVBoxLayout*>(layout())) {
+        if (usePathButtons) {
             if (qobject_cast<Fm::PathEdit*>(topBar_)) {
                 delete topBar_;
                 topBar_ = nullptr;
             }
-            if(topBar_ == nullptr) {
+            if (topBar_ == nullptr) {
                 topBar_ = new Fm::PathBar();
                 vBox->insertWidget(0, topBar_);
             }
         }
         else {
-            if(qobject_cast<Fm::PathBar*>(topBar_)) {
+            if (qobject_cast<Fm::PathBar*>(topBar_)) {
                 delete topBar_;
                 topBar_ = nullptr;
             }
-            if(topBar_ == nullptr) {
+            if (topBar_ == nullptr) {
                 topBar_ = new Fm::PathEdit();
                 vBox->insertWidget(0, topBar_);
             }
@@ -106,8 +106,8 @@ void ViewFrame::createTopBar(bool usePathButtons) {
 }
 
 void ViewFrame::removeTopBar() {
-    if(topBar_ != nullptr) {
-        if(QVBoxLayout* vBox = qobject_cast<QVBoxLayout*>(layout())) {
+    if (topBar_ != nullptr) {
+        if (QVBoxLayout* vBox = qobject_cast<QVBoxLayout*>(layout())) {
             vBox->removeWidget(topBar_);
             delete topBar_;
             topBar_ = nullptr;
@@ -137,7 +137,7 @@ MainWindow::MainWindow(Fm::FilePath path):
     ui.setupUi(this);
 
     // add a warning label to the root instance
-    if(geteuid() == 0) {
+    if (geteuid() == 0) {
         QLabel *warningLabel = new QLabel(tr("Root Instance"));
         warningLabel->setAlignment(Qt::AlignCenter);
         warningLabel->setTextInteractionFlags(Qt::NoTextInteraction);
@@ -149,9 +149,9 @@ MainWindow::MainWindow(Fm::FilePath path):
     splitView_ = path && settings.splitView(); // splt view needs a path
 
     // hide menu items that are not usable
-    //if(!uriExists("computer:///"))
+    //if (!uriExists("computer:///"))
     //  ui.actionComputer->setVisible(false);
-    if(!settings.supportTrash()) {
+    if (!settings.supportTrash()) {
         ui.actionTrash->setVisible(false);
     }
 
@@ -256,7 +256,7 @@ MainWindow::MainWindow(Fm::FilePath path):
     menu->addMenu(ui.menu_Tool);
     menu->addMenu(ui.menu_Help);
     ui.actionMenu->setMenu(menu);
-    if(ui.actionMenu->icon().isNull()) {
+    if (ui.actionMenu->icon().isNull()) {
         ui.actionMenu->setIcon(QIcon::fromTheme(QStringLiteral("applications-system")));
     }
     QToolButton* menuBtn = static_cast<QToolButton*>(ui.toolBar->widgetForAction(ui.actionMenu));
@@ -271,12 +271,12 @@ MainWindow::MainWindow(Fm::FilePath path):
 
     // recent files
     int recentNumber = settings.getRecentFilesNumber();
-    if(recentNumber == 0) {
+    if (recentNumber == 0) {
         ui.menuRecentFiles->setEnabled(false);
     }
     else {
         QAction* recentAction = nullptr;
-        for(int i = 0; i < recentNumber; ++i) {
+        for (int i = 0; i < recentNumber; ++i) {
             recentAction = new QAction(this);
             recentAction->setVisible(false);
             connect(recentAction, &QAction::triggered, this, &MainWindow::lanunchRecentFile);
@@ -292,7 +292,7 @@ MainWindow::MainWindow(Fm::FilePath path):
     QShortcut* shortcut;
     shortcut = new QShortcut(QKeySequence(Qt::Key_Escape), this);
     connect(shortcut, &QShortcut::activated, [this] {
-        if(currentPage()) {
+        if (currentPage()) {
             currentPage()->clearFilter();
             currentPage()->folderView()->childView()->setFocus();
         }
@@ -300,7 +300,7 @@ MainWindow::MainWindow(Fm::FilePath path):
 
     shortcut = new QShortcut(QKeySequence(Qt::CTRL + Qt::Key_Escape), this);
     connect(shortcut, &QShortcut::activated, [this] {
-        if(ui.sidePane->isVisible() && ui.sidePane->view()) {
+        if (ui.sidePane->isVisible() && ui.sidePane->view()) {
             ui.sidePane->view()->setFocus();
         }
     });
@@ -327,7 +327,7 @@ MainWindow::MainWindow(Fm::FilePath path):
     connect(shortcut, &QShortcut::activated, this, &MainWindow::onShortcutPrevTab);
 
     int i;
-    for(i = 0; i < 10; ++i) {
+    for (i = 0; i < 10; ++i) {
         shortcut = new QShortcut(QKeySequence(Qt::ALT + Qt::Key_0 + i), this);
         connect(shortcut, &QShortcut::activated, this, &MainWindow::onShortcutJumpToTab);
 
@@ -338,7 +338,7 @@ MainWindow::MainWindow(Fm::FilePath path):
     shortcut = new QShortcut(QKeySequence(Qt::Key_Backspace), this);
     connect(shortcut, &QShortcut::activated, [this, &settings] {
         // pass Backspace to current page if it has a visible, transient filter-bar
-        if(!settings.showFilter() && currentPage() && currentPage()->isFilterBarVisible()) {
+        if (!settings.showFilter() && currentPage() && currentPage()->isFilterBarVisible()) {
             currentPage()->backspacePressed();
             return;
         }
@@ -357,7 +357,7 @@ MainWindow::MainWindow(Fm::FilePath path):
     connect(shortcut, &QShortcut::activated, this, &MainWindow::on_actionFileProperties_triggered);
 
     addViewFrame(path);
-    if(splitView_) {
+    if (splitView_) {
         // put the menu button on the right (there's no path bar/entry on the toolbar)
         QWidget* w = new QWidget(this);
         w->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Preferred);
@@ -374,7 +374,7 @@ MainWindow::MainWindow(Fm::FilePath path):
     }
     createPathBar(settings.pathBarButtons());
 
-    if(settings.pathBarButtons()) {
+    if (settings.pathBarButtons()) {
         ui.actionPathButtons->setChecked(true);
     }
     else {
@@ -383,11 +383,11 @@ MainWindow::MainWindow(Fm::FilePath path):
 
     // size from settings
     resize(settings.windowWidth(), settings.windowHeight());
-    if(settings.rememberWindowSize() && settings.windowMaximized()) {
+    if (settings.rememberWindowSize() && settings.windowMaximized()) {
         setWindowState(windowState() | Qt::WindowMaximized);
      }
 
-    if(QApplication::layoutDirection() == Qt::RightToLeft) {
+    if (QApplication::layoutDirection() == Qt::RightToLeft) {
         setRTLIcons(true);
     }
 }
@@ -397,19 +397,19 @@ MainWindow::~MainWindow() = default;
 // Activate a view frame appropriately and give a special style to the inactive one(s).
 // NOTE: This function is called only with the split mode.
 bool MainWindow::eventFilter(QObject* watched, QEvent* event) {
-    if(qobject_cast<QWidget*>(watched)) {
-        if(event->type() == QEvent::FocusIn
+    if (qobject_cast<QWidget*>(watched)) {
+        if (event->type() == QEvent::FocusIn
            // the event has happened inside the splitter
            && ui.viewSplitter->isAncestorOf(qobject_cast<QWidget*>(watched))) {
-            for(int i = 0; i < ui.viewSplitter->count(); ++i) {
-                if(ViewFrame* viewFrame = qobject_cast<ViewFrame*>(ui.viewSplitter->widget(i))) {
-                    if(viewFrame->isAncestorOf(qobject_cast<QWidget*>(watched))) {
+            for (int i = 0; i < ui.viewSplitter->count(); ++i) {
+                if (ViewFrame* viewFrame = qobject_cast<ViewFrame*>(ui.viewSplitter->widget(i))) {
+                    if (viewFrame->isAncestorOf(qobject_cast<QWidget*>(watched))) {
                         // a widget inside this view frame has gained focus; ensure the view is active
-                        if(activeViewFrame_ != viewFrame) {
+                        if (activeViewFrame_ != viewFrame) {
                             activeViewFrame_ = viewFrame;
                             updateUIForCurrentPage(false); // WARNING: never set focus here!
                         }
-                        if(viewFrame->palette().color(QPalette::Base)
+                        if (viewFrame->palette().color(QPalette::Base)
                            != qApp->palette().color(QPalette::Base)) {
                             viewFrame->setPalette(qApp->palette()); // restore the main palette
                         }
@@ -453,14 +453,14 @@ bool MainWindow::eventFilter(QObject* watched, QEvent* event) {
         }
         // Use the Tab key for switching between view frames
         else if (event->type() == QEvent::KeyPress) {
-            if(QKeyEvent *ke = static_cast<QKeyEvent*>(event)) {
-                if(ke->key() == Qt::Key_Tab && ke->modifiers() == Qt::NoModifier) {
-                    if(!qobject_cast<QTextEdit*>(watched) // not during inline renaming
+            if (QKeyEvent *ke = static_cast<QKeyEvent*>(event)) {
+                if (ke->key() == Qt::Key_Tab && ke->modifiers() == Qt::NoModifier) {
+                    if (!qobject_cast<QTextEdit*>(watched) // not during inline renaming
                        && ui.viewSplitter->isAncestorOf(qobject_cast<QWidget*>(watched))) {
                         // wrap the focus
-                        for(int i = 0; i < ui.viewSplitter->count(); ++i) {
-                            if(ViewFrame* viewFrame = qobject_cast<ViewFrame*>(ui.viewSplitter->widget(i))) {
-                                if(activeViewFrame_ == viewFrame) {
+                        for (int i = 0; i < ui.viewSplitter->count(); ++i) {
+                            if (ViewFrame* viewFrame = qobject_cast<ViewFrame*>(ui.viewSplitter->widget(i))) {
+                                if (activeViewFrame_ == viewFrame) {
                                     int n = i < ui.viewSplitter->count() - 1 ? i + 1 : 0;
                                     activeViewFrame_ = qobject_cast<ViewFrame*>(ui.viewSplitter->widget(n));
                                     updateUIForCurrentPage(); // focuses the view and calls this function again
@@ -486,13 +486,13 @@ void MainWindow::addViewFrame(const Fm::FilePath& path) {
     viewFrame->getTabBar()->setDetachable(!splitView_ && app->isX11());
     viewFrame->getTabBar()->setTabsClosable(settings.showTabClose());
     ui.viewSplitter->addWidget(viewFrame); // the splitter takes ownership of viewFrame
-    if(ui.viewSplitter->count() == 1) {
+    if (ui.viewSplitter->count() == 1) {
         activeViewFrame_ = viewFrame;
     }
     else { // give equal widths to all view frames
         QTimer::singleShot(0, this, [this] {
             QList<int> sizes;
-            for(int i = 0; i < ui.viewSplitter->count(); ++i) {
+            for (int i = 0; i < ui.viewSplitter->count(); ++i) {
                 sizes << ui.viewSplitter->width() / ui.viewSplitter->count();
             }
             ui.viewSplitter->setSizes(sizes);
@@ -505,41 +505,41 @@ void MainWindow::addViewFrame(const Fm::FilePath& path) {
     connect(viewFrame->getTabBar(), &QTabBar::tabBarClicked, this, &MainWindow::onTabBarClicked);
     connect(viewFrame->getTabBar(), &QTabBar::customContextMenuRequested, this, &MainWindow::tabContextMenu);
     connect(viewFrame->getTabBar(), &QTabBar::tabBarDoubleClicked, this, [this](int index) {
-        if(index == -1) {
+        if (index == -1) {
             on_actionNewTab_triggered();
         }
     });
     connect(viewFrame->getTabBar(), &TabBar::tabDetached, this, &MainWindow::detachTab);
     connect(viewFrame->getStackedWidget(), &QStackedWidget::widgetRemoved, this, &MainWindow::onStackedWidgetWidgetRemoved);
 
-    if(path) {
+    if (path) {
         addTab(path, viewFrame);
     }
 }
 
 void MainWindow::on_actionSplitView_triggered(bool checked) {
-    if(splitView_ == checked) {
+    if (splitView_ == checked) {
         return;
     }
     Application* app = static_cast<Application*>(qApp);
     Settings& settings = app->settings();
     splitView_ = checked;
     settings.setSplitView(splitView_);
-    if(splitView_) { // split the view
+    if (splitView_) { // split the view
         // remove the path bar/entry from the toolbar
         ui.actionGo->setVisible(false);
         menuSep_->setVisible(false);
-        if(pathBar_ != nullptr) {
+        if (pathBar_ != nullptr) {
             delete pathBar_;
             pathBar_ = nullptr;
         }
-        else if(pathEntry_ != nullptr) {
+        else if (pathEntry_ != nullptr) {
             delete pathEntry_;
             pathEntry_ = nullptr;
         }
 
         // add a spacer before the menu action if not exisitng
-        if(menuSpacer_ == nullptr) {
+        if (menuSpacer_ == nullptr) {
             QWidget* w = new QWidget(this);
             w->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Preferred);
             menuSpacer_ = ui.toolBar->insertWidget(ui.actionMenu, w);
@@ -553,7 +553,7 @@ void MainWindow::on_actionSplitView_triggered(bool checked) {
         // add the current path to a new view frame
         Fm::FilePath path;
         TabPage* page = currentPage();
-        if(page) {
+        if (page) {
             path = page->path();
         }
         addViewFrame(path);
@@ -562,7 +562,7 @@ void MainWindow::on_actionSplitView_triggered(bool checked) {
         createPathBar(settings.pathBarButtons());
 
         // reset the focus for the inactive view frame(s) to be styled by MainWindow::eventFilter()
-        if(page) {
+        if (page) {
             page->folderView()->childView()->clearFocus();
             page->folderView()->childView()->setFocus();
         }
@@ -570,9 +570,9 @@ void MainWindow::on_actionSplitView_triggered(bool checked) {
     else { // remove splitting
         menuSep_->setVisible(!settings.showMenuBar());
         qApp->removeEventFilter(this);
-        for(int i = 0; i < ui.viewSplitter->count(); ++i) {
-            if(ViewFrame* viewFrame = qobject_cast<ViewFrame*>(ui.viewSplitter->widget(i))) {
-                if(viewFrame != activeViewFrame_) {
+        for (int i = 0; i < ui.viewSplitter->count(); ++i) {
+            if (ViewFrame* viewFrame = qobject_cast<ViewFrame*>(ui.viewSplitter->widget(i))) {
+                if (viewFrame != activeViewFrame_) {
                     viewFrame->deleteLater(); // this may be called by onStackedWidgetWidgetRemoved()
                 }
             }
@@ -583,7 +583,7 @@ void MainWindow::on_actionSplitView_triggered(bool checked) {
         setAcceptDrops(true);
 
         activeViewFrame_->removeTopBar();
-        if(menuSpacer_ != nullptr) {
+        if (menuSpacer_ != nullptr) {
             menuSpacer_->setVisible(false);
         }
         createPathBar(settings.pathBarButtons());
@@ -591,9 +591,9 @@ void MainWindow::on_actionSplitView_triggered(bool checked) {
 }
 
 ViewFrame* MainWindow::viewFrameForTabPage(TabPage* page) {
-    if(page) {
-        if(QStackedWidget* sw = qobject_cast<QStackedWidget*>(page->parentWidget())) {
-            if(ViewFrame* viewFrame = qobject_cast<ViewFrame*>(sw->parentWidget())) {
+    if (page) {
+        if (QStackedWidget* sw = qobject_cast<QStackedWidget*>(page->parentWidget())) {
+            if (ViewFrame* viewFrame = qobject_cast<ViewFrame*>(sw->parentWidget())) {
                 return viewFrame;
             }
         }
@@ -604,17 +604,17 @@ ViewFrame* MainWindow::viewFrameForTabPage(TabPage* page) {
 void MainWindow::chdir(Fm::FilePath path, ViewFrame* viewFrame) {
     // wait until queued events are processed
     QTimer::singleShot(0, viewFrame, [this, path, viewFrame] {
-        if(TabPage* page = currentPage(viewFrame)) {
+        if (TabPage* page = currentPage(viewFrame)) {
             page->chdir(path, true);
             setTabIcon(page);
-            if(viewFrame == activeViewFrame_) {
+            if (viewFrame == activeViewFrame_) {
                 updateUIForCurrentPage();
             }
             else {
-                if(Fm::PathBar* pathBar = qobject_cast<Fm::PathBar*>(viewFrame->getTopBar())) {
+                if (Fm::PathBar* pathBar = qobject_cast<Fm::PathBar*>(viewFrame->getTopBar())) {
                     pathBar->setPath(page->path());
                 }
-                else if(Fm::PathEdit* pathEntry = qobject_cast<Fm::PathEdit*>(viewFrame->getTopBar())) {
+                else if (Fm::PathEdit* pathEntry = qobject_cast<Fm::PathEdit*>(viewFrame->getTopBar())) {
                     pathEntry->setText(page->pathName());
                 }
             }
@@ -624,22 +624,22 @@ void MainWindow::chdir(Fm::FilePath path, ViewFrame* viewFrame) {
 
 void MainWindow::createPathBar(bool usePathButtons) {
     // NOTE: Path bars/entries may be created after tab pages; so, their paths/texts should be set.
-    if(splitView_) {
-        for(int i = 0; i < ui.viewSplitter->count(); ++i) {
-            if(ViewFrame* viewFrame = qobject_cast<ViewFrame*>(ui.viewSplitter->widget(i))) {
+    if (splitView_) {
+        for (int i = 0; i < ui.viewSplitter->count(); ++i) {
+            if (ViewFrame* viewFrame = qobject_cast<ViewFrame*>(ui.viewSplitter->widget(i))) {
                 viewFrame->createTopBar(usePathButtons);
                 TabPage* curPage = currentPage(viewFrame);
-                if(Fm::PathBar* pathBar = qobject_cast<Fm::PathBar*>(viewFrame->getTopBar())) {
+                if (Fm::PathBar* pathBar = qobject_cast<Fm::PathBar*>(viewFrame->getTopBar())) {
                     connect(pathBar, &Fm::PathBar::chdir, this, &MainWindow::onPathBarChdir);
                     connect(pathBar, &Fm::PathBar::middleClickChdir, this, &MainWindow::onPathBarMiddleClickChdir);
                     connect(pathBar, &Fm::PathBar::editingFinished, this, &MainWindow::onResetFocus);
-                    if(curPage) {
+                    if (curPage) {
                         pathBar->setPath(curPage->path());
                     }
                 }
-                else if(Fm::PathEdit* pathEntry = qobject_cast<Fm::PathEdit*>(viewFrame->getTopBar())) {
+                else if (Fm::PathEdit* pathEntry = qobject_cast<Fm::PathEdit*>(viewFrame->getTopBar())) {
                     connect(pathEntry, &Fm::PathEdit::returnPressed, this, &MainWindow::onPathEntryReturnPressed);
-                    if(curPage) {
+                    if (curPage) {
                         pathEntry->setText(curPage->pathName());
                     }
                 }
@@ -649,35 +649,35 @@ void MainWindow::createPathBar(bool usePathButtons) {
     else {
         QWidget* bar = nullptr;
         TabPage* curPage = currentPage();
-        if(usePathButtons) {
-            if(pathEntry_ != nullptr) {
+        if (usePathButtons) {
+            if (pathEntry_ != nullptr) {
                 delete pathEntry_;
                 pathEntry_ = nullptr;
             }
-            if(pathBar_ == nullptr) {
+            if (pathBar_ == nullptr) {
                 bar = pathBar_ = new Fm::PathBar(this);
                 connect(pathBar_, &Fm::PathBar::chdir, this, &MainWindow::onPathBarChdir);
                 connect(pathBar_, &Fm::PathBar::middleClickChdir, this, &MainWindow::onPathBarMiddleClickChdir);
                 connect(pathBar_, &Fm::PathBar::editingFinished, this, &MainWindow::onResetFocus);
-                if(curPage) {
+                if (curPage) {
                     pathBar_->setPath(currentPage()->path());
                 }
             }
         }
         else {
-            if(pathBar_ != nullptr) {
+            if (pathBar_ != nullptr) {
                 delete pathBar_;
                 pathBar_ = nullptr;
             }
-            if(pathEntry_ == nullptr) {
+            if (pathEntry_ == nullptr) {
                 bar = pathEntry_ = new Fm::PathEdit(this);
                 connect(pathEntry_, &Fm::PathEdit::returnPressed, this, &MainWindow::onPathEntryReturnPressed);
-                if(curPage) {
+                if (curPage) {
                     pathEntry_->setText(curPage->pathName());
                 }
             }
         }
-        if(bar != nullptr) {
+        if (bar != nullptr) {
             ui.toolBar->insertWidget(ui.actionGo, bar);
             ui.actionGo->setVisible(!usePathButtons);
         }
@@ -685,7 +685,7 @@ void MainWindow::createPathBar(bool usePathButtons) {
 }
 
 int MainWindow::addTabWithPage(TabPage* page, ViewFrame* viewFrame, Fm::FilePath path) {
-    if(page == nullptr || viewFrame == nullptr) {
+    if (page == nullptr || viewFrame == nullptr) {
         return -1;
     }
     page->setFileLauncher(&fileLauncher_);
@@ -697,7 +697,7 @@ int MainWindow::addTabWithPage(TabPage* page, ViewFrame* viewFrame, Fm::FilePath
     connect(page, &TabPage::forwardRequested, this, &MainWindow::on_actionGoForward_triggered);
     connect(page, &TabPage::folderUnmounted, this, &MainWindow::onFolderUnmounted);
 
-    if(path) {
+    if (path) {
         page->chdir(path, true);
     }
 
@@ -708,17 +708,17 @@ int MainWindow::addTabWithPage(TabPage* page, ViewFrame* viewFrame, Fm::FilePath
     viewFrame->getTabBar()->insertTab(index, tabText);
 
     Settings& settings = static_cast<Application*>(qApp)->settings();
-    if(settings.switchToNewTab()) {
+    if (settings.switchToNewTab()) {
         viewFrame->getTabBar()->setCurrentIndex(index); // also focuses the view
         if (isMinimized()) {
             setWindowState((windowState() & ~Qt::WindowMinimized) | Qt::WindowActive);
             show();
         }
     }
-    else if(TabPage* tabPage = currentPage()) {
+    else if (TabPage* tabPage = currentPage()) {
         tabPage->folderView()->childView()->setFocus();
     }
-    if(!settings.alwaysShowTabs()) {
+    if (!settings.alwaysShowTabs()) {
         viewFrame->getTabBar()->setVisible(viewFrame->getTabBar()->count() > 1);
     }
 
@@ -738,8 +738,8 @@ void MainWindow::toggleMenuBar(bool /*checked*/) {
     Settings& settings = static_cast<Application*>(qApp)->settings();
     bool showMenuBar = !settings.showMenuBar();
 
-    if(!showMenuBar) {
-        if(QMessageBox::Cancel == QMessageBox::warning(this,
+    if (!showMenuBar) {
+        if (QMessageBox::Cancel == QMessageBox::warning(this,
                 tr("Hide menu bar"),
                 tr("This will hide the menu bar completely, use Ctrl+M to show it again."),
                 QMessageBox::Ok | QMessageBox::Cancel)) {
@@ -759,21 +759,21 @@ void MainWindow::updateRecenMenu() {
     Settings& settings = static_cast<Application*>(qApp)->settings();
     int recentNumber = settings.getRecentFilesNumber();
     auto actions = ui.menuRecentFiles->actions();
-    if(actions.size() < recentNumber + 2) { // there is a separator and a clear action
+    if (actions.size() < recentNumber + 2) { // there is a separator and a clear action
         return; // not really needed because we guarantee that it doesn't happen
     }
     auto recentFiles = settings.getRecentFiles();
     int recentSize = recentFiles.size();
     QFontMetrics metrics(ui.menuRecentFiles->font());
     int w = 150 * metrics.horizontalAdvance(QLatin1Char(' ')); // for eliding long texts
-    for(int i = 0; i < recentNumber; ++i) {
-        if(i < recentSize) {
+    for (int i = 0; i < recentNumber; ++i) {
+        if (i < recentSize) {
             auto fileName = recentFiles.at(i);
             actions.at(i)->setText(metrics.elidedText(fileName, Qt::ElideMiddle, w));
             QIcon icon;
             auto mimeType = Fm::MimeType::guessFromFileName(fileName.toLocal8Bit().constData());
-            if(!mimeType->isUnknownType()) {
-                if(auto icn = mimeType->icon()) {
+            if (!mimeType->isUnknownType()) {
+                if (auto icn = mimeType->icon()) {
                     icon = icn->qicon();
                 }
             }
@@ -798,7 +798,7 @@ void MainWindow::clearRecentMenu() {
 }
 
 void MainWindow::lanunchRecentFile() {
-    if(QAction *action = qobject_cast<QAction*>(QObject::sender())) {
+    if (QAction *action = qobject_cast<QAction*>(QObject::sender())) {
         Settings& settings = static_cast<Application*>(qApp)->settings();
         auto pathStr = action->data().toString();
         settings.addRecentFile(pathStr);
@@ -812,10 +812,10 @@ void MainWindow::lanunchRecentFile() {
 
 void MainWindow::onPathEntryReturnPressed() {
     Fm::PathEdit* pathEntry = pathEntry_;
-    if(pathEntry == nullptr) {
+    if (pathEntry == nullptr) {
         pathEntry = static_cast<Fm::PathEdit*>(sender());
     }
-    if(pathEntry != nullptr) {
+    if (pathEntry != nullptr) {
         QString text = pathEntry->text();
         QByteArray utext = text.toLocal8Bit();
         chdir(Fm::FilePath::fromPathStr(utext.constData()));
@@ -825,39 +825,39 @@ void MainWindow::onPathEntryReturnPressed() {
 void MainWindow::onPathBarChdir(const Fm::FilePath& dirPath) {
     TabPage* page = nullptr;
     ViewFrame* viewFrame = nullptr;
-    if(pathBar_ != nullptr) {
+    if (pathBar_ != nullptr) {
         page = currentPage();
         viewFrame = activeViewFrame_;
     }
     else {
         Fm::PathBar* pathBar = static_cast<Fm::PathBar*>(sender());
         viewFrame = qobject_cast<ViewFrame*>(pathBar->parentWidget());
-        if(viewFrame != nullptr) {
+        if (viewFrame != nullptr) {
             page = currentPage(viewFrame);
         }
     }
-    if(page && dirPath != page->path()) {
+    if (page && dirPath != page->path()) {
         chdir(dirPath, viewFrame);
     }
 }
 
 void MainWindow::onPathBarMiddleClickChdir(const Fm::FilePath& dirPath) {
     ViewFrame* viewFrame = nullptr;
-    if(pathBar_ != nullptr) {
+    if (pathBar_ != nullptr) {
         viewFrame = activeViewFrame_;
     }
     else {
         Fm::PathBar* pathBar = static_cast<Fm::PathBar*>(sender());
         viewFrame = qobject_cast<ViewFrame*>(pathBar->parentWidget());
     }
-    if(viewFrame) {
+    if (viewFrame) {
         addTab(dirPath, viewFrame);
     }
 }
 
 void MainWindow::on_actionGoUp_triggered() {
     QTimer::singleShot(0, this, [this] {
-        if(TabPage* page = currentPage()) {
+        if (TabPage* page = currentPage()) {
             page->up();
             setTabIcon(page);
             updateUIForCurrentPage();
@@ -867,7 +867,7 @@ void MainWindow::on_actionGoUp_triggered() {
 
 void MainWindow::on_actionGoBack_triggered() {
     QTimer::singleShot(0, this, [this] {
-        if(TabPage* page = currentPage()) {
+        if (TabPage* page = currentPage()) {
             page->backward();
             setTabIcon(page);
             updateUIForCurrentPage();
@@ -877,7 +877,7 @@ void MainWindow::on_actionGoBack_triggered() {
 
 void MainWindow::on_actionGoForward_triggered() {
     QTimer::singleShot(0, this, [this] {
-        if(TabPage* page = currentPage()) {
+        if (TabPage* page = currentPage()) {
             page->forward();
             setTabIcon(page);
             updateUIForCurrentPage();
@@ -892,7 +892,7 @@ void MainWindow::on_actionHome_triggered() {
 
 void MainWindow::on_actionReload_triggered() {
     currentPage()->reload();
-    if(pathEntry_ != nullptr) {
+    if (pathEntry_ != nullptr) {
         pathEntry_->setText(currentPage()->pathName());
     }
 }
@@ -917,18 +917,18 @@ void MainWindow::on_actionNewWin_triggered() {
 }
 
 void MainWindow::on_actionNewFolder_triggered() {
-    if(TabPage* tabPage = currentPage()) {
+    if (TabPage* tabPage = currentPage()) {
         auto dirPath = tabPage->folderView()->path();
-        if(dirPath) {
+        if (dirPath) {
             createFileOrFolder(CreateNewFolder, dirPath, nullptr, this);
         }
     }
 }
 
 void MainWindow::on_actionNewBlankFile_triggered() {
-    if(TabPage* tabPage = currentPage()) {
+    if (TabPage* tabPage = currentPage()) {
         auto dirPath = tabPage->folderView()->path();
-        if(dirPath) {
+        if (dirPath) {
             createFileOrFolder(CreateNewTextFile, dirPath, nullptr, this);
         }
     }
@@ -946,9 +946,9 @@ void MainWindow::on_actionCloseWindow_triggered() {
 
 void MainWindow::on_actionFileProperties_triggered() {
     TabPage* page = currentPage();
-    if(page) {
+    if (page) {
         auto files = page->selectedFiles();
-        if(!files.empty()) {
+        if (!files.empty()) {
             Fm::FilePropsDialog::showForFiles(files);
         }
     }
@@ -956,11 +956,11 @@ void MainWindow::on_actionFileProperties_triggered() {
 
 void MainWindow::on_actionFolderProperties_triggered() {
     TabPage* page = currentPage();
-    if(page) {
+    if (page) {
         auto folder = page->folder();
-        if(folder) {
+        if (folder) {
             auto info = folder->info();
-            if(info) {
+            if (info) {
                 Fm::FilePropsDialog::showForFile(info);
             }
         }
@@ -975,16 +975,16 @@ void MainWindow::on_actionShowHidden_triggered(bool checked) {
 void MainWindow::on_actionShowThumbnails_triggered(bool checked) {
     QWidgetList windows = qApp->topLevelWidgets();
     QWidgetList::iterator it;
-    for(it = windows.begin(); it != windows.end(); ++it) {
+    for (it = windows.begin(); it != windows.end(); ++it) {
         QWidget* window = *it;
-        if(window->inherits("PCManFM::MainWindow")) {
+        if (window->inherits("PCManFM::MainWindow")) {
             MainWindow* mainWindow = static_cast<MainWindow*>(window);
             mainWindow->ui.actionShowThumbnails->setChecked(checked); // doesn't call this function
-            for(int i = 0; i < mainWindow->ui.viewSplitter->count(); ++i) {
-                if(ViewFrame* viewFrame = qobject_cast<ViewFrame*>(mainWindow->ui.viewSplitter->widget(i))) {
+            for (int i = 0; i < mainWindow->ui.viewSplitter->count(); ++i) {
+                if (ViewFrame* viewFrame = qobject_cast<ViewFrame*>(mainWindow->ui.viewSplitter->widget(i))) {
                     int n = viewFrame->getStackedWidget()->count();
-                    for(int j = 0; j < n; ++j) {
-                        if(TabPage* page = static_cast<TabPage*>(viewFrame->getStackedWidget()->widget(j))) {
+                    for (int j = 0; j < n; ++j) {
+                        if (TabPage* page = static_cast<TabPage*>(viewFrame->getStackedWidget()->widget(j))) {
                             page->setShowThumbnails(checked);
                         }
                     }
@@ -1051,7 +1051,7 @@ void MainWindow::on_actionHiddenLast_triggered(bool checked) {
 void MainWindow::on_actionPreserveView_triggered(bool checked) {
     TabPage* page = currentPage();
     page->setCustomizedView(checked);
-    if(checked) {
+    if (checked) {
         ui.actionPreserveViewRecursive->setChecked(false);
     }
     ui.actionGoToCustomizedViewSource->setVisible(page->hasInheritedCustomizedView());
@@ -1061,7 +1061,7 @@ void MainWindow::on_actionPreserveView_triggered(bool checked) {
 void MainWindow::on_actionPreserveViewRecursive_triggered(bool checked) {
     TabPage* page = currentPage();
     page->setCustomizedView(checked, true);
-    if(checked) {
+    if (checked) {
         ui.actionPreserveView->setChecked(false);
     }
     ui.actionGoToCustomizedViewSource->setVisible(page->hasInheritedCustomizedView());
@@ -1079,16 +1079,16 @@ void MainWindow::on_actionFilter_triggered(bool checked) {
     // (of all view frames) in all windows because this is a global setting
     QWidgetList windows = qApp->topLevelWidgets();
     QWidgetList::iterator it;
-    for(it = windows.begin(); it != windows.end(); ++it) {
+    for (it = windows.begin(); it != windows.end(); ++it) {
         QWidget* window = *it;
-        if(window->inherits("PCManFM::MainWindow")) {
+        if (window->inherits("PCManFM::MainWindow")) {
             MainWindow* mainWindow = static_cast<MainWindow*>(window);
             mainWindow->ui.actionFilter->setChecked(checked); // doesn't call this function
-            for(int i = 0; i < mainWindow->ui.viewSplitter->count(); ++i) {
-                if(ViewFrame* viewFrame = qobject_cast<ViewFrame*>(mainWindow->ui.viewSplitter->widget(i))) {
+            for (int i = 0; i < mainWindow->ui.viewSplitter->count(); ++i) {
+                if (ViewFrame* viewFrame = qobject_cast<ViewFrame*>(mainWindow->ui.viewSplitter->widget(i))) {
                     int n = viewFrame->getStackedWidget()->count();
-                    for(int j = 0; j < n; ++j) {
-                        if(TabPage* page = static_cast<TabPage*>(viewFrame->getStackedWidget()->widget(j))) {
+                    for (int j = 0; j < n; ++j) {
+                        if (TabPage* page = static_cast<TabPage*>(viewFrame->getStackedWidget()->widget(j))) {
                             page->transientFilterBar(!checked);
                         }
                     }
@@ -1100,11 +1100,11 @@ void MainWindow::on_actionFilter_triggered(bool checked) {
 
 void MainWindow::on_actionUnfilter_triggered() {
     // clear filters for all tabs (of all view frames)
-    for(int i = 0; i < ui.viewSplitter->count(); ++i) {
-        if(ViewFrame* viewFrame = qobject_cast<ViewFrame*>(ui.viewSplitter->widget(i))) {
+    for (int i = 0; i < ui.viewSplitter->count(); ++i) {
+        if (ViewFrame* viewFrame = qobject_cast<ViewFrame*>(ui.viewSplitter->widget(i))) {
             int n = viewFrame->getStackedWidget()->count();
-            for(int j = 0; j < n; ++j) {
-                if(TabPage* page = static_cast<TabPage*>(viewFrame->getStackedWidget()->widget(j))) {
+            for (int j = 0; j < n; ++j) {
+                if (TabPage* page = static_cast<TabPage*>(viewFrame->getStackedWidget()->widget(j))) {
                     page->clearFilter();
                 }
             }
@@ -1113,13 +1113,13 @@ void MainWindow::on_actionUnfilter_triggered() {
 }
 
 void MainWindow::on_actionShowFilter_triggered() {
-    if(TabPage* page = currentPage()) {
+    if (TabPage* page = currentPage()) {
         page->showFilterBar();
     }
 }
 
 void MainWindow::on_actionLocationBar_triggered(bool checked) {
-    if(checked) {
+    if (checked) {
         // show current path in a location bar entry
         createPathBar(false);
         static_cast<Application*>(qApp)->settings().setPathBarButtons(false);
@@ -1127,7 +1127,7 @@ void MainWindow::on_actionLocationBar_triggered(bool checked) {
 }
 
 void MainWindow::on_actionPathButtons_triggered(bool checked) {
-    if(checked) {
+    if (checked) {
         // show current path as buttons
         createPathBar(true);
         static_cast<Application*>(qApp)->settings().setPathBarButtons(true);
@@ -1157,15 +1157,15 @@ void MainWindow::on_actionDesktop_triggered() {
 
 void MainWindow::on_actionAddToBookmarks_triggered() {
     TabPage* page = currentPage();
-    if(page) {
+    if (page) {
         auto cwd = page->path();
-        if(cwd) {
+        if (cwd) {
             QString bookmarkName;
             auto parent = cwd.parent();
-            if(!parent.isValid() || parent == cwd) { // a root path
+            if (!parent.isValid() || parent == cwd) { // a root path
                 bookmarkName = QString::fromUtf8(cwd.displayName().get());
                 auto parts = bookmarkName.split(QLatin1Char('/'), Qt::SkipEmptyParts);
-                if(!parts.isEmpty()) {
+                if (!parts.isEmpty()) {
                     bookmarkName = parts.last();
                 }
             }
@@ -1241,24 +1241,24 @@ void MainWindow::on_actionThumbnailView_triggered() {
 
 void MainWindow::onTabBarCloseRequested(int index) {
     TabBar* tabBar = static_cast<TabBar*>(sender());
-    if(ViewFrame* viewFrame = qobject_cast<ViewFrame*>(tabBar->parentWidget())) {
+    if (ViewFrame* viewFrame = qobject_cast<ViewFrame*>(tabBar->parentWidget())) {
         closeTab(index, viewFrame);
     }
 }
 
 void MainWindow::onResetFocus() {
-    if(TabPage* page = currentPage()) {
+    if (TabPage* page = currentPage()) {
         page->folderView()->childView()->setFocus();
     }
 }
 
 void MainWindow::onTabBarTabMoved(int from, int to) {
     TabBar* tabBar = static_cast<TabBar*>(sender());
-    if(ViewFrame* viewFrame = qobject_cast<ViewFrame*>(tabBar->parentWidget())) {
+    if (ViewFrame* viewFrame = qobject_cast<ViewFrame*>(tabBar->parentWidget())) {
         // a tab in the tab bar is moved by the user, so we have to move the
         //  corredponding tab page in the stacked widget to the new position, too.
         QWidget* page = viewFrame->getStackedWidget()->widget(from);
-        if(page) {
+        if (page) {
             // we're not going to delete the tab page, so here we block signals
             // to avoid calling the slot onStackedWidgetWidgetRemoved() before
             // removing the page. Otherwise the page widget will be destroyed.
@@ -1273,11 +1273,11 @@ void MainWindow::onTabBarTabMoved(int from, int to) {
 
 void MainWindow::onFolderUnmounted() {
     TabPage* tabPage = static_cast<TabPage*>(sender());
-    if(ViewFrame* viewFrame = viewFrameForTabPage(tabPage)) {
+    if (ViewFrame* viewFrame = viewFrameForTabPage(tabPage)) {
         const QList<MountOperation*> ops = ui.sidePane->findChildren<MountOperation*>();
-        if(ops.isEmpty()) { // unmounting is done somewhere else
+        if (ops.isEmpty()) { // unmounting is done somewhere else
             Settings& settings = static_cast<Application*>(qApp)->settings();
-            if(settings.closeOnUnmount()) {
+            if (settings.closeOnUnmount()) {
                 viewFrame->getStackedWidget()->removeWidget(tabPage);
                 // NOTE: Since Fm::Folder queues a folder reload after emitting the unmount signal,
                 // pending events may be waiting to be delivered at this very moment. Therefore,
@@ -1291,11 +1291,11 @@ void MainWindow::onFolderUnmounted() {
             }
         }
         else { // wait for all (un-)mount operations to be finished (otherwise, they might be cancelled)
-            for(const MountOperation* op : ops) {
+            for (const MountOperation* op : ops) {
                 connect(op, &QObject::destroyed, tabPage, [this, tabPage, viewFrame] {
-                    if(ui.sidePane->findChildren<MountOperation*>().isEmpty()) {
+                    if (ui.sidePane->findChildren<MountOperation*>().isEmpty()) {
                         Settings& settings = static_cast<Application*>(qApp)->settings();
-                        if(settings.closeOnUnmount()) {
+                        if (settings.closeOnUnmount()) {
                             viewFrame->getStackedWidget()->removeWidget(tabPage);
                             tabPage->deleteLater();
                         }
@@ -1313,7 +1313,7 @@ void MainWindow::onFolderUnmounted() {
 
 void MainWindow::closeTab(int index, ViewFrame* viewFrame) {
     QWidget* page = viewFrame->getStackedWidget()->widget(index);
-    if(page) {
+    if (page) {
         viewFrame->getStackedWidget()->removeWidget(page); // this does not delete the page widget
         delete page;
         // NOTE: we do not remove the tab here.
@@ -1324,10 +1324,10 @@ void MainWindow::closeTab(int index, ViewFrame* viewFrame) {
 void MainWindow::resizeEvent(QResizeEvent* event) {
     QMainWindow::resizeEvent(event);
     Settings& settings = static_cast<Application*>(qApp)->settings();
-    if(settings.rememberWindowSize()) {
+    if (settings.rememberWindowSize()) {
         settings.setLastWindowMaximized(isMaximized());
 
-        if(!isMaximized()) {
+        if (!isMaximized()) {
             settings.setLastWindowWidth(width());
             settings.setLastWindowHeight(height());
         }
@@ -1335,16 +1335,16 @@ void MainWindow::resizeEvent(QResizeEvent* event) {
 }
 
 void MainWindow::closeEvent(QCloseEvent* event) {
-    if(lastActive_ == this) {
+    if (lastActive_ == this) {
         lastActive_ = nullptr;
     }
 
     QWidget::closeEvent(event);
     Settings& settings = static_cast<Application*>(qApp)->settings();
-    if(settings.rememberWindowSize()) {
+    if (settings.rememberWindowSize()) {
         settings.setLastWindowMaximized(isMaximized());
 
-        if(!isMaximized()) {
+        if (!isMaximized()) {
             settings.setLastWindowWidth(width());
             settings.setLastWindowHeight(height());
         }
@@ -1352,12 +1352,12 @@ void MainWindow::closeEvent(QCloseEvent* event) {
 
     // remember last tab paths only if this is the last window
     QStringList tabPaths;
-    if(lastActive_ == nullptr && settings.reopenLastTabs()) {
-        for(int i = 0; i < ui.viewSplitter->count(); ++i) {
-            if(ViewFrame* viewFrame = qobject_cast<ViewFrame*>(ui.viewSplitter->widget(i))) {
+    if (lastActive_ == nullptr && settings.reopenLastTabs()) {
+        for (int i = 0; i < ui.viewSplitter->count(); ++i) {
+            if (ViewFrame* viewFrame = qobject_cast<ViewFrame*>(ui.viewSplitter->widget(i))) {
                 int n = viewFrame->getStackedWidget()->count();
-                for(int j = 0; j < n; ++j) {
-                    if(TabPage* page = static_cast<TabPage*>(viewFrame->getStackedWidget()->widget(j))) {
+                for (int j = 0; j < n; ++j) {
+                    if (TabPage* page = static_cast<TabPage*>(viewFrame->getStackedWidget()->widget(j))) {
                         tabPaths.append(QString::fromUtf8(page->path().toString().get()));
                     }
                 }
@@ -1370,17 +1370,17 @@ void MainWindow::closeEvent(QCloseEvent* event) {
 
 void MainWindow::onTabBarCurrentChanged(int index) {
     TabBar* tabBar = static_cast<TabBar*>(sender());
-    if(ViewFrame* viewFrame = qobject_cast<ViewFrame*>(tabBar->parentWidget())) {
+    if (ViewFrame* viewFrame = qobject_cast<ViewFrame*>(tabBar->parentWidget())) {
         viewFrame->getStackedWidget()->setCurrentIndex(index);
-        if(viewFrame == activeViewFrame_) {
+        if (viewFrame == activeViewFrame_) {
             updateUIForCurrentPage();
         }
         else {
-            if(TabPage* page = currentPage(viewFrame)) {
-                if(Fm::PathBar* pathBar = qobject_cast<Fm::PathBar*>(viewFrame->getTopBar())) {
+            if (TabPage* page = currentPage(viewFrame)) {
+                if (Fm::PathBar* pathBar = qobject_cast<Fm::PathBar*>(viewFrame->getTopBar())) {
                     pathBar->setPath(page->path());
                 }
-                else if(Fm::PathEdit* pathEntry = qobject_cast<Fm::PathEdit*>(viewFrame->getTopBar())) {
+                else if (Fm::PathEdit* pathEntry = qobject_cast<Fm::PathEdit*>(viewFrame->getTopBar())) {
                     pathEntry->setText(page->pathName());
                 }
             }
@@ -1391,7 +1391,7 @@ void MainWindow::onTabBarCurrentChanged(int index) {
 void MainWindow::updateStatusBarForCurrentPage() {
     TabPage* tabPage = currentPage();
     QString text = tabPage->statusText(TabPage::StatusTextSelectedFiles);
-    if(text.isEmpty()) {
+    if (text.isEmpty()) {
         text = tabPage->statusText(TabPage::StatusTextNormal);
     }
     ui.statusbar->showMessage(text);
@@ -1402,12 +1402,12 @@ void MainWindow::updateStatusBarForCurrentPage() {
 }
 
 void MainWindow::updateViewMenuForCurrentPage() {
-    if(updatingViewMenu_) { // prevent recursive calls
+    if (updatingViewMenu_) { // prevent recursive calls
         return;
     }
     updatingViewMenu_ = true;
     TabPage* tabPage = currentPage();
-    if(tabPage) {
+    if (tabPage) {
         // update menus. FIXME: should we move this to another method?
         ui.actionShowHidden->setChecked(tabPage->showHidden());
         ui.actionPreserveView->setChecked(tabPage->hasCustomizedView() && !tabPage->hasRecursiveCustomizedView());
@@ -1417,7 +1417,7 @@ void MainWindow::updateViewMenuForCurrentPage() {
         // view mode
         QAction* modeAction = nullptr;
 
-        switch(tabPage->viewMode()) {
+        switch (tabPage->viewMode()) {
         case Fm::FolderView::IconMode:
             modeAction = ui.actionIconView;
             break;
@@ -1443,7 +1443,7 @@ void MainWindow::updateViewMenuForCurrentPage() {
         // we should prevent a crash by setting all actions to null first and
         // check their action group later.
         QAction* sortActions[Fm::FolderModel::NumOfColumns];
-        for(int i = 0; i < Fm::FolderModel::NumOfColumns; ++i) {
+        for (int i = 0; i < Fm::FolderModel::NumOfColumns; ++i) {
             sortActions[i] = nullptr;
         }
         sortActions[Fm::FolderModel::ColumnFileName] = ui.actionByFileName;
@@ -1457,21 +1457,21 @@ void MainWindow::updateViewMenuForCurrentPage() {
         if (auto group = ui.actionByFileName->actionGroup()) {
             const auto actions = group->actions();
             auto action = sortActions[tabPage->sortColumn()];
-            if(actions.contains(action)) {
+            if (actions.contains(action)) {
                 action->setChecked(true);
             }
             else {
-                for(auto a : actions) {
+                for (auto a : actions) {
                     a->setChecked(false);
                 }
             }
         }
 
-        if(auto path = tabPage->path()) {
+        if (auto path = tabPage->path()) {
             ui.actionByDTime->setVisible(strcmp(path.toString().get(), "trash:///") == 0);
         }
 
-        if(tabPage->sortOrder() == Qt::AscendingOrder) {
+        if (tabPage->sortOrder() == Qt::AscendingOrder) {
             ui.actionAscending->setChecked(true);
         }
         else {
@@ -1489,16 +1489,16 @@ void MainWindow::updateEditSelectedActions() {
     bool hasAccessible(false);
     bool hasDeletable(false);
     int renamable(0);
-    if(TabPage* page = currentPage()) {
+    if (TabPage* page = currentPage()) {
         auto files = page->selectedFiles();
-        for(auto& file: files) {
-            if(file->isAccessible()) {
+        for (auto& file: files) {
+            if (file->isAccessible()) {
                 hasAccessible = true;
             }
-            if(file->isDeletable()) {
+            if (file->isDeletable()) {
                 hasDeletable = true;
             }
-            if(file->canSetName()) {
+            if (file->canSetName()) {
                 ++renamable;
             }
             if (hasAccessible && hasDeletable && renamable > 1) {
@@ -1517,27 +1517,27 @@ void MainWindow::updateEditSelectedActions() {
 void MainWindow::updateUIForCurrentPage(bool setFocus) {
     TabPage* tabPage = currentPage();
 
-    if(tabPage) {
+    if (tabPage) {
         setWindowTitle(tabPage->title());
-        if(splitView_) {
-            if(Fm::PathBar* pathBar = qobject_cast<Fm::PathBar*>(activeViewFrame_->getTopBar())) {
+        if (splitView_) {
+            if (Fm::PathBar* pathBar = qobject_cast<Fm::PathBar*>(activeViewFrame_->getTopBar())) {
                 pathBar->setPath(tabPage->path());
             }
-            else if(Fm::PathEdit* pathEntry = qobject_cast<Fm::PathEdit*>(activeViewFrame_->getTopBar())) {
+            else if (Fm::PathEdit* pathEntry = qobject_cast<Fm::PathEdit*>(activeViewFrame_->getTopBar())) {
                 pathEntry->setText(tabPage->pathName());
             }
         }
         else {
-            if(pathEntry_ != nullptr) {
+            if (pathEntry_ != nullptr) {
                 pathEntry_->setText(tabPage->pathName());
             }
-            else if(pathBar_ != nullptr) {
+            else if (pathBar_ != nullptr) {
                 pathBar_->setPath(tabPage->path());
             }
         }
         ui.statusbar->showMessage(tabPage->statusText());
         fsInfoLabel_->setText(tabPage->statusText(TabPage::StatusTextFSInfo));
-        if(setFocus) {
+        if (setFocus) {
             tabPage->folderView()->childView()->setFocus();
         }
 
@@ -1560,8 +1560,8 @@ void MainWindow::updateUIForCurrentPage(bool setFocus) {
     updateEditSelectedActions();
     bool isWritable(false);
     bool isNative(false);
-    if(tabPage && tabPage->folder()) {
-        if(auto info = tabPage->folder()->info()) {
+    if (tabPage && tabPage->folder()) {
+        if (auto info = tabPage->folder()->info()) {
             isWritable = info->isWritable();
             isNative = info->isNative();
         }
@@ -1576,30 +1576,30 @@ void MainWindow::updateUIForCurrentPage(bool setFocus) {
 
 void MainWindow::onStackedWidgetWidgetRemoved(int index) {
     QStackedWidget* sw = static_cast<QStackedWidget*>(sender());
-    if(ViewFrame* viewFrame = qobject_cast<ViewFrame*>(sw->parentWidget())) {
+    if (ViewFrame* viewFrame = qobject_cast<ViewFrame*>(sw->parentWidget())) {
         // qDebug("onStackedWidgetWidgetRemoved: %d", index);
         // need to remove associated tab from tabBar
         viewFrame->getTabBar()->removeTab(index);
-        if(viewFrame->getTabBar()->count() == 0) { // this is the last one
-            if(!splitView_) {
+        if (viewFrame->getTabBar()->count() == 0) { // this is the last one
+            if (!splitView_) {
                 deleteLater(); // destroy the whole window
                 // qDebug("delete window");
             }
             else {
                 // if we are in the split mode and the last tab of a view frame is closed,
                 // remove that view frame and go to the simple mode
-                for(int i = 0; i < ui.viewSplitter->count(); ++i) {
+                for (int i = 0; i < ui.viewSplitter->count(); ++i) {
                     // first find and activate the next view frame
-                    if(ViewFrame* thisViewFrame = qobject_cast<ViewFrame*>(ui.viewSplitter->widget(i))) {
-                        if(thisViewFrame == viewFrame) {
+                    if (ViewFrame* thisViewFrame = qobject_cast<ViewFrame*>(ui.viewSplitter->widget(i))) {
+                        if (thisViewFrame == viewFrame) {
                             int n = i < ui.viewSplitter->count() - 1 ? i + 1 : 0;
-                            if(ViewFrame* nextViewFrame = qobject_cast<ViewFrame*>(ui.viewSplitter->widget(n))) {
-                                if(activeViewFrame_ != nextViewFrame) {
+                            if (ViewFrame* nextViewFrame = qobject_cast<ViewFrame*>(ui.viewSplitter->widget(n))) {
+                                if (activeViewFrame_ != nextViewFrame) {
                                     activeViewFrame_ = nextViewFrame;
                                     updateUIForCurrentPage();
                                     // if the window isn't active, eventFilter() won't be called,
                                     // so we should revert to the main palette here
-                                    if(activeViewFrame_->palette().color(QPalette::Base)
+                                    if (activeViewFrame_->palette().color(QPalette::Base)
                                        != qApp->palette().color(QPalette::Base)) {
                                         activeViewFrame_->setPalette(qApp->palette());
                                     }
@@ -1615,7 +1615,7 @@ void MainWindow::onStackedWidgetWidgetRemoved(int index) {
         }
         else {
             Settings& settings = static_cast<Application*>(qApp)->settings();
-            if(!settings.alwaysShowTabs() && viewFrame->getTabBar()->count() == 1) {
+            if (!settings.alwaysShowTabs() && viewFrame->getTabBar()->count() == 1) {
                 viewFrame->getTabBar()->setVisible(false);
             }
         }
@@ -1624,9 +1624,9 @@ void MainWindow::onStackedWidgetWidgetRemoved(int index) {
 
 void MainWindow::onTabPageTitleChanged() {
     TabPage* tabPage = static_cast<TabPage*>(sender());
-    if(ViewFrame* viewFrame = viewFrameForTabPage(tabPage)) {
+    if (ViewFrame* viewFrame = viewFrameForTabPage(tabPage)) {
         int index = viewFrame->getStackedWidget()->indexOf(tabPage);
-        if(index >= 0) {
+        if (index >= 0) {
             QString tabText = tabPage->title();
             // remove newline and distinguish ampersand from mnemonic
             tabText.replace(QLatin1Char('\n'), QLatin1Char(' '))
@@ -1634,8 +1634,8 @@ void MainWindow::onTabPageTitleChanged() {
             viewFrame->getTabBar()->setTabText(index, tabText);
         }
 
-        if(viewFrame == activeViewFrame_) {
-            if(tabPage == currentPage()) {
+        if (viewFrame == activeViewFrame_) {
+            if (tabPage == currentPage()) {
                 setWindowTitle(tabPage->title());
 
                 // Since TabPage::titleChanged is emitted on changing directory,
@@ -1643,8 +1643,8 @@ void MainWindow::onTabPageTitleChanged() {
                 bool isNative(tabPage->path() && tabPage->path().isNative());
                 ui.actionOpenAsAdmin->setEnabled(isNative);
                 bool isWritable(false);
-                if(tabPage && tabPage->folder()) {
-                    if(auto info = tabPage->folder()->info()) {
+                if (tabPage && tabPage->folder()) {
+                    if (auto info = tabPage->folder()->info()) {
                         isWritable = info->isWritable();
                     }
                 }
@@ -1660,14 +1660,14 @@ void MainWindow::onTabPageTitleChanged() {
 
 void MainWindow::onTabPageStatusChanged(int type, QString statusText) {
     TabPage* tabPage = static_cast<TabPage*>(sender());
-    if(tabPage == currentPage()) {
-        switch(type) {
+    if (tabPage == currentPage()) {
+        switch (type) {
         case TabPage::StatusTextNormal:
         case TabPage::StatusTextSelectedFiles: {
             // although the status text may change very frequently,
             // the text of PCManFM::StatusBar is updated with a delay
             QString text = tabPage->statusText(TabPage::StatusTextSelectedFiles);
-            if(text.isEmpty()) {
+            if (text.isEmpty()) {
                 ui.statusbar->showMessage(tabPage->statusText(TabPage::StatusTextNormal));
             }
             else {
@@ -1689,10 +1689,10 @@ void MainWindow::onTabPageStatusChanged(int type, QString statusText) {
 
 void MainWindow::onTabPageSortFilterChanged() { // NOTE: This may be called from context menu too.
     TabPage* tabPage = static_cast<TabPage*>(sender());
-    if(tabPage == currentPage()) {
+    if (tabPage == currentPage()) {
         updateViewMenuForCurrentPage();
         ui.sidePane->setShowHidden(tabPage->showHidden());
-        if(!tabPage->hasCustomizedView() && !tabPage->hasInheritedCustomizedView()) { // remember sort settings globally
+        if (!tabPage->hasCustomizedView() && !tabPage->hasInheritedCustomizedView()) { // remember sort settings globally
             Settings& settings = static_cast<Application*>(qApp)->settings();
             settings.setSortColumn(static_cast<Fm::FolderModel::ColumnId>(tabPage->sortColumn()));
             settings.setSortOrder(tabPage->sortOrder());
@@ -1707,13 +1707,13 @@ void MainWindow::onTabPageSortFilterChanged() { // NOTE: This may be called from
 
 void MainWindow::onSidePaneChdirRequested(int type, const Fm::FilePath &path) {
     // FIXME: use enum for type value or change it to button.
-    if(type == 0) { // left button (default)
+    if (type == 0) { // left button (default)
         chdir(path);
     }
-    else if(type == 1) { // middle button
+    else if (type == 1) { // middle button
         addTab(path);
     }
-    else if(type == 2) { // new window
+    else if (type == 2) { // new window
         (new MainWindow(path))->show();
     }
 }
@@ -1756,7 +1756,7 @@ void MainWindow::onSplitterMoved(int pos, int /*index*/) {
 
 void MainWindow::loadBookmarksMenu() {
     QAction* before = ui.actionAddToBookmarks;
-    for(auto& item: bookmarks_->items()) {
+    for (auto& item: bookmarks_->items()) {
         BookmarkAction* action = new BookmarkAction(item, ui.menu_Bookmarks);
         connect(action, &QAction::triggered, this, &MainWindow::onBookmarkActionTriggered);
         ui.menu_Bookmarks->insertAction(before, action);
@@ -1771,7 +1771,7 @@ void MainWindow::onBookmarksChanged() {
     QList<QAction*>::const_iterator it = actions.constBegin();
     QList<QAction*>::const_iterator last_it = actions.constEnd() - 2;
 
-    while(it != last_it) {
+    while (it != last_it) {
         QAction* action = *it;
         ++it;
         ui.menu_Bookmarks->removeAction(action);
@@ -1783,10 +1783,10 @@ void MainWindow::onBookmarksChanged() {
 void MainWindow::onBookmarkActionTriggered() {
     BookmarkAction* action = static_cast<BookmarkAction*>(sender());
     auto path = action->path();
-    if(path) {
+    if (path) {
         Application* app = static_cast<Application*>(qApp);
         Settings& settings = app->settings();
-        switch(settings.bookmarkOpenMethod()) {
+        switch (settings.bookmarkOpenMethod()) {
         case OpenInCurrentTab: /* current tab */
         default:
             chdir(path);
@@ -1826,7 +1826,7 @@ void MainWindow::on_actionDelete_triggered() {
     bool trashed(path_it != paths.cend() && (*path_it).hasUriScheme("trash"));
 
     bool shiftPressed = (qApp->keyboardModifiers() & Qt::ShiftModifier ? true : false);
-    if(settings.useTrash() && !shiftPressed
+    if (settings.useTrash() && !shiftPressed
        // trashed files should be deleted
        && !trashed) {
         FileOperation::trashFiles(paths, settings.confirmTrash(), this);
@@ -1841,10 +1841,10 @@ void MainWindow::on_actionRename_triggered() {
     // otherwise use the renaming dialog
     TabPage* page = currentPage();
     auto files = page->selectedFiles();
-    if(files.size() == 1) {
+    if (files.size() == 1) {
         QAbstractItemView* view = page->folderView()->childView();
         QModelIndexList selIndexes = view->selectionModel()->selectedIndexes();
-        if(selIndexes.size() > 1) { // in the detailed list mode, only the first index is editable
+        if (selIndexes.size() > 1) { // in the detailed list mode, only the first index is editable
             view->setCurrentIndex(selIndexes.at(0));
         }
         QModelIndex cur = view->currentIndex();
@@ -1854,9 +1854,9 @@ void MainWindow::on_actionRename_triggered() {
             return;
         }
     }
-    if(!files.empty()) {
-        for(auto& file: files) {
-            if(!Fm::renameFile(file, nullptr)) {
+    if (!files.empty()) {
+        for (auto& file: files) {
+            if (!Fm::renameFile(file, nullptr)) {
                 break;
             }
         }
@@ -1888,7 +1888,7 @@ void MainWindow::on_actionPreferences_triggered() {
 void MainWindow::setRTLIcons(bool isRTL) {
     QIcon nxtIcn = QIcon::fromTheme(QStringLiteral("go-next"));
     QIcon prevIcn = QIcon::fromTheme(QStringLiteral("go-previous"));
-    if(isRTL) {
+    if (isRTL) {
         ui.actionGoBack->setIcon(nxtIcn);
         ui.actionCloseLeft->setIcon(nxtIcn);
         ui.actionGoForward->setIcon(prevIcn);
@@ -1903,7 +1903,7 @@ void MainWindow::setRTLIcons(bool isRTL) {
 }
 
 bool MainWindow::event(QEvent* event) {
-    switch(event->type()) {
+    switch (event->type()) {
     case QEvent::WindowActivate:
         lastActive_ = this;
     default:
@@ -1913,7 +1913,7 @@ bool MainWindow::event(QEvent* event) {
 }
 
 void MainWindow::changeEvent(QEvent* event) {
-    switch(event->type()) {
+    switch (event->type()) {
     case QEvent::LayoutDirectionChange:
         setRTLIcons(QApplication::layoutDirection() == Qt::RightToLeft);
         break;
@@ -1930,12 +1930,12 @@ void MainWindow::onBackForwardContextMenu(QPoint pos) {
     Fm::BrowseHistory& history = page->browseHistory();
     int current = history.currentIndex();
     QMenu menu;
-    for(size_t i = 0; i < history.size(); ++i) {
+    for (size_t i = 0; i < history.size(); ++i) {
         const BrowseHistoryItem& item = history.at(i);
         auto path = item.path();
         auto name = path.displayName();
         QAction* action = menu.addAction(QString::fromUtf8(name.get()));
-        if(i == static_cast<size_t>(current)) {
+        if (i == static_cast<size_t>(current)) {
             // make the current path bold and checked
             action->setCheckable(true);
             action->setChecked(true);
@@ -1945,7 +1945,7 @@ void MainWindow::onBackForwardContextMenu(QPoint pos) {
         }
     }
     QAction* selectedAction = menu.exec(btn->mapToGlobal(pos));
-    if(selectedAction) {
+    if (selectedAction) {
         int index = menu.actions().indexOf(selectedAction);
         page->jumpToHistory(index);
         setTabIcon(page);
@@ -1955,9 +1955,9 @@ void MainWindow::onBackForwardContextMenu(QPoint pos) {
 
 void MainWindow::onTabBarClicked(int /*index*/) {
     TabBar* tabBar = static_cast<TabBar*>(sender());
-    if(ViewFrame* viewFrame = qobject_cast<ViewFrame*>(tabBar->parentWidget())) {
+    if (ViewFrame* viewFrame = qobject_cast<ViewFrame*>(tabBar->parentWidget())) {
         // focus the view on clicking the tab bar
-        if(TabPage* page = currentPage(viewFrame)) {
+        if (TabPage* page = currentPage(viewFrame)) {
             page->folderView()->childView()->setFocus();
         }
     }
@@ -1965,33 +1965,33 @@ void MainWindow::onTabBarClicked(int /*index*/) {
 
 void MainWindow::tabContextMenu(const QPoint& pos) {
     TabBar* tabBar = static_cast<TabBar*>(sender());
-    if(ViewFrame* viewFrame = qobject_cast<ViewFrame*>(tabBar->parentWidget())) {
+    if (ViewFrame* viewFrame = qobject_cast<ViewFrame*>(tabBar->parentWidget())) {
         int tabNum = viewFrame->getTabBar()->count();
-        if(tabNum < 1) {
+        if (tabNum < 1) {
             return;
         }
 
         rightClickIndex_ = viewFrame->getTabBar()->tabAt(pos);
-        if(rightClickIndex_ < 0) {
+        if (rightClickIndex_ < 0) {
             return;
         }
 
         QMenu menu;
 
         // tab closing actions
-        if(rightClickIndex_ > 0) {
+        if (rightClickIndex_ > 0) {
             menu.addAction(ui.actionCloseLeft);
         }
-        if(rightClickIndex_ < tabNum - 1) {
+        if (rightClickIndex_ < tabNum - 1) {
             menu.addAction(ui.actionCloseRight);
-            if(rightClickIndex_ > 0) {
+            if (rightClickIndex_ > 0) {
                 menu.addSeparator();
                 menu.addAction(ui.actionCloseOther);
             }
         }
 
         // per-folder actions for the current tab
-        if(viewFrame->getTabBar()->currentIndex() == rightClickIndex_) {
+        if (viewFrame->getTabBar()->currentIndex() == rightClickIndex_) {
             menu.addSeparator();
             QWidgetAction* labelAction = new QWidgetAction(&menu);
             QLabel *label = new QLabel(QStringLiteral("<center><b>")
@@ -2012,45 +2012,45 @@ void MainWindow::tabContextMenu(const QPoint& pos) {
 }
 
 void MainWindow::closeLeftTabs() {
-    while(rightClickIndex_ > 0) {
+    while (rightClickIndex_ > 0) {
         closeTab(rightClickIndex_ - 1);
         --rightClickIndex_;
     }
 }
 
 void MainWindow::closeRightTabs() {
-    if(rightClickIndex_ < 0) {
+    if (rightClickIndex_ < 0) {
         return;
     }
-    while(rightClickIndex_ < activeViewFrame_->getTabBar()->count() - 1) {
+    while (rightClickIndex_ < activeViewFrame_->getTabBar()->count() - 1) {
         closeTab(rightClickIndex_ + 1);
     }
 }
 
 void MainWindow::focusPathEntry() {
     // use text entry for the path bar
-    if(splitView_) {
-        if(Fm::PathBar* pathBar = qobject_cast<Fm::PathBar*>(activeViewFrame_->getTopBar())) {
+    if (splitView_) {
+        if (Fm::PathBar* pathBar = qobject_cast<Fm::PathBar*>(activeViewFrame_->getTopBar())) {
             pathBar->openEditor();
         }
-        else if(Fm::PathEdit* pathEntry = qobject_cast<Fm::PathEdit*>(activeViewFrame_->getTopBar())) {
+        else if (Fm::PathEdit* pathEntry = qobject_cast<Fm::PathEdit*>(activeViewFrame_->getTopBar())) {
             pathEntry->setFocus();
             pathEntry->selectAll();
         }
     }
     else{
-        if(pathEntry_ != nullptr) {
+        if (pathEntry_ != nullptr) {
             pathEntry_->setFocus();
             pathEntry_->selectAll();
         }
-        else if(pathBar_ != nullptr) {  // use button-style path bar
+        else if (pathBar_ != nullptr) {  // use button-style path bar
             pathBar_->openEditor();
         }
     }
 }
 
 void MainWindow::dragEnterEvent(QDragEnterEvent* event) {
-    if(event->mimeData()->hasFormat(QStringLiteral("application/pcmanfm-qt-tab"))
+    if (event->mimeData()->hasFormat(QStringLiteral("application/pcmanfm-qt-tab"))
        // ensure that the tab drag source is ours (and not a root window, for example)
        && event->source() != nullptr) {
         event->acceptProposedAction();
@@ -2058,7 +2058,7 @@ void MainWindow::dragEnterEvent(QDragEnterEvent* event) {
 }
 
 void MainWindow::dropEvent(QDropEvent* event) {
-    if(event->mimeData()->hasFormat(QStringLiteral("application/pcmanfm-qt-tab"))) {
+    if (event->mimeData()->hasFormat(QStringLiteral("application/pcmanfm-qt-tab"))) {
         dropTab(event->source());
     }
     event->acceptProposedAction();
@@ -2076,7 +2076,7 @@ void MainWindow::dropTab(QObject* source) {
     // first close the tab in the drag window;
     // then add its page to a new tab in the drop window
     TabPage* dropPage = dragSource->currentPage();
-    if(dropPage) {
+    if (dropPage) {
         disconnect(dropPage, nullptr, dragSource, nullptr);
 
         // release mouse before tab removal because otherwise, the source tabbar
@@ -2101,7 +2101,7 @@ void MainWindow::detachTab() {
 
     // close the tab and move its page to a new window
     TabPage* dropPage = currentPage();
-    if(dropPage) {
+    if (dropPage) {
         disconnect(dropPage, nullptr, this, nullptr);
 
         activeViewFrame_->getTabBar()->releaseMouse(); // as in dropTab()
@@ -2117,22 +2117,22 @@ void MainWindow::detachTab() {
 
 void MainWindow::setTabIcon(TabPage* tabPage) {
     ViewFrame* viewFrame = viewFrameForTabPage(tabPage);
-    if(viewFrame == nullptr) {
+    if (viewFrame == nullptr) {
         return;
     }
     bool isCustomized = tabPage->hasCustomizedView() || tabPage->hasInheritedCustomizedView();
     int index = viewFrame->getStackedWidget()->indexOf(tabPage);
     auto tabBar = viewFrame->getTabBar();
 
-    if(!isCustomized) {
-        if(!tabBar->tabIcon(index).isNull()) {
+    if (!isCustomized) {
+        if (!tabBar->tabIcon(index).isNull()) {
             tabBar->setTabIcon(index, QIcon());
         }
         return;
     }
 
     // set the tab icon of a customized folder to its view mode
-    switch(tabPage->viewMode()) {
+    switch (tabPage->viewMode()) {
     case Fm::FolderView::IconMode:
         tabBar->setTabIcon(index, QIcon::fromTheme(QLatin1String("view-list-icons"), style()->standardIcon(QStyle::SP_FileDialogContentsView)));
         break;
@@ -2162,22 +2162,22 @@ void MainWindow::updateFromSettings(Settings& settings) {
     int recentNumber = settings.getRecentFilesNumber();
     auto actions = ui.menuRecentFiles->actions();
     int N = actions.isEmpty() ? 0 : actions.size() - 2; // there is a separator and a clear action
-    if(recentNumber > N) {
+    if (recentNumber > N) {
         ui.menuRecentFiles->setEnabled(true);
         QAction* sep = nullptr;
-        if(actions.size() >= 2) {
+        if (actions.size() >= 2) {
             ui.menuRecentFiles->removeAction(ui.actionClearRecent);
             sep = ui.menuRecentFiles->actions().last();
             ui.menuRecentFiles->removeAction(sep);
         }
         QAction* recentAction = nullptr;
-        for(int i = N; i < recentNumber; ++i) {
+        for (int i = N; i < recentNumber; ++i) {
             recentAction = new QAction(this);
             recentAction->setVisible(false);
             connect(recentAction, &QAction::triggered, this, &MainWindow::lanunchRecentFile);
             ui.menuRecentFiles->addAction(recentAction);
         }
-        if(sep) {
+        if (sep) {
             ui.menuRecentFiles->addAction(sep);
         }
         else {
@@ -2185,28 +2185,28 @@ void MainWindow::updateFromSettings(Settings& settings) {
         }
         ui.menuRecentFiles->addAction(ui.actionClearRecent);
     }
-    else if(recentNumber < N) {
-        for(int i = 0; i < N - recentNumber; ++i) {
+    else if (recentNumber < N) {
+        for (int i = 0; i < N - recentNumber; ++i) {
             auto lastAction = ui.menuRecentFiles->actions().at(ui.menuRecentFiles->actions().size() - 3);
             ui.menuRecentFiles->removeAction(lastAction);
             delete lastAction;
         }
-        if(recentNumber == 0) {
+        if (recentNumber == 0) {
             ui.menuRecentFiles->clear(); // also deletes the separator
             ui.menuRecentFiles->setEnabled(false);
         }
     }
 
     // tabs
-    for(int i = 0; i < ui.viewSplitter->count(); ++i) {
-        if(ViewFrame* viewFrame = qobject_cast<ViewFrame*>(ui.viewSplitter->widget(i))) {
+    for (int i = 0; i < ui.viewSplitter->count(); ++i) {
+        if (ViewFrame* viewFrame = qobject_cast<ViewFrame*>(ui.viewSplitter->widget(i))) {
             viewFrame->getTabBar()->setTabsClosable(settings.showTabClose());
             viewFrame->getTabBar()->setVisible(settings.alwaysShowTabs() || (viewFrame->getTabBar()->count() > 1));
 
             // all tab pages
             int n = viewFrame->getStackedWidget()->count();
 
-            for(int j = 0; j < n; ++j) {
+            for (int j = 0; j < n; ++j) {
                 TabPage* page = static_cast<TabPage*>(viewFrame->getStackedWidget()->widget(j));
                 page->updateFromSettings(settings);
             }
@@ -2215,9 +2215,9 @@ void MainWindow::updateFromSettings(Settings& settings) {
 }
 
 void MainWindow::on_actionOpenAsAdmin_triggered() {
-    if(TabPage* page = currentPage()) {
-        if(auto path = page->path()) {
-            if(path.isNative()) {
+    if (TabPage* page = currentPage()) {
+        if (auto path = page->path()) {
+            if (path.isNative()) {
                 CStrPtr admin{g_strconcat("admin://", path.localPath().get(), nullptr)};
                 chdir(Fm::FilePath::fromPathStr(admin.get()));
             }
@@ -2228,11 +2228,11 @@ void MainWindow::on_actionOpenAsAdmin_triggered() {
 void MainWindow::on_actionOpenAsRoot_triggered() {
     TabPage* page = currentPage();
 
-    if(page) {
+    if (page) {
         Application* app = static_cast<Application*>(qApp);
         Settings& settings = app->settings();
 
-        if(!settings.suCommand().isEmpty()) {
+        if (!settings.suCommand().isEmpty()) {
             // run the su command
             // FIXME: it's better to get the filename of the current process rather than hard-code pcmanfm-qt here.
             QByteArray suCommand = settings.suCommand().toLocal8Bit();
@@ -2241,7 +2241,7 @@ void MainWindow::on_actionOpenAsRoot_triggered() {
 
             // if %s exists in the su command, substitute it with the program
             int substPos = suCommand.indexOf("%s");
-            if(substPos != -1) {
+            if (substPos != -1) {
                 // replace %s with program
                 suCommand.replace(substPos, 2, programCommand);
             }
@@ -2252,13 +2252,13 @@ void MainWindow::on_actionOpenAsRoot_triggered() {
 
             Fm::GAppInfoPtr appInfo{g_app_info_create_from_commandline(suCommand.constData(), nullptr, GAppInfoCreateFlags(0), nullptr), false};
 
-            if(appInfo) {
+            if (appInfo) {
                 auto cwd = page->path();
                 Fm::GErrorPtr err;
                 auto uri = cwd.uri();
                 GList* uris = g_list_prepend(nullptr, uri.get());
 
-                if(!g_app_info_launch_uris(appInfo.get(), uris, nullptr, &err)) {
+                if (!g_app_info_launch_uris(appInfo.get(), uris, nullptr, &err)) {
                     QMessageBox::critical(this, tr("Error"), QString::fromUtf8(err->message));
                 }
 
@@ -2277,16 +2277,16 @@ void MainWindow::on_actionFindFiles_triggered() {
     Application* app = static_cast<Application*>(qApp);
     const auto files = currentPage()->selectedFiles();
     QStringList paths;
-    if(!files.empty()) {
-        for(const auto& file: files) {
+    if (!files.empty()) {
+        for (const auto& file: files) {
             // FIXME: is it ok to use display name here?
             // This might be broken on filesystems with non-UTF-8 filenames.
-            if(file->isDir()) {
+            if (file->isDir()) {
                 paths.append(QString::fromUtf8(file->path().displayName().get()));
             }
         }
     }
-    if(paths.isEmpty()) {
+    if (paths.isEmpty()) {
         paths.append(currentPage()->pathName());
     }
     app->findFiles(paths);
@@ -2294,7 +2294,7 @@ void MainWindow::on_actionFindFiles_triggered() {
 
 void MainWindow::on_actionOpenTerminal_triggered() {
     TabPage* page = currentPage();
-    if(page) {
+    if (page) {
         Application* app = static_cast<Application*>(qApp);
         app->openFolderInTerminal(page->path());
     }
@@ -2302,16 +2302,16 @@ void MainWindow::on_actionOpenTerminal_triggered() {
 
 void MainWindow::on_actionCreateLauncher_triggered() {
     TabPage* page = currentPage();
-    if(page) {
+    if (page) {
         page->ceateShortcut();
     }
 }
 
 void MainWindow::on_actionCopyFullPath_triggered() {
     TabPage* page = currentPage();
-    if(page) {
+    if (page) {
         auto paths = page->selectedFilePaths();
-        if(paths.size() == 1) {
+        if (paths.size() == 1) {
             QApplication::clipboard()->setText(QString::fromUtf8(paths.front().toString().get()), QClipboard::Clipboard);
         }
     }
@@ -2319,7 +2319,7 @@ void MainWindow::on_actionCopyFullPath_triggered() {
 
 void MainWindow::onShortcutNextTab() {
     int current = activeViewFrame_->getTabBar()->currentIndex();
-    if(current < activeViewFrame_->getTabBar()->count() - 1) {
+    if (current < activeViewFrame_->getTabBar()->count() - 1) {
         activeViewFrame_->getTabBar()->setCurrentIndex(current + 1);
     }
     else {
@@ -2329,7 +2329,7 @@ void MainWindow::onShortcutNextTab() {
 
 void MainWindow::onShortcutPrevTab() {
     int current = activeViewFrame_->getTabBar()->currentIndex();
-    if(current > 0) {
+    if (current > 0) {
         activeViewFrame_->getTabBar()->setCurrentIndex(current - 1);
     }
     else {
@@ -2347,22 +2347,22 @@ void MainWindow::onShortcutJumpToTab() {
     // Then we know how to test if a key sequence contains a modifier.
     // It's a shame that Qt has no API for this task.
 
-    if((keyValue & Qt::ALT) == Qt::ALT) { // test if we have Alt key pressed
+    if ((keyValue & Qt::ALT) == Qt::ALT) { // test if we have Alt key pressed
         keyValue -= Qt::ALT;
     }
-    else if((keyValue & Qt::CTRL) == Qt::CTRL) { // test if we have Ctrl key pressed
+    else if ((keyValue & Qt::CTRL) == Qt::CTRL) { // test if we have Ctrl key pressed
         keyValue -= Qt::CTRL;
     }
 
     // now keyValue should contains '0' - '9' only
     int index;
-    if(keyValue == '0') {
+    if (keyValue == '0') {
         index = 9;
     }
     else {
         index = keyValue - '1';
     }
-    if(index < activeViewFrame_->getTabBar()->count()) {
+    if (index < activeViewFrame_->getTabBar()->count()) {
         activeViewFrame_->getTabBar()->setCurrentIndex(index);
     }
 }
@@ -2373,15 +2373,15 @@ void MainWindow::on_actionCleanPerFolderConfig_triggered() {
                                     tr("Do you want to remove settings of nonexistent folders?\nThey might be useful if those folders are created again."),
                                     QMessageBox::Yes | QMessageBox::No,
                                     QMessageBox::No);
-    if(r == QMessageBox::Yes) {
+    if (r == QMessageBox::Yes) {
         Application* app = static_cast<Application*>(qApp);
         app->cleanPerFolderConfig();
     }
 }
 
 void MainWindow::openFolderAndSelectFles(const Fm::FilePathList& files) {
-    if(!files.empty()) {
-        if(auto path = files.front().parent()) {
+    if (!files.empty()) {
+        if (auto path = files.front().parent()) {
             TabPage* newPage = new TabPage(this);
             addTabWithPage(newPage, activeViewFrame_, std::move(path));
             newPage->setFilesToSelect(files);

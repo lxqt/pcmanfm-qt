@@ -36,8 +36,8 @@ TabBar::TabBar(QWidget *parent):
 
 void TabBar::mousePressEvent(QMouseEvent *event) {
     QTabBar::mousePressEvent(event);
-    if(detachable_) {
-        if(event->button() == Qt::LeftButton && tabAt(event->pos()) > -1) {
+    if (detachable_) {
+        if (event->button() == Qt::LeftButton && tabAt(event->pos()) > -1) {
             dragStartPosition_ = event->pos();
         }
         else {
@@ -49,20 +49,20 @@ void TabBar::mousePressEvent(QMouseEvent *event) {
 
 void TabBar::mouseMoveEvent(QMouseEvent *event)
 {
-    if(!detachable_) {
+    if (!detachable_) {
         QTabBar::mouseMoveEvent(event);
         return;
     }
 
-    if(!dragStarted_ && !dragStartPosition_.isNull()
+    if (!dragStarted_ && !dragStartPosition_.isNull()
        && (event->pos() - dragStartPosition_).manhattanLength() >= QApplication::startDragDistance()) {
         dragStarted_ = true;
     }
 
-    if((event->buttons() & Qt::LeftButton)
+    if ((event->buttons() & Qt::LeftButton)
        && dragStarted_
        && !window()->geometry().contains(event->globalPos())) {
-        if(currentIndex() == -1) {
+        if (currentIndex() == -1) {
             return;
         }
 
@@ -72,8 +72,8 @@ void TabBar::mouseMoveEvent(QMouseEvent *event)
         drag->setMimeData(mimeData);
         int N = count();
         Qt::DropAction dragged = drag->exec(Qt::MoveAction);
-        if(dragged != Qt::MoveAction) { // a tab is dropped outside all windows
-            if(N > 1) {
+        if (dragged != Qt::MoveAction) { // a tab is dropped outside all windows
+            if (N > 1) {
                 Q_EMIT tabDetached();
             }
             else {
@@ -81,7 +81,7 @@ void TabBar::mouseMoveEvent(QMouseEvent *event)
             }
         }
         else { // a tab is dropped into another window
-            if(count() == N) {
+            if (count() == N) {
                 releaseMouse(); // release the mouse if the drop isn't accepted
             }
         }
@@ -104,7 +104,7 @@ void TabBar::releaseMouse() {
 }
 
 void TabBar::mouseReleaseEvent(QMouseEvent *event) {
-    if(detachable_) { // reset drag info
+    if (detachable_) { // reset drag info
         dragStarted_ = false;
         dragStartPosition_ = QPoint();
     }
@@ -120,7 +120,7 @@ void TabBar::mouseReleaseEvent(QMouseEvent *event) {
 
 // Let the main window receive dragged tabs!
 void TabBar::dragEnterEvent(QDragEnterEvent *event) {
-    if(detachable_ && event->mimeData()->hasFormat(QStringLiteral("application/pcmanfm-qt-tab"))) {
+    if (detachable_ && event->mimeData()->hasFormat(QStringLiteral("application/pcmanfm-qt-tab"))) {
         event->ignore();
     }
 }

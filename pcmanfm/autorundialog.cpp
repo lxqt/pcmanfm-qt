@@ -53,11 +53,11 @@ AutoRunDialog::~AutoRunDialog() {
     g_list_foreach(applications, (GFunc)g_object_unref, nullptr);
     g_list_free(applications);
 
-    if(mount_) {
+    if (mount_) {
         g_object_unref(mount_);
     }
 
-    if(cancellable) {
+    if (cancellable) {
         g_cancellable_cancel(cancellable);
         g_object_unref(cancellable);
     }
@@ -65,10 +65,10 @@ AutoRunDialog::~AutoRunDialog() {
 
 void AutoRunDialog::accept() {
     QListWidgetItem* item = ui.listWidget->selectedItems().first();
-    if(item) {
+    if (item) {
         GFile* gf = g_mount_get_root(mount_);
         void* p = item->data(Qt::UserRole).value<void*>();
-        if(p) { // run the selected application
+        if (p) { // run the selected application
             GAppInfo* app = G_APP_INFO(p);
             GList* filelist = g_list_prepend(nullptr, gf);
             g_app_info_launch(app, filelist, nullptr, nullptr);
@@ -83,7 +83,7 @@ void AutoRunDialog::accept() {
             // FIXME: or should we open it in a new tab? Make this optional later
             MainWindow* win = new MainWindow(path);
             win->resize(settings.windowWidth(), settings.windowHeight());
-            if(settings.windowMaximized()) {
+            if (settings.windowMaximized()) {
                 win->setWindowState(win->windowState() | Qt::WindowMaximized);
             }
             win->show();
@@ -95,7 +95,7 @@ void AutoRunDialog::accept() {
 
 // static
 void AutoRunDialog::onContentTypeFinished(GMount* mount, GAsyncResult* res, AutoRunDialog* pThis) {
-    if(pThis->cancellable) {
+    if (pThis->cancellable) {
         g_object_unref(pThis->cancellable);
         pThis->cancellable = nullptr;
     }
@@ -103,11 +103,11 @@ void AutoRunDialog::onContentTypeFinished(GMount* mount, GAsyncResult* res, Auto
     char** types = g_mount_guess_content_type_finish(mount, res, nullptr);
     char* desc = nullptr;
 
-    if(types) {
-        if(types[0]) {
-            for(char** type = types; *type; ++type) {
+    if (types) {
+        if (types[0]) {
+            for (char** type = types; *type; ++type) {
                 GList* l = g_app_info_get_all_for_type(*type);
-                if(l) {
+                if (l) {
                     pThis->applications = g_list_concat(pThis->applications, l);
                 }
             }
@@ -115,9 +115,9 @@ void AutoRunDialog::onContentTypeFinished(GMount* mount, GAsyncResult* res, Auto
         }
         g_strfreev(types);
 
-        if(pThis->applications) {
+        if (pThis->applications) {
             int pos = 0;
-            for(GList* l = pThis->applications; l; l = l->next, ++pos) {
+            for (GList* l = pThis->applications; l; l = l->next, ++pos) {
                 GAppInfo* app = G_APP_INFO(l->data);
                 GIcon* gicon = g_app_info_get_icon(app);
                 QIcon icon = Fm::IconInfo::fromGIcon(gicon)->qicon();
@@ -130,7 +130,7 @@ void AutoRunDialog::onContentTypeFinished(GMount* mount, GAsyncResult* res, Auto
         }
     }
 
-    if(desc) {
+    if (desc) {
         pThis->ui.mediumType->setText(QString::fromUtf8(desc));
         g_free(desc);
     }

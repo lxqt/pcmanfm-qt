@@ -55,13 +55,13 @@ static void findIconThemesInDir(QHash<QString, QString>& iconThemes, QString dir
     QDir dir(dirName);
     const QStringList subDirs = dir.entryList(QDir::AllDirs);
     GKeyFile* kf = g_key_file_new();
-    for(const QString& subDir : subDirs) {
+    for (const QString& subDir : subDirs) {
         QString indexFile = dirName + QLatin1Char('/') + subDir + QStringLiteral("/index.theme");
-        if(g_key_file_load_from_file(kf, indexFile.toLocal8Bit().constData(), GKeyFileFlags(0), nullptr)) {
+        if (g_key_file_load_from_file(kf, indexFile.toLocal8Bit().constData(), GKeyFileFlags(0), nullptr)) {
             // FIXME: skip hidden ones
             // icon theme must have this key, so it has icons if it has this key
             // otherwise, it might be a cursor theme or any other kind of theme.
-            if(g_key_file_has_key(kf, "Icon Theme", "Directories", nullptr)) {
+            if (g_key_file_has_key(kf, "Icon Theme", "Directories", nullptr)) {
                 char* dispName = g_key_file_get_locale_string(kf, "Icon Theme", "Name", nullptr, nullptr);
                 // char* comment = g_key_file_get_locale_string(kf, "Icon Theme", "Comment", nullptr, nullptr);
                 iconThemes[subDir] = QString::fromUtf8(dispName);
@@ -74,7 +74,7 @@ static void findIconThemesInDir(QHash<QString, QString>& iconThemes, QString dir
 
 void PreferencesDialog::initIconThemes(Settings& settings) {
     // check if auto-detection is done (for example, from xsettings)
-    if(settings.useFallbackIconTheme()) { // auto-detection failed
+    if (settings.useFallbackIconTheme()) { // auto-detection failed
         // load xdg icon themes and select the current one
         QHash<QString, QString> iconThemes;
         // user customed icon themes
@@ -82,13 +82,13 @@ void PreferencesDialog::initIconThemes(Settings& settings) {
 
         // search for icons in system data dir
         const char* const* dataDirs = g_get_system_data_dirs();
-        for(const char* const* dataDir = dataDirs; *dataDir; ++dataDir) {
+        for (const char* const* dataDir = dataDirs; *dataDir; ++dataDir) {
             findIconThemesInDir(iconThemes, QString::fromUtf8(*dataDir) + QStringLiteral("/icons"));
         }
 
         iconThemes.remove(QStringLiteral("hicolor")); // remove hicolor, which is only a fallback
         QHash<QString, QString>::const_iterator it;
-        for(it = iconThemes.constBegin(); it != iconThemes.constEnd(); ++it) {
+        for (it = iconThemes.constBegin(); it != iconThemes.constEnd(); ++it) {
             ui.iconTheme->addItem(it.value(), it.key());
         }
         ui.iconTheme->model()->sort(0); // sort the list of icon theme names
@@ -96,13 +96,13 @@ void PreferencesDialog::initIconThemes(Settings& settings) {
         // select current theme name
         int n = ui.iconTheme->count();
         int i;
-        for(i = 0; i < n; ++i) {
+        for (i = 0; i < n; ++i) {
             QVariant itemData = ui.iconTheme->itemData(i);
-            if(itemData == settings.fallbackIconThemeName()) {
+            if (itemData == settings.fallbackIconThemeName()) {
                 break;
             }
         }
-        if(i >= n) {
+        if (i >= n) {
             i = 0;
         }
         ui.iconTheme->setCurrentIndex(i);
@@ -119,10 +119,10 @@ void PreferencesDialog::initIconThemes(Settings& settings) {
 
 void PreferencesDialog::initArchivers(Settings& settings) {
     auto& allArchivers = Fm::Archiver::allArchivers();
-    for(int i = 0; i < int(allArchivers.size()); ++i) {
+    for (int i = 0; i < int(allArchivers.size()); ++i) {
         auto& archiver = allArchivers[i];
         ui.archiver->addItem(QString::fromUtf8(archiver->program()), QString::fromUtf8(archiver->program()));
-        if(QString::fromUtf8(archiver->program()) == settings.archiver()) {
+        if (QString::fromUtf8(archiver->program()) == settings.archiver()) {
             ui.archiver->setCurrentIndex(i);
         }
     }
@@ -134,7 +134,7 @@ void PreferencesDialog::initDisplayPage(Settings& settings) {
     int i = 0;
     for (const auto & size : Settings::iconSizes(Settings::Big)) {
         ui.bigIconSize->addItem(QStringLiteral("%1 x %1").arg(size), size);
-        if(settings.bigIconSize() == size) {
+        if (settings.bigIconSize() == size) {
             ui.bigIconSize->setCurrentIndex(i);
         }
         ++i;
@@ -143,12 +143,12 @@ void PreferencesDialog::initDisplayPage(Settings& settings) {
     for (const auto & size : Settings::iconSizes(Settings::Small)) {
         QString text = QStringLiteral("%1 x %1").arg(size);
         ui.smallIconSize->addItem(text, size);
-        if(settings.smallIconSize() == size) {
+        if (settings.smallIconSize() == size) {
             ui.smallIconSize->setCurrentIndex(i);
         }
 
         ui.sidePaneIconSize->addItem(text, size);
-        if(settings.sidePaneIconSize() == size) {
+        if (settings.sidePaneIconSize() == size) {
             ui.sidePaneIconSize->setCurrentIndex(i);
         }
         ++i;
@@ -156,7 +156,7 @@ void PreferencesDialog::initDisplayPage(Settings& settings) {
     i = 0;
     for (const auto & size : Settings::iconSizes(Settings::Thumbnail)) {
         ui.thumbnailIconSize->addItem(QStringLiteral("%1 x %1").arg(size), size);
-        if(settings.thumbnailIconSize() == size) {
+        if (settings.thumbnailIconSize() == size) {
             ui.thumbnailIconSize->setCurrentIndex(i);
         }
         ++i;
@@ -206,8 +206,8 @@ void PreferencesDialog::initBehaviorPage(Settings& settings) {
         Fm::FolderView::ThumbnailMode,
         Fm::FolderView::DetailedListMode
     };
-    for(std::size_t i = 0; i < G_N_ELEMENTS(modes); ++i) {
-        if(modes[i] == settings.viewMode()) {
+    for (std::size_t i = 0; i < G_N_ELEMENTS(modes); ++i) {
+        if (modes[i] == settings.viewMode()) {
             ui.viewMode->setCurrentIndex(i);
             break;
         }
@@ -215,7 +215,7 @@ void PreferencesDialog::initBehaviorPage(Settings& settings) {
 
     ui.configmDelete->setChecked(settings.confirmDelete());
 
-    if(settings.supportTrash()) {
+    if (settings.supportTrash()) {
         ui.useTrash->setChecked(settings.useTrash());
     }
     else {
@@ -250,7 +250,7 @@ void PreferencesDialog::initVolumePage(Settings& settings) {
     ui.mountOnStartup->setChecked(settings.mountOnStartup());
     ui.mountRemovable->setChecked(settings.mountRemovable());
     ui.autoRun->setChecked(settings.autoRun());
-    if(settings.closeOnUnmount()) {
+    if (settings.closeOnUnmount()) {
         ui.closeOnUnmount->setChecked(true);
     }
     else {
@@ -260,7 +260,7 @@ void PreferencesDialog::initVolumePage(Settings& settings) {
 
 void PreferencesDialog::initTerminals(Settings& settings) {
     // load the known terminal list from the terminal.list file of libfm
-    for(auto& terminal: Fm::allKnownTerminals()) {
+    for (auto& terminal: Fm::allKnownTerminals()) {
         ui.terminal->addItem(QString::fromUtf8(terminal.get()));
     }
     ui.terminal->setEditText(settings.terminal());
@@ -297,16 +297,16 @@ void PreferencesDialog::initFromSettings() {
 }
 
 void PreferencesDialog::applyDisplayPage(Settings& settings) {
-    if(settings.useFallbackIconTheme()) {
+    if (settings.useFallbackIconTheme()) {
         // only apply the value if icon theme combo box is in use
         // the combo box is hidden when auto-detection of icon theme from xsettings works.
         QString newIconTheme = ui.iconTheme->itemData(ui.iconTheme->currentIndex()).toString();
-        if(newIconTheme != settings.fallbackIconThemeName()) {
+        if (newIconTheme != settings.fallbackIconThemeName()) {
             settings.setFallbackIconThemeName(newIconTheme);
             QIcon::setThemeName(settings.fallbackIconThemeName());
             // update the UI by emitting a style change event
             const auto widgets = QApplication::allWidgets();
-            for(QWidget* widget : widgets) {
+            for (QWidget* widget : widgets) {
                 QEvent event(QEvent::StyleChange);
                 QApplication::sendEvent(widget, &event);
             }
@@ -349,7 +349,7 @@ void PreferencesDialog::applyBehaviorPage(Settings& settings) {
     settings.setViewMode(mode);
     settings.setConfirmDelete(ui.configmDelete->isChecked());
 
-    if(settings.supportTrash()) {
+    if (settings.supportTrash()) {
         settings.setUseTrash(ui.useTrash->isChecked());
     }
 
@@ -411,9 +411,9 @@ void PreferencesDialog::accept() {
 }
 
 void PreferencesDialog::selectPage(const QString& name) {
-    if(!name.isEmpty()) {
+    if (!name.isEmpty()) {
         QWidget* page = findChild<QWidget*>(name + QStringLiteral("Page"));
-        if(page) {
+        if (page) {
             int index = ui.stackedWidget->indexOf(page);
             ui.listWidget->setCurrentRow(index);
         }
@@ -422,7 +422,7 @@ void PreferencesDialog::selectPage(const QString& name) {
 
 void PreferencesDialog::lockMargins(bool lock) {
     ui.vMargin->setDisabled(lock);
-    if(lock) {
+    if (lock) {
         ui.vMargin->setValue(ui.hMargin->value());
         connect(ui.hMargin, static_cast<void (QSpinBox::*)(int)>(&QSpinBox::valueChanged), ui.vMargin, &QSpinBox::setValue);
     }
@@ -432,7 +432,7 @@ void PreferencesDialog::lockMargins(bool lock) {
 }
 
 void PreferencesDialog::restartWarning(bool warn) {
-    if(warn) {
+    if (warn) {
         ++warningCounter_;
     }
     else {

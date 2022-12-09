@@ -40,8 +40,8 @@ View::View(Fm::FolderView::ViewMode _mode, QWidget* parent):
 View::~View() = default;
 
 void View::onFileClicked(int type, const std::shared_ptr<const Fm::FileInfo>& fileInfo) {
-    if(type == MiddleClick) {
-        if(fileInfo && fileInfo->isDir()) {
+    if (type == MiddleClick) {
+        if (fileInfo && fileInfo->isDir()) {
             // fileInfo->path() shouldn't be used directly because
             // it won't work in places like computer:/// or network:///
             Fm::FileInfoList files;
@@ -50,17 +50,17 @@ void View::onFileClicked(int type, const std::shared_ptr<const Fm::FileInfo>& fi
         }
     }
     else {
-        if(type == ActivatedClick) {
-            if(fileLauncher()) { // launch all selected files
+        if (type == ActivatedClick) {
+            if (fileLauncher()) { // launch all selected files
                 auto files = selectedFiles();
-                if(!files.empty()) {
-                    if(files.size() > 20) {
+                if (!files.empty()) {
+                    if (files.size() > 20) {
                         QMessageBox::StandardButton r = QMessageBox::question(window(),
                                                         tr("Many files"),
                                                         tr("Do you want to open these %1 files?", nullptr, files.size()).arg(files.size()),
                                                         QMessageBox::Yes | QMessageBox::No,
                                                         QMessageBox::No);
-                        if(r == QMessageBox::No) {
+                        if (r == QMessageBox::No) {
                             return;
                         }
                     }
@@ -90,7 +90,7 @@ void View::onOpenInTerminal() {
     Application* app = static_cast<Application*>(qApp);
     Fm::FileMenu* menu = static_cast<Fm::FileMenu*>(sender()->parent());
     auto files = menu->files();
-    for(auto& file: files) {
+    for (auto& file: files) {
         app->openFolderInTerminal(file->path());
     }
 }
@@ -109,16 +109,16 @@ void View::prepareFileMenu(Fm::FileMenu* menu) {
     bool all_native = true;
     bool all_directory = true;
     auto files = menu->files();
-    for(auto& fi: files) {
-        if(!fi->isDir()) {
+    for (auto& fi: files) {
+        if (!fi->isDir()) {
             all_directory = false;
         }
-        else if(fi->isDir() && !fi->isNative()) {
+        else if (fi->isDir() && !fi->isNative()) {
             all_native = false;
         }
     }
 
-    if(all_directory) {
+    if (all_directory) {
         QAction* action = new QAction(QIcon::fromTheme(QStringLiteral("window-new")), tr("Open in New T&ab"), menu);
         connect(action, &QAction::triggered, this, &View::onNewTab);
         menu->insertAction(menu->separator1(), action);
@@ -130,17 +130,17 @@ void View::prepareFileMenu(Fm::FileMenu* menu) {
         // TODO: add search
         // action = menu->addAction(_("Search"));
 
-        if(all_native) {
+        if (all_native) {
             action = new QAction(QIcon::fromTheme(QStringLiteral("utilities-terminal")), tr("Open in Termina&l"), menu);
             connect(action, &QAction::triggered, this, &View::onOpenInTerminal);
             menu->insertAction(menu->separator1(), action);
         }
     }
     else {
-        if(menu->pasteAction()) { // nullptr for trash
+        if (menu->pasteAction()) { // nullptr for trash
             menu->pasteAction()->setVisible(false);
         }
-        if(menu->createAction()) {
+        if (menu->createAction()) {
             menu->createAction()->setVisible(false);
         }
     }
@@ -148,7 +148,7 @@ void View::prepareFileMenu(Fm::FileMenu* menu) {
 
 void View::prepareFolderMenu(Fm::FolderMenu* menu) {
     auto folder = folderInfo();
-    if(folder && folder->isNative()) {
+    if (folder && folder->isNative()) {
         QAction *action = new QAction(QIcon::fromTheme(QStringLiteral("utilities-terminal")), tr("Open in Termina&l"), menu);
         connect(action, &QAction::triggered, this, [folder] {
             Application* app = static_cast<Application*>(qApp);
@@ -175,29 +175,29 @@ void View::updateFromSettings(Settings& settings) {
     setScrollPerPixel(settings.scrollPerPixel());
 
     Fm::ProxyFolderModel* proxyModel = model();
-    if(proxyModel) {
+    if (proxyModel) {
         proxyModel->setShowThumbnails(settings.showThumbnails());
         proxyModel->setBackupAsHidden(settings.backupAsHidden());
     }
 }
 
 void View::launchFiles(Fm::FileInfoList files, bool inNewTabs) {
-    if(fileLauncher()) {
-        if(auto launcher = dynamic_cast<Launcher*>(fileLauncher())) {
+    if (fileLauncher()) {
+        if (auto launcher = dynamic_cast<Launcher*>(fileLauncher())) {
             // this happens on desktop
-            if(!launcher->hasMainWindow()) {
-                if(!inNewTabs && launcher->openWithDefaultFileManager()) {
+            if (!launcher->hasMainWindow()) {
+                if (!inNewTabs && launcher->openWithDefaultFileManager()) {
                     launcher->launchFiles(nullptr, std::move(files));
                     return;
                 }
-                if(inNewTabs || static_cast<Application*>(qApp)->settings().singleWindowMode()) {
+                if (inNewTabs || static_cast<Application*>(qApp)->settings().singleWindowMode()) {
                     MainWindow* window = MainWindow::lastActive();
                     // if there is no last active window, find the last created window
-                    if(window == nullptr) {
+                    if (window == nullptr) {
                         QWidgetList windows = qApp->topLevelWidgets();
-                        for(int i = 0; i < windows.size(); ++i) {
+                        for (int i = 0; i < windows.size(); ++i) {
                             auto win = windows.at(windows.size() - 1 - i);
-                            if(win->inherits("PCManFM::MainWindow")) {
+                            if (win->inherits("PCManFM::MainWindow")) {
                                 window = static_cast<MainWindow*>(win);
                                 break;
                             }
@@ -209,7 +209,7 @@ void View::launchFiles(Fm::FileInfoList files, bool inNewTabs) {
                     return;
                 }
             }
-            if(inNewTabs) {
+            if (inNewTabs) {
                 launcher->openInNewTab();
             }
         }

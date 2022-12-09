@@ -153,10 +153,10 @@ QString Settings::xdgUserConfigDir() {
     QString dirName;
     // WARNING: Don't use XDG_CONFIG_HOME with root because it might
     // give the user config directory if gksu-properties is set to su.
-    if(geteuid() != 0) { // non-root user
+    if (geteuid() != 0) { // non-root user
         dirName = QStandardPaths::writableLocation(QStandardPaths::ConfigLocation);
     }
-    if(dirName.isEmpty()) {
+    if (dirName.isEmpty()) {
         dirName = QDir::homePath() + QLatin1String("/.config");
     }
     return dirName;
@@ -169,16 +169,16 @@ QString Settings::profileDir(QString profile, bool useFallback) {
     QDir dir(dirName);
 
     // if user config dir does not exist, try system-wide config dirs instead
-    if(!dir.exists() && useFallback) {
+    if (!dir.exists() && useFallback) {
         QString fallbackDir;
         const QStringList confList = QStandardPaths::standardLocations(QStandardPaths::ConfigLocation);
-        for(const auto &thisConf : confList) {
+        for (const auto &thisConf : confList) {
             fallbackDir = thisConf + QStringLiteral("/pcmanfm-qt/") + profile;
-            if(fallbackDir == dirName) {
+            if (fallbackDir == dirName) {
                 continue;
             }
             dir.setPath(fallbackDir);
-            if(dir.exists()) {
+            if (dir.exists()) {
                 dirName = fallbackDir;
                 break;
             }
@@ -206,7 +206,7 @@ bool Settings::loadFile(QString filePath) {
     QSettings settings(filePath, QSettings::IniFormat);
     settings.beginGroup(QStringLiteral("System"));
     fallbackIconThemeName_ = settings.value(QStringLiteral("FallbackIconThemeName")).toString();
-    if(fallbackIconThemeName_.isEmpty()) {
+    if (fallbackIconThemeName_.isEmpty()) {
         // FIXME: we should choose one from installed icon themes or get
         // the value from XSETTINGS instead of hard code a fallback value.
         fallbackIconThemeName_ = QLatin1String("oxygen"); // fallback icon theme name
@@ -252,7 +252,7 @@ bool Settings::loadFile(QString filePath) {
     desktopBgColor_.setNamedColor(settings.value(QStringLiteral("BgColor"), QStringLiteral("#000000")).toString());
     desktopFgColor_.setNamedColor(settings.value(QStringLiteral("FgColor"), QStringLiteral("#ffffff")).toString());
     desktopShadowColor_.setNamedColor(settings.value(QStringLiteral("ShadowColor"), QStringLiteral("#000000")).toString());
-    if(settings.contains(QStringLiteral("Font"))) {
+    if (settings.contains(QStringLiteral("Font"))) {
         desktopFont_.fromString(settings.value(QStringLiteral("Font")).toString());
     }
     else {
@@ -271,7 +271,7 @@ bool Settings::loadFile(QString filePath) {
     desktopCellMargins_ = (settings.value(QStringLiteral("DesktopCellMargins"), QSize(3, 1)).toSize()
                            .expandedTo(QSize(0, 0))).boundedTo(QSize(48, 48));
     auto l = settings.value(QStringLiteral("WorkAreaMargins")).toList();
-    if(l.size() >= 4) {
+    if (l.size() >= 4) {
         workAreaMargins_.setLeft(qBound(0, l.at(0).toInt(), 200));
         workAreaMargins_.setTop(qBound(0, l.at(1).toInt(), 200));
         workAreaMargins_.setRight(qBound(0, l.at(2).toInt(), 200));
@@ -524,7 +524,7 @@ bool Settings::saveFile(QString filePath) {
 
 void Settings::setRecentFilesNumber(int n) {
     recentFilesNumber_ = qBound(0, n, 50);
-    if(recentFilesNumber_ == 0) {
+    if (recentFilesNumber_ == 0) {
         clearRecentFiles();
     }
 }
@@ -535,16 +535,16 @@ void Settings::clearRecentFiles() {
 }
 
 void Settings::addRecentFile(const QString& file) {
-    if(recentFilesNumber_ > 0) {
+    if (recentFilesNumber_ > 0) {
         recentFiles_.removeAll(file);
         recentFiles_.prepend(file);
-        while(recentFiles_.size() > recentFilesNumber_)
+        while (recentFiles_.size() > recentFilesNumber_)
             recentFiles_.removeLast();
     }
 }
 
 void Settings::loadRecentFiles() {
-    if(recentFilesNumber_ == 0) {
+    if (recentFilesNumber_ == 0) {
         return;
     }
     // load only from the user-specific ppath
@@ -557,7 +557,7 @@ void Settings::loadRecentFiles() {
 
     recentFiles_.removeAll(QString());
     recentFiles_.removeDuplicates();
-    while(recentFiles_.count() > recentFilesNumber_) {
+    while (recentFiles_.count() > recentFilesNumber_) {
         recentFiles_.removeLast();
     }
 }
@@ -578,41 +578,41 @@ void Settings::clearSearchHistory() {
 
 void Settings::setMaxSearchHistory(int max) {
     maxSearchHistory_ = qMax(max, 0);
-    if(maxSearchHistory_ == 0) {
+    if (maxSearchHistory_ == 0) {
         namePatterns_.clear();
         contentPatterns_.clear();
     }
     else {
-        while(namePatterns_.size() > maxSearchHistory_) {
+        while (namePatterns_.size() > maxSearchHistory_) {
             namePatterns_.removeLast();
         }
-        while(contentPatterns_.size() > maxSearchHistory_) {
+        while (contentPatterns_.size() > maxSearchHistory_) {
             contentPatterns_.removeLast();
         }
     }
 }
 
 void Settings::addNamePattern(const QString& pattern) {
-    if(maxSearchHistory_ == 0 || pattern.isEmpty()
+    if (maxSearchHistory_ == 0 || pattern.isEmpty()
        // "*" is too trivial with a regex search
        || (searchNameRegexp_ && pattern == QLatin1String("*"))) {
         return;
     }
     namePatterns_.removeOne(pattern);
     namePatterns_.prepend(pattern);
-    while(namePatterns_.size() > maxSearchHistory_) {
+    while (namePatterns_.size() > maxSearchHistory_) {
         namePatterns_.removeLast();
     }
 }
 
 void Settings::addContentPattern(const QString& pattern) {
-    if(maxSearchHistory_ == 0 || pattern.isEmpty()
+    if (maxSearchHistory_ == 0 || pattern.isEmpty()
        || (searchContentRegexp_ && pattern == QLatin1String("*"))) {
         return;
     }
     contentPatterns_.removeOne(pattern);
     contentPatterns_.prepend(pattern);
-    while(contentPatterns_.size() > maxSearchHistory_) {
+    while (contentPatterns_.size() > maxSearchHistory_) {
         contentPatterns_.removeLast();
     }
 }
@@ -621,7 +621,7 @@ const QList<int> & Settings::iconSizes(IconType type) {
     static const QList<int> sizes_big = {96, 72, 64, 48, 32};
     static const QList<int> sizes_thumbnail = {256, 224, 192, 160, 128, 96, 64};
     static const QList<int> sizes_small = {48, 32, 24, 22, 16};
-    switch(type) {
+    switch (type) {
     case Big:
         return sizes_big;
         break;
@@ -638,7 +638,7 @@ const QList<int> & Settings::iconSizes(IconType type) {
 int Settings::toIconSize(int size, IconType type) const {
     const QList<int> & sizes = iconSizes(type);
     for (const auto & s : sizes) {
-        if(size >= s) {
+        if (size >= s) {
             return s;
         }
     }
@@ -646,7 +646,7 @@ int Settings::toIconSize(int size, IconType type) const {
 }
 
 static const char* bookmarkOpenMethodToString(OpenDirTargetType value) {
-    switch(value) {
+    switch (value) {
     case OpenInCurrentTab:
     default:
         return "current_tab";
@@ -662,13 +662,13 @@ static const char* bookmarkOpenMethodToString(OpenDirTargetType value) {
 
 static OpenDirTargetType bookmarkOpenMethodFromString(const QString str) {
 
-    if(str == QStringLiteral("new_tab")) {
+    if (str == QStringLiteral("new_tab")) {
         return OpenInNewTab;
     }
-    else if(str == QStringLiteral("new_window")) {
+    else if (str == QStringLiteral("new_window")) {
         return OpenInNewWindow;
     }
-    else if(str == QStringLiteral("last_window")) {
+    else if (str == QStringLiteral("last_window")) {
         return OpenInLastActiveWindow;
     }
     return OpenInCurrentTab;
@@ -676,7 +676,7 @@ static OpenDirTargetType bookmarkOpenMethodFromString(const QString str) {
 
 static const char* viewModeToString(Fm::FolderView::ViewMode value) {
     const char* ret;
-    switch(value) {
+    switch (value) {
     case Fm::FolderView::IconMode:
     default:
         ret = "icon";
@@ -696,16 +696,16 @@ static const char* viewModeToString(Fm::FolderView::ViewMode value) {
 
 Fm::FolderView::ViewMode viewModeFromString(const QString str) {
     Fm::FolderView::ViewMode ret;
-    if(str == QLatin1String("icon")) {
+    if (str == QLatin1String("icon")) {
         ret = Fm::FolderView::IconMode;
     }
-    else if(str == QLatin1String("compact")) {
+    else if (str == QLatin1String("compact")) {
         ret = Fm::FolderView::CompactMode;
     }
-    else if(str == QLatin1String("detailed")) {
+    else if (str == QLatin1String("detailed")) {
         ret = Fm::FolderView::DetailedListMode;
     }
-    else if(str == QLatin1String("thumbnail")) {
+    else if (str == QLatin1String("thumbnail")) {
         ret = Fm::FolderView::ThumbnailMode;
     }
     else {
@@ -724,7 +724,7 @@ static Qt::SortOrder sortOrderFromString(const QString str) {
 
 static const char* sortColumnToString(Fm::FolderModel::ColumnId value) {
     const char* ret;
-    switch(value) {
+    switch (value) {
     case Fm::FolderModel::ColumnFileName:
     default:
         ret = "name";
@@ -756,28 +756,28 @@ static const char* sortColumnToString(Fm::FolderModel::ColumnId value) {
 
 static Fm::FolderModel::ColumnId sortColumnFromString(const QString str) {
     Fm::FolderModel::ColumnId ret;
-    if(str == QLatin1String("name")) {
+    if (str == QLatin1String("name")) {
         ret = Fm::FolderModel::ColumnFileName;
     }
-    else if(str == QLatin1String("type")) {
+    else if (str == QLatin1String("type")) {
         ret = Fm::FolderModel::ColumnFileType;
     }
-    else if(str == QLatin1String("size")) {
+    else if (str == QLatin1String("size")) {
         ret = Fm::FolderModel::ColumnFileSize;
     }
-    else if(str == QLatin1String("mtime")) {
+    else if (str == QLatin1String("mtime")) {
         ret = Fm::FolderModel::ColumnFileMTime;
     }
-    else if(str == QLatin1String("crtime")) {
+    else if (str == QLatin1String("crtime")) {
         ret = Fm::FolderModel::ColumnFileCrTime;
     }
-    else if(str == QLatin1String("dtime")) {
+    else if (str == QLatin1String("dtime")) {
         ret = Fm::FolderModel::ColumnFileDTime;
     }
-    else if(str == QLatin1String("owner")) {
+    else if (str == QLatin1String("owner")) {
         ret = Fm::FolderModel::ColumnFileOwner;
     }
-    else if(str == QLatin1String("group")) {
+    else if (str == QLatin1String("group")) {
         ret = Fm::FolderModel::ColumnFileGroup;
     }
     else {
@@ -788,7 +788,7 @@ static Fm::FolderModel::ColumnId sortColumnFromString(const QString str) {
 
 static const char* wallpaperModeToString(int value) {
     const char* ret;
-    switch(value) {
+    switch (value) {
     case DesktopWindow::WallpaperNone:
     default:
         ret = "none";
@@ -814,19 +814,19 @@ static const char* wallpaperModeToString(int value) {
 
 static int wallpaperModeFromString(const QString str) {
     int ret;
-    if(str == QLatin1String("stretch")) {
+    if (str == QLatin1String("stretch")) {
         ret = DesktopWindow::WallpaperStretch;
     }
-    else if(str == QLatin1String("fit")) {
+    else if (str == QLatin1String("fit")) {
         ret = DesktopWindow::WallpaperFit;
     }
-    else if(str == QLatin1String("center")) {
+    else if (str == QLatin1String("center")) {
         ret = DesktopWindow::WallpaperCenter;
     }
-    else if(str == QLatin1String("tile")) {
+    else if (str == QLatin1String("tile")) {
         ret = DesktopWindow::WallpaperTile;
     }
-    else if(str == QLatin1String("zoom")) {
+    else if (str == QLatin1String("zoom")) {
         ret = DesktopWindow::WallpaperZoom;
     }
     else {
@@ -837,7 +837,7 @@ static int wallpaperModeFromString(const QString str) {
 
 static const char* sidePaneModeToString(Fm::SidePane::Mode value) {
     const char* ret;
-    switch(value) {
+    switch (value) {
     case Fm::SidePane::ModePlaces:
     default:
         ret = "places";
@@ -854,10 +854,10 @@ static const char* sidePaneModeToString(Fm::SidePane::Mode value) {
 
 static Fm::SidePane::Mode sidePaneModeFromString(const QString& str) {
     Fm::SidePane::Mode ret;
-    if(str == QLatin1String("none")) {
+    if (str == QLatin1String("none")) {
         ret = Fm::SidePane::ModeNone;
     }
-    else if(str == QLatin1String("dirtree")) {
+    else if (str == QLatin1String("dirtree")) {
         ret = Fm::SidePane::ModeDirTree;
     }
     else {
@@ -878,27 +878,27 @@ FolderSettings Settings::loadFolderSettings(const Fm::FilePath& path) const {
     Fm::FolderConfig cfg(path);
     bool customized = !cfg.isEmpty();
     Fm::FilePath inheritedPath;
-    if(!customized
+    if (!customized
        && !path.isParentOf(path)) { // WARNING: menu://applications/ is its own parent
         inheritedPath = path.parent();
-        while(inheritedPath.isValid()) {
+        while (inheritedPath.isValid()) {
             Fm::GErrorPtr err;
             cfg.close(err);
             cfg.open(inheritedPath);
-            if(!cfg.isEmpty()) {
+            if (!cfg.isEmpty()) {
                 bool recursive;
-                if(cfg.getBoolean("Recursive", &recursive) && recursive) {
+                if (cfg.getBoolean("Recursive", &recursive) && recursive) {
                     break;
                 }
             }
-            if(inheritedPath.isParentOf(inheritedPath)) {
+            if (inheritedPath.isParentOf(inheritedPath)) {
                 inheritedPath = Fm::FilePath(); // invalidate it
                 break;
             }
             inheritedPath = inheritedPath.parent();
         }
     }
-    if(!customized && !inheritedPath.isValid()) {
+    if (!customized && !inheritedPath.isValid()) {
         // the folder is not customized and does not inherit settings; use the general settings
         settings.setSortOrder(sortOrder());
         settings.setSortColumn(sortColumn());
@@ -910,7 +910,7 @@ FolderSettings Settings::loadFolderSettings(const Fm::FilePath& path) const {
     }
     else {
         // either the folder is customized or it inherits settings; load folder-specific settings
-        if(!inheritedPath.isValid()) {
+        if (!inheritedPath.isValid()) {
             settings.setCustomized(true);
         }
         else {
@@ -920,46 +920,46 @@ FolderSettings Settings::loadFolderSettings(const Fm::FilePath& path) const {
         char* str;
         // load sorting
         str = cfg.getString("SortOrder");
-        if(str != nullptr) {
+        if (str != nullptr) {
             settings.setSortOrder(sortOrderFromString(QString::fromUtf8(str)));
             g_free(str);
         }
 
         str = cfg.getString("SortColumn");
-        if(str != nullptr) {
+        if (str != nullptr) {
             settings.setSortColumn(sortColumnFromString(QString::fromUtf8(str)));
             g_free(str);
         }
 
         str = cfg.getString("ViewMode");
-        if(str != nullptr) {
+        if (str != nullptr) {
             // set view mode
             settings.setViewMode(viewModeFromString(QString::fromUtf8(str)));
             g_free(str);
         }
 
         bool show_hidden;
-        if(cfg.getBoolean("ShowHidden", &show_hidden)) {
+        if (cfg.getBoolean("ShowHidden", &show_hidden)) {
             settings.setShowHidden(show_hidden);
         }
 
         bool folder_first;
-        if(cfg.getBoolean("SortFolderFirst", &folder_first)) {
+        if (cfg.getBoolean("SortFolderFirst", &folder_first)) {
             settings.setSortFolderFirst(folder_first);
         }
 
         bool hidden_last;
-        if(cfg.getBoolean("SortHiddenLast", &hidden_last)) {
+        if (cfg.getBoolean("SortHiddenLast", &hidden_last)) {
             settings.setSortHiddenLast(hidden_last);
         }
 
         bool case_sensitive;
-        if(cfg.getBoolean("SortCaseSensitive", &case_sensitive)) {
+        if (cfg.getBoolean("SortCaseSensitive", &case_sensitive)) {
             settings.setSortCaseSensitive(case_sensitive);
         }
 
         bool recursive;
-        if(cfg.getBoolean("Recursive", &recursive)) {
+        if (cfg.getBoolean("Recursive", &recursive)) {
             settings.setRecursive(recursive);
         }
     }
@@ -967,7 +967,7 @@ FolderSettings Settings::loadFolderSettings(const Fm::FilePath& path) const {
 }
 
 void Settings::saveFolderSettings(const Fm::FilePath& path, const FolderSettings& settings) {
-    if(path) {
+    if (path) {
         // ensure that we have the libfm dir
         QString dirName = xdgUserConfigDir() + QStringLiteral("/libfm");
         QDir().mkpath(dirName);  // if libfm config dir does not exist, create it
@@ -985,7 +985,7 @@ void Settings::saveFolderSettings(const Fm::FilePath& path, const FolderSettings
 }
 
 void Settings::clearFolderSettings(const Fm::FilePath& path) const {
-    if(path) {
+    if (path) {
         Fm::FolderConfig cfg(path);
         cfg.purge();
     }

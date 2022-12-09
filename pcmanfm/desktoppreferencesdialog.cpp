@@ -56,7 +56,7 @@ DesktopPreferencesDialog::DesktopPreferencesDialog(QWidget* parent, Qt::WindowFl
   ui.wallpaperMode->addItem(tr("Tile the image to fill the entire screen"), DesktopWindow::WallpaperTile);
   ui.wallpaperMode->addItem(tr("Zoom the image to fill the entire screen"), DesktopWindow::WallpaperZoom);
   int i;
-  switch(settings.wallpaperMode()) {
+  switch (settings.wallpaperMode()) {
     case DesktopWindow::WallpaperNone:
       i = 0;
       break;
@@ -102,10 +102,10 @@ DesktopPreferencesDialog::DesktopPreferencesDialog(QWidget* parent, Qt::WindowFl
   ui.randomize->setChecked(settings.wallpaperRandomize());
   connect(ui.folderBrowse, &QPushButton::clicked, this, &DesktopPreferencesDialog::onFolderBrowseClicked);
 
-  for(std::size_t i = 0; i < G_N_ELEMENTS(iconSizes); ++i) {
+  for (std::size_t i = 0; i < G_N_ELEMENTS(iconSizes); ++i) {
     int size = iconSizes[i];
     ui.iconSize->addItem(QStringLiteral("%1 x %1").arg(size), size);
-    if(settings.desktopIconSize() == size)
+    if (settings.desktopIconSize() == size)
       ui.iconSize->setCurrentIndex(i);
   }
 
@@ -160,7 +160,7 @@ void DesktopPreferencesDialog::setupDesktopFolderUi()
 
 void DesktopPreferencesDialog::lockMargins(bool lock) {
   ui.vMargin->setDisabled(lock);
-  if(lock) {
+  if (lock) {
     ui.vMargin->setValue(ui.hMargin->value());
     connect(ui.hMargin, static_cast<void (QSpinBox::*)(int)>(&QSpinBox::valueChanged), ui.vMargin, &QSpinBox::setValue);
   }
@@ -183,7 +183,7 @@ void DesktopPreferencesDialog::applySettings()
 
   settings.setWallpaperDir(ui.imageFolder->text());
   int interval = 0;
-  if(ui.slideShow->isChecked())
+  if (ui.slideShow->isChecked())
     interval = (ui.minutes->value() + 60 * ui.hours->value()) * 60000;
   settings.setSlideShowInterval(interval);
   settings.setWallpaperRandomize(ui.randomize->isChecked());
@@ -196,16 +196,16 @@ void DesktopPreferencesDialog::applySettings()
   settings.setDesktopShadowColor(ui.shadowColor->color());
 
   QStringList ds;
-  if(ui.homeBox->isChecked()) {
+  if (ui.homeBox->isChecked()) {
       ds << QLatin1String("Home");
   }
-  if(ui.trashBox->isChecked()) {
+  if (ui.trashBox->isChecked()) {
       ds << QLatin1String("Trash");
   }
-  if(ui.computerBox->isChecked()) {
+  if (ui.computerBox->isChecked()) {
       ds << QLatin1String("Computer");
   }
-  if(ui.networkBox->isChecked()) {
+  if (ui.networkBox->isChecked()) {
       ds << QLatin1String("Network");
   }
   settings.setDesktopShortcuts(ds);
@@ -268,7 +268,7 @@ void DesktopPreferencesDialog::onBrowseClicked() {
   filter = tr("Image Files");
   filter += QLatin1String(" (");
   const QList<QByteArray> formats = QImageReader::supportedImageFormats();
-  for(const QByteArray& format : formats) {
+  for (const QByteArray& format : formats) {
     filter += QLatin1String("*.");
     filter += QString::fromUtf8(format.toLower());
     filter += QLatin1Char(' ');
@@ -279,10 +279,10 @@ void DesktopPreferencesDialog::onBrowseClicked() {
 
   // select an appropriate file
   QString path = ui.imageFile->text();
-  if(path.isEmpty() || !QFile::exists(path)) {
+  if (path.isEmpty() || !QFile::exists(path)) {
       dlg.setDirectory(QUrl::fromLocalFile(QStandardPaths::writableLocation(QStandardPaths::PicturesLocation)));
   }
-  else if(QFileInfo(path).isDir()) {
+  else if (QFileInfo(path).isDir()) {
       dlg.setDirectory(QUrl::fromLocalFile(path));
   }
   else { // the path is a file
@@ -291,7 +291,7 @@ void DesktopPreferencesDialog::onBrowseClicked() {
   }
 
   connect(&dlg, &QDialog::finished, [this, &dlg, &settings](int result) {
-    if(result == QDialog::Accepted) {
+    if (result == QDialog::Accepted) {
       QString filename;
       filename = dlg.selectedFiles().constFirst().toLocalFile();
       ui.imageFile->setText(filename);
@@ -311,16 +311,16 @@ void DesktopPreferencesDialog::onFolderBrowseClicked() {
 
   // select an appropriate dir
   QString path = ui.imageFolder->text();
-  if(path.isEmpty() || !QFile::exists(path)) {
+  if (path.isEmpty() || !QFile::exists(path)) {
       path = QStandardPaths::writableLocation(QStandardPaths::PicturesLocation);
   }
-  else if(!QFileInfo(path).isDir()) {
+  else if (!QFileInfo(path).isDir()) {
       path = path.section(QLatin1String("/"), 0, -2);
   }
   dlg.setDirectory(path.section(QLatin1String("/"), 0, -2));
   dlg.selectFile(path);
 
-  if(dlg.exec() == QDialog::Accepted) {
+  if (dlg.exec() == QDialog::Accepted) {
     QString foldername;
     foldername = dlg.selectedFiles().constFirst();
     ui.imageFolder->setText(foldername);
@@ -342,7 +342,7 @@ void DesktopPreferencesDialog::onBrowseDesktopFolderClicked()
 
 void DesktopPreferencesDialog::selectPage(const QString& name) {
   QWidget* page = findChild<QWidget*>(name + QStringLiteral("Page"));
-  if(page)
+  if (page)
     ui.tabWidget->setCurrentWidget(page);
 }
 

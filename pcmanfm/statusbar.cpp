@@ -43,7 +43,7 @@ void Label::paintEvent(QPaintEvent* /*event*/) {
         elidedText_ = fontMetrics().elidedText(txt, Qt::ElideMiddle, cr.width());
     }
     // ... then, draw the (elided) text
-    if(!elidedText_.isEmpty()) {
+    if (!elidedText_.isEmpty()) {
         QPainter painter(this);
         QStyleOption opt;
         opt.initFrom(this);
@@ -67,7 +67,7 @@ StatusBar::StatusBar(QWidget *parent):
 }
 
 StatusBar::~StatusBar() {
-    if(messageTimer_) {
+    if (messageTimer_) {
         messageTimer_->stop();
         delete messageTimer_;
     }
@@ -77,13 +77,13 @@ void StatusBar::showMessage(const QString &message, int timeout) {
     // don't show the message immediately
     lastMessage_ = message;
     lastTimeOut_ = timeout;
-    if(!messageTimer_->isActive()) {
+    if (!messageTimer_->isActive()) {
         messageTimer_->start();
     }
 }
 
 void StatusBar::reallyShowMessage() {
-    if(lastTimeOut_ == 0) {
+    if (lastTimeOut_ == 0) {
         // set the text on the label to prevent its disappearance on focusing menubar items
         // and also remove newlines and text tabs because they result in a wrong eliding
         statusLabel_->setText(lastMessage_.replace(QLatin1Char('\n'), QLatin1Char(' '))

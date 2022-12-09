@@ -21,7 +21,7 @@ ConnectServerDialog::ConnectServerDialog(QWidget *parent): QDialog(parent) {
 
   connect(ui.host, &QLineEdit::textChanged, this, &ConnectServerDialog::checkInput);
   connect(ui.userName, &QLineEdit::textChanged, this, &ConnectServerDialog::checkInput);
-  for(const auto& serverType : const_cast<const QList<ServerType>&>(serverTypes)) {
+  for (const auto& serverType : const_cast<const QList<ServerType>&>(serverTypes)) {
     ui.serverType->addItem(serverType.name);
   }
 
@@ -40,20 +40,20 @@ QString ConnectServerDialog::uriText() {
   // make an URI from the data
   uri = QString::fromLatin1(serverType.scheme);
   uri += QStringLiteral("://");
-  if(ui.loginAsUser->isChecked()) {
+  if (ui.loginAsUser->isChecked()) {
     uri += ui.userName->text();
     uri += QLatin1Char('@');
   }
 
   uri += ui.host->text();
   int port = ui.port->value();
-  if(port != serverType.defaultPort) {
+  if (port != serverType.defaultPort) {
     uri += QLatin1Char(':');
     uri += QString::number(port);
   }
 
   QString path = ui.path->text();
-  if(path.isEmpty() || path[0] != QLatin1Char('/')) {
+  if (path.isEmpty() || path[0] != QLatin1Char('/')) {
     uri += QLatin1Char('/');
   }
   uri += path;
@@ -65,7 +65,7 @@ void ConnectServerDialog::onCurrentIndexChanged(int /*index*/) {
   const auto& serverType = serverTypes[serverTypeIdx];
   ui.port->setValue(serverType.defaultPort);
   ui.ananymousLogin->setEnabled(serverType.canAnonymous);
-  if(serverType.canAnonymous)
+  if (serverType.canAnonymous)
     ui.ananymousLogin->setChecked(true);
   else
     ui.loginAsUser->setChecked(true);
@@ -75,10 +75,10 @@ void ConnectServerDialog::onCurrentIndexChanged(int /*index*/) {
 
 void ConnectServerDialog::checkInput() {
   bool valid = true;
-  if(ui.host->text().isEmpty()) {
+  if (ui.host->text().isEmpty()) {
     valid = false;
   }
-  else if(ui.loginAsUser->isChecked() && ui.userName->text().isEmpty()) {
+  else if (ui.loginAsUser->isChecked() && ui.userName->text().isEmpty()) {
     valid = false;
   }
   ui.buttonBox->button(QDialogButtonBox::Ok)->setEnabled(valid);

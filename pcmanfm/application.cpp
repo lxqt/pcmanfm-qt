@@ -67,7 +67,7 @@ static const char* ifaceName = "org.pcmanfm.Application";
 
 int ProxyStyle::styleHint(StyleHint hint, const QStyleOption* option, const QWidget* widget, QStyleHintReturn* returnData) const {
     Application* app = static_cast<Application*>(qApp);
-    if(hint == QStyle::SH_ItemView_ActivateItemOnSingleClick) {
+    if (hint == QStyle::SH_ItemView_ActivateItemOnSingleClick) {
         if (app->settings().singleClick()) {
             return true;
         }
@@ -101,7 +101,7 @@ Application::Application(int& argc, char** argv):
 
     // QDBusConnection::sessionBus().registerObject("/org/pcmanfm/Application", this);
     QDBusConnection dbus = QDBusConnection::sessionBus();
-    if(dbus.registerService(QLatin1String(serviceName))) {
+    if (dbus.registerService(QLatin1String(serviceName))) {
         // we successfully registered the service
         isPrimaryInstance = true;
         setStyle(new ProxyStyle());
@@ -119,8 +119,8 @@ Application::Application(int& argc, char** argv):
         QDBusInterface* lxqtSessionIface = new QDBusInterface(
             QStringLiteral("org.lxqt.session"),
             QStringLiteral("/LXQtSession"));
-        if(lxqtSessionIface) {
-            if(lxqtSessionIface->isValid()) {
+        if (lxqtSessionIface) {
+            if (lxqtSessionIface->isValid()) {
                 lxqtRunning_ = true;
                 userDesktopFolder_ = XdgDir::readDesktopDir();
                 initWatch();
@@ -134,11 +134,11 @@ Application::Application(int& argc, char** argv):
         // We allow queuing of our request in case another file manager has already registered it.
         static const QString fileManagerService = QStringLiteral("org.freedesktop.FileManager1");
         connect(dbus.interface(), &QDBusConnectionInterface::serviceRegistered, this, [this](const QString& service) {
-                if(fileManagerService == service) {
+                if (fileManagerService == service) {
                     QDBusConnection dbus = QDBusConnection::sessionBus();
                     disconnect(dbus.interface(), &QDBusConnectionInterface::serviceRegistered, this, nullptr);
                     new ApplicationAdaptorFreeDesktopFileManager(this);
-                    if(!dbus.registerObject(QStringLiteral("/org/freedesktop/FileManager1"), this)) {
+                    if (!dbus.registerObject(QStringLiteral("/org/freedesktop/FileManager1"), this)) {
                         qDebug() << "Can't register /org/freedesktop/FileManager1:" << dbus.lastError().message();
                     }
                 }
@@ -155,18 +155,18 @@ Application::Application(int& argc, char** argv):
 Application::~Application() {
     //desktop()->removeEventFilter(this);
 
-    if(volumeMonitor_) {
+    if (volumeMonitor_) {
         g_signal_handlers_disconnect_by_func(volumeMonitor_, gpointer(onVolumeAdded), this);
         g_object_unref(volumeMonitor_);
     }
 
-    // if(enableDesktopManager_)
+    // if (enableDesktopManager_)
     //   removeNativeEventFilter(this);
 }
 
 void Application::initWatch() {
     QFile file_(QStandardPaths::writableLocation(QStandardPaths::ConfigLocation) + QStringLiteral("/user-dirs.dirs"));
-    if(! file_.open(QIODevice::ReadOnly | QIODevice::Text)) {
+    if (! file_.open(QIODevice::ReadOnly | QIODevice::Text)) {
         qDebug() << Q_FUNC_INFO << "Could not read: " << userDirsFile_;
         userDirsFile_ = QString();
     }
@@ -222,13 +222,13 @@ bool Application::parseCommandLineArgs() {
 
     parser.process(arguments());
 
-    if(isPrimaryInstance) {
+    if (isPrimaryInstance) {
         qDebug("isPrimaryInstance");
 
-        if(parser.isSet(daemonOption)) {
+        if (parser.isSet(daemonOption)) {
             daemonMode_ = true;
         }
-        if(parser.isSet(profileOption)) {
+        if (parser.isSet(profileOption)) {
             profileName_ = parser.value(profileOption);
         }
 
@@ -242,47 +242,47 @@ bool Application::parseCommandLineArgs() {
         // decrease the cache size to reduce memory usage
         QPixmapCache::setCacheLimit(2048);
 
-        if(settings_.useFallbackIconTheme()) {
+        if (settings_.useFallbackIconTheme()) {
             QIcon::setThemeName(settings_.fallbackIconThemeName());
         }
 
         // desktop icon management
-        if(parser.isSet(desktopOption)) {
+        if (parser.isSet(desktopOption)) {
             desktopManager(true);
             keepRunning = true;
         }
-        else if(parser.isSet(desktopOffOption)) {
+        else if (parser.isSet(desktopOffOption)) {
             desktopManager(false);
         }
 
-        if(parser.isSet(desktopPrefOption)) { // desktop preference dialog
+        if (parser.isSet(desktopPrefOption)) { // desktop preference dialog
             desktopPrefrences(parser.value(desktopPrefOption));
             keepRunning = true;
         }
-        else if(parser.isSet(findFilesOption)) { // file searching utility
+        else if (parser.isSet(findFilesOption)) { // file searching utility
             findFiles(parser.positionalArguments());
             keepRunning = true;
         }
-        else if(parser.isSet(showPrefOption)) { // preferences dialog
+        else if (parser.isSet(showPrefOption)) { // preferences dialog
             preferences(parser.value(showPrefOption));
             keepRunning = true;
         }
-        else if(parser.isSet(setWallpaperOption) || parser.isSet(wallpaperModeOption)) { // set wall paper
+        else if (parser.isSet(setWallpaperOption) || parser.isSet(wallpaperModeOption)) { // set wall paper
             setWallpaper(parser.value(setWallpaperOption), parser.value(wallpaperModeOption));
         }
         else {
-            if(!parser.isSet(desktopOption) && !parser.isSet(desktopOffOption)) {
+            if (!parser.isSet(desktopOption) && !parser.isSet(desktopOffOption)) {
                 bool reopenLastTabs = false;
                 QStringList paths = parser.positionalArguments();
-                if(paths.isEmpty()) {
+                if (paths.isEmpty()) {
                     // if no path is specified and we're using daemon mode,
                     // don't open current working directory
-                    if(!daemonMode_) {
+                    if (!daemonMode_) {
                         reopenLastTabs = true; // open last tab paths only if no path is specified
                         paths.push_back(QDir::currentPath());
                     }
                 }
-                if(!paths.isEmpty()) {
+                if (!paths.isEmpty()) {
                     launchFiles(QDir::currentPath(), paths, parser.isSet(newWindowOption), reopenLastTabs);
                 }
                 keepRunning = true;
@@ -292,35 +292,35 @@ bool Application::parseCommandLineArgs() {
     else {
         QDBusConnection dbus = QDBusConnection::sessionBus();
         QDBusInterface iface(QLatin1String(serviceName), QStringLiteral("/Application"), QLatin1String(ifaceName), dbus, this);
-        if(parser.isSet(quitOption)) {
+        if (parser.isSet(quitOption)) {
             iface.call(QStringLiteral("quit"));
             return false;
         }
 
-        if(parser.isSet(desktopOption)) {
+        if (parser.isSet(desktopOption)) {
             iface.call(QStringLiteral("desktopManager"), true);
         }
-        else if(parser.isSet(desktopOffOption)) {
+        else if (parser.isSet(desktopOffOption)) {
             iface.call(QStringLiteral("desktopManager"), false);
         }
 
-        if(parser.isSet(desktopPrefOption)) { // desktop preference dialog
+        if (parser.isSet(desktopPrefOption)) { // desktop preference dialog
             iface.call(QStringLiteral("desktopPrefrences"), parser.value(desktopPrefOption));
         }
-        else if(parser.isSet(findFilesOption)) { // file searching utility
+        else if (parser.isSet(findFilesOption)) { // file searching utility
             iface.call(QStringLiteral("findFiles"), parser.positionalArguments());
         }
-        else if(parser.isSet(showPrefOption)) { // preferences dialog
+        else if (parser.isSet(showPrefOption)) { // preferences dialog
             iface.call(QStringLiteral("preferences"), parser.value(showPrefOption));
         }
-        else if(parser.isSet(setWallpaperOption) || parser.isSet(wallpaperModeOption)) { // set wall paper
+        else if (parser.isSet(setWallpaperOption) || parser.isSet(wallpaperModeOption)) { // set wall paper
             iface.call(QStringLiteral("setWallpaper"), parser.value(setWallpaperOption), parser.value(wallpaperModeOption));
         }
         else {
-            if(!parser.isSet(desktopOption) && !parser.isSet(desktopOffOption)) {
+            if (!parser.isSet(desktopOption) && !parser.isSet(desktopOffOption)) {
                 bool reopenLastTabs = false;
                 QStringList paths = parser.positionalArguments();
-                if(paths.isEmpty()) {
+                if (paths.isEmpty()) {
                     reopenLastTabs = true; // open last tab paths only if no path is specified
                     paths.push_back(QDir::currentPath());
                 }
@@ -347,11 +347,11 @@ void Application::init() {
 
 int Application::exec() {
 
-    if(!parseCommandLineArgs()) {
+    if (!parseCommandLineArgs()) {
         return 0;
     }
 
-    if(daemonMode_) { // keep running even when there is no window opened.
+    if (daemonMode_) { // keep running even when there is no window opened.
         setQuitOnLastWindowClosed(false);
     }
 
@@ -371,18 +371,18 @@ int Application::exec() {
 void Application::onUserDirsChanged() {
     qDebug() << Q_FUNC_INFO;
     bool file_deleted = !userDirsWatcher_->files().contains(userDirsFile_);
-    if(file_deleted) {
+    if (file_deleted) {
         // if our config file is already deleted, reinstall a new watcher
         userDirsWatcher_->addPath(userDirsFile_);
     }
 
     const QString d = XdgDir::readDesktopDir();
-    if(d != userDesktopFolder_) {
+    if (d != userDesktopFolder_) {
         userDesktopFolder_ = d;
         const QDir dir(d);
-        if(dir.exists()) {
+        if (dir.exists()) {
             const int N = desktopWindows_.size();
-            for(int i = 0; i < N; ++i) {
+            for (int i = 0; i < N; ++i) {
                 desktopWindows_.at(i)->setDesktopFolder();
             }
         }
@@ -396,7 +396,7 @@ void Application::onUserDirsChanged() {
 void Application::onAboutToQuit() {
     qDebug("aboutToQuit");
     // save custom positions of desktop items
-    if(!desktopWindows_.isEmpty()) {
+    if (!desktopWindows_.isEmpty()) {
         desktopWindows_.first()->saveItemPositions();
     }
 
@@ -410,18 +410,18 @@ void Application::cleanPerFolderConfig() {
     QByteArray perFolderConfig = (settings_.profileDir(profileName_) + QStringLiteral("/dir-settings.conf"))
                                  .toLocal8Bit();
     GKeyFile* kf = g_key_file_new();
-    if(g_key_file_load_from_file(kf, perFolderConfig.constData(), G_KEY_FILE_NONE, nullptr)) {
+    if (g_key_file_load_from_file(kf, perFolderConfig.constData(), G_KEY_FILE_NONE, nullptr)) {
         bool removed(false);
         gchar **groups = g_key_file_get_groups(kf, nullptr);
-        for(int i = 0; groups[i] != nullptr; i++) {
+        for (int i = 0; groups[i] != nullptr; i++) {
             const gchar *g = groups[i];
-            if(Fm::FilePath::fromPathStr(g).isNative() && !QDir(QString::fromUtf8(g)).exists()) {
+            if (Fm::FilePath::fromPathStr(g).isNative() && !QDir(QString::fromUtf8(g)).exists()) {
                 g_key_file_remove_group(kf, g, nullptr);
                 removed = true;
             }
         }
         g_strfreev(groups);
-        if(removed) {
+        if (removed) {
             g_key_file_save_to_file(kf, perFolderConfig.constData(), nullptr);
         }
     }
@@ -429,8 +429,8 @@ void Application::cleanPerFolderConfig() {
 }
 
 /*bool Application::eventFilter(QObject* watched, QEvent* event) {
-    if(watched == desktop()) {
-        if(event->type() == QEvent::StyleChange ||
+    if (watched == desktop()) {
+        if (event->type() == QEvent::StyleChange ||
                 event->type() == QEvent::ThemeChange) {
             setStyle(new ProxyStyle());
         }
@@ -449,11 +449,11 @@ void Application::onSaveStateRequest(QSessionManager& /*manager*/) {
 void Application::desktopManager(bool enabled) {
     // TODO: turn on or turn off desktpo management (desktop icons & wallpaper)
     //qDebug("desktopManager: %d", enabled);
-    if(enabled) {
-        if(!enableDesktopManager_) {
+    if (enabled) {
+        if (!enableDesktopManager_) {
             // installNativeEventFilter(this);
             const auto allScreens = screens();
-            for(QScreen* screen : allScreens) {
+            for (QScreen* screen : allScreens) {
                 connect(screen, &QScreen::virtualGeometryChanged, this, &Application::onVirtualGeometryChanged);
                 connect(screen, &QScreen::availableGeometryChanged, this, &Application::onAvailableGeometryChanged);
                 connect(screen, &QObject::destroyed, this, &Application::onScreenDestroyed);
@@ -464,14 +464,14 @@ void Application::desktopManager(bool enabled) {
             // NOTE: there are two modes
             // When virtual desktop is used (all screens are combined to form a large virtual desktop),
             // we only create one DesktopWindow. Otherwise, we create one for each screen.
-            if(primaryScreen() && primaryScreen()->virtualSiblings().size() > 1) {
+            if (primaryScreen() && primaryScreen()->virtualSiblings().size() > 1) {
                 DesktopWindow* window = createDesktopWindow(-1);
                 desktopWindows_.push_back(window);
             }
             else {
                 int n = qMax(allScreens.size(), 1);
                 desktopWindows_.reserve(n);
-                for(int i = 0; i < n; ++i) {
+                for (int i = 0; i < n; ++i) {
                     DesktopWindow* window = createDesktopWindow(i);
                     desktopWindows_.push_back(window);
                 }
@@ -479,15 +479,15 @@ void Application::desktopManager(bool enabled) {
         }
     }
     else {
-        if(enableDesktopManager_) {
+        if (enableDesktopManager_) {
             int n = desktopWindows_.size();
-            for(int i = 0; i < n; ++i) {
+            for (int i = 0; i < n; ++i) {
                 DesktopWindow* window = desktopWindows_.at(i);
                 delete window;
             }
             desktopWindows_.clear();
             const auto allScreens = screens();
-            for(QScreen* screen : allScreens) {
+            for (QScreen* screen : allScreens) {
                 disconnect(screen, &QScreen::virtualGeometryChanged, this, &Application::onVirtualGeometryChanged);
                 disconnect(screen, &QScreen::availableGeometryChanged, this, &Application::onAvailableGeometryChanged);
                 disconnect(screen, &QObject::destroyed, this, &Application::onScreenDestroyed);
@@ -502,7 +502,7 @@ void Application::desktopManager(bool enabled) {
 
 void Application::desktopPrefrences(const QString& page) {
     // show desktop preference window
-    if(!desktopPreferencesDialog_) {
+    if (!desktopPreferencesDialog_) {
         desktopPreferencesDialog_ = new DesktopPreferencesDialog();
 
         // Should be used only one time
@@ -572,27 +572,27 @@ void Application::launchFiles(const QString& cwd, const QStringList& paths, bool
     auto _paths = paths;
 
     reopenLastTabs = reopenLastTabs && settings_.reopenLastTabs() && !settings_.tabPaths().isEmpty();
-    if(reopenLastTabs) {
+    if (reopenLastTabs) {
         _paths = settings_.tabPaths();
         _paths.removeDuplicates();
         // forget tab paths with next windows until the last one is closed
         settings_.setTabPaths(QStringList());
     }
 
-    for(const QString& it : qAsConst(_paths)) {
+    for (const QString& it : qAsConst(_paths)) {
         QByteArray pathName = it.toLocal8Bit();
         Fm::FilePath path;
-        if(pathName == "~") { // special case for home dir
+        if (pathName == "~") { // special case for home dir
             path = Fm::FilePath::homeDir();
         }
-        if(pathName[0] == '/') { // absolute path
+        if (pathName[0] == '/') { // absolute path
             path = Fm::FilePath::fromLocalPath(pathName.constData());
         }
-        else if(pathName.contains(":/")) { // URI
+        else if (pathName.contains(":/")) { // URI
             path = Fm::FilePath::fromUri(pathName.constData());
         }
         else { // basename
-            if(Q_UNLIKELY(!cwd_path)) {
+            if (Q_UNLIKELY(!cwd_path)) {
                 cwd_path = Fm::FilePath::fromLocalPath(cwd.toLocal8Bit().constData());
             }
             path = cwd_path.relativePath(pathName.constData());
@@ -600,14 +600,14 @@ void Application::launchFiles(const QString& cwd, const QStringList& paths, bool
         pathList.push_back(std::move(path));
     }
 
-    if(!inNewWindow && settings_.singleWindowMode()) {
+    if (!inNewWindow && settings_.singleWindowMode()) {
         MainWindow* window = MainWindow::lastActive();
         // if there is no last active window, find the last created window
-        if(window == nullptr) {
+        if (window == nullptr) {
             QWidgetList windows = topLevelWidgets();
-            for(int i = 0; i < windows.size(); ++i) {
+            for (int i = 0; i < windows.size(); ++i) {
                 auto win = windows.at(windows.size() - 1 - i);
-                if(win->inherits("PCManFM::MainWindow")) {
+                if (win->inherits("PCManFM::MainWindow")) {
                     window = static_cast<MainWindow*>(win);
                     break;
                 }
@@ -623,16 +623,16 @@ void Application::launchFiles(const QString& cwd, const QStringList& paths, bool
 
     // if none of the last tabs can be opened and there is no main window yet,
     // open the current directory
-    if(reopenLastTabs) {
+    if (reopenLastTabs) {
         bool hasWindow = false;
         const QWidgetList windows = topLevelWidgets();
-        for(const auto& win : windows) {
-            if(win->inherits("PCManFM::MainWindow")) {
+        for (const auto& win : windows) {
+            if (win->inherits("PCManFM::MainWindow")) {
                 hasWindow = true;
                 break;
             }
         }
-        if(!hasWindow) {
+        if (!hasWindow) {
             _paths.clear();
             _paths.push_back(QDir::currentPath());
             launchFiles(QDir::currentPath(), _paths, inNewWindow, false);
@@ -645,10 +645,10 @@ void Application::openFolders(Fm::FileInfoList files) {
 }
 
 void Application::openFolderInTerminal(Fm::FilePath path) {
-    if(!settings_.terminal().isEmpty()) {
+    if (!settings_.terminal().isEmpty()) {
         Fm::GErrorPtr err;
         auto terminalName = settings_.terminal().toUtf8();
-        if(!Fm::launchTerminal(terminalName.constData(), path, err)) {
+        if (!Fm::launchTerminal(terminalName.constData(), path, err)) {
             QMessageBox::critical(nullptr, tr("Error"), err.message());
         }
     }
@@ -661,7 +661,7 @@ void Application::openFolderInTerminal(Fm::FilePath path) {
 
 void Application::preferences(const QString& page) {
     // open preference dialog
-    if(!preferencesDialog_) {
+    if (!preferencesDialog_) {
         preferencesDialog_ = new PreferencesDialog(page);
     }
     else {
@@ -677,20 +677,20 @@ void Application::setWallpaper(const QString& path, const QString& modeString) {
     DesktopWindow::WallpaperMode mode = settings_.wallpaperMode();
     bool changed = false;
 
-    if(!path.isEmpty() && path != settings_.wallpaper()) {
-        if(QFile(path).exists()) {
+    if (!path.isEmpty() && path != settings_.wallpaper()) {
+        if (QFile(path).exists()) {
             settings_.setWallpaper(path);
             changed = true;
         }
     }
     // convert mode string to value
-    for(std::size_t i = 0; i < G_N_ELEMENTS(valid_wallpaper_modes); ++i) {
-        if(modeString == QLatin1String(valid_wallpaper_modes[i])) {
+    for (std::size_t i = 0; i < G_N_ELEMENTS(valid_wallpaper_modes); ++i) {
+        if (modeString == QLatin1String(valid_wallpaper_modes[i])) {
             // We don't take safety checks because valid_wallpaper_modes[] is
             // defined in this function and we can clearly see that it does not
             // overflow.
             mode = static_cast<DesktopWindow::WallpaperMode>(i);
-            if(mode != settings_.wallpaperMode()) {
+            if (mode != settings_.wallpaperMode()) {
                 changed = true;
             }
             break;
@@ -698,13 +698,13 @@ void Application::setWallpaper(const QString& path, const QString& modeString) {
     }
     // FIXME: support different wallpapers on different screen.
     // update wallpaper
-    if(changed) {
-        if(enableDesktopManager_) {
-            for(DesktopWindow* desktopWin :  qAsConst(desktopWindows_)) {
-                if(!path.isEmpty()) {
+    if (changed) {
+        if (enableDesktopManager_) {
+            for (DesktopWindow* desktopWin :  qAsConst(desktopWindows_)) {
+                if (!path.isEmpty()) {
                     desktopWin->setWallpaperFile(path);
                 }
-                if(mode != settings_.wallpaperMode()) {
+                if (mode != settings_.wallpaperMode()) {
                     desktopWin->setWallpaperMode(mode);
                 }
                 desktopWin->updateWallpaper();
@@ -719,7 +719,7 @@ void Application::setWallpaper(const QString& path, const QString& modeString) {
  * a tab showing its content.
  */
 void Application::ShowFolders(const QStringList& uriList, const QString& startupId __attribute__((unused))) {
-    if(!uriList.isEmpty()) {
+    if (!uriList.isEmpty()) {
         launchFiles(QDir::currentPath(), uriList, false, false);
     }
 }
@@ -730,44 +730,44 @@ void Application::ShowFolders(const QStringList& uriList, const QString& startup
 void Application::ShowItems(const QStringList& uriList, const QString& startupId __attribute__((unused))) {
     std::unordered_map<Fm::FilePath, Fm::FilePathList, Fm::FilePathHash> groups;
     Fm::FilePathList folders; // used only for keeping the original order
-    for(const auto& u : uriList) {
-        if(auto path = Fm::FilePath::fromPathStr(u.toStdString().c_str())) {
-            if(auto parent = path.parent()) {
+    for (const auto& u : uriList) {
+        if (auto path = Fm::FilePath::fromPathStr(u.toStdString().c_str())) {
+            if (auto parent = path.parent()) {
                 auto paths = groups[parent];
-                if(std::find(paths.cbegin(), paths.cend(), path) == paths.cend()) {
+                if (std::find(paths.cbegin(), paths.cend(), path) == paths.cend()) {
                     groups[parent].push_back(std::move(path));
                 }
                 // also remember the order of parent folders
-                if(std::find(folders.cbegin(), folders.cend(), parent) == folders.cend()) {
+                if (std::find(folders.cbegin(), folders.cend(), parent) == folders.cend()) {
                     folders.push_back(std::move(parent));
                 }
             }
         }
     }
 
-    if(groups.empty()) {
+    if (groups.empty()) {
         return;
     }
 
     PCManFM::MainWindow* window = nullptr;
-    if(settings_.singleWindowMode()) {
+    if (settings_.singleWindowMode()) {
         window = MainWindow::lastActive();
-        if(window == nullptr) {
+        if (window == nullptr) {
             QWidgetList windows = topLevelWidgets();
-            for(int i = 0; i < windows.size(); ++i) {
+            for (int i = 0; i < windows.size(); ++i) {
                 auto win = windows.at(windows.size() - 1 - i);
-                if(win->inherits("PCManFM::MainWindow")) {
+                if (win->inherits("PCManFM::MainWindow")) {
                     window = static_cast<MainWindow*>(win);
                     break;
                 }
             }
         }
     }
-    if(window == nullptr) {
+    if (window == nullptr) {
         window = new MainWindow();
     }
 
-    for(const auto& folder : folders) {
+    for (const auto& folder : folders) {
         window->openFolderAndSelectFles(groups[folder]);
     }
 
@@ -782,13 +782,13 @@ void Application::ShowItems(const QStringList& uriList, const QString& startupId
 void Application::ShowItemProperties(const QStringList& uriList, const QString& startupId __attribute__((unused))) {
     // FIXME: Should we add "Fm::FilePropsDialog::showForPath()" to libfm-qt, instead of doing this?
     Fm::FilePathList paths;
-    for(const auto& u : uriList) {
+    for (const auto& u : uriList) {
         Fm::FilePath path = Fm::FilePath::fromPathStr(u.toStdString().c_str());
-        if(path) {
+        if (path) {
             paths.push_back(std::move(path));
         }
     }
-    if(paths.empty()) {
+    if (paths.empty()) {
         return;
     }
     auto job = new Fm::FileInfoJob{std::move(paths)};
@@ -799,7 +799,7 @@ void Application::ShowItemProperties(const QStringList& uriList, const QString& 
 
 void Application::onPropJobFinished() {
     auto job = static_cast<Fm::FileInfoJob*>(sender());
-    for(auto file: job->files()) {
+    for (auto file: job->files()) {
         auto dialog = Fm::FilePropsDialog::showForFile(std::move(file));
         dialog->raise();
         dialog->activateWindow();
@@ -809,13 +809,13 @@ void Application::onPropJobFinished() {
 DesktopWindow* Application::createDesktopWindow(int screenNum) {
     DesktopWindow* window = new DesktopWindow(screenNum);
 
-    if(screenNum == -1) { // one large virtual desktop only
+    if (screenNum == -1) { // one large virtual desktop only
         QRect rect = primaryScreen()->virtualGeometry();
         window->setGeometry(rect);
     }
     else {
         QRect rect;
-        if(auto screen = window->getDesktopScreen()) {
+        if (auto screen = window->getDesktopScreen()) {
             rect = screen->geometry();
         }
         window->setGeometry(rect);
@@ -828,34 +828,34 @@ DesktopWindow* Application::createDesktopWindow(int screenNum) {
 
 // called when Settings is changed to update UI
 void Application::updateFromSettings() {
-    // if(iconTheme.isEmpty())
+    // if (iconTheme.isEmpty())
     //  Fm::IconTheme::setThemeName(settings_.fallbackIconThemeName());
 
     // update main windows and desktop windows
     QWidgetList windows = this->topLevelWidgets();
     QWidgetList::iterator it;
-    for(it = windows.begin(); it != windows.end(); ++it) {
+    for (it = windows.begin(); it != windows.end(); ++it) {
         QWidget* window = *it;
-        if(window->inherits("PCManFM::MainWindow")) {
+        if (window->inherits("PCManFM::MainWindow")) {
             MainWindow* mainWindow = static_cast<MainWindow*>(window);
             mainWindow->updateFromSettings(settings_);
         }
     }
-    if(desktopManagerEnabled()) {
+    if (desktopManagerEnabled()) {
         updateDesktopsFromSettings();
     }
 }
 
 void Application::updateDesktopsFromSettings(bool changeSlide) {
     QVector<DesktopWindow*>::iterator it;
-    for(it = desktopWindows_.begin(); it != desktopWindows_.end(); ++it) {
+    for (it = desktopWindows_.begin(); it != desktopWindows_.end(); ++it) {
         DesktopWindow* desktopWin = static_cast<DesktopWindow*>(*it);
         desktopWin->updateFromSettings(settings_, changeSlide);
     }
 }
 
 void Application::editBookmarks() {
-    if(!editBookmarksialog_) {
+    if (!editBookmarksialog_) {
         editBookmarksialog_ = new Fm::EditBookmarksDialog(Fm::Bookmarks::globalInstance());
     }
     editBookmarksialog_.data()->show();
@@ -865,12 +865,12 @@ void Application::initVolumeManager() {
 
     g_signal_connect(volumeMonitor_, "volume-added", G_CALLBACK(onVolumeAdded), this);
 
-    if(settings_.mountOnStartup()) {
+    if (settings_.mountOnStartup()) {
         /* try to automount all volumes */
         GList* vols = g_volume_monitor_get_volumes(volumeMonitor_);
-        for(GList* l = vols; l; l = l->next) {
+        for (GList* l = vols; l; l = l->next) {
             GVolume* volume = G_VOLUME(l->data);
-            if(g_volume_should_automount(volume)) {
+            if (g_volume_should_automount(volume)) {
                 autoMountVolume(volume, false);
             }
             g_object_unref(volume);
@@ -880,26 +880,26 @@ void Application::initVolumeManager() {
 }
 
 bool Application::autoMountVolume(GVolume* volume, bool interactive) {
-    if(!g_volume_should_automount(volume) || !g_volume_can_mount(volume)) {
+    if (!g_volume_should_automount(volume) || !g_volume_can_mount(volume)) {
         return FALSE;
     }
 
     GMount* mount = g_volume_get_mount(volume);
-    if(!mount) { // not mounted, automount is needed
+    if (!mount) { // not mounted, automount is needed
         // try automount
         Fm::MountOperation* op = new Fm::MountOperation(interactive);
         op->mount(volume);
-        if(!op->wait()) {
+        if (!op->wait()) {
             return false;
         }
-        if(!interactive) {
+        if (!interactive) {
             return true;
         }
         mount = g_volume_get_mount(volume);
     }
 
-    if(mount) {
-        if(interactive && settings_.autoRun()) { // show autorun dialog
+    if (mount) {
+        if (interactive && settings_.autoRun()) { // show autorun dialog
             AutoRunDialog* dlg = new AutoRunDialog(volume, mount);
             dlg->show();
         }
@@ -910,14 +910,14 @@ bool Application::autoMountVolume(GVolume* volume, bool interactive) {
 
 // static
 void Application::onVolumeAdded(GVolumeMonitor* /*monitor*/, GVolume* volume, Application* pThis) {
-    if(pThis->settings_.mountRemovable()) {
+    if (pThis->settings_.mountRemovable()) {
         pThis->autoMountVolume(volume, true);
     }
 }
 
 #if 0
 bool Application::nativeEventFilter(const QByteArray& eventType, void* message, long* result) {
-    if(eventType == "xcb_generic_event_t") { // XCB event
+    if (eventType == "xcb_generic_event_t") { // XCB event
         // filter all native X11 events (xcb)
         xcb_generic_event_t* generic_event = reinterpret_cast<xcb_generic_event_t*>(message);
         // qDebug("XCB event: %d", generic_event->response_type & ~0x80);
@@ -929,19 +929,19 @@ bool Application::nativeEventFilter(const QByteArray& eventType, void* message, 
 #endif
 
 void Application::onScreenAdded(QScreen* newScreen) {
-    if(enableDesktopManager_) {
+    if (enableDesktopManager_) {
         connect(newScreen, &QScreen::virtualGeometryChanged, this, &Application::onVirtualGeometryChanged);
         connect(newScreen, &QScreen::availableGeometryChanged, this, &Application::onAvailableGeometryChanged);
         connect(newScreen, &QObject::destroyed, this, &Application::onScreenDestroyed);
         const auto siblings = primaryScreen()->virtualSiblings();
-        if(siblings.contains(newScreen)) { // the primary screen is changed
-            if(desktopWindows_.size() == 1) {
+        if (siblings.contains(newScreen)) { // the primary screen is changed
+            if (desktopWindows_.size() == 1) {
                 desktopWindows_.at(0)->setGeometry(newScreen->virtualGeometry());
-                if(siblings.size() > 1) { // a virtual desktop is created
+                if (siblings.size() > 1) { // a virtual desktop is created
                     desktopWindows_.at(0)->setScreenNum(-1);
                 }
             }
-            else if(desktopWindows_.isEmpty()) { // for the sake of certainty
+            else if (desktopWindows_.isEmpty()) { // for the sake of certainty
                 DesktopWindow* window = createDesktopWindow(desktopWindows_.size());
                 desktopWindows_.push_back(window);
             }
@@ -954,17 +954,17 @@ void Application::onScreenAdded(QScreen* newScreen) {
 }
 
 void Application::onScreenRemoved(QScreen* oldScreen) {
-    if(enableDesktopManager_){
+    if (enableDesktopManager_){
         disconnect(oldScreen, &QScreen::virtualGeometryChanged, this, &Application::onVirtualGeometryChanged);
         disconnect(oldScreen, &QScreen::availableGeometryChanged, this, &Application::onAvailableGeometryChanged);
         disconnect(oldScreen, &QObject::destroyed, this, &Application::onScreenDestroyed);
-        if(desktopWindows_.isEmpty()) {
+        if (desktopWindows_.isEmpty()) {
             return;
         }
-        if(desktopWindows_.size() == 1) { // a single desktop is changed
-            if(primaryScreen() != nullptr) {
+        if (desktopWindows_.size() == 1) { // a single desktop is changed
+            if (primaryScreen() != nullptr) {
                 desktopWindows_.at(0)->setGeometry(primaryScreen()->virtualGeometry());
-                if(primaryScreen()->virtualSiblings().size() == 1) {
+                if (primaryScreen()->virtualSiblings().size() == 1) {
                     desktopWindows_.at(0)->setScreenNum(0); // there is no virtual desktop anymore
                 }
             }
@@ -974,9 +974,9 @@ void Application::onScreenRemoved(QScreen* oldScreen) {
         }
         else { // a separate desktop is removed
             int n = desktopWindows_.size();
-            for(int i = 0; i < n; ++i) {
+            for (int i = 0; i < n; ++i) {
                 DesktopWindow* window = desktopWindows_.at(i);
-                if(window->getDesktopScreen() == oldScreen) {
+                if (window->getDesktopScreen() == oldScreen) {
                     desktopWindows_.remove(i);
                     delete window;
                     break;
@@ -1011,26 +1011,26 @@ void Application::onScreenDestroyed(QObject* screenObj) {
     //
     // The workaround is very simple. Just completely destroy the window before Qt has a chance to do
     // QWindow::setScreen() for it. Later, we recreate the window ourselves. So this can bypassing the Qt bugs.
-    if(enableDesktopManager_) {
+    if (enableDesktopManager_) {
         bool reloadNeeded = false;
         // FIXME: add workarounds for Qt5 bug #40681 and #40791 here.
-        for(DesktopWindow* desktopWin :  qAsConst(desktopWindows_)) {
-            if(desktopWin->windowHandle()->screen() == screenObj) {
+        for (DesktopWindow* desktopWin :  qAsConst(desktopWindows_)) {
+            if (desktopWin->windowHandle()->screen() == screenObj) {
                 desktopWin->destroy(); // destroy the underlying native window
                 reloadNeeded = true;
             }
         }
-        if(reloadNeeded) {
+        if (reloadNeeded) {
             QTimer::singleShot(0, this, &Application::reloadDesktopsAsNeeded);
         }
     }
 }
 
 void Application::reloadDesktopsAsNeeded() {
-    if(enableDesktopManager_) {
+    if (enableDesktopManager_) {
         // workarounds for Qt5 bug #40681 and #40791 here.
-        for(DesktopWindow* desktopWin : qAsConst(desktopWindows_)) {
-            if(!desktopWin->windowHandle()) {
+        for (DesktopWindow* desktopWin : qAsConst(desktopWindows_)) {
+            if (!desktopWin->windowHandle()) {
                 desktopWin->create(); // re-create the underlying native window
                 desktopWin->queueRelayout();
                 desktopWin->show();
@@ -1041,10 +1041,10 @@ void Application::reloadDesktopsAsNeeded() {
 
 void Application::onVirtualGeometryChanged(const QRect& /*rect*/) {
     // update desktop geometries
-    if(enableDesktopManager_) {
-        for(DesktopWindow* desktopWin : qAsConst(desktopWindows_)) {
+    if (enableDesktopManager_) {
+        for (DesktopWindow* desktopWin : qAsConst(desktopWindows_)) {
             auto desktopScreen = desktopWin->getDesktopScreen();
-            if(desktopScreen) {
+            if (desktopScreen) {
                 desktopWin->setGeometry(desktopScreen->virtualGeometry());
             }
         }
@@ -1053,8 +1053,8 @@ void Application::onVirtualGeometryChanged(const QRect& /*rect*/) {
 
 void Application::onAvailableGeometryChanged(const QRect& /*rect*/) {
     // update desktop layouts
-    if(enableDesktopManager_) {
-        for(DesktopWindow* desktopWin : qAsConst(desktopWindows_)) {
+    if (enableDesktopManager_) {
+        for (DesktopWindow* desktopWin : qAsConst(desktopWindows_)) {
             desktopWin->queueRelayout();
         }
     }
@@ -1069,7 +1069,7 @@ static void sigtermHandler(int) {
 }
 
 void Application::installSigtermHandler() {
-    if(::socketpair(AF_UNIX, SOCK_STREAM, 0, sigterm_fd) == 0) {
+    if (::socketpair(AF_UNIX, SOCK_STREAM, 0, sigterm_fd) == 0) {
         QSocketNotifier* notifier = new QSocketNotifier(sigterm_fd[1], QSocketNotifier::Read, this);
         connect(notifier, &QSocketNotifier::activated, this, &Application::onSigtermNotified);
 
@@ -1077,7 +1077,7 @@ void Application::installSigtermHandler() {
         action.sa_handler = sigtermHandler;
         ::sigemptyset(&action.sa_mask);
         action.sa_flags = SA_RESTART;
-        if(::sigaction(SIGTERM, &action, nullptr) != 0) {
+        if (::sigaction(SIGTERM, &action, nullptr) != 0) {
             qWarning("Couldn't install SIGTERM handler");
         }
     }
@@ -1087,15 +1087,15 @@ void Application::installSigtermHandler() {
 }
 
 void Application::onSigtermNotified() {
-    if(QSocketNotifier* notifier = qobject_cast<QSocketNotifier*>(sender())) {
+    if (QSocketNotifier* notifier = qobject_cast<QSocketNotifier*>(sender())) {
         notifier->setEnabled(false);
         char c;
         ::read(sigterm_fd[1], &c, sizeof(c));
         // close all windows cleanly; otherwise, we might get this warning:
         // "QBasicTimer::start: QBasicTimer can only be used with threads started with QThread"
         const auto windows = topLevelWidgets();
-        for(const auto& win : windows) {
-            if(win->inherits("PCManFM::MainWindow")) {
+        for (const auto& win : windows) {
+            if (win->inherits("PCManFM::MainWindow")) {
                 MainWindow* mainWindow = static_cast<MainWindow*>(win);
                 mainWindow->close();
             }
