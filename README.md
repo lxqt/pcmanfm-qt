@@ -2,14 +2,15 @@
 
 ## Overview
 
-PCManFM-Qt is the Qt port of PCManFM, the file manager of [LXDE](https://lxde.org).
+PCManFM-Qt is a Qt-based file manager which uses `GLib` for file management.
+It was started as the Qt port of PCManFM, the file manager of [LXDE](https://lxde.org).
 
-In LXQt sessions it is in addition used to handle the desktop. Nevertheless it 
-can be used independently of LXQt as well.
+PCManFM-Qt is used by LXQt for handling the desktop. Nevertheless, it can also be used
+independently of LXQt and under any desktop environment.
 
-PCManFM-Qt is licensed under the terms of the 
-[GPLv2](https://www.gnu.org/licenses/gpl-2.0.en.html) or any later version. See 
-file LICENSE for its full text.   
+PCManFM-Qt is licensed under the terms of the
+[GPLv2](https://www.gnu.org/licenses/gpl-2.0.en.html) or any later version. See
+file LICENSE for its full text.  
 
 ## Installation
 
@@ -18,41 +19,41 @@ file LICENSE for its full text.
 Runtime dependencies are qtx11extras, lxmenu-data,
 [liblxqt](https://github.com/lxqt/liblxqt) and
 [libfm-qt](https://github.com/lxqt/libfm-qt).
-Additional build dependencies is CMake.
+Of course, CMake is required for building.
 
-Code configuration is handled by CMake. CMake variable `CMAKE_INSTALL_PREFIX` 
-has to be set to `/usr` on most operating systems, depending on the way library 
-paths are dealt with on 64bit systems variables like `CMAKE_INSTALL_LIBDIR` may 
-have to be set as well.   
+Code configuration is handled by CMake. CMake variable `CMAKE_INSTALL_PREFIX`
+has to be set to `/usr` on most operating systems. Depending on the way library
+paths are dealt with on 64bit systems, variables like `CMAKE_INSTALL_LIBDIR` may
+have to be set as well.  
 
-To build run `make`, to install `make install` which accepts variable `DESTDIR` 
+To build run `make`, to install `make install`, which accepts the variable `DESTDIR`
 as usual.
 
 ### Binary packages
 
-Official binary packages are available in Arch Linux, Debian, 
-Fedora and openSUSE (Leap and Tumbleweed) and most other distributions.   
+Official binary packages are available in Arch Linux, Debian,
+Fedora and openSUSE (Leap and Tumbleweed) and most other distributions.
 
 ## Usage
 
-The file manager functionality should be self-explanatory, handling of the 
-desktop deserves some notes:
+The file manager functionality should be self-explanatory. For advanced functionalities,
+see the [wiki](https://github.com/lxqt/pcmanfm-qt/wiki).
 
-To handle the desktop binary `pcmanfm-qt` has to be launched with switch 
-`--desktop` set. Optionally switch `--profile` can be used to safe settings 
-specific to certain session types like the different desktop environments.   
-In LXQt sessions, PCManFM-Qt is launched with theses switches set as 
-[LXQt Module](https://github.com/lxqt/lxqt-session#lxqt-modules).   
+Handling of the desktop deserves some notes:
 
-To configure the desktop there's a dialogue "Desktop Preferences". Technically 
-it corresponds with launching `pcmanfm-qt` with switch `--desktop-pref` set. It 
-is available in the desktop's context menu and included as topic "Desktop" in 
-sub-menu Preferences - LXQt settings of the panel's main menu as well as the 
-[Configuration Center](https://github.com/lxqt/lxqt-config#configuration-center) 
-of lxqt-config.   
+To handle the desktop, the binary `pcmanfm-qt` has to be launched with the
+`--desktop` option. Optionally, `--profile` can be used for loading and
+saving settings specific to certain session types, like different
+desktop environments. In an LXQt session, PCManFM-Qt is launched as an
+[LXQt Module](https://github.com/lxqt/lxqt-session#lxqt-modules).
 
-All switches (command line options) mentioned above are explained in detail in
-`man 1 pcmanfm-qt`.   
+The desktop can be configured by the dialog "Desktop Preferences". Technically,
+it corresponds to launching `pcmanfm-qt` with the option `--desktop-pref`. It
+is available in LXQt desktop's context menu and included as the "Desktop" item in
+the Preferences sub-menu of LXQt Panel's main menu as well as the "LXQt Settings"
+section of [Configuration Center](https://github.com/lxqt/lxqt-config#configuration-center).  
+
+All (command-line) options are explained in detail in `man 1 pcmanfm-qt`.  
 
 ## Development
 
