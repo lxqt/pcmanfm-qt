@@ -16,10 +16,12 @@ file LICENSE for its full text.
 
 ### Compiling source code
 
-Runtime dependencies are qtx11extras, lxmenu-data,
-[liblxqt](https://github.com/lxqt/liblxqt) and
+Runtime dependencies are qtx11extras (although PCManFM-Qt works fine under Wayland),
+lxmenu-data, [liblxqt](https://github.com/lxqt/liblxqt) and
 [libfm-qt](https://github.com/lxqt/libfm-qt).
 Of course, CMake is required for building.
+
+GVFS is an optional dependency. It provides important functionalities like Trash support.
 
 Code configuration is handled by CMake. CMake variable `CMAKE_INSTALL_PREFIX`
 has to be set to `/usr` on most operating systems. Depending on the way library
