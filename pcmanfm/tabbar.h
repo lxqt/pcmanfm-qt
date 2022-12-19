@@ -42,6 +42,10 @@ public:
         dragStartPosition_ = QPoint();
     }
 
+    // An object property used for knowing whether
+    // a tab is dropped into one of our windows:
+    static const char* tabDropped;
+
 Q_SIGNALS:
     void tabDetached();
 
