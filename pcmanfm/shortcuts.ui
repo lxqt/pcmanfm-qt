@@ -132,7 +132,7 @@
      </item>
      <item>
       <property name="text">
-       <string>Drag+Shift</string>
+       <string>Drop+Shift</string>
       </property>
       <property name="text">
        <string>Move file on dropping</string>
@@ -140,7 +140,7 @@
      </item>
      <item>
       <property name="text">
-       <string>Drag+Ctrl</string>
+       <string>Drop+Ctrl</string>
       </property>
       <property name="text">
        <string>Copy file on dropping</string>
@@ -148,7 +148,7 @@
      </item>
      <item>
       <property name="text">
-       <string>Drag+Shift+Ctrl</string>
+       <string>Drop+Shift+Ctrl</string>
       </property>
       <property name="text">
        <string>Make a symlink on dropping</string>
