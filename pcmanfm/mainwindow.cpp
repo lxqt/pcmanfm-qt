@@ -481,9 +481,7 @@ void MainWindow::addViewFrame(const Fm::FilePath& path) {
     Application* app = static_cast<Application*>(qApp);
     Settings& settings = app->settings();
     ViewFrame* viewFrame = new ViewFrame();
-    // No tab DND with the split view.
-    // WARNING: Wayland has a serious issue related to QDrag that can result in a crash.
-    viewFrame->getTabBar()->setDetachable(!splitView_ && app->isX11());
+    viewFrame->getTabBar()->setDetachable(!splitView_); // no tab DND with the split view
     viewFrame->getTabBar()->setTabsClosable(settings.showTabClose());
     ui.viewSplitter->addWidget(viewFrame); // the splitter takes ownership of viewFrame
     if(ui.viewSplitter->count() == 1) {
@@ -509,8 +507,9 @@ void MainWindow::addViewFrame(const Fm::FilePath& path) {
             on_actionNewTab_triggered();
         }
     });
-    connect(viewFrame->getTabBar(), &TabBar::tabDetached, this, &MainWindow::detachTab);
     connect(viewFrame->getStackedWidget(), &QStackedWidget::widgetRemoved, this, &MainWindow::onStackedWidgetWidgetRemoved);
+    // the tab will be detached only after the DND is finished
+    connect(viewFrame->getTabBar(), &TabBar::tabDetached, this, &MainWindow::detachTab, Qt::QueuedConnection);
 
     if(path) {
         addTab(path, viewFrame);
@@ -579,7 +578,7 @@ void MainWindow::on_actionSplitView_triggered(bool checked) {
         }
 
         // enable tab DND
-        activeViewFrame_->getTabBar()->setDetachable(app->isX11());
+        activeViewFrame_->getTabBar()->setDetachable(true);
         setAcceptDrops(true);
 
         activeViewFrame_->removeTopBar();
@@ -2059,7 +2058,14 @@ void MainWindow::dragEnterEvent(QDragEnterEvent* event) {
 
 void MainWindow::dropEvent(QDropEvent* event) {
     if(event->mimeData()->hasFormat(QStringLiteral("application/pcmanfm-qt-tab"))) {
-        dropTab(event->source());
+        if(QObject *sourseObject = event->source()) {
+            // announce that the tab drop is accepted by us (see TabBar::mouseMoveEvent)
+            sourseObject->setProperty(TabBar::tabDropped, true);
+            // the tab will be dropped (moved) after the DND is finished
+            QTimer::singleShot(0, sourseObject, [this, sourseObject]() {
+                dropTab(sourseObject);
+            });
+        }
     }
     event->acceptProposedAction();
 }
