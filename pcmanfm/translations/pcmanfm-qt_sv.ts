@@ -989,12 +989,12 @@ vänsterklickas, även när den inte är standard filhanterare.</translation>
     <message>
         <location filename="../main-win.ui" line="542"/>
         <source>By &amp;Modification Time</source>
-        <translation>Av &amp;Senast ändrad</translation>
+        <translation>Efter &amp;modifieringstid</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="550"/>
         <source>By C&amp;reation Time</source>
-        <translation>Efter s&amp;kapningstid</translation>
+        <translation>Efter S&amp;kapande tid</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="558"/>
