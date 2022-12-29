@@ -1928,7 +1928,7 @@ void MainWindow::onBackForwardContextMenu(QPoint pos) {
     TabPage* page = currentPage();
     Fm::BrowseHistory& history = page->browseHistory();
     int current = history.currentIndex();
-    QMenu menu;
+    QMenu menu(this);
     for(size_t i = 0; i < history.size(); ++i) {
         const BrowseHistoryItem& item = history.at(i);
         auto path = item.path();
@@ -1975,7 +1975,7 @@ void MainWindow::tabContextMenu(const QPoint& pos) {
             return;
         }
 
-        QMenu menu;
+        QMenu menu(this);
 
         // tab closing actions
         if(rightClickIndex_ > 0) {
