@@ -228,7 +228,9 @@ It can be left empty.</source>
         <source>A short comment.
 
 It can be left empty.</source>
-        <translation type="unfinished"></translation>
+        <translation>En kort kommentar.
+
+Kan stå tom.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="96"/>
@@ -249,7 +251,7 @@ It can be left empty.</source>
     <message>
         <location filename="../desktopentrydialog.ui" line="130"/>
         <source>Icon to display in file manager, menus, etc.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ikon for visning i filbehandler, menyer, osv.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="152"/>
@@ -309,7 +311,11 @@ It can be left empty.</source>
 It is needed only when you want to use the created file in the main menu. Otherwise, you could leave it empty.
 
 Examples: AudioVideo, Audio, Video, Development, Education, Game, Graphics, Network, Office, Settings, System, Utility, Qt.</source>
-        <translation type="unfinished"></translation>
+        <translation>Semikolonsinndelt liste over kategorier oppføringen skal vises i hvis den brukes av skrivebordsmiljøets hovedmeny (f.eks., når lagt i ~/.local/share/applications).
+
+Det trengs kun når du bruker den opprettede filen i hovedmenyen. Ellers kan du la den stå tom.
+
+Eksempler: LydVideo, Lyd, Video, Utvikling, Utdanning, Spill, Grafikk, Nettverk, Kontorprogramvare, Innstillinger, System, Verktøy, Qt.</translation>
     </message>
 </context>
 <context>
