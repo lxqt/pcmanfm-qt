@@ -128,12 +128,12 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA.</trans
     <message>
         <location filename="../bulk-rename.ui" line="80"/>
         <source>Pad numbers with zero if possible</source>
-        <translation type="unfinished"></translation>
+        <translation>Reomplir números amb zero si és possible</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="87"/>
         <source>Use localized numbers</source>
-        <translation type="unfinished"></translation>
+        <translation>Utilitza números localitzats</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="27"/>
@@ -313,7 +313,11 @@ Podeu deixar-ho en blanc.</translation>
 It is needed only when you want to use the created file in the main menu. Otherwise, you could leave it empty.
 
 Examples: AudioVideo, Audio, Video, Development, Education, Game, Graphics, Network, Office, Settings, System, Utility, Qt.</source>
-        <translation type="unfinished"></translation>
+        <translation>Categories separades per punt i coma en les quals l&apos;entrada s&apos;ha de mostrar si s&apos;utilitza en el menú principal de la DE (p. ex., quan es posa dins de ~/.local/share/applications).
+
+Només és necessari quan voleu utilitzar el fitxer creat en el menú principal. En cas contrari, podria deixar-ho buit.
+
+Exemples: AudioVideo, Audio, Video, Development, Education, Game, Graphics, Network, Office, Settings, System, Utility, Qt.</translation>
     </message>
 </context>
 <context>
@@ -961,12 +965,12 @@ el gestor de fitxers predeterminat.</translation>
     <message>
         <location filename="../main-win.ui" line="502"/>
         <source>De&amp;select All</source>
-        <translation type="unfinished"></translation>
+        <translation>Dess%elecciona-ho tot</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="505"/>
         <source>Ctrl+D</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+D</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="510"/>
@@ -986,17 +990,17 @@ el gestor de fitxers predeterminat.</translation>
     <message>
         <location filename="../main-win.ui" line="534"/>
         <source>&amp;By File Name</source>
-        <translation>Pel &amp;nom del fitxer</translation>
+        <translation>&amp;Per nom del fitxer</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="542"/>
         <source>By &amp;Modification Time</source>
-        <translation>Per la data de &amp;modificació</translation>
+        <translation>Per &amp;data de modificació</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="550"/>
         <source>By C&amp;reation Time</source>
-        <translation>Per data de creació</translation>
+        <translation>Per &amp;data de creació</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="558"/>
@@ -1006,7 +1010,7 @@ el gestor de fitxers predeterminat.</translation>
     <message>
         <location filename="../main-win.ui" line="566"/>
         <source>By File &amp;Type</source>
-        <translation>Pel &amp;tipus de fitxer</translation>
+        <translation>Per tipus de &amp;fitxer</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="574"/>
@@ -1066,7 +1070,7 @@ el gestor de fitxers predeterminat.</translation>
     <message>
         <location filename="../main-win.ui" line="708"/>
         <source>By File &amp;Size</source>
-        <translation>Per la m&amp;ida del fitxer</translation>
+        <translation>Per &amp;la mida del fitxer</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="713"/>
