@@ -139,6 +139,7 @@ DesktopWindow::DesktopWindow(int screenNum):
         connect(proxyModel_, &Fm::ProxyFolderModel::sortFilterChanged, this, &DesktopWindow::onModelSortFilterChanged);
 
         connect(this, &Fm::FolderView::inlineRenamed, this, &DesktopWindow::onInlineRenaming);
+        connect(this, &Fm::FolderView::dropIsDecided, this, &DesktopWindow::onDecidingDrop);
     }
 
     // remove frame
@@ -2058,6 +2059,9 @@ void DesktopWindow::childDropEvent(QDropEvent* e) {
             }
         }
 
+        // store current positions before the drop; see DesktopWindow::onDecidingDrop()
+        storeCustomPos();
+
         Fm::FolderView::childDropEvent(e);
 
         // remove the drop indicator after the drop is finished
@@ -2071,12 +2075,9 @@ void DesktopWindow::childDropEvent(QDropEvent* e) {
             }
         }
 
-        // position dropped items successively, starting with the drop rectangle
+        // reserve successive positions for dropped items, starting with the drop rectangle
         if(!workArea.isEmpty()
-           && mimeData->hasUrls()
-           && (e->dropAction() == Qt::CopyAction
-               || e->dropAction() == Qt::MoveAction
-               || e->dropAction() == Qt::LinkAction)) {
+           && mimeData->hasUrls()) {
             const QString desktopDir = XdgDir::readDesktopDir() + QString(QLatin1String("/"));
             QPoint dropPos = e->pos();
             if(rtl) { // see the previous case for the reason
@@ -2092,8 +2093,19 @@ void DesktopWindow::childDropEvent(QDropEvent* e) {
                     reachedLastCell = stickToPosition(name.toStdString(), dropPos, workArea, grid, reachedLastCell);
                 }
             }
-            storeCustomPos();
+            // wait for FolderView::dropIsDecided() to know whether the new positions should be stored
+            // on accepting the drop or the original positions should be restored on cancelling it
         }
+    }
+}
+
+void DesktopWindow::onDecidingDrop(bool accepted) {
+    if(accepted) {
+        storeCustomPos();
+    }
+    else {
+        customItemPos_.clear();
+        customItemPos_ = customPosStorage_;
     }
 }
 

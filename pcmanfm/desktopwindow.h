@@ -142,6 +142,8 @@ protected Q_SLOTS:
 
     void onInlineRenaming(const QString& oldName, const QString& newName);
 
+    void onDecidingDrop(bool accepted);
+
 private:
     void removeBottomGap();
     QRect getWorkArea(QScreen* screen) const;
