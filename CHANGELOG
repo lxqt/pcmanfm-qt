@@ -1,3 +1,10 @@
+pcmanfm-qt-1.2.1 / 2023-01-02
+==============================
+ * Corrected the icon for "New Tab".
+ * Corrected some descriptions in Hidden Shortcuts dialog.
+ * Enabled tab DND under Wayland.
+ * Fixed the context menus of tabs and forward/backward buttons under Wayland.
+
 pcmanfm-qt-1.2.0 / 2022-11-05
 ==============================
  * Fixed the links of About dialog.
