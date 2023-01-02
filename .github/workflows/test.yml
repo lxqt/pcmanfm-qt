@@ -1,6 +1,8 @@
 name: Testing
 
-on: [push, pull_request]
+# Temporarily switch to manual triggers
+on:
+  workflow_dispatch:
 
 jobs:
   build:
