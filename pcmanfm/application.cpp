@@ -96,6 +96,8 @@ Application::Application(int& argc, char** argv):
 
     setApplicationVersion(QStringLiteral(PCMANFM_QT_VERSION));
 
+    underWayland_ = QGuiApplication::platformName() == QStringLiteral("wayland");
+
     // QDBusConnection::sessionBus().registerObject("/org/pcmanfm/Application", this);
     QDBusConnection dbus = QDBusConnection::sessionBus();
     if(dbus.registerService(QLatin1String(serviceName))) {

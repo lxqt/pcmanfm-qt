@@ -72,6 +72,10 @@ public:
         return libFm_;
     }
 
+    bool underWayland() const {
+      return underWayland_;
+    }
+
     // public interface exported via dbus
     void launchFiles(const QString& cwd, const QStringList& paths, bool inNewWindow, bool reopenLastTabs);
     void setWallpaper(const QString& path, const QString& modeString);
@@ -153,6 +157,8 @@ private:
     QString userDirsFile_;
     QString userDesktopFolder_;
     bool lxqtRunning_;
+
+    bool underWayland_;
 
     int argc_;
     char** argv_;

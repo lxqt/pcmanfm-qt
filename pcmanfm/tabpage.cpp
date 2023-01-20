@@ -1074,8 +1074,10 @@ void TabPage::ceateShortcut() {
                 }
             });
             dlg->show();
-            dlg->raise();
-            dlg->activateWindow();
+            if(!static_cast<Application*>(qApp)->underWayland()) {
+                dlg->raise();
+                dlg->activateWindow();
+            }
         }
     }
 }
