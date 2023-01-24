@@ -128,12 +128,12 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA.</trans
     <message>
         <location filename="../bulk-rename.ui" line="80"/>
         <source>Pad numbers with zero if possible</source>
-        <translation>Reomplir números amb zero si és possible</translation>
+        <translation>Afegeix zeros als nombres si és possible</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="87"/>
         <source>Use localized numbers</source>
-        <translation>Utilitza números localitzats</translation>
+        <translation>Fer servir nombres localitzats</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="27"/>
@@ -313,11 +313,11 @@ Podeu deixar-ho en blanc.</translation>
 It is needed only when you want to use the created file in the main menu. Otherwise, you could leave it empty.
 
 Examples: AudioVideo, Audio, Video, Development, Education, Game, Graphics, Network, Office, Settings, System, Utility, Qt.</source>
-        <translation>Categories separades per punt i coma en les quals l&apos;entrada s&apos;ha de mostrar si s&apos;utilitza en el menú principal de la DE (p. ex., quan es posa dins de ~/.local/share/applications).
+        <translation>Llista de categories, separades per punt i coma, en què aquesta entrada apareixerà en el menú principal de l&apos;entorn d&apos;escriptori (p. ex. si s&apos;ubica en ~/.local/share/applications).
 
-Només és necessari quan voleu utilitzar el fitxer creat en el menú principal. En cas contrari, podria deixar-ho buit.
+Només és necessari si voleu fer servir el fitxer en el menú principal. Altrament podeu deixar-ho en blanc.
 
-Exemples: AudioVideo, Audio, Video, Development, Education, Game, Graphics, Network, Office, Settings, System, Utility, Qt.</translation>
+Examples: AudioVideo, Audio, Video, Development, Education, Game, Graphics, Network, Office, Settings, System, Utility, Qt.</translation>
     </message>
 </context>
 <context>
@@ -1322,7 +1322,7 @@ el gestor de fitxers predeterminat.</translation>
     <message>
         <location filename="../main-win.ui" line="663"/>
         <source>Del</source>
-        <translation>Supr</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="668"/>
