@@ -1028,7 +1028,7 @@ se clicar com o botão esquerdo do rato - mesmo que este não seja o gestor de f
     <message>
         <location filename="../main-win.ui" line="660"/>
         <source>&amp;Delete</source>
-        <translation>&amp;Apagar</translation>
+        <translation>&amp;Eliminar</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="668"/>
@@ -1791,7 +1791,7 @@ se clicar com o botão esquerdo do rato - mesmo que este não seja o gestor de f
         <location filename="../mainwindow.cpp" line="174"/>
         <location filename="../mainwindow.cpp" line="2155"/>
         <source>&amp;Delete</source>
-        <translation>&amp;Apagar</translation>
+        <translation>&amp;Eliminar</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="1998"/>
@@ -2130,7 +2130,7 @@ Elas podem ser úteis se essas pastas forem criadas novamente.</translation>
     <message>
         <location filename="../preferences.ui" line="188"/>
         <source>Move deleted files to &quot;trash bin&quot; instead of erasing from disk.</source>
-        <translation>Mover ficheiros para o lixo em vez de os apagar do disco.</translation>
+        <translation>Mover ficheiros para o lixo em vez de os eliminar do disco.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="219"/>
