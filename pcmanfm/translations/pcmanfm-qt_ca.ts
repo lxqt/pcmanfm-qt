@@ -965,7 +965,7 @@ el gestor de fitxers predeterminat.</translation>
     <message>
         <location filename="../main-win.ui" line="502"/>
         <source>De&amp;select All</source>
-        <translation>Dess%elecciona-ho tot</translation>
+        <translation>De&amp;sselecciona-ho tot</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="505"/>
