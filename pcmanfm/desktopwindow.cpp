@@ -1110,8 +1110,10 @@ void DesktopWindow::onCreatingShortcut() {
         filesToTrust_ << name;
     });
     dlg->show();
-    dlg->raise();
-    dlg->activateWindow();
+    if(!static_cast<Application*>(qApp)->underWayland()) {
+        dlg->raise();
+        dlg->activateWindow();
+    }
 }
 
 void DesktopWindow::onDesktopPreferences() {

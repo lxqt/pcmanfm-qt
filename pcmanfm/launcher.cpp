@@ -80,8 +80,10 @@ bool Launcher::openFolder(GAppLaunchContext* ctx, const Fm::FileInfoList& folder
         mainWindow->addTab(std::move(path));
     }
     mainWindow->show();
-    mainWindow->raise();
-    mainWindow->activateWindow();
+    if(!app->underWayland()) {
+        mainWindow->raise();
+        mainWindow->activateWindow();
+    }
     openInNewTab_ = false;
     return true;
 }
