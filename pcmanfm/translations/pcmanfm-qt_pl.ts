@@ -948,17 +948,17 @@ są klikane lewym przyciskiem, nawet jeśli nie jest to domyślny menedżer plik
     <message>
         <location filename="../main-win.ui" line="534"/>
         <source>&amp;By File Name</source>
-        <translation>&amp;Nazwa</translation>
+        <translation>&amp;Według nazwy pliku</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="542"/>
         <source>By &amp;Modification Time</source>
-        <translation>Data &amp;modyfikacji</translation>
+        <translation>Według daty &amp;modyfikacji</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="550"/>
         <source>By C&amp;reation Time</source>
-        <translation>Według czasu utworzenia</translation>
+        <translation>Według daty utwo&amp;rzenia</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="558"/>
@@ -968,7 +968,7 @@ są klikane lewym przyciskiem, nawet jeśli nie jest to domyślny menedżer plik
     <message>
         <location filename="../main-win.ui" line="566"/>
         <source>By File &amp;Type</source>
-        <translation>&amp;Typ pliku</translation>
+        <translation>Według rodzaju pliku (&amp;T)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="574"/>
@@ -1043,7 +1043,7 @@ są klikane lewym przyciskiem, nawet jeśli nie jest to domyślny menedżer plik
     <message>
         <location filename="../main-win.ui" line="708"/>
         <source>By File &amp;Size</source>
-        <translation>Według &amp;rozmiaru</translation>
+        <translation>Według rozmiaru pliku (&amp;S)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="713"/>
@@ -2140,7 +2140,7 @@ Mogą się one przydać jeśli te foldery zostaną stworzone ponownie.</translat
     <message>
         <location filename="../preferences.ui" line="219"/>
         <source>Renamed files will also be selected</source>
-        <translation>Pliki ze zmienioną nazwą również zostaną&#xa0;wybrane</translation>
+        <translation>Pliki ze zmienioną nazwą również zostaną wybrane</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="229"/>
