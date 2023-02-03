@@ -729,8 +729,18 @@ są klikane lewym przyciskiem, nawet jeśli nie jest to domyślny menedżer plik
     </message>
     <message>
         <location filename="../shortcuts.ui" line="135"/>
-        <source>Drag+Shift</source>
-        <translation>Przeciągnięcie+Shift</translation>
+        <source>Drop+Shift</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../shortcuts.ui" line="143"/>
+        <source>Drop+Ctrl</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../shortcuts.ui" line="151"/>
+        <source>Drop+Shift+Ctrl</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="138"/>
@@ -738,19 +748,9 @@ są klikane lewym przyciskiem, nawet jeśli nie jest to domyślny menedżer plik
         <translation>Przenieś plik podczas upuszczania</translation>
     </message>
     <message>
-        <location filename="../shortcuts.ui" line="143"/>
-        <source>Drag+Ctrl</source>
-        <translation>Przeciągnięcie+Ctrl</translation>
-    </message>
-    <message>
         <location filename="../shortcuts.ui" line="146"/>
         <source>Copy file on dropping</source>
         <translation>Skopiuj plik przy upuszczaniu</translation>
-    </message>
-    <message>
-        <location filename="../shortcuts.ui" line="151"/>
-        <source>Drag+Shift+Ctrl</source>
-        <translation>Przeciągnięcie+Shift+Ctrl</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="154"/>
@@ -1447,99 +1447,99 @@ są klikane lewym przyciskiem, nawet jeśli nie jest to domyślny menedżer plik
 <context>
     <name>PCManFM::Application</name>
     <message>
-        <location filename="../application.cpp" line="188"/>
+        <location filename="../application.cpp" line="187"/>
         <source>Name of configuration profile</source>
         <translation>Nazwa profilu konfiguracji</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="188"/>
+        <location filename="../application.cpp" line="187"/>
         <source>PROFILE</source>
         <translation>PROFIL</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="191"/>
+        <location filename="../application.cpp" line="190"/>
         <source>Run PCManFM-Qt as a daemon</source>
         <translation>Uruchom PCManFM-Qt jako daemon</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="194"/>
+        <location filename="../application.cpp" line="193"/>
         <source>Quit PCManFM-Qt</source>
         <translation>Wyjdź z PCManFM-Qt</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="197"/>
+        <location filename="../application.cpp" line="196"/>
         <source>Launch desktop manager</source>
         <translation>Uruchom menedżera pulpitu</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="200"/>
+        <location filename="../application.cpp" line="199"/>
         <source>Turn off desktop manager if it&apos;s running</source>
         <translation>Wyłądż menedżera pulpitu jeżeli jest uruchomiony</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="203"/>
+        <location filename="../application.cpp" line="202"/>
         <source>Open desktop preference dialog on the page with the specified name</source>
         <translation>Otwórz okno preferencji pulpitu na stronie o określonej nazwie</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="203"/>
-        <location filename="../application.cpp" line="218"/>
+        <location filename="../application.cpp" line="202"/>
+        <location filename="../application.cpp" line="217"/>
         <source>NAME</source>
         <translation>NAZWA</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="206"/>
+        <location filename="../application.cpp" line="205"/>
         <source>Open new window</source>
         <translation>Otwórz nowe okno</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="209"/>
+        <location filename="../application.cpp" line="208"/>
         <source>Open Find Files utility</source>
         <translation>Otwórz narzędzie wyszukiwania</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="212"/>
+        <location filename="../application.cpp" line="211"/>
         <source>Set desktop wallpaper from image FILE</source>
         <translation>Ustaw tło pulpitu z obrazka PLIK</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="212"/>
+        <location filename="../application.cpp" line="211"/>
         <source>FILE</source>
         <translation>PLIK</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="215"/>
+        <location filename="../application.cpp" line="214"/>
         <source>MODE</source>
         <translation>TRYB</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="215"/>
+        <location filename="../application.cpp" line="214"/>
         <source>Set mode of desktop wallpaper. MODE=(%1)</source>
         <translation>Ustaw tryb tła pulpitu. TRYB=(%1)</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="218"/>
+        <location filename="../application.cpp" line="217"/>
         <source>Open Preferences dialog on the page with the specified name</source>
         <translation>Otwórz okno preferencji na stronie o określonej nazwie</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="221"/>
+        <location filename="../application.cpp" line="220"/>
         <source>Files or directories to open</source>
         <translation>Pliki lub katalogi do otwarcia</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="221"/>
+        <location filename="../application.cpp" line="220"/>
         <source>[FILE1, FILE2,...]</source>
         <translation>[PLIK1, PLIK2,...]</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="652"/>
-        <location filename="../application.cpp" line="657"/>
+        <location filename="../application.cpp" line="651"/>
+        <location filename="../application.cpp" line="656"/>
         <source>Error</source>
         <translation>Błąd</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="657"/>
+        <location filename="../application.cpp" line="656"/>
         <source>Terminal emulator is not set.</source>
         <translation>Nie ustawiono emulatora terminala.</translation>
     </message>
@@ -1684,12 +1684,12 @@ są klikane lewym przyciskiem, nawet jeśli nie jest to domyślny menedżer plik
 <context>
     <name>PCManFM::DesktopWindow</name>
     <message>
-        <location filename="../desktopwindow.cpp" line="299"/>
+        <location filename="../desktopwindow.cpp" line="300"/>
         <source>Trash (One item)</source>
         <translation>Kosz (jeden element)</translation>
     </message>
     <message numerus="yes">
-        <location filename="../desktopwindow.cpp" line="302"/>
+        <location filename="../desktopwindow.cpp" line="303"/>
         <source>Trash (%Ln items)</source>
         <translation>
             <numerusform>Kosz (%Ln element)</numerusform>
@@ -1698,48 +1698,48 @@ są klikane lewym przyciskiem, nawet jeśli nie jest to domyślny menedżer plik
         </translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="306"/>
+        <location filename="../desktopwindow.cpp" line="307"/>
         <source>Trash (Empty)</source>
         <translation>Kosz (pusty)</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="341"/>
+        <location filename="../desktopwindow.cpp" line="342"/>
         <source>Computer</source>
         <translation>Komputer</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="355"/>
+        <location filename="../desktopwindow.cpp" line="356"/>
         <source>Network</source>
         <translation>Sieć</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="992"/>
+        <location filename="../desktopwindow.cpp" line="993"/>
         <source>Open</source>
         <translation>Otwórz</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="998"/>
-        <location filename="../desktopwindow.cpp" line="1038"/>
+        <location filename="../desktopwindow.cpp" line="999"/>
+        <location filename="../desktopwindow.cpp" line="1039"/>
         <source>Stic&amp;k to Current Position</source>
         <translation>Przyp&amp;nij do aktualnej pozycji</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1006"/>
+        <location filename="../desktopwindow.cpp" line="1007"/>
         <source>Empty Trash</source>
         <translation>Pusty kosz</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1065"/>
+        <location filename="../desktopwindow.cpp" line="1066"/>
         <source>Hide Desktop Items</source>
         <translation>Ukryj ikony pulpitu</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1071"/>
+        <location filename="../desktopwindow.cpp" line="1072"/>
         <source>Create Launcher</source>
         <translation>Utwórz aktywator</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1074"/>
+        <location filename="../desktopwindow.cpp" line="1075"/>
         <source>Desktop Preferences</source>
         <translation>Ustawienia pulpitu</translation>
     </message>
@@ -1768,55 +1768,55 @@ są klikane lewym przyciskiem, nawet jeśli nie jest to domyślny menedżer plik
         <translation>Główna instancja</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="743"/>
+        <location filename="../mainwindow.cpp" line="742"/>
         <source>Hide menu bar</source>
         <translation>Ukryj pasek menu</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="744"/>
+        <location filename="../mainwindow.cpp" line="743"/>
         <source>This will hide the menu bar completely, use Ctrl+M to show it again.</source>
         <translation>Ta opcja całkowicie ukryje pasek menu, możesz go przywrócić skrótem Ctrl+M.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1191"/>
+        <location filename="../mainwindow.cpp" line="1190"/>
         <source>Version: %1</source>
         <translation>Wersja: %1</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="174"/>
-        <location filename="../mainwindow.cpp" line="2155"/>
+        <location filename="../mainwindow.cpp" line="2161"/>
         <source>&amp;Move to Trash</source>
         <translation>&amp;Przenieś do kosza</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="174"/>
-        <location filename="../mainwindow.cpp" line="2155"/>
+        <location filename="../mainwindow.cpp" line="2161"/>
         <source>&amp;Delete</source>
         <translation>&amp;Usuń</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1998"/>
+        <location filename="../mainwindow.cpp" line="1997"/>
         <source>Customized View Settings</source>
         <translation>Ustawienia widoku</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="2262"/>
-        <location filename="../mainwindow.cpp" line="2270"/>
+        <location filename="../mainwindow.cpp" line="2268"/>
+        <location filename="../mainwindow.cpp" line="2276"/>
         <source>Error</source>
         <translation>Błąd</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="2270"/>
+        <location filename="../mainwindow.cpp" line="2276"/>
         <source>Switch user command is not set.</source>
         <translation>Nie ustawiono polecenia do przełączania użytkowników.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="2372"/>
+        <location filename="../mainwindow.cpp" line="2378"/>
         <source>Cleaning Folder Settings</source>
         <translation>Ustawienia folderu czyszczenia</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="2373"/>
+        <location filename="../mainwindow.cpp" line="2379"/>
         <source>Do you want to remove settings of nonexistent folders?
 They might be useful if those folders are created again.</source>
         <translation>Czy chcesz usunąć ustawienia nieistniejących folderów?
@@ -2140,7 +2140,7 @@ Mogą się one przydać jeśli te foldery zostaną stworzone ponownie.</translat
     <message>
         <location filename="../preferences.ui" line="219"/>
         <source>Renamed files will also be selected</source>
-        <translation>Pliki ze zmienioną nazwą również zostaną wybrane</translation>
+        <translation>Pliki ze zmienioną nazwą również zostaną&#xa0;wybrane</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="229"/>
@@ -2189,11 +2189,6 @@ Mogą się one przydać jeśli te foldery zostaną stworzone ponownie.</translat
         <location filename="../preferences.ui" line="422"/>
         <source>Show icons of hidden files shadowed</source>
         <translation>Przyciemniaj ikony ukrytych plików</translation>
-    </message>
-    <message>
-        <location filename="../preferences.ui" line="436"/>
-        <source>Disable smooth scrolling in list and compact modes</source>
-        <translation>Wyłącz gładkie przewijanie w trybie listy i kompaktowym</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="459"/>
@@ -2327,6 +2322,11 @@ Wartość -1 oznacza, brak limitu dla rozmiaru pliku (ustawienie domyślne).</tr
         <translation>Nie pokazuj pasków narzędzi plików</translation>
     </message>
     <message>
+        <location filename="../preferences.ui" line="436"/>
+        <source>Disable smooth scrolling</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../preferences.ui" line="648"/>
         <source>Needs ffmpegthumbnailer</source>
         <translation>Wymaga programu ffmpegthumbnailer</translation>
@@ -2437,7 +2437,7 @@ Wartość -1 oznacza, brak limitu dla rozmiaru pliku (ustawienie domyślne).</tr
     <message>
         <location filename="../bulkrename.cpp" line="121"/>
         <location filename="../bulkrename.cpp" line="124"/>
-        <location filename="../tabpage.cpp" line="1115"/>
+        <location filename="../tabpage.cpp" line="1117"/>
         <source>Error</source>
         <translation>Błąd</translation>
     </message>
@@ -2452,7 +2452,7 @@ Wartość -1 oznacza, brak limitu dla rozmiaru pliku (ustawienie domyślne).</tr
         <translation>Nie udało się zmienić nazw niektórych plików.</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="1115"/>
+        <location filename="../tabpage.cpp" line="1117"/>
         <source>Cannot open as Admin.</source>
         <translation>Nie można otworzyć jako Administrator.</translation>
     </message>

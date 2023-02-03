@@ -732,8 +732,18 @@ geöffnet, selbst wenn dies nicht der Standard-Dateimanager ist.</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="135"/>
-        <source>Drag+Shift</source>
-        <translation>Ziehen+Umschalt</translation>
+        <source>Drop+Shift</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../shortcuts.ui" line="143"/>
+        <source>Drop+Ctrl</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../shortcuts.ui" line="151"/>
+        <source>Drop+Shift+Ctrl</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="138"/>
@@ -741,19 +751,9 @@ geöffnet, selbst wenn dies nicht der Standard-Dateimanager ist.</translation>
         <translation>Datei beim Loslassen verschieben</translation>
     </message>
     <message>
-        <location filename="../shortcuts.ui" line="143"/>
-        <source>Drag+Ctrl</source>
-        <translation>Ziehen+Strg</translation>
-    </message>
-    <message>
         <location filename="../shortcuts.ui" line="146"/>
         <source>Copy file on dropping</source>
         <translation>Datein beim Loslassen kopieren</translation>
-    </message>
-    <message>
-        <location filename="../shortcuts.ui" line="151"/>
-        <source>Drag+Shift+Ctrl</source>
-        <translation>Ziehen+Umschalt+Strg</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="154"/>
@@ -1450,99 +1450,99 @@ geöffnet, selbst wenn dies nicht der Standard-Dateimanager ist.</translation>
 <context>
     <name>PCManFM::Application</name>
     <message>
-        <location filename="../application.cpp" line="188"/>
+        <location filename="../application.cpp" line="187"/>
         <source>Name of configuration profile</source>
         <translation>Name des Konfigurationsprofils</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="188"/>
+        <location filename="../application.cpp" line="187"/>
         <source>PROFILE</source>
         <translation>PROFIL</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="191"/>
+        <location filename="../application.cpp" line="190"/>
         <source>Run PCManFM-Qt as a daemon</source>
         <translation>PCManFM-Qt als daemon laufen lassen</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="194"/>
+        <location filename="../application.cpp" line="193"/>
         <source>Quit PCManFM-Qt</source>
         <translation>Beende PCManFM-Qt</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="197"/>
+        <location filename="../application.cpp" line="196"/>
         <source>Launch desktop manager</source>
         <translation>Arbeitsflächenverwaltung starten</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="200"/>
+        <location filename="../application.cpp" line="199"/>
         <source>Turn off desktop manager if it&apos;s running</source>
         <translation>Verwaltung der Arbeitsfläche beenden, falls aktiv</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="203"/>
+        <location filename="../application.cpp" line="202"/>
         <source>Open desktop preference dialog on the page with the specified name</source>
         <translation>Einstellungsdialog der Arbeitsfläche mit dem angegebenen Tab öffnen</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="203"/>
-        <location filename="../application.cpp" line="218"/>
+        <location filename="../application.cpp" line="202"/>
+        <location filename="../application.cpp" line="217"/>
         <source>NAME</source>
         <translation>NAME</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="206"/>
+        <location filename="../application.cpp" line="205"/>
         <source>Open new window</source>
         <translation>Neues Fenster öffnen</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="209"/>
+        <location filename="../application.cpp" line="208"/>
         <source>Open Find Files utility</source>
         <translation>Dateisuche öffnen</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="212"/>
+        <location filename="../application.cpp" line="211"/>
         <source>Set desktop wallpaper from image FILE</source>
         <translation>Angegebene DATEI als Hintergrundbild einstellen</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="212"/>
+        <location filename="../application.cpp" line="211"/>
         <source>FILE</source>
         <translation>DATEI</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="215"/>
+        <location filename="../application.cpp" line="214"/>
         <source>MODE</source>
         <translation>MODUS</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="215"/>
+        <location filename="../application.cpp" line="214"/>
         <source>Set mode of desktop wallpaper. MODE=(%1)</source>
         <translation>Modus des Hintergrundbildes einstellen. MODE=(%1)</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="218"/>
+        <location filename="../application.cpp" line="217"/>
         <source>Open Preferences dialog on the page with the specified name</source>
         <translation>Einstellungsdialog auf dem angegebenen Tab öffnen</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="221"/>
+        <location filename="../application.cpp" line="220"/>
         <source>Files or directories to open</source>
         <translation>Zu öffnende Dateien oder Verzeichnisse</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="221"/>
+        <location filename="../application.cpp" line="220"/>
         <source>[FILE1, FILE2,...]</source>
         <translation>[DATEI1, DATEI2, ...]</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="652"/>
-        <location filename="../application.cpp" line="657"/>
+        <location filename="../application.cpp" line="651"/>
+        <location filename="../application.cpp" line="656"/>
         <source>Error</source>
         <translation>Fehler</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="657"/>
+        <location filename="../application.cpp" line="656"/>
         <source>Terminal emulator is not set.</source>
         <translation>Es ist kein Terminalemulator eingestellt.</translation>
     </message>
@@ -1687,12 +1687,12 @@ geöffnet, selbst wenn dies nicht der Standard-Dateimanager ist.</translation>
 <context>
     <name>PCManFM::DesktopWindow</name>
     <message>
-        <location filename="../desktopwindow.cpp" line="299"/>
+        <location filename="../desktopwindow.cpp" line="300"/>
         <source>Trash (One item)</source>
         <translation>Papierkorb (ein Element)</translation>
     </message>
     <message numerus="yes">
-        <location filename="../desktopwindow.cpp" line="302"/>
+        <location filename="../desktopwindow.cpp" line="303"/>
         <source>Trash (%Ln items)</source>
         <translation>
             <numerusform>Papierkorb (%Ln Element)</numerusform>
@@ -1700,48 +1700,48 @@ geöffnet, selbst wenn dies nicht der Standard-Dateimanager ist.</translation>
         </translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="306"/>
+        <location filename="../desktopwindow.cpp" line="307"/>
         <source>Trash (Empty)</source>
         <translation>Papierkorb (Leer)</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="341"/>
+        <location filename="../desktopwindow.cpp" line="342"/>
         <source>Computer</source>
         <translation>Rechner</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="355"/>
+        <location filename="../desktopwindow.cpp" line="356"/>
         <source>Network</source>
         <translation>Netzwerk</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="992"/>
+        <location filename="../desktopwindow.cpp" line="993"/>
         <source>Open</source>
         <translation>Öffnen</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="998"/>
-        <location filename="../desktopwindow.cpp" line="1038"/>
+        <location filename="../desktopwindow.cpp" line="999"/>
+        <location filename="../desktopwindow.cpp" line="1039"/>
         <source>Stic&amp;k to Current Position</source>
         <translation>Symbole &amp;fixieren</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1006"/>
+        <location filename="../desktopwindow.cpp" line="1007"/>
         <source>Empty Trash</source>
         <translation>Papierkorb leeren</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1065"/>
+        <location filename="../desktopwindow.cpp" line="1066"/>
         <source>Hide Desktop Items</source>
         <translation>Arbeitsflächenelemente ausblenden</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1071"/>
+        <location filename="../desktopwindow.cpp" line="1072"/>
         <source>Create Launcher</source>
         <translation>Starter erstellen</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1074"/>
+        <location filename="../desktopwindow.cpp" line="1075"/>
         <source>Desktop Preferences</source>
         <translation>Arbeitsflächeneinstellungen</translation>
     </message>
@@ -1770,55 +1770,55 @@ geöffnet, selbst wenn dies nicht der Standard-Dateimanager ist.</translation>
         <translation>Instanz mit Administratorrechten</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="743"/>
+        <location filename="../mainwindow.cpp" line="742"/>
         <source>Hide menu bar</source>
         <translation>Menüleiste ausblenden</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="744"/>
+        <location filename="../mainwindow.cpp" line="743"/>
         <source>This will hide the menu bar completely, use Ctrl+M to show it again.</source>
         <translation>Dadurch wird die Menüleiste komplett ausgeblendet, mit Strg+M können Sie sie wieder einblenden.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1191"/>
+        <location filename="../mainwindow.cpp" line="1190"/>
         <source>Version: %1</source>
         <translation>Version: %1</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="174"/>
-        <location filename="../mainwindow.cpp" line="2155"/>
+        <location filename="../mainwindow.cpp" line="2161"/>
         <source>&amp;Move to Trash</source>
         <translation>In den Papierkorb &amp;verschieben</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="174"/>
-        <location filename="../mainwindow.cpp" line="2155"/>
+        <location filename="../mainwindow.cpp" line="2161"/>
         <source>&amp;Delete</source>
         <translation>&amp;Löschen</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1998"/>
+        <location filename="../mainwindow.cpp" line="1997"/>
         <source>Customized View Settings</source>
         <translation>Angepasste Ansichtseinstellungen</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="2262"/>
-        <location filename="../mainwindow.cpp" line="2270"/>
+        <location filename="../mainwindow.cpp" line="2268"/>
+        <location filename="../mainwindow.cpp" line="2276"/>
         <source>Error</source>
         <translation>Fehler</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="2270"/>
+        <location filename="../mainwindow.cpp" line="2276"/>
         <source>Switch user command is not set.</source>
         <translation>Befehl, um den Benutzer zu wechseln, ist nicht eingestellt.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="2372"/>
+        <location filename="../mainwindow.cpp" line="2378"/>
         <source>Cleaning Folder Settings</source>
         <translation>Ordnereinstellungen bereinigen</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="2373"/>
+        <location filename="../mainwindow.cpp" line="2379"/>
         <source>Do you want to remove settings of nonexistent folders?
 They might be useful if those folders are created again.</source>
         <translation>Möchten Sie die Einstellungen von nicht existierenden Ordnern entfernen?
@@ -2189,11 +2189,6 @@ Sie könnten nützlich sein, wenn diese Ordner erneut erstellt werden.</translat
         <translation>Symbole versteckter Dateien schattiert anzeigen</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="436"/>
-        <source>Disable smooth scrolling in list and compact modes</source>
-        <translation>Sanften Bildlauf in den Modi Liste und Kompakt deaktivieren</translation>
-    </message>
-    <message>
         <location filename="../preferences.ui" line="459"/>
         <source>Minimum item margins in icon view:</source>
         <translation>Minimaler Rand der Objekte in Symbolansicht:</translation>
@@ -2325,6 +2320,11 @@ Wert -1 bedeutet ohne Größenbegrenzung (als Standard).</translation>
         <translation>Keine Kurzinfo zu Dateien anzeigen</translation>
     </message>
     <message>
+        <location filename="../preferences.ui" line="436"/>
+        <source>Disable smooth scrolling</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../preferences.ui" line="648"/>
         <source>Needs ffmpegthumbnailer</source>
         <translation>Benötigt ffmpegthumbnailer</translation>
@@ -2435,7 +2435,7 @@ Wert -1 bedeutet ohne Größenbegrenzung (als Standard).</translation>
     <message>
         <location filename="../bulkrename.cpp" line="121"/>
         <location filename="../bulkrename.cpp" line="124"/>
-        <location filename="../tabpage.cpp" line="1115"/>
+        <location filename="../tabpage.cpp" line="1117"/>
         <source>Error</source>
         <translation>Fehler</translation>
     </message>
@@ -2450,7 +2450,7 @@ Wert -1 bedeutet ohne Größenbegrenzung (als Standard).</translation>
         <translation>Einige Dateien konnten nicht umbenannt werden.</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="1115"/>
+        <location filename="../tabpage.cpp" line="1117"/>
         <source>Cannot open as Admin.</source>
         <translation>Admin kann es nicht öffnen.</translation>
     </message>

@@ -730,8 +730,18 @@ el gestor de fitxers predeterminat.</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="135"/>
-        <source>Drag+Shift</source>
-        <translation>Arrossega+Maj</translation>
+        <source>Drop+Shift</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../shortcuts.ui" line="143"/>
+        <source>Drop+Ctrl</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../shortcuts.ui" line="151"/>
+        <source>Drop+Shift+Ctrl</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="138"/>
@@ -739,19 +749,9 @@ el gestor de fitxers predeterminat.</translation>
         <translation>Mou el fitxer en deixar anar</translation>
     </message>
     <message>
-        <location filename="../shortcuts.ui" line="143"/>
-        <source>Drag+Ctrl</source>
-        <translation>Arrossega+Ctrl</translation>
-    </message>
-    <message>
         <location filename="../shortcuts.ui" line="146"/>
         <source>Copy file on dropping</source>
         <translation>Copia el fitxer en deixar anar</translation>
-    </message>
-    <message>
-        <location filename="../shortcuts.ui" line="151"/>
-        <source>Drag+Shift+Ctrl</source>
-        <translation>Arrossega+Maj+Ctrl</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="154"/>
@@ -1449,99 +1449,99 @@ el gestor de fitxers predeterminat.</translation>
 <context>
     <name>PCManFM::Application</name>
     <message>
-        <location filename="../application.cpp" line="188"/>
+        <location filename="../application.cpp" line="187"/>
         <source>Name of configuration profile</source>
         <translation>Nom del perfil de la configuració</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="188"/>
+        <location filename="../application.cpp" line="187"/>
         <source>PROFILE</source>
         <translation>PERFIL</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="191"/>
+        <location filename="../application.cpp" line="190"/>
         <source>Run PCManFM-Qt as a daemon</source>
         <translation>Executa PCManFM-Qt com a dimoni</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="194"/>
+        <location filename="../application.cpp" line="193"/>
         <source>Quit PCManFM-Qt</source>
         <translation>Sortir de PCManFM-Qt</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="197"/>
+        <location filename="../application.cpp" line="196"/>
         <source>Launch desktop manager</source>
         <translation>Llança el gestor d&apos;escriptoris</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="200"/>
+        <location filename="../application.cpp" line="199"/>
         <source>Turn off desktop manager if it&apos;s running</source>
         <translation>Apaga el gestor d&apos;escriptoris si s&apos;està executant</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="203"/>
+        <location filename="../application.cpp" line="202"/>
         <source>Open desktop preference dialog on the page with the specified name</source>
         <translation>Obre el diàleg de preferències de l&apos;escriptori en la pàgina amb el nom especificat</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="203"/>
-        <location filename="../application.cpp" line="218"/>
+        <location filename="../application.cpp" line="202"/>
+        <location filename="../application.cpp" line="217"/>
         <source>NAME</source>
         <translation>NOM</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="206"/>
+        <location filename="../application.cpp" line="205"/>
         <source>Open new window</source>
         <translation>Obre una finestra nova</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="209"/>
+        <location filename="../application.cpp" line="208"/>
         <source>Open Find Files utility</source>
         <translation>Obre la utilitat Troba fitxers</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="212"/>
+        <location filename="../application.cpp" line="211"/>
         <source>Set desktop wallpaper from image FILE</source>
         <translation>Estableix la imatge del fons de l&apos;escriptori a partir del FITXER de la imatge</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="212"/>
+        <location filename="../application.cpp" line="211"/>
         <source>FILE</source>
         <translation>FITXER</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="215"/>
+        <location filename="../application.cpp" line="214"/>
         <source>MODE</source>
         <translation>MODE</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="215"/>
+        <location filename="../application.cpp" line="214"/>
         <source>Set mode of desktop wallpaper. MODE=(%1)</source>
         <translation>Estableix el mode de la imatge del fons de l&apos;escriptori. MODE=(%1)</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="218"/>
+        <location filename="../application.cpp" line="217"/>
         <source>Open Preferences dialog on the page with the specified name</source>
         <translation>Obre el diàleg de preferències en la pàgina amb el nom especificat</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="221"/>
+        <location filename="../application.cpp" line="220"/>
         <source>Files or directories to open</source>
         <translation>Els fitxers o els directoris a obrir</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="221"/>
+        <location filename="../application.cpp" line="220"/>
         <source>[FILE1, FILE2,...]</source>
         <translation>[FITXER1, FITXER2,...]</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="652"/>
-        <location filename="../application.cpp" line="657"/>
+        <location filename="../application.cpp" line="651"/>
+        <location filename="../application.cpp" line="656"/>
         <source>Error</source>
         <translation>Error</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="657"/>
+        <location filename="../application.cpp" line="656"/>
         <source>Terminal emulator is not set.</source>
         <translation>L&apos;emulador del terminal no està establert.</translation>
     </message>
@@ -1686,12 +1686,12 @@ el gestor de fitxers predeterminat.</translation>
 <context>
     <name>PCManFM::DesktopWindow</name>
     <message>
-        <location filename="../desktopwindow.cpp" line="299"/>
+        <location filename="../desktopwindow.cpp" line="300"/>
         <source>Trash (One item)</source>
         <translation>Paperera (un element)</translation>
     </message>
     <message numerus="yes">
-        <location filename="../desktopwindow.cpp" line="302"/>
+        <location filename="../desktopwindow.cpp" line="303"/>
         <source>Trash (%Ln items)</source>
         <translation>
             <numerusform>Paperera (%Ln element)</numerusform>
@@ -1699,48 +1699,48 @@ el gestor de fitxers predeterminat.</translation>
         </translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="306"/>
+        <location filename="../desktopwindow.cpp" line="307"/>
         <source>Trash (Empty)</source>
         <translation>Paperera (buida)</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="341"/>
+        <location filename="../desktopwindow.cpp" line="342"/>
         <source>Computer</source>
         <translation>Ordinador</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="355"/>
+        <location filename="../desktopwindow.cpp" line="356"/>
         <source>Network</source>
         <translation>Xarxa</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="992"/>
+        <location filename="../desktopwindow.cpp" line="993"/>
         <source>Open</source>
         <translation>Obre</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="998"/>
-        <location filename="../desktopwindow.cpp" line="1038"/>
+        <location filename="../desktopwindow.cpp" line="999"/>
+        <location filename="../desktopwindow.cpp" line="1039"/>
         <source>Stic&amp;k to Current Position</source>
         <translation>Fi&amp;xa a la posició actual</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1006"/>
+        <location filename="../desktopwindow.cpp" line="1007"/>
         <source>Empty Trash</source>
         <translation>Buida la paperera</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1065"/>
+        <location filename="../desktopwindow.cpp" line="1066"/>
         <source>Hide Desktop Items</source>
         <translation>Oculta els ítems de l&apos;escriptori</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1071"/>
+        <location filename="../desktopwindow.cpp" line="1072"/>
         <source>Create Launcher</source>
         <translation>Crea un llançador</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1074"/>
+        <location filename="../desktopwindow.cpp" line="1075"/>
         <source>Desktop Preferences</source>
         <translation>Preferències de l&apos;escriptori</translation>
     </message>
@@ -1769,55 +1769,55 @@ el gestor de fitxers predeterminat.</translation>
         <translation>Instància de root</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="743"/>
+        <location filename="../mainwindow.cpp" line="742"/>
         <source>Hide menu bar</source>
         <translation>Oculta la barra de menús</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="744"/>
+        <location filename="../mainwindow.cpp" line="743"/>
         <source>This will hide the menu bar completely, use Ctrl+M to show it again.</source>
         <translation>Això ocultarà completament la barra de menús, utilitzeu Ctrl+M per tornar-la a mostrar.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1191"/>
+        <location filename="../mainwindow.cpp" line="1190"/>
         <source>Version: %1</source>
         <translation>Versió: %1</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="174"/>
-        <location filename="../mainwindow.cpp" line="2155"/>
+        <location filename="../mainwindow.cpp" line="2161"/>
         <source>&amp;Move to Trash</source>
         <translation>&amp;Mou a la paperera</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="174"/>
-        <location filename="../mainwindow.cpp" line="2155"/>
+        <location filename="../mainwindow.cpp" line="2161"/>
         <source>&amp;Delete</source>
         <translation>&amp;Suprimeix</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1998"/>
+        <location filename="../mainwindow.cpp" line="1997"/>
         <source>Customized View Settings</source>
         <translation>Configuració de la vista personalitzada</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="2262"/>
-        <location filename="../mainwindow.cpp" line="2270"/>
+        <location filename="../mainwindow.cpp" line="2268"/>
+        <location filename="../mainwindow.cpp" line="2276"/>
         <source>Error</source>
         <translation>Error</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="2270"/>
+        <location filename="../mainwindow.cpp" line="2276"/>
         <source>Switch user command is not set.</source>
         <translation>L&apos;ordre de canvi d&apos;usuari no està establerta.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="2372"/>
+        <location filename="../mainwindow.cpp" line="2378"/>
         <source>Cleaning Folder Settings</source>
         <translation>Netejant la configuració de la carpeta</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="2373"/>
+        <location filename="../mainwindow.cpp" line="2379"/>
         <source>Do you want to remove settings of nonexistent folders?
 They might be useful if those folders are created again.</source>
         <translation>Voleu suprimir la configuració de carpetes inexistents? 
@@ -2175,11 +2175,6 @@ Pot ser útil si es tornen a crear aquestes carpetes.</translation>
         <translation>Mostra ombrejades les icones dels fitxers ocults</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="436"/>
-        <source>Disable smooth scrolling in list and compact modes</source>
-        <translation>Desactiva el desplaçament suau en els modes de llista i compacte</translation>
-    </message>
-    <message>
         <location filename="../preferences.ui" line="459"/>
         <source>Minimum item margins in icon view:</source>
         <translation>Marges mínims de l&apos;ítem a la vista d&apos;icones:</translation>
@@ -2326,6 +2321,11 @@ Un valor de -1 significa que no hi ha límit per a la mida del fitxer (per defec
         <translation>No mostra la informació emergent del fitxer</translation>
     </message>
     <message>
+        <location filename="../preferences.ui" line="436"/>
+        <source>Disable smooth scrolling</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../preferences.ui" line="648"/>
         <source>Needs ffmpegthumbnailer</source>
         <translation>Necessita ffmpegthumbnailer</translation>
@@ -2436,7 +2436,7 @@ Un valor de -1 significa que no hi ha límit per a la mida del fitxer (per defec
     <message>
         <location filename="../bulkrename.cpp" line="121"/>
         <location filename="../bulkrename.cpp" line="124"/>
-        <location filename="../tabpage.cpp" line="1115"/>
+        <location filename="../tabpage.cpp" line="1117"/>
         <source>Error</source>
         <translation>Error</translation>
     </message>
@@ -2451,7 +2451,7 @@ Un valor de -1 significa que no hi ha límit per a la mida del fitxer (per defec
         <translation>No s&apos;ha pogut canviar el nom d&apos;alguns fitxers.</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="1115"/>
+        <location filename="../tabpage.cpp" line="1117"/>
         <source>Cannot open as Admin.</source>
         <translation>No es pot obrir com a administrador.</translation>
     </message>

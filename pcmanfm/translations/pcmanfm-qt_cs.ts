@@ -729,8 +729,18 @@ kliknete levým tlačítkem, i když to není výchozí správce souborů.</tran
     </message>
     <message>
         <location filename="../shortcuts.ui" line="135"/>
-        <source>Drag+Shift</source>
-        <translation>Táhnout+Shift</translation>
+        <source>Drop+Shift</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../shortcuts.ui" line="143"/>
+        <source>Drop+Ctrl</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../shortcuts.ui" line="151"/>
+        <source>Drop+Shift+Ctrl</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="138"/>
@@ -738,19 +748,9 @@ kliknete levým tlačítkem, i když to není výchozí správce souborů.</tran
         <translation>Přesunout soubor při upuštění</translation>
     </message>
     <message>
-        <location filename="../shortcuts.ui" line="143"/>
-        <source>Drag+Ctrl</source>
-        <translation>Táhnout+Ctrl</translation>
-    </message>
-    <message>
         <location filename="../shortcuts.ui" line="146"/>
         <source>Copy file on dropping</source>
         <translation>Kopírovat soubor při upuštění</translation>
-    </message>
-    <message>
-        <location filename="../shortcuts.ui" line="151"/>
-        <source>Drag+Shift+Ctrl</source>
-        <translation>Táhnout+Shift+Ctrl</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="154"/>
@@ -1447,99 +1447,99 @@ kliknete levým tlačítkem, i když to není výchozí správce souborů.</tran
 <context>
     <name>PCManFM::Application</name>
     <message>
-        <location filename="../application.cpp" line="188"/>
+        <location filename="../application.cpp" line="187"/>
         <source>Name of configuration profile</source>
         <translation>Název profilu nastavení</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="188"/>
+        <location filename="../application.cpp" line="187"/>
         <source>PROFILE</source>
         <translation>PROFIL</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="191"/>
+        <location filename="../application.cpp" line="190"/>
         <source>Run PCManFM-Qt as a daemon</source>
         <translation>Spustit PCManFM-Qt jako proces služby</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="194"/>
+        <location filename="../application.cpp" line="193"/>
         <source>Quit PCManFM-Qt</source>
         <translation>Ukončit PCManFM-Qt</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="197"/>
+        <location filename="../application.cpp" line="196"/>
         <source>Launch desktop manager</source>
         <translation>Spustit správce plochy</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="200"/>
+        <location filename="../application.cpp" line="199"/>
         <source>Turn off desktop manager if it&apos;s running</source>
         <translation>Pokud je spuštěný, vypnout správce plochy</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="203"/>
+        <location filename="../application.cpp" line="202"/>
         <source>Open desktop preference dialog on the page with the specified name</source>
         <translation>Otevřít dialog předvoleb plochy na stránce, které název byl zadán</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="203"/>
-        <location filename="../application.cpp" line="218"/>
+        <location filename="../application.cpp" line="202"/>
+        <location filename="../application.cpp" line="217"/>
         <source>NAME</source>
         <translation>NAZEV</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="206"/>
+        <location filename="../application.cpp" line="205"/>
         <source>Open new window</source>
         <translation>Otevřít nové okno</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="209"/>
+        <location filename="../application.cpp" line="208"/>
         <source>Open Find Files utility</source>
         <translation>Otevřít nástroj pro hledání souborů</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="212"/>
+        <location filename="../application.cpp" line="211"/>
         <source>Set desktop wallpaper from image FILE</source>
         <translation>Nastavit pozadí plochy ze SOUBORU s obrázkem</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="212"/>
+        <location filename="../application.cpp" line="211"/>
         <source>FILE</source>
         <translation>SOUBOR</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="215"/>
+        <location filename="../application.cpp" line="214"/>
         <source>MODE</source>
         <translation>REŽIM</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="215"/>
+        <location filename="../application.cpp" line="214"/>
         <source>Set mode of desktop wallpaper. MODE=(%1)</source>
         <translation>Nastavit režim obrázku na pozadí plochy. MODE=(%1)</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="218"/>
+        <location filename="../application.cpp" line="217"/>
         <source>Open Preferences dialog on the page with the specified name</source>
         <translation>Otevřít dialog předvoleb na stránce které byl zadán název</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="221"/>
+        <location filename="../application.cpp" line="220"/>
         <source>Files or directories to open</source>
         <translation>Soubory nebo složky k otevření</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="221"/>
+        <location filename="../application.cpp" line="220"/>
         <source>[FILE1, FILE2,...]</source>
         <translation>[SOUBOR1, SOUBOR2,…]</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="652"/>
-        <location filename="../application.cpp" line="657"/>
+        <location filename="../application.cpp" line="651"/>
+        <location filename="../application.cpp" line="656"/>
         <source>Error</source>
         <translation>Chyba</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="657"/>
+        <location filename="../application.cpp" line="656"/>
         <source>Terminal emulator is not set.</source>
         <translation>Není nastaven emulátor terminálu.</translation>
     </message>
@@ -1684,12 +1684,12 @@ kliknete levým tlačítkem, i když to není výchozí správce souborů.</tran
 <context>
     <name>PCManFM::DesktopWindow</name>
     <message>
-        <location filename="../desktopwindow.cpp" line="299"/>
+        <location filename="../desktopwindow.cpp" line="300"/>
         <source>Trash (One item)</source>
         <translation>Koš (1 položka)</translation>
     </message>
     <message numerus="yes">
-        <location filename="../desktopwindow.cpp" line="302"/>
+        <location filename="../desktopwindow.cpp" line="303"/>
         <source>Trash (%Ln items)</source>
         <translation>
             <numerusform>Koš (%Ln položka)</numerusform>
@@ -1698,48 +1698,48 @@ kliknete levým tlačítkem, i když to není výchozí správce souborů.</tran
         </translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="306"/>
+        <location filename="../desktopwindow.cpp" line="307"/>
         <source>Trash (Empty)</source>
         <translation>Koš (prázdný)</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="341"/>
+        <location filename="../desktopwindow.cpp" line="342"/>
         <source>Computer</source>
         <translation>Můj počítač</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="355"/>
+        <location filename="../desktopwindow.cpp" line="356"/>
         <source>Network</source>
         <translation>Síť</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="992"/>
+        <location filename="../desktopwindow.cpp" line="993"/>
         <source>Open</source>
         <translation>Otevřít</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="998"/>
-        <location filename="../desktopwindow.cpp" line="1038"/>
+        <location filename="../desktopwindow.cpp" line="999"/>
+        <location filename="../desktopwindow.cpp" line="1039"/>
         <source>Stic&amp;k to Current Position</source>
         <translation>Připnout &amp;ke stávající poloze</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1006"/>
+        <location filename="../desktopwindow.cpp" line="1007"/>
         <source>Empty Trash</source>
         <translation>Vyprázdnit koš</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1065"/>
+        <location filename="../desktopwindow.cpp" line="1066"/>
         <source>Hide Desktop Items</source>
         <translation>Skrýt položky plochy</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1071"/>
+        <location filename="../desktopwindow.cpp" line="1072"/>
         <source>Create Launcher</source>
         <translation>Vytvořit spouštěč</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1074"/>
+        <location filename="../desktopwindow.cpp" line="1075"/>
         <source>Desktop Preferences</source>
         <translation>Předvolby pracovní plochy</translation>
     </message>
@@ -1768,55 +1768,55 @@ kliknete levým tlačítkem, i když to není výchozí správce souborů.</tran
         <translation>Správcovská (root) instance</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="743"/>
+        <location filename="../mainwindow.cpp" line="742"/>
         <source>Hide menu bar</source>
         <translation>Skrýt lištu nabídky</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="744"/>
+        <location filename="../mainwindow.cpp" line="743"/>
         <source>This will hide the menu bar completely, use Ctrl+M to show it again.</source>
         <translation>Tímto bude lišta nabídky úplně skryta. Opět ji zobrazíte stisknutím Ctrl+M.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1191"/>
+        <location filename="../mainwindow.cpp" line="1190"/>
         <source>Version: %1</source>
         <translation>Verze: %1</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="174"/>
-        <location filename="../mainwindow.cpp" line="2155"/>
+        <location filename="../mainwindow.cpp" line="2161"/>
         <source>&amp;Move to Trash</source>
         <translation>&amp;Přesunout do koše</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="174"/>
-        <location filename="../mainwindow.cpp" line="2155"/>
+        <location filename="../mainwindow.cpp" line="2161"/>
         <source>&amp;Delete</source>
         <translation>&amp;Smazat</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1998"/>
+        <location filename="../mainwindow.cpp" line="1997"/>
         <source>Customized View Settings</source>
         <translation>Nastavení uživatelsky určeného zobrazení</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="2262"/>
-        <location filename="../mainwindow.cpp" line="2270"/>
+        <location filename="../mainwindow.cpp" line="2268"/>
+        <location filename="../mainwindow.cpp" line="2276"/>
         <source>Error</source>
         <translation>Chyba</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="2270"/>
+        <location filename="../mainwindow.cpp" line="2276"/>
         <source>Switch user command is not set.</source>
         <translation>Příkaz pro přepnutí uživatele není nastaven.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="2372"/>
+        <location filename="../mainwindow.cpp" line="2378"/>
         <source>Cleaning Folder Settings</source>
         <translation>Čištění nastavení složek</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="2373"/>
+        <location filename="../mainwindow.cpp" line="2379"/>
         <source>Do you want to remove settings of nonexistent folders?
 They might be useful if those folders are created again.</source>
         <translation>Opravdu chcete odebrat nastavení neexistujících složek?
@@ -2191,11 +2191,6 @@ Mohly by se ještě hodit v případě znovuvytvoření těchto složek.</transl
         <translation>Zobrazovat ikony skrytých souborů vyšedlé</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="436"/>
-        <source>Disable smooth scrolling in list and compact modes</source>
-        <translation>Vypnout plynulé posouvání v seznamu a kompaktních režimech</translation>
-    </message>
-    <message>
         <location filename="../preferences.ui" line="459"/>
         <source>Minimum item margins in icon view:</source>
         <translation>Minimální okraje položky v zobrazení s ikonami:</translation>
@@ -2327,6 +2322,11 @@ Hodnota -1 znamená, že neexistuje žádný limit pro velikost souboru (výchoz
         <translation>Neukazovat nástrojové rady k souborům</translation>
     </message>
     <message>
+        <location filename="../preferences.ui" line="436"/>
+        <source>Disable smooth scrolling</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../preferences.ui" line="648"/>
         <source>Needs ffmpegthumbnailer</source>
         <translation>Vyžaduje ffmpegthumbnailer</translation>
@@ -2437,7 +2437,7 @@ Hodnota -1 znamená, že neexistuje žádný limit pro velikost souboru (výchoz
     <message>
         <location filename="../bulkrename.cpp" line="121"/>
         <location filename="../bulkrename.cpp" line="124"/>
-        <location filename="../tabpage.cpp" line="1115"/>
+        <location filename="../tabpage.cpp" line="1117"/>
         <source>Error</source>
         <translation>Chyba</translation>
     </message>
@@ -2452,7 +2452,7 @@ Hodnota -1 znamená, že neexistuje žádný limit pro velikost souboru (výchoz
         <translation>Některé soubory se nepodařilo přejmenovat.</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="1115"/>
+        <location filename="../tabpage.cpp" line="1117"/>
         <source>Cannot open as Admin.</source>
         <translation>Nelze otevřít jako správce.</translation>
     </message>

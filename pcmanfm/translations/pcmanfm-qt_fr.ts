@@ -18,7 +18,7 @@
         <source>Programming:
 * Hong Jen Yee (PCMan) &lt;pcman.tw@gmail.com&gt;
 </source>
-        <translation>Programmation :
+        <translation>Programmation&#xa0;:
 * Hong Jen Yee (PCMan) &lt;pcman.tw@gmail.com&gt;
 </translation>
     </message>
@@ -40,7 +40,7 @@
     <message>
         <location filename="../about.ui" line="74"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Wiki: &lt;a href=&quot;https://github.com/lxqt/pcmanfm-qt/wiki&quot;&gt;https://github.com/lxqt/pcmanfm-qt/wiki&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Wiki : &lt;a href=&quot;https://github.com/lxqt/pcmanfm-qt/wiki&quot;&gt;https://github.com/lxqt/pcmanfm-qt/wiki&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Wiki&#xa0;: &lt;a href=&quot;https://github.com/lxqt/pcmanfm-qt/wiki&quot;&gt;https://github.com/lxqt/pcmanfm-qt/wiki&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../about.ui" line="135"/>
@@ -100,7 +100,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../autorun.ui" line="40"/>
         <source>Type of medium:</source>
-        <translation>Type de média :</translation>
+        <translation>Type de média&#x202f;:</translation>
     </message>
     <message>
         <location filename="../autorun.ui" line="47"/>
@@ -379,7 +379,7 @@ Exemples : AudioVideo, Audio, Video, Development, Education, Game, Graphics, Net
     <message>
         <location filename="../desktop-preferences.ui" line="350"/>
         <source>Select background color:</source>
-        <translation>Sélection de la couleur de l&apos;arrière-plan :</translation>
+        <translation>Sélection de la couleur de l&apos;arrière-plan&#xa0;:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="417"/>
@@ -414,12 +414,12 @@ Exemples : AudioVideo, Audio, Video, Development, Education, Game, Graphics, Net
     <message>
         <location filename="../desktop-preferences.ui" line="113"/>
         <source>Select shadow color:</source>
-        <translation>Sélection de la couleur de l&apos;ombre :</translation>
+        <translation>Sélection de la couleur de l&apos;ombre&#xa0;:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="61"/>
         <source>Select font:</source>
-        <translation>Sélection de la police :</translation>
+        <translation>Sélection de la police&#xa0;:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="24"/>
@@ -476,7 +476,7 @@ Un espace est également réservé pour 3 lignes de texte.</translation>
     <message>
         <location filename="../desktop-preferences.ui" line="230"/>
         <source>Margins of work area:</source>
-        <translation>Marges de la zone de travail :</translation>
+        <translation>Marges de la zone de travail&#xa0;:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="303"/>
@@ -729,8 +729,18 @@ par un clic gauche, même si aucun gestionnaire de fichiers n&apos;est défini p
     </message>
     <message>
         <location filename="../shortcuts.ui" line="135"/>
-        <source>Drag+Shift</source>
-        <translation>Glisser+Maj</translation>
+        <source>Drop+Shift</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../shortcuts.ui" line="143"/>
+        <source>Drop+Ctrl</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../shortcuts.ui" line="151"/>
+        <source>Drop+Shift+Ctrl</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="138"/>
@@ -738,19 +748,9 @@ par un clic gauche, même si aucun gestionnaire de fichiers n&apos;est défini p
         <translation>Déplacer le fichier lors du dépôt</translation>
     </message>
     <message>
-        <location filename="../shortcuts.ui" line="143"/>
-        <source>Drag+Ctrl</source>
-        <translation>Ctrl+Glisser</translation>
-    </message>
-    <message>
         <location filename="../shortcuts.ui" line="146"/>
         <source>Copy file on dropping</source>
         <translation>Copier le fichier lors du dépôt</translation>
-    </message>
-    <message>
-        <location filename="../shortcuts.ui" line="151"/>
-        <source>Drag+Shift+Ctrl</source>
-        <translation>Maj+Ctrl+Glisser</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="154"/>
@@ -1447,99 +1447,99 @@ par un clic gauche, même si aucun gestionnaire de fichiers n&apos;est défini p
 <context>
     <name>PCManFM::Application</name>
     <message>
-        <location filename="../application.cpp" line="188"/>
+        <location filename="../application.cpp" line="187"/>
         <source>Name of configuration profile</source>
         <translation>Nom du profil de configuration</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="188"/>
+        <location filename="../application.cpp" line="187"/>
         <source>PROFILE</source>
         <translation>PROFIL</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="197"/>
+        <location filename="../application.cpp" line="196"/>
         <source>Launch desktop manager</source>
         <translation>Lancer le gestionnaire de bureau</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="200"/>
+        <location filename="../application.cpp" line="199"/>
         <source>Turn off desktop manager if it&apos;s running</source>
         <translation>Désactiver le gestionnaire de bureau s&apos;il est en cours d&apos;exécution</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="203"/>
+        <location filename="../application.cpp" line="202"/>
         <source>Open desktop preference dialog on the page with the specified name</source>
         <translation>Ouvrir la boîte de dialogue des préférences du bureau sur la page portant le nom spécifié</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="203"/>
-        <location filename="../application.cpp" line="218"/>
+        <location filename="../application.cpp" line="202"/>
+        <location filename="../application.cpp" line="217"/>
         <source>NAME</source>
         <translation>NOM</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="212"/>
+        <location filename="../application.cpp" line="211"/>
         <source>Set desktop wallpaper from image FILE</source>
         <translation>Définir le fond d&apos;écran à partir d&apos;un FICHIER image</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="212"/>
+        <location filename="../application.cpp" line="211"/>
         <source>FILE</source>
         <translation>FICHIER</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="215"/>
+        <location filename="../application.cpp" line="214"/>
         <source>MODE</source>
         <translation>MODE</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="218"/>
+        <location filename="../application.cpp" line="217"/>
         <source>Open Preferences dialog on the page with the specified name</source>
         <translation>Ouvrir la boîte de dialogue des préférences sur la page portant le nom spécifié</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="206"/>
+        <location filename="../application.cpp" line="205"/>
         <source>Open new window</source>
         <translation>Ouvrir une nouvelle fenêtre</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="191"/>
+        <location filename="../application.cpp" line="190"/>
         <source>Run PCManFM-Qt as a daemon</source>
         <translation>Exécutez PCManFM-Qt en tant que démon</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="194"/>
+        <location filename="../application.cpp" line="193"/>
         <source>Quit PCManFM-Qt</source>
         <translation>Quitter PCManFM-Qt</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="209"/>
+        <location filename="../application.cpp" line="208"/>
         <source>Open Find Files utility</source>
         <translation>Ouvrir l&apos;utilitaire de recherche de fichiers</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="215"/>
+        <location filename="../application.cpp" line="214"/>
         <source>Set mode of desktop wallpaper. MODE=(%1)</source>
         <translation>Définir le mode du papier-peint. MODE=(%1)</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="221"/>
+        <location filename="../application.cpp" line="220"/>
         <source>[FILE1, FILE2,...]</source>
         <translation>[FICHIER1, FICHIER2,...]</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="221"/>
+        <location filename="../application.cpp" line="220"/>
         <source>Files or directories to open</source>
         <translation>Fichiers ou dossiers à ouvrir</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="652"/>
-        <location filename="../application.cpp" line="657"/>
+        <location filename="../application.cpp" line="651"/>
+        <location filename="../application.cpp" line="656"/>
         <source>Error</source>
         <translation>Erreur</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="657"/>
+        <location filename="../application.cpp" line="656"/>
         <source>Terminal emulator is not set.</source>
         <translation>L&apos;émulateur de terminal n&apos;est pas défini.</translation>
     </message>
@@ -1684,12 +1684,12 @@ par un clic gauche, même si aucun gestionnaire de fichiers n&apos;est défini p
 <context>
     <name>PCManFM::DesktopWindow</name>
     <message>
-        <location filename="../desktopwindow.cpp" line="299"/>
+        <location filename="../desktopwindow.cpp" line="300"/>
         <source>Trash (One item)</source>
         <translation>Corbeille (Un élément)</translation>
     </message>
     <message numerus="yes">
-        <location filename="../desktopwindow.cpp" line="302"/>
+        <location filename="../desktopwindow.cpp" line="303"/>
         <source>Trash (%Ln items)</source>
         <translation>
             <numerusform>Corbeille (%Ln élément)</numerusform>
@@ -1697,48 +1697,48 @@ par un clic gauche, même si aucun gestionnaire de fichiers n&apos;est défini p
         </translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="306"/>
+        <location filename="../desktopwindow.cpp" line="307"/>
         <source>Trash (Empty)</source>
         <translation>Corbeille (Vide)</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="341"/>
+        <location filename="../desktopwindow.cpp" line="342"/>
         <source>Computer</source>
         <translation>Ordinateur</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="355"/>
+        <location filename="../desktopwindow.cpp" line="356"/>
         <source>Network</source>
         <translation>Réseau</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="992"/>
+        <location filename="../desktopwindow.cpp" line="993"/>
         <source>Open</source>
         <translation>Ouvrir</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="998"/>
-        <location filename="../desktopwindow.cpp" line="1038"/>
+        <location filename="../desktopwindow.cpp" line="999"/>
+        <location filename="../desktopwindow.cpp" line="1039"/>
         <source>Stic&amp;k to Current Position</source>
         <translation>Res&amp;ter à la position actuelle</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1006"/>
+        <location filename="../desktopwindow.cpp" line="1007"/>
         <source>Empty Trash</source>
         <translation>Vider la corbeille</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1065"/>
+        <location filename="../desktopwindow.cpp" line="1066"/>
         <source>Hide Desktop Items</source>
         <translation>Masquer les éléments du bureau</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1071"/>
+        <location filename="../desktopwindow.cpp" line="1072"/>
         <source>Create Launcher</source>
         <translation>Créer un lanceur</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1074"/>
+        <location filename="../desktopwindow.cpp" line="1075"/>
         <source>Desktop Preferences</source>
         <translation>Préférences du bureau</translation>
     </message>
@@ -1767,58 +1767,58 @@ par un clic gauche, même si aucun gestionnaire de fichiers n&apos;est défini p
         <translation>Instance Root</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="743"/>
+        <location filename="../mainwindow.cpp" line="742"/>
         <source>Hide menu bar</source>
         <translation>Cacher la barre des menus</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="744"/>
+        <location filename="../mainwindow.cpp" line="743"/>
         <source>This will hide the menu bar completely, use Ctrl+M to show it again.</source>
         <translation>Cela masquera complètement la barre de menus, utiliser Ctrl+M pour l&apos;afficher à nouveau.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1191"/>
+        <location filename="../mainwindow.cpp" line="1190"/>
         <source>Version: %1</source>
         <translation>Version : %1</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="174"/>
-        <location filename="../mainwindow.cpp" line="2155"/>
+        <location filename="../mainwindow.cpp" line="2161"/>
         <source>&amp;Move to Trash</source>
         <translation>&amp;Mettre à la corbeille</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="174"/>
-        <location filename="../mainwindow.cpp" line="2155"/>
+        <location filename="../mainwindow.cpp" line="2161"/>
         <source>&amp;Delete</source>
         <translation>&amp;Supprimer</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1998"/>
+        <location filename="../mainwindow.cpp" line="1997"/>
         <source>Customized View Settings</source>
         <translation>Paramètres d&apos;affichage personnalisé</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="2262"/>
-        <location filename="../mainwindow.cpp" line="2270"/>
+        <location filename="../mainwindow.cpp" line="2268"/>
+        <location filename="../mainwindow.cpp" line="2276"/>
         <source>Error</source>
         <translation>Erreur</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="2270"/>
+        <location filename="../mainwindow.cpp" line="2276"/>
         <source>Switch user command is not set.</source>
         <translation>La commande de changement d&apos;utilisateur n&apos;est pas définie.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="2372"/>
+        <location filename="../mainwindow.cpp" line="2378"/>
         <source>Cleaning Folder Settings</source>
         <translation>Nettoyage des paramètres du dossier</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="2373"/>
+        <location filename="../mainwindow.cpp" line="2379"/>
         <source>Do you want to remove settings of nonexistent folders?
 They might be useful if those folders are created again.</source>
-        <translation>Voulez-vous supprimer les paramètres des dossiers inexistants ?
+        <translation>Voulez-vous supprimer les paramètres des dossiers inexistants&#xa0;?
 Ils peuvent être utiles si ces dossiers sont à nouveau créés.</translation>
     </message>
 </context>
@@ -1860,7 +1860,7 @@ Ils peuvent être utiles si ces dossiers sont à nouveau créés.</translation>
     <message>
         <location filename="../tabpage.cpp" line="538"/>
         <source>Free space: %1 (Total: %2)</source>
-        <translation>Espace libre : %1 (total : %2)</translation>
+        <translation>Espace libre : %1 (total&#xa0;: %2)</translation>
     </message>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="555"/>
@@ -1972,17 +1972,17 @@ Ils peuvent être utiles si ces dossiers sont à nouveau créés.</translation>
     <message>
         <location filename="../preferences.ui" line="328"/>
         <source>Size of big icons:</source>
-        <translation>Taille des grandes icônes :</translation>
+        <translation>Taille des grandes icônes&#xa0;:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="345"/>
         <source>Size of small icons:</source>
-        <translation>Taille des petites icônes :</translation>
+        <translation>Taille des petites icônes&#xa0;:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="362"/>
         <source>Size of thumbnails:</source>
-        <translation>Taille des vignettes :</translation>
+        <translation>Taille des vignettes&#xa0;:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="376"/>
@@ -2002,12 +2002,12 @@ Ils peuvent être utiles si ces dossiers sont à nouveau créés.</translation>
     <message>
         <location filename="../preferences.ui" line="587"/>
         <source>Default width of new windows:</source>
-        <translation>Largeur par défaut des nouvelles fenêtres :</translation>
+        <translation>Largeur par défaut des nouvelles fenêtres&#xa0;:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="601"/>
         <source>Default height of new windows:</source>
-        <translation>Hauteur par défaut des nouvelles fenêtres :</translation>
+        <translation>Hauteur par défaut des nouvelles fenêtres&#xa0;:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="559"/>
@@ -2037,7 +2037,7 @@ Ils peuvent être utiles si ces dossiers sont à nouveau créés.</translation>
     <message>
         <location filename="../preferences.ui" line="113"/>
         <source>Default view mode:</source>
-        <translation>Mode d&apos;affichage par défaut :</translation>
+        <translation>Mode d&apos;affichage par défaut&#xa0;:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="129"/>
@@ -2150,7 +2150,7 @@ Ils peuvent être utiles si ces dossiers sont à nouveau créés.</translation>
     <message>
         <location filename="../preferences.ui" line="244"/>
         <source>Number of recent files:</source>
-        <translation>Nombre de fichiers récents :</translation>
+        <translation>Nombre de fichiers récents&#xa0;:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="325"/>
@@ -2184,11 +2184,6 @@ Ils peuvent être utiles si ces dossiers sont à nouveau créés.</translation>
         <location filename="../preferences.ui" line="422"/>
         <source>Show icons of hidden files shadowed</source>
         <translation>Afficher les icônes des fichiers cachés ombrés</translation>
-    </message>
-    <message>
-        <location filename="../preferences.ui" line="436"/>
-        <source>Disable smooth scrolling in list and compact modes</source>
-        <translation>Désactiver le défilement doux dans les listes et en mode compact</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="459"/>
@@ -2253,7 +2248,7 @@ Habituellement, la plupart des types d&apos;images sont pris en charge. La limit
     <message>
         <location filename="../preferences.ui" line="670"/>
         <source>Image size limit for built-in thumbnailer:</source>
-        <translation>Limite de taille d&apos;image pour la vignette intégrée :</translation>
+        <translation>Limite de taille d&apos;image pour la vignette intégrée&#xa0;:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="682"/>
@@ -2274,7 +2269,7 @@ Une valeur de -1 signifie qu&apos;il n&apos;y a pas de limite pour la taille du 
     <message>
         <location filename="../preferences.ui" line="703"/>
         <source>File size limit for external thumbnailers:</source>
-        <translation>Limite de taille de fichier pour les miniatures externes :</translation>
+        <translation>Limite de taille de fichier pour les miniatures externes&#x202f;:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="715"/>
@@ -2284,7 +2279,7 @@ Une valeur de -1 signifie qu&apos;il n&apos;y a pas de limite pour la taille du 
     <message>
         <location filename="../preferences.ui" line="853"/>
         <source>Examples:&lt;br&gt;For terminal: &lt;i&gt;xterm -e %s&lt;/i&gt;&lt;br&gt;For switching user: &lt;i&gt;lxsudo %s&lt;/i&gt; or &lt;i&gt;lxsudo dbus-run-session -- %s&lt;/i&gt;&lt;br&gt;&lt;i&gt;%s&lt;/i&gt; is the command line you want to execute with terminal or su.&lt;br&gt; Important: Please use lxsudo, sudo alone will wreck permissions of the settings file.</source>
-        <translation>Exemples :&lt;br&gt;Pour le terminal : &lt;i&gt;xterm -e %s&lt;/i&gt;&lt;br&gt;Pour changer d&apos;utilisateur : &lt;i&gt;lxsudo %s&lt;/i&gt; ou &lt;i&gt;lxsudo dbus-run-session -- %s&lt;/i&gt;&lt;br&gt;&lt;i&gt;%s&lt;/i&gt; est la commande que vous devez exécuter dans le terminal avec accès root.&lt;br&gt; Important : veuillez utilisez lxsudo, car sudo seul peut casser les permission du fichier de configuration.</translation>
+        <translation>Exemples&#xa0;:&lt;br&gt;Pour le terminal : &lt;i&gt;xterm -e %s&lt;/i&gt;&lt;br&gt;Pour changer d&apos;utilisateur : &lt;i&gt;lxsudo %s&lt;/i&gt; ou &lt;i&gt;lxsudo dbus-run-session -- %s&lt;/i&gt;&lt;br&gt;&lt;i&gt;%s&lt;/i&gt; est la commande que vous devez exécuter dans le terminal avec accès root.&lt;br&gt; Important : veuillez utilisez lxsudo, car sudo seul peut casser les permission du fichier de configuration.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="919"/>
@@ -2294,7 +2289,7 @@ Une valeur de -1 signifie qu&apos;il n&apos;y a pas de limite pour la taille du 
     <message>
         <location filename="../preferences.ui" line="934"/>
         <source>Maximum search history:</source>
-        <translation>Historique de recherche maximum :</translation>
+        <translation>Historique de recherche maximum&#xa0;:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="948"/>
@@ -2320,6 +2315,11 @@ Une valeur de -1 signifie qu&apos;il n&apos;y a pas de limite pour la taille du 
         <location filename="../preferences.ui" line="429"/>
         <source>Do not show file tooltips</source>
         <translation>Ne pas afficher les info-bulles de fichier</translation>
+    </message>
+    <message>
+        <location filename="../preferences.ui" line="436"/>
+        <source>Disable smooth scrolling</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="648"/>
@@ -2399,7 +2399,7 @@ Une valeur de -1 signifie qu&apos;il n&apos;y a pas de limite pour la taille du 
     <message>
         <location filename="../preferences.ui" line="833"/>
         <source>Terminal emulator:</source>
-        <translation>Émulateur de terminal :</translation>
+        <translation>Émulateur de terminal&#xa0;:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="395"/>
@@ -2432,7 +2432,7 @@ Une valeur de -1 signifie qu&apos;il n&apos;y a pas de limite pour la taille du 
     <message>
         <location filename="../bulkrename.cpp" line="121"/>
         <location filename="../bulkrename.cpp" line="124"/>
-        <location filename="../tabpage.cpp" line="1115"/>
+        <location filename="../tabpage.cpp" line="1117"/>
         <source>Error</source>
         <translation>Erreur</translation>
     </message>
@@ -2447,7 +2447,7 @@ Une valeur de -1 signifie qu&apos;il n&apos;y a pas de limite pour la taille du 
         <translation>Certains fichiers n&apos;ont pas pu être renommés.</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="1115"/>
+        <location filename="../tabpage.cpp" line="1117"/>
         <source>Cannot open as Admin.</source>
         <translation>Impossible d&apos;ouvrir en tant qu&apos;administrateur.</translation>
     </message>
