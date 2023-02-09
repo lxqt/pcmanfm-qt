@@ -88,6 +88,9 @@ DesktopWindow::DesktopWindow(int screenNum):
     setAttribute(Qt::WA_X11NetWmWindowTypeDesktop);
     setAttribute(Qt::WA_DeleteOnClose);
 
+    // the title can be used for setting WM rules, especially under Wayland compositors
+    setWindowTitle(QStringLiteral("pcmanfm-desktop") + QString::number(screenNum_));
+
     // set our custom file launcher
     View::setFileLauncher(&fileLauncher_);
 
