@@ -28,7 +28,6 @@
 #include <QVector>
 #include <QLocale>
 #include <QLibraryInfo>
-#include <QPixmapCache>
 #include <QFile>
 #include <QMessageBox>
 #include <QCommandLineParser>
@@ -238,8 +237,6 @@ bool Application::parseCommandLineArgs() {
         QString perFolderConfigFile = settings_.profileDir(profileName_) + QStringLiteral("/dir-settings.conf");
         Fm::FolderConfig::init(perFolderConfigFile.toLocal8Bit().constData());
 
-        // decrease the cache size to reduce memory usage
-        QPixmapCache::setCacheLimit(2048);
 
         if(settings_.useFallbackIconTheme()) {
             QIcon::setThemeName(settings_.fallbackIconThemeName());
