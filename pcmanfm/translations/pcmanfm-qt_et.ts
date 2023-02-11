@@ -730,17 +730,17 @@ on olemas klõpsatakse vasakul, isegi kui see pole vaikefailihaldur.</translatio
     <message>
         <location filename="../shortcuts.ui" line="135"/>
         <source>Drop+Shift</source>
-        <translation type="unfinished"></translation>
+        <translation>Drop+Shift</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="143"/>
         <source>Drop+Ctrl</source>
-        <translation type="unfinished"></translation>
+        <translation>Drop+Ctrl</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="151"/>
         <source>Drop+Shift+Ctrl</source>
-        <translation type="unfinished"></translation>
+        <translation>Drop+Shift+Ctrl</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="138"/>
@@ -2318,7 +2318,7 @@ Väärtus -1 tähendab, et failisuuruse piir puudub (see on ka vaikimisi väärt
     <message>
         <location filename="../preferences.ui" line="436"/>
         <source>Disable smooth scrolling</source>
-        <translation type="unfinished"></translation>
+        <translation>Lülita sujuv kerimine välja</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="648"/>

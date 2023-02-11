@@ -729,17 +729,17 @@ zelfs als dat niet de standaard bestandsbeheerder is.</translation>
     <message>
         <location filename="../shortcuts.ui" line="135"/>
         <source>Drop+Shift</source>
-        <translation type="unfinished"></translation>
+        <translation>Neerzetten+Shift</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="143"/>
         <source>Drop+Ctrl</source>
-        <translation type="unfinished"></translation>
+        <translation>Neerzetten+Ctrl</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="151"/>
         <source>Drop+Shift+Ctrl</source>
-        <translation type="unfinished"></translation>
+        <translation>Neerzetten+Shift+Ctrl</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="138"/>
@@ -1859,7 +1859,7 @@ Ze kunnen van pas komen als u ze opnieuw aanmaakt.</translation>
     <message>
         <location filename="../tabpage.cpp" line="538"/>
         <source>Free space: %1 (Total: %2)</source>
-        <translation>Vrije ruimte: %1 (totaal&#xa0;: %2)</translation>
+        <translation>Vrije ruimte: %1 (totaal : %2)</translation>
     </message>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="555"/>
@@ -2318,7 +2318,7 @@ Een waarde van -1 betekent dat er geen beperking is (standaard).</translation>
     <message>
         <location filename="../preferences.ui" line="436"/>
         <source>Disable smooth scrolling</source>
-        <translation type="unfinished"></translation>
+        <translation>Vloeiend schuiven uitschakelen</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="648"/>

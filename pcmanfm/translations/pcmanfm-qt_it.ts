@@ -730,17 +730,17 @@ sinistro anche se non è il gestore file predefinito.</translation>
     <message>
         <location filename="../shortcuts.ui" line="135"/>
         <source>Drop+Shift</source>
-        <translation type="unfinished"></translation>
+        <translation>Rilascia+Maiuscolo</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="143"/>
         <source>Drop+Ctrl</source>
-        <translation type="unfinished"></translation>
+        <translation>Rilascia+Ctrl</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="151"/>
         <source>Drop+Shift+Ctrl</source>
-        <translation type="unfinished"></translation>
+        <translation>Rilascia+Ctrl+Maiuscolo</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="138"/>
@@ -2318,7 +2318,7 @@ Un valore di -1 significa nessun limite (predefinito).</translation>
     <message>
         <location filename="../preferences.ui" line="436"/>
         <source>Disable smooth scrolling</source>
-        <translation type="unfinished"></translation>
+        <translation>Disabilita scorrimento fluido</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="648"/>
