@@ -2315,7 +2315,7 @@ A value of -1 means that there is no limit for the file size (the default).</sou
     <message>
         <location filename="../preferences.ui" line="436"/>
         <source>Disable smooth scrolling</source>
-        <translation type="unfinished"></translation>
+        <translation>Yumuşak kaydırmayı iptal et</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="648"/>
