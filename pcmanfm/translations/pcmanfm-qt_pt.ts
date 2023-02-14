@@ -730,17 +730,17 @@ se clicar com o botão esquerdo do rato - mesmo que este não seja o gestor de f
     <message>
         <location filename="../shortcuts.ui" line="135"/>
         <source>Drop+Shift</source>
-        <translation type="unfinished"></translation>
+        <translation>Largar+Shift</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="143"/>
         <source>Drop+Ctrl</source>
-        <translation type="unfinished"></translation>
+        <translation>Largar+Ctrl</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="151"/>
         <source>Drop+Shift+Ctrl</source>
-        <translation type="unfinished"></translation>
+        <translation>Largar+Shift+Ctrl</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="138"/>
@@ -1554,7 +1554,7 @@ se clicar com o botão esquerdo do rato - mesmo que este não seja o gestor de f
     <message>
         <location filename="../autorundialog.cpp" line="138"/>
         <source>Removable Disk</source>
-        <translation>Disco amovível</translation>
+        <translation>Disco removível</translation>
     </message>
 </context>
 <context>
@@ -1998,7 +1998,7 @@ Elas podem ser úteis se essas pastas forem criadas novamente.</translation>
     <message>
         <location filename="../preferences.ui" line="195"/>
         <source>Erase files on removable media instead of &quot;trash can&quot; creation</source>
-        <translation>Apagar ficheiros do disco amovível em vez de os enviar para o lixo</translation>
+        <translation>Apagar ficheiros do disco removível em vez de os enviar para o lixo</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="202"/>
@@ -2339,7 +2339,7 @@ O valor -1 implica que não existirá limite para o tamanho dos ficheiros (padr�
     <message>
         <location filename="../preferences.ui" line="784"/>
         <source>When removable medium unmounted:</source>
-        <translation>Ao desmontar um disco amovível:</translation>
+        <translation>Ao desmontar um disco removível:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="840"/>
@@ -2359,12 +2359,12 @@ O valor -1 implica que não existirá limite para o tamanho dos ficheiros (padr�
     <message>
         <location filename="../preferences.ui" line="412"/>
         <source>Always show real file names</source>
-        <translation>Mostrar sempre o nome real dos ficheiros</translation>
+        <translation>Mostrar sempre o nome verdadeiro dos ficheiros</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="436"/>
         <source>Disable smooth scrolling</source>
-        <translation type="unfinished"></translation>
+        <translation>Desativar o deslocamento suave</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="754"/>
@@ -2389,7 +2389,7 @@ O valor -1 implica que não existirá limite para o tamanho dos ficheiros (padr�
     <message>
         <location filename="../preferences.ui" line="790"/>
         <source>Close &amp;tab containing removable medium</source>
-        <translation>Fechar o separador que con&amp;tém o disco amovível</translation>
+        <translation>Fechar o separador que con&amp;tém o disco removível</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="797"/>

@@ -313,7 +313,11 @@ Det kan lämnas tomt.</translation>
 It is needed only when you want to use the created file in the main menu. Otherwise, you could leave it empty.
 
 Examples: AudioVideo, Audio, Video, Development, Education, Game, Graphics, Network, Office, Settings, System, Utility, Qt.</source>
-        <translation type="unfinished"></translation>
+        <translation>Semikolonseparerade kategorier där post ska visas om den används i DE:s huvudmeny (t.ex. när den placeras i ~/.local/share/applications).
+
+Det behövs bara när du vill använda den skapade filen i huvudmenyn. Annars kan du lämna den tom.
+
+Exempel: Ljudvideo, Ljud, Video, Utveckling, Utbildning, Spel, Grafik, Nätverk, Kontor, Inställningar, System, Verktyg, Qt.</translation>
     </message>
 </context>
 <context>
@@ -726,17 +730,17 @@ vänsterklickas, även när den inte är standard filhanterare.</translation>
     <message>
         <location filename="../shortcuts.ui" line="135"/>
         <source>Drop+Shift</source>
-        <translation type="unfinished"></translation>
+        <translation>Släpp+Shift</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="143"/>
         <source>Drop+Ctrl</source>
-        <translation type="unfinished"></translation>
+        <translation>Släpp+Ctrl</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="151"/>
         <source>Drop+Shift+Ctrl</source>
-        <translation type="unfinished"></translation>
+        <translation>Släpp+Shift+Ctrl</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="138"/>
@@ -2315,7 +2319,7 @@ Värdet 1 betyder att det inte finns en begränsad storlek (förval).</translati
     <message>
         <location filename="../preferences.ui" line="436"/>
         <source>Disable smooth scrolling</source>
-        <translation type="unfinished"></translation>
+        <translation>Inaktivera mjuk rullning</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="648"/>
