@@ -336,7 +336,7 @@ void Application::init() {
     // install libfm-qt translator
     installTranslator(libFm_.translator());
 
-    // install our own tranlations
+    // install our own translations
     translator.load(QStringLiteral("pcmanfm-qt_") + QLocale::system().name(), QStringLiteral(PCMANFM_DATA_DIR) + QStringLiteral("/translations"));
     installTranslator(&translator);
 }
@@ -353,7 +353,7 @@ int Application::exec() {
 
     volumeMonitor_ = g_volume_monitor_get();
     // delay the volume manager a little because in newer versions of glib/gio there's a problem.
-    // when the first volume monitor object is created, it discovers volumes asynchonously.
+    // when the first volume monitor object is created, it discovers volumes asynchronously.
     // g_volume_monitor_get() immediately returns while the monitor is still discovering devices.
     // So initially g_volume_monitor_get_volumes() returns nothing, but shortly after that
     // we get volume-added signals for all of the volumes. This is not what we want.
@@ -989,7 +989,7 @@ void Application::onScreenDestroyed(QObject* screenObj) {
     // #40681: Regression bug: QWidget::winId() returns old value and QEvent::WinIdChange event is not emitted sometimes. (multihead setup)
     // #40791: Regression: QPlatformWindow, QWindow, and QWidget::winId() are out of sync.
     // Explanations for the workaround:
-    // Internally, Qt mantains a list of QScreens and update it when XRandR configuration changes.
+    // Internally, Qt maintains a list of QScreens and update it when XRandR configuration changes.
     // When the user turn off an monitor with xrandr --output <xxx> --off, this will destroy the QScreen
     // object which represent the output. If the QScreen being destroyed contains our panel widget,
     // Qt will call QWindow::setScreen(0) on the internal windowHandle() of our panel widget to move it

@@ -285,7 +285,7 @@ public:
 
     void backspacePressed();
 
-    void ceateShortcut();
+    void createShortcut();
 
     void setFilesToSelect(const Fm::FilePathList& files) {
         filesToSelect_ = files;
