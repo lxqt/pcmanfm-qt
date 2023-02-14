@@ -420,7 +420,7 @@ void TabPage::onFilesAdded(Fm::FileInfoList files) {
         }
     }
 
-    // trust the files that are added by ceateShortcut()
+    // trust the files that are added by createShortcut()
     if(!filesToTrust_.isEmpty()) {
         for(const auto& file : files) {
             const QString fileName = QString::fromStdString(file->name());
@@ -1060,7 +1060,7 @@ void TabPage::goToCustomizedViewSource() {
     }
 }
 
-void TabPage::ceateShortcut() {
+void TabPage::createShortcut() {
     if(folder_ && folder_->isLoaded()) {
         auto folderPath = folder_->path();
         if(folderPath && folderPath.isNative()) {

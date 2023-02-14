@@ -35,7 +35,7 @@ qt5_add_dbus_adaptor(pcmanfm_DBUS_SRCS
 )
 
 # qt5_add_dbus_adaptor() already generated the moc files. It also marked the
-# files with SKIP_AUTOMOC but we still need to mark them witk SKIP_AUTOGEN.
+# files with SKIP_AUTOMOC but we still need to mark them with SKIP_AUTOGEN.
 # TODO: Check if this behaviour is a CMake bug.
 set_source_files_properties(${pcmanfm_DBUS_SRCS} PROPERTIES SKIP_AUTOGEN ON)
 

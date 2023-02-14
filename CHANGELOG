@@ -375,7 +375,7 @@ pcmanfm-qt-0.11.1 / 2016-09-24
   * Add Arabic Translations for Desktop Files
   * I18N: Fix plural string (#374)
   * Fix some icons for RTL (#366)
-  * Use a wide spread icon theme as fallback for the time beeing (#359)
+  * Use a wide spread icon theme as fallback for the time being (#359)
   * build: Use external translations
   * ts-files removal (#352)
   * Fix memory leak in main window tool bar (#350)
@@ -392,7 +392,7 @@ pcmanfm-qt-0.11.0 / 2016-03-13
   * Fixes libfm-qt dependency contradiction on README.md
   * Optional fullwidth tabbar By default, the tabbar is stretched over the left pane too. This commit makes that optional with a check button in the UI page of the Preferences dialog. It's checked by default but if unchecked, the tabbar will be positioned right above the folder-view.
   * A toolbar button appearing on hiding menubar It has a dropdown menu containing all menubar items, is added to the end of toolbar, after a separator, when menubar is hidden and is removed (hidden) with its separator when menubar is shown.
-  * fix new grep 2.23 behaviour for the time beeing
+  * fix new grep 2.23 behaviour for the time being
   * Bump year
   * Bump version number to 0.11.0, preparing for a new release.
   * Add hide menu bar menu entry
@@ -576,9 +576,9 @@ split-libfm-qt / 2015-11-24
   * Fix #130 - Remember width of side panel.
   * Portuguese update
   * Add very basic "remaining time" display to the progress dialog. Fix lxde/lxqt#463 - Progress dialog of pcmanfm-qt does not show remaining time.
-  * Fix lxde/pcmanfm-qt#120 - Foucs "Rename" button when file name changed.
+  * Fix lxde/pcmanfm-qt#120 - Focus "Rename" button when file name changed.
   * remember maximized state
-  * Remove unnecessary '\n' charactor from the translated strings.
+  * Remove unnecessary '\n' character from the translated strings.
   * Fix translations (the newly added string comes from the translation of libfm).
   * Improve trash can handling: provide an option to delete the files if moving to trashcan fails.
   * Fix broken filenames of translation files.
@@ -665,7 +665,7 @@ split-libfm-qt / 2015-11-24
   * Avoid ambiguity when including path.h from libfm-qt.
   * Fix a crash in Fm::PlacesModel when gvfs is not available. This closes bug #35 - Ctrl+W closes all windows.
   * Fix a memory leak and free the file info list properly when renaming files.
-  * Do not detect filename extension and select the whole filename by default while renaming directories. This closes bug #71 - Don't try to detect extensions on directories. * API changed: Fm::renameFile() now accepect FmFileInfo as its first parameter.
+  * Do not detect filename extension and select the whole filename by default while renaming directories. This closes bug #71 - Don't try to detect extensions on directories. * API changed: Fm::renameFile() now accept FmFileInfo as its first parameter.
   * Show browse history in the context menu of back and forward tool buttons.
   * Remove an unnecessary slot.
   * Backspace to go up
@@ -733,7 +733,7 @@ split-libfm-qt / 2015-11-24
   * Implement Fm::AppChooserDialog and Fm::AppMenuView classes. * Add <Open with...>/<Other Applications> menu item to Fm::FileMenu. * Add custom app to Fm::AppChooserComboBox.
   * Add Fm::AppChooserComboBox and use it in Fm::FilePropsDialog.
   * Redesign Fm::FileLauncher APIs to make it more usable. * Add Fm::FileMenu::setFileLauncher() and Fm::FolderView::setFileLauncher() APIs. * Move PCManFM::View::onFileClick() and other popup menu handling to Fm::FolderView.
-  * Improve Fm::FileLaucher to make it easy to derive subclasses. * Implement a special dialog for opening executable files (Fix bug #13 - it does not launch executables)
+  * Improve Fm::FileLauncher to make it easy to derive subclasses. * Implement a special dialog for opening executable files (Fix bug #13 - it does not launch executables)
   * Fix bug #28 - Tash can icon does not refresh when the trash can changes its empty/full status
   * Load autocompletion list for Fm::PathEdit only when the widget has the keyboard focus to avoid unnecessary I/O.
   * Add proper popup menu items for selected folders and fix #20 and #19. * Some code refactors, adding openFolders() and openFolderInTerminal() to Application class.
@@ -756,7 +756,7 @@ split-libfm-qt / 2015-11-24
   * Move some code from Fm::DirTreeModel to Fm::DirTreeModelItem.
   * Partially implement Fm::DirTreeView and Fm::DirTreeModel. (not finished yet)
   * Fix an invalid pointer
-  * Implment different modes for Fm::SidePane, matching libfm-qtk design. * Add basic skeleton for dir tree view/model.
+  * Implement different modes for Fm::SidePane, matching libfm-qtk design. * Add basic skeleton for dir tree view/model.
   * Fix the cosmetic defect introduced by the eject buttons in the places view.
   * Add eject buttons to mounted volumes in the places side pane.
   * Fix #18 New windows should always show up in front.
@@ -791,7 +791,7 @@ split-libfm-qt / 2015-11-24
   * Add fallback icons for places item "applications" and "network".
   * Paint the background of the whole desktop window with wallpaper, including the reserved spaces.
   * Set workare with QSS does not work properly. Revert the change.
-  * Add class Fm::CachedFolderModel, a convinient way to share Fm::FolderModel objects and reduce memory usage.
+  * Add class Fm::CachedFolderModel, a convenient way to share Fm::FolderModel objects and reduce memory usage.
   * Resize the columns of detailed list view when items are inserted or removed.
   * Optimize column widths in detailed list mode when the view is resized.
   * Resize the left list widget in the preference dialog according to its content.
@@ -846,7 +846,7 @@ split-libfm-qt / 2015-11-24
   * Finish chown and chmod supports.
   * Try to add file opermission settings UI.
   * Implement very basic drag and drop support.
-  * Supress the incorrect default dnd handling of QListView.
+  * Suppress the incorrect default dnd handling of QListView.
   * Try to implement Dnd.
   * Make desktop preferences accessible from popup menu of desktop window.
   * Convert enum values to/from strings for saving/loading config files.
@@ -870,7 +870,7 @@ split-libfm-qt / 2015-11-24
   * Correctly handle file rename/overwrite during file operations.
   * Exclude unnecessary files from CPack.
   * Add COPYING, AUTHORS, and README and add basic CPack support.
-  * Build libfm-qt as a separate shared library and install haeder files.
+  * Build libfm-qt as a separate shared library and install header files.
   * Little fix for desktop item text shadow.
   * Add DesktopItemDelegate to draw better desktop icons.
   * Add code used to draw desktop wallpapers.
@@ -887,7 +887,7 @@ split-libfm-qt / 2015-11-24
   * Replace QCommandLine with glib GOptionContext for command line parsing. * Improve IPC.
   * Add command line parsing and basic IPC via dbus.
   * Try to use QCommandLine for command line parsing.
-  * Move application initialization code to PCManFM::Applicaion class.
+  * Move application initialization code to PCManFM::Application class.
   * Move files for libfm-qt and pcmanfm-qt to separate subdirs.
   * Implement cut and copy files to clipboard.
   * Add a item delegate to overriding the incredibly small width of text label. Special thanks to razor-qt developers for the hint!

@@ -103,7 +103,7 @@ DesktopWindow::DesktopWindow(int screenNum):
     // This is to workaround Qt bug 54384 which affects Qt >= 5.6
     // https://bugreports.qt.io/browse/QTBUG-54384
     // Setting a QPixmap larger then the screen resolution to desktop's QPalette won't work.
-    // So we make the viewport transparent by preventing its backround from being filled automatically.
+    // So we make the viewport transparent by preventing its background from being filled automatically.
     // Then we paint desktop's background ourselves by using its paint event handling method.
     listView_->viewport()->setAutoFillBackground(false);
 
@@ -398,7 +398,7 @@ void DesktopWindow::onTrashChanged(GFileMonitor* /*monitor*/, GFile* /*gf*/, GFi
 
 void DesktopWindow::updateTrashIcon() {
     if(listView_->isHidden()) {
-        return; // will be updated as soon as dekstop is shown
+        return; // will be updated as soon as desktop is shown
     }
     struct UpdateTrashData {
         QPointer<DesktopWindow> desktop;
@@ -1398,7 +1398,7 @@ void DesktopWindow::relayoutItems() {
             // center the contents horizontally
             listView_->setPositionForIndex(pos + QPoint((itemSize.width() - itemWidth) / 2, 0), index);
 
-            // if all items should be sticky, add this item to custom postions
+            // if all items should be sticky, add this item to custom positions
             if(allSticky && pos.x() + itemSize.width() <= workArea.right() + 1) {
                 customItemPos_[name] = pos;
                 customPosStorage_[name] = pos;
@@ -2015,7 +2015,7 @@ void DesktopWindow::childDropEvent(QDropEvent* e) {
                 stickToPosition(file->name(), pos, workArea, grid);
             }
 
-            // then move the other items so that their relative postions are preserved
+            // then move the other items so that their relative positions are preserved
             const QModelIndexList selected = selectedIndexes();
             for(const QModelIndex& indx : selected) {
                 if(indx == curIndx) {
@@ -2199,7 +2199,7 @@ bool DesktopWindow::stickToPosition(const std::string& file, QPoint& pos, const 
         }
     }
 
-    // if the position was ocupied by Trash, go to the next postiton
+    // if the position was occupied by Trash, go to the next postiton
     if(isTrash) {
         reachedLastCell = stickToPosition(file, pos, workArea, grid, reachedLastCell);
     }
