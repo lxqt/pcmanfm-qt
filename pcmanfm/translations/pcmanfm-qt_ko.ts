@@ -1857,22 +1857,22 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../tabpage.cpp" line="455"/>
         <source>Computer</source>
-        <translation type="unfinished">컴퓨터</translation>
+        <translation>컴퓨터</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="458"/>
         <source>Network</source>
-        <translation type="unfinished">네트워크</translation>
+        <translation>네트워크</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="461"/>
         <source>Trash</source>
-        <translation type="unfinished">휴지통</translation>
+        <translation>휴지통</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="466"/>
         <source>Desktop</source>
-        <translation type="unfinished">바탕화면</translation>
+        <translation>바탕화면</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="551"/>

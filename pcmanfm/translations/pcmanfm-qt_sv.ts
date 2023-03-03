@@ -1860,22 +1860,22 @@ Det kan vara bra att behålla dom om mapparna återskapas.</translation>
     <message>
         <location filename="../tabpage.cpp" line="455"/>
         <source>Computer</source>
-        <translation type="unfinished">Dator</translation>
+        <translation>Dator</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="458"/>
         <source>Network</source>
-        <translation type="unfinished">Nätverk</translation>
+        <translation>Nätverk</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="461"/>
         <source>Trash</source>
-        <translation type="unfinished">Papperskorgen</translation>
+        <translation>Papperskorgen</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="466"/>
         <source>Desktop</source>
-        <translation type="unfinished">Skrivbord</translation>
+        <translation>Skrivbord</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="551"/>

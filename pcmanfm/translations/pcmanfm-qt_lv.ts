@@ -11,7 +11,7 @@
     <message>
         <location filename="../about.ui" line="25"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;&gt;PCManFM-Qt&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;&gt;PCManFM-Qt&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;&gt;PCManFM-Qt&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../about.ui" line="48"/>
@@ -239,7 +239,7 @@ It can be left empty.</source>
         <location filename="../desktopentrydialog.ui" line="112"/>
         <location filename="../desktopentrydialog.ui" line="143"/>
         <source>...</source>
-        <translation type="unfinished">...</translation>
+        <translation>...</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="121"/>
@@ -1167,7 +1167,7 @@ pat ja PCManFM-Qt nav noklusējuma failu pārvaldnieks.</translation>
         <location filename="../main-win.ui" line="952"/>
         <location filename="../main-win.ui" line="955"/>
         <source>Create Launcher</source>
-        <translation type="unfinished">Izveidot palaidēju</translation>
+        <translation>Izveidot palaidēju</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="782"/>
@@ -1217,7 +1217,7 @@ pat ja PCManFM-Qt nav noklusējuma failu pārvaldnieks.</translation>
     <message>
         <location filename="../main-win.ui" line="876"/>
         <source>Bulk Rename</source>
-        <translation type="unfinished">Grupveida pārdēvēšana</translation>
+        <translation>Grupveida pārdēvēšana</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="813"/>
@@ -1529,7 +1529,7 @@ pat ja PCManFM-Qt nav noklusējuma failu pārvaldnieks.</translation>
         <location filename="../application.cpp" line="648"/>
         <location filename="../application.cpp" line="653"/>
         <source>Error</source>
-        <translation type="unfinished">Ķibele, ka tevi jupis!</translation>
+        <translation>Ķibele, ka tevi jupis!</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="653"/>
@@ -1588,7 +1588,7 @@ pat ja PCManFM-Qt nav noklusējuma failu pārvaldnieks.</translation>
     <message>
         <location filename="../desktopentrydialog.cpp" line="35"/>
         <source>Command:</source>
-        <translation type="unfinished">Komanda:</translation>
+        <translation>Komanda:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="36"/>
@@ -1729,12 +1729,12 @@ pat ja PCManFM-Qt nav noklusējuma failu pārvaldnieks.</translation>
     <message>
         <location filename="../desktopwindow.cpp" line="1075"/>
         <source>Create Launcher</source>
-        <translation type="unfinished">Izveidot palaidēju</translation>
+        <translation>Izveidot palaidēju</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="1078"/>
         <source>Desktop Preferences</source>
-        <translation type="unfinished">Darbvirsmas iestatījumi</translation>
+        <translation>Darbvirsmas iestatījumi</translation>
     </message>
 </context>
 <context>
@@ -1796,7 +1796,7 @@ pat ja PCManFM-Qt nav noklusējuma failu pārvaldnieks.</translation>
         <location filename="../mainwindow.cpp" line="2268"/>
         <location filename="../mainwindow.cpp" line="2276"/>
         <source>Error</source>
-        <translation type="unfinished">Ķibele, ka tevi jupis!</translation>
+        <translation>Ķibele, ka tevi jupis!</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="2276"/>
@@ -1868,12 +1868,12 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../tabpage.cpp" line="466"/>
         <source>Desktop</source>
-        <translation type="unfinished">Darbvirsma/darbalauks</translation>
+        <translation>Darbvirsma/darbalauks</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="551"/>
         <source>Error</source>
-        <translation type="unfinished">Ķibele, ka tevi jupis!</translation>
+        <translation>Ķibele, ka tevi jupis!</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="560"/>
@@ -1989,7 +1989,7 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferences.ui" line="296"/>
         <source>Icons</source>
-        <translation type="unfinished">Ikonas</translation>
+        <translation>Ikonas</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="328"/>
@@ -2200,24 +2200,24 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferences.ui" line="466"/>
         <source>3 px by default.</source>
-        <translation type="unfinished">3 px pēc noklusējuma.</translation>
+        <translation>3 px pēc noklusējuma.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="469"/>
         <location filename="../preferences.ui" line="493"/>
         <source> px</source>
-        <translation type="unfinished"> px</translation>
+        <translation> px</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="482"/>
         <source>x</source>
-        <translation type="unfinished">x</translation>
+        <translation>x</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="489"/>
         <source>3 px by default.
 A space is also reserved for 3 lines of text.</source>
-        <translation type="unfinished">1 px pēc noklusējuma.
+        <translation>1 px pēc noklusējuma.
 Vieta arī ir rezervēta priekš 3 teksta rindiņām. {3 ?} {3 ?}</translation>
     </message>
     <message>

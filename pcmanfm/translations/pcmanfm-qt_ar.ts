@@ -1862,22 +1862,22 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../tabpage.cpp" line="455"/>
         <source>Computer</source>
-        <translation type="unfinished">الحاسوب</translation>
+        <translation>الحاسوب</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="458"/>
         <source>Network</source>
-        <translation type="unfinished">الشبكة</translation>
+        <translation>الشبكة</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="461"/>
         <source>Trash</source>
-        <translation type="unfinished">المهملات</translation>
+        <translation>المهملات</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="466"/>
         <source>Desktop</source>
-        <translation type="unfinished">سطح المكتب</translation>
+        <translation>سطح المكتب</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="551"/>

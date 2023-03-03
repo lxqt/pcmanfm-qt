@@ -1855,22 +1855,22 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../tabpage.cpp" line="455"/>
         <source>Computer</source>
-        <translation type="unfinished">计算机</translation>
+        <translation>计算机</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="458"/>
         <source>Network</source>
-        <translation type="unfinished">网络</translation>
+        <translation>网络</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="461"/>
         <source>Trash</source>
-        <translation type="unfinished">回收站</translation>
+        <translation>回收站</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="466"/>
         <source>Desktop</source>
-        <translation type="unfinished">桌面</translation>
+        <translation>桌面</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="551"/>

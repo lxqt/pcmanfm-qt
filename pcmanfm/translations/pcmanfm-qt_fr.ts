@@ -1860,22 +1860,22 @@ Ils peuvent être utiles si ces dossiers sont à nouveau créés.</translation>
     <message>
         <location filename="../tabpage.cpp" line="455"/>
         <source>Computer</source>
-        <translation type="unfinished">Ordinateur</translation>
+        <translation>Ordinateur</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="458"/>
         <source>Network</source>
-        <translation type="unfinished">Réseau</translation>
+        <translation>Réseau</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="461"/>
         <source>Trash</source>
-        <translation type="unfinished">Corbeille</translation>
+        <translation>Corbeille</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="466"/>
         <source>Desktop</source>
-        <translation type="unfinished">Bureau</translation>
+        <translation>Bureau</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="551"/>

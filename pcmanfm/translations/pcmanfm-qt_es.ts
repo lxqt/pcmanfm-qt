@@ -1861,22 +1861,22 @@ Podrían ser útiles si esas carpetas se crean de nuevo.</translation>
     <message>
         <location filename="../tabpage.cpp" line="455"/>
         <source>Computer</source>
-        <translation type="unfinished">Sistema</translation>
+        <translation>Sistema</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="458"/>
         <source>Network</source>
-        <translation type="unfinished">Red</translation>
+        <translation>Red</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="461"/>
         <source>Trash</source>
-        <translation type="unfinished">Papelera</translation>
+        <translation>Papelera</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="466"/>
         <source>Desktop</source>
-        <translation type="unfinished">Escritorio</translation>
+        <translation>Escritorio</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="551"/>

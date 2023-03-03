@@ -1863,22 +1863,22 @@ Sie könnten nützlich sein, wenn diese Ordner erneut erstellt werden.</translat
     <message>
         <location filename="../tabpage.cpp" line="455"/>
         <source>Computer</source>
-        <translation type="unfinished">Rechner</translation>
+        <translation>Rechner</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="458"/>
         <source>Network</source>
-        <translation type="unfinished">Netzwerk</translation>
+        <translation>Netzwerk</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="461"/>
         <source>Trash</source>
-        <translation type="unfinished">Papierkorb</translation>
+        <translation>Papierkorb</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="466"/>
         <source>Desktop</source>
-        <translation type="unfinished">Arbeitsfläche</translation>
+        <translation>Arbeitsfläche</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="551"/>

@@ -1147,7 +1147,7 @@ are left clicked, even when it is not the default file manager.</translation>
         <location filename="../main-win.ui" line="952"/>
         <location filename="../main-win.ui" line="955"/>
         <source>Create Launcher</source>
-        <translation type="unfinished">Create Launcher</translation>
+        <translation>Create Launcher</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="782"/>
@@ -1568,7 +1568,7 @@ are left clicked, even when it is not the default file manager.</translation>
     <message>
         <location filename="../desktopentrydialog.cpp" line="35"/>
         <source>Command:</source>
-        <translation type="unfinished">Command:</translation>
+        <translation>Command:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="36"/>
@@ -1708,7 +1708,7 @@ are left clicked, even when it is not the default file manager.</translation>
     <message>
         <location filename="../desktopwindow.cpp" line="1075"/>
         <source>Create Launcher</source>
-        <translation type="unfinished">Create Launcher</translation>
+        <translation>Create Launcher</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="1078"/>

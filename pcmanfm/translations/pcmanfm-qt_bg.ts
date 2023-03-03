@@ -1858,22 +1858,22 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../tabpage.cpp" line="455"/>
         <source>Computer</source>
-        <translation type="unfinished">Компютър</translation>
+        <translation>Компютър</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="458"/>
         <source>Network</source>
-        <translation type="unfinished">Мрежа</translation>
+        <translation>Мрежа</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="461"/>
         <source>Trash</source>
-        <translation type="unfinished">Кошче</translation>
+        <translation>Кошче</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="466"/>
         <source>Desktop</source>
-        <translation type="unfinished">Работен плот</translation>
+        <translation>Работен плот</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="551"/>

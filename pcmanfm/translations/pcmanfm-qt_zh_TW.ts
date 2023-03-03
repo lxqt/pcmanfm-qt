@@ -1133,7 +1133,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="937"/>
         <source>F9</source>
-        <translation type="unfinished">F9</translation>
+        <translation>F9</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="942"/>
@@ -1595,7 +1595,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktopentrydialog.cpp" line="35"/>
         <source>Command:</source>
-        <translation type="unfinished">指令:</translation>
+        <translation>指令:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="36"/>
@@ -1859,22 +1859,22 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../tabpage.cpp" line="455"/>
         <source>Computer</source>
-        <translation type="unfinished">電腦</translation>
+        <translation>電腦</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="458"/>
         <source>Network</source>
-        <translation type="unfinished">網路</translation>
+        <translation>網路</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="461"/>
         <source>Trash</source>
-        <translation type="unfinished">垃圾桶</translation>
+        <translation>垃圾桶</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="466"/>
         <source>Desktop</source>
-        <translation type="unfinished">桌面</translation>
+        <translation>桌面</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="551"/>

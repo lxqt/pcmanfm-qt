@@ -1861,22 +1861,22 @@ Mogą się one przydać jeśli te foldery zostaną stworzone ponownie.</translat
     <message>
         <location filename="../tabpage.cpp" line="455"/>
         <source>Computer</source>
-        <translation type="unfinished">Komputer</translation>
+        <translation>Komputer</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="458"/>
         <source>Network</source>
-        <translation type="unfinished">Sieć</translation>
+        <translation>Sieć</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="461"/>
         <source>Trash</source>
-        <translation type="unfinished">Kosz</translation>
+        <translation>Kosz</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="466"/>
         <source>Desktop</source>
-        <translation type="unfinished">Pulpit</translation>
+        <translation>Pulpit</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="551"/>

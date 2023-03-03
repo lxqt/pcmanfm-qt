@@ -1089,7 +1089,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="912"/>
         <source>Ctrl+Shift+C</source>
-        <translation type="unfinished">Ctrl+Maiús+C</translation>
+        <translation>Ctrl+Maiús+C</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="923"/>
@@ -1114,7 +1114,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="942"/>
         <source>Hidden &amp;Shortcuts</source>
-        <translation type="unfinished">Atallos agochados</translation>
+        <translation>Atallos agochados</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="947"/>
@@ -1306,7 +1306,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="671"/>
         <source>F2</source>
-        <translation type="unfinished">F2</translation>
+        <translation>F2</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="676"/>
@@ -1351,7 +1351,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="253"/>
         <source>Main Toolbar</source>
-        <translation type="unfinished">Barra de ferramentas principal</translation>
+        <translation>Barra de ferramentas principal</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="679"/>
@@ -1850,22 +1850,22 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../tabpage.cpp" line="455"/>
         <source>Computer</source>
-        <translation type="unfinished">Computador</translation>
+        <translation>Computador</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="458"/>
         <source>Network</source>
-        <translation type="unfinished">Rede</translation>
+        <translation>Rede</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="461"/>
         <source>Trash</source>
-        <translation type="unfinished">Lixo</translation>
+        <translation>Lixo</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="466"/>
         <source>Desktop</source>
-        <translation type="unfinished">Escritorio</translation>
+        <translation>Escritorio</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="551"/>
@@ -2012,7 +2012,7 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferences.ui" line="546"/>
         <source>Window</source>
-        <translation type="unfinished">Xanela</translation>
+        <translation>Xanela</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="587"/>
@@ -2267,7 +2267,7 @@ Usually, most image types are supported. The default size limit is 4 MiB.</sourc
         <location filename="../preferences.ui" line="682"/>
         <location filename="../preferences.ui" line="718"/>
         <source> MiB</source>
-        <translation type="unfinished"> MiB</translation>
+        <translation> MiB</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="698"/>
@@ -2445,7 +2445,7 @@ A value of -1 means that there is no limit for the file size (the default).</sou
         <location filename="../bulkrename.cpp" line="124"/>
         <location filename="../tabpage.cpp" line="1139"/>
         <source>Error</source>
-        <translation type="unfinished">Erro</translation>
+        <translation>Erro</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="121"/>

@@ -362,7 +362,7 @@ Examples: AudioVideo, Audio, Video, Development, Education, Game, Graphics, Netw
     <message>
         <location filename="../desktop-preferences.ui" line="417"/>
         <source>Image file</source>
-        <translation type="unfinished">Comhad íomhá</translation>
+        <translation>Comhad íomhá</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="423"/>
@@ -1150,7 +1150,7 @@ are left clicked, even when it is not the default file manager.</source>
         <location filename="../main-win.ui" line="952"/>
         <location filename="../main-win.ui" line="955"/>
         <source>Create Launcher</source>
-        <translation type="unfinished">Cruthaigh Lainseálaí</translation>
+        <translation>Cruthaigh Lainseálaí</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="782"/>
@@ -1571,7 +1571,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktopentrydialog.cpp" line="35"/>
         <source>Command:</source>
-        <translation type="unfinished">Ordú:</translation>
+        <translation>Ordú:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="36"/>
@@ -1712,12 +1712,12 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktopwindow.cpp" line="1075"/>
         <source>Create Launcher</source>
-        <translation type="unfinished">Cruthaigh Lainseálaí</translation>
+        <translation>Cruthaigh Lainseálaí</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="1078"/>
         <source>Desktop Preferences</source>
-        <translation type="unfinished">Socruithe Deisce</translation>
+        <translation>Socruithe Deisce</translation>
     </message>
 </context>
 <context>
@@ -1851,7 +1851,7 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../tabpage.cpp" line="466"/>
         <source>Desktop</source>
-        <translation type="unfinished">Deasc</translation>
+        <translation>Deasc</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="551"/>
@@ -1972,7 +1972,7 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferences.ui" line="296"/>
         <source>Icons</source>
-        <translation type="unfinished">Íocóin</translation>
+        <translation>Íocóin</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="328"/>
@@ -2205,7 +2205,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../preferences.ui" line="506"/>
         <source>Lock</source>
-        <translation type="unfinished">Glasáil</translation>
+        <translation>Glasáil</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="555"/>

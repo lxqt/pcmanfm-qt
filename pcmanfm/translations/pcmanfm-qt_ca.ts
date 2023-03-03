@@ -1862,22 +1862,22 @@ Pot ser útil si es tornen a crear aquestes carpetes.</translation>
     <message>
         <location filename="../tabpage.cpp" line="455"/>
         <source>Computer</source>
-        <translation type="unfinished">Ordinador</translation>
+        <translation>Ordinador</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="458"/>
         <source>Network</source>
-        <translation type="unfinished">Xarxa</translation>
+        <translation>Xarxa</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="461"/>
         <source>Trash</source>
-        <translation type="unfinished">Paperera</translation>
+        <translation>Paperera</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="466"/>
         <source>Desktop</source>
-        <translation type="unfinished">Escriptori</translation>
+        <translation>Escriptori</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="551"/>

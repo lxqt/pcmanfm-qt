@@ -1167,12 +1167,12 @@ are left clicked, even when it is not the default file manager.</source>
         <location filename="../main-win.ui" line="952"/>
         <location filename="../main-win.ui" line="955"/>
         <source>Create Launcher</source>
-        <translation type="unfinished">लॉन्चर बनाएं</translation>
+        <translation>लॉन्चर बनाएं</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="782"/>
         <source>Ctrl+B</source>
-        <translation type="unfinished">Ctrl+B</translation>
+        <translation>Ctrl+B</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="787"/>
@@ -1182,7 +1182,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="790"/>
         <source>Ctrl+Shift+K</source>
-        <translation type="unfinished">Ctrl+Shift+K</translation>
+        <translation>Ctrl+Shift+K</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="799"/>
@@ -1268,7 +1268,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="613"/>
         <source>Ctrl+T</source>
-        <translation type="unfinished">Ctrl+T</translation>
+        <translation>Ctrl+T</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="622"/>
@@ -1283,7 +1283,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="628"/>
         <source>Alt+Left</source>
-        <translation type="unfinished">Alt+Left</translation>
+        <translation>Alt+Left</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="637"/>
@@ -1298,7 +1298,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="643"/>
         <source>Alt+Right</source>
-        <translation type="unfinished">Alt+Right</translation>
+        <translation>Alt+Right</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="648"/>
@@ -1363,7 +1363,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="729"/>
         <source>F4</source>
-        <translation type="unfinished">F4</translation>
+        <translation>F4</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="739"/>
@@ -1388,7 +1388,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="771"/>
         <source>F3</source>
-        <translation type="unfinished">F3</translation>
+        <translation>F3</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="70"/>
@@ -1588,7 +1588,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktopentrydialog.cpp" line="35"/>
         <source>Command:</source>
-        <translation type="unfinished">आदेश :</translation>
+        <translation>आदेश :</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="36"/>
@@ -1697,12 +1697,12 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktopwindow.cpp" line="345"/>
         <source>Computer</source>
-        <translation type="unfinished">कम्प्यूटर</translation>
+        <translation>कम्प्यूटर</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="359"/>
         <source>Network</source>
-        <translation type="unfinished">नेटवर्क</translation>
+        <translation>नेटवर्क</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="996"/>
@@ -1728,12 +1728,12 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktopwindow.cpp" line="1075"/>
         <source>Create Launcher</source>
-        <translation type="unfinished">लॉन्चर बनाएं</translation>
+        <translation>लॉन्चर बनाएं</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="1078"/>
         <source>Desktop Preferences</source>
-        <translation type="unfinished">डेस्कटॉप वरीयताएँ</translation>
+        <translation>डेस्कटॉप वरीयताएँ</translation>
     </message>
 </context>
 <context>
@@ -1784,7 +1784,7 @@ are left clicked, even when it is not the default file manager.</source>
         <location filename="../mainwindow.cpp" line="174"/>
         <location filename="../mainwindow.cpp" line="2161"/>
         <source>&amp;Delete</source>
-        <translation type="unfinished">मिटाएँ (&amp;D)</translation>
+        <translation>मिटाएँ (&amp;D)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="1997"/>
@@ -1852,22 +1852,22 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../tabpage.cpp" line="455"/>
         <source>Computer</source>
-        <translation type="unfinished">कम्प्यूटर</translation>
+        <translation>कम्प्यूटर</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="458"/>
         <source>Network</source>
-        <translation type="unfinished">नेटवर्क</translation>
+        <translation>नेटवर्क</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="461"/>
         <source>Trash</source>
-        <translation type="unfinished">कचरा</translation>
+        <translation>कचरा</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="466"/>
         <source>Desktop</source>
-        <translation type="unfinished">डेस्कटॉप</translation>
+        <translation>डेस्कटॉप</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="551"/>
@@ -1974,7 +1974,7 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferences.ui" line="60"/>
         <source>Advanced</source>
-        <translation type="unfinished">उन्नत</translation>
+        <translation>उन्नत</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="222"/>
@@ -1984,7 +1984,7 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferences.ui" line="296"/>
         <source>Icons</source>
-        <translation type="unfinished">आइकन्स</translation>
+        <translation>आइकन्स</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="328"/>
@@ -2195,30 +2195,30 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferences.ui" line="466"/>
         <source>3 px by default.</source>
-        <translation type="unfinished">3 px आरंभिक मान.</translation>
+        <translation>3 px आरंभिक मान.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="469"/>
         <location filename="../preferences.ui" line="493"/>
         <source> px</source>
-        <translation type="unfinished"> px</translation>
+        <translation> px</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="482"/>
         <source>x</source>
-        <translation type="unfinished">x</translation>
+        <translation>x</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="489"/>
         <source>3 px by default.
 A space is also reserved for 3 lines of text.</source>
-        <translation type="unfinished">1 px आरंभिक मान.
+        <translation>1 px आरंभिक मान.
 3 पंक्तियों के आलेख के लिए भी स्थान आरक्षित है. {3 ?} {3 ?}</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="506"/>
         <source>Lock</source>
-        <translation type="unfinished">ताला</translation>
+        <translation>ताला</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="555"/>

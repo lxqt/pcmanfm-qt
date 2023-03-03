@@ -1853,22 +1853,22 @@ Ar putea fi utile dacă acele foldere sunt create din nou.</translation>
     <message>
         <location filename="../tabpage.cpp" line="455"/>
         <source>Computer</source>
-        <translation type="unfinished">Computer</translation>
+        <translation>Computer</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="458"/>
         <source>Network</source>
-        <translation type="unfinished">Rețea</translation>
+        <translation>Rețea</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="461"/>
         <source>Trash</source>
-        <translation type="unfinished">Gunoi</translation>
+        <translation>Gunoi</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="466"/>
         <source>Desktop</source>
-        <translation type="unfinished">Desktop</translation>
+        <translation>Desktop</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="551"/>
@@ -1989,7 +1989,7 @@ Ar putea fi utile dacă acele foldere sunt create din nou.</translation>
     <message>
         <location filename="../preferences.ui" line="296"/>
         <source>Icons</source>
-        <translation type="unfinished">Pictograme</translation>
+        <translation>Pictograme</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="328"/>
@@ -2200,30 +2200,30 @@ Ar putea fi utile dacă acele foldere sunt create din nou.</translation>
     <message>
         <location filename="../preferences.ui" line="466"/>
         <source>3 px by default.</source>
-        <translation type="unfinished">3 px implicit.</translation>
+        <translation>3 px implicit.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="469"/>
         <location filename="../preferences.ui" line="493"/>
         <source> px</source>
-        <translation type="unfinished"> px</translation>
+        <translation> px</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="482"/>
         <source>x</source>
-        <translation type="unfinished">x</translation>
+        <translation>x</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="489"/>
         <source>3 px by default.
 A space is also reserved for 3 lines of text.</source>
-        <translation type="unfinished">1 px în mod implicit.
+        <translation>1 px în mod implicit.
 Un spațiu este rezervat și pentru 3 rânduri de text. {3 ?} {3 ?}</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="506"/>
         <source>Lock</source>
-        <translation type="unfinished">Blochează</translation>
+        <translation>Blochează</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="555"/>
@@ -2451,7 +2451,7 @@ A value of -1 means that there is no limit for the file size (the default).</sou
         <location filename="../bulkrename.cpp" line="124"/>
         <location filename="../tabpage.cpp" line="1139"/>
         <source>Error</source>
-        <translation type="unfinished">Eroare</translation>
+        <translation>Eroare</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="121"/>

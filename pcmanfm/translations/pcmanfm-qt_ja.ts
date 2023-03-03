@@ -128,7 +128,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../bulk-rename.ui" line="80"/>
         <source>Pad numbers with zero if possible</source>
-        <translation type="unfinished">可能であれば 0 をつけた数字にする</translation>
+        <translation>可能であれば 0 をつけた数字にする</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="87"/>
@@ -269,7 +269,7 @@ It can be left empty.</source>
     <message>
         <location filename="../desktopentrydialog.ui" line="165"/>
         <source>Whether the launched program should run in a terminal window.</source>
-        <translation type="unfinished">実行プログラムを端末のウィンドウ内で実行するかどうかです。</translation>
+        <translation>実行プログラムを端末のウィンドウ内で実行するかどうかです。</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="169"/>
@@ -289,7 +289,7 @@ It can be left empty.</source>
     <message>
         <location filename="../desktopentrydialog.ui" line="189"/>
         <source>Whether this is a link or executes a command.</source>
-        <translation type="unfinished">このランチャーがリンクであるか、コマンドを実行するかどうかです。</translation>
+        <translation>このランチャーがリンクであるか、コマンドを実行するかどうかです。</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="193"/>
@@ -313,7 +313,7 @@ It can be left empty.</source>
 It is needed only when you want to use the created file in the main menu. Otherwise, you could leave it empty.
 
 Examples: AudioVideo, Audio, Video, Development, Education, Game, Graphics, Network, Office, Settings, System, Utility, Qt.</source>
-        <translation type="unfinished">エントリがデスクトップ環境のメインメニューで使用されている場合 (例、~/.local/share/applications の中に置かれた場合) に表示されるセミコロンで区切ったカテゴリです。
+        <translation>エントリがデスクトップ環境のメインメニューで使用されている場合 (例、~/.local/share/applications の中に置かれた場合) に表示されるセミコロンで区切ったカテゴリです。
 
 作成したファイルをメインメニューで使いたい時だけ必要です。そうでなければ空のままにしておくこともできます。
 
@@ -493,7 +493,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktop-preferences.ui" line="314"/>
         <source>Make all items stick to their positions</source>
-        <translation type="unfinished">すべてのアイテムをその位置に固定する</translation>
+        <translation>すべてのアイテムをその位置に固定する</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="373"/>
@@ -1013,7 +1013,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="981"/>
         <source>&amp;Clear</source>
-        <translation type="unfinished">クリア(&amp;C)</translation>
+        <translation>クリア(&amp;C)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="648"/>
@@ -1859,22 +1859,22 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../tabpage.cpp" line="455"/>
         <source>Computer</source>
-        <translation type="unfinished">コンピューター</translation>
+        <translation>コンピューター</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="458"/>
         <source>Network</source>
-        <translation type="unfinished">ネットワーク</translation>
+        <translation>ネットワーク</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="461"/>
         <source>Trash</source>
-        <translation type="unfinished">ゴミ箱</translation>
+        <translation>ゴミ箱</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="466"/>
         <source>Desktop</source>
-        <translation type="unfinished">デスクトップ</translation>
+        <translation>デスクトップ</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="551"/>
@@ -2309,7 +2309,7 @@ A value of -1 means that there is no limit for the file size (the default).</sou
     <message>
         <location filename="../preferences.ui" line="934"/>
         <source>Maximum search history:</source>
-        <translation type="unfinished">検索履歴の最大数:</translation>
+        <translation>検索履歴の最大数:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="948"/>

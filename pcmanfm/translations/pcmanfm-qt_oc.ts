@@ -1148,7 +1148,7 @@ are left clicked, even when it is not the default file manager.</source>
         <location filename="../main-win.ui" line="952"/>
         <location filename="../main-win.ui" line="955"/>
         <source>Create Launcher</source>
-        <translation type="unfinished">Crear un aviador</translation>
+        <translation>Crear un aviador</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="782"/>
@@ -1569,7 +1569,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktopentrydialog.cpp" line="35"/>
         <source>Command:</source>
-        <translation type="unfinished">Comanda :</translation>
+        <translation>Comanda :</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="36"/>
@@ -1709,7 +1709,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktopwindow.cpp" line="1075"/>
         <source>Create Launcher</source>
-        <translation type="unfinished">Crear un aviador</translation>
+        <translation>Crear un aviador</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="1078"/>
@@ -1848,7 +1848,7 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../tabpage.cpp" line="466"/>
         <source>Desktop</source>
-        <translation type="unfinished">Burèu</translation>
+        <translation>Burèu</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="551"/>

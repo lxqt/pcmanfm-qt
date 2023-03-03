@@ -1861,22 +1861,22 @@ Mohly by se ještě hodit v případě znovuvytvoření těchto složek.</transl
     <message>
         <location filename="../tabpage.cpp" line="455"/>
         <source>Computer</source>
-        <translation type="unfinished">Můj počítač</translation>
+        <translation>Můj počítač</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="458"/>
         <source>Network</source>
-        <translation type="unfinished">Síť</translation>
+        <translation>Síť</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="461"/>
         <source>Trash</source>
-        <translation type="unfinished">Koš</translation>
+        <translation>Koš</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="466"/>
         <source>Desktop</source>
-        <translation type="unfinished">Pracovní plocha</translation>
+        <translation>Pracovní plocha</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="551"/>

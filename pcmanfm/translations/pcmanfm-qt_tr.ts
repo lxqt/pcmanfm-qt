@@ -1860,22 +1860,22 @@ Bu klasörler yeniden oluşturulursa faydalı olabilirler.</translation>
     <message>
         <location filename="../tabpage.cpp" line="455"/>
         <source>Computer</source>
-        <translation type="unfinished">Bilgisayar</translation>
+        <translation>Bilgisayar</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="458"/>
         <source>Network</source>
-        <translation type="unfinished">Ağ</translation>
+        <translation>Ağ</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="461"/>
         <source>Trash</source>
-        <translation type="unfinished">Çöp Kutusu</translation>
+        <translation>Çöp Kutusu</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="466"/>
         <source>Desktop</source>
-        <translation type="unfinished">Masaüstü</translation>
+        <translation>Masaüstü</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="551"/>

@@ -1860,22 +1860,22 @@ Elas podem ser úteis se essas pastas forem criadas novamente.</translation>
     <message>
         <location filename="../tabpage.cpp" line="455"/>
         <source>Computer</source>
-        <translation type="unfinished">Computador</translation>
+        <translation>Computador</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="458"/>
         <source>Network</source>
-        <translation type="unfinished">Rede</translation>
+        <translation>Rede</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="461"/>
         <source>Trash</source>
-        <translation type="unfinished">Lixo</translation>
+        <translation>Lixo</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="466"/>
         <source>Desktop</source>
-        <translation type="unfinished">Ambiente de trabalho</translation>
+        <translation>Ambiente de trabalho</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="551"/>

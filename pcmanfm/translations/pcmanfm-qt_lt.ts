@@ -1856,22 +1856,22 @@ Jie gali praversti tuo atveju, jeigu aplankai bus sukurti iš naujo.</translatio
     <message>
         <location filename="../tabpage.cpp" line="455"/>
         <source>Computer</source>
-        <translation type="unfinished">Kompiuteris</translation>
+        <translation>Kompiuteris</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="458"/>
         <source>Network</source>
-        <translation type="unfinished">Tinklas</translation>
+        <translation>Tinklas</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="461"/>
         <source>Trash</source>
-        <translation type="unfinished">Šiukšlinė</translation>
+        <translation>Šiukšlinė</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="466"/>
         <source>Desktop</source>
-        <translation type="unfinished">Darbalaukis</translation>
+        <translation>Darbalaukis</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="551"/>

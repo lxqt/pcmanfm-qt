@@ -1859,22 +1859,22 @@ Ze kunnen van pas komen als u ze opnieuw aanmaakt.</translation>
     <message>
         <location filename="../tabpage.cpp" line="455"/>
         <source>Computer</source>
-        <translation type="unfinished">Computer</translation>
+        <translation>Computer</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="458"/>
         <source>Network</source>
-        <translation type="unfinished">Netwerk</translation>
+        <translation>Netwerk</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="461"/>
         <source>Trash</source>
-        <translation type="unfinished">Prullenbak</translation>
+        <translation>Prullenbak</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="466"/>
         <source>Desktop</source>
-        <translation type="unfinished">Bureaublad</translation>
+        <translation>Bureaublad</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="551"/>

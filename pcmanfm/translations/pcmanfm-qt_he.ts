@@ -1860,22 +1860,22 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../tabpage.cpp" line="455"/>
         <source>Computer</source>
-        <translation type="unfinished">מחשב</translation>
+        <translation>מחשב</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="458"/>
         <source>Network</source>
-        <translation type="unfinished">רשת</translation>
+        <translation>רשת</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="461"/>
         <source>Trash</source>
-        <translation type="unfinished">אשפה</translation>
+        <translation>אשפה</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="466"/>
         <source>Desktop</source>
-        <translation type="unfinished">שולחן עבודה</translation>
+        <translation>שולחן עבודה</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="551"/>

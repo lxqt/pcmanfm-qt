@@ -591,7 +591,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktop-preferences.ui" line="614"/>
         <source>Advanced</source>
-        <translation type="unfinished">Кеңейтілген</translation>
+        <translation>Кеңейтілген</translation>
     </message>
 </context>
 <context>
@@ -821,7 +821,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="317"/>
         <source>F5</source>
-        <translation type="unfinished">F5</translation>
+        <translation>F5</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="326"/>
@@ -1126,7 +1126,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="904"/>
         <source>F6</source>
-        <translation type="unfinished">F6</translation>
+        <translation>F6</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="909"/>
@@ -1156,7 +1156,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="937"/>
         <source>F9</source>
-        <translation type="unfinished">F9</translation>
+        <translation>F9</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="942"/>
@@ -1172,7 +1172,7 @@ are left clicked, even when it is not the default file manager.</source>
         <location filename="../main-win.ui" line="952"/>
         <location filename="../main-win.ui" line="955"/>
         <source>Create Launcher</source>
-        <translation type="unfinished">Жөнелткішті жасау</translation>
+        <translation>Жөнелткішті жасау</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="782"/>
@@ -1222,7 +1222,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="876"/>
         <source>Bulk Rename</source>
-        <translation type="unfinished">Топтап атын ауыстыру</translation>
+        <translation>Топтап атын ауыстыру</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="813"/>
@@ -1328,7 +1328,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="671"/>
         <source>F2</source>
-        <translation type="unfinished">F2</translation>
+        <translation>F2</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="676"/>
@@ -1393,7 +1393,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="771"/>
         <source>F3</source>
-        <translation type="unfinished">F3</translation>
+        <translation>F3</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="70"/>
@@ -1534,7 +1534,7 @@ are left clicked, even when it is not the default file manager.</source>
         <location filename="../application.cpp" line="648"/>
         <location filename="../application.cpp" line="653"/>
         <source>Error</source>
-        <translation type="unfinished">Қате</translation>
+        <translation>Қате</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="653"/>
@@ -1593,7 +1593,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktopentrydialog.cpp" line="35"/>
         <source>Command:</source>
-        <translation type="unfinished">Команда:</translation>
+        <translation>Команда:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="36"/>
@@ -1733,12 +1733,12 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktopwindow.cpp" line="1075"/>
         <source>Create Launcher</source>
-        <translation type="unfinished">Жөнелткішті жасау</translation>
+        <translation>Жөнелткішті жасау</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="1078"/>
         <source>Desktop Preferences</source>
-        <translation type="unfinished">Жұмыс үстел баптаулары</translation>
+        <translation>Жұмыс үстел баптаулары</translation>
     </message>
 </context>
 <context>
@@ -1800,7 +1800,7 @@ are left clicked, even when it is not the default file manager.</source>
         <location filename="../mainwindow.cpp" line="2268"/>
         <location filename="../mainwindow.cpp" line="2276"/>
         <source>Error</source>
-        <translation type="unfinished">Қате</translation>
+        <translation>Қате</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="2276"/>
@@ -1872,7 +1872,7 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../tabpage.cpp" line="466"/>
         <source>Desktop</source>
-        <translation type="unfinished">Жұмыс үстелі</translation>
+        <translation>Жұмыс үстелі</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="551"/>
@@ -2200,18 +2200,18 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferences.ui" line="466"/>
         <source>3 px by default.</source>
-        <translation type="unfinished">Үнсіз келісім бойынша - 3 пиксель.</translation>
+        <translation>Үнсіз келісім бойынша - 3 пиксель.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="469"/>
         <location filename="../preferences.ui" line="493"/>
         <source> px</source>
-        <translation type="unfinished"> пикс</translation>
+        <translation> пикс</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="482"/>
         <source>x</source>
-        <translation type="unfinished">x</translation>
+        <translation>x</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="489"/>
@@ -2450,7 +2450,7 @@ A value of -1 means that there is no limit for the file size (the default).</sou
         <location filename="../bulkrename.cpp" line="124"/>
         <location filename="../tabpage.cpp" line="1139"/>
         <source>Error</source>
-        <translation type="unfinished">Қате</translation>
+        <translation>Қате</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="121"/>

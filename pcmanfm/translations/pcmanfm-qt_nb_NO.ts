@@ -128,12 +128,12 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../bulk-rename.ui" line="80"/>
         <source>Pad numbers with zero if possible</source>
-        <translation type="unfinished">Fyll siffer med null hvis mulig</translation>
+        <translation>Fyll siffer med null hvis mulig</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="87"/>
         <source>Use localized numbers</source>
-        <translation type="unfinished">Bruk lokaliserte tall</translation>
+        <translation>Bruk lokaliserte tall</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="27"/>
@@ -986,7 +986,7 @@ venstreklikkes, selv når det ikke er forvalgt filbehandler.</translation>
     <message>
         <location filename="../main-win.ui" line="534"/>
         <source>&amp;By File Name</source>
-        <translation type="unfinished">&amp;Etter filnavn</translation>
+        <translation>&amp;Etter filnavn</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="542"/>
@@ -1006,7 +1006,7 @@ venstreklikkes, selv når det ikke er forvalgt filbehandler.</translation>
     <message>
         <location filename="../main-win.ui" line="566"/>
         <source>By File &amp;Type</source>
-        <translation type="unfinished">Etter fil&amp;type</translation>
+        <translation>Etter fil&amp;type</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="574"/>
@@ -1036,7 +1036,7 @@ venstreklikkes, selv når det ikke er forvalgt filbehandler.</translation>
     <message>
         <location filename="../main-win.ui" line="963"/>
         <source>Preserve Settings Recursively from &amp;Here</source>
-        <translation type="unfinished">Behold innstillinger rekursivt &amp;herfra</translation>
+        <translation>Behold innstillinger rekursivt &amp;herfra</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="968"/>
@@ -1066,7 +1066,7 @@ venstreklikkes, selv når det ikke er forvalgt filbehandler.</translation>
     <message>
         <location filename="../main-win.ui" line="708"/>
         <source>By File &amp;Size</source>
-        <translation type="unfinished">Etter fil&amp;størrelse</translation>
+        <translation>Etter fil&amp;størrelse</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="713"/>
@@ -1172,7 +1172,7 @@ venstreklikkes, selv når det ikke er forvalgt filbehandler.</translation>
         <location filename="../main-win.ui" line="952"/>
         <location filename="../main-win.ui" line="955"/>
         <source>Create Launcher</source>
-        <translation type="unfinished">Skap oppstarter</translation>
+        <translation>Skap oppstarter</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="782"/>
@@ -1794,7 +1794,7 @@ venstreklikkes, selv når det ikke er forvalgt filbehandler.</translation>
     <message>
         <location filename="../mainwindow.cpp" line="1997"/>
         <source>Customized View Settings</source>
-        <translation type="unfinished">Innstillinger for tilpasset visning</translation>
+        <translation>Innstillinger for tilpasset visning</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="2268"/>
@@ -1810,7 +1810,7 @@ venstreklikkes, selv når det ikke er forvalgt filbehandler.</translation>
     <message>
         <location filename="../mainwindow.cpp" line="2378"/>
         <source>Cleaning Folder Settings</source>
-        <translation type="unfinished">Innstillinger for tømming av mapper</translation>
+        <translation>Innstillinger for tømming av mapper</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="2379"/>
@@ -1858,22 +1858,22 @@ De kan være nyttige hvis disse mappene opprettes igjen.</translation>
     <message>
         <location filename="../tabpage.cpp" line="455"/>
         <source>Computer</source>
-        <translation type="unfinished">Datamaskin</translation>
+        <translation>Datamaskin</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="458"/>
         <source>Network</source>
-        <translation type="unfinished">Nettverk</translation>
+        <translation>Nettverk</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="461"/>
         <source>Trash</source>
-        <translation type="unfinished">Papirkurv</translation>
+        <translation>Papirkurv</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="466"/>
         <source>Desktop</source>
-        <translation type="unfinished">Skrivebord</translation>
+        <translation>Skrivebord</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="551"/>

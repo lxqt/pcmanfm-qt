@@ -479,7 +479,7 @@ ha bal gombbal kattintanak rájuk, még akkor is, ha az nem az alapértelmezett 
     <message>
         <location filename="../desktop-preferences.ui" line="307"/>
         <source>Open desktop folders in default file manager by left clicking</source>
-        <translation type="unfinished">Bal gombbal nyissa meg az asztali mappákat az alapértelmezett fájlkezelőben</translation>
+        <translation>Bal gombbal nyissa meg az asztali mappákat az alapértelmezett fájlkezelőben</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="314"/>
@@ -612,7 +612,7 @@ ha bal gombbal kattintanak rájuk, még akkor is, ha az nem az alapértelmezett 
     <message>
         <location filename="../shortcuts.ui" line="34"/>
         <source>Focus view, clear filter bar</source>
-        <translation type="unfinished">Fókuszálás a mappákra, szűrősáv törlése</translation>
+        <translation>Fókuszálás a mappákra, szűrősáv törlése</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="39"/>
@@ -1165,7 +1165,7 @@ ha bal gombbal kattintanak rájuk, még akkor is, ha az nem az alapértelmezett 
         <location filename="../main-win.ui" line="952"/>
         <location filename="../main-win.ui" line="955"/>
         <source>Create Launcher</source>
-        <translation type="unfinished">Indítóikon létrehozása</translation>
+        <translation>Indítóikon létrehozása</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="782"/>
@@ -1849,22 +1849,22 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../tabpage.cpp" line="455"/>
         <source>Computer</source>
-        <translation type="unfinished">Számítógép</translation>
+        <translation>Számítógép</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="458"/>
         <source>Network</source>
-        <translation type="unfinished">Hálózat</translation>
+        <translation>Hálózat</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="461"/>
         <source>Trash</source>
-        <translation type="unfinished">Kuka</translation>
+        <translation>Kuka</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="466"/>
         <source>Desktop</source>
-        <translation type="unfinished">Asztal</translation>
+        <translation>Asztal</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="551"/>

@@ -1862,22 +1862,22 @@ Mogle bi biti korisne, ako se te mape ponovo kreiraju.</translation>
     <message>
         <location filename="../tabpage.cpp" line="455"/>
         <source>Computer</source>
-        <translation type="unfinished">Računalo</translation>
+        <translation>Računalo</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="458"/>
         <source>Network</source>
-        <translation type="unfinished">Mreža</translation>
+        <translation>Mreža</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="461"/>
         <source>Trash</source>
-        <translation type="unfinished">Smeće</translation>
+        <translation>Smeće</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="466"/>
         <source>Desktop</source>
-        <translation type="unfinished">Radna površina</translation>
+        <translation>Radna površina</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="551"/>

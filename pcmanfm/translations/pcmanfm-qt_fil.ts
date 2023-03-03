@@ -814,7 +814,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="317"/>
         <source>F5</source>
-        <translation type="unfinished">F5</translation>
+        <translation>F5</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="326"/>
@@ -1149,7 +1149,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="937"/>
         <source>F9</source>
-        <translation type="unfinished">F9</translation>
+        <translation>F9</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="942"/>
@@ -1165,7 +1165,7 @@ are left clicked, even when it is not the default file manager.</source>
         <location filename="../main-win.ui" line="952"/>
         <location filename="../main-win.ui" line="955"/>
         <source>Create Launcher</source>
-        <translation type="unfinished">Gumawa ng Launcher</translation>
+        <translation>Gumawa ng Launcher</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="782"/>
@@ -1215,7 +1215,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="876"/>
         <source>Bulk Rename</source>
-        <translation type="unfinished">Maramihang pagpapalit ng pangalan</translation>
+        <translation>Maramihang pagpapalit ng pangalan</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="813"/>
@@ -1321,7 +1321,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="671"/>
         <source>F2</source>
-        <translation type="unfinished">F2</translation>
+        <translation>F2</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="676"/>
@@ -1361,7 +1361,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="729"/>
         <source>F4</source>
-        <translation type="unfinished">F4</translation>
+        <translation>F4</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="739"/>
@@ -1386,7 +1386,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="771"/>
         <source>F3</source>
-        <translation type="unfinished">F3</translation>
+        <translation>F3</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="70"/>
@@ -1527,7 +1527,7 @@ are left clicked, even when it is not the default file manager.</source>
         <location filename="../application.cpp" line="648"/>
         <location filename="../application.cpp" line="653"/>
         <source>Error</source>
-        <translation type="unfinished">Mali</translation>
+        <translation>Mali</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="653"/>
@@ -1586,7 +1586,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktopentrydialog.cpp" line="35"/>
         <source>Command:</source>
-        <translation type="unfinished">Utos:</translation>
+        <translation>Utos:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="36"/>
@@ -1695,12 +1695,12 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktopwindow.cpp" line="345"/>
         <source>Computer</source>
-        <translation type="unfinished">Kompyuter</translation>
+        <translation>Kompyuter</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="359"/>
         <source>Network</source>
-        <translation type="unfinished">Network</translation>
+        <translation>Network</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="996"/>
@@ -1726,12 +1726,12 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktopwindow.cpp" line="1075"/>
         <source>Create Launcher</source>
-        <translation type="unfinished">Gumawa ng Launcher</translation>
+        <translation>Gumawa ng Launcher</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="1078"/>
         <source>Desktop Preferences</source>
-        <translation type="unfinished">Kagustuhan sa Desktop</translation>
+        <translation>Kagustuhan sa Desktop</translation>
     </message>
 </context>
 <context>
@@ -1793,7 +1793,7 @@ are left clicked, even when it is not the default file manager.</source>
         <location filename="../mainwindow.cpp" line="2268"/>
         <location filename="../mainwindow.cpp" line="2276"/>
         <source>Error</source>
-        <translation type="unfinished">Mali</translation>
+        <translation>Mali</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="2276"/>
@@ -1850,27 +1850,27 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../tabpage.cpp" line="455"/>
         <source>Computer</source>
-        <translation type="unfinished">Kompyuter</translation>
+        <translation>Kompyuter</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="458"/>
         <source>Network</source>
-        <translation type="unfinished">Network</translation>
+        <translation>Network</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="461"/>
         <source>Trash</source>
-        <translation type="unfinished">Basurahan</translation>
+        <translation>Basurahan</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="466"/>
         <source>Desktop</source>
-        <translation type="unfinished">Desktop</translation>
+        <translation>Desktop</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="551"/>
         <source>Error</source>
-        <translation type="unfinished">Mali</translation>
+        <translation>Mali</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="560"/>
@@ -1972,7 +1972,7 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferences.ui" line="60"/>
         <source>Advanced</source>
-        <translation type="unfinished">Advanced</translation>
+        <translation>Advanced</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="222"/>
@@ -2193,7 +2193,7 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferences.ui" line="466"/>
         <source>3 px by default.</source>
-        <translation type="unfinished">Ang default ay 3 px.</translation>
+        <translation>Ang default ay 3 px.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="469"/>
@@ -2210,7 +2210,7 @@ They might be useful if those folders are created again.</source>
         <location filename="../preferences.ui" line="489"/>
         <source>3 px by default.
 A space is also reserved for 3 lines of text.</source>
-        <translation type="unfinished">Ang default ay 1 px.
+        <translation>Ang default ay 1 px.
 Mayroon ding puwang na nakalaan sa 3 linya ng text. {3 ?} {3 ?}</translation>
     </message>
     <message>

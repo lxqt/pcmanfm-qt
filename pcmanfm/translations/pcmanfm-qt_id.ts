@@ -1852,22 +1852,22 @@ Mereka mungkin berguna jika folder itu dibuat lagi.</translation>
     <message>
         <location filename="../tabpage.cpp" line="455"/>
         <source>Computer</source>
-        <translation type="unfinished">Komputer</translation>
+        <translation>Komputer</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="458"/>
         <source>Network</source>
-        <translation type="unfinished">Jaringan</translation>
+        <translation>Jaringan</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="461"/>
         <source>Trash</source>
-        <translation type="unfinished">Tempat Sampah</translation>
+        <translation>Tempat Sampah</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="466"/>
         <source>Desktop</source>
-        <translation type="unfinished">Desktop</translation>
+        <translation>Desktop</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="551"/>

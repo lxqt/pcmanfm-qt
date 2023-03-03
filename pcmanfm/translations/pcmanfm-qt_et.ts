@@ -1860,22 +1860,22 @@ Kui need kaustad hiljem uuesti tekivad, siis võib-olla pole mõtet seda teha.</
     <message>
         <location filename="../tabpage.cpp" line="455"/>
         <source>Computer</source>
-        <translation type="unfinished">Arvuti</translation>
+        <translation>Arvuti</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="458"/>
         <source>Network</source>
-        <translation type="unfinished">Võrk</translation>
+        <translation>Võrk</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="461"/>
         <source>Trash</source>
-        <translation type="unfinished">Prügikast</translation>
+        <translation>Prügikast</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="466"/>
         <source>Desktop</source>
-        <translation type="unfinished">Töölaud</translation>
+        <translation>Töölaud</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="551"/>

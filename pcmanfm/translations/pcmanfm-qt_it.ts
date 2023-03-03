@@ -1861,22 +1861,22 @@ Potrebbero essere utili se le cartelle vengono ricreate.</translation>
     <message>
         <location filename="../tabpage.cpp" line="455"/>
         <source>Computer</source>
-        <translation type="unfinished">Computer</translation>
+        <translation>Computer</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="458"/>
         <source>Network</source>
-        <translation type="unfinished">Rete</translation>
+        <translation>Rete</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="461"/>
         <source>Trash</source>
-        <translation type="unfinished">Cestino</translation>
+        <translation>Cestino</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="466"/>
         <source>Desktop</source>
-        <translation type="unfinished">Scrivania</translation>
+        <translation>Scrivania</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="551"/>
