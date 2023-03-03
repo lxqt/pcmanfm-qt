@@ -34,6 +34,7 @@
 #include <QLabel>
 #include <QToolTip>
 #include <QDir>
+#include <QStandardPaths>
 #include "settings.h"
 #include "application.h"
 #include "desktopentrydialog.h"
@@ -438,12 +439,33 @@ void TabPage::onFilesAdded(Fm::FileInfoList files) {
 void TabPage::onFolderFinishLoading() {
     auto fi = folder_->info();
     if(fi) { // if loading of the folder fails, it's possible that we don't have FmFileInfo.
-        if(folder_->path().hasUriScheme("search")) {
-            title_ = tr("Search Results"); // FIXME: Localize it in libfm-qt!
+        title_ = fi->displayName();
+
+        // force localization on some locations (FIXME: localize them in libfm-qt?)
+        auto path = folder_->path();
+        if(!path.isNative()) {
+            if(path.hasUriScheme("search")) {
+                title_ = tr("Search Results");
+            }
+            else if(strcmp(path.toString().get(), "menu://applications/") == 0) {
+                title_ = tr("Applications");
+            }
+            else if(!path.hasParent()) {
+                if(path.hasUriScheme("computer")) {
+                    title_ = tr("Computer");
+                }
+                else if(path.hasUriScheme("network")) {
+                    title_ = tr("Network");
+                }
+                else if(path.hasUriScheme("trash")) {
+                    title_ = tr("Trash");
+                }
+            }
         }
-        else {
-            title_ = fi->displayName();
+        else if(pathName() == QStandardPaths::writableLocation(QStandardPaths::DesktopLocation)) {
+            title_ = tr("Desktop");
         }
+
         Q_EMIT titleChanged();
     }
 
