@@ -1445,99 +1445,99 @@ are left clicked, even when it is not the default file manager.</source>
 <context>
     <name>PCManFM::Application</name>
     <message>
-        <location filename="../application.cpp" line="187"/>
+        <location filename="../application.cpp" line="186"/>
         <source>Name of configuration profile</source>
         <translation>Име на конфигурационен профил</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="187"/>
+        <location filename="../application.cpp" line="186"/>
         <source>PROFILE</source>
         <translation>ПРОФИЛ</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="190"/>
+        <location filename="../application.cpp" line="189"/>
         <source>Run PCManFM-Qt as a daemon</source>
         <translation>Изпълни PCManFM-Qt на заден план</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="193"/>
+        <location filename="../application.cpp" line="192"/>
         <source>Quit PCManFM-Qt</source>
         <translation>Напусни PCManFM-Qt</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="196"/>
+        <location filename="../application.cpp" line="195"/>
         <source>Launch desktop manager</source>
         <translation>Стартиране мениджъра на работния плот</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="199"/>
+        <location filename="../application.cpp" line="198"/>
         <source>Turn off desktop manager if it&apos;s running</source>
         <translation>Спиране мениджъра на работния плот</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="202"/>
+        <location filename="../application.cpp" line="201"/>
         <source>Open desktop preference dialog on the page with the specified name</source>
         <translation>Отвaряне диалоговия прозорец за настройките на работния плот на страницата с посоченото име</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="202"/>
-        <location filename="../application.cpp" line="217"/>
+        <location filename="../application.cpp" line="201"/>
+        <location filename="../application.cpp" line="216"/>
         <source>NAME</source>
         <translation>ИМЕ</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="205"/>
+        <location filename="../application.cpp" line="204"/>
         <source>Open new window</source>
         <translation>Отваряне на нов прозорец</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="208"/>
+        <location filename="../application.cpp" line="207"/>
         <source>Open Find Files utility</source>
         <translation>Отваряне на инструмента Търсене на файл</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="211"/>
+        <location filename="../application.cpp" line="210"/>
         <source>Set desktop wallpaper from image FILE</source>
         <translation>Задаване на тапета от изображение ФАЙЛ</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="211"/>
+        <location filename="../application.cpp" line="210"/>
         <source>FILE</source>
         <translation>ФАЙЛ</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="214"/>
+        <location filename="../application.cpp" line="213"/>
         <source>MODE</source>
         <translation>СТИЛ</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="214"/>
+        <location filename="../application.cpp" line="213"/>
         <source>Set mode of desktop wallpaper. MODE=(%1)</source>
         <translation>Задаване на тапета.СТИЛ=(%1)</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="217"/>
+        <location filename="../application.cpp" line="216"/>
         <source>Open Preferences dialog on the page with the specified name</source>
         <translation>Отваряне диалоговия прозорец за настройките на страницата с посоченото име</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="220"/>
+        <location filename="../application.cpp" line="219"/>
         <source>Files or directories to open</source>
         <translation>Файлове и директории за отваряне</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="220"/>
+        <location filename="../application.cpp" line="219"/>
         <source>[FILE1, FILE2,...]</source>
         <translation>[FILE1, FILE2,...]</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="651"/>
-        <location filename="../application.cpp" line="656"/>
+        <location filename="../application.cpp" line="648"/>
+        <location filename="../application.cpp" line="653"/>
         <source>Error</source>
         <translation>Грешка</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="656"/>
+        <location filename="../application.cpp" line="653"/>
         <source>Terminal emulator is not set.</source>
         <translation>Терминалният емулатор не е настроен.</translation>
     </message>
@@ -1682,12 +1682,12 @@ are left clicked, even when it is not the default file manager.</source>
 <context>
     <name>PCManFM::DesktopWindow</name>
     <message>
-        <location filename="../desktopwindow.cpp" line="300"/>
+        <location filename="../desktopwindow.cpp" line="303"/>
         <source>Trash (One item)</source>
         <translation>Кошче (един елемент)</translation>
     </message>
     <message numerus="yes">
-        <location filename="../desktopwindow.cpp" line="303"/>
+        <location filename="../desktopwindow.cpp" line="306"/>
         <source>Trash (%Ln items)</source>
         <translation>
             <numerusform>Кошче (%Ln елемент)</numerusform>
@@ -1695,48 +1695,48 @@ are left clicked, even when it is not the default file manager.</source>
         </translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="307"/>
+        <location filename="../desktopwindow.cpp" line="310"/>
         <source>Trash (Empty)</source>
         <translation>Кошче (Празно)</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="342"/>
+        <location filename="../desktopwindow.cpp" line="345"/>
         <source>Computer</source>
         <translation>Компютър</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="356"/>
+        <location filename="../desktopwindow.cpp" line="359"/>
         <source>Network</source>
         <translation>Мрежа</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="993"/>
+        <location filename="../desktopwindow.cpp" line="996"/>
         <source>Open</source>
         <translation>Отваряне</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="999"/>
-        <location filename="../desktopwindow.cpp" line="1039"/>
+        <location filename="../desktopwindow.cpp" line="1002"/>
+        <location filename="../desktopwindow.cpp" line="1042"/>
         <source>Stic&amp;k to Current Position</source>
         <translation>&amp;Фиксиране на текущата позиция</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1007"/>
+        <location filename="../desktopwindow.cpp" line="1010"/>
         <source>Empty Trash</source>
         <translation>Изпразване на кошчето</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1066"/>
+        <location filename="../desktopwindow.cpp" line="1069"/>
         <source>Hide Desktop Items</source>
         <translation>Скриване на елементите на плота</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1072"/>
+        <location filename="../desktopwindow.cpp" line="1075"/>
         <source>Create Launcher</source>
         <translation>Създаване на стартер</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1075"/>
+        <location filename="../desktopwindow.cpp" line="1078"/>
         <source>Desktop Preferences</source>
         <translation>Настройки на работния плот</translation>
     </message>
@@ -1744,7 +1744,7 @@ are left clicked, even when it is not the default file manager.</source>
 <context>
     <name>PCManFM::FilterBar</name>
     <message>
-        <location filename="../tabpage.cpp" line="94"/>
+        <location filename="../tabpage.cpp" line="95"/>
         <source>Filter:</source>
         <translation>Филтър:</translation>
     </message>
@@ -1752,7 +1752,7 @@ are left clicked, even when it is not the default file manager.</source>
 <context>
     <name>PCManFM::FilterEdit</name>
     <message>
-        <location filename="../tabpage.cpp" line="64"/>
+        <location filename="../tabpage.cpp" line="65"/>
         <source>Clear text (Ctrl+K or Esc)</source>
         <translation>Изчистване на текста (Ctrl+K)</translation>
     </message>
@@ -1846,22 +1846,47 @@ They might be useful if those folders are created again.</source>
 <context>
     <name>PCManFM::TabPage</name>
     <message>
-        <location filename="../tabpage.cpp" line="442"/>
+        <location filename="../tabpage.cpp" line="448"/>
         <source>Search Results</source>
         <translation>Резултати от търсенето</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="529"/>
+        <location filename="../tabpage.cpp" line="451"/>
+        <source>Applications</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../tabpage.cpp" line="455"/>
+        <source>Computer</source>
+        <translation type="unfinished">Компютър</translation>
+    </message>
+    <message>
+        <location filename="../tabpage.cpp" line="458"/>
+        <source>Network</source>
+        <translation type="unfinished">Мрежа</translation>
+    </message>
+    <message>
+        <location filename="../tabpage.cpp" line="461"/>
+        <source>Trash</source>
+        <translation type="unfinished">Кошче</translation>
+    </message>
+    <message>
+        <location filename="../tabpage.cpp" line="466"/>
+        <source>Desktop</source>
+        <translation type="unfinished">Работен плот</translation>
+    </message>
+    <message>
+        <location filename="../tabpage.cpp" line="551"/>
         <source>Error</source>
         <translation>Грешка</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="538"/>
+        <location filename="../tabpage.cpp" line="560"/>
         <source>Free space: %1 (Total: %2)</source>
         <translation>Свободно място: %1 (Общо: %2)</translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="555"/>
+        <location filename="../tabpage.cpp" line="577"/>
         <source>%n item(s)</source>
         <translation>
             <numerusform>%n item</numerusform>
@@ -1869,7 +1894,7 @@ They might be useful if those folders are created again.</source>
         </translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="557"/>
+        <location filename="../tabpage.cpp" line="579"/>
         <source> (%n hidden)</source>
         <translation>
             <numerusform> (%n скрит)</numerusform>
@@ -1877,14 +1902,14 @@ They might be useful if those folders are created again.</source>
         </translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="562"/>
-        <location filename="../tabpage.cpp" line="764"/>
-        <location filename="../tabpage.cpp" line="778"/>
+        <location filename="../tabpage.cpp" line="584"/>
+        <location filename="../tabpage.cpp" line="786"/>
+        <location filename="../tabpage.cpp" line="800"/>
         <source>Link to</source>
         <translation>Връзка към</translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="790"/>
+        <location filename="../tabpage.cpp" line="812"/>
         <source>%n item(s) selected</source>
         <translation>
             <numerusform>%n избран елемент</numerusform>
@@ -2429,7 +2454,7 @@ A value of -1 means that there is no limit for the file size (the default).</sou
     <message>
         <location filename="../bulkrename.cpp" line="121"/>
         <location filename="../bulkrename.cpp" line="124"/>
-        <location filename="../tabpage.cpp" line="1117"/>
+        <location filename="../tabpage.cpp" line="1139"/>
         <source>Error</source>
         <translation>Грешка</translation>
     </message>
@@ -2444,7 +2469,7 @@ A value of -1 means that there is no limit for the file size (the default).</sou
         <translation>Някои файлове не бяха преименувани.</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="1117"/>
+        <location filename="../tabpage.cpp" line="1139"/>
         <source>Cannot open as Admin.</source>
         <translation>Не може да бъде отворен, като Администратор.</translation>
     </message>

@@ -1447,99 +1447,99 @@ venstreklikkes, selv hvis det ikke er standardfilhåndteringen.</translation>
 <context>
     <name>PCManFM::Application</name>
     <message>
-        <location filename="../application.cpp" line="187"/>
+        <location filename="../application.cpp" line="186"/>
         <source>Name of configuration profile</source>
         <translation>Konfigurationsprofilnavn</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="187"/>
+        <location filename="../application.cpp" line="186"/>
         <source>PROFILE</source>
         <translation>Profil</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="190"/>
+        <location filename="../application.cpp" line="189"/>
         <source>Run PCManFM-Qt as a daemon</source>
         <translation>Kør PCManFM-Qt som en dæmon</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="193"/>
+        <location filename="../application.cpp" line="192"/>
         <source>Quit PCManFM-Qt</source>
         <translation>Afslut PCManFM-Qt</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="196"/>
+        <location filename="../application.cpp" line="195"/>
         <source>Launch desktop manager</source>
         <translation>Kør skrivebordshåndtering</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="199"/>
+        <location filename="../application.cpp" line="198"/>
         <source>Turn off desktop manager if it&apos;s running</source>
         <translation>Slå skrivebordshåndtering fra, hvis den kører</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="202"/>
+        <location filename="../application.cpp" line="201"/>
         <source>Open desktop preference dialog on the page with the specified name</source>
         <translation>Åbn skrivebordspræferencer på siden med det specifcerede navn</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="202"/>
-        <location filename="../application.cpp" line="217"/>
+        <location filename="../application.cpp" line="201"/>
+        <location filename="../application.cpp" line="216"/>
         <source>NAME</source>
         <translation>Navn</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="205"/>
+        <location filename="../application.cpp" line="204"/>
         <source>Open new window</source>
         <translation>Åbn nyt vindue</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="208"/>
+        <location filename="../application.cpp" line="207"/>
         <source>Open Find Files utility</source>
         <translation>Åbn find filer værktøjet</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="211"/>
+        <location filename="../application.cpp" line="210"/>
         <source>Set desktop wallpaper from image FILE</source>
         <translation>Sæt skrivebordstapet fra billedurl</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="211"/>
+        <location filename="../application.cpp" line="210"/>
         <source>FILE</source>
         <translation>Fil</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="214"/>
+        <location filename="../application.cpp" line="213"/>
         <source>MODE</source>
         <translation>tapetype</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="214"/>
+        <location filename="../application.cpp" line="213"/>
         <source>Set mode of desktop wallpaper. MODE=(%1)</source>
         <translation>Sæt typen af tapet til typen=(%1)</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="217"/>
+        <location filename="../application.cpp" line="216"/>
         <source>Open Preferences dialog on the page with the specified name</source>
         <translation>Åbn præferencer på siden med det specificerede navn</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="220"/>
+        <location filename="../application.cpp" line="219"/>
         <source>Files or directories to open</source>
         <translation>Filer eller mapper at åbne</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="220"/>
+        <location filename="../application.cpp" line="219"/>
         <source>[FILE1, FILE2,...]</source>
         <translation>[FIL1, FIL2,...]</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="651"/>
-        <location filename="../application.cpp" line="656"/>
+        <location filename="../application.cpp" line="648"/>
+        <location filename="../application.cpp" line="653"/>
         <source>Error</source>
         <translation>Fejl</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="656"/>
+        <location filename="../application.cpp" line="653"/>
         <source>Terminal emulator is not set.</source>
         <translation>Termnialemulator er ikke indstillet.</translation>
     </message>
@@ -1684,12 +1684,12 @@ venstreklikkes, selv hvis det ikke er standardfilhåndteringen.</translation>
 <context>
     <name>PCManFM::DesktopWindow</name>
     <message>
-        <location filename="../desktopwindow.cpp" line="300"/>
+        <location filename="../desktopwindow.cpp" line="303"/>
         <source>Trash (One item)</source>
         <translation>Papirkurv (et objekt)</translation>
     </message>
     <message numerus="yes">
-        <location filename="../desktopwindow.cpp" line="303"/>
+        <location filename="../desktopwindow.cpp" line="306"/>
         <source>Trash (%Ln items)</source>
         <translation>
             <numerusform>Papirkurv (%Ln post)</numerusform>
@@ -1697,48 +1697,48 @@ venstreklikkes, selv hvis det ikke er standardfilhåndteringen.</translation>
         </translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="307"/>
+        <location filename="../desktopwindow.cpp" line="310"/>
         <source>Trash (Empty)</source>
         <translation>Papirkurv (tom)</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="342"/>
+        <location filename="../desktopwindow.cpp" line="345"/>
         <source>Computer</source>
         <translation>Computer</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="356"/>
+        <location filename="../desktopwindow.cpp" line="359"/>
         <source>Network</source>
         <translation>Netværk</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="993"/>
+        <location filename="../desktopwindow.cpp" line="996"/>
         <source>Open</source>
         <translation>Åbn</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="999"/>
-        <location filename="../desktopwindow.cpp" line="1039"/>
+        <location filename="../desktopwindow.cpp" line="1002"/>
+        <location filename="../desktopwindow.cpp" line="1042"/>
         <source>Stic&amp;k to Current Position</source>
         <translation>K&amp;læb til nuværende position</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1007"/>
+        <location filename="../desktopwindow.cpp" line="1010"/>
         <source>Empty Trash</source>
         <translation>Tøm papirkurv</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1066"/>
+        <location filename="../desktopwindow.cpp" line="1069"/>
         <source>Hide Desktop Items</source>
         <translation>Skjul skrivebordsobjekter</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1072"/>
+        <location filename="../desktopwindow.cpp" line="1075"/>
         <source>Create Launcher</source>
         <translation>Opret starter</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1075"/>
+        <location filename="../desktopwindow.cpp" line="1078"/>
         <source>Desktop Preferences</source>
         <translation>Skrivebordspræferencer</translation>
     </message>
@@ -1746,7 +1746,7 @@ venstreklikkes, selv hvis det ikke er standardfilhåndteringen.</translation>
 <context>
     <name>PCManFM::FilterBar</name>
     <message>
-        <location filename="../tabpage.cpp" line="94"/>
+        <location filename="../tabpage.cpp" line="95"/>
         <source>Filter:</source>
         <translation>Filter:</translation>
     </message>
@@ -1754,7 +1754,7 @@ venstreklikkes, selv hvis det ikke er standardfilhåndteringen.</translation>
 <context>
     <name>PCManFM::FilterEdit</name>
     <message>
-        <location filename="../tabpage.cpp" line="64"/>
+        <location filename="../tabpage.cpp" line="65"/>
         <source>Clear text (Ctrl+K or Esc)</source>
         <translation>Ryd tekst (Ctrl+K eller Esc)</translation>
     </message>
@@ -1848,22 +1848,47 @@ De kan være nyttige hvis mapperne bliver oprettet igen.</translation>
 <context>
     <name>PCManFM::TabPage</name>
     <message>
-        <location filename="../tabpage.cpp" line="442"/>
+        <location filename="../tabpage.cpp" line="448"/>
         <source>Search Results</source>
         <translation>Vi resultaterne</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="529"/>
+        <location filename="../tabpage.cpp" line="451"/>
+        <source>Applications</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../tabpage.cpp" line="455"/>
+        <source>Computer</source>
+        <translation type="unfinished">Computer</translation>
+    </message>
+    <message>
+        <location filename="../tabpage.cpp" line="458"/>
+        <source>Network</source>
+        <translation type="unfinished">Netværk</translation>
+    </message>
+    <message>
+        <location filename="../tabpage.cpp" line="461"/>
+        <source>Trash</source>
+        <translation type="unfinished">Papirkurv</translation>
+    </message>
+    <message>
+        <location filename="../tabpage.cpp" line="466"/>
+        <source>Desktop</source>
+        <translation type="unfinished">Skrivebord</translation>
+    </message>
+    <message>
+        <location filename="../tabpage.cpp" line="551"/>
         <source>Error</source>
         <translation>Fejl</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="538"/>
+        <location filename="../tabpage.cpp" line="560"/>
         <source>Free space: %1 (Total: %2)</source>
         <translation>Fri plads: %1 (Samlet: %2)</translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="555"/>
+        <location filename="../tabpage.cpp" line="577"/>
         <source>%n item(s)</source>
         <translation>
             <numerusform>%n objekt</numerusform>
@@ -1871,7 +1896,7 @@ De kan være nyttige hvis mapperne bliver oprettet igen.</translation>
         </translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="557"/>
+        <location filename="../tabpage.cpp" line="579"/>
         <source> (%n hidden)</source>
         <translation>
             <numerusform> (%n skjult)</numerusform>
@@ -1879,14 +1904,14 @@ De kan være nyttige hvis mapperne bliver oprettet igen.</translation>
         </translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="562"/>
-        <location filename="../tabpage.cpp" line="764"/>
-        <location filename="../tabpage.cpp" line="778"/>
+        <location filename="../tabpage.cpp" line="584"/>
+        <location filename="../tabpage.cpp" line="786"/>
+        <location filename="../tabpage.cpp" line="800"/>
         <source>Link to</source>
         <translation>Link til</translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="790"/>
+        <location filename="../tabpage.cpp" line="812"/>
         <source>%n item(s) selected</source>
         <translation>
             <numerusform>%n objekt valgt</numerusform>
@@ -2434,7 +2459,7 @@ En værdi på -1 betyder, at der ikke er nogen grænse for filstørrelsen (stand
     <message>
         <location filename="../bulkrename.cpp" line="121"/>
         <location filename="../bulkrename.cpp" line="124"/>
-        <location filename="../tabpage.cpp" line="1117"/>
+        <location filename="../tabpage.cpp" line="1139"/>
         <source>Error</source>
         <translation>Fejl</translation>
     </message>
@@ -2449,7 +2474,7 @@ En værdi på -1 betyder, at der ikke er nogen grænse for filstørrelsen (stand
         <translation>Nogle filer kunne ikke omdøbes.</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="1117"/>
+        <location filename="../tabpage.cpp" line="1139"/>
         <source>Cannot open as Admin.</source>
         <translation>Kan ikke åbne som administrator.</translation>
     </message>

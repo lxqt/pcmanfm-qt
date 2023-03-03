@@ -1439,99 +1439,99 @@ sunt apăsate stânga, chiar și atunci când nu este managerul de fișiere impl
 <context>
     <name>PCManFM::Application</name>
     <message>
-        <location filename="../application.cpp" line="187"/>
+        <location filename="../application.cpp" line="186"/>
         <source>Name of configuration profile</source>
         <translation>Numele profilului de configurație</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="187"/>
+        <location filename="../application.cpp" line="186"/>
         <source>PROFILE</source>
         <translation>PROFIL</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="190"/>
+        <location filename="../application.cpp" line="189"/>
         <source>Run PCManFM-Qt as a daemon</source>
         <translation>Rulați PCManFM-Qt ca deamon</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="193"/>
+        <location filename="../application.cpp" line="192"/>
         <source>Quit PCManFM-Qt</source>
         <translation>Ieșiți din PCManFM-Qt</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="196"/>
+        <location filename="../application.cpp" line="195"/>
         <source>Launch desktop manager</source>
         <translation>Lansează managerul de desktop</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="199"/>
+        <location filename="../application.cpp" line="198"/>
         <source>Turn off desktop manager if it&apos;s running</source>
         <translation>Dezactivează managerul de desktop dacă acesta rulează</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="202"/>
+        <location filename="../application.cpp" line="201"/>
         <source>Open desktop preference dialog on the page with the specified name</source>
         <translation>Deschideți dialogul de preferințe pentru desktop pe pagina cu numele specificat</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="202"/>
-        <location filename="../application.cpp" line="217"/>
+        <location filename="../application.cpp" line="201"/>
+        <location filename="../application.cpp" line="216"/>
         <source>NAME</source>
         <translation>NUME</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="205"/>
+        <location filename="../application.cpp" line="204"/>
         <source>Open new window</source>
         <translation>Deschide o fereastră nouă</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="208"/>
+        <location filename="../application.cpp" line="207"/>
         <source>Open Find Files utility</source>
         <translation>Deschide utilitara Găsește Fișiere</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="211"/>
+        <location filename="../application.cpp" line="210"/>
         <source>Set desktop wallpaper from image FILE</source>
         <translation>Setează wallpaperul desktop-ului din FIȘIERUL de imagine</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="211"/>
+        <location filename="../application.cpp" line="210"/>
         <source>FILE</source>
         <translation>FIȘIER</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="214"/>
+        <location filename="../application.cpp" line="213"/>
         <source>MODE</source>
         <translation>MOD</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="214"/>
+        <location filename="../application.cpp" line="213"/>
         <source>Set mode of desktop wallpaper. MODE=(%1)</source>
         <translation>Setați modul de fundal pentru desktop. MODE=(%1)</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="217"/>
+        <location filename="../application.cpp" line="216"/>
         <source>Open Preferences dialog on the page with the specified name</source>
         <translation>Deschideți dialogul Preferințe pe pagina cu numele specificat</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="220"/>
+        <location filename="../application.cpp" line="219"/>
         <source>Files or directories to open</source>
         <translation>Fișierele sau folderele de deschis</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="220"/>
+        <location filename="../application.cpp" line="219"/>
         <source>[FILE1, FILE2,...]</source>
         <translation>[FIȘIERUL1, FIȘIERUL2,...]</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="651"/>
-        <location filename="../application.cpp" line="656"/>
+        <location filename="../application.cpp" line="648"/>
+        <location filename="../application.cpp" line="653"/>
         <source>Error</source>
         <translation>Eroare</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="656"/>
+        <location filename="../application.cpp" line="653"/>
         <source>Terminal emulator is not set.</source>
         <translation>Emulatorul de Terminal nu este setat.</translation>
     </message>
@@ -1676,12 +1676,12 @@ sunt apăsate stânga, chiar și atunci când nu este managerul de fișiere impl
 <context>
     <name>PCManFM::DesktopWindow</name>
     <message>
-        <location filename="../desktopwindow.cpp" line="300"/>
+        <location filename="../desktopwindow.cpp" line="303"/>
         <source>Trash (One item)</source>
         <translation>Coș de gunoi (Un articol)</translation>
     </message>
     <message numerus="yes">
-        <location filename="../desktopwindow.cpp" line="303"/>
+        <location filename="../desktopwindow.cpp" line="306"/>
         <source>Trash (%Ln items)</source>
         <translation>
             <numerusform>Coș de gunoi (%Ln articol)</numerusform>
@@ -1690,48 +1690,48 @@ sunt apăsate stânga, chiar și atunci când nu este managerul de fișiere impl
         </translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="307"/>
+        <location filename="../desktopwindow.cpp" line="310"/>
         <source>Trash (Empty)</source>
         <translation>Coș de gunoi (gol)</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="342"/>
+        <location filename="../desktopwindow.cpp" line="345"/>
         <source>Computer</source>
         <translation>Computer</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="356"/>
+        <location filename="../desktopwindow.cpp" line="359"/>
         <source>Network</source>
         <translation>Rețea</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="993"/>
+        <location filename="../desktopwindow.cpp" line="996"/>
         <source>Open</source>
         <translation>Deschide</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="999"/>
-        <location filename="../desktopwindow.cpp" line="1039"/>
+        <location filename="../desktopwindow.cpp" line="1002"/>
+        <location filename="../desktopwindow.cpp" line="1042"/>
         <source>Stic&amp;k to Current Position</source>
         <translation>Rămâ&amp;i la Poziția Curentă</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1007"/>
+        <location filename="../desktopwindow.cpp" line="1010"/>
         <source>Empty Trash</source>
         <translation>Golește Coșul de gunoi</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1066"/>
+        <location filename="../desktopwindow.cpp" line="1069"/>
         <source>Hide Desktop Items</source>
         <translation>Ascunde Articolele de Desktop</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1072"/>
+        <location filename="../desktopwindow.cpp" line="1075"/>
         <source>Create Launcher</source>
         <translation>Creează Lansator</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1075"/>
+        <location filename="../desktopwindow.cpp" line="1078"/>
         <source>Desktop Preferences</source>
         <translation>Preferințe Desktop</translation>
     </message>
@@ -1739,7 +1739,7 @@ sunt apăsate stânga, chiar și atunci când nu este managerul de fișiere impl
 <context>
     <name>PCManFM::FilterBar</name>
     <message>
-        <location filename="../tabpage.cpp" line="94"/>
+        <location filename="../tabpage.cpp" line="95"/>
         <source>Filter:</source>
         <translation>Filtrează:</translation>
     </message>
@@ -1747,7 +1747,7 @@ sunt apăsate stânga, chiar și atunci când nu este managerul de fișiere impl
 <context>
     <name>PCManFM::FilterEdit</name>
     <message>
-        <location filename="../tabpage.cpp" line="64"/>
+        <location filename="../tabpage.cpp" line="65"/>
         <source>Clear text (Ctrl+K or Esc)</source>
         <translation>Șterge text (Ctrl+K sau Esc)</translation>
     </message>
@@ -1841,22 +1841,47 @@ Ar putea fi utile dacă acele foldere sunt create din nou.</translation>
 <context>
     <name>PCManFM::TabPage</name>
     <message>
-        <location filename="../tabpage.cpp" line="442"/>
+        <location filename="../tabpage.cpp" line="448"/>
         <source>Search Results</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="529"/>
+        <location filename="../tabpage.cpp" line="451"/>
+        <source>Applications</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../tabpage.cpp" line="455"/>
+        <source>Computer</source>
+        <translation type="unfinished">Computer</translation>
+    </message>
+    <message>
+        <location filename="../tabpage.cpp" line="458"/>
+        <source>Network</source>
+        <translation type="unfinished">Rețea</translation>
+    </message>
+    <message>
+        <location filename="../tabpage.cpp" line="461"/>
+        <source>Trash</source>
+        <translation type="unfinished">Gunoi</translation>
+    </message>
+    <message>
+        <location filename="../tabpage.cpp" line="466"/>
+        <source>Desktop</source>
+        <translation type="unfinished">Desktop</translation>
+    </message>
+    <message>
+        <location filename="../tabpage.cpp" line="551"/>
         <source>Error</source>
         <translation>Eroare</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="538"/>
+        <location filename="../tabpage.cpp" line="560"/>
         <source>Free space: %1 (Total: %2)</source>
         <translation>Spațiu Liber: %1 (Total: %2)</translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="555"/>
+        <location filename="../tabpage.cpp" line="577"/>
         <source>%n item(s)</source>
         <translation>
             <numerusform>%n obiect</numerusform>
@@ -1865,7 +1890,7 @@ Ar putea fi utile dacă acele foldere sunt create din nou.</translation>
         </translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="557"/>
+        <location filename="../tabpage.cpp" line="579"/>
         <source> (%n hidden)</source>
         <translation>
             <numerusform> %n ascuns</numerusform>
@@ -1874,14 +1899,14 @@ Ar putea fi utile dacă acele foldere sunt create din nou.</translation>
         </translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="562"/>
-        <location filename="../tabpage.cpp" line="764"/>
-        <location filename="../tabpage.cpp" line="778"/>
+        <location filename="../tabpage.cpp" line="584"/>
+        <location filename="../tabpage.cpp" line="786"/>
+        <location filename="../tabpage.cpp" line="800"/>
         <source>Link to</source>
         <translation>Leagă la</translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="790"/>
+        <location filename="../tabpage.cpp" line="812"/>
         <source>%n item(s) selected</source>
         <translation>
             <numerusform>%n obiect selectat</numerusform>
@@ -2424,7 +2449,7 @@ A value of -1 means that there is no limit for the file size (the default).</sou
     <message>
         <location filename="../bulkrename.cpp" line="121"/>
         <location filename="../bulkrename.cpp" line="124"/>
-        <location filename="../tabpage.cpp" line="1117"/>
+        <location filename="../tabpage.cpp" line="1139"/>
         <source>Error</source>
         <translation type="unfinished">Eroare</translation>
     </message>
@@ -2439,7 +2464,7 @@ A value of -1 means that there is no limit for the file size (the default).</sou
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="1117"/>
+        <location filename="../tabpage.cpp" line="1139"/>
         <source>Cannot open as Admin.</source>
         <translation type="unfinished"></translation>
     </message>

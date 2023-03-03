@@ -1447,99 +1447,99 @@ kliknete levým tlačítkem, i když to není výchozí správce souborů.</tran
 <context>
     <name>PCManFM::Application</name>
     <message>
-        <location filename="../application.cpp" line="187"/>
+        <location filename="../application.cpp" line="186"/>
         <source>Name of configuration profile</source>
         <translation>Název profilu nastavení</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="187"/>
+        <location filename="../application.cpp" line="186"/>
         <source>PROFILE</source>
         <translation>PROFIL</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="190"/>
+        <location filename="../application.cpp" line="189"/>
         <source>Run PCManFM-Qt as a daemon</source>
         <translation>Spustit PCManFM-Qt jako proces služby</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="193"/>
+        <location filename="../application.cpp" line="192"/>
         <source>Quit PCManFM-Qt</source>
         <translation>Ukončit PCManFM-Qt</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="196"/>
+        <location filename="../application.cpp" line="195"/>
         <source>Launch desktop manager</source>
         <translation>Spustit správce plochy</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="199"/>
+        <location filename="../application.cpp" line="198"/>
         <source>Turn off desktop manager if it&apos;s running</source>
         <translation>Pokud je spuštěný, vypnout správce plochy</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="202"/>
+        <location filename="../application.cpp" line="201"/>
         <source>Open desktop preference dialog on the page with the specified name</source>
         <translation>Otevřít dialog předvoleb plochy na stránce, které název byl zadán</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="202"/>
-        <location filename="../application.cpp" line="217"/>
+        <location filename="../application.cpp" line="201"/>
+        <location filename="../application.cpp" line="216"/>
         <source>NAME</source>
         <translation>NAZEV</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="205"/>
+        <location filename="../application.cpp" line="204"/>
         <source>Open new window</source>
         <translation>Otevřít nové okno</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="208"/>
+        <location filename="../application.cpp" line="207"/>
         <source>Open Find Files utility</source>
         <translation>Otevřít nástroj pro hledání souborů</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="211"/>
+        <location filename="../application.cpp" line="210"/>
         <source>Set desktop wallpaper from image FILE</source>
         <translation>Nastavit pozadí plochy ze SOUBORU s obrázkem</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="211"/>
+        <location filename="../application.cpp" line="210"/>
         <source>FILE</source>
         <translation>SOUBOR</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="214"/>
+        <location filename="../application.cpp" line="213"/>
         <source>MODE</source>
         <translation>REŽIM</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="214"/>
+        <location filename="../application.cpp" line="213"/>
         <source>Set mode of desktop wallpaper. MODE=(%1)</source>
         <translation>Nastavit režim obrázku na pozadí plochy. MODE=(%1)</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="217"/>
+        <location filename="../application.cpp" line="216"/>
         <source>Open Preferences dialog on the page with the specified name</source>
         <translation>Otevřít dialog předvoleb na stránce které byl zadán název</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="220"/>
+        <location filename="../application.cpp" line="219"/>
         <source>Files or directories to open</source>
         <translation>Soubory nebo složky k otevření</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="220"/>
+        <location filename="../application.cpp" line="219"/>
         <source>[FILE1, FILE2,...]</source>
         <translation>[SOUBOR1, SOUBOR2,…]</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="651"/>
-        <location filename="../application.cpp" line="656"/>
+        <location filename="../application.cpp" line="648"/>
+        <location filename="../application.cpp" line="653"/>
         <source>Error</source>
         <translation>Chyba</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="656"/>
+        <location filename="../application.cpp" line="653"/>
         <source>Terminal emulator is not set.</source>
         <translation>Není nastaven emulátor terminálu.</translation>
     </message>
@@ -1684,12 +1684,12 @@ kliknete levým tlačítkem, i když to není výchozí správce souborů.</tran
 <context>
     <name>PCManFM::DesktopWindow</name>
     <message>
-        <location filename="../desktopwindow.cpp" line="300"/>
+        <location filename="../desktopwindow.cpp" line="303"/>
         <source>Trash (One item)</source>
         <translation>Koš (1 položka)</translation>
     </message>
     <message numerus="yes">
-        <location filename="../desktopwindow.cpp" line="303"/>
+        <location filename="../desktopwindow.cpp" line="306"/>
         <source>Trash (%Ln items)</source>
         <translation>
             <numerusform>Koš (%Ln položka)</numerusform>
@@ -1698,48 +1698,48 @@ kliknete levým tlačítkem, i když to není výchozí správce souborů.</tran
         </translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="307"/>
+        <location filename="../desktopwindow.cpp" line="310"/>
         <source>Trash (Empty)</source>
         <translation>Koš (prázdný)</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="342"/>
+        <location filename="../desktopwindow.cpp" line="345"/>
         <source>Computer</source>
         <translation>Můj počítač</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="356"/>
+        <location filename="../desktopwindow.cpp" line="359"/>
         <source>Network</source>
         <translation>Síť</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="993"/>
+        <location filename="../desktopwindow.cpp" line="996"/>
         <source>Open</source>
         <translation>Otevřít</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="999"/>
-        <location filename="../desktopwindow.cpp" line="1039"/>
+        <location filename="../desktopwindow.cpp" line="1002"/>
+        <location filename="../desktopwindow.cpp" line="1042"/>
         <source>Stic&amp;k to Current Position</source>
         <translation>Připnout &amp;ke stávající poloze</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1007"/>
+        <location filename="../desktopwindow.cpp" line="1010"/>
         <source>Empty Trash</source>
         <translation>Vyprázdnit koš</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1066"/>
+        <location filename="../desktopwindow.cpp" line="1069"/>
         <source>Hide Desktop Items</source>
         <translation>Skrýt položky plochy</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1072"/>
+        <location filename="../desktopwindow.cpp" line="1075"/>
         <source>Create Launcher</source>
         <translation>Vytvořit spouštěč</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1075"/>
+        <location filename="../desktopwindow.cpp" line="1078"/>
         <source>Desktop Preferences</source>
         <translation>Předvolby pracovní plochy</translation>
     </message>
@@ -1747,7 +1747,7 @@ kliknete levým tlačítkem, i když to není výchozí správce souborů.</tran
 <context>
     <name>PCManFM::FilterBar</name>
     <message>
-        <location filename="../tabpage.cpp" line="94"/>
+        <location filename="../tabpage.cpp" line="95"/>
         <source>Filter:</source>
         <translation>Filtr:</translation>
     </message>
@@ -1755,7 +1755,7 @@ kliknete levým tlačítkem, i když to není výchozí správce souborů.</tran
 <context>
     <name>PCManFM::FilterEdit</name>
     <message>
-        <location filename="../tabpage.cpp" line="64"/>
+        <location filename="../tabpage.cpp" line="65"/>
         <source>Clear text (Ctrl+K or Esc)</source>
         <translation>Vyčistit text (Ctrl+K nebo Esc)</translation>
     </message>
@@ -1849,22 +1849,47 @@ Mohly by se ještě hodit v případě znovuvytvoření těchto složek.</transl
 <context>
     <name>PCManFM::TabPage</name>
     <message>
-        <location filename="../tabpage.cpp" line="442"/>
+        <location filename="../tabpage.cpp" line="448"/>
         <source>Search Results</source>
         <translation>Výsledky hledání</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="529"/>
+        <location filename="../tabpage.cpp" line="451"/>
+        <source>Applications</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../tabpage.cpp" line="455"/>
+        <source>Computer</source>
+        <translation type="unfinished">Můj počítač</translation>
+    </message>
+    <message>
+        <location filename="../tabpage.cpp" line="458"/>
+        <source>Network</source>
+        <translation type="unfinished">Síť</translation>
+    </message>
+    <message>
+        <location filename="../tabpage.cpp" line="461"/>
+        <source>Trash</source>
+        <translation type="unfinished">Koš</translation>
+    </message>
+    <message>
+        <location filename="../tabpage.cpp" line="466"/>
+        <source>Desktop</source>
+        <translation type="unfinished">Pracovní plocha</translation>
+    </message>
+    <message>
+        <location filename="../tabpage.cpp" line="551"/>
         <source>Error</source>
         <translation>Chyba</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="538"/>
+        <location filename="../tabpage.cpp" line="560"/>
         <source>Free space: %1 (Total: %2)</source>
         <translation>Volné místo: %1 (celkem: %2)</translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="555"/>
+        <location filename="../tabpage.cpp" line="577"/>
         <source>%n item(s)</source>
         <translation>
             <numerusform>%n položka</numerusform>
@@ -1873,7 +1898,7 @@ Mohly by se ještě hodit v případě znovuvytvoření těchto složek.</transl
         </translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="557"/>
+        <location filename="../tabpage.cpp" line="579"/>
         <source> (%n hidden)</source>
         <translation>
             <numerusform> (%n skrytá)</numerusform>
@@ -1882,14 +1907,14 @@ Mohly by se ještě hodit v případě znovuvytvoření těchto složek.</transl
         </translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="562"/>
-        <location filename="../tabpage.cpp" line="764"/>
-        <location filename="../tabpage.cpp" line="778"/>
+        <location filename="../tabpage.cpp" line="584"/>
+        <location filename="../tabpage.cpp" line="786"/>
+        <location filename="../tabpage.cpp" line="800"/>
         <source>Link to</source>
         <translation>Odkaz na</translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="790"/>
+        <location filename="../tabpage.cpp" line="812"/>
         <source>%n item(s) selected</source>
         <translation>
             <numerusform>vybrána %n položka</numerusform>
@@ -2437,7 +2462,7 @@ Hodnota -1 znamená, že neexistuje žádný limit pro velikost souboru (výchoz
     <message>
         <location filename="../bulkrename.cpp" line="121"/>
         <location filename="../bulkrename.cpp" line="124"/>
-        <location filename="../tabpage.cpp" line="1117"/>
+        <location filename="../tabpage.cpp" line="1139"/>
         <source>Error</source>
         <translation>Chyba</translation>
     </message>
@@ -2452,7 +2477,7 @@ Hodnota -1 znamená, že neexistuje žádný limit pro velikost souboru (výchoz
         <translation>Některé soubory se nepodařilo přejmenovat.</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="1117"/>
+        <location filename="../tabpage.cpp" line="1139"/>
         <source>Cannot open as Admin.</source>
         <translation>Nelze otevřít jako správce.</translation>
     </message>
