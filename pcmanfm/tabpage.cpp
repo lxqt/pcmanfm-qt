@@ -436,36 +436,38 @@ void TabPage::onFilesAdded(Fm::FileInfoList files) {
     }
 }
 
+void TabPage::localizeTitle(const Fm::FilePath& path) {
+    // force localization on some locations (FIXME: localize them in libfm-qt?)
+    if(!path.isNative()) {
+        if(path.hasUriScheme("search")) {
+            title_ = tr("Search Results");
+        }
+        else if(strcmp(path.toString().get(), "menu://applications/") == 0) {
+            title_ = tr("Applications");
+        }
+        else if(!path.hasParent()) {
+            if(path.hasUriScheme("computer")) {
+                title_ = tr("Computer");
+            }
+            else if(path.hasUriScheme("network")) {
+                title_ = tr("Network");
+            }
+            else if(path.hasUriScheme("trash")) {
+                title_ = tr("Trash");
+            }
+        }
+    }
+    else if(QString::fromUtf8(path.toString().get()) ==
+            QStandardPaths::writableLocation(QStandardPaths::DesktopLocation)) {
+        title_ = tr("Desktop");
+    }
+}
+
 void TabPage::onFolderFinishLoading() {
     auto fi = folder_->info();
     if(fi) { // if loading of the folder fails, it's possible that we don't have FmFileInfo.
         title_ = fi->displayName();
-
-        // force localization on some locations (FIXME: localize them in libfm-qt?)
-        auto path = folder_->path();
-        if(!path.isNative()) {
-            if(path.hasUriScheme("search")) {
-                title_ = tr("Search Results");
-            }
-            else if(strcmp(path.toString().get(), "menu://applications/") == 0) {
-                title_ = tr("Applications");
-            }
-            else if(!path.hasParent()) {
-                if(path.hasUriScheme("computer")) {
-                    title_ = tr("Computer");
-                }
-                else if(path.hasUriScheme("network")) {
-                    title_ = tr("Network");
-                }
-                else if(path.hasUriScheme("trash")) {
-                    title_ = tr("Trash");
-                }
-            }
-        }
-        else if(pathName() == QStandardPaths::writableLocation(QStandardPaths::DesktopLocation)) {
-            title_ = tr("Desktop");
-        }
-
+        localizeTitle(folder_->path());
         Q_EMIT titleChanged();
     }
 
@@ -679,6 +681,7 @@ void TabPage::chdir(Fm::FilePath newPath, bool addHistory) {
     QToolTip::showText(QPoint(), QString());
     // set title as with path button (will change if the new folder is loaded)
     title_ = QString::fromUtf8(newPath.baseName().get());
+    localizeTitle(newPath);
     Q_EMIT titleChanged();
 
     folder_ = Fm::Folder::fromPath(newPath);
