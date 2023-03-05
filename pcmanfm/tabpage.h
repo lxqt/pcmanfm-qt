@@ -313,6 +313,7 @@ protected Q_SLOTS:
 private:
     void freeFolder();
     QString formatStatusText();
+    void localizeTitle(const Fm::FilePath& path);
 
     void onFolderStartLoading();
     void onFolderFinishLoading();
