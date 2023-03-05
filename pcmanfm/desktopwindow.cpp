@@ -893,7 +893,12 @@ void DesktopWindow::nextWallpaper() {
 }
 
 void DesktopWindow::updateFromSettings(Settings& settings, bool changeSlide) {
-    // geneeral PCManFM::View settings
+    // Sicne the layout may be changed by what follows, we need to redo our layout.
+    // We also clear the current index to set it to the visually first item.
+    selectionModel()->clearCurrentIndex();
+    queueRelayout();
+
+    // general PCManFM::View settings
     setAutoSelectionDelay(settings.singleClick() ? settings.autoSelectionDelay() : 0);
     setCtrlRightClick(settings.ctrlRightClick());
     if(proxyModel_) {
@@ -921,10 +926,6 @@ void DesktopWindow::updateFromSettings(Settings& settings, bool changeSlide) {
     setIconSize(Fm::FolderView::IconMode, QSize(settings.desktopIconSize(), settings.desktopIconSize()));
     setMargins(settings.desktopCellMargins());
     updateShortcutsFromSettings(settings);
-    // setIconSize and setMargins may trigger relayout of items by QListView, so we need to do the layout again.
-    // We also clear the current index to set it to the visually first item.
-    selectionModel()->clearCurrentIndex();
-    queueRelayout();
     setForeground(settings.desktopFgColor());
     setBackground(settings.desktopBgColor());
     setShadow(settings.desktopShadowColor());
@@ -1127,8 +1128,6 @@ void DesktopWindow::onRowsInserted(const QModelIndex& parent, int start, int end
     Q_UNUSED(parent);
     Q_UNUSED(start);
     Q_UNUSED(end);
-    // disable view updates temporarily and delay relayout to prevent items from shaking
-    listView_->setUpdatesEnabled(false);
     queueRelayout(100);
 }
 
@@ -1157,7 +1156,6 @@ void DesktopWindow::onRowsAboutToBeRemoved(const QModelIndex& parent, int start,
             storeCustomPos();
         }
     }
-    listView_->setUpdatesEnabled(false);
     queueRelayout(100);
 }
 
@@ -1558,6 +1556,9 @@ void DesktopWindow::queueRelayout(int delay) {
     // qDebug() << "queueRelayout";
     removeBottomGap();
     if(!relayoutTimer_) {
+        if(listView_->updatesEnabled()) {
+            listView_->setUpdatesEnabled(false); // prevent items from shaking as far as possible
+        }
         relayoutTimer_ = new QTimer();
         relayoutTimer_->setSingleShot(true);
         connect(relayoutTimer_, &QTimer::timeout, this, &DesktopWindow::relayoutItems);
