@@ -1855,7 +1855,7 @@ Kui need kaustad hiljem uuesti tekivad, siis võib-olla pole mõtet seda teha.</
     <message>
         <location filename="../tabpage.cpp" line="451"/>
         <source>Applications</source>
-        <translation type="unfinished"></translation>
+        <translation>Rakendused</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="455"/>
