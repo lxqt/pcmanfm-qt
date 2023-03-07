@@ -1856,7 +1856,7 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../tabpage.cpp" line="451"/>
         <source>Applications</source>
-        <translation type="unfinished"></translation>
+        <translation>Застосунки</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="455"/>

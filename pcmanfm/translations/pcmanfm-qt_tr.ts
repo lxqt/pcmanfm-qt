@@ -1855,7 +1855,7 @@ Bu klasörler yeniden oluşturulursa faydalı olabilirler.</translation>
     <message>
         <location filename="../tabpage.cpp" line="451"/>
         <source>Applications</source>
-        <translation type="unfinished"></translation>
+        <translation>Uygulamalar</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="455"/>
