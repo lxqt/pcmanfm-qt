@@ -1854,7 +1854,7 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../tabpage.cpp" line="451"/>
         <source>Applications</source>
-        <translation type="unfinished"></translation>
+        <translation>アプリケーション</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="455"/>
@@ -2384,7 +2384,7 @@ A value of -1 means that there is no limit for the file size (the default).</sou
     <message>
         <location filename="../preferences.ui" line="436"/>
         <source>Disable smooth scrolling</source>
-        <translation type="unfinished"></translation>
+        <translation>スムーススクロールを無効にする</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="754"/>
