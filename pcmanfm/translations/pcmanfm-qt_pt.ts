@@ -1855,7 +1855,7 @@ Elas podem ser úteis se essas pastas forem criadas novamente.</translation>
     <message>
         <location filename="../tabpage.cpp" line="451"/>
         <source>Applications</source>
-        <translation type="unfinished"></translation>
+        <translation>Aplicações</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="455"/>
