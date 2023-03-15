@@ -1892,6 +1892,10 @@ bool DesktopWindow::eventFilter(QObject* watched, QEvent* event) {
         case QEvent::Wheel:
             // removal of scrollbars is not enough to prevent scrolling
             return true;
+        case QEvent::DragLeave:
+            // remove the drop indicator on leaving the widget during DND
+            dropRect_ = QRect();
+            break;
         default:
             break;
         }
