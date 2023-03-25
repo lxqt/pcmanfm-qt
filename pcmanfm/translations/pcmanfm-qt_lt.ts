@@ -133,7 +133,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../bulk-rename.ui" line="87"/>
         <source>Use localized numbers</source>
-        <translation type="unfinished"></translation>
+        <translation>Naudoti lokalizuotus skaitmenis</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="27"/>
@@ -988,12 +988,12 @@ numatytoji failų tvarkytuvė.</translation>
     <message>
         <location filename="../main-win.ui" line="542"/>
         <source>By &amp;Modification Time</source>
-        <translation>Pagal &amp;keitimo laiką</translation>
+        <translation>Pagal &amp;modifikavimo laiką</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="550"/>
         <source>By C&amp;reation Time</source>
-        <translation>Pagal su&amp;kūrimo laiką</translation>
+        <translation>Pagal &amp;sukūrimo laiką</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="558"/>
