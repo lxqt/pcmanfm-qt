@@ -2006,35 +2006,60 @@ void DesktopWindow::childDropEvent(QDropEvent* e) {
 
         if(curIndx.isValid() && !workArea.isEmpty()) {
             QPoint curPoint = listView_->visualRect(curIndx).topLeft();
+            bool reachedLastCell = false;
+            QPoint nxtPos = dropPos;
+            std::set<std::string> droppedFiles;
 
-            // first move the current item to the drop position
+            // First move the current item to the drop position.
             auto file = proxyModel_->fileInfoFromIndex(curIndx);
             if(file) {
                 QPoint pos = dropPos;
+
                 // NOTE: DND always reports the drop position in the usual (LTR) coordinates.
                 // Therefore, to have the same calculations regardless of the layout direction,
                 // we reverse the x-coordinate with RTL.
                 if(rtl) {
                     pos.setX(width() - pos.x());
                 }
-                stickToPosition(file->name(), pos, workArea, grid);
+
+                reachedLastCell = stickToPosition(file->name(), pos,
+                                                  workArea, grid,
+                                                  droppedFiles, reachedLastCell);
+                nxtPos = pos;
+                droppedFiles.insert(file->name());
             }
 
-            // then move the other items so that their relative positions are preserved
-            const QModelIndexList selected = selectedIndexes();
-            for(const QModelIndex& indx : selected) {
+            // Then move the other items so that their relative positions are preserved.
+            QModelIndexList selected = selectedIndexes();
+            // sort the selection from left to right and top to bottom, in order to make
+            // the positions of dropped items more predictable
+            std::sort(selected.begin(), selected.end(), [this] (const QModelIndex& a, const QModelIndex& b) {
+                QPoint pa = listView_->visualRect(a).topLeft();
+                QPoint pb = listView_->visualRect(b).topLeft();
+                return (pa.x() != pb.x() ? pa.x() < pb.x() : pa.y() < pb.y());
+            });
+            for(const QModelIndex& indx : qAsConst(selected)) {
                 if(indx == curIndx) {
                     continue;
                 }
                 file = proxyModel_->fileInfoFromIndex(indx);
                 if(file) {
                     QPoint nxtDropPos = dropPos + listView_->visualRect(indx).topLeft() - curPoint;
+
                     if(rtl) { // like above
                         nxtDropPos.setX(width() - nxtDropPos.x());
                     }
-                    nxtDropPos.setX(qBound(workArea.left(), nxtDropPos.x(), workArea.right() + 1));
-                    nxtDropPos.setY(qBound(workArea.top(), nxtDropPos.y(), workArea.bottom() + 1));
-                    stickToPosition(file->name(), nxtDropPos, workArea, grid);
+
+                    if(!workArea.contains(nxtDropPos)) {
+                        // if the drop point is outside the work area, forget about
+                        // keeping relative positions and choose the next position
+                        nxtDropPos = nxtPos;
+                    }
+                    reachedLastCell = stickToPosition(file->name(), nxtDropPos,
+                                                       workArea, grid,
+                                                       droppedFiles, reachedLastCell);
+                    nxtPos = nxtDropPos;
+                    droppedFiles.insert(file->name());
                 }
             }
         }
@@ -2085,7 +2110,7 @@ void DesktopWindow::childDropEvent(QDropEvent* e) {
             }
         }
 
-        // reserve successive positions for dropped items, starting with the drop rectangle
+        // Reserve successive positions for dropped items, starting with the drop rectangle.
         if(!workArea.isEmpty()
            && mimeData->hasUrls()) {
             const QString desktopDir = XdgDir::readDesktopDir() + QString(QLatin1String("/"));
@@ -2095,16 +2120,20 @@ void DesktopWindow::childDropEvent(QDropEvent* e) {
             }
             const QList<QUrl> urlList = mimeData->urls();
             bool reachedLastCell = false;
+            std::set<std::string> droppedFiles;
             for(const QUrl& url : urlList) {
                 QString name = url.fileName();
                 if(!name.isEmpty()
                    // don't stick to the position if there is an overwrite prompt
                    && !QFile::exists(desktopDir + name)) {
-                    reachedLastCell = stickToPosition(name.toStdString(), dropPos, workArea, grid, reachedLastCell);
+                    reachedLastCell = stickToPosition(name.toStdString(), dropPos,
+                                                      workArea, grid,
+                                                      droppedFiles, reachedLastCell);
+                    droppedFiles.insert(name.toStdString());
                 }
             }
-            // wait for FolderView::dropIsDecided() to know whether the new positions should be stored
-            // on accepting the drop or the original positions should be restored on cancelling it
+            // Wait for FolderView::dropIsDecided() to know whether the new positions should be stored
+            // on accepting the drop or the original positions should be restored on cancelling it.
         }
     }
 }
@@ -2123,12 +2152,14 @@ void DesktopWindow::onDecidingDrop(bool accepted) {
 // starting from the drop point, and carries the existing sticky items with them,
 // until it reaches the last cell and then puts the remaining items in the opposite
 // direction. In this way, it creates a natural DND, especially with multiple files.
-bool DesktopWindow::stickToPosition(const std::string& file, QPoint& pos, const QRect& workArea, const QSize& grid, bool reachedLastCell) {
+bool DesktopWindow::stickToPosition(const std::string& file, QPoint& pos,
+                                    const QRect& workArea, const QSize& grid,
+                                    const std::set<std::string>& droppedFiles, bool reachedLastCell) {
     if(workArea.isEmpty()) {
         return reachedLastCell;
     }
 
-    // normalize the position, depending on the positioning direction
+    // Normalize the position, depending on the positioning direction.
     if(!reachedLastCell) { // default direction: top -> bottom, left -> right
 
         // put the drop point inside the work area to prevent unnatural jumps
@@ -2159,9 +2190,9 @@ bool DesktopWindow::stickToPosition(const std::string& file, QPoint& pos, const 
         }
     }
 
-    // find if there is a sticky item at this position
+    // Find if there is a sticky item at this position.
     std::string otherFile;
-    bool isTrash = false;
+    bool skipPos = false;
     auto oldItem = std::find_if(customItemPos_.cbegin(),
                                 customItemPos_.cend(),
                                 [pos](const std::pair<std::string, QPoint>& elem) {
@@ -2169,25 +2200,30 @@ bool DesktopWindow::stickToPosition(const std::string& file, QPoint& pos, const 
                                 });
     if(oldItem != customItemPos_.cend()) {
         otherFile = oldItem->first;
-        if(trashMonitor_ && otherFile != file && otherFile == "trash-can.desktop") {
-            isTrash = true; // occupied by a sticky Trash
+        if(!otherFile.empty() && otherFile != file) {
+            if(trashMonitor_ && otherFile == "trash-can.desktop") {
+                skipPos = true; // the sticky Trash
+            }
+            if(!skipPos && std::find(droppedFiles.cbegin(), droppedFiles.cend(), otherFile) != droppedFiles.cend()) {
+                skipPos = true; // an already dropped file
+            }
         }
     }
 
-    if(!isTrash) {
-        // stick to the position if it is not occupied by Trash
-        // NOTE: In this way, a sticky Trash can be moved only explicitly.
+    // Stick to the position if it is not occupied by Trash or a dropped file.
+    // NOTE: In this way, the sticky Trash will not be moved by other items.
+    if(!skipPos) {
         customItemPos_[file] = pos;
     }
 
-    // check whether we are in the last visible cell if it isn't reached already
+    // Check whether we are in the last visible cell.
     if(!reachedLastCell
        && pos.y() + 2 * grid.height() + listView_->spacing() > workArea.bottom() + 1
        && pos.x() + 2 * grid.width() + listView_->spacing() > workArea.right() + 1) {
         reachedLastCell = true;
     }
 
-    // find the next position
+    // Find the next position.
     if(reachedLastCell) {
         // when this is the last visible cell, reverse the positioning direction
         // to avoid off-screen items later
@@ -2204,13 +2240,14 @@ bool DesktopWindow::stickToPosition(const std::string& file, QPoint& pos, const 
         }
     }
 
-    // if the position was occupied by Trash, go to the next postiton
-    if(isTrash) {
-        reachedLastCell = stickToPosition(file, pos, workArea, grid, reachedLastCell);
+    // if the position was occupied by Trash or a dropped file, go to the next postiton
+    if(skipPos) {
+        reachedLastCell = stickToPosition(file, pos, workArea, grid, droppedFiles, reachedLastCell);
     }
     // but if there was another sticky item at the same position, move it to the next position
     else if(!otherFile.empty() && otherFile != file) {
-        reachedLastCell = stickToPosition(otherFile, pos, workArea, grid, reachedLastCell);
+        QPoint _pos = pos;
+        reachedLastCell = stickToPosition(otherFile, _pos, workArea, grid, droppedFiles, reachedLastCell);
     }
 
     return reachedLastCell;
