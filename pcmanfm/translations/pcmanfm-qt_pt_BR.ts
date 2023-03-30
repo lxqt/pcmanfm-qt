@@ -133,7 +133,7 @@ Foundation: Inc., 51 Franklin Street, 5º Andar, Boston, MA  02110-1301, EUA.</t
     <message>
         <location filename="../bulk-rename.ui" line="87"/>
         <source>Use localized numbers</source>
-        <translation type="unfinished"></translation>
+        <translation>Usar números localizados</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="27"/>
@@ -249,7 +249,7 @@ It can be left empty.</source>
     <message>
         <location filename="../desktopentrydialog.ui" line="130"/>
         <source>Icon to display in file manager, menus, etc.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ícone para exibir no gerenciador de arquivos, menus, etc.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="152"/>
@@ -300,7 +300,7 @@ It can be left empty.</source>
     <message>
         <location filename="../desktopentrydialog.ui" line="206"/>
         <source>Categories:</source>
-        <translation type="unfinished"></translation>
+        <translation>Categorias:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="213"/>
@@ -468,7 +468,7 @@ Um espaço também é reservado para 3 linhas de texto.</translation>
     <message>
         <location filename="../desktop-preferences.ui" line="230"/>
         <source>Margins of work area:</source>
-        <translation type="unfinished"></translation>
+        <translation>Margens de área de trabalho:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="303"/>
@@ -722,17 +722,17 @@ clicadas com o botão esquerdo, mesmo quando não for o gerenciador de arquivos 
     <message>
         <location filename="../shortcuts.ui" line="135"/>
         <source>Drop+Shift</source>
-        <translation type="unfinished"></translation>
+        <translation>Soltar+Shift</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="143"/>
         <source>Drop+Ctrl</source>
-        <translation type="unfinished"></translation>
+        <translation>Soltar+Ctrl</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="151"/>
         <source>Drop+Shift+Ctrl</source>
-        <translation type="unfinished"></translation>
+        <translation>Soltar+Shift+Ctrl</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="138"/>
@@ -916,12 +916,12 @@ clicadas com o botão esquerdo, mesmo quando não for o gerenciador de arquivos 
     <message>
         <location filename="../main-win.ui" line="502"/>
         <source>De&amp;select All</source>
-        <translation type="unfinished"></translation>
+        <translation>De&amp;selecionar tudo</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="505"/>
         <source>Ctrl+D</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+D</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="510"/>
@@ -1593,7 +1593,7 @@ clicadas com o botão esquerdo, mesmo quando não for o gerenciador de arquivos 
     <message>
         <location filename="../desktopentrydialog.cpp" line="36"/>
         <source>The command to execute.</source>
-        <translation type="unfinished"></translation>
+        <translation>O comando a executar.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="39"/>
@@ -1843,12 +1843,12 @@ Eles podem ser úteis se essas pastas forem criadas novamente.</translation>
     <message>
         <location filename="../tabpage.cpp" line="448"/>
         <source>Search Results</source>
-        <translation type="unfinished"></translation>
+        <translation>Resultados da pesquisa</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="451"/>
         <source>Applications</source>
-        <translation type="unfinished"></translation>
+        <translation>Aplicativos</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="455"/>
@@ -2302,17 +2302,17 @@ Um valor -1 significa que não há limite para o tamanho do arquivo (o padrão).
     <message>
         <location filename="../preferences.ui" line="919"/>
         <source>Search</source>
-        <translation type="unfinished"></translation>
+        <translation>Pesquisar</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="934"/>
         <source>Maximum search history:</source>
-        <translation type="unfinished"></translation>
+        <translation>Histórico máximo de pesquisa:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="948"/>
         <source>Clear search history</source>
-        <translation type="unfinished"></translation>
+        <translation>Limpar histórico de pesquisa</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="983"/>
@@ -2382,7 +2382,7 @@ Um valor -1 significa que não há limite para o tamanho do arquivo (o padrão).
     <message>
         <location filename="../preferences.ui" line="436"/>
         <source>Disable smooth scrolling</source>
-        <translation type="unfinished"></translation>
+        <translation>Desabilitar rolagem suave</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="754"/>
