@@ -1714,33 +1714,33 @@ kliknete ľavým tlačidlom myši, aj keď nejde o predvoleného správcu súbor
         <translation>Sieť</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="996"/>
+        <location filename="../desktopwindow.cpp" line="997"/>
         <source>Open</source>
         <translation>Otvoriť</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1002"/>
-        <location filename="../desktopwindow.cpp" line="1042"/>
+        <location filename="../desktopwindow.cpp" line="1003"/>
+        <location filename="../desktopwindow.cpp" line="1043"/>
         <source>Stic&amp;k to Current Position</source>
         <translation>&amp;Pripnúť v aktuálnej polohe</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1010"/>
+        <location filename="../desktopwindow.cpp" line="1011"/>
         <source>Empty Trash</source>
         <translation>Vyprázdniť kôš</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1069"/>
+        <location filename="../desktopwindow.cpp" line="1070"/>
         <source>Hide Desktop Items</source>
         <translation>Skryť zástupcu</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1075"/>
+        <location filename="../desktopwindow.cpp" line="1076"/>
         <source>Create Launcher</source>
         <translation>Vytvoriť spúšťač</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1078"/>
+        <location filename="../desktopwindow.cpp" line="1079"/>
         <source>Desktop Preferences</source>
         <translation>Nastavenia pracovnej plochy</translation>
     </message>
@@ -1850,47 +1850,47 @@ Ak ich odstránite, nebudú sa dať použiť pri znovuvytvorení priečinkov.</t
 <context>
     <name>PCManFM::TabPage</name>
     <message>
-        <location filename="../tabpage.cpp" line="448"/>
+        <location filename="../tabpage.cpp" line="443"/>
         <source>Search Results</source>
         <translation>Výsledky vyhľadávania</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="451"/>
+        <location filename="../tabpage.cpp" line="446"/>
         <source>Applications</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="455"/>
+        <location filename="../tabpage.cpp" line="450"/>
         <source>Computer</source>
         <translation>Môj počítač</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="458"/>
+        <location filename="../tabpage.cpp" line="453"/>
         <source>Network</source>
         <translation>Sieť</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="461"/>
+        <location filename="../tabpage.cpp" line="456"/>
         <source>Trash</source>
         <translation>Kôš</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="466"/>
+        <location filename="../tabpage.cpp" line="462"/>
         <source>Desktop</source>
         <translation>Pracovná plocha</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="551"/>
+        <location filename="../tabpage.cpp" line="553"/>
         <source>Error</source>
         <translation>Chyba</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="560"/>
+        <location filename="../tabpage.cpp" line="562"/>
         <source>Free space: %1 (Total: %2)</source>
         <translation>Voľné miesto: %1 (celkovo: %2)</translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="577"/>
+        <location filename="../tabpage.cpp" line="579"/>
         <source>%n item(s)</source>
         <translation>
             <numerusform>%n položka</numerusform>
@@ -1899,7 +1899,7 @@ Ak ich odstránite, nebudú sa dať použiť pri znovuvytvorení priečinkov.</t
         </translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="579"/>
+        <location filename="../tabpage.cpp" line="581"/>
         <source> (%n hidden)</source>
         <translation>
             <numerusform> (%n skrytá)</numerusform>
@@ -1908,14 +1908,14 @@ Ak ich odstránite, nebudú sa dať použiť pri znovuvytvorení priečinkov.</t
         </translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="584"/>
-        <location filename="../tabpage.cpp" line="786"/>
-        <location filename="../tabpage.cpp" line="800"/>
+        <location filename="../tabpage.cpp" line="586"/>
+        <location filename="../tabpage.cpp" line="789"/>
+        <location filename="../tabpage.cpp" line="803"/>
         <source>Link to</source>
         <translation>Odkaz na</translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="812"/>
+        <location filename="../tabpage.cpp" line="815"/>
         <source>%n item(s) selected</source>
         <translation>
             <numerusform>vybraná %n položka</numerusform>
@@ -2462,7 +2462,7 @@ Hodnota -1 určuje neobmedzenú veľkosť súboru na vytvorenie náhľadu (predv
     <message>
         <location filename="../bulkrename.cpp" line="121"/>
         <location filename="../bulkrename.cpp" line="124"/>
-        <location filename="../tabpage.cpp" line="1139"/>
+        <location filename="../tabpage.cpp" line="1142"/>
         <source>Error</source>
         <translation>Chyba</translation>
     </message>
@@ -2477,7 +2477,7 @@ Hodnota -1 určuje neobmedzenú veľkosť súboru na vytvorenie náhľadu (predv
         <translation>Niektoré súbory sa nepodarilo pripojiť.</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="1139"/>
+        <location filename="../tabpage.cpp" line="1142"/>
         <source>Cannot open as Admin.</source>
         <translation>Nedá sa otvoriť ako správca.</translation>
     </message>

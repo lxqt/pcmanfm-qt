@@ -1713,33 +1713,33 @@ es el gestor de archivos predeterminado.</translation>
         <translation>Red</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="996"/>
+        <location filename="../desktopwindow.cpp" line="997"/>
         <source>Open</source>
         <translation>Abrir</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1002"/>
-        <location filename="../desktopwindow.cpp" line="1042"/>
+        <location filename="../desktopwindow.cpp" line="1003"/>
+        <location filename="../desktopwindow.cpp" line="1043"/>
         <source>Stic&amp;k to Current Position</source>
         <translation>&amp;Fijar icono en la posición actual</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1010"/>
+        <location filename="../desktopwindow.cpp" line="1011"/>
         <source>Empty Trash</source>
         <translation>Vaciar la papelera</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1069"/>
+        <location filename="../desktopwindow.cpp" line="1070"/>
         <source>Hide Desktop Items</source>
         <translation>Ocultar los elementos del escritorio</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1075"/>
+        <location filename="../desktopwindow.cpp" line="1076"/>
         <source>Create Launcher</source>
         <translation>Crear un lanzador</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1078"/>
+        <location filename="../desktopwindow.cpp" line="1079"/>
         <source>Desktop Preferences</source>
         <translation>Preferencias del escritorio</translation>
     </message>
@@ -1849,47 +1849,47 @@ Podrían ser útiles si esas carpetas se crean de nuevo.</translation>
 <context>
     <name>PCManFM::TabPage</name>
     <message>
-        <location filename="../tabpage.cpp" line="448"/>
+        <location filename="../tabpage.cpp" line="443"/>
         <source>Search Results</source>
         <translation>Resultados de la búsqueda</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="451"/>
+        <location filename="../tabpage.cpp" line="446"/>
         <source>Applications</source>
         <translation>Aplicaciones</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="455"/>
+        <location filename="../tabpage.cpp" line="450"/>
         <source>Computer</source>
         <translation>Sistema</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="458"/>
+        <location filename="../tabpage.cpp" line="453"/>
         <source>Network</source>
         <translation>Red</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="461"/>
+        <location filename="../tabpage.cpp" line="456"/>
         <source>Trash</source>
         <translation>Papelera</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="466"/>
+        <location filename="../tabpage.cpp" line="462"/>
         <source>Desktop</source>
         <translation>Escritorio</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="551"/>
+        <location filename="../tabpage.cpp" line="553"/>
         <source>Error</source>
         <translation>Error</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="560"/>
+        <location filename="../tabpage.cpp" line="562"/>
         <source>Free space: %1 (Total: %2)</source>
         <translation>Espacio libre: %1 (Total %2)</translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="577"/>
+        <location filename="../tabpage.cpp" line="579"/>
         <source>%n item(s)</source>
         <translation>
             <numerusform>%n elemento</numerusform>
@@ -1897,7 +1897,7 @@ Podrían ser útiles si esas carpetas se crean de nuevo.</translation>
         </translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="579"/>
+        <location filename="../tabpage.cpp" line="581"/>
         <source> (%n hidden)</source>
         <translation>
             <numerusform> (%n oculto)</numerusform>
@@ -1905,14 +1905,14 @@ Podrían ser útiles si esas carpetas se crean de nuevo.</translation>
         </translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="584"/>
-        <location filename="../tabpage.cpp" line="786"/>
-        <location filename="../tabpage.cpp" line="800"/>
+        <location filename="../tabpage.cpp" line="586"/>
+        <location filename="../tabpage.cpp" line="789"/>
+        <location filename="../tabpage.cpp" line="803"/>
         <source>Link to</source>
         <translation>Enlazar a</translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="812"/>
+        <location filename="../tabpage.cpp" line="815"/>
         <source>%n item(s) selected</source>
         <translation>
             <numerusform>%n elemento seleccionado</numerusform>
@@ -2222,7 +2222,7 @@ miniaturas grandes, afecta tanto a las imagenes como a las carpetas</translation
     <message>
         <location filename="../preferences.ui" line="466"/>
         <source>3 px by default.</source>
-        <translation>De 3 px de manera predeterminada.</translation>
+        <translation>De 3&#xa0;px de manera predeterminada.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="469"/>
@@ -2239,7 +2239,7 @@ miniaturas grandes, afecta tanto a las imagenes como a las carpetas</translation
         <location filename="../preferences.ui" line="489"/>
         <source>3 px by default.
 A space is also reserved for 3 lines of text.</source>
-        <translation>De 3 px de manera predeterminada.
+        <translation>De 3&#xa0;px de manera predeterminada.
 También se reserva espacio para 3 renglones de texto.</translation>
     </message>
     <message>
@@ -2272,7 +2272,7 @@ visible cuando haya más de una pestaña abierta.</translation>
 Usually, most image types are supported. The default size limit is 4 MiB.</source>
         <translation>El miniaturizador integrado crea miniaturas de las imágenes que Qt admite.
 
-Por lo general, la mayoría de los tipos de imagen es compatible. El límite de tamaño predeterminado es de 4 MiB.</translation>
+Por lo general, la mayoría de los tipos de imagen es compatible. El límite de tamaño predeterminado es de 4&#xa0;MiB.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="670"/>
@@ -2461,7 +2461,7 @@ Un valor de −1 indica que no hay límite de tamaño de archivos (lo predetermi
     <message>
         <location filename="../bulkrename.cpp" line="121"/>
         <location filename="../bulkrename.cpp" line="124"/>
-        <location filename="../tabpage.cpp" line="1139"/>
+        <location filename="../tabpage.cpp" line="1142"/>
         <source>Error</source>
         <translation>Error</translation>
     </message>
@@ -2476,7 +2476,7 @@ Un valor de −1 indica que no hay límite de tamaño de archivos (lo predetermi
         <translation>No se pudo cambiar el nombre de algunos archivos.</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="1139"/>
+        <location filename="../tabpage.cpp" line="1142"/>
         <source>Cannot open as Admin.</source>
         <translation>No se puede abrir con permisos administrativos.</translation>
     </message>

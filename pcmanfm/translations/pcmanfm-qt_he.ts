@@ -1712,33 +1712,33 @@ are left clicked, even when it is not the default file manager.</source>
         <translation>רשת</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="996"/>
+        <location filename="../desktopwindow.cpp" line="997"/>
         <source>Open</source>
         <translation>פתיחה</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1002"/>
-        <location filename="../desktopwindow.cpp" line="1042"/>
+        <location filename="../desktopwindow.cpp" line="1003"/>
+        <location filename="../desktopwindow.cpp" line="1043"/>
         <source>Stic&amp;k to Current Position</source>
         <translation>היצמדו&amp;ת לאזור הנוכחי</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1010"/>
+        <location filename="../desktopwindow.cpp" line="1011"/>
         <source>Empty Trash</source>
         <translation>ריקון האשפה</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1069"/>
+        <location filename="../desktopwindow.cpp" line="1070"/>
         <source>Hide Desktop Items</source>
         <translation>הסתרת פריטי שולחן העבודה</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1075"/>
+        <location filename="../desktopwindow.cpp" line="1076"/>
         <source>Create Launcher</source>
         <translation>יצירת משגר</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1078"/>
+        <location filename="../desktopwindow.cpp" line="1079"/>
         <source>Desktop Preferences</source>
         <translation>העדפות שולחן העבודה</translation>
     </message>
@@ -1848,47 +1848,47 @@ They might be useful if those folders are created again.</source>
 <context>
     <name>PCManFM::TabPage</name>
     <message>
-        <location filename="../tabpage.cpp" line="448"/>
+        <location filename="../tabpage.cpp" line="443"/>
         <source>Search Results</source>
         <translation>תוצאות חיפוש</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="451"/>
+        <location filename="../tabpage.cpp" line="446"/>
         <source>Applications</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="455"/>
+        <location filename="../tabpage.cpp" line="450"/>
         <source>Computer</source>
         <translation>מחשב</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="458"/>
+        <location filename="../tabpage.cpp" line="453"/>
         <source>Network</source>
         <translation>רשת</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="461"/>
+        <location filename="../tabpage.cpp" line="456"/>
         <source>Trash</source>
         <translation>אשפה</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="466"/>
+        <location filename="../tabpage.cpp" line="462"/>
         <source>Desktop</source>
         <translation>שולחן עבודה</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="551"/>
+        <location filename="../tabpage.cpp" line="553"/>
         <source>Error</source>
         <translation>שגיאה</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="560"/>
+        <location filename="../tabpage.cpp" line="562"/>
         <source>Free space: %1 (Total: %2)</source>
         <translation>שטח פנוי: %1 (בסך הכול: %2)</translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="577"/>
+        <location filename="../tabpage.cpp" line="579"/>
         <source>%n item(s)</source>
         <translation>
             <numerusform>פריט אחד</numerusform>
@@ -1896,7 +1896,7 @@ They might be useful if those folders are created again.</source>
         </translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="579"/>
+        <location filename="../tabpage.cpp" line="581"/>
         <source> (%n hidden)</source>
         <translation>
             <numerusform> (אחד מוסתר)</numerusform>
@@ -1904,14 +1904,14 @@ They might be useful if those folders are created again.</source>
         </translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="584"/>
-        <location filename="../tabpage.cpp" line="786"/>
-        <location filename="../tabpage.cpp" line="800"/>
+        <location filename="../tabpage.cpp" line="586"/>
+        <location filename="../tabpage.cpp" line="789"/>
+        <location filename="../tabpage.cpp" line="803"/>
         <source>Link to</source>
         <translation>קישור אל</translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="812"/>
+        <location filename="../tabpage.cpp" line="815"/>
         <source>%n item(s) selected</source>
         <translation>
             <numerusform>נבחר פריט אחד</numerusform>
@@ -2459,7 +2459,7 @@ The translation of this string isn&apos;t 100% well.</translatorcomment>
     <message>
         <location filename="../bulkrename.cpp" line="121"/>
         <location filename="../bulkrename.cpp" line="124"/>
-        <location filename="../tabpage.cpp" line="1139"/>
+        <location filename="../tabpage.cpp" line="1142"/>
         <source>Error</source>
         <translation>שגיאה</translation>
     </message>
@@ -2474,7 +2474,7 @@ The translation of this string isn&apos;t 100% well.</translatorcomment>
         <translation>שמם של כמה קבצים לא יכול להשתנות.</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="1139"/>
+        <location filename="../tabpage.cpp" line="1142"/>
         <source>Cannot open as Admin.</source>
         <translation>לא ניתן לפתוח במצב ניהול.</translation>
     </message>

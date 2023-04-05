@@ -1712,33 +1712,33 @@ on olemas klõpsatakse vasakul, isegi kui see pole vaikefailihaldur.</translatio
         <translation>Võrk</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="996"/>
+        <location filename="../desktopwindow.cpp" line="997"/>
         <source>Open</source>
         <translation>Ava</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1002"/>
-        <location filename="../desktopwindow.cpp" line="1042"/>
+        <location filename="../desktopwindow.cpp" line="1003"/>
+        <location filename="../desktopwindow.cpp" line="1043"/>
         <source>Stic&amp;k to Current Position</source>
         <translation>Jäta&amp; praegusele asukohale</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1010"/>
+        <location filename="../desktopwindow.cpp" line="1011"/>
         <source>Empty Trash</source>
         <translation>Tühjenda prügikast</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1069"/>
+        <location filename="../desktopwindow.cpp" line="1070"/>
         <source>Hide Desktop Items</source>
         <translation>Peida töölauakirjed</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1075"/>
+        <location filename="../desktopwindow.cpp" line="1076"/>
         <source>Create Launcher</source>
         <translation>Loo käivitaja</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1078"/>
+        <location filename="../desktopwindow.cpp" line="1079"/>
         <source>Desktop Preferences</source>
         <translation>Töölaua eelistused</translation>
     </message>
@@ -1848,47 +1848,47 @@ Kui need kaustad hiljem uuesti tekivad, siis võib-olla pole mõtet seda teha.</
 <context>
     <name>PCManFM::TabPage</name>
     <message>
-        <location filename="../tabpage.cpp" line="448"/>
+        <location filename="../tabpage.cpp" line="443"/>
         <source>Search Results</source>
         <translation>Otsingutulemused</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="451"/>
+        <location filename="../tabpage.cpp" line="446"/>
         <source>Applications</source>
         <translation>Rakendused</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="455"/>
+        <location filename="../tabpage.cpp" line="450"/>
         <source>Computer</source>
         <translation>Arvuti</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="458"/>
+        <location filename="../tabpage.cpp" line="453"/>
         <source>Network</source>
         <translation>Võrk</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="461"/>
+        <location filename="../tabpage.cpp" line="456"/>
         <source>Trash</source>
         <translation>Prügikast</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="466"/>
+        <location filename="../tabpage.cpp" line="462"/>
         <source>Desktop</source>
         <translation>Töölaud</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="551"/>
+        <location filename="../tabpage.cpp" line="553"/>
         <source>Error</source>
         <translation>Viga</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="560"/>
+        <location filename="../tabpage.cpp" line="562"/>
         <source>Free space: %1 (Total: %2)</source>
         <translation>Vaba ruum:%1 (kokku:%2)</translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="577"/>
+        <location filename="../tabpage.cpp" line="579"/>
         <source>%n item(s)</source>
         <translation>
             <numerusform>%n kirje</numerusform>
@@ -1896,7 +1896,7 @@ Kui need kaustad hiljem uuesti tekivad, siis võib-olla pole mõtet seda teha.</
         </translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="579"/>
+        <location filename="../tabpage.cpp" line="581"/>
         <source> (%n hidden)</source>
         <translation>
             <numerusform> (%n peidetud)</numerusform>
@@ -1904,14 +1904,14 @@ Kui need kaustad hiljem uuesti tekivad, siis võib-olla pole mõtet seda teha.</
         </translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="584"/>
-        <location filename="../tabpage.cpp" line="786"/>
-        <location filename="../tabpage.cpp" line="800"/>
+        <location filename="../tabpage.cpp" line="586"/>
+        <location filename="../tabpage.cpp" line="789"/>
+        <location filename="../tabpage.cpp" line="803"/>
         <source>Link to</source>
         <translation>Ühenda</translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="812"/>
+        <location filename="../tabpage.cpp" line="815"/>
         <source>%n item(s) selected</source>
         <translation>
             <numerusform>%n kirje valitud</numerusform>
@@ -2456,7 +2456,7 @@ Väärtus -1 tähendab, et failisuuruse piir puudub (see on ka vaikimisi väärt
     <message>
         <location filename="../bulkrename.cpp" line="121"/>
         <location filename="../bulkrename.cpp" line="124"/>
-        <location filename="../tabpage.cpp" line="1139"/>
+        <location filename="../tabpage.cpp" line="1142"/>
         <source>Error</source>
         <translation>Viga</translation>
     </message>
@@ -2471,7 +2471,7 @@ Väärtus -1 tähendab, et failisuuruse piir puudub (see on ka vaikimisi väärt
         <translation>Mõningaid faile ei saanud ümber nimetada.</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="1139"/>
+        <location filename="../tabpage.cpp" line="1142"/>
         <source>Cannot open as Admin.</source>
         <translation>Ei saa avada administraatorina.</translation>
     </message>
