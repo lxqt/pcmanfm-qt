@@ -1713,33 +1713,33 @@ sinistro anche se non è il gestore file predefinito.</translation>
         <translation>Rete</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="996"/>
+        <location filename="../desktopwindow.cpp" line="997"/>
         <source>Open</source>
         <translation>Apri</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1002"/>
-        <location filename="../desktopwindow.cpp" line="1042"/>
+        <location filename="../desktopwindow.cpp" line="1003"/>
+        <location filename="../desktopwindow.cpp" line="1043"/>
         <source>Stic&amp;k to Current Position</source>
         <translation>Blo&amp;cca alla posizione attuale</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1010"/>
+        <location filename="../desktopwindow.cpp" line="1011"/>
         <source>Empty Trash</source>
         <translation>Svuota Cestino</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1069"/>
+        <location filename="../desktopwindow.cpp" line="1070"/>
         <source>Hide Desktop Items</source>
         <translation>Nascondi elementi del desktop</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1075"/>
+        <location filename="../desktopwindow.cpp" line="1076"/>
         <source>Create Launcher</source>
         <translation>Crea lanciatore</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1078"/>
+        <location filename="../desktopwindow.cpp" line="1079"/>
         <source>Desktop Preferences</source>
         <translation>Preferenze della scrivania</translation>
     </message>
@@ -1849,47 +1849,47 @@ Potrebbero essere utili se le cartelle vengono ricreate.</translation>
 <context>
     <name>PCManFM::TabPage</name>
     <message>
-        <location filename="../tabpage.cpp" line="448"/>
+        <location filename="../tabpage.cpp" line="443"/>
         <source>Search Results</source>
         <translation>Risultati della ricerca</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="451"/>
+        <location filename="../tabpage.cpp" line="446"/>
         <source>Applications</source>
         <translation>Applicazioni</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="455"/>
+        <location filename="../tabpage.cpp" line="450"/>
         <source>Computer</source>
         <translation>Computer</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="458"/>
+        <location filename="../tabpage.cpp" line="453"/>
         <source>Network</source>
         <translation>Rete</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="461"/>
+        <location filename="../tabpage.cpp" line="456"/>
         <source>Trash</source>
         <translation>Cestino</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="466"/>
+        <location filename="../tabpage.cpp" line="462"/>
         <source>Desktop</source>
         <translation>Scrivania</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="551"/>
+        <location filename="../tabpage.cpp" line="553"/>
         <source>Error</source>
         <translation>Errore</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="560"/>
+        <location filename="../tabpage.cpp" line="562"/>
         <source>Free space: %1 (Total: %2)</source>
         <translation>Spazio libero: %1 (totale: %2)</translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="577"/>
+        <location filename="../tabpage.cpp" line="579"/>
         <source>%n item(s)</source>
         <translation>
             <numerusform>%n elemento</numerusform>
@@ -1897,7 +1897,7 @@ Potrebbero essere utili se le cartelle vengono ricreate.</translation>
         </translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="579"/>
+        <location filename="../tabpage.cpp" line="581"/>
         <source> (%n hidden)</source>
         <translation>
             <numerusform> (%n nascosto)</numerusform>
@@ -1905,15 +1905,15 @@ Potrebbero essere utili se le cartelle vengono ricreate.</translation>
         </translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="584"/>
-        <location filename="../tabpage.cpp" line="786"/>
-        <location filename="../tabpage.cpp" line="800"/>
+        <location filename="../tabpage.cpp" line="586"/>
+        <location filename="../tabpage.cpp" line="789"/>
+        <location filename="../tabpage.cpp" line="803"/>
         <source>Link to</source>
         <translatorcomment>no idea what this refers to</translatorcomment>
         <translation>Collegamento a</translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="812"/>
+        <location filename="../tabpage.cpp" line="815"/>
         <source>%n item(s) selected</source>
         <translation>
             <numerusform>%n elemento selezionato</numerusform>
@@ -2456,7 +2456,7 @@ Un valore di -1 significa nessun limite (predefinito).</translation>
     <message>
         <location filename="../bulkrename.cpp" line="121"/>
         <location filename="../bulkrename.cpp" line="124"/>
-        <location filename="../tabpage.cpp" line="1139"/>
+        <location filename="../tabpage.cpp" line="1142"/>
         <source>Error</source>
         <translation>Errore</translation>
     </message>
@@ -2471,7 +2471,7 @@ Un valore di -1 significa nessun limite (predefinito).</translation>
         <translation>Alcuni files non sono stati rinominati.</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="1139"/>
+        <location filename="../tabpage.cpp" line="1142"/>
         <source>Cannot open as Admin.</source>
         <translation>Impossibile di aprire come admin.</translation>
     </message>
