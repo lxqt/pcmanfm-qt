@@ -128,7 +128,7 @@ Foundation: Inc., 51 Franklin Street, 5º Andar, Boston, MA  02110-1301, EUA.</t
     <message>
         <location filename="../bulk-rename.ui" line="80"/>
         <source>Pad numbers with zero if possible</source>
-        <translation type="unfinished"></translation>
+        <translation>Números do teclado numérico com zero, se possível</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="87"/>
@@ -1603,7 +1603,7 @@ clicadas com o botão esquerdo, mesmo quando não for o gerenciador de arquivos 
     <message>
         <location filename="../desktopentrydialog.cpp" line="40"/>
         <source>The URL to access.</source>
-        <translation type="unfinished"></translation>
+        <translation>A URL a acessar.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="67"/>
