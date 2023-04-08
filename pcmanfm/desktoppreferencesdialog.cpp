@@ -47,6 +47,8 @@ DesktopPreferencesDialog::DesktopPreferencesDialog(QWidget* parent, Qt::WindowFl
   Settings& settings = static_cast<Application*>(qApp)->settings();
   ui.setupUi(this);
 
+  this->setWindowIcon(QIcon::fromTheme(QStringLiteral("preferences-desktop")));
+
   // setup wallpaper modes
   connect(ui.wallpaperMode, static_cast<void (QComboBox::*)(int)>(&QComboBox::currentIndexChanged), this, &DesktopPreferencesDialog::onWallpaperModeChanged);
   ui.wallpaperMode->addItem(tr("Fill with background color only"), DesktopWindow::WallpaperNone);
