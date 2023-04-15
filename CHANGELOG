@@ -1,3 +1,13 @@
+pcmanfm-qt-1.3.0 / 2023-04-15
+==============================
+ * Don't try to activate windows under Wayland (it isn't possible).
+ * Leave the pixmap cache limit to Qt (and avoid extra CPU usage is rare cases).
+ * Added a title for Desktop (for setting WM rules under some Wayland compositors).
+ * Localize tab texts for special folders ("search", Applications, Computer, Network, Trash and Desktop).
+ * Prevent Desktop items from shaking on config changes.
+ * Remove Desktop's drop indicator on leaving Desktop.
+ * Keep dragged and dropped items together on Desktop as far as possible.
+
 pcmanfm-qt-1.2.1 / 2023-01-02
 ==============================
  * Corrected the icon for "New Tab".
