@@ -1856,7 +1856,7 @@ Mohly by se ještě hodit v případě znovuvytvoření těchto složek.</transl
     <message>
         <location filename="../tabpage.cpp" line="446"/>
         <source>Applications</source>
-        <translation type="unfinished"></translation>
+        <translation>Aplikace</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="450"/>

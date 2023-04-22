@@ -1855,7 +1855,7 @@ Det kan vara bra att behålla dom om mapparna återskapas.</translation>
     <message>
         <location filename="../tabpage.cpp" line="446"/>
         <source>Applications</source>
-        <translation type="unfinished"></translation>
+        <translation>Program</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="450"/>
