@@ -804,7 +804,7 @@ olarak seçilmese bile sol tıklandığında PCManFM-Qt&apos;de açılır.</tran
     <message>
         <location filename="../main-win.ui" line="293"/>
         <source>Alt+Up</source>
-        <translation>Alt+Up</translation>
+        <translation>Alt+Yukarı</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="302"/>
@@ -1291,7 +1291,7 @@ olarak seçilmese bile sol tıklandığında PCManFM-Qt&apos;de açılır.</tran
     <message>
         <location filename="../main-win.ui" line="628"/>
         <source>Alt+Left</source>
-        <translation>Alt+Left</translation>
+        <translation>Alt+Sol</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="637"/>
@@ -1306,7 +1306,7 @@ olarak seçilmese bile sol tıklandığında PCManFM-Qt&apos;de açılır.</tran
     <message>
         <location filename="../main-win.ui" line="643"/>
         <source>Alt+Right</source>
-        <translation>Alt+Right</translation>
+        <translation>Alt+Sağ</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="648"/>
@@ -1321,7 +1321,7 @@ olarak seçilmese bile sol tıklandığında PCManFM-Qt&apos;de açılır.</tran
     <message>
         <location filename="../main-win.ui" line="663"/>
         <source>Del</source>
-        <translation>Del</translation>
+        <translation>Sil</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="668"/>
@@ -1694,6 +1694,7 @@ olarak seçilmese bile sol tıklandığında PCManFM-Qt&apos;de açılır.</tran
         <source>Trash (%Ln items)</source>
         <translation>
             <numerusform>Çöp Kutusu (%Ln öğe)</numerusform>
+            <numerusform>Çöp Kutusu (%Ln öğe)</numerusform>
         </translation>
     </message>
     <message>
@@ -1892,12 +1893,14 @@ Bu klasörler yeniden oluşturulursa faydalı olabilirler.</translation>
         <source>%n item(s)</source>
         <translation>
             <numerusform>%n nesne</numerusform>
+            <numerusform>%n nesne</numerusform>
         </translation>
     </message>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="581"/>
         <source> (%n hidden)</source>
         <translation>
+            <numerusform> (%n gizli)</numerusform>
             <numerusform> (%n gizli)</numerusform>
         </translation>
     </message>
@@ -1912,6 +1915,7 @@ Bu klasörler yeniden oluşturulursa faydalı olabilirler.</translation>
         <location filename="../tabpage.cpp" line="815"/>
         <source>%n item(s) selected</source>
         <translation>
+            <numerusform>%n nesne seçildi</numerusform>
             <numerusform>%n nesne seçildi</numerusform>
         </translation>
     </message>
@@ -1928,6 +1932,7 @@ Bu klasörler yeniden oluşturulursa faydalı olabilirler.</translation>
         <source>Do you want to open these %1 files?</source>
         <translation>
             <numerusform>%1 dosyasını açmak istiyor musunuz?</numerusform>
+            <numerusform>%1 dosyalarını açmak istiyor musunuz?</numerusform>
         </translation>
     </message>
     <message>
