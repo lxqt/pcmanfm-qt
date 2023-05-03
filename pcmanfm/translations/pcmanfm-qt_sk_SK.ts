@@ -731,17 +731,17 @@ kliknete ľavým tlačidlom myši, aj keď nejde o predvoleného správcu súbor
     <message>
         <location filename="../shortcuts.ui" line="135"/>
         <source>Drop+Shift</source>
-        <translation type="unfinished"></translation>
+        <translation>Drop+Shift</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="143"/>
         <source>Drop+Ctrl</source>
-        <translation type="unfinished"></translation>
+        <translation>Drop+Ctrl</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="151"/>
         <source>Drop+Shift+Ctrl</source>
-        <translation type="unfinished"></translation>
+        <translation>Drop+Shift+Ctrl</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="138"/>
@@ -804,7 +804,7 @@ kliknete ľavým tlačidlom myši, aj keď nejde o predvoleného správcu súbor
     <message>
         <location filename="../main-win.ui" line="293"/>
         <source>Alt+Up</source>
-        <translation></translation>
+        <translation>Alt+Hore</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="302"/>
@@ -814,7 +814,7 @@ kliknete ľavým tlačidlom myši, aj keď nejde o predvoleného správcu súbor
     <message>
         <location filename="../main-win.ui" line="305"/>
         <source>Alt+Home</source>
-        <translation>Alt+Home</translation>
+        <translation>Alt+Domov</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="314"/>
@@ -1291,7 +1291,7 @@ kliknete ľavým tlačidlom myši, aj keď nejde o predvoleného správcu súbor
     <message>
         <location filename="../main-win.ui" line="628"/>
         <source>Alt+Left</source>
-        <translation></translation>
+        <translation>Alt+Vľavo</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="637"/>
@@ -1306,7 +1306,7 @@ kliknete ľavým tlačidlom myši, aj keď nejde o predvoleného správcu súbor
     <message>
         <location filename="../main-win.ui" line="643"/>
         <source>Alt+Right</source>
-        <translation></translation>
+        <translation>Alt+Vpravo</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="648"/>
@@ -1321,7 +1321,7 @@ kliknete ľavým tlačidlom myši, aj keď nejde o predvoleného správcu súbor
     <message>
         <location filename="../main-win.ui" line="663"/>
         <source>Del</source>
-        <translation>Del</translation>
+        <translation>Vymazať</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="668"/>
@@ -1857,7 +1857,7 @@ Ak ich odstránite, nebudú sa dať použiť pri znovuvytvorení priečinkov.</t
     <message>
         <location filename="../tabpage.cpp" line="446"/>
         <source>Applications</source>
-        <translation type="unfinished"></translation>
+        <translation>Aplikácie</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="450"/>
@@ -2349,7 +2349,7 @@ Hodnota -1 určuje neobmedzenú veľkosť súboru na vytvorenie náhľadu (predv
     <message>
         <location filename="../preferences.ui" line="436"/>
         <source>Disable smooth scrolling</source>
-        <translation type="unfinished"></translation>
+        <translation>Zakázať plynulé posúvanie</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="648"/>
