@@ -789,12 +789,12 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="290"/>
         <source>Go Up</source>
-        <translation>Μετάβαση&#xa0;πάνω</translation>
+        <translation>Μετάβαση πάνω</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="293"/>
         <source>Alt+Up</source>
-        <translation>Alt+Up</translation>
+        <translation>Alt+Πάνω</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="302"/>
