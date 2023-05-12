@@ -1321,7 +1321,7 @@ kliknete ľavým tlačidlom myši, aj keď nejde o predvoleného správcu súbor
     <message>
         <location filename="../main-win.ui" line="663"/>
         <source>Del</source>
-        <translation>Vymazať</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="668"/>
