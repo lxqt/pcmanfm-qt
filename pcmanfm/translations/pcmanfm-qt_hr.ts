@@ -731,17 +731,17 @@ upravljač datoteka.</translation>
     <message>
         <location filename="../shortcuts.ui" line="135"/>
         <source>Drop+Shift</source>
-        <translation type="unfinished"></translation>
+        <translation>Ispusti+Shift</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="143"/>
         <source>Drop+Ctrl</source>
-        <translation type="unfinished"></translation>
+        <translation>Ispusti+Ctrl</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="151"/>
         <source>Drop+Shift+Ctrl</source>
-        <translation type="unfinished"></translation>
+        <translation>Ispusti+Shift+Ctrl</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="138"/>
@@ -989,17 +989,17 @@ upravljač datoteka.</translation>
     <message>
         <location filename="../main-win.ui" line="534"/>
         <source>&amp;By File Name</source>
-        <translation>Po &amp;imenu datoteke</translation>
+        <translation>Prema &amp;imenu datoteka</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="542"/>
         <source>By &amp;Modification Time</source>
-        <translation>Po &amp;datumu promjene</translation>
+        <translation>Prema &amp;vremenu promjene</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="550"/>
         <source>By C&amp;reation Time</source>
-        <translation>Po datumu stva&amp;ranja</translation>
+        <translation>Prema vremenu &amp;stvaranja</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="558"/>
@@ -1009,7 +1009,7 @@ upravljač datoteka.</translation>
     <message>
         <location filename="../main-win.ui" line="566"/>
         <source>By File &amp;Type</source>
-        <translation>Po &amp;vrsti datoteke</translation>
+        <translation>Prema vrs&amp;ti datoteke</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="574"/>
@@ -1069,7 +1069,7 @@ upravljač datoteka.</translation>
     <message>
         <location filename="../main-win.ui" line="708"/>
         <source>By File &amp;Size</source>
-        <translation>Po v&amp;eličini datoteke</translation>
+        <translation>Prema veličini &amp;datoteke</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="713"/>
@@ -1857,7 +1857,7 @@ Mogle bi biti korisne, ako se te mape ponovo kreiraju.</translation>
     <message>
         <location filename="../tabpage.cpp" line="446"/>
         <source>Applications</source>
-        <translation type="unfinished"></translation>
+        <translation>Programi</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="450"/>
@@ -2350,7 +2350,7 @@ Vrijednost -1 znači da ne postoji ograničenje za veličinu datoteke (standardn
     <message>
         <location filename="../preferences.ui" line="436"/>
         <source>Disable smooth scrolling</source>
-        <translation type="unfinished"></translation>
+        <translation>Deaktiviraj klizanje</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="648"/>
