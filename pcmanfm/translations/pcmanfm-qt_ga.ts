@@ -46,7 +46,13 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Bainisteoir Comhad PCManFM-Qt
+
+Cóipcheart (C) 2009 - 2014 洪任諭 (Hong Jen Yee)
+
+Is bogearraí saor in aisce é an feidhmchlár seo; is féidir leat é a athdháileadh
+agus/nó é a mhionathrú faoi théarmaí an Ceadúnais Poiblí Ginearálta GNU
+mar atá foilsithe ag Free Software Foundation;</translation>
     </message>
     <message>
         <location filename="../about.ui" line="113"/>
