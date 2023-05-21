@@ -133,17 +133,17 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../bulk-rename.ui" line="87"/>
         <source>Use localized numbers</source>
-        <translation type="unfinished"></translation>
+        <translation>Käytä lokalisoituja numeroita</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="27"/>
         <source>Rename selected files to:</source>
-        <translation type="unfinished"></translation>
+        <translation>Valittujen tiedostojen uusi nimi:</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="40"/>
         <source>Name#</source>
-        <translation type="unfinished"></translation>
+        <translation>Nimi#</translation>
     </message>
 </context>
 <context>
@@ -151,27 +151,27 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../connect.ui" line="14"/>
         <source>Connect to remote server</source>
-        <translation type="unfinished"></translation>
+        <translation>Yhdistä palvelimeen</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="23"/>
         <source>Anonymous &amp;login</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Nimetön kirjautuminen</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="36"/>
         <source>Login as &amp;user:</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Kirjaudu käyttäjänä:</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="65"/>
         <source>Specify remote folder to connect</source>
-        <translation type="unfinished"></translation>
+        <translation>Etäkansio</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="72"/>
         <source>Type:</source>
-        <translation type="unfinished"></translation>
+        <translation>Tyyppi:</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="79"/>
@@ -808,12 +808,12 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="314"/>
         <source>&amp;Reload</source>
-        <translation type="unfinished"></translation>
+        <translation>Päi&amp;vitä</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="317"/>
         <source>F5</source>
-        <translation type="unfinished"></translation>
+        <translation>F5</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="326"/>
@@ -828,7 +828,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="344"/>
         <source>&amp;About</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Tietoa</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="353"/>
@@ -843,7 +843,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="359"/>
         <source>Ctrl+N</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+N</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="367"/>
@@ -913,32 +913,32 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="462"/>
         <source>Cu&amp;t</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Leikkaa</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="465"/>
         <source>Ctrl+X</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+X</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="474"/>
         <source>&amp;Copy</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Kopioi</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="477"/>
         <source>Ctrl+C</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+C</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="486"/>
         <source>&amp;Paste</source>
-        <translation type="unfinished"></translation>
+        <translation>L&amp;iitä</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="489"/>
         <source>Ctrl+V</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+V</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="494"/>
@@ -948,7 +948,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="497"/>
         <source>Ctrl+A</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+A</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="502"/>
@@ -1048,7 +1048,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="651"/>
         <source>Ctrl+Shift+A</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Vaihto+A</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="700"/>
@@ -1068,7 +1068,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="716"/>
         <source>Ctrl+Q</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Q</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="734"/>
@@ -1128,7 +1128,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="912"/>
         <source>Ctrl+Shift+C</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Vaihto+C</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="923"/>
@@ -1265,7 +1265,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="613"/>
         <source>Ctrl+T</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+T</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="622"/>
@@ -1305,22 +1305,22 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="660"/>
         <source>&amp;Delete</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Poista</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="663"/>
         <source>Del</source>
-        <translation type="unfinished"></translation>
+        <translation>Del</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="668"/>
         <source>&amp;Rename</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Uudelleennimeä</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="671"/>
         <source>F2</source>
-        <translation type="unfinished"></translation>
+        <translation>F2</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="676"/>
@@ -1340,7 +1340,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="687"/>
         <source>Alt+Return</source>
-        <translation type="unfinished"></translation>
+        <translation>Alt+Enter</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="692"/>
@@ -1390,7 +1390,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="70"/>
         <source>&amp;File</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Tiedosto</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="74"/>
@@ -1400,13 +1400,13 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="98"/>
         <source>&amp;Help</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Ohje</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="105"/>
         <location filename="../main-win.ui" line="129"/>
         <source>&amp;View</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Näytä</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="109"/>
@@ -1416,7 +1416,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="185"/>
         <source>&amp;Edit</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Muokkaa</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="204"/>
@@ -1431,7 +1431,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="253"/>
         <source>Main Toolbar</source>
-        <translation type="unfinished"></translation>
+        <translation>Päätyökalurivi</translation>
     </message>
 </context>
 <context>
@@ -2437,7 +2437,7 @@ A value of -1 means that there is no limit for the file size (the default).</sou
         <location filename="../bulkrename.cpp" line="124"/>
         <location filename="../tabpage.cpp" line="1142"/>
         <source>Error</source>
-        <translation type="unfinished"></translation>
+        <translation>Virhe</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="121"/>
