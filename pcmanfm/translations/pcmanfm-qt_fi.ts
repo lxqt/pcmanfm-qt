@@ -176,17 +176,17 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../connect.ui" line="79"/>
         <source>Port:</source>
-        <translation type="unfinished"></translation>
+        <translation>Portti:</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="86"/>
         <source>Path:</source>
-        <translation type="unfinished"></translation>
+        <translation>Polku:</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="96"/>
         <source>Host:</source>
-        <translation type="unfinished"></translation>
+        <translation>Osoite:</translation>
     </message>
 </context>
 <context>
@@ -194,113 +194,117 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../desktopentrydialog.ui" line="14"/>
         <source>Create Launcher</source>
-        <translation type="unfinished"></translation>
+        <translation>Luo käynnistin</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="38"/>
         <source>Name:</source>
-        <translation type="unfinished"></translation>
+        <translation>Nimi:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="45"/>
         <source>Specific name of this launcher.</source>
-        <translation type="unfinished"></translation>
+        <translation>Näytettävä nimi tälle käynnistimelle.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="58"/>
         <source>Description:</source>
-        <translation type="unfinished"></translation>
+        <translation>Kuvaus:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="65"/>
         <source>A short description or generic name, like &quot;Web Browser&quot; or &quot;Home Directory&quot;.
 
 It can be left empty.</source>
-        <translation type="unfinished"></translation>
+        <translation>Lyhyt kuvaus tai yleinen nimi, kuten &quot;Verkkoselain&quot; or &quot;Kotikansio&quot;.
+
+Voi jättää tyhjäksi.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="77"/>
         <source>Comment:</source>
-        <translation type="unfinished"></translation>
+        <translation>Kommentti:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="84"/>
         <source>A short comment.
 
 It can be left empty.</source>
-        <translation type="unfinished"></translation>
+        <translation>Lyhyt kommentti.
+
+Voi jättää tyhjäksi.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="96"/>
         <source>Command:</source>
-        <translation type="unfinished"></translation>
+        <translation>Komento:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="112"/>
         <location filename="../desktopentrydialog.ui" line="143"/>
         <source>...</source>
-        <translation type="unfinished"></translation>
+        <translation>...</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="121"/>
         <source>Icon:</source>
-        <translation type="unfinished"></translation>
+        <translation>Kuvake:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="130"/>
         <source>Icon to display in file manager, menus, etc.</source>
-        <translation type="unfinished"></translation>
+        <translation>Kuvake näytettäväksi tiedostonhallinnassa, valikoissa jne.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="152"/>
         <location filename="../desktopentrydialog.ui" line="162"/>
         <source>Run in terminal?</source>
-        <translation type="unfinished"></translation>
+        <translation>Suorita päätteessä?</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="155"/>
         <source>Terminal:</source>
-        <translation type="unfinished"></translation>
+        <translation>Pääte:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="165"/>
         <source>Whether the launched program should run in a terminal window.</source>
-        <translation type="unfinished"></translation>
+        <translation>Pitäisikö käynnistetty sovellus suorittaa pääteikkunassa.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="169"/>
         <source>No</source>
-        <translation type="unfinished"></translation>
+        <translation>Ei</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="174"/>
         <source>Yes</source>
-        <translation type="unfinished"></translation>
+        <translation>Kyllä</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="182"/>
         <source>Type:</source>
-        <translation type="unfinished"></translation>
+        <translation>Tyyppi:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="189"/>
         <source>Whether this is a link or executes a command.</source>
-        <translation type="unfinished"></translation>
+        <translation>Onko tämä linkki tai suorittaako se komentoa.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="193"/>
         <source>Application</source>
-        <translation type="unfinished"></translation>
+        <translation>Sovellus</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="198"/>
         <source>Link</source>
-        <translation type="unfinished"></translation>
+        <translation>Linkki</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="206"/>
         <source>Categories:</source>
-        <translation type="unfinished"></translation>
+        <translation>Luokat:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="213"/>
@@ -309,7 +313,11 @@ It can be left empty.</source>
 It is needed only when you want to use the created file in the main menu. Otherwise, you could leave it empty.
 
 Examples: AudioVideo, Audio, Video, Development, Education, Game, Graphics, Network, Office, Settings, System, Utility, Qt.</source>
-        <translation type="unfinished"></translation>
+        <translation>Puolipistein erotetut luokat, joissa käynnistin näkyy, jos työpöytäympäristö niitä käyttää (esim., jos laitettu hakemistoon ~/.local/share/applications).
+
+Vaaditaan vain, jos käynnistimen täytyy näkyä päävalikossa. Muussa tapauksessa voi jättää tyhjäksi.
+
+Esimerkkejä: AudioVideo, Audio, Video, Development, Education, Game, Graphics, Network, Office, Settings, System, Utility, Qt.</translation>
     </message>
 </context>
 <context>
@@ -322,7 +330,7 @@ Examples: AudioVideo, Audio, Video, Development, Education, Game, Graphics, Netw
     <message>
         <location filename="../desktop-folder.ui" line="23"/>
         <source>Desktop</source>
-        <translation type="unfinished"></translation>
+        <translation>Työpöytä</translation>
     </message>
     <message>
         <location filename="../desktop-folder.ui" line="29"/>
@@ -332,7 +340,7 @@ Examples: AudioVideo, Audio, Video, Development, Education, Game, Graphics, Netw
     <message>
         <location filename="../desktop-folder.ui" line="36"/>
         <source>Image file</source>
-        <translation type="unfinished"></translation>
+        <translation>Kuvatiedosto</translation>
     </message>
     <message>
         <location filename="../desktop-folder.ui" line="42"/>
@@ -342,7 +350,7 @@ Examples: AudioVideo, Audio, Video, Development, Education, Game, Graphics, Netw
     <message>
         <location filename="../desktop-folder.ui" line="49"/>
         <source>&amp;Browse</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Selaa</translation>
     </message>
 </context>
 <context>
@@ -356,7 +364,7 @@ Examples: AudioVideo, Audio, Video, Development, Education, Game, Graphics, Netw
         <location filename="../desktop-preferences.ui" line="338"/>
         <location filename="../desktop-preferences.ui" line="344"/>
         <source>Background</source>
-        <translation type="unfinished"></translation>
+        <translation>Tausta</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="385"/>
@@ -823,7 +831,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="335"/>
         <source>Quit</source>
-        <translation type="unfinished"></translation>
+        <translation>Lopeta</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="344"/>
@@ -833,7 +841,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="353"/>
         <source>&amp;New Window</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Uusi ikkuna</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="356"/>
@@ -1073,7 +1081,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="734"/>
         <source>Open Tab in &amp;Root Instance</source>
-        <translation type="unfinished"></translation>
+        <translation>Avaa välilehti &amp;pääkäyttäjäinstanssissa</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="748"/>
@@ -1753,7 +1761,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../mainwindow.cpp" line="141"/>
         <source>Root Instance</source>
-        <translation type="unfinished"></translation>
+        <translation>Pääkäyttäjäinstanssi</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="742"/>
