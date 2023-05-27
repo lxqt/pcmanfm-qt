@@ -166,7 +166,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../connect.ui" line="65"/>
         <source>Specify remote folder to connect</source>
-        <translation>Etäkansio</translation>
+        <translation>Syötä yhdistettävä etäkansio</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="72"/>
@@ -218,7 +218,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
 It can be left empty.</source>
         <translation>Lyhyt kuvaus tai yleinen nimi, kuten &quot;Verkkoselain&quot; or &quot;Kotikansio&quot;.
 
-Voi jättää tyhjäksi.</translation>
+Voidaan jättää tyhjäksi.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="77"/>
@@ -232,7 +232,7 @@ Voi jättää tyhjäksi.</translation>
 It can be left empty.</source>
         <translation>Lyhyt kommentti.
 
-Voi jättää tyhjäksi.</translation>
+Voidaan jättää tyhjäksi.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="96"/>
@@ -259,7 +259,7 @@ Voi jättää tyhjäksi.</translation>
         <location filename="../desktopentrydialog.ui" line="152"/>
         <location filename="../desktopentrydialog.ui" line="162"/>
         <source>Run in terminal?</source>
-        <translation>Suorita päätteessä?</translation>
+        <translation>Suoritetaanko päätteessä?</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="155"/>
@@ -315,7 +315,7 @@ It is needed only when you want to use the created file in the main menu. Otherw
 Examples: AudioVideo, Audio, Video, Development, Education, Game, Graphics, Network, Office, Settings, System, Utility, Qt.</source>
         <translation>Puolipistein erotetut luokat, joissa käynnistin näkyy, jos työpöytäympäristö niitä käyttää (esim., jos laitettu hakemistoon ~/.local/share/applications).
 
-Vaaditaan vain, jos käynnistimen täytyy näkyä päävalikossa. Muussa tapauksessa voi jättää tyhjäksi.
+Vaaditaan vain, jos käynnistimen täytyy näkyä päävalikossa. Muussa tapauksessa voidaan jättää tyhjäksi.
 
 Esimerkkejä: AudioVideo, Audio, Video, Development, Education, Game, Graphics, Network, Office, Settings, System, Utility, Qt.</translation>
     </message>
