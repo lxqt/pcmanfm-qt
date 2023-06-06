@@ -335,7 +335,7 @@ Esimerkkejä: AudioVideo, Audio, Video, Development, Education, Game, Graphics, 
     <message>
         <location filename="../desktop-folder.ui" line="29"/>
         <source>Desktop folder:</source>
-        <translation type="unfinished"></translation>
+        <translation>Työpöytäkansio:</translation>
     </message>
     <message>
         <location filename="../desktop-folder.ui" line="36"/>
@@ -345,7 +345,7 @@ Esimerkkejä: AudioVideo, Audio, Video, Development, Education, Game, Graphics, 
     <message>
         <location filename="../desktop-folder.ui" line="42"/>
         <source>Folder path</source>
-        <translation type="unfinished"></translation>
+        <translation>Kansion polku</translation>
     </message>
     <message>
         <location filename="../desktop-folder.ui" line="49"/>
@@ -358,7 +358,7 @@ Esimerkkejä: AudioVideo, Audio, Video, Development, Education, Game, Graphics, 
     <message>
         <location filename="../desktop-preferences.ui" line="14"/>
         <source>Desktop Preferences</source>
-        <translation type="unfinished"></translation>
+        <translation>Työpöytäasetukset</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="338"/>
@@ -369,82 +369,82 @@ Esimerkkejä: AudioVideo, Audio, Video, Development, Education, Game, Graphics, 
     <message>
         <location filename="../desktop-preferences.ui" line="385"/>
         <source>Wallpaper mode:</source>
-        <translation type="unfinished"></translation>
+        <translation>Taustakuvatila:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="408"/>
         <source>Wallpaper image file:</source>
-        <translation type="unfinished"></translation>
+        <translation>Kuvatiedosto:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="350"/>
         <source>Select background color:</source>
-        <translation type="unfinished"></translation>
+        <translation>Valitse taustaväri:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="417"/>
         <source>Image file</source>
-        <translation type="unfinished"></translation>
+        <translation>Kuvatiedosto</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="423"/>
         <source>Image file path</source>
-        <translation type="unfinished"></translation>
+        <translation>Kuvatiedoston polku</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="430"/>
         <source>&amp;Browse</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Selaa</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="30"/>
         <source>Icons</source>
-        <translation type="unfinished"></translation>
+        <translation>Kuvakkeet</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="36"/>
         <source>Icon size:</source>
-        <translation type="unfinished"></translation>
+        <translation>Koko:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="49"/>
         <source>Label Text</source>
-        <translation type="unfinished"></translation>
+        <translation>Nimiöteksti</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="113"/>
         <source>Select shadow color:</source>
-        <translation type="unfinished"></translation>
+        <translation>Valitse varjon väri:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="61"/>
         <source>Select font:</source>
-        <translation type="unfinished"></translation>
+        <translation>Valitse fontti:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="24"/>
         <source>General</source>
-        <translation type="unfinished"></translation>
+        <translation>Perusasetukset</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="87"/>
         <source>Select text color:</source>
-        <translation type="unfinished"></translation>
+        <translation>Valitse tekstin väri:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="136"/>
         <source>Spacing</source>
-        <translation type="unfinished"></translation>
+        <translation>Välistys</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="152"/>
         <source>Minimum item margins:</source>
-        <translation type="unfinished"></translation>
+        <translation>Kohteiden min. reunukset:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="189"/>
         <source>3 px by default.</source>
-        <translation type="unfinished"></translation>
+        <translation>3 px oletuksena.</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="176"/>
@@ -454,39 +454,41 @@ Esimerkkejä: AudioVideo, Audio, Video, Development, Education, Game, Graphics, 
         <location filename="../desktop-preferences.ui" line="275"/>
         <location filename="../desktop-preferences.ui" line="287"/>
         <source> px</source>
-        <translation type="unfinished"></translation>
+        <translation> px</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="205"/>
         <source>x</source>
-        <translation type="unfinished"></translation>
+        <translation>x</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="172"/>
         <source>1 px by default.
 A space is also reserved for 3 lines of text.</source>
-        <translation type="unfinished"></translation>
+        <translation>1 px oletuksena.
+Tilaa varataan myös 3 tekstiriville.</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="145"/>
         <source>Lock</source>
-        <translation type="unfinished"></translation>
+        <translation>Lukitse</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="230"/>
         <source>Margins of work area:</source>
-        <translation type="unfinished"></translation>
+        <translation>Työalueen reunukset:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="303"/>
         <source>By default, desktop folders will be opened in PCManFM-Qt if they
 are left clicked, even when it is not the default file manager.</source>
-        <translation type="unfinished"></translation>
+        <translation>Oletuksena työpöytäkansiot avataan PCManFM-Qt:eessä jos niitä
+klikattiin, vaikka se ei olisi oletustiedostonhallintaohjelma.</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="307"/>
         <source>Open desktop folders in default file manager by left clicking</source>
-        <translation type="unfinished"></translation>
+        <translation>Avaa työpöytäkansiot oletustiedostonhallintaohjelmassa klikkaamalla</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="314"/>
@@ -496,67 +498,67 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktop-preferences.ui" line="373"/>
         <source>Wallpaper</source>
-        <translation type="unfinished"></translation>
+        <translation>Taustakuva</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="439"/>
         <source>Transform image based on EXIF data</source>
-        <translation type="unfinished"></translation>
+        <translation>Muunna kuvaa EXIF-tietojen perusteella</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="446"/>
         <source>Individual wallpaper for each monitor</source>
-        <translation type="unfinished"></translation>
+        <translation>Erillinen taustakuva jokaiselle näytölle</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="473"/>
         <source>Slide Show</source>
-        <translation type="unfinished"></translation>
+        <translation>Diaesitys</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="479"/>
         <source>Enable Slide Show</source>
-        <translation type="unfinished"></translation>
+        <translation>Käytä diaesitystä</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="491"/>
         <source>Wallpaper image folder:</source>
-        <translation type="unfinished"></translation>
+        <translation>Taustakuvan kansio:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="498"/>
         <source>Browse</source>
-        <translation type="unfinished"></translation>
+        <translation>Selaa</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="505"/>
         <source> hour(s)</source>
-        <translation type="unfinished"></translation>
+        <translation> tuntia</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="515"/>
         <source>and</source>
-        <translation type="unfinished"></translation>
+        <translation>ja</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="528"/>
         <source>Intervals less than 5min will be ignored</source>
-        <translation type="unfinished"></translation>
+        <translation>Alle 5 minuutin viiveet ohitetaan</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="531"/>
         <source>Interval:</source>
-        <translation type="unfinished"></translation>
+        <translation>Viive:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="538"/>
         <source> minute(s)</source>
-        <translation type="unfinished"></translation>
+        <translation> minuuttia</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="564"/>
         <source>Wallpaper folder</source>
-        <translation type="unfinished"></translation>
+        <translation>Taustakuvan kansio</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="587"/>
@@ -566,32 +568,32 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktop-preferences.ui" line="620"/>
         <source>Visible Shortcuts</source>
-        <translation type="unfinished"></translation>
+        <translation>Näkyvät pikakuvakkeet</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="626"/>
         <source>Home</source>
-        <translation type="unfinished"></translation>
+        <translation>Koti</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="637"/>
         <source>Trash</source>
-        <translation type="unfinished"></translation>
+        <translation>Roskakori</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="648"/>
         <source>Computer</source>
-        <translation type="unfinished"></translation>
+        <translation>Tietokone</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="659"/>
         <source>Network</source>
-        <translation type="unfinished"></translation>
+        <translation>Verkko</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="614"/>
         <source>Advanced</source>
-        <translation type="unfinished"></translation>
+        <translation>Lisäasetukset</translation>
     </message>
 </context>
 <context>
@@ -599,22 +601,22 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../shortcuts.ui" line="14"/>
         <source>Hidden Shortcuts</source>
-        <translation type="unfinished"></translation>
+        <translation>Piilotetut pikakuvakkeet</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="21"/>
         <source>Shortcut</source>
-        <translation type="unfinished"></translation>
+        <translation>Pikanäppäin</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="26"/>
         <source>Action</source>
-        <translation type="unfinished"></translation>
+        <translation>Toiminto</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="31"/>
         <source>Esc</source>
-        <translation type="unfinished"></translation>
+        <translation>Esc</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="34"/>
@@ -624,7 +626,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../shortcuts.ui" line="39"/>
         <source>Ctrl+Esc</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Esc</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="42"/>
@@ -634,7 +636,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../shortcuts.ui" line="47"/>
         <source>Ctrl+L</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+L</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="50"/>
@@ -645,29 +647,29 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../shortcuts.ui" line="55"/>
         <source>Alt+D</source>
-        <translation type="unfinished"></translation>
+        <translation>Alt+D</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="63"/>
         <source>Ctrl+Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Sarkain</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="66"/>
         <location filename="../shortcuts.ui" line="82"/>
         <source>Next tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Seuraava välilehti</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="71"/>
         <source>Ctrl+Shift+Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Vaihto+Sarkain</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="74"/>
         <location filename="../shortcuts.ui" line="90"/>
         <source>Previous tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Edellinen välilehti</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="79"/>
@@ -682,7 +684,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../shortcuts.ui" line="95"/>
         <source>Ctrl+Number</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+numero</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="98"/>
@@ -693,12 +695,12 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../shortcuts.ui" line="103"/>
         <source>Alt+Number</source>
-        <translation type="unfinished"></translation>
+        <translation>Alt+numero</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="111"/>
         <source>Backspace</source>
-        <translation type="unfinished"></translation>
+        <translation>Askelpalautin</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="114"/>
@@ -708,17 +710,17 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../shortcuts.ui" line="119"/>
         <source>Ctrl+F</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+F</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="122"/>
         <source>Search dialog</source>
-        <translation type="unfinished"></translation>
+        <translation>Hakuikkuna</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="127"/>
         <source>Shift+Insert</source>
-        <translation type="unfinished"></translation>
+        <translation>Vaihto+Insert</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="130"/>
@@ -743,17 +745,17 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../shortcuts.ui" line="138"/>
         <source>Move file on dropping</source>
-        <translation type="unfinished"></translation>
+        <translation>Siirrä tiedosto pudottamalla</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="146"/>
         <source>Copy file on dropping</source>
-        <translation type="unfinished"></translation>
+        <translation>Kopioi tiedosto pudottamalla</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="154"/>
         <source>Make a symlink on dropping</source>
-        <translation type="unfinished"></translation>
+        <translation>Luo symbolinen linkki pudotettaessa</translation>
     </message>
 </context>
 <context>
@@ -761,7 +763,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="14"/>
         <source>File Manager</source>
-        <translation type="unfinished"></translation>
+        <translation>Tiedostonhallinta</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="81"/>
@@ -796,12 +798,12 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="290"/>
         <source>Go Up</source>
-        <translation type="unfinished"></translation>
+        <translation>Polkua ylös</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="293"/>
         <source>Alt+Up</source>
-        <translation type="unfinished"></translation>
+        <translation>Alt+Ylänuoli</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="302"/>
@@ -811,7 +813,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="305"/>
         <source>Alt+Home</source>
-        <translation type="unfinished"></translation>
+        <translation>Alt+Home</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="314"/>
@@ -826,7 +828,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="326"/>
         <source>Go</source>
-        <translation type="unfinished"></translation>
+        <translation>Siirry</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="335"/>
@@ -846,7 +848,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="356"/>
         <source>New Window</source>
-        <translation type="unfinished"></translation>
+        <translation>Uusi ikkuna</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="359"/>
@@ -861,7 +863,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="370"/>
         <source>Ctrl+H</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+H</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="379"/>
@@ -896,7 +898,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="421"/>
         <source>Reload</source>
-        <translation type="unfinished"></translation>
+        <translation>Päivitä</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="429"/>
@@ -966,7 +968,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="505"/>
         <source>Ctrl+D</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+D</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="510"/>
@@ -1031,27 +1033,27 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="879"/>
         <source>Shift+F2</source>
-        <translation type="unfinished"></translation>
+        <translation>Vaihto+F2</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="963"/>
         <source>Preserve Settings Recursively from &amp;Here</source>
-        <translation type="unfinished"></translation>
+        <translation>Muista asetukset rekursiivisesti &amp;tästä alkaen</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="968"/>
         <source>&amp;Go to Source of Inherited Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Siirry perittyjen asetusten lähteeseen</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="973"/>
         <source>&amp;Remove Settings of Nonexistent Folders</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Poista poistettujen kansioiden asetukset</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="981"/>
         <source>&amp;Clear</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Tyhjennä</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="651"/>
@@ -1086,47 +1088,47 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="748"/>
         <source>&amp;Folder</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Kansio</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="760"/>
         <source>&amp;Blank File</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Tyhjä tiedosto</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="847"/>
         <source>Preserve Settings for &amp;This Folder</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Muista asetukset tälle kansiolle</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="884"/>
         <source>&amp;Show/Focus Filter Bar</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Näytä/kohdista suodatinrivi</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="887"/>
         <source>Show Filter Bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Näytä suodatinrivi</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="890"/>
         <source>Ctrl+I</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+I</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="898"/>
         <source>S&amp;plit View</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Jaettu näkymä</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="901"/>
         <source>Split View</source>
-        <translation type="unfinished"></translation>
+        <translation>Jaettu näkymä</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="904"/>
         <source>F6</source>
-        <translation type="unfinished"></translation>
+        <translation>F6</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="909"/>
