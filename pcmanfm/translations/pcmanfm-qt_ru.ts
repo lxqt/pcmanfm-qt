@@ -1238,7 +1238,7 @@ are left clicked, even when it is not the default file manager.</source>
         <location filename="../main-win.ui" line="952"/>
         <location filename="../main-win.ui" line="955"/>
         <source>Create Launcher</source>
-        <translation>Создать лаунчер</translation>
+        <translation>Создать ярлык запуска</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="782"/>
@@ -1293,7 +1293,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="813"/>
         <source>Close &amp;other tabs</source>
-        <translation>Закрыть &amp;остальные вкладки</translation>
+        <translation>Закрыть &amp;прочие вкладки</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="779"/>
@@ -1379,7 +1379,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="648"/>
         <source>&amp;Invert Selection</source>
-        <translation>&amp;Инвертировать выделение</translation>
+        <translation>&amp;Обратить выделение</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="660"/>
@@ -2307,7 +2307,7 @@ A value of -1 means that there is no limit for the file size (the default).</sou
     <message>
         <location filename="../preferences.ui" line="715"/>
         <source>No limit</source>
-        <translation>Нет лимита</translation>
+        <translation>Без ограничения</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="853"/>
@@ -2437,7 +2437,7 @@ A value of -1 means that there is no limit for the file size (the default).</sou
     <message>
         <location filename="../preferences.ui" line="395"/>
         <source>Use SI decimal prefixes instead of IEC binary prefixes</source>
-        <translation>Использовать десятичные префиксы СИ вместо двоичных префиксов IEC</translation>
+        <translation>Использовать десятичные приставки СИ вместо двоичных приставок МЭК</translation>
     </message>
 </context>
 <context>

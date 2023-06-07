@@ -569,7 +569,8 @@ QImage DesktopWindow::getWallpaperImage() const {
     return image;
 }
 
-QImage DesktopWindow::loadWallpaperFile(QSize requiredSize) {
+QImage DesktopWindow::loadWallpaperFile(QSize requiredSize, bool checkMTime) {
+   static const QString timeFormat(QLatin1String("yyyy-MM-dd-hh:mm:ss.zzz"));
     // NOTE: for ease of programming, we only use the cache for the primary screen.
     bool useCache = (screenNum_ == -1 || screenNum_ == 0);
     QFile info;
@@ -586,35 +587,45 @@ QImage DesktopWindow::loadWallpaperFile(QSize requiredSize) {
         cacheFileName += QLatin1String("/wallpaper.cache");
 
         // read info file
-        QString origin;
+        QString origin, mtime;
         info.setFileName(cacheFileName + QStringLiteral(".info"));
         if(info.open(QIODevice::ReadOnly)) {
-            // FIXME: we need to compare mtime to see if the cache is out of date
             origin = QString::fromLocal8Bit(info.readLine());
+            if(origin.endsWith(QLatin1Char('\n'))) {
+                origin.chop(1);
+                if(checkMTime) {
+                    mtime = QString::fromLocal8Bit(info.readLine());
+                }
+            }
             info.close();
-            if(!origin.isEmpty()) {
-                // try to see if we can get the size of the cached image.
-                QImageReader reader(cacheFileName);
-                reader.setAutoDetectImageFormat(true);
-                QSize cachedSize = reader.size();
-                qDebug() << "size of cached file" << cachedSize << ", requiredSize:" << requiredSize;
-                if(cachedSize.isValid()) {
-                    if(cachedSize == requiredSize) { // see if the cached wallpaper has the size we want
-                        QImage image = reader.read(); // return the loaded image
-                        qDebug() << "origin" << origin;
-                        if(origin == wallpaperFile_) {
+            if(!origin.isEmpty() && origin == wallpaperFile_) {
+                // if needed, check whether the cache is up-to-date
+                bool isUptodate = true;
+                if(checkMTime) {
+                    isUptodate = (mtime == QFileInfo(wallpaperFile_).lastModified().toString(timeFormat));
+                }
+                if(isUptodate) {
+                    // try to see if we can get the size of the cached image.
+                    QImageReader reader(cacheFileName);
+                    reader.setAutoDetectImageFormat(true);
+                    QSize cachedSize = reader.size();
+                    //qDebug() << "size of cached file" << cachedSize << ", requiredSize:" << requiredSize;
+                    if(cachedSize.isValid()) {
+                        if(cachedSize == requiredSize) { // see if the cached wallpaper has the size we want
+                            QImage image = reader.read(); // return the loaded image
+                            //qDebug() << "origin" << origin;
                             return image;
                         }
                     }
                 }
             }
         }
-        qDebug() << "no cached wallpaper. generate a new one!";
+        //qDebug() << "no cached wallpaper. generate a new one!";
     }
 
     // we don't have a cached scaled image, load the original file
     QImage image = getWallpaperImage();
-    qDebug() << "size of original image" << image.size();
+    //qDebug() << "size of original image" << image.size();
     if(image.isNull() || image.size() == requiredSize) { // if the original size is what we want
         return image;
     }
@@ -624,9 +635,12 @@ QImage DesktopWindow::loadWallpaperFile(QSize requiredSize) {
     // FIXME: should we save the scaled image if its size is larger than the original image?
 
     if(useCache) {
-        // write the path of the original image to the .info file
+        // write the path and modification time of the original image to the .info file
         if(info.open(QIODevice::WriteOnly)) {
-            info.write(wallpaperFile_.toLocal8Bit());
+            QTextStream out(&info);
+            out << wallpaperFile_
+                << QLatin1Char('\n')
+                << QFileInfo(wallpaperFile_).lastModified().toString(timeFormat);
             info.close();
 
             // write the scaled cache image to disk
@@ -639,14 +653,14 @@ QImage DesktopWindow::loadWallpaperFile(QSize requiredSize) {
             }
             scaled.save(cacheFileName, format);
         }
-        qDebug() << "wallpaper cached saved to " << cacheFileName;
+        //qDebug() << "wallpaper cached saved to " << cacheFileName;
         // FIXME: we might delay the write of the cached image?
     }
     return scaled;
 }
 
 // really generate the background pixmap according to current settings and apply it.
-void DesktopWindow::updateWallpaper() {
+void DesktopWindow::updateWallpaper(bool checkMTime) {
     if(wallpaperMode_ != WallpaperNone) {  // use wallpaper
         auto screen = getDesktopScreen();
         if(screen == nullptr) {
@@ -700,7 +714,7 @@ void DesktopWindow::updateWallpaper() {
                 pixmap.setDevicePixelRatio(DPRatio);
             }
             else {
-                image = loadWallpaperFile(pixmapSize);
+                image = loadWallpaperFile(pixmapSize, checkMTime);
                 pixmap = QPixmap::fromImage(image);
                 pixmap.setDevicePixelRatio(DPRatio);
             }
@@ -795,7 +809,7 @@ void DesktopWindow::updateWallpaper() {
                         QSize desiredSize = origSize;
                         Qt::AspectRatioMode mode = (wallpaperMode_ == WallpaperFit ? Qt::KeepAspectRatio : Qt::KeepAspectRatioByExpanding);
                         desiredSize.scale(pixmapSize, mode);
-                        image = loadWallpaperFile(desiredSize); // load the scaled image
+                        image = loadWallpaperFile(desiredSize, checkMTime); // load the scaled image
                     }
                 }
                 if(!image.isNull()) {
@@ -963,7 +977,7 @@ void DesktopWindow::updateFromSettings(Settings& settings, bool changeSlide) {
         wallpaperTimer_ = nullptr;
     }
 
-    updateWallpaper();
+    updateWallpaper(true);
     update();
 
     if(wallpaperTimer_) {

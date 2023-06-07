@@ -72,7 +72,7 @@ public:
     void setWallpaperRandomize(bool randomize);
 
     // void setWallpaperAlpha(qreal alpha);
-    void updateWallpaper();
+    void updateWallpaper(bool checkMTime = false);
     bool pickWallpaper();
     void nextWallpaper();
     void updateFromSettings(Settings& settings, bool changeSlide = true);
@@ -99,7 +99,7 @@ protected:
     void retrieveCustomPos();
     void storeCustomPos();
 
-    QImage loadWallpaperFile(QSize requiredSize);
+    QImage loadWallpaperFile(QSize requiredSize, bool checkMTime);
 
     virtual bool event(QEvent* event) override;
     virtual bool eventFilter(QObject* watched, QEvent* event) override;
