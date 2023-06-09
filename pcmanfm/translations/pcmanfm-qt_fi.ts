@@ -621,7 +621,7 @@ klikattiin, vaikka se ei olisi oletustiedostonhallintaohjelma.</translation>
     <message>
         <location filename="../shortcuts.ui" line="34"/>
         <source>Focus view, clear filter bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Kohdista näkymä, tyhjennä suodatinrivi</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="39"/>
@@ -631,7 +631,7 @@ klikattiin, vaikka se ei olisi oletustiedostonhallintaohjelma.</translation>
     <message>
         <location filename="../shortcuts.ui" line="42"/>
         <source>Focus side-pane</source>
-        <translation type="unfinished"></translation>
+        <translation>Kohdista sivupaneeli</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="47"/>
@@ -642,7 +642,7 @@ klikattiin, vaikka se ei olisi oletustiedostonhallintaohjelma.</translation>
         <location filename="../shortcuts.ui" line="50"/>
         <location filename="../shortcuts.ui" line="58"/>
         <source>Focus path entry</source>
-        <translation type="unfinished"></translation>
+        <translation>Kohdista polkurivi</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="55"/>
@@ -690,7 +690,7 @@ klikattiin, vaikka se ei olisi oletustiedostonhallintaohjelma.</translation>
         <location filename="../shortcuts.ui" line="98"/>
         <location filename="../shortcuts.ui" line="106"/>
         <source>Jump to tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Vaihda välilehteen</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="103"/>
@@ -705,7 +705,7 @@ klikattiin, vaikka se ei olisi oletustiedostonhallintaohjelma.</translation>
     <message>
         <location filename="../shortcuts.ui" line="114"/>
         <source>Go up</source>
-        <translation type="unfinished"></translation>
+        <translation>Polkua ylös</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="119"/>
@@ -768,32 +768,32 @@ klikattiin, vaikka se ei olisi oletustiedostonhallintaohjelma.</translation>
     <message>
         <location filename="../main-win.ui" line="81"/>
         <source>Recent F&amp;iles</source>
-        <translation type="unfinished"></translation>
+        <translation>V&amp;iimeisimmät tiedostot</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="139"/>
         <source>&amp;Toolbars</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Työkalurivit</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="146"/>
         <source>Path &amp;Bar</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Polkurivi</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="153"/>
         <source>&amp;Filtering</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Suodata</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="228"/>
         <source>&amp;Tools</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Työkalut</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="287"/>
         <source>Go &amp;Up</source>
-        <translation type="unfinished"></translation>
+        <translation>Polkua &amp;ylös</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="290"/>
@@ -808,7 +808,7 @@ klikattiin, vaikka se ei olisi oletustiedostonhallintaohjelma.</translation>
     <message>
         <location filename="../main-win.ui" line="302"/>
         <source>&amp;Home</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Koti</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="305"/>
@@ -858,7 +858,7 @@ klikattiin, vaikka se ei olisi oletustiedostonhallintaohjelma.</translation>
     <message>
         <location filename="../main-win.ui" line="367"/>
         <source>Show &amp;Hidden</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Näytä piilotiedostot</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="370"/>
@@ -868,32 +868,32 @@ klikattiin, vaikka se ei olisi oletustiedostonhallintaohjelma.</translation>
     <message>
         <location filename="../main-win.ui" line="379"/>
         <source>&amp;Computer</source>
-        <translation type="unfinished"></translation>
+        <translation>T&amp;ietokone</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="388"/>
         <source>&amp;Trash</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Roskakori</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="393"/>
         <source>&amp;Network</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Verkko</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="402"/>
         <source>&amp;Desktop</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Työpöytä</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="411"/>
         <source>&amp;Add to Bookmarks</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Lisää kirjanmerkkeihin</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="416"/>
         <source>&amp;Applications</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Sovellukset</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="421"/>
@@ -903,22 +903,22 @@ klikattiin, vaikka se ei olisi oletustiedostonhallintaohjelma.</translation>
     <message>
         <location filename="../main-win.ui" line="429"/>
         <source>&amp;Icon View</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Kuvakkeet</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="437"/>
         <source>&amp;Compact View</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Tiivis</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="445"/>
         <source>&amp;Detailed List</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Yksityiskohtainen</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="453"/>
         <source>&amp;Thumbnail View</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Pikkukuvat</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="462"/>
@@ -953,7 +953,7 @@ klikattiin, vaikka se ei olisi oletustiedostonhallintaohjelma.</translation>
     <message>
         <location filename="../main-win.ui" line="494"/>
         <source>Select &amp;All</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Valitse kaikki</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="497"/>
@@ -963,7 +963,7 @@ klikattiin, vaikka se ei olisi oletustiedostonhallintaohjelma.</translation>
     <message>
         <location filename="../main-win.ui" line="502"/>
         <source>De&amp;select All</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Epävalitse kaikki</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="505"/>
@@ -973,62 +973,62 @@ klikattiin, vaikka se ei olisi oletustiedostonhallintaohjelma.</translation>
     <message>
         <location filename="../main-win.ui" line="510"/>
         <source>Pr&amp;eferences</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Asetukset</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="518"/>
         <source>&amp;Ascending</source>
-        <translation type="unfinished"></translation>
+        <translation>Nouseva (&amp;A-Ö)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="526"/>
         <source>&amp;Descending</source>
-        <translation type="unfinished"></translation>
+        <translation>Laskeva (&amp;Ö-A)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="534"/>
         <source>&amp;By File Name</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Nimi</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="542"/>
         <source>By &amp;Modification Time</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Muokkaus</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="550"/>
         <source>By C&amp;reation Time</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Luotu</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="558"/>
         <source>By Deletio&amp;n Time</source>
-        <translation type="unfinished"></translation>
+        <translation>P&amp;oistettu</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="566"/>
         <source>By File &amp;Type</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Tyyppi</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="574"/>
         <source>By &amp;Owner</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Omistaja</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="582"/>
         <source>By &amp;Group</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Ryhmä</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="590"/>
         <source>&amp;Folder First</source>
-        <translation type="unfinished"></translation>
+        <translation>Kan&amp;siot ensin</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="598"/>
         <source>&amp;Hidden Last</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Piilotiedostot viimeisenä</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="879"/>
@@ -1048,7 +1048,7 @@ klikattiin, vaikka se ei olisi oletustiedostonhallintaohjelma.</translation>
     <message>
         <location filename="../main-win.ui" line="973"/>
         <source>&amp;Remove Settings of Nonexistent Folders</source>
-        <translation>&amp;Poista poistettujen kansioiden asetukset</translation>
+        <translation>&amp;Unohda poistettujen kansioiden asetukset</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="981"/>
@@ -1063,17 +1063,17 @@ klikattiin, vaikka se ei olisi oletustiedostonhallintaohjelma.</translation>
     <message>
         <location filename="../main-win.ui" line="700"/>
         <source>&amp;Case Sensitive</source>
-        <translation type="unfinished"></translation>
+        <translation>K&amp;irjainkokoerotus</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="708"/>
         <source>By File &amp;Size</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Koko</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="713"/>
         <source>&amp;Close Window</source>
-        <translation type="unfinished"></translation>
+        <translation>Sulje &amp;ikkuna</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="716"/>
@@ -1083,7 +1083,7 @@ klikattiin, vaikka se ei olisi oletustiedostonhallintaohjelma.</translation>
     <message>
         <location filename="../main-win.ui" line="734"/>
         <source>Open Tab in &amp;Root Instance</source>
-        <translation>Avaa välilehti &amp;pääkäyttäjäinstanssissa</translation>
+        <translation>Avaa välilehti pääkäyttäjä&amp;instanssissa</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="748"/>
@@ -1133,7 +1133,7 @@ klikattiin, vaikka se ei olisi oletustiedostonhallintaohjelma.</translation>
     <message>
         <location filename="../main-win.ui" line="909"/>
         <source>&amp;Copy Full Path</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Kopioi koko polku</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="912"/>
@@ -1143,134 +1143,134 @@ klikattiin, vaikka se ei olisi oletustiedostonhallintaohjelma.</translation>
     <message>
         <location filename="../main-win.ui" line="923"/>
         <source>Show Thumb&amp;nails</source>
-        <translation type="unfinished"></translation>
+        <translation>N&amp;äytä pikkukuvat</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="926"/>
         <source>Show Thumbnails</source>
-        <translation type="unfinished"></translation>
+        <translation>Näytä pikkukuvat</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="934"/>
         <source>S&amp;ide Pane</source>
-        <translation type="unfinished"></translation>
+        <translation>S&amp;ivupaneeli</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="937"/>
         <source>F9</source>
-        <translation type="unfinished"></translation>
+        <translation>F9</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="942"/>
         <source>Hidden &amp;Shortcuts</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Piilotetut pikanäppäimet</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="947"/>
         <source>Open Tab in &amp;Admin Mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Avaa välilehti &amp;ylläpitotilassa</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="952"/>
         <location filename="../main-win.ui" line="955"/>
         <source>Create Launcher</source>
-        <translation type="unfinished"></translation>
+        <translation>Luo käynnistin</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="782"/>
         <source>Ctrl+B</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+B</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="787"/>
         <source>&amp;Clear All Filters</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Tyhjennä kaikki suodattimet</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="790"/>
         <source>Ctrl+Shift+K</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Vaihto+K</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="799"/>
         <source>Close &amp;previous tabs</source>
-        <translation type="unfinished"></translation>
+        <translation>Sulje välilehdet &amp;vasemmalle</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="808"/>
         <source>Close &amp;next tabs</source>
-        <translation type="unfinished"></translation>
+        <translation>Sulje välilehdet &amp;oikealle</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="852"/>
         <source>Connect to &amp;Server</source>
-        <translation type="unfinished"></translation>
+        <translation>Y&amp;hdistä palvelimeen</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="860"/>
         <source>&amp;Location</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Sijainti</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="868"/>
         <source>&amp;Path Buttons</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Polkupainikkeet</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="873"/>
         <source>&amp;Bulk Rename</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Massanimeä uudelleen</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="876"/>
         <source>Bulk Rename</source>
-        <translation type="unfinished"></translation>
+        <translation>Massanimeä uudelleen</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="813"/>
         <source>Close &amp;other tabs</source>
-        <translation type="unfinished"></translation>
+        <translation>Su&amp;lje muut välilehdet</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="779"/>
         <source>Permanent &amp;filter bar</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Pysyvä suodatinrivi</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="821"/>
         <source>&amp;Menu bar</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Valikkorivi</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="824"/>
         <source>Menu bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Valikkorivi</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="827"/>
         <source>Ctrl+M</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+M</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="836"/>
         <location filename="../main-win.ui" line="839"/>
         <source>Menu</source>
-        <translation type="unfinished"></translation>
+        <translation>Valikko</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="607"/>
         <source>New &amp;Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Uusi &amp;välilehti</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="160"/>
         <source>&amp;Customized View Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>M&amp;uokatut näkymäasetukset</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="610"/>
         <source>New Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Uusi välilehti</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="613"/>
@@ -1280,37 +1280,37 @@ klikattiin, vaikka se ei olisi oletustiedostonhallintaohjelma.</translation>
     <message>
         <location filename="../main-win.ui" line="622"/>
         <source>Go &amp;Back</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Edellinen</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="625"/>
         <source>Go Back</source>
-        <translation type="unfinished"></translation>
+        <translation>Edellinen</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="628"/>
         <source>Alt+Left</source>
-        <translation type="unfinished"></translation>
+        <translation>Alt+Vasen nuoli</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="637"/>
         <source>Go &amp;Forward</source>
-        <translation type="unfinished"></translation>
+        <translation>Se&amp;uraava</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="640"/>
         <source>Go Forward</source>
-        <translation type="unfinished"></translation>
+        <translation>Seuraava</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="643"/>
         <source>Alt+Right</source>
-        <translation type="unfinished"></translation>
+        <translation>Alt+Oikea nuoli</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="648"/>
         <source>&amp;Invert Selection</source>
-        <translation type="unfinished"></translation>
+        <translation>Kään&amp;teinen valinta</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="660"/>
@@ -1335,17 +1335,17 @@ klikattiin, vaikka se ei olisi oletustiedostonhallintaohjelma.</translation>
     <message>
         <location filename="../main-win.ui" line="676"/>
         <source>C&amp;lose Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>S&amp;ulje välilehti</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="679"/>
         <source>Ctrl+W</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+W</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="684"/>
         <source>File &amp;Properties</source>
-        <translation type="unfinished"></translation>
+        <translation>Tied&amp;oston ominaisuudet</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="687"/>
@@ -1355,47 +1355,47 @@ klikattiin, vaikka se ei olisi oletustiedostonhallintaohjelma.</translation>
     <message>
         <location filename="../main-win.ui" line="692"/>
         <source>&amp;Folder Properties</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Kansion ominaisuudet</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="721"/>
         <source>Edit Bookmarks</source>
-        <translation type="unfinished"></translation>
+        <translation>Muokkaa kirjanmerkkejä</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="726"/>
         <source>Open &amp;Terminal</source>
-        <translation type="unfinished"></translation>
+        <translation>Avaa &amp;pääte</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="729"/>
         <source>F4</source>
-        <translation type="unfinished"></translation>
+        <translation>F4</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="739"/>
         <source>&amp;Edit Bookmarks</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Muokkaa kirjanmerkkejä</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="751"/>
         <source>Ctrl+Shift+N</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+N</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="763"/>
         <source>Ctrl+Alt+N</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Alt+N</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="768"/>
         <source>&amp;Find Files</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Etsi tiedostoja</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="771"/>
         <source>F3</source>
-        <translation type="unfinished"></translation>
+        <translation>F3</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="70"/>
@@ -1405,7 +1405,7 @@ klikattiin, vaikka se ei olisi oletustiedostonhallintaohjelma.</translation>
     <message>
         <location filename="../main-win.ui" line="74"/>
         <source>C&amp;reate New</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Luo uusi</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="98"/>
@@ -1421,7 +1421,7 @@ klikattiin, vaikka se ei olisi oletustiedostonhallintaohjelma.</translation>
     <message>
         <location filename="../main-win.ui" line="109"/>
         <source>&amp;Sorting</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Lajitteluperuste</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="185"/>
@@ -1431,12 +1431,12 @@ klikattiin, vaikka se ei olisi oletustiedostonhallintaohjelma.</translation>
     <message>
         <location filename="../main-win.ui" line="204"/>
         <source>&amp;Bookmarks</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Kirjanmerkit</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="211"/>
         <source>&amp;Go</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Siirry</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="253"/>
@@ -1454,7 +1454,7 @@ klikattiin, vaikka se ei olisi oletustiedostonhallintaohjelma.</translation>
     <message>
         <location filename="../application.cpp" line="186"/>
         <source>PROFILE</source>
-        <translation type="unfinished"></translation>
+        <translation>PROFIILI</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="189"/>
@@ -1464,7 +1464,7 @@ klikattiin, vaikka se ei olisi oletustiedostonhallintaohjelma.</translation>
     <message>
         <location filename="../application.cpp" line="192"/>
         <source>Quit PCManFM-Qt</source>
-        <translation type="unfinished"></translation>
+        <translation>Lopeta PCManFM-Qt</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="195"/>
@@ -1485,12 +1485,12 @@ klikattiin, vaikka se ei olisi oletustiedostonhallintaohjelma.</translation>
         <location filename="../application.cpp" line="201"/>
         <location filename="../application.cpp" line="216"/>
         <source>NAME</source>
-        <translation type="unfinished"></translation>
+        <translation>NIMI</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="204"/>
         <source>Open new window</source>
-        <translation type="unfinished"></translation>
+        <translation>Avaa uusi ikkuna</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="207"/>
@@ -1500,12 +1500,12 @@ klikattiin, vaikka se ei olisi oletustiedostonhallintaohjelma.</translation>
     <message>
         <location filename="../application.cpp" line="210"/>
         <source>Set desktop wallpaper from image FILE</source>
-        <translation type="unfinished"></translation>
+        <translation>Taustakuvana käytettävä TIEDOSTO</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="210"/>
         <source>FILE</source>
-        <translation type="unfinished"></translation>
+        <translation>TIEDOSTO</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="213"/>
@@ -1525,23 +1525,23 @@ klikattiin, vaikka se ei olisi oletustiedostonhallintaohjelma.</translation>
     <message>
         <location filename="../application.cpp" line="219"/>
         <source>Files or directories to open</source>
-        <translation type="unfinished"></translation>
+        <translation>Avattavat tiedostot tai hakemistot</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="219"/>
         <source>[FILE1, FILE2,...]</source>
-        <translation type="unfinished"></translation>
+        <translation>[TIEDOSTO1, TIEDOSTO2,...]</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="648"/>
         <location filename="../application.cpp" line="653"/>
         <source>Error</source>
-        <translation type="unfinished"></translation>
+        <translation>Virhe</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="653"/>
         <source>Terminal emulator is not set.</source>
-        <translation type="unfinished"></translation>
+        <translation>Pääte-emulaattoria ei ole määritetty.</translation>
     </message>
 </context>
 <context>
@@ -1549,7 +1549,7 @@ klikattiin, vaikka se ei olisi oletustiedostonhallintaohjelma.</translation>
     <message>
         <location filename="../autorundialog.cpp" line="44"/>
         <source>Open in file manager</source>
-        <translation type="unfinished"></translation>
+        <translation>Avaa tiedostonhallinnassa</translation>
     </message>
     <message>
         <location filename="../autorundialog.cpp" line="138"/>
@@ -1562,17 +1562,17 @@ klikattiin, vaikka se ei olisi oletustiedostonhallintaohjelma.</translation>
     <message>
         <location filename="../connectserverdialog.cpp" line="9"/>
         <source>SSH</source>
-        <translation type="unfinished"></translation>
+        <translation>SSH</translation>
     </message>
     <message>
         <location filename="../connectserverdialog.cpp" line="10"/>
         <source>FTP</source>
-        <translation type="unfinished"></translation>
+        <translation>FTP</translation>
     </message>
     <message>
         <location filename="../connectserverdialog.cpp" line="11"/>
         <source>WebDav</source>
-        <translation type="unfinished"></translation>
+        <translation>WebDAV</translation>
     </message>
     <message>
         <location filename="../connectserverdialog.cpp" line="12"/>
@@ -1582,12 +1582,12 @@ klikattiin, vaikka se ei olisi oletustiedostonhallintaohjelma.</translation>
     <message>
         <location filename="../connectserverdialog.cpp" line="13"/>
         <source>HTTP</source>
-        <translation type="unfinished"></translation>
+        <translation>HTTP</translation>
     </message>
     <message>
         <location filename="../connectserverdialog.cpp" line="14"/>
         <source>HTTPS</source>
-        <translation type="unfinished"></translation>
+        <translation>HTTPS</translation>
     </message>
 </context>
 <context>
@@ -1595,7 +1595,7 @@ klikattiin, vaikka se ei olisi oletustiedostonhallintaohjelma.</translation>
     <message>
         <location filename="../desktopentrydialog.cpp" line="35"/>
         <source>Command:</source>
-        <translation type="unfinished"></translation>
+        <translation>Komento:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="36"/>
@@ -1605,7 +1605,7 @@ klikattiin, vaikka se ei olisi oletustiedostonhallintaohjelma.</translation>
     <message>
         <location filename="../desktopentrydialog.cpp" line="39"/>
         <source>URL:</source>
-        <translation type="unfinished"></translation>
+        <translation>URL:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="40"/>
@@ -1615,22 +1615,22 @@ klikattiin, vaikka se ei olisi oletustiedostonhallintaohjelma.</translation>
     <message>
         <location filename="../desktopentrydialog.cpp" line="67"/>
         <source>Select an icon</source>
-        <translation type="unfinished"></translation>
+        <translation>Valitse kuvake</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="69"/>
         <source>Images (*.png *.xpm *.svg *.svgz )</source>
-        <translation type="unfinished"></translation>
+        <translation>Kuvat (*.png *.xpm *.svg *.svgz )</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="91"/>
         <source>Select an executable file</source>
-        <translation type="unfinished"></translation>
+        <translation>Valitse suoritettava tiedosto</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="99"/>
         <source>Select a file</source>
-        <translation type="unfinished"></translation>
+        <translation>Valitse tiedosto</translation>
     </message>
 </context>
 <context>
@@ -1668,17 +1668,17 @@ klikattiin, vaikka se ei olisi oletustiedostonhallintaohjelma.</translation>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="264"/>
         <source>Select Wallpaper</source>
-        <translation type="unfinished"></translation>
+        <translation>Valitse taustakuva</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="268"/>
         <source>Image Files</source>
-        <translation type="unfinished"></translation>
+        <translation>Kuvatiedostot</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="310"/>
         <source>Select Wallpaper Folder</source>
-        <translation type="unfinished"></translation>
+        <translation>Valitse taustakuvan kansio</translation>
     </message>
 </context>
 <context>
@@ -1686,34 +1686,35 @@ klikattiin, vaikka se ei olisi oletustiedostonhallintaohjelma.</translation>
     <message>
         <location filename="../desktopwindow.cpp" line="303"/>
         <source>Trash (One item)</source>
-        <translation type="unfinished"></translation>
+        <translation>Roskakori (yksi kohde)</translation>
     </message>
     <message numerus="yes">
         <location filename="../desktopwindow.cpp" line="306"/>
         <source>Trash (%Ln items)</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>Roskakori (%Ln kohde)</numerusform>
+            <numerusform>Roskakori (%Ln kohdetta)</numerusform>
         </translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="310"/>
         <source>Trash (Empty)</source>
-        <translation type="unfinished"></translation>
+        <translation>Roskakori (tyhjä)</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="345"/>
         <source>Computer</source>
-        <translation type="unfinished"></translation>
+        <translation>Tietokone</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="359"/>
         <source>Network</source>
-        <translation type="unfinished"></translation>
+        <translation>Verkko</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="997"/>
         <source>Open</source>
-        <translation type="unfinished"></translation>
+        <translation>Avaa</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="1003"/>
@@ -1724,22 +1725,22 @@ klikattiin, vaikka se ei olisi oletustiedostonhallintaohjelma.</translation>
     <message>
         <location filename="../desktopwindow.cpp" line="1011"/>
         <source>Empty Trash</source>
-        <translation type="unfinished"></translation>
+        <translation>Tyhjennä roskakori</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="1070"/>
         <source>Hide Desktop Items</source>
-        <translation type="unfinished"></translation>
+        <translation>Piilota työpöytäkuvakkeet</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="1076"/>
         <source>Create Launcher</source>
-        <translation type="unfinished"></translation>
+        <translation>Luo käynnistin</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="1079"/>
         <source>Desktop Preferences</source>
-        <translation type="unfinished"></translation>
+        <translation>Työpöydän asetukset</translation>
     </message>
 </context>
 <context>
@@ -1747,7 +1748,7 @@ klikattiin, vaikka se ei olisi oletustiedostonhallintaohjelma.</translation>
     <message>
         <location filename="../tabpage.cpp" line="95"/>
         <source>Filter:</source>
-        <translation type="unfinished"></translation>
+        <translation>Suodatin:</translation>
     </message>
 </context>
 <context>
@@ -1755,7 +1756,7 @@ klikattiin, vaikka se ei olisi oletustiedostonhallintaohjelma.</translation>
     <message>
         <location filename="../tabpage.cpp" line="65"/>
         <source>Clear text (Ctrl+K or Esc)</source>
-        <translation type="unfinished"></translation>
+        <translation>Tyhjennä teksti (Ctrl+K tai Esc)</translation>
     </message>
 </context>
 <context>
@@ -1768,7 +1769,7 @@ klikattiin, vaikka se ei olisi oletustiedostonhallintaohjelma.</translation>
     <message>
         <location filename="../mainwindow.cpp" line="742"/>
         <source>Hide menu bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Piilota valikkorivi</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="743"/>
@@ -1778,7 +1779,7 @@ klikattiin, vaikka se ei olisi oletustiedostonhallintaohjelma.</translation>
     <message>
         <location filename="../mainwindow.cpp" line="1190"/>
         <source>Version: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Versio: %1</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="174"/>
@@ -1795,13 +1796,13 @@ klikattiin, vaikka se ei olisi oletustiedostonhallintaohjelma.</translation>
     <message>
         <location filename="../mainwindow.cpp" line="1997"/>
         <source>Customized View Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Muokatut näkymäasetukset</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="2268"/>
         <location filename="../mainwindow.cpp" line="2276"/>
         <source>Error</source>
-        <translation type="unfinished"></translation>
+        <translation>Virhe</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="2276"/>
