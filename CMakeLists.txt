@@ -70,5 +70,10 @@ if(BUILD_DOCUMENTATION)
     install(DIRECTORY "${CMAKE_CURRENT_BINARY_DIR}/docs" DESTINATION "${CMAKE_INSTALL_DOCDIR}")
 endif()
 
+install(
+    FILES icons/pcmanfm-qt.svg
+    DESTINATION "${CMAKE_INSTALL_PREFIX}/share/icons/hicolor/scalable/apps"
+)
+
 add_subdirectory(autostart)
 add_subdirectory(config)
