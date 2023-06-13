@@ -493,7 +493,7 @@ klikattiin, vaikka se ei olisi oletustiedostonhallintaohjelma.</translation>
     <message>
         <location filename="../desktop-preferences.ui" line="314"/>
         <source>Make all items stick to their positions</source>
-        <translation type="unfinished"></translation>
+        <translation>Lukitse kuvakkeet paikoilleen</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="373"/>
@@ -563,7 +563,7 @@ klikattiin, vaikka se ei olisi oletustiedostonhallintaohjelma.</translation>
     <message>
         <location filename="../desktop-preferences.ui" line="587"/>
         <source>Randomize the slide show</source>
-        <translation type="unfinished"></translation>
+        <translation>Satunnaista diaesitys</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="620"/>
@@ -674,12 +674,12 @@ klikattiin, vaikka se ei olisi oletustiedostonhallintaohjelma.</translation>
     <message>
         <location filename="../shortcuts.ui" line="79"/>
         <source>Ctrl+PageDown</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+PageDown</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="87"/>
         <source>Ctrl+PageUp</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+PageUp</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="95"/>
@@ -730,17 +730,17 @@ klikattiin, vaikka se ei olisi oletustiedostonhallintaohjelma.</translation>
     <message>
         <location filename="../shortcuts.ui" line="135"/>
         <source>Drop+Shift</source>
-        <translation type="unfinished"></translation>
+        <translation>Vaihto+pudota</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="143"/>
         <source>Drop+Ctrl</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+pudota</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="151"/>
         <source>Drop+Shift+Ctrl</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Vaihto+pudota</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="138"/>
@@ -838,7 +838,7 @@ klikattiin, vaikka se ei olisi oletustiedostonhallintaohjelma.</translation>
     <message>
         <location filename="../main-win.ui" line="344"/>
         <source>&amp;About</source>
-        <translation>&amp;Tietoa</translation>
+        <translation>&amp;Tietoja</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="353"/>
@@ -1380,7 +1380,7 @@ klikattiin, vaikka se ei olisi oletustiedostonhallintaohjelma.</translation>
     <message>
         <location filename="../main-win.ui" line="751"/>
         <source>Ctrl+Shift+N</source>
-        <translation>Ctrl+Shift+N</translation>
+        <translation>Ctrl+Vaihto+N</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="763"/>
@@ -1449,7 +1449,7 @@ klikattiin, vaikka se ei olisi oletustiedostonhallintaohjelma.</translation>
     <message>
         <location filename="../application.cpp" line="186"/>
         <source>Name of configuration profile</source>
-        <translation type="unfinished"></translation>
+        <translation>Asetusprofiilin nimi</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="186"/>
@@ -1479,7 +1479,7 @@ klikattiin, vaikka se ei olisi oletustiedostonhallintaohjelma.</translation>
     <message>
         <location filename="../application.cpp" line="201"/>
         <source>Open desktop preference dialog on the page with the specified name</source>
-        <translation type="unfinished"></translation>
+        <translation>Avaa työpöydän asetukset annetulla sivulla</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="201"/>
@@ -1520,7 +1520,7 @@ klikattiin, vaikka se ei olisi oletustiedostonhallintaohjelma.</translation>
     <message>
         <location filename="../application.cpp" line="216"/>
         <source>Open Preferences dialog on the page with the specified name</source>
-        <translation type="unfinished"></translation>
+        <translation>Avaa asetukset annetulla sivulla</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="219"/>
@@ -1554,7 +1554,7 @@ klikattiin, vaikka se ei olisi oletustiedostonhallintaohjelma.</translation>
     <message>
         <location filename="../autorundialog.cpp" line="138"/>
         <source>Removable Disk</source>
-        <translation type="unfinished"></translation>
+        <translation>Irrotettava tallennuslaite</translation>
     </message>
 </context>
 <context>
@@ -1600,7 +1600,7 @@ klikattiin, vaikka se ei olisi oletustiedostonhallintaohjelma.</translation>
     <message>
         <location filename="../desktopentrydialog.cpp" line="36"/>
         <source>The command to execute.</source>
-        <translation type="unfinished"></translation>
+        <translation>Suoritettava komento.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="39"/>
@@ -1774,7 +1774,7 @@ klikattiin, vaikka se ei olisi oletustiedostonhallintaohjelma.</translation>
     <message>
         <location filename="../mainwindow.cpp" line="743"/>
         <source>This will hide the menu bar completely, use Ctrl+M to show it again.</source>
-        <translation type="unfinished"></translation>
+        <translation>Tämä piilottaa valikkorivin kokonaan, palauta painamalla Ctrl+M.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="1190"/>
@@ -1785,13 +1785,13 @@ klikattiin, vaikka se ei olisi oletustiedostonhallintaohjelma.</translation>
         <location filename="../mainwindow.cpp" line="174"/>
         <location filename="../mainwindow.cpp" line="2161"/>
         <source>&amp;Move to Trash</source>
-        <translation type="unfinished"></translation>
+        <translation>Siirrä &amp;roskakoriin</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="174"/>
         <location filename="../mainwindow.cpp" line="2161"/>
         <source>&amp;Delete</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Poista</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="1997"/>
