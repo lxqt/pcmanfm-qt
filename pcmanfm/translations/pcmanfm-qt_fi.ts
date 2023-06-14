@@ -1510,12 +1510,12 @@ klikattiin, vaikka se ei olisi oletustiedostonhallintaohjelma.</translation>
     <message>
         <location filename="../application.cpp" line="213"/>
         <source>MODE</source>
-        <translation type="unfinished"></translation>
+        <translation>TILA</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="213"/>
         <source>Set mode of desktop wallpaper. MODE=(%1)</source>
-        <translation type="unfinished"></translation>
+        <translation>Määrittää työpöydän taustakuvan tilan. TILA=(%1)</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="216"/>
@@ -1577,7 +1577,7 @@ klikattiin, vaikka se ei olisi oletustiedostonhallintaohjelma.</translation>
     <message>
         <location filename="../connectserverdialog.cpp" line="12"/>
         <source>Secure WebDav</source>
-        <translation type="unfinished"></translation>
+        <translation>Turvallinen WebDAV</translation>
     </message>
     <message>
         <location filename="../connectserverdialog.cpp" line="13"/>
@@ -1610,7 +1610,7 @@ klikattiin, vaikka se ei olisi oletustiedostonhallintaohjelma.</translation>
     <message>
         <location filename="../desktopentrydialog.cpp" line="40"/>
         <source>The URL to access.</source>
-        <translation type="unfinished"></translation>
+        <translation>Yhdistettävä URL-osoite.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="67"/>
@@ -1638,7 +1638,7 @@ klikattiin, vaikka se ei olisi oletustiedostonhallintaohjelma.</translation>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="52"/>
         <source>Fill with background color only</source>
-        <translation type="unfinished"></translation>
+        <translation>Täytä taustavärillä</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="53"/>
