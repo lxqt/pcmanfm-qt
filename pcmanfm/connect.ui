@@ -18,7 +18,7 @@
   </property>
   <layout class="QGridLayout" name="gridLayout">
    <item row="5" column="0" colspan="4">
-    <widget class="QRadioButton" name="ananymousLogin">
+    <widget class="QRadioButton" name="anonymousLogin">
      <property name="text">
       <string>Anonymous &amp;login</string>
      </property>
@@ -119,6 +119,15 @@
    </item>
   </layout>
  </widget>
+ <tabstops>
+  <tabstop>serverType</tabstop>
+  <tabstop>host</tabstop>
+  <tabstop>port</tabstop>
+  <tabstop>path</tabstop>
+  <tabstop>anonymousLogin</tabstop>
+  <tabstop>loginAsUser</tabstop>
+  <tabstop>userName</tabstop>
+ </tabstops>
  <resources/>
  <connections>
   <connection>
