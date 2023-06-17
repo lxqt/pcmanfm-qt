@@ -918,7 +918,7 @@ klikattiin, vaikka se ei olisi oletustiedostonhallintaohjelma.</translation>
     <message>
         <location filename="../main-win.ui" line="453"/>
         <source>&amp;Thumbnail View</source>
-        <translation>&amp;Pikkukuvat</translation>
+        <translation>&amp;Pienoiskuvat</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="462"/>
@@ -1143,12 +1143,12 @@ klikattiin, vaikka se ei olisi oletustiedostonhallintaohjelma.</translation>
     <message>
         <location filename="../main-win.ui" line="923"/>
         <source>Show Thumb&amp;nails</source>
-        <translation>N&amp;äytä pikkukuvat</translation>
+        <translation>N&amp;äytä pienoiskuvat</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="926"/>
         <source>Show Thumbnails</source>
-        <translation>Näytä pikkukuvat</translation>
+        <translation>Näytä pienoiskuvat</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="934"/>
@@ -1720,7 +1720,7 @@ klikattiin, vaikka se ei olisi oletustiedostonhallintaohjelma.</translation>
         <location filename="../desktopwindow.cpp" line="1003"/>
         <location filename="../desktopwindow.cpp" line="1043"/>
         <source>Stic&amp;k to Current Position</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Lukitse paikalleen</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="1011"/>
@@ -1807,18 +1807,19 @@ klikattiin, vaikka se ei olisi oletustiedostonhallintaohjelma.</translation>
     <message>
         <location filename="../mainwindow.cpp" line="2276"/>
         <source>Switch user command is not set.</source>
-        <translation type="unfinished"></translation>
+        <translation>Käyttäjän vaihtamiskomentoa ei ole määritetty.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="2378"/>
         <source>Cleaning Folder Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Kansioasetuksien puhdistus</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="2379"/>
         <source>Do you want to remove settings of nonexistent folders?
 They might be useful if those folders are created again.</source>
-        <translation type="unfinished"></translation>
+        <translation>Haluatko varmasti unohtaa poistettujen kansioiden asetukset?
+Niistä voi olla hyötyä, jos kyseiset kansiot tulevat takaisin.</translation>
     </message>
 </context>
 <context>
@@ -1826,22 +1827,22 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferencesdialog.cpp" line="199"/>
         <source>Icon View</source>
-        <translation type="unfinished"></translation>
+        <translation>Kuvakkeet</translation>
     </message>
     <message>
         <location filename="../preferencesdialog.cpp" line="200"/>
         <source>Compact View</source>
-        <translation type="unfinished"></translation>
+        <translation>Tiivis</translation>
     </message>
     <message>
         <location filename="../preferencesdialog.cpp" line="201"/>
         <source>Thumbnail View</source>
-        <translation type="unfinished"></translation>
+        <translation>Pienoiskuvat</translation>
     </message>
     <message>
         <location filename="../preferencesdialog.cpp" line="202"/>
         <source>Detailed List View</source>
-        <translation type="unfinished"></translation>
+        <translation>Yksityiskohtainen</translation>
     </message>
 </context>
 <context>
@@ -1849,55 +1850,57 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../tabpage.cpp" line="443"/>
         <source>Search Results</source>
-        <translation type="unfinished"></translation>
+        <translation>Hakutulokset</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="446"/>
         <source>Applications</source>
-        <translation type="unfinished"></translation>
+        <translation>Sovellukset</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="450"/>
         <source>Computer</source>
-        <translation type="unfinished"></translation>
+        <translation>Tietokone</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="453"/>
         <source>Network</source>
-        <translation type="unfinished"></translation>
+        <translation>Verkko</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="456"/>
         <source>Trash</source>
-        <translation type="unfinished"></translation>
+        <translation>Roskakori</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="462"/>
         <source>Desktop</source>
-        <translation type="unfinished"></translation>
+        <translation>Työpöytä</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="553"/>
         <source>Error</source>
-        <translation type="unfinished"></translation>
+        <translation>Virhe</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="562"/>
         <source>Free space: %1 (Total: %2)</source>
-        <translation type="unfinished"></translation>
+        <translation>Vapaa tila: %1 (Yhteensä: %2)</translation>
     </message>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="579"/>
         <source>%n item(s)</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>%n kohde</numerusform>
+            <numerusform>%n kohdetta</numerusform>
         </translation>
     </message>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="581"/>
         <source> (%n hidden)</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
+        <translation>
+            <numerusform> (%n piilotettua)</numerusform>
+            <numerusform> (%n piilotettua)</numerusform>
         </translation>
     </message>
     <message>
@@ -1905,13 +1908,14 @@ They might be useful if those folders are created again.</source>
         <location filename="../tabpage.cpp" line="789"/>
         <location filename="../tabpage.cpp" line="803"/>
         <source>Link to</source>
-        <translation type="unfinished"></translation>
+        <translation>Linkki kohteeseen</translation>
     </message>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="815"/>
         <source>%n item(s) selected</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>%n kohde valittu</numerusform>
+            <numerusform>%n kohdetta valittu</numerusform>
         </translation>
     </message>
 </context>
@@ -1920,24 +1924,25 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../view.cpp" line="59"/>
         <source>Many files</source>
-        <translation type="unfinished"></translation>
+        <translation>Useita tiedostoja</translation>
     </message>
     <message numerus="yes">
         <location filename="../view.cpp" line="60"/>
         <source>Do you want to open these %1 files?</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>Haluatko varmasti avata nämä %1 tiedostoa?</numerusform>
+            <numerusform>Haluatko varmasti avata nämä %1 tiedostoa?</numerusform>
         </translation>
     </message>
     <message>
         <location filename="../view.cpp" line="122"/>
         <source>Open in New T&amp;ab</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Avaa uuteen välilehteen</translation>
     </message>
     <message>
         <location filename="../view.cpp" line="126"/>
         <source>Open in New Win&amp;dow</source>
-        <translation type="unfinished"></translation>
+        <translation>Avaa uuteen &amp;ikkunaan</translation>
     </message>
     <message>
         <location filename="../view.cpp" line="134"/>
@@ -2027,57 +2032,57 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferences.ui" line="566"/>
         <source>Show &apos;Close&apos; buttons on tabs	</source>
-        <translation type="unfinished"></translation>
+        <translation>Näytä sulje-painike välilehdissä	</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="580"/>
         <source>Remember the size of the last closed window</source>
-        <translation type="unfinished"></translation>
+        <translation>Muista viimeksi suljetun ikkunan koko</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="587"/>
         <source>Default width of new windows:</source>
-        <translation type="unfinished"></translation>
+        <translation>Oletusleveys uusille ikkunoille:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="601"/>
         <source>Default height of new windows:</source>
-        <translation type="unfinished"></translation>
+        <translation>Oletuskorkeus uusille ikkunoille:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="81"/>
         <source>Browsing</source>
-        <translation type="unfinished"></translation>
+        <translation>Selailu</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="93"/>
         <source>Open files with single click</source>
-        <translation type="unfinished"></translation>
+        <translation>Avaa tiedostot klikkaamalla</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="113"/>
         <source>Default view mode:</source>
-        <translation type="unfinished"></translation>
+        <translation>Oletusnäkymä:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="129"/>
         <source> sec</source>
-        <translation type="unfinished"></translation>
+        <translation> sek.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="175"/>
         <source>File Operations</source>
-        <translation type="unfinished"></translation>
+        <translation>Tiedostotoimenpiteet</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="181"/>
         <source>Confirm before deleting files</source>
-        <translation type="unfinished"></translation>
+        <translation>Kysy tiedostoja poistettaessa</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="188"/>
         <source>Move deleted files to &quot;trash bin&quot; instead of erasing from disk.</source>
-        <translation type="unfinished"></translation>
+        <translation>Siirrä roskakoriin poistamiseen sijaan.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="651"/>
