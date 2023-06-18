@@ -1001,16 +1001,44 @@ A value of -1 means that there is no limit for the file size (the default).</str
  </widget>
  <tabstops>
   <tabstop>listWidget</tabstop>
-  <tabstop>alwaysShowTabs</tabstop>
-  <tabstop>showTabClose</tabstop>
-  <tabstop>rememberWindowSize</tabstop>
-  <tabstop>fixedWindowWidth</tabstop>
-  <tabstop>fixedWindowHeight</tabstop>
   <tabstop>singleClick</tabstop>
   <tabstop>autoSelectionDelay</tabstop>
+  <tabstop>ctrlRightClick</tabstop>
+  <tabstop>bookmarkOpenMethod</tabstop>
   <tabstop>viewMode</tabstop>
   <tabstop>configmDelete</tabstop>
   <tabstop>useTrash</tabstop>
+  <tabstop>noUsbTrash</tabstop>
+  <tabstop>confirmTrash</tabstop>
+  <tabstop>quickExec</tabstop>
+  <tabstop>selectNewFiles</tabstop>
+  <tabstop>singleWindowMode</tabstop>
+  <tabstop>recentFilesSpinBox</tabstop>
+  <tabstop>iconTheme</tabstop>
+  <tabstop>bigIconSize</tabstop>
+  <tabstop>smallIconSize</tabstop>
+  <tabstop>thumbnailIconSize</tabstop>
+  <tabstop>sidePaneIconSize</tabstop>
+  <tabstop>siUnit</tabstop>
+  <tabstop>backupAsHidden</tabstop>
+  <tabstop>showFullNames</tabstop>
+  <tabstop>shadowHidden</tabstop>
+  <tabstop>noItemTooltip</tabstop>
+  <tabstop>noScrollPerPixel</tabstop>
+  <tabstop>hMargin</tabstop>
+  <tabstop>vMargin</tabstop>
+  <tabstop>lockMargins</tabstop>
+  <tabstop>alwaysShowTabs</tabstop>
+  <tabstop>showTabClose</tabstop>
+  <tabstop>switchToNewTab</tabstop>
+  <tabstop>rememberWindowSize</tabstop>
+  <tabstop>fixedWindowWidth</tabstop>
+  <tabstop>fixedWindowHeight</tabstop>
+  <tabstop>reopenLastTabs</tabstop>
+  <tabstop>showThumbnails</tabstop>
+  <tabstop>thumbnailLocal</tabstop>
+  <tabstop>maxThumbnailFileSize</tabstop>
+  <tabstop>maxExternalThumbnailFileSize</tabstop>
   <tabstop>mountOnStartup</tabstop>
   <tabstop>mountRemovable</tabstop>
   <tabstop>autoRun</tabstop>
@@ -1019,6 +1047,11 @@ A value of -1 means that there is no limit for the file size (the default).</str
   <tabstop>terminal</tabstop>
   <tabstop>suCommand</tabstop>
   <tabstop>archiver</tabstop>
+  <tabstop>onlyUserTemplates</tabstop>
+  <tabstop>templateTypeOnce</tabstop>
+  <tabstop>templateRunApp</tabstop>
+  <tabstop>maxSearchHistory</tabstop>
+  <tabstop>clearSearchHistory</tabstop>
  </tabstops>
  <resources/>
  <connections>
