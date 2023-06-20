@@ -235,18 +235,6 @@ Examples: AudioVideo, Audio, Video, Development, Education, Game, Graphics, Netw
    </item>
   </layout>
  </widget>
- <tabstops>
-  <tabstop>nameEdit</tabstop>
-  <tabstop>descriptionEdit</tabstop>
-  <tabstop>commentEdit</tabstop>
-  <tabstop>catEdit</tabstop>
-  <tabstop>commandEdit</tabstop>
-  <tabstop>commandButton</tabstop>
-  <tabstop>iconEdit</tabstop>
-  <tabstop>iconButton</tabstop>
-  <tabstop>terminalCombo</tabstop>
-  <tabstop>typeCombo</tabstop>
- </tabstops>
  <resources/>
  <connections>
   <connection>

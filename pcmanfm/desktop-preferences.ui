@@ -711,38 +711,6 @@ are left clicked, even when it is not the default file manager.</string>
    <header location="global">libfm-qt/fontbutton.h</header>
   </customwidget>
  </customwidgets>
- <tabstops>
-  <tabstop>tabWidget</tabstop>
-  <tabstop>iconSize</tabstop>
-  <tabstop>font</tabstop>
-  <tabstop>textColor</tabstop>
-  <tabstop>shadowColor</tabstop>
-  <tabstop>hMargin</tabstop>
-  <tabstop>vMargin</tabstop>
-  <tabstop>lockMargins</tabstop>
-  <tabstop>topMargin</tabstop>
-  <tabstop>leftMargin</tabstop>
-  <tabstop>rightMargin</tabstop>
-  <tabstop>bottomMargin</tabstop>
-  <tabstop>defaultFileManager</tabstop>
-  <tabstop>allSticky</tabstop>
-  <tabstop>backgroundColor</tabstop>
-  <tabstop>wallpaperMode</tabstop>
-  <tabstop>imageFile</tabstop>
-  <tabstop>browse</tabstop>
-  <tabstop>transformImage</tabstop>
-  <tabstop>perScreenWallpaper</tabstop>
-  <tabstop>slideShow</tabstop>
-  <tabstop>imageFolder</tabstop>
-  <tabstop>folderBrowse</tabstop>
-  <tabstop>hours</tabstop>
-  <tabstop>minutes</tabstop>
-  <tabstop>randomize</tabstop>
-  <tabstop>homeBox</tabstop>
-  <tabstop>trashBox</tabstop>
-  <tabstop>computerBox</tabstop>
-  <tabstop>networkBox</tabstop>
- </tabstops>
  <resources/>
  <connections>
   <connection>
