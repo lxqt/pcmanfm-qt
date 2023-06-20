@@ -139,47 +139,10 @@
           <property name="verticalSpacing">
            <number>10</number>
           </property>
-          <item row="0" column="4">
-           <widget class="QCheckBox" name="lockMargins">
-            <property name="text">
-             <string>Lock</string>
-            </property>
-           </widget>
-          </item>
           <item row="0" column="0">
            <widget class="QLabel" name="label_7">
             <property name="text">
              <string>Minimum item margins:</string>
-            </property>
-           </widget>
-          </item>
-          <item row="0" column="5">
-           <spacer name="horizontalSpacer">
-            <property name="orientation">
-             <enum>Qt::Horizontal</enum>
-            </property>
-            <property name="sizeHint" stdset="0">
-             <size>
-              <width>20</width>
-              <height>5</height>
-             </size>
-            </property>
-           </spacer>
-          </item>
-          <item row="0" column="3">
-           <widget class="QSpinBox" name="vMargin">
-            <property name="toolTip">
-             <string>1 px by default.
-A space is also reserved for 3 lines of text.</string>
-            </property>
-            <property name="suffix">
-             <string> px</string>
-            </property>
-            <property name="maximum">
-             <number>48</number>
-            </property>
-            <property name="value">
-             <number>1</number>
             </property>
            </widget>
           </item>
@@ -198,6 +161,43 @@ A space is also reserved for 3 lines of text.</string>
              <number>3</number>
             </property>
            </widget>
+          </item>
+          <item row="0" column="3">
+           <widget class="QSpinBox" name="vMargin">
+            <property name="toolTip">
+             <string>1 px by default.
+A space is also reserved for 3 lines of text.</string>
+            </property>
+            <property name="suffix">
+             <string> px</string>
+            </property>
+            <property name="maximum">
+             <number>48</number>
+            </property>
+            <property name="value">
+             <number>1</number>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="4">
+           <widget class="QCheckBox" name="lockMargins">
+            <property name="text">
+             <string>Lock</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="5">
+           <spacer name="horizontalSpacer">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>5</height>
+             </size>
+            </property>
+           </spacer>
           </item>
           <item row="0" column="2">
            <widget class="QLabel" name="label_8">
@@ -492,6 +492,13 @@ are left clicked, even when it is not the default file manager.</string>
             </property>
            </widget>
           </item>
+          <item row="1" column="0" colspan="6">
+           <widget class="QLineEdit" name="imageFolder">
+            <property name="placeholderText">
+             <string>Wallpaper folder</string>
+            </property>
+           </widget>
+          </item>
           <item row="1" column="6">
            <widget class="QPushButton" name="folderBrowse">
             <property name="text">
@@ -557,13 +564,6 @@ are left clicked, even when it is not the default file manager.</string>
              </size>
             </property>
            </spacer>
-          </item>
-          <item row="1" column="0" colspan="6">
-           <widget class="QLineEdit" name="imageFolder">
-            <property name="placeholderText">
-             <string>Wallpaper folder</string>
-            </property>
-           </widget>
           </item>
           <item row="2" column="1">
            <spacer name="horizontalSpacer_3">

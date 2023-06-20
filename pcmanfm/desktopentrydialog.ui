@@ -90,6 +90,27 @@ It can be left empty.</string>
        </property>
       </widget>
      </item>
+     <item row="3" column="0">
+      <widget class="QLabel" name="catLabel">
+       <property name="text">
+        <string>Categories:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QLineEdit" name="catEdit">
+       <property name="whatsThis">
+        <string>Semicolon separated categories in which the entry should be shown if it is used by the DE's main menu (e.g., when put inside ~/.local/share/applications).
+
+It is needed only when you want to use the created file in the main menu. Otherwise, you could leave it empty.
+
+Examples: AudioVideo, Audio, Video, Development, Education, Game, Graphics, Network, Office, Settings, System, Utility, Qt.</string>
+       </property>
+       <property name="clearButtonEnabled">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
      <item row="4" column="0">
       <widget class="QLabel" name="commandLabel">
        <property name="text">
@@ -198,27 +219,6 @@ It can be left empty.</string>
          <string>Link</string>
         </property>
        </item>
-      </widget>
-     </item>
-     <item row="3" column="0">
-      <widget class="QLabel" name="catLabel">
-       <property name="text">
-        <string>Categories:</string>
-       </property>
-      </widget>
-     </item>
-     <item row="3" column="1">
-      <widget class="QLineEdit" name="catEdit">
-       <property name="whatsThis">
-        <string>Semicolon separated categories in which the entry should be shown if it is used by the DE's main menu (e.g., when put inside ~/.local/share/applications).
-
-It is needed only when you want to use the created file in the main menu. Otherwise, you could leave it empty.
-
-Examples: AudioVideo, Audio, Video, Development, Education, Game, Graphics, Network, Office, Settings, System, Utility, Qt.</string>
-       </property>
-       <property name="clearButtonEnabled">
-        <bool>true</bool>
-       </property>
       </widget>
      </item>
     </layout>
