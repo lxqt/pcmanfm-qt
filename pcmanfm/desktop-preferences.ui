@@ -162,6 +162,13 @@
             </property>
            </widget>
           </item>
+          <item row="0" column="2">
+           <widget class="QLabel" name="label_8">
+            <property name="text">
+             <string>x</string>
+            </property>
+           </widget>
+          </item>
           <item row="0" column="3">
            <widget class="QSpinBox" name="vMargin">
             <property name="toolTip">
@@ -198,13 +205,6 @@ A space is also reserved for 3 lines of text.</string>
              </size>
             </property>
            </spacer>
-          </item>
-          <item row="0" column="2">
-           <widget class="QLabel" name="label_8">
-            <property name="text">
-             <string>x</string>
-            </property>
-           </widget>
           </item>
           <item row="1" column="0" colspan="6" alignment="Qt::AlignLeft">
            <widget class="QGroupBox" name="groupBox_7">
