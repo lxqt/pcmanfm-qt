@@ -34,7 +34,7 @@ BulkRenameDialog::BulkRenameDialog(QWidget* parent, Qt::WindowFlags flags) :
     connect(ui.buttonBox->button(QDialogButtonBox::Ok), &QAbstractButton::clicked, this, &QDialog::accept);
     connect(ui.buttonBox->button(QDialogButtonBox::Cancel), &QAbstractButton::clicked, this, &QDialog::reject);
     resize(minimumSize());
-    setMaximumHeight(minimumHeight()); // no vertical resizing
+    setMaximumHeight(minimumSizeHint().height()); // no vertical resizing
 }
 
 void BulkRenameDialog::showEvent(QShowEvent* event) {
