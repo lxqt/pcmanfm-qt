@@ -2087,12 +2087,12 @@ Niistä voi olla hyötyä, jos kyseiset kansiot tulevat takaisin.</translation>
     <message>
         <location filename="../preferences.ui" line="651"/>
         <source>Show thumbnails of files</source>
-        <translation type="unfinished"></translation>
+        <translation>Näytä tiedostojen pienoiskuvat</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="658"/>
         <source>Only show thumbnails for local files</source>
-        <translation type="unfinished"></translation>
+        <translation>Näytä vain paikallisten tiedostojen pienoiskuvat</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="40"/>
