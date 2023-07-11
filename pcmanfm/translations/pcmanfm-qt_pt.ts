@@ -1013,7 +1013,7 @@ se clicar com o botão esquerdo do rato - mesmo que este não seja o gestor de f
     <message>
         <location filename="../main-win.ui" line="981"/>
         <source>&amp;Clear</source>
-        <translation>&amp;Limpar</translation>
+        <translation>&amp;Remover</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="648"/>
