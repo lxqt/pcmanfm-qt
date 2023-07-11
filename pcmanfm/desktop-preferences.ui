@@ -368,9 +368,12 @@ are left clicked, even when it is not the default file manager.</string>
         </widget>
        </item>
        <item>
-        <widget class="QGroupBox" name="groupBox_4">
+        <widget class="QGroupBox" name="enableWallpaperGB">
          <property name="title">
           <string>Wallpaper</string>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
          </property>
          <layout class="QGridLayout" name="gridLayout_5">
           <item row="0" column="0">

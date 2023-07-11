@@ -49,38 +49,35 @@ DesktopPreferencesDialog::DesktopPreferencesDialog(QWidget* parent, Qt::WindowFl
 
   // setup wallpaper modes
   connect(ui.wallpaperMode, static_cast<void (QComboBox::*)(int)>(&QComboBox::currentIndexChanged), this, &DesktopPreferencesDialog::onWallpaperModeChanged);
-  ui.wallpaperMode->addItem(tr("Fill with background color only"), DesktopWindow::WallpaperNone);
   ui.wallpaperMode->addItem(tr("Stretch to fill the entire screen"), DesktopWindow::WallpaperStretch);
   ui.wallpaperMode->addItem(tr("Stretch to fit the screen"), DesktopWindow::WallpaperFit);
   ui.wallpaperMode->addItem(tr("Center on the screen"), DesktopWindow::WallpaperCenter);
   ui.wallpaperMode->addItem(tr("Tile the image to fill the entire screen"), DesktopWindow::WallpaperTile);
   ui.wallpaperMode->addItem(tr("Zoom the image to fill the entire screen"), DesktopWindow::WallpaperZoom);
   int i;
-  switch(settings.wallpaperMode()) {
-    case DesktopWindow::WallpaperNone:
+  auto settingsWallpaperMode = settings.wallpaperMode();
+  switch(settingsWallpaperMode) {
+    case DesktopWindow::WallpaperStretch:
       i = 0;
       break;
-    case DesktopWindow::WallpaperStretch:
+    case DesktopWindow::WallpaperFit:
       i = 1;
       break;
-    case DesktopWindow::WallpaperFit:
+    case DesktopWindow::WallpaperCenter:
       i = 2;
       break;
-    case DesktopWindow::WallpaperCenter:
+    case DesktopWindow::WallpaperTile:
       i = 3;
       break;
-    case DesktopWindow::WallpaperTile:
-      i = 4;
-      break;
     case DesktopWindow::WallpaperZoom:
-      i = 5;
+      i = 4;
       break;
     default:
       i = 0;
   }
   ui.wallpaperMode->setCurrentIndex(i);
   int mode = ui.wallpaperMode->itemData(ui.wallpaperMode->currentIndex()).toInt();
-
+  ui.enableWallpaperGB->setChecked(settingsWallpaperMode != DesktopWindow::WallpaperNone);
   if (mode == DesktopWindow::WallpaperStretch || mode == DesktopWindow::WallpaperCenter
       || mode == DesktopWindow::WallpaperFit || mode == DesktopWindow::WallpaperZoom) {
     ui.perScreenWallpaper->setEnabled(true);
@@ -178,9 +175,10 @@ void DesktopPreferencesDialog::applySettings()
   settings.setWallpaper(ui.imageFile->text());
   settings.setTransformWallpaper(ui.transformImage->isChecked());
   settings.setPerScreenWallpaper(ui.perScreenWallpaper->isChecked());
-  int mode = ui.wallpaperMode->itemData(ui.wallpaperMode->currentIndex()).toInt();
+  int mode = (ui.enableWallpaperGB->isChecked())
+    ? ui.wallpaperMode->itemData(ui.wallpaperMode->currentIndex()).toInt()
+    : 0;
   settings.setWallpaperMode(mode);
-
   settings.setWallpaperDir(ui.imageFolder->text());
   int interval = 0;
   if(ui.slideShow->isChecked())
