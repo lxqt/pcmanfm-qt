@@ -6,24 +6,26 @@
     <message>
         <location filename="../about.ui" line="14"/>
         <source>About</source>
-        <translation type="unfinished"></translation>
+        <translation>පිලිබඳ</translation>
     </message>
     <message>
         <location filename="../about.ui" line="25"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;&gt;PCManFM-Qt&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;&gt;PCManFM-Qt&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../about.ui" line="48"/>
         <source>Lightweight file manager</source>
-        <translation type="unfinished"></translation>
+        <translation>සැහැල්ලු ගොනු කළමනාකරු</translation>
     </message>
     <message>
         <location filename="../about.ui" line="122"/>
         <source>Programming:
 * Hong Jen Yee (PCMan) &lt;pcman.tw@gmail.com&gt;
 </source>
-        <translation type="unfinished"></translation>
+        <translation>වැඩසටහන්කරණය:
+* Hong Jen Yee (PCMan) &lt;pcman.tw@gmail.com&gt;
+</translation>
     </message>
     <message>
         <location filename="../about.ui" line="144"/>
@@ -44,27 +46,43 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.</source>
-        <translation type="unfinished"></translation>
+        <translation>PCManFM-Qt File Manager
+
+Copyright (C) 2009 - 2014 洪任諭 (Hong Jen Yee)
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.</translation>
     </message>
     <message>
         <location filename="../about.ui" line="113"/>
         <source>Authors</source>
-        <translation type="unfinished"></translation>
+        <translation>කතුවරුන්</translation>
     </message>
     <message>
         <location filename="../about.ui" line="58"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/lxqt/pcmanfm-qt&quot;&gt;https://github.com/lxqt/pcmanfm-qt&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/lxqt/pcmanfm-qt&quot;&gt;https://github.com/lxqt/pcmanfm-qt&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../about.ui" line="74"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Wiki: &lt;a href=&quot;https://github.com/lxqt/pcmanfm-qt/wiki&quot;&gt;https://github.com/lxqt/pcmanfm-qt/wiki&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;විකි: &lt;a href=&quot;https://github.com/lxqt/pcmanfm-qt/wiki&quot;&gt;https://github.com/lxqt/pcmanfm-qt/wiki&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../about.ui" line="135"/>
         <source>License</source>
-        <translation type="unfinished"></translation>
+        <translation>බලපත්‍ර</translation>
     </message>
 </context>
 <context>
@@ -72,27 +90,27 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../autorun.ui" line="14"/>
         <source>Removable medium is inserted</source>
-        <translation type="unfinished"></translation>
+        <translation>ඉවත් කළ හැකි මාධ්‍යක් සම්බන්ධ විය</translation>
     </message>
     <message>
         <location filename="../autorun.ui" line="33"/>
         <source>&lt;b&gt;Removable medium is inserted&lt;/b&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;ඉවත් කළ හැකි මාධ්‍යක් සම්බන්ධ විය&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../autorun.ui" line="40"/>
         <source>Type of medium:</source>
-        <translation type="unfinished"></translation>
+        <translation>මාධ්‍යයේ වර්ගය:</translation>
     </message>
     <message>
         <location filename="../autorun.ui" line="47"/>
         <source>Detecting...</source>
-        <translation type="unfinished"></translation>
+        <translation>හඳුනා ගනිමින්...</translation>
     </message>
     <message>
         <location filename="../autorun.ui" line="56"/>
         <source>Please select the action you want to perform:</source>
-        <translation type="unfinished"></translation>
+        <translation>කරුණාකර සිදු කිරීමට අවශ්‍ය ක්‍රියාව තෝරන්න:</translation>
     </message>
 </context>
 <context>
@@ -100,32 +118,32 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../bulk-rename.ui" line="6"/>
         <source>Bulk Rename</source>
-        <translation type="unfinished"></translation>
+        <translation>තොග වශයෙන් නම් වෙනස් කිරීම</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="47"/>
         <source># will be replaced by numbers starting with:</source>
-        <translation type="unfinished"></translation>
+        <translation># සංකේතය, මෙම අංකයෙන් පටන් ගන්නා අංක වලට වෙනස් කරයි:</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="80"/>
         <source>Pad numbers with zero if possible</source>
-        <translation type="unfinished"></translation>
+        <translation>හැකි නම් අංකයේ මුලට බින්දුව යොදන්න</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="87"/>
         <source>Use localized numbers</source>
-        <translation type="unfinished"></translation>
+        <translation>ලෝකලයිස් කළ අංක භාවිතා කරන්න</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="27"/>
         <source>Rename selected files to:</source>
-        <translation type="unfinished"></translation>
+        <translation>තෝරාගත් ගොනු පහත පරිදි නැවත නම් කරන්න:</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="40"/>
         <source>Name#</source>
-        <translation type="unfinished"></translation>
+        <translation>නම#</translation>
     </message>
 </context>
 <context>
@@ -133,42 +151,42 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../connect.ui" line="14"/>
         <source>Connect to remote server</source>
-        <translation type="unfinished"></translation>
+        <translation>රිමොට් සර්වරයකට සම්බන්ධ කරන්න</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="23"/>
         <source>Anonymous &amp;login</source>
-        <translation type="unfinished"></translation>
+        <translation>නිර්නාමික ඇතුල් වීම (&amp;L)</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="36"/>
         <source>Login as &amp;user:</source>
-        <translation type="unfinished"></translation>
+        <translation>මෙම පරිශීලකයා ලෙස ඇතුල් වීම (&amp;U):</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="65"/>
         <source>Specify remote folder to connect</source>
-        <translation type="unfinished"></translation>
+        <translation>සම්බන්ධ විමට අවශ්‍ය නිශ්චිතව රිමොට් ෆොල්ඩරය</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="72"/>
         <source>Type:</source>
-        <translation type="unfinished"></translation>
+        <translation>වර්ගය:</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="79"/>
         <source>Port:</source>
-        <translation type="unfinished"></translation>
+        <translation>පෝර්ට්:</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="86"/>
         <source>Path:</source>
-        <translation type="unfinished"></translation>
+        <translation>ස්ථානය:</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="96"/>
         <source>Host:</source>
-        <translation type="unfinished"></translation>
+        <translation>හොස්ට්:</translation>
     </message>
 </context>
 <context>
@@ -176,113 +194,116 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../desktopentrydialog.ui" line="14"/>
         <source>Create Launcher</source>
-        <translation type="unfinished"></translation>
+        <translation>ලොන්චරයක් නිර්මාණය</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="38"/>
         <source>Name:</source>
-        <translation type="unfinished"></translation>
+        <translation>නම:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="45"/>
         <source>Specific name of this launcher.</source>
-        <translation type="unfinished"></translation>
+        <translation>මෙම ලොන්චරයේ නාමය.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="58"/>
         <source>Description:</source>
-        <translation type="unfinished"></translation>
+        <translation>විස්තරය:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="65"/>
         <source>A short description or generic name, like &quot;Web Browser&quot; or &quot;Home Directory&quot;.
 
 It can be left empty.</source>
-        <translation type="unfinished"></translation>
+        <translation>&quot;වෙබ් බ්‍රව්සරය&quot; හෝ &quot;හොම් ඩිරෙක්ටොරිය&quot; වැනි කෙටි විස්තරයක් හෝ සාමාන්‍ය නමක්.
+
+ඔබට එය හිස්ව තැබිය හැකිය.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="77"/>
         <source>Comment:</source>
-        <translation type="unfinished"></translation>
+        <translation>අදහස්:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="84"/>
         <source>A short comment.
 
 It can be left empty.</source>
-        <translation type="unfinished"></translation>
+        <translation>කෙටි අදහසක්.
+ඔබට එය හිස්ව තැබිය හැකිය.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="96"/>
         <source>Command:</source>
-        <translation type="unfinished"></translation>
+        <translation>විධානය:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="112"/>
         <location filename="../desktopentrydialog.ui" line="143"/>
         <source>...</source>
-        <translation type="unfinished"></translation>
+        <translation>...</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="121"/>
         <source>Icon:</source>
-        <translation type="unfinished"></translation>
+        <translation>අයිකනය:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="130"/>
         <source>Icon to display in file manager, menus, etc.</source>
-        <translation type="unfinished"></translation>
+        <translation>ගොනු කළමනාකරු, මෙනුව, ආදියෙහි පෙන්විය යුතු අයිකනය.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="152"/>
         <location filename="../desktopentrydialog.ui" line="162"/>
         <source>Run in terminal?</source>
-        <translation type="unfinished"></translation>
+        <translation>ටර්මිනලය තුල ධාවනය?</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="155"/>
         <source>Terminal:</source>
-        <translation type="unfinished"></translation>
+        <translation>ටර්මිනල්:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="165"/>
         <source>Whether the launched program should run in a terminal window.</source>
-        <translation type="unfinished"></translation>
+        <translation>මෙම ධාවනය කරන වැඩසටහන ටර්මිනල කවුලුවක් තුල ධාවනය කළ යුතුද නැද්ද යන්න.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="169"/>
         <source>No</source>
-        <translation type="unfinished"></translation>
+        <translation>නැහැ</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="174"/>
         <source>Yes</source>
-        <translation type="unfinished"></translation>
+        <translation>ඔව්</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="182"/>
         <source>Type:</source>
-        <translation type="unfinished"></translation>
+        <translation>වර්ගය:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="189"/>
         <source>Whether this is a link or executes a command.</source>
-        <translation type="unfinished"></translation>
+        <translation>මෙය සබැදියක් ද ධාවනය කළ යුතු විධානයක් ද යන්න.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="193"/>
         <source>Application</source>
-        <translation type="unfinished"></translation>
+        <translation>මෘදුකාංග</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="198"/>
         <source>Link</source>
-        <translation type="unfinished"></translation>
+        <translation>සබැඳි</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="206"/>
         <source>Categories:</source>
-        <translation type="unfinished"></translation>
+        <translation>කාණ්ඩ:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="213"/>
@@ -373,7 +394,7 @@ Examples: AudioVideo, Audio, Video, Development, Education, Game, Graphics, Netw
     <message>
         <location filename="../desktop-preferences.ui" line="30"/>
         <source>Icons</source>
-        <translation type="unfinished"></translation>
+        <translation>අයිකන</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="36"/>
@@ -428,7 +449,7 @@ Examples: AudioVideo, Audio, Video, Development, Education, Game, Graphics, Netw
         <location filename="../desktop-preferences.ui" line="275"/>
         <location filename="../desktop-preferences.ui" line="287"/>
         <source> px</source>
-        <translation type="unfinished"></translation>
+        <translation> පික්සල්</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="205"/>
@@ -444,7 +465,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../desktop-preferences.ui" line="145"/>
         <source>Lock</source>
-        <translation type="unfinished"></translation>
+        <translation>අගුලු</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="230"/>
@@ -505,12 +526,12 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktop-preferences.ui" line="505"/>
         <source> hour(s)</source>
-        <translation type="unfinished"></translation>
+        <translation> පැය</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="515"/>
         <source>and</source>
-        <translation type="unfinished"></translation>
+        <translation>සහ</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="528"/>
@@ -525,7 +546,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktop-preferences.ui" line="538"/>
         <source> minute(s)</source>
-        <translation type="unfinished"></translation>
+        <translation> මිනිත්තු</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="564"/>
@@ -550,17 +571,17 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktop-preferences.ui" line="637"/>
         <source>Trash</source>
-        <translation type="unfinished"></translation>
+        <translation>කුණු කූඩය</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="648"/>
         <source>Computer</source>
-        <translation type="unfinished"></translation>
+        <translation>පරිගණකය</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="659"/>
         <source>Network</source>
-        <translation type="unfinished"></translation>
+        <translation>ජාල</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="614"/>
@@ -588,7 +609,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../shortcuts.ui" line="31"/>
         <source>Esc</source>
-        <translation type="unfinished"></translation>
+        <translation>Esc</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="34"/>
@@ -598,7 +619,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../shortcuts.ui" line="39"/>
         <source>Ctrl+Esc</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Esc</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="42"/>
@@ -608,7 +629,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../shortcuts.ui" line="47"/>
         <source>Ctrl+L</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+L</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="50"/>
@@ -619,12 +640,12 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../shortcuts.ui" line="55"/>
         <source>Alt+D</source>
-        <translation type="unfinished"></translation>
+        <translation>Alt+D</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="63"/>
         <source>Ctrl+Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Tab</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="66"/>
@@ -635,7 +656,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../shortcuts.ui" line="71"/>
         <source>Ctrl+Shift+Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+Tab</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="74"/>
@@ -646,17 +667,17 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../shortcuts.ui" line="79"/>
         <source>Ctrl+PageDown</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+PageDown</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="87"/>
         <source>Ctrl+PageUp</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+PageUp</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="95"/>
         <source>Ctrl+Number</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Number</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="98"/>
@@ -667,12 +688,12 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../shortcuts.ui" line="103"/>
         <source>Alt+Number</source>
-        <translation type="unfinished"></translation>
+        <translation>Alt+අංක</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="111"/>
         <source>Backspace</source>
-        <translation type="unfinished"></translation>
+        <translation>Backspace</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="114"/>
@@ -682,7 +703,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../shortcuts.ui" line="119"/>
         <source>Ctrl+F</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+F</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="122"/>
@@ -692,7 +713,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../shortcuts.ui" line="127"/>
         <source>Shift+Insert</source>
-        <translation type="unfinished"></translation>
+        <translation>Shift+Insert</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="130"/>
@@ -702,17 +723,17 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../shortcuts.ui" line="135"/>
         <source>Drop+Shift</source>
-        <translation type="unfinished"></translation>
+        <translation>ඇද දැමීම+Shift</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="143"/>
         <source>Drop+Ctrl</source>
-        <translation type="unfinished"></translation>
+        <translation>ඇද දැමීම+Ctrl</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="151"/>
         <source>Drop+Shift+Ctrl</source>
-        <translation type="unfinished"></translation>
+        <translation>ඇද දැමීම+Shift+Ctrl</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="138"/>
@@ -775,7 +796,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="293"/>
         <source>Alt+Up</source>
-        <translation type="unfinished"></translation>
+        <translation>Alt+Up</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="302"/>
@@ -785,7 +806,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="305"/>
         <source>Alt+Home</source>
-        <translation type="unfinished"></translation>
+        <translation>Alt+Home</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="314"/>
@@ -795,7 +816,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="317"/>
         <source>F5</source>
-        <translation type="unfinished"></translation>
+        <translation>F5</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="326"/>
@@ -825,7 +846,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="359"/>
         <source>Ctrl+N</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+N</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="367"/>
@@ -835,27 +856,27 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="370"/>
         <source>Ctrl+H</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+H</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="379"/>
         <source>&amp;Computer</source>
-        <translation type="unfinished"></translation>
+        <translation>පරිගණකය (&amp;C)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="388"/>
         <source>&amp;Trash</source>
-        <translation type="unfinished"></translation>
+        <translation>කුණු කූඩය (&amp;T)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="393"/>
         <source>&amp;Network</source>
-        <translation type="unfinished"></translation>
+        <translation>ජාල (&amp;N)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="402"/>
         <source>&amp;Desktop</source>
-        <translation type="unfinished"></translation>
+        <translation>ඩෙස්ක්ටොප් (&amp;D)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="411"/>
@@ -865,7 +886,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="416"/>
         <source>&amp;Applications</source>
-        <translation type="unfinished"></translation>
+        <translation>මෘදුකාංග (&amp;A)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="421"/>
@@ -900,7 +921,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="465"/>
         <source>Ctrl+X</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+X</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="474"/>
@@ -910,7 +931,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="477"/>
         <source>Ctrl+C</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+C</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="486"/>
@@ -920,7 +941,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="489"/>
         <source>Ctrl+V</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+V</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="494"/>
@@ -930,7 +951,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="497"/>
         <source>Ctrl+A</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+A</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="502"/>
@@ -940,7 +961,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="505"/>
         <source>Ctrl+D</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+D</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="510"/>
@@ -1005,7 +1026,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="879"/>
         <source>Shift+F2</source>
-        <translation type="unfinished"></translation>
+        <translation>Shift+F2</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="963"/>
@@ -1030,7 +1051,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="651"/>
         <source>Ctrl+Shift+A</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+A</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="700"/>
@@ -1050,7 +1071,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="716"/>
         <source>Ctrl+Q</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Q</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="734"/>
@@ -1085,7 +1106,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="890"/>
         <source>Ctrl+I</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+I</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="898"/>
@@ -1100,7 +1121,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="904"/>
         <source>F6</source>
-        <translation type="unfinished"></translation>
+        <translation>F6</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="909"/>
@@ -1110,7 +1131,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="912"/>
         <source>Ctrl+Shift+C</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+C</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="923"/>
@@ -1130,7 +1151,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="937"/>
         <source>F9</source>
-        <translation type="unfinished"></translation>
+        <translation>F9</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="942"/>
@@ -1151,7 +1172,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="782"/>
         <source>Ctrl+B</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+B</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="787"/>
@@ -1161,7 +1182,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="790"/>
         <source>Ctrl+Shift+K</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+K</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="799"/>
@@ -1221,7 +1242,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="827"/>
         <source>Ctrl+M</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+M</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="836"/>
@@ -1247,7 +1268,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="613"/>
         <source>Ctrl+T</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+T</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="622"/>
@@ -1262,7 +1283,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="628"/>
         <source>Alt+Left</source>
-        <translation type="unfinished"></translation>
+        <translation>Alt+Left</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="637"/>
@@ -1277,7 +1298,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="643"/>
         <source>Alt+Right</source>
-        <translation type="unfinished"></translation>
+        <translation>Alt+Right</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="648"/>
@@ -1292,7 +1313,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="663"/>
         <source>Del</source>
-        <translation type="unfinished"></translation>
+        <translation>Del</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="668"/>
@@ -1302,7 +1323,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="671"/>
         <source>F2</source>
-        <translation type="unfinished"></translation>
+        <translation>F2</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="676"/>
@@ -1312,7 +1333,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="679"/>
         <source>Ctrl+W</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+W</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="684"/>
@@ -1322,7 +1343,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="687"/>
         <source>Alt+Return</source>
-        <translation type="unfinished"></translation>
+        <translation>Alt+Return</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="692"/>
@@ -1342,7 +1363,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="729"/>
         <source>F4</source>
-        <translation type="unfinished"></translation>
+        <translation>F4</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="739"/>
@@ -1352,12 +1373,12 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="751"/>
         <source>Ctrl+Shift+N</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+N</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="763"/>
         <source>Ctrl+Alt+N</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Alt+N</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="768"/>
@@ -1367,7 +1388,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="771"/>
         <source>F3</source>
-        <translation type="unfinished"></translation>
+        <translation>F3</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="70"/>
@@ -1508,7 +1529,7 @@ are left clicked, even when it is not the default file manager.</source>
         <location filename="../application.cpp" line="648"/>
         <location filename="../application.cpp" line="653"/>
         <source>Error</source>
-        <translation type="unfinished"></translation>
+        <translation>දෝෂ</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="653"/>
@@ -1534,32 +1555,32 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../connectserverdialog.cpp" line="9"/>
         <source>SSH</source>
-        <translation type="unfinished"></translation>
+        <translation>SSH</translation>
     </message>
     <message>
         <location filename="../connectserverdialog.cpp" line="10"/>
         <source>FTP</source>
-        <translation type="unfinished"></translation>
+        <translation>FTP</translation>
     </message>
     <message>
         <location filename="../connectserverdialog.cpp" line="11"/>
         <source>WebDav</source>
-        <translation type="unfinished"></translation>
+        <translation>WebDav</translation>
     </message>
     <message>
         <location filename="../connectserverdialog.cpp" line="12"/>
         <source>Secure WebDav</source>
-        <translation type="unfinished"></translation>
+        <translation>ආරක්ෂිත WebDav</translation>
     </message>
     <message>
         <location filename="../connectserverdialog.cpp" line="13"/>
         <source>HTTP</source>
-        <translation type="unfinished"></translation>
+        <translation>HTTP</translation>
     </message>
     <message>
         <location filename="../connectserverdialog.cpp" line="14"/>
         <source>HTTPS</source>
-        <translation type="unfinished"></translation>
+        <translation>HTTPS</translation>
     </message>
 </context>
 <context>
@@ -1567,7 +1588,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktopentrydialog.cpp" line="35"/>
         <source>Command:</source>
-        <translation type="unfinished"></translation>
+        <translation>විධානය:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="36"/>
@@ -1577,7 +1598,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktopentrydialog.cpp" line="39"/>
         <source>URL:</source>
-        <translation type="unfinished"></translation>
+        <translation>URL:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="40"/>
@@ -1658,35 +1679,35 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktopwindow.cpp" line="303"/>
         <source>Trash (One item)</source>
-        <translation type="unfinished"></translation>
+        <translation>කුණු කූඩය (එකක්)</translation>
     </message>
     <message numerus="yes">
         <location filename="../desktopwindow.cpp" line="306"/>
         <source>Trash (%Ln items)</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>කුණු කූඩය (%Ln ක්)</numerusform>
+            <numerusform>කුණු කූඩය (%Ln ක්)</numerusform>
         </translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="310"/>
         <source>Trash (Empty)</source>
-        <translation type="unfinished"></translation>
+        <translation>කුණු කූඩය (හිස්)</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="345"/>
         <source>Computer</source>
-        <translation type="unfinished"></translation>
+        <translation>පරිගණකය</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="359"/>
         <source>Network</source>
-        <translation type="unfinished"></translation>
+        <translation>ජාල</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="997"/>
         <source>Open</source>
-        <translation type="unfinished"></translation>
+        <translation>විවෘත කරන්න</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="1003"/>
@@ -1697,7 +1718,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktopwindow.cpp" line="1011"/>
         <source>Empty Trash</source>
-        <translation type="unfinished"></translation>
+        <translation>කුණු කූඩය හිස් කරන්න</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="1070"/>
@@ -1720,7 +1741,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../tabpage.cpp" line="95"/>
         <source>Filter:</source>
-        <translation type="unfinished"></translation>
+        <translation>පෙරහන:</translation>
     </message>
 </context>
 <context>
@@ -1751,7 +1772,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../mainwindow.cpp" line="1190"/>
         <source>Version: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>අනුවාදය: %1</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="174"/>
@@ -1774,7 +1795,7 @@ are left clicked, even when it is not the default file manager.</source>
         <location filename="../mainwindow.cpp" line="2268"/>
         <location filename="../mainwindow.cpp" line="2276"/>
         <source>Error</source>
-        <translation type="unfinished"></translation>
+        <translation>දෝෂ</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="2276"/>
@@ -1943,7 +1964,7 @@ They might be useful if those folders are created again.</source>
         <location filename="../preferences.ui" line="50"/>
         <location filename="../preferences.ui" line="642"/>
         <source>Thumbnail</source>
-        <translation type="unfinished"></translation>
+        <translation>තබ්නෙයිල්</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="55"/>
@@ -1963,7 +1984,7 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferences.ui" line="296"/>
         <source>Icons</source>
-        <translation type="unfinished"></translation>
+        <translation>අයිකන</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="328"/>
@@ -1993,7 +2014,7 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferences.ui" line="546"/>
         <source>Window</source>
-        <translation type="unfinished"></translation>
+        <translation>වින්ඩෝ</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="559"/>
@@ -2038,7 +2059,7 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferences.ui" line="129"/>
         <source> sec</source>
-        <translation type="unfinished"></translation>
+        <translation> තත්</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="175"/>
@@ -2180,12 +2201,12 @@ They might be useful if those folders are created again.</source>
         <location filename="../preferences.ui" line="469"/>
         <location filename="../preferences.ui" line="493"/>
         <source> px</source>
-        <translation type="unfinished"></translation>
+        <translation> පික්සල්</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="482"/>
         <source>x</source>
-        <translation type="unfinished"></translation>
+        <translation>x</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="489"/>
@@ -2196,7 +2217,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../preferences.ui" line="506"/>
         <source>Lock</source>
-        <translation type="unfinished"></translation>
+        <translation>අගුලු</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="555"/>
@@ -2231,7 +2252,7 @@ Usually, most image types are supported. The default size limit is 4 MiB.</sourc
         <location filename="../preferences.ui" line="682"/>
         <location filename="../preferences.ui" line="718"/>
         <source> MiB</source>
-        <translation type="unfinished"></translation>
+        <translation> MiB</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="698"/>
@@ -2354,7 +2375,7 @@ A value of -1 means that there is no limit for the file size (the default).</sou
     <message>
         <location filename="../preferences.ui" line="824"/>
         <source>Programs</source>
-        <translation type="unfinished"></translation>
+        <translation>වැඩසටහන්</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="833"/>
@@ -2402,29 +2423,29 @@ A value of -1 means that there is no limit for the file size (the default).</sou
     <message>
         <location filename="../bulkrename.cpp" line="86"/>
         <source>Renaming files...</source>
-        <translation type="unfinished"></translation>
+        <translation>නම් වෙනස් කරමින්...</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="86"/>
         <source>Abort</source>
-        <translation type="unfinished"></translation>
+        <translation>පිලිබඳ</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="95"/>
         <source>Warning</source>
-        <translation type="unfinished"></translation>
+        <translation>අවවාදයයි</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="95"/>
         <source>Renaming is aborted.</source>
-        <translation type="unfinished"></translation>
+        <translation>නම් වෙනස් කිරීම අවලංගු කරන ලදී.</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="121"/>
         <location filename="../bulkrename.cpp" line="124"/>
         <location filename="../tabpage.cpp" line="1142"/>
         <source>Error</source>
-        <translation type="unfinished"></translation>
+        <translation>දෝෂ</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="121"/>
@@ -2434,12 +2455,12 @@ A value of -1 means that there is no limit for the file size (the default).</sou
     <message>
         <location filename="../bulkrename.cpp" line="124"/>
         <source>Some files could not be renamed.</source>
-        <translation type="unfinished"></translation>
+        <translation>සමහර ගොනුවල නම් වෙනස් කළ නොහැක.</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="1142"/>
         <source>Cannot open as Admin.</source>
-        <translation type="unfinished"></translation>
+        <translation>පරිපාලක ලෙස විවෘත කළ නොහැක.</translation>
     </message>
 </context>
 </TS>
