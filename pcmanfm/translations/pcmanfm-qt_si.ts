@@ -320,32 +320,32 @@ Examples: AudioVideo, Audio, Video, Development, Education, Game, Graphics, Netw
     <message>
         <location filename="../desktop-folder.ui" line="14"/>
         <source>Form</source>
-        <translation type="unfinished"></translation>
+        <translation>පෝරමය</translation>
     </message>
     <message>
         <location filename="../desktop-folder.ui" line="23"/>
         <source>Desktop</source>
-        <translation type="unfinished"></translation>
+        <translation>ඩෙස්ක්ටොප්</translation>
     </message>
     <message>
         <location filename="../desktop-folder.ui" line="29"/>
         <source>Desktop folder:</source>
-        <translation type="unfinished"></translation>
+        <translation>ඩෙස්ක්ටොප් ෆෝල්ඩරය:</translation>
     </message>
     <message>
         <location filename="../desktop-folder.ui" line="36"/>
         <source>Image file</source>
-        <translation type="unfinished"></translation>
+        <translation>පින්තූර ගොනුව</translation>
     </message>
     <message>
         <location filename="../desktop-folder.ui" line="42"/>
         <source>Folder path</source>
-        <translation type="unfinished"></translation>
+        <translation>ෆෝල්ඩර ස්ථානය</translation>
     </message>
     <message>
         <location filename="../desktop-folder.ui" line="49"/>
         <source>&amp;Browse</source>
-        <translation type="unfinished"></translation>
+        <translation>සොයන්න (&amp;B)</translation>
     </message>
 </context>
 <context>
@@ -353,43 +353,43 @@ Examples: AudioVideo, Audio, Video, Development, Education, Game, Graphics, Netw
     <message>
         <location filename="../desktop-preferences.ui" line="14"/>
         <source>Desktop Preferences</source>
-        <translation type="unfinished"></translation>
+        <translation>ඩෙස්ක්ටොප් අභිරුචි සැකසුම්</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="338"/>
         <location filename="../desktop-preferences.ui" line="344"/>
         <source>Background</source>
-        <translation type="unfinished"></translation>
+        <translation>පසුබිම</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="385"/>
         <source>Wallpaper mode:</source>
-        <translation type="unfinished"></translation>
+        <translation>පසුබිම් පින්තූර විදිහ:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="408"/>
         <source>Wallpaper image file:</source>
-        <translation type="unfinished"></translation>
+        <translation>පසුබිම් පින්තූර ගොනුව:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="350"/>
         <source>Select background color:</source>
-        <translation type="unfinished"></translation>
+        <translation>පසුබිමේ පාට තෝරන්න:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="417"/>
         <source>Image file</source>
-        <translation type="unfinished"></translation>
+        <translation>පින්තූර ගොනුව</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="423"/>
         <source>Image file path</source>
-        <translation type="unfinished"></translation>
+        <translation>පින්තූර ගොනුවේ ස්ථානය</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="430"/>
         <source>&amp;Browse</source>
-        <translation type="unfinished"></translation>
+        <translation>සොයන්න (&amp;B)</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="30"/>
@@ -399,47 +399,47 @@ Examples: AudioVideo, Audio, Video, Development, Education, Game, Graphics, Netw
     <message>
         <location filename="../desktop-preferences.ui" line="36"/>
         <source>Icon size:</source>
-        <translation type="unfinished"></translation>
+        <translation>අයිකනය ප්‍රමාණය:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="49"/>
         <source>Label Text</source>
-        <translation type="unfinished"></translation>
+        <translation>ලේබල පාඨය</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="113"/>
         <source>Select shadow color:</source>
-        <translation type="unfinished"></translation>
+        <translation>සෙවනැලි වර්ණය තෝරන්න:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="61"/>
         <source>Select font:</source>
-        <translation type="unfinished"></translation>
+        <translation>ෆොන්ටය තෝරන්න:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="24"/>
         <source>General</source>
-        <translation type="unfinished"></translation>
+        <translation>පොදු</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="87"/>
         <source>Select text color:</source>
-        <translation type="unfinished"></translation>
+        <translation>අක්ෂර වර්ණය තෝරන්න:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="136"/>
         <source>Spacing</source>
-        <translation type="unfinished"></translation>
+        <translation>හිස්තැන් තැබීම</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="152"/>
         <source>Minimum item margins:</source>
-        <translation type="unfinished"></translation>
+        <translation>අවම අයිතම මායිම්:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="189"/>
         <source>3 px by default.</source>
-        <translation type="unfinished"></translation>
+        <translation>සාමාන්‍යයෙන් පික්සල් 3 ක්.</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="176"/>
@@ -454,13 +454,14 @@ Examples: AudioVideo, Audio, Video, Development, Education, Game, Graphics, Netw
     <message>
         <location filename="../desktop-preferences.ui" line="205"/>
         <source>x</source>
-        <translation type="unfinished"></translation>
+        <translation>x</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="172"/>
         <source>1 px by default.
 A space is also reserved for 3 lines of text.</source>
-        <translation type="unfinished"></translation>
+        <translation>සාමාන්‍යයෙන් පික්සල් 1 ක්.
+වාක්‍ය පේළි 3ක් සඳහා ද ඉඩක් වෙන් කර ඇත.</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="145"/>
@@ -470,7 +471,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../desktop-preferences.ui" line="230"/>
         <source>Margins of work area:</source>
-        <translation type="unfinished"></translation>
+        <translation>වැඩකරන ප්‍රදේශය සඳහා මායිම්:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="303"/>
@@ -491,7 +492,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktop-preferences.ui" line="373"/>
         <source>Wallpaper</source>
-        <translation type="unfinished"></translation>
+        <translation>පසුබිම් පින්තූරය</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="439"/>
@@ -506,12 +507,12 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktop-preferences.ui" line="473"/>
         <source>Slide Show</source>
-        <translation type="unfinished"></translation>
+        <translation>ස්ලයිඩ පෙන්වීම</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="479"/>
         <source>Enable Slide Show</source>
-        <translation type="unfinished"></translation>
+        <translation>ස්ලයිඩ පෙන්වීම සක්‍රිය කරන්න</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="491"/>
@@ -521,7 +522,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktop-preferences.ui" line="498"/>
         <source>Browse</source>
-        <translation type="unfinished"></translation>
+        <translation>සොයන්න</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="505"/>
@@ -541,7 +542,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktop-preferences.ui" line="531"/>
         <source>Interval:</source>
-        <translation type="unfinished"></translation>
+        <translation>විවේකය:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="538"/>
@@ -561,7 +562,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktop-preferences.ui" line="620"/>
         <source>Visible Shortcuts</source>
-        <translation type="unfinished"></translation>
+        <translation>පෙන්වන කෙටිමග</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="626"/>
@@ -586,7 +587,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktop-preferences.ui" line="614"/>
         <source>Advanced</source>
-        <translation type="unfinished"></translation>
+        <translation>වැඩිදුර</translation>
     </message>
 </context>
 <context>
@@ -651,7 +652,7 @@ are left clicked, even when it is not the default file manager.</source>
         <location filename="../shortcuts.ui" line="66"/>
         <location filename="../shortcuts.ui" line="82"/>
         <source>Next tab</source>
-        <translation type="unfinished"></translation>
+        <translation>ඊළඟ ටැබ්</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="71"/>
@@ -662,7 +663,7 @@ are left clicked, even when it is not the default file manager.</source>
         <location filename="../shortcuts.ui" line="74"/>
         <location filename="../shortcuts.ui" line="90"/>
         <source>Previous tab</source>
-        <translation type="unfinished"></translation>
+        <translation>පෙර ටැබ්</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="79"/>
@@ -683,7 +684,7 @@ are left clicked, even when it is not the default file manager.</source>
         <location filename="../shortcuts.ui" line="98"/>
         <location filename="../shortcuts.ui" line="106"/>
         <source>Jump to tab</source>
-        <translation type="unfinished"></translation>
+        <translation>ටැබ් එකට පනින්න</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="103"/>
@@ -698,7 +699,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../shortcuts.ui" line="114"/>
         <source>Go up</source>
-        <translation type="unfinished"></translation>
+        <translation>ඉහළට යන්න</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="119"/>
@@ -708,7 +709,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../shortcuts.ui" line="122"/>
         <source>Search dialog</source>
-        <translation type="unfinished"></translation>
+        <translation>සෙවුම් ඩයලෝගය</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="127"/>
@@ -738,17 +739,17 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../shortcuts.ui" line="138"/>
         <source>Move file on dropping</source>
-        <translation type="unfinished"></translation>
+        <translation>ඇද දමන විට ගොනු ගෙනයන්න</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="146"/>
         <source>Copy file on dropping</source>
-        <translation type="unfinished"></translation>
+        <translation>ඇද දමන විට ගොනු කොපි කරන්න</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="154"/>
         <source>Make a symlink on dropping</source>
-        <translation type="unfinished"></translation>
+        <translation>ඇද දමන විට සිම්ලින්ක් සාදන්න</translation>
     </message>
 </context>
 <context>
@@ -756,42 +757,42 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="14"/>
         <source>File Manager</source>
-        <translation type="unfinished"></translation>
+        <translation>ගොනු කළමනාකරු</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="81"/>
         <source>Recent F&amp;iles</source>
-        <translation type="unfinished"></translation>
+        <translation>මෑත කාලීන ගොනු (&amp;I)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="139"/>
         <source>&amp;Toolbars</source>
-        <translation type="unfinished"></translation>
+        <translation>මෙවලම් තීරු (&amp;T)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="146"/>
         <source>Path &amp;Bar</source>
-        <translation type="unfinished"></translation>
+        <translation>ස්ථාන තීරුව (&amp;B)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="153"/>
         <source>&amp;Filtering</source>
-        <translation type="unfinished"></translation>
+        <translation>පෙරහන් (&amp;F)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="228"/>
         <source>&amp;Tools</source>
-        <translation type="unfinished"></translation>
+        <translation>මෙවලම් (&amp;T)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="287"/>
         <source>Go &amp;Up</source>
-        <translation type="unfinished"></translation>
+        <translation>ඉහළට යන්න (&amp;U)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="290"/>
         <source>Go Up</source>
-        <translation type="unfinished"></translation>
+        <translation>ඉහළට යන්න</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="293"/>
@@ -811,7 +812,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="314"/>
         <source>&amp;Reload</source>
-        <translation type="unfinished"></translation>
+        <translation>රීලෝඩ් කරන්න (&amp;R)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="317"/>
@@ -821,27 +822,27 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="326"/>
         <source>Go</source>
-        <translation type="unfinished"></translation>
+        <translation>ගෙනයන්න</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="335"/>
         <source>Quit</source>
-        <translation type="unfinished"></translation>
+        <translation>ඉවත් වන්න</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="344"/>
         <source>&amp;About</source>
-        <translation type="unfinished"></translation>
+        <translation>පිලිබඳ (&amp;A)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="353"/>
         <source>&amp;New Window</source>
-        <translation type="unfinished"></translation>
+        <translation>අලුත් වින්ඩොවක් (&amp;A)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="356"/>
         <source>New Window</source>
-        <translation type="unfinished"></translation>
+        <translation>අලුත් වින්ඩොවක්</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="359"/>
@@ -851,7 +852,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="367"/>
         <source>Show &amp;Hidden</source>
-        <translation type="unfinished"></translation>
+        <translation>සැඟවුනු දේ පෙන්වන්න (&amp;H)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="370"/>
@@ -881,7 +882,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="411"/>
         <source>&amp;Add to Bookmarks</source>
-        <translation type="unfinished"></translation>
+        <translation>බුක්මාර්ක් ඇතුල් කරන්න (&amp;A)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="416"/>
@@ -891,32 +892,32 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="421"/>
         <source>Reload</source>
-        <translation type="unfinished"></translation>
+        <translation>රීලෝඩ් කරන්න</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="429"/>
         <source>&amp;Icon View</source>
-        <translation type="unfinished"></translation>
+        <translation>අයිකන පෙනුම (&amp;I)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="437"/>
         <source>&amp;Compact View</source>
-        <translation type="unfinished"></translation>
+        <translation>සංයුක්ත පෙනුම (&amp;C)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="445"/>
         <source>&amp;Detailed List</source>
-        <translation type="unfinished"></translation>
+        <translation>විස්තරාත්මක පෙනුම (&amp;D)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="453"/>
         <source>&amp;Thumbnail View</source>
-        <translation type="unfinished"></translation>
+        <translation>තබ්නෙයිල් පෙනුම (&amp;T)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="462"/>
         <source>Cu&amp;t</source>
-        <translation type="unfinished"></translation>
+        <translation>කට් (&amp;T)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="465"/>
@@ -926,7 +927,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="474"/>
         <source>&amp;Copy</source>
-        <translation type="unfinished"></translation>
+        <translation>කොපි (&amp;C)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="477"/>
@@ -936,7 +937,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="486"/>
         <source>&amp;Paste</source>
-        <translation type="unfinished"></translation>
+        <translation>පේස්ට් (&amp;P)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="489"/>
@@ -946,7 +947,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="494"/>
         <source>Select &amp;All</source>
-        <translation type="unfinished"></translation>
+        <translation>සියල්ල තෝරන්න (&amp;A)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="497"/>
@@ -956,7 +957,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="502"/>
         <source>De&amp;select All</source>
-        <translation type="unfinished"></translation>
+        <translation>සියල්ල තේරීම ඉවත් කරන්න (&amp;S)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="505"/>
@@ -966,62 +967,62 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="510"/>
         <source>Pr&amp;eferences</source>
-        <translation type="unfinished"></translation>
+        <translation>අභිරුචි සැකසුම් (&amp;E)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="518"/>
         <source>&amp;Ascending</source>
-        <translation type="unfinished"></translation>
+        <translation>ආරෝහන (&amp;A)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="526"/>
         <source>&amp;Descending</source>
-        <translation type="unfinished"></translation>
+        <translation>අවරෝහන (&amp;D)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="534"/>
         <source>&amp;By File Name</source>
-        <translation type="unfinished"></translation>
+        <translation>ගොනු නාමය (&amp;B)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="542"/>
         <source>By &amp;Modification Time</source>
-        <translation type="unfinished"></translation>
+        <translation>වෙනස් කළ කාලය (&amp;M)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="550"/>
         <source>By C&amp;reation Time</source>
-        <translation type="unfinished"></translation>
+        <translation>නිර්මාණය කාලය (&amp;R)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="558"/>
         <source>By Deletio&amp;n Time</source>
-        <translation type="unfinished"></translation>
+        <translation>මැකූ කාලය (&amp;N)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="566"/>
         <source>By File &amp;Type</source>
-        <translation type="unfinished"></translation>
+        <translation>ගොනු වර්ගය (&amp;T)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="574"/>
         <source>By &amp;Owner</source>
-        <translation type="unfinished"></translation>
+        <translation>ගොනු අයිතිකරු (&amp;O)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="582"/>
         <source>By &amp;Group</source>
-        <translation type="unfinished"></translation>
+        <translation>ගොනු කණ්ඩායම (&amp;G)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="590"/>
         <source>&amp;Folder First</source>
-        <translation type="unfinished"></translation>
+        <translation>ෆොල්ඩර ප්‍රථමයෙන් (&amp;F)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="598"/>
         <source>&amp;Hidden Last</source>
-        <translation type="unfinished"></translation>
+        <translation>සැඟවුණු ගොනු අවසානයට (&amp;H)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="879"/>
@@ -1056,17 +1057,17 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="700"/>
         <source>&amp;Case Sensitive</source>
-        <translation type="unfinished"></translation>
+        <translation>අල්පප්‍රාණ, මහාප්‍රාණ සංවේදීතාව (&amp;C)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="708"/>
         <source>By File &amp;Size</source>
-        <translation type="unfinished"></translation>
+        <translation>ගොනු ප්‍රමාණය (&amp;S)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="713"/>
         <source>&amp;Close Window</source>
-        <translation type="unfinished"></translation>
+        <translation>වින්ඩෝව වසන්න (&amp;C)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="716"/>
@@ -1081,12 +1082,12 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="748"/>
         <source>&amp;Folder</source>
-        <translation type="unfinished"></translation>
+        <translation>ෆෝල්ඩරයක් (&amp;F)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="760"/>
         <source>&amp;Blank File</source>
-        <translation type="unfinished"></translation>
+        <translation>හිස් ගොනුවක් (&amp;B)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="847"/>
@@ -1126,7 +1127,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="909"/>
         <source>&amp;Copy Full Path</source>
-        <translation type="unfinished"></translation>
+        <translation>සම්පූර්ණ ස්ථානය කොපි (&amp;C)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="912"/>
@@ -1136,12 +1137,12 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="923"/>
         <source>Show Thumb&amp;nails</source>
-        <translation type="unfinished"></translation>
+        <translation>තබ්නෙයිල් පෙන්වන්න (&amp;N)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="926"/>
         <source>Show Thumbnails</source>
-        <translation type="unfinished"></translation>
+        <translation>තබ්නෙයිල් පෙන්වන්න</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="934"/>
@@ -1156,7 +1157,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="942"/>
         <source>Hidden &amp;Shortcuts</source>
-        <translation type="unfinished"></translation>
+        <translation>සැඟවුනු කෙටිමං (&amp;S)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="947"/>
@@ -1167,7 +1168,7 @@ are left clicked, even when it is not the default file manager.</source>
         <location filename="../main-win.ui" line="952"/>
         <location filename="../main-win.ui" line="955"/>
         <source>Create Launcher</source>
-        <translation type="unfinished"></translation>
+        <translation>ලොන්චර නිර්මාණය</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="782"/>
@@ -1187,17 +1188,17 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="799"/>
         <source>Close &amp;previous tabs</source>
-        <translation type="unfinished"></translation>
+        <translation>පෙර ටැබ් වසන්න (&amp;P)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="808"/>
         <source>Close &amp;next tabs</source>
-        <translation type="unfinished"></translation>
+        <translation>මීලඟ ටැබ් වසන්න (&amp;N)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="852"/>
         <source>Connect to &amp;Server</source>
-        <translation type="unfinished"></translation>
+        <translation>සර්වරයකට සම්බන්ධ කරන්න (&amp;S)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="860"/>
@@ -1222,7 +1223,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="813"/>
         <source>Close &amp;other tabs</source>
-        <translation type="unfinished"></translation>
+        <translation>අනෙකුත් ටැබ් වසන්න (&amp;O)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="779"/>
@@ -1232,12 +1233,12 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="821"/>
         <source>&amp;Menu bar</source>
-        <translation type="unfinished"></translation>
+        <translation>මෙනූ තීරුව (&amp;M)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="824"/>
         <source>Menu bar</source>
-        <translation type="unfinished"></translation>
+        <translation>මෙනූ තීරුව</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="827"/>
@@ -1248,12 +1249,12 @@ are left clicked, even when it is not the default file manager.</source>
         <location filename="../main-win.ui" line="836"/>
         <location filename="../main-win.ui" line="839"/>
         <source>Menu</source>
-        <translation type="unfinished"></translation>
+        <translation>මෙනුව</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="607"/>
         <source>New &amp;Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>අලුත් ටැබ් (&amp;T)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="160"/>
@@ -1263,7 +1264,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="610"/>
         <source>New Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>අලුත් ටැබ්</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="613"/>
@@ -1273,12 +1274,12 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="622"/>
         <source>Go &amp;Back</source>
-        <translation type="unfinished"></translation>
+        <translation>ආපස්සට යන්න (&amp;B)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="625"/>
         <source>Go Back</source>
-        <translation type="unfinished"></translation>
+        <translation>ආපස්සට යන්න</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="628"/>
@@ -1288,12 +1289,12 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="637"/>
         <source>Go &amp;Forward</source>
-        <translation type="unfinished"></translation>
+        <translation>ඉදිරියට යන්න (&amp;F)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="640"/>
         <source>Go Forward</source>
-        <translation type="unfinished"></translation>
+        <translation>ඉදිරියට යන්න</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="643"/>
@@ -1303,12 +1304,12 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="648"/>
         <source>&amp;Invert Selection</source>
-        <translation type="unfinished"></translation>
+        <translation>තේරීම ප්‍රතිවිරුද්ධ කරන්න (&amp;I)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="660"/>
         <source>&amp;Delete</source>
-        <translation type="unfinished"></translation>
+        <translation>මකා දමන්න (&amp;D)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="663"/>
@@ -1318,7 +1319,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="668"/>
         <source>&amp;Rename</source>
-        <translation type="unfinished"></translation>
+        <translation>නම වෙනස් කරන්න (&amp;R)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="671"/>
@@ -1328,7 +1329,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="676"/>
         <source>C&amp;lose Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>ටැබ් වසන්න (&amp;L)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="679"/>
@@ -1338,7 +1339,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="684"/>
         <source>File &amp;Properties</source>
-        <translation type="unfinished"></translation>
+        <translation>ගොනු ලක්ෂණ (&amp;P)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="687"/>
@@ -1348,17 +1349,17 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="692"/>
         <source>&amp;Folder Properties</source>
-        <translation type="unfinished"></translation>
+        <translation>ෆොල්ඩර ලක්ෂණ (&amp;F)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="721"/>
         <source>Edit Bookmarks</source>
-        <translation type="unfinished"></translation>
+        <translation>බුක්මාරක් වෙනස් කරන්න</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="726"/>
         <source>Open &amp;Terminal</source>
-        <translation type="unfinished"></translation>
+        <translation>ටර්මිනලය විවෘත කරන්න (&amp;T)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="729"/>
@@ -1368,7 +1369,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="739"/>
         <source>&amp;Edit Bookmarks</source>
-        <translation type="unfinished"></translation>
+        <translation>බුක්මාරක් වෙනස් කරන්න (&amp;E)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="751"/>
@@ -1383,7 +1384,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="768"/>
         <source>&amp;Find Files</source>
-        <translation type="unfinished"></translation>
+        <translation>ගොනු සොයන්න (&amp;F)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="771"/>
@@ -1393,17 +1394,17 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="70"/>
         <source>&amp;File</source>
-        <translation type="unfinished"></translation>
+        <translation>ගොනු (&amp;F)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="74"/>
         <source>C&amp;reate New</source>
-        <translation type="unfinished"></translation>
+        <translation>අලුතින් සාදන්න (&amp;R)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="98"/>
         <source>&amp;Help</source>
-        <translation type="unfinished"></translation>
+        <translation>උදව් (&amp;H)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="105"/>
@@ -1414,7 +1415,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="109"/>
         <source>&amp;Sorting</source>
-        <translation type="unfinished"></translation>
+        <translation>අනුපිළිවෙල (&amp;S)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="185"/>
@@ -1424,17 +1425,17 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="204"/>
         <source>&amp;Bookmarks</source>
-        <translation type="unfinished"></translation>
+        <translation>බුක්මාර්ක් (&amp;B)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="211"/>
         <source>&amp;Go</source>
-        <translation type="unfinished"></translation>
+        <translation>ගෙනයන්න (&amp;G)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="253"/>
         <source>Main Toolbar</source>
-        <translation type="unfinished"></translation>
+        <translation>ප්‍රධාන මෙවලම් තීරුව</translation>
     </message>
 </context>
 <context>
@@ -1534,7 +1535,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../application.cpp" line="653"/>
         <source>Terminal emulator is not set.</source>
-        <translation type="unfinished"></translation>
+        <translation>ටර්මිනල් එමියුලේටරය සකසා නැත.</translation>
     </message>
 </context>
 <context>
@@ -1542,12 +1543,12 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../autorundialog.cpp" line="44"/>
         <source>Open in file manager</source>
-        <translation type="unfinished"></translation>
+        <translation>ගොනු කළමනාකරු මඟින් විවෘත කරන්න</translation>
     </message>
     <message>
         <location filename="../autorundialog.cpp" line="138"/>
         <source>Removable Disk</source>
-        <translation type="unfinished"></translation>
+        <translation>ඉවත් කළ හැකි තැටිය</translation>
     </message>
 </context>
 <context>
@@ -1593,7 +1594,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktopentrydialog.cpp" line="36"/>
         <source>The command to execute.</source>
-        <translation type="unfinished"></translation>
+        <translation>ධාවනය කළ යුතු විධානය.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="39"/>
@@ -1603,27 +1604,27 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktopentrydialog.cpp" line="40"/>
         <source>The URL to access.</source>
-        <translation type="unfinished"></translation>
+        <translation>ප්‍රවේශ විය යුතු URLය.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="67"/>
         <source>Select an icon</source>
-        <translation type="unfinished"></translation>
+        <translation>අයිකනයක් තෝරන්න</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="69"/>
         <source>Images (*.png *.xpm *.svg *.svgz )</source>
-        <translation type="unfinished"></translation>
+        <translation>පින්තූර (*.png *.xpm *.svg *.svgz )</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="91"/>
         <source>Select an executable file</source>
-        <translation type="unfinished"></translation>
+        <translation>ධාවනය කළ හැකි ගොනුවක් තෝරන්න</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="99"/>
         <source>Select a file</source>
-        <translation type="unfinished"></translation>
+        <translation>ගොනුවක තෝරන්න</translation>
     </message>
 </context>
 <context>
@@ -1713,7 +1714,7 @@ are left clicked, even when it is not the default file manager.</source>
         <location filename="../desktopwindow.cpp" line="1003"/>
         <location filename="../desktopwindow.cpp" line="1043"/>
         <source>Stic&amp;k to Current Position</source>
-        <translation type="unfinished"></translation>
+        <translation>පවතින ස්ථානයේ අලවා තබන්න (&amp;K)</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="1011"/>
@@ -1723,17 +1724,17 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktopwindow.cpp" line="1070"/>
         <source>Hide Desktop Items</source>
-        <translation type="unfinished"></translation>
+        <translation>ඩෙස්ක්ටොප් අයිතම සඟවන්න</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="1076"/>
         <source>Create Launcher</source>
-        <translation type="unfinished"></translation>
+        <translation>ලොන්චරයක් නිර්මාණය</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="1079"/>
         <source>Desktop Preferences</source>
-        <translation type="unfinished"></translation>
+        <translation>ඩෙස්ක්ටොප් අභිරුචි සැකසුම්</translation>
     </message>
 </context>
 <context>
@@ -1749,7 +1750,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../tabpage.cpp" line="65"/>
         <source>Clear text (Ctrl+K or Esc)</source>
-        <translation type="unfinished"></translation>
+        <translation>වැකිය මකන්න (Ctrl+K හෝ Esc)</translation>
     </message>
 </context>
 <context>
@@ -1762,7 +1763,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../mainwindow.cpp" line="742"/>
         <source>Hide menu bar</source>
-        <translation type="unfinished"></translation>
+        <translation>මෙනූ තීරුව සඟවන්න</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="743"/>
@@ -1778,13 +1779,13 @@ are left clicked, even when it is not the default file manager.</source>
         <location filename="../mainwindow.cpp" line="174"/>
         <location filename="../mainwindow.cpp" line="2161"/>
         <source>&amp;Move to Trash</source>
-        <translation type="unfinished"></translation>
+        <translation>කුණු කූඩයට ගෙන යන්න (&amp;M)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="174"/>
         <location filename="../mainwindow.cpp" line="2161"/>
         <source>&amp;Delete</source>
-        <translation type="unfinished"></translation>
+        <translation>මකා දමන්න (&amp;D)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="1997"/>
@@ -1819,22 +1820,22 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferencesdialog.cpp" line="199"/>
         <source>Icon View</source>
-        <translation type="unfinished"></translation>
+        <translation>අයිකන පෙනුම</translation>
     </message>
     <message>
         <location filename="../preferencesdialog.cpp" line="200"/>
         <source>Compact View</source>
-        <translation type="unfinished"></translation>
+        <translation>සංයුක්ත පෙනුම</translation>
     </message>
     <message>
         <location filename="../preferencesdialog.cpp" line="201"/>
         <source>Thumbnail View</source>
-        <translation type="unfinished"></translation>
+        <translation>තබ්නෙයිල් පෙනුම</translation>
     </message>
     <message>
         <location filename="../preferencesdialog.cpp" line="202"/>
         <source>Detailed List View</source>
-        <translation type="unfinished"></translation>
+        <translation>විස්තරාත්මක පෙනුම</translation>
     </message>
 </context>
 <context>
@@ -1847,32 +1848,32 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../tabpage.cpp" line="446"/>
         <source>Applications</source>
-        <translation type="unfinished"></translation>
+        <translation>මෘදුකාංග</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="450"/>
         <source>Computer</source>
-        <translation type="unfinished"></translation>
+        <translation>පරිගණකය</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="453"/>
         <source>Network</source>
-        <translation type="unfinished"></translation>
+        <translation>ජාල</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="456"/>
         <source>Trash</source>
-        <translation type="unfinished"></translation>
+        <translation>කුණු කූඩය</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="462"/>
         <source>Desktop</source>
-        <translation type="unfinished"></translation>
+        <translation>ඩෙස්ක්ටොප්</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="553"/>
         <source>Error</source>
-        <translation type="unfinished"></translation>
+        <translation>දෝෂ</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="562"/>
@@ -1948,7 +1949,7 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferences.ui" line="14"/>
         <source>Preferences</source>
-        <translation type="unfinished"></translation>
+        <translation>අභිරුචි සැකසුම්</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="45"/>
@@ -1958,7 +1959,7 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferences.ui" line="35"/>
         <source>Behavior</source>
-        <translation type="unfinished"></translation>
+        <translation>හැසිරීම</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="50"/>
@@ -2044,7 +2045,7 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferences.ui" line="81"/>
         <source>Browsing</source>
-        <translation type="unfinished"></translation>
+        <translation>සෙවීම</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="93"/>
@@ -2195,7 +2196,7 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferences.ui" line="466"/>
         <source>3 px by default.</source>
-        <translation type="unfinished"></translation>
+        <translation>සාමාන්‍යයෙන් පික්සල් 3 ක්.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="469"/>
@@ -2212,7 +2213,8 @@ They might be useful if those folders are created again.</source>
         <location filename="../preferences.ui" line="489"/>
         <source>3 px by default.
 A space is also reserved for 3 lines of text.</source>
-        <translation type="unfinished"></translation>
+        <translation>සාමාන්‍යයෙන් පික්සල් 3 ක්.
+වාක්‍ය පේළි 3ක් සඳහා ද ඉඩක් වෙන් කර ඇත.3.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="506"/>
@@ -2270,7 +2272,7 @@ A value of -1 means that there is no limit for the file size (the default).</sou
     <message>
         <location filename="../preferences.ui" line="715"/>
         <source>No limit</source>
-        <translation type="unfinished"></translation>
+        <translation>සීමා රහිත</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="853"/>
@@ -2280,7 +2282,7 @@ A value of -1 means that there is no limit for the file size (the default).</sou
     <message>
         <location filename="../preferences.ui" line="919"/>
         <source>Search</source>
-        <translation type="unfinished"></translation>
+        <translation>සෙවුම්</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="934"/>
@@ -2450,7 +2452,7 @@ A value of -1 means that there is no limit for the file size (the default).</sou
     <message>
         <location filename="../bulkrename.cpp" line="121"/>
         <source>No file could be renamed.</source>
-        <translation type="unfinished"></translation>
+        <translation>ගොනු එකක වත් නම් වෙනස් කළ නොහැකි විය.</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="124"/>
