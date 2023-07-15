@@ -179,6 +179,7 @@ void DesktopPreferencesDialog::applySettings()
     ? ui.wallpaperMode->itemData(ui.wallpaperMode->currentIndex()).toInt()
     : 0;
   settings.setWallpaperMode(mode);
+
   settings.setWallpaperDir(ui.imageFolder->text());
   int interval = 0;
   if(ui.slideShow->isChecked())
