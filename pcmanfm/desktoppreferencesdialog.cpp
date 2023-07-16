@@ -54,30 +54,31 @@ DesktopPreferencesDialog::DesktopPreferencesDialog(QWidget* parent, Qt::WindowFl
   ui.wallpaperMode->addItem(tr("Center on the screen"), DesktopWindow::WallpaperCenter);
   ui.wallpaperMode->addItem(tr("Tile the image to fill the entire screen"), DesktopWindow::WallpaperTile);
   ui.wallpaperMode->addItem(tr("Zoom the image to fill the entire screen"), DesktopWindow::WallpaperZoom);
-  int i;
-  auto settingsWallpaperMode = settings.wallpaperMode();
-  switch(settingsWallpaperMode) {
+  int mode;
+  switch(settings.wallpaperMode()) {
+    case DesktopWindow::WallpaperNone:
+      mode = 0;
+      break;
     case DesktopWindow::WallpaperStretch:
-      i = 0;
+      mode = 1;
       break;
     case DesktopWindow::WallpaperFit:
-      i = 1;
+      mode = 2;
       break;
     case DesktopWindow::WallpaperCenter:
-      i = 2;
+      mode = 3;
       break;
     case DesktopWindow::WallpaperTile:
-      i = 3;
+      mode = 4;
       break;
     case DesktopWindow::WallpaperZoom:
-      i = 4;
+      mode = 5;
       break;
     default:
-      i = 0;
+      mode = 0;
   }
-  ui.wallpaperMode->setCurrentIndex(i);
-  int mode = ui.wallpaperMode->itemData(ui.wallpaperMode->currentIndex()).toInt();
-  ui.enableWallpaperGB->setChecked(settingsWallpaperMode != DesktopWindow::WallpaperNone);
+  ui.wallpaperMode->setCurrentIndex( (mode == DesktopWindow::WallpaperNone) ? 0 : mode - 1 );
+  ui.enableWallpaperGB->setChecked(mode != DesktopWindow::WallpaperNone);
   if (mode == DesktopWindow::WallpaperStretch || mode == DesktopWindow::WallpaperCenter
       || mode == DesktopWindow::WallpaperFit || mode == DesktopWindow::WallpaperZoom) {
     ui.perScreenWallpaper->setEnabled(true);
