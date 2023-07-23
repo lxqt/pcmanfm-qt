@@ -107,16 +107,6 @@
               </property>
              </widget>
             </item>
-            <item row="4" column="0">
-             <widget class="QLabel" name="label_11">
-              <property name="text">
-               <string>Default view mode:</string>
-              </property>
-             </widget>
-            </item>
-            <item row="4" column="1">
-             <widget class="QComboBox" name="viewMode"/>
-            </item>
             <item row="1" column="1">
              <widget class="QDoubleSpinBox" name="autoSelectionDelay">
               <property name="enabled">
@@ -130,6 +120,13 @@
               </property>
               <property name="singleStep">
                <double>0.100000000000000</double>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0" colspan="2">
+             <widget class="QCheckBox" name="ctrlRightClick">
+              <property name="text">
+               <string>Show folder context menu with Ctrl + right click</string>
               </property>
              </widget>
             </item>
@@ -159,12 +156,15 @@
               </item>
              </widget>
             </item>
-            <item row="2" column="0" colspan="2">
-             <widget class="QCheckBox" name="ctrlRightClick">
+            <item row="4" column="0">
+             <widget class="QLabel" name="label_11">
               <property name="text">
-               <string>Show folder context menu with Ctrl + right click</string>
+               <string>Default view mode:</string>
               </property>
              </widget>
+            </item>
+            <item row="4" column="1">
+             <widget class="QComboBox" name="viewMode"/>
             </item>
            </layout>
           </widget>
@@ -834,6 +834,13 @@ A value of -1 means that there is no limit for the file size (the default).</str
               </property>
              </widget>
             </item>
+            <item row="0" column="1">
+             <widget class="QComboBox" name="terminal">
+              <property name="editable">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
             <item row="1" column="0">
              <widget class="QLabel" name="label_3">
               <property name="text">
@@ -872,13 +879,6 @@ A value of -1 means that there is no limit for the file size (the default).</str
             </item>
             <item row="3" column="1">
              <widget class="QComboBox" name="archiver"/>
-            </item>
-            <item row="0" column="1">
-             <widget class="QComboBox" name="terminal">
-              <property name="editable">
-               <bool>true</bool>
-              </property>
-             </widget>
             </item>
            </layout>
           </widget>
@@ -999,60 +999,6 @@ A value of -1 means that there is no limit for the file size (the default).</str
    </item>
   </layout>
  </widget>
- <tabstops>
-  <tabstop>listWidget</tabstop>
-  <tabstop>singleClick</tabstop>
-  <tabstop>autoSelectionDelay</tabstop>
-  <tabstop>ctrlRightClick</tabstop>
-  <tabstop>bookmarkOpenMethod</tabstop>
-  <tabstop>viewMode</tabstop>
-  <tabstop>configmDelete</tabstop>
-  <tabstop>useTrash</tabstop>
-  <tabstop>noUsbTrash</tabstop>
-  <tabstop>confirmTrash</tabstop>
-  <tabstop>quickExec</tabstop>
-  <tabstop>selectNewFiles</tabstop>
-  <tabstop>singleWindowMode</tabstop>
-  <tabstop>recentFilesSpinBox</tabstop>
-  <tabstop>iconTheme</tabstop>
-  <tabstop>bigIconSize</tabstop>
-  <tabstop>smallIconSize</tabstop>
-  <tabstop>thumbnailIconSize</tabstop>
-  <tabstop>sidePaneIconSize</tabstop>
-  <tabstop>siUnit</tabstop>
-  <tabstop>backupAsHidden</tabstop>
-  <tabstop>showFullNames</tabstop>
-  <tabstop>shadowHidden</tabstop>
-  <tabstop>noItemTooltip</tabstop>
-  <tabstop>noScrollPerPixel</tabstop>
-  <tabstop>hMargin</tabstop>
-  <tabstop>vMargin</tabstop>
-  <tabstop>lockMargins</tabstop>
-  <tabstop>alwaysShowTabs</tabstop>
-  <tabstop>showTabClose</tabstop>
-  <tabstop>switchToNewTab</tabstop>
-  <tabstop>rememberWindowSize</tabstop>
-  <tabstop>fixedWindowWidth</tabstop>
-  <tabstop>fixedWindowHeight</tabstop>
-  <tabstop>reopenLastTabs</tabstop>
-  <tabstop>showThumbnails</tabstop>
-  <tabstop>thumbnailLocal</tabstop>
-  <tabstop>maxThumbnailFileSize</tabstop>
-  <tabstop>maxExternalThumbnailFileSize</tabstop>
-  <tabstop>mountOnStartup</tabstop>
-  <tabstop>mountRemovable</tabstop>
-  <tabstop>autoRun</tabstop>
-  <tabstop>closeOnUnmount</tabstop>
-  <tabstop>goHomeOnUnmount</tabstop>
-  <tabstop>terminal</tabstop>
-  <tabstop>suCommand</tabstop>
-  <tabstop>archiver</tabstop>
-  <tabstop>onlyUserTemplates</tabstop>
-  <tabstop>templateTypeOnce</tabstop>
-  <tabstop>templateRunApp</tabstop>
-  <tabstop>maxSearchHistory</tabstop>
-  <tabstop>clearSearchHistory</tabstop>
- </tabstops>
  <resources/>
  <connections>
   <connection>
