@@ -253,7 +253,7 @@ Może pozostać niewypełnione.</translation>
     <message>
         <location filename="../desktopentrydialog.ui" line="130"/>
         <source>Icon to display in file manager, menus, etc.</source>
-        <translation>Ikona do wyświetlana w menadżerze plików, menu, itp.</translation>
+        <translation>Ikona do wyświetlana w menedżerze plików, menu, itp.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="152"/>
@@ -313,11 +313,11 @@ Może pozostać niewypełnione.</translation>
 It is needed only when you want to use the created file in the main menu. Otherwise, you could leave it empty.
 
 Examples: AudioVideo, Audio, Video, Development, Education, Game, Graphics, Network, Office, Settings, System, Utility, Qt.</source>
-        <translation>Semicolon oddzielił kategorie, w których wpis powinien być wyświetlany, jeśli jest używany przez menu główne DE (np. Po umieszczeniu w środku ~/.local/share/aplikacje).
+        <translation>Średnik oddzielił kategorie, w których wpis powinien być wyświetlany, jeśli jest używany przez menu główne środowiska graficznego (np. po umieszczeniu w ~/.local/share/applications).
 
-Jest to potrzebne tylko wtedy, gdy chcesz użyć utworzonego pliku w menu głównym.W przeciwnym razie możesz pozostawić to puste.
+Jest to potrzebne tylko wtedy, gdy chcesz użyć utworzonego pliku w menu głównym. W przeciwnym razie możesz pozostawić to puste.
 
-Przykłady: AudioWideo, Audio, Wideo, Programowania, Edukacja, Gra, Grafika, Sieć, Biuro, Ustawienia, System, Narzędzie, Qt.</translation>
+Przykłady: AudioWideo, Audio, Wideo, Programowanie, Edukacja, Gra, Grafika, Sieć, Biuro, Ustawienia, System, Narzędzie, Qt.</translation>
     </message>
 </context>
 <context>
@@ -1028,7 +1028,7 @@ są klikane lewym przyciskiem, nawet jeśli nie jest to domyślny menedżer plik
     <message>
         <location filename="../main-win.ui" line="660"/>
         <source>&amp;Delete</source>
-        <translation>&amp; Usuń</translation>
+        <translation>&amp;Usuń</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="668"/>
@@ -1108,7 +1108,7 @@ są klikane lewym przyciskiem, nawet jeśli nie jest to domyślny menedżer plik
     <message>
         <location filename="../main-win.ui" line="923"/>
         <source>Show Thumb&amp;nails</source>
-        <translation>Pokaż miniatury</translation>
+        <translation>Pokaż mi&amp;niatury</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="926"/>
@@ -1390,7 +1390,7 @@ są klikane lewym przyciskiem, nawet jeśli nie jest to domyślny menedżer plik
     <message>
         <location filename="../main-win.ui" line="739"/>
         <source>&amp;Edit Bookmarks</source>
-        <translation>Edytuj &amp;Zakładki</translation>
+        <translation>Edytuj &amp;zakładki</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="748"/>
@@ -2107,18 +2107,18 @@ Mogą się one przydać jeśli te foldery zostaną stworzone ponownie.</translat
     <message>
         <location filename="../preferences.ui" line="90"/>
         <source>If this is unchecked, the DE setting will be used.</source>
-        <translation>Jeżeli niezaznaczone, zostaną użyte ustawienia DE.</translation>
+        <translation>Jeżeli niezaznaczone, zostaną użyte ustawienia środowiska graficznego.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="103"/>
         <location filename="../preferences.ui" line="126"/>
         <source>Set to zero to disable auto-selection.</source>
-        <translation>Ustaw na zero aby wyłączyć auto-zaznaczanie.</translation>
+        <translation>Ustaw na zero, aby wyłączyć automatyczne zaznaczanie.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="106"/>
         <source>Delay of auto-selection in single click mode:</source>
-        <translation>Opóźnienie auto-zaznaczenia w trybie pojedynczego kliknięcia:</translation>
+        <translation>Opóźnienie automatycznego zaznaczenia w trybie pojedynczego kliknięcia:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="147"/>
@@ -2165,12 +2165,12 @@ Mogą się one przydać jeśli te foldery zostaną stworzone ponownie.</translat
     <message>
         <location filename="../preferences.ui" line="219"/>
         <source>Renamed files will also be selected</source>
-        <translation>Pliki ze zmienioną nazwą również zostaną&#xa0;wybrane</translation>
+        <translation>Pliki ze zmienioną nazwą również zostaną wybrane</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="229"/>
         <source>Open folders in new tabs as far as possible</source>
-        <translation>Otwórz foldery w nowych kartach tak daleko jak to możliwe</translation>
+        <translation>Otwórz foldery w nowych kartach w miarę możliwości</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="232"/>
@@ -2180,7 +2180,7 @@ Mogą się one przydać jeśli te foldery zostaną stworzone ponownie.</translat
     <message>
         <location filename="../preferences.ui" line="244"/>
         <source>Number of recent files:</source>
-        <translation>Ilość niedawnych plików:</translation>
+        <translation>Liczba ostatnich plików:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="325"/>
@@ -2252,8 +2252,8 @@ Zarezerwowane jest też miejsce dla 3 linii tekstu.</translation>
         <location filename="../preferences.ui" line="555"/>
         <source>When unchecked, the tab bar will be shown
 only if there are more than one tab.</source>
-        <translation>Kiedy odznaczone, pasek kart będzie widoczny
-tylko jeżeli jest więcej niż jedna karta.</translation>
+        <translation>Jeśli niezaznaczone, pasek kart będzie wyświetlany
+tylko wtedy, gdy jest więcej niż jedna karta.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="573"/>
@@ -2479,7 +2479,7 @@ Wartość -1 oznacza, brak limitu dla rozmiaru pliku (ustawienie domyślne).</tr
     <message>
         <location filename="../tabpage.cpp" line="1142"/>
         <source>Cannot open as Admin.</source>
-        <translation>Nie można otworzyć jako Administrator.</translation>
+        <translation>Nie można otworzyć jako administrator.</translation>
     </message>
 </context>
 </TS>

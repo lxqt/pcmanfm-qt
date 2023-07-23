@@ -424,7 +424,7 @@ Näited: AudioVideo, Audio, Video, Development, Education, Game, Graphics, Netwo
     <message>
         <location filename="../desktop-preferences.ui" line="24"/>
         <source>General</source>
-        <translation>Üldine</translation>
+        <translation>Üldist</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="87"/>
