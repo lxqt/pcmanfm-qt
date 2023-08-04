@@ -59,7 +59,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
 להתאמה לצורכי מסחר או התאמה למטרה ייעודית. ניתן לעיין ברישיון הציבורי
 הכללי של GNU לקבלת פרטים נוספים.
 
-לתוכנית זו אמור להיות עותק מצורף של הרישיון הציבורי הכללי של GNU,
+לתוכנית זו אמור להיות מצורף עותק של הרישיון הציבורי הכללי של GNU,
 אם לא צורף אחד כזה, ניתן לכתוב אל Free Software Foundation, Inc.,‎
  51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.</translation>
     </message>
@@ -137,7 +137,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../bulk-rename.ui" line="27"/>
         <source>Rename selected files to:</source>
-        <translation>שינוי שמות הקבצים הנבחרים לשמות:</translation>
+        <translation>שינוי שמות הקבצים הנבחרים ל־:</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="40"/>
@@ -729,17 +729,17 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../shortcuts.ui" line="135"/>
         <source>Drop+Shift</source>
-        <translation type="unfinished"></translation>
+        <translation>להשליך+Shift</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="143"/>
         <source>Drop+Ctrl</source>
-        <translation type="unfinished"></translation>
+        <translation>להשליך+Ctrl</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="151"/>
         <source>Drop+Shift+Ctrl</source>
-        <translation type="unfinished"></translation>
+        <translation>להשליך+Shift+Ctrl</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="138"/>
@@ -1693,6 +1693,8 @@ are left clicked, even when it is not the default file manager.</source>
         <source>Trash (%Ln items)</source>
         <translation>
             <numerusform>אשפה (פריט אחד)</numerusform>
+            <numerusform>אשפה (שני פריטים)</numerusform>
+            <numerusform>אשפה (%Ln פריטים)</numerusform>
             <numerusform>אשפה (%Ln פריטים)</numerusform>
         </translation>
     </message>
@@ -1855,7 +1857,7 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../tabpage.cpp" line="446"/>
         <source>Applications</source>
-        <translation type="unfinished"></translation>
+        <translation>יישומים</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="450"/>
@@ -1892,6 +1894,8 @@ They might be useful if those folders are created again.</source>
         <source>%n item(s)</source>
         <translation>
             <numerusform>פריט אחד</numerusform>
+            <numerusform>שני פריטים</numerusform>
+            <numerusform>%n פריטים</numerusform>
             <numerusform>%n פריטים</numerusform>
         </translation>
     </message>
@@ -1900,6 +1904,8 @@ They might be useful if those folders are created again.</source>
         <source> (%n hidden)</source>
         <translation>
             <numerusform> (אחד מוסתר)</numerusform>
+            <numerusform> (שניים מוסתרים)</numerusform>
+            <numerusform> (%n מוסתרים)</numerusform>
             <numerusform> (%n מוסתרים)</numerusform>
         </translation>
     </message>
@@ -1915,6 +1921,8 @@ They might be useful if those folders are created again.</source>
         <source>%n item(s) selected</source>
         <translation>
             <numerusform>נבחר פריט אחד</numerusform>
+            <numerusform>נבחרו שני פריטים</numerusform>
+            <numerusform>נבחרו %n פריטים</numerusform>
             <numerusform>נבחרו %n פריטים</numerusform>
         </translation>
     </message>
@@ -1931,6 +1939,8 @@ They might be useful if those folders are created again.</source>
         <source>Do you want to open these %1 files?</source>
         <translation>
             <numerusform>לפתוח את הקובץ הזה?</numerusform>
+            <numerusform>לפתוח את שני הקבצים האלה?</numerusform>
+            <numerusform>לפתוח את %1 הקבצים האלה?</numerusform>
             <numerusform>לפתוח את %1 הקבצים האלה?</numerusform>
         </translation>
     </message>
@@ -2346,7 +2356,7 @@ The translation of this string isn&apos;t 100% well.</translatorcomment>
     <message>
         <location filename="../preferences.ui" line="436"/>
         <source>Disable smooth scrolling</source>
-        <translation type="unfinished"></translation>
+        <translation>השבתת גלילה חלקה</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="648"/>
