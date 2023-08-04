@@ -414,7 +414,7 @@ Exempel: Ljudvideo, Ljud, Video, Utveckling, Utbildning, Spel, Grafik, Nätverk,
     <message>
         <location filename="../desktop-preferences.ui" line="113"/>
         <source>Select shadow color:</source>
-        <translation>Skuggfärg:</translation>
+        <translation>Välj skuggfärg:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="61"/>
@@ -482,7 +482,7 @@ Ett mellanrum är också reserverat vid 3 rader text.</translation>
         <location filename="../desktop-preferences.ui" line="303"/>
         <source>By default, desktop folders will be opened in PCManFM-Qt if they
 are left clicked, even when it is not the default file manager.</source>
-        <translation>Som standard så kommer mappar på skrivbordet öppnas i PCManFM-Qt om dom
+        <translation>Som standard så kommer mappar på skrivbordet öppnas i PCManFM-Qt om de
 vänsterklickas, även när den inte är standard filhanterare.</translation>
     </message>
     <message>
@@ -493,7 +493,7 @@ vänsterklickas, även när den inte är standard filhanterare.</translation>
     <message>
         <location filename="../desktop-preferences.ui" line="314"/>
         <source>Make all items stick to their positions</source>
-        <translation>Få alla föremål att stanna på sina platser</translation>
+        <translation>Få alla föremål att stanna på sina positioner</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="373"/>
@@ -725,7 +725,7 @@ vänsterklickas, även när den inte är standard filhanterare.</translation>
     <message>
         <location filename="../shortcuts.ui" line="130"/>
         <source>Paste into transient filter bar</source>
-        <translation>Klistra in i en transient filtermeny</translation>
+        <translation>Klistra in i övergående filterfält</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="135"/>
@@ -778,7 +778,7 @@ vänsterklickas, även när den inte är standard filhanterare.</translation>
     <message>
         <location filename="../main-win.ui" line="146"/>
         <source>Path &amp;Bar</source>
-        <translation>Sökvägs&amp;meny</translation>
+        <translation>Sökväg &amp;fält</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="153"/>
@@ -1038,7 +1038,7 @@ vänsterklickas, även när den inte är standard filhanterare.</translation>
     <message>
         <location filename="../main-win.ui" line="963"/>
         <source>Preserve Settings Recursively from &amp;Here</source>
-        <translation>Bevara inställningar rekursivt från &amp;Här</translation>
+        <translation>Bevara inställningar återkommande från &amp;Här</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="968"/>
