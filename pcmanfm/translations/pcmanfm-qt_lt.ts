@@ -204,7 +204,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../desktopentrydialog.ui" line="45"/>
         <source>Specific name of this launcher.</source>
-        <translation type="unfinished"></translation>
+        <translation>Konkretus šios paleidyklės pavadinimas.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="58"/>
@@ -216,7 +216,9 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
         <source>A short description or generic name, like &quot;Web Browser&quot; or &quot;Home Directory&quot;.
 
 It can be left empty.</source>
-        <translation type="unfinished"></translation>
+        <translation>Trumpas aprašas arba bendrinis pavadinimas, pvz., „Naršyklė“ arba „Namų katalogas“.
+
+Galima palikti tuščią.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="77"/>
@@ -267,7 +269,7 @@ Gali būti paliktas tuščias.</translation>
     <message>
         <location filename="../desktopentrydialog.ui" line="165"/>
         <source>Whether the launched program should run in a terminal window.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ar paleista programa turetų pasileisti terminalo lange.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="169"/>
@@ -287,7 +289,7 @@ Gali būti paliktas tuščias.</translation>
     <message>
         <location filename="../desktopentrydialog.ui" line="189"/>
         <source>Whether this is a link or executes a command.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ar tai yra nuoroda, ar komandos paleidimas.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="193"/>
@@ -311,7 +313,11 @@ Gali būti paliktas tuščias.</translation>
 It is needed only when you want to use the created file in the main menu. Otherwise, you could leave it empty.
 
 Examples: AudioVideo, Audio, Video, Development, Education, Game, Graphics, Network, Office, Settings, System, Utility, Qt.</source>
-        <translation type="unfinished"></translation>
+        <translation>Kabliataškiu atskirtos grupės kuriose ši paleidyklė turėtų būti rodoma naudojant grafinės sąsajos pagrindinį menu (ty., sudiegus ~/.local/share/applications).
+
+Aktualu jei norite naudoti leidyklę per pagrindinį menu. Jeigu ne, šią skiltį galite palikti tuščią.
+
+Pavyzdžiai: AudioVideo, Audio, Video, Development, Education, Game, Graphics, Network, Office, Settings, System, Utility, Qt.</translation>
     </message>
 </context>
 <context>
