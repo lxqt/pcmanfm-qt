@@ -581,6 +581,14 @@ public:
         splitView_ = split;
     }
 
+    size_t splitIndex() const {
+        return splitIndex_;
+    }
+
+    void setSplitIndex(size_t splitIndex) {
+        splitIndex_ = splitIndex;
+    }
+
     Fm::FolderView::ViewMode viewMode() const {
         return viewMode_;
     }
@@ -1108,6 +1116,7 @@ private:
     Fm::SidePane::Mode sidePaneMode_;
     bool showMenuBar_;
     bool splitView_;
+    size_t splitIndex_;
 
     Fm::FolderView::ViewMode viewMode_;
     bool showHidden_;

@@ -80,11 +80,29 @@ public:
     virtual ~MainWindow();
 
     void chdir(Fm::FilePath path, ViewFrame* viewFrame);
+    void chdir(Fm::FilePath path, int frameIndex) {
+        ViewFrame* viewFrame = qobject_cast<ViewFrame*>(ui.viewSplitter->widget(frameIndex));
+
+        if (viewFrame == nullptr) {
+            viewFrame = activeViewFrame_;
+        }
+
+        chdir(path, viewFrame);
+    }
     void chdir(Fm::FilePath path) {
         chdir(path, activeViewFrame_);
     }
 
     void addTab(Fm::FilePath path, ViewFrame* viewFrame);
+    void addTab(Fm::FilePath path, int frameIndex) {
+        ViewFrame* viewFrame = qobject_cast<ViewFrame*>(ui.viewSplitter->widget(frameIndex));
+
+        if (viewFrame == nullptr) {
+            viewFrame = activeViewFrame_;
+        }
+
+        addTab(path, viewFrame);
+    }
     void addTab(Fm::FilePath path) {
         addTab(path, activeViewFrame_);
     }

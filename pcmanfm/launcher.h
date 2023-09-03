@@ -48,7 +48,7 @@ public:
     }
 
 protected:
-    bool openFolder(GAppLaunchContext* ctx, const Fm::FileInfoList& folderInfos, Fm::GErrorPtr& err) override;
+    bool openFolder(GAppLaunchContext* ctx, const Fm::FileInfoList& folderInfos, size_t splitIndex, Fm::GErrorPtr& err) override;
     void launchedFiles(const Fm::FileInfoList& files) const override;
     void launchedPaths(const Fm::FilePathList& paths) const override;
 

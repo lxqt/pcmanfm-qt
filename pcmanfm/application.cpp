@@ -566,13 +566,27 @@ void Application::launchFiles(const QString& cwd, const QStringList& paths, bool
     Fm::FilePathList pathList;
     Fm::FilePath cwd_path;
     auto _paths = paths;
+    size_t splitIndex = 0;
 
     reopenLastTabs = reopenLastTabs && settings_.reopenLastTabs() && !settings_.tabPaths().isEmpty();
     if(reopenLastTabs) {
         _paths = settings_.tabPaths();
-        _paths.removeDuplicates();
+        splitIndex = settings_.splitIndex();
+        if(settings_.splitView() && splitIndex > 0 && splitIndex < (size_t)_paths.size()) {
+            // Remove duplicates within each frame leaving duplicates between frames.
+            QStringList rightFramePaths = _paths.mid(splitIndex);
+            _paths.erase(_paths.begin() + splitIndex, _paths.end());
+            _paths.removeDuplicates();
+            splitIndex = _paths.size();
+            rightFramePaths.removeDuplicates();
+            _paths.append(rightFramePaths);
+        } else {
+            _paths.removeDuplicates();
+            splitIndex = 0;
+        }
         // forget tab paths with next windows until the last one is closed
         settings_.setTabPaths(QStringList());
+        settings_.setSplitIndex(0);
     }
 
     for(const QString& it : qAsConst(_paths)) {
@@ -611,10 +625,10 @@ void Application::launchFiles(const QString& cwd, const QStringList& paths, bool
         }
         auto launcher = Launcher(window);
         launcher.openInNewTab();
-        launcher.launchPaths(nullptr, pathList);
+        launcher.launchPaths(nullptr, pathList, splitIndex);
     }
     else {
-        Launcher(nullptr).launchPaths(nullptr, pathList);
+        Launcher(nullptr).launchPaths(nullptr, pathList, splitIndex);
     }
 
     // if none of the last tabs can be opened and there is no main window yet,

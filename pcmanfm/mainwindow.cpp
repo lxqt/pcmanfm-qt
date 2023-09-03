@@ -1351,20 +1351,30 @@ void MainWindow::closeEvent(QCloseEvent* event) {
 
     // remember last tab paths only if this is the last window
     QStringList tabPaths;
+    size_t splitIndex = 0;
     if(lastActive_ == nullptr && settings.reopenLastTabs()) {
+        QStringList frameTabPaths;
         for(int i = 0; i < ui.viewSplitter->count(); ++i) {
             if(ViewFrame* viewFrame = qobject_cast<ViewFrame*>(ui.viewSplitter->widget(i))) {
+                frameTabPaths.clear();
                 int n = viewFrame->getStackedWidget()->count();
                 for(int j = 0; j < n; ++j) {
                     if(TabPage* page = static_cast<TabPage*>(viewFrame->getStackedWidget()->widget(j))) {
-                        tabPaths.append(QString::fromUtf8(page->path().toString().get()));
+                        frameTabPaths.append(QString::fromUtf8(page->path().toString().get()));
                     }
                 }
+                frameTabPaths.removeDuplicates();
+                // If there are multiple frames, set splitIndex to the index of the first item in
+                // the second frame.
+                if(splitIndex == 0 && tabPaths.size() > 0) {
+                    splitIndex = tabPaths.size();
+                }
+                tabPaths.append(frameTabPaths);
             }
         }
-        tabPaths.removeDuplicates();
     }
     settings.setTabPaths(tabPaths);
+    settings.setSplitIndex(splitIndex);
 }
 
 void MainWindow::onTabBarCurrentChanged(int index) {
