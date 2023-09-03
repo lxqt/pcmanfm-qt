@@ -625,10 +625,13 @@ void Application::launchFiles(const QString& cwd, const QStringList& paths, bool
         }
         auto launcher = Launcher(window);
         launcher.openInNewTab();
-        launcher.launchPaths(nullptr, pathList, splitIndex);
+        launcher.setSplitIndex(splitIndex);
+        launcher.launchPaths(nullptr, pathList);
     }
     else {
-        Launcher(nullptr).launchPaths(nullptr, pathList, splitIndex);
+        auto launcher = Launcher(nullptr);
+        launcher.setSplitIndex(splitIndex);
+        launcher.launchPaths(nullptr, pathList);
     }
 
     // if none of the last tabs can be opened and there is no main window yet,

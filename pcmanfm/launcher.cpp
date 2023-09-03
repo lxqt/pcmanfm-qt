@@ -30,6 +30,7 @@ Launcher::Launcher(PCManFM::MainWindow* mainWindow):
     Fm::FileLauncher(),
     mainWindow_(mainWindow),
     openInNewTab_(false),
+    splitIndex_(0),
     openWithDefaultFileManager_(false) {
 
     Application* app = static_cast<Application*>(qApp);
@@ -38,12 +39,12 @@ Launcher::Launcher(PCManFM::MainWindow* mainWindow):
 
 Launcher::~Launcher() = default;
 
-bool Launcher::openFolder(GAppLaunchContext* ctx, const Fm::FileInfoList& folderInfos, size_t splitIndex, Fm::GErrorPtr& /*err*/) {
+bool Launcher::openFolder(GAppLaunchContext* ctx, const Fm::FileInfoList& folderInfos, Fm::GErrorPtr& /*err*/) {
     auto fi = folderInfos[0];
     Application* app = static_cast<Application*>(qApp);
     MainWindow* mainWindow = mainWindow_;
     Fm::FilePath path = fi->path();
-    bool openSplit = splitIndex > 0 && splitIndex < folderInfos.size();
+    bool openSplit = splitIndex_ > 0 && splitIndex_ < folderInfos.size();
     // Index of the first frame if we are doing a split open, else default to the active frame.
     int frameIndex = openSplit ? 0 : -1;
     if(!mainWindow) {
@@ -78,16 +79,16 @@ bool Launcher::openFolder(GAppLaunchContext* ctx, const Fm::FileInfoList& folder
     }
 
     if(!openSplit) {
-        splitIndex = folderInfos.size();
+        splitIndex_ = folderInfos.size();
     }
 
-    for(size_t i = 1; i < splitIndex; ++i) {
+    for(size_t i = 1; i < splitIndex_; ++i) {
         fi = folderInfos[i];
         path = fi->path();
         mainWindow->addTab(std::move(path), frameIndex);
     }
     if(openSplit) {
-        fi = folderInfos[splitIndex];
+        fi = folderInfos[splitIndex_];
         path = fi->path();
         if(mainWindow_) {
             // We are adding tabs to the right frame of an existing window.
@@ -97,7 +98,7 @@ bool Launcher::openFolder(GAppLaunchContext* ctx, const Fm::FileInfoList& folder
             mainWindow->chdir(std::move(path), 1);
         }
 
-        for(size_t i = splitIndex + 1; i < folderInfos.size(); ++i) {
+        for(size_t i = splitIndex_ + 1; i < folderInfos.size(); ++i) {
             fi = folderInfos[i];
             path = fi->path();
             mainWindow->addTab(std::move(path), 1);
