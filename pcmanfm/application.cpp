@@ -88,7 +88,8 @@ Application::Application(int& argc, char** argv):
     editBookmarksialog_(),
     volumeMonitor_(nullptr),
     userDirsWatcher_(nullptr),
-    lxqtRunning_(false) {
+    lxqtRunning_(false),
+    openingLastTabs_(false) {
 
     argc_ = argc;
     argv_ = argv;
@@ -567,10 +568,9 @@ void Application::launchFiles(const QString& cwd, const QStringList& paths, bool
     Fm::FilePath cwd_path;
     auto _paths = paths;
 
-    reopenLastTabs = reopenLastTabs && settings_.reopenLastTabs() && !settings_.tabPaths().isEmpty();
-    if(reopenLastTabs) {
+    openingLastTabs_ = reopenLastTabs && settings_.reopenLastTabs() && !settings_.tabPaths().isEmpty();
+    if(openingLastTabs_) {
         _paths = settings_.tabPaths();
-        _paths.removeDuplicates();
         // forget tab paths with next windows until the last one is closed
         settings_.setTabPaths(QStringList());
     }
@@ -609,6 +609,11 @@ void Application::launchFiles(const QString& cwd, const QStringList& paths, bool
                 }
             }
         }
+        if(window != nullptr && openingLastTabs_) {
+            // other folders have been opened explicitly in this window;
+            // restoring of tab split number does not make sense
+            settings_.setSplitViewTabsNum(0);
+        }
         auto launcher = Launcher(window);
         launcher.openInNewTab();
         launcher.launchPaths(nullptr, pathList);
@@ -617,9 +622,11 @@ void Application::launchFiles(const QString& cwd, const QStringList& paths, bool
         Launcher(nullptr).launchPaths(nullptr, pathList);
     }
 
-    // if none of the last tabs can be opened and there is no main window yet,
-    // open the current directory
-    if(reopenLastTabs) {
+    if(openingLastTabs_) {
+        openingLastTabs_ = false;
+
+        // if none of the last tabs can be opened and there is no main window yet,
+        // open the current directory
         bool hasWindow = false;
         const QWidgetList windows = topLevelWidgets();
         for(const auto& win : windows) {

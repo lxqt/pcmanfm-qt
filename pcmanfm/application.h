@@ -72,6 +72,10 @@ public:
         return libFm_;
     }
 
+    bool openingLastTabs() const {
+      return openingLastTabs_;
+    }
+
     bool underWayland() const {
       return underWayland_;
     }
@@ -157,6 +161,7 @@ private:
     QString userDirsFile_;
     QString userDesktopFolder_;
     bool lxqtRunning_;
+    bool openingLastTabs_;
 
     bool underWayland_;
 
