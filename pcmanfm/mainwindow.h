@@ -85,9 +85,7 @@ public:
     }
 
     void addTab(Fm::FilePath path, ViewFrame* viewFrame);
-    void addTab(Fm::FilePath path) {
-        addTab(path, activeViewFrame_);
-    }
+    void addTab(Fm::FilePath path);
 
     TabPage* currentPage(ViewFrame* viewFrame) {
         return reinterpret_cast<TabPage*>(viewFrame->getStackedWidget()->currentWidget());
@@ -282,6 +280,8 @@ private:
     // The split mode of this window is changed only from its settings,
     // not from another window. So, we get the mode at the start and keep it.
     bool splitView_;
+
+    int splitTabsNum_; // number of tabs to be restored from the first view frame of the last window
 
     static QPointer<MainWindow> lastActive_;
 };

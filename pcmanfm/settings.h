@@ -470,6 +470,14 @@ public:
         reopenLastTabs_ = reopenLastTabs;
     }
 
+    int splitViewTabsNum() const {
+        return splitViewTabsNum_;
+    }
+
+    void setSplitViewTabsNum(int n) {
+        splitViewTabsNum_ = n;
+    }
+
     QStringList tabPaths() const {
         return tabPaths_;
     }
@@ -1096,6 +1104,7 @@ private:
     bool showTabClose_;
     bool switchToNewTab_;
     bool reopenLastTabs_;
+    int splitViewTabsNum_; // number of tabs in the first view frame when reopening last tabs
     QStringList tabPaths_;
     bool rememberWindowSize_;
     int fixedWindowWidth_;

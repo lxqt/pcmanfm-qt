@@ -129,7 +129,8 @@ MainWindow::MainWindow(Fm::FilePath path):
     rightClickIndex_(-1),
     updatingViewMenu_(false),
     menuSpacer_(nullptr),
-    activeViewFrame_(nullptr) {
+    activeViewFrame_(nullptr),
+    splitTabsNum_(-1) {
 
     Settings& settings = static_cast<Application*>(qApp)->settings();
     setAttribute(Qt::WA_DeleteOnClose);
@@ -731,6 +732,43 @@ int MainWindow::addTabWithPage(TabPage* page, ViewFrame* viewFrame, Fm::FilePath
 void MainWindow::addTab(Fm::FilePath path, ViewFrame* viewFrame) {
     TabPage* newPage = new TabPage(this);
     addTabWithPage(newPage, viewFrame, path);
+}
+
+void MainWindow::addTab(Fm::FilePath path) {
+    if(splitView_ && static_cast<Application*>(qApp)->openingLastTabs()) {
+        int N = static_cast<Application*>(qApp)->settings().splitViewTabsNum();
+        if(N > 0) {
+            // Divide tabs between the first and second view frames appropriately.
+            // NOTE: It is assumed that reoprning of last tabs is started when the split view has
+            // two frames, each with a single tab created in the c-tor -- as is the case with our
+            // calling codes -- otherwise, the splitting index might not be respected.
+            if(splitTabsNum_ == -1) {
+                splitTabsNum_ = N - 1;
+            }
+            ViewFrame* firstFrame = qobject_cast<ViewFrame*>(ui.viewSplitter->widget(0));
+            ViewFrame* secondFrame = qobject_cast<ViewFrame*>(ui.viewSplitter->widget(1));
+            if(!firstFrame || !secondFrame) { // unlikely but logical
+                static_cast<Application*>(qApp)->settings().setSplitViewTabsNum(0);
+                splitTabsNum_ = -1;
+                addTab(path, activeViewFrame_);
+            }
+            else if(splitTabsNum_ > 0) {
+                --splitTabsNum_;
+                addTab(path, firstFrame);
+            }
+            else {
+                addTab(path, secondFrame);
+                // On reaching the single tab of the second frame, remove it after adding a tab.
+                if(splitTabsNum_ == 0 && secondFrame->getStackedWidget()->count() == 2) {
+                    closeTab(0, secondFrame);
+                }
+                splitTabsNum_ = -2; // will not change again for the current window
+            }
+            return;
+        }
+    }
+    // add the tab to the active view frame
+    addTab(path, activeViewFrame_);
 }
 
 void MainWindow::toggleMenuBar(bool /*checked*/) {
@@ -1351,6 +1389,7 @@ void MainWindow::closeEvent(QCloseEvent* event) {
 
     // remember last tab paths only if this is the last window
     QStringList tabPaths;
+    int splitNum = 0;
     if(lastActive_ == nullptr && settings.reopenLastTabs()) {
         for(int i = 0; i < ui.viewSplitter->count(); ++i) {
             if(ViewFrame* viewFrame = qobject_cast<ViewFrame*>(ui.viewSplitter->widget(i))) {
@@ -1361,10 +1400,13 @@ void MainWindow::closeEvent(QCloseEvent* event) {
                     }
                 }
             }
+            if(i == 0 && ui.viewSplitter->count() > 1) {
+                splitNum = tabPaths.size();
+            }
         }
-        tabPaths.removeDuplicates();
     }
     settings.setTabPaths(tabPaths);
+    settings.setSplitViewTabsNum(splitNum);
 }
 
 void MainWindow::onTabBarCurrentChanged(int index) {
