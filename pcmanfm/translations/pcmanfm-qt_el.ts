@@ -156,37 +156,37 @@ USA.</translation>
         <translation>Σύνδεση σε απομακρυσμένο διακομιστή</translation>
     </message>
     <message>
-        <location filename="../connect.ui" line="23"/>
+        <location filename="../connect.ui" line="80"/>
         <source>Anonymous &amp;login</source>
         <translation>Ανώνυμη &amp;σύνδεση</translation>
     </message>
     <message>
-        <location filename="../connect.ui" line="36"/>
+        <location filename="../connect.ui" line="90"/>
         <source>Login as &amp;user:</source>
         <translation>Σύνδεση ως &amp;χρήστης:</translation>
     </message>
     <message>
-        <location filename="../connect.ui" line="65"/>
+        <location filename="../connect.ui" line="29"/>
         <source>Specify remote folder to connect</source>
         <translation>Καθορισμός του απομακρυσμένου φακέλου προς σύνδεση</translation>
     </message>
     <message>
-        <location filename="../connect.ui" line="72"/>
+        <location filename="../connect.ui" line="36"/>
         <source>Type:</source>
         <translation>Τύπος:</translation>
     </message>
     <message>
-        <location filename="../connect.ui" line="79"/>
+        <location filename="../connect.ui" line="56"/>
         <source>Port:</source>
         <translation>Θύρα:</translation>
     </message>
     <message>
-        <location filename="../connect.ui" line="86"/>
+        <location filename="../connect.ui" line="70"/>
         <source>Path:</source>
         <translation>Διαδρομή:</translation>
     </message>
     <message>
-        <location filename="../connect.ui" line="96"/>
+        <location filename="../connect.ui" line="46"/>
         <source>Host:</source>
         <translation>Υπολογιστής:</translation>
     </message>
@@ -237,79 +237,79 @@ It can be left empty.</source>
 Μπορεί να αφεθεί κενό.</translation>
     </message>
     <message>
-        <location filename="../desktopentrydialog.ui" line="96"/>
+        <location filename="../desktopentrydialog.ui" line="117"/>
         <source>Command:</source>
         <translation>Εντολή:</translation>
     </message>
     <message>
-        <location filename="../desktopentrydialog.ui" line="112"/>
-        <location filename="../desktopentrydialog.ui" line="143"/>
+        <location filename="../desktopentrydialog.ui" line="133"/>
+        <location filename="../desktopentrydialog.ui" line="164"/>
         <source>...</source>
         <translation>...</translation>
     </message>
     <message>
-        <location filename="../desktopentrydialog.ui" line="121"/>
+        <location filename="../desktopentrydialog.ui" line="142"/>
         <source>Icon:</source>
         <translation>Εικονίδιο:</translation>
     </message>
     <message>
-        <location filename="../desktopentrydialog.ui" line="130"/>
+        <location filename="../desktopentrydialog.ui" line="151"/>
         <source>Icon to display in file manager, menus, etc.</source>
         <translation>Εικονίδιο προς εμφάνιση στον διαχειριστή αρχείων, τα μενού, κλπ.</translation>
     </message>
     <message>
-        <location filename="../desktopentrydialog.ui" line="152"/>
-        <location filename="../desktopentrydialog.ui" line="162"/>
+        <location filename="../desktopentrydialog.ui" line="173"/>
+        <location filename="../desktopentrydialog.ui" line="183"/>
         <source>Run in terminal?</source>
         <translation>Εκτέλεση στο τερματικό;</translation>
     </message>
     <message>
-        <location filename="../desktopentrydialog.ui" line="155"/>
+        <location filename="../desktopentrydialog.ui" line="176"/>
         <source>Terminal:</source>
         <translation>Τερματικό:</translation>
     </message>
     <message>
-        <location filename="../desktopentrydialog.ui" line="165"/>
+        <location filename="../desktopentrydialog.ui" line="186"/>
         <source>Whether the launched program should run in a terminal window.</source>
         <translation>Αν το εκκινημένο πρόγραμμα θα πρέπει να εκτελείται σε παράθυρο τερματικού.</translation>
     </message>
     <message>
-        <location filename="../desktopentrydialog.ui" line="169"/>
+        <location filename="../desktopentrydialog.ui" line="190"/>
         <source>No</source>
         <translation>Όχι</translation>
     </message>
     <message>
-        <location filename="../desktopentrydialog.ui" line="174"/>
+        <location filename="../desktopentrydialog.ui" line="195"/>
         <source>Yes</source>
         <translation>Ναι</translation>
     </message>
     <message>
-        <location filename="../desktopentrydialog.ui" line="182"/>
+        <location filename="../desktopentrydialog.ui" line="203"/>
         <source>Type:</source>
         <translation>Τύπος:</translation>
     </message>
     <message>
-        <location filename="../desktopentrydialog.ui" line="189"/>
+        <location filename="../desktopentrydialog.ui" line="210"/>
         <source>Whether this is a link or executes a command.</source>
         <translation>Αν πρόκειται για έναν σύνδεσμο ή την εκτέλεση μιας εντολής.</translation>
     </message>
     <message>
-        <location filename="../desktopentrydialog.ui" line="193"/>
+        <location filename="../desktopentrydialog.ui" line="214"/>
         <source>Application</source>
         <translation>Εφαρμογή</translation>
     </message>
     <message>
-        <location filename="../desktopentrydialog.ui" line="198"/>
+        <location filename="../desktopentrydialog.ui" line="219"/>
         <source>Link</source>
         <translation>Σύνδεσμος</translation>
     </message>
     <message>
-        <location filename="../desktopentrydialog.ui" line="206"/>
+        <location filename="../desktopentrydialog.ui" line="96"/>
         <source>Categories:</source>
         <translation>Κατηγορίες:</translation>
     </message>
     <message>
-        <location filename="../desktopentrydialog.ui" line="213"/>
+        <location filename="../desktopentrydialog.ui" line="103"/>
         <source>Semicolon separated categories in which the entry should be shown if it is used by the DE&apos;s main menu (e.g., when put inside ~/.local/share/applications).
 
 It is needed only when you want to use the created file in the main menu. Otherwise, you could leave it empty.
@@ -439,18 +439,18 @@ Examples: AudioVideo, Audio, Video, Development, Education, Game, Graphics, Netw
         <translation>Διαπόσταση</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="152"/>
+        <location filename="../desktop-preferences.ui" line="145"/>
         <source>Minimum item margins:</source>
         <translation>Ελάχιστο περιθώριο αντικειμένων:</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="189"/>
+        <location filename="../desktop-preferences.ui" line="152"/>
         <source>3 px by default.</source>
         <translation>3 εικ εξ ορισμού.</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="176"/>
-        <location filename="../desktop-preferences.ui" line="192"/>
+        <location filename="../desktop-preferences.ui" line="155"/>
+        <location filename="../desktop-preferences.ui" line="179"/>
         <location filename="../desktop-preferences.ui" line="237"/>
         <location filename="../desktop-preferences.ui" line="249"/>
         <location filename="../desktop-preferences.ui" line="275"/>
@@ -459,19 +459,19 @@ Examples: AudioVideo, Audio, Video, Development, Education, Game, Graphics, Netw
         <translation> εικ</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="205"/>
+        <location filename="../desktop-preferences.ui" line="168"/>
         <source>x</source>
         <translation>x</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="172"/>
+        <location filename="../desktop-preferences.ui" line="175"/>
         <source>1 px by default.
 A space is also reserved for 3 lines of text.</source>
         <translation>1 εικ εξ ορισμού.
 Επίσης δεσμεύεται μια θέση για 3 γραμμές κειμένου.</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="145"/>
+        <location filename="../desktop-preferences.ui" line="192"/>
         <source>Lock</source>
         <translation>Κλείδωμα</translation>
     </message>
@@ -527,37 +527,37 @@ are left clicked, even when it is not the default file manager.</source>
         <translation>Φάκελος εικόνας ταπετσαρίας:</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="498"/>
+        <location filename="../desktop-preferences.ui" line="505"/>
         <source>Browse</source>
         <translation>Περιήγηση</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="505"/>
+        <location filename="../desktop-preferences.ui" line="512"/>
         <source> hour(s)</source>
         <translation> ώρα(ες)</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="515"/>
+        <location filename="../desktop-preferences.ui" line="522"/>
         <source>and</source>
         <translation>και</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="528"/>
+        <location filename="../desktop-preferences.ui" line="535"/>
         <source>Intervals less than 5min will be ignored</source>
         <translation>Αγνοούνται τα χρονικά διαστήματα μικρότερα από 5 λεπτά</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="531"/>
+        <location filename="../desktop-preferences.ui" line="538"/>
         <source>Interval:</source>
         <translation>Χρονικό διάστημα:</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="538"/>
+        <location filename="../desktop-preferences.ui" line="545"/>
         <source> minute(s)</source>
         <translation> λεπτό(ά)</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="564"/>
+        <location filename="../desktop-preferences.ui" line="498"/>
         <source>Wallpaper folder</source>
         <translation>Φάκελος ταπετσαριών</translation>
     </message>
@@ -789,7 +789,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="290"/>
         <source>Go Up</source>
-        <translation>Μετάβαση πάνω</translation>
+        <translation>Μετάβαση&#xa0;πάνω</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="293"/>
@@ -1448,99 +1448,99 @@ are left clicked, even when it is not the default file manager.</source>
 <context>
     <name>PCManFM::Application</name>
     <message>
-        <location filename="../application.cpp" line="186"/>
+        <location filename="../application.cpp" line="187"/>
         <source>Name of configuration profile</source>
         <translation>Όνομα διαμόρφωσης του προφίλ</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="186"/>
+        <location filename="../application.cpp" line="187"/>
         <source>PROFILE</source>
         <translation>ΠΡΟΦΙΛ</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="189"/>
+        <location filename="../application.cpp" line="190"/>
         <source>Run PCManFM-Qt as a daemon</source>
         <translation>Εκτέλεση του PCManFM-Qt ως δαίμονα</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="192"/>
+        <location filename="../application.cpp" line="193"/>
         <source>Quit PCManFM-Qt</source>
         <translation>Έξοδος του PCManFM-Qt</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="195"/>
+        <location filename="../application.cpp" line="196"/>
         <source>Launch desktop manager</source>
         <translation>Εκτέλεση διαχειριστή της επιφάνειας εργασίας</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="198"/>
+        <location filename="../application.cpp" line="199"/>
         <source>Turn off desktop manager if it&apos;s running</source>
         <translation>Τερματισμός του διαχειριστή της επιφάνειας εργασίας αν εκτελείται</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="201"/>
+        <location filename="../application.cpp" line="202"/>
         <source>Open desktop preference dialog on the page with the specified name</source>
         <translation>Άνοιγμα του διαλόγου προτιμήσεων της επιφάνειας εργασίας στη σελίδα με το καθορισμένο όνομα</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="201"/>
-        <location filename="../application.cpp" line="216"/>
+        <location filename="../application.cpp" line="202"/>
+        <location filename="../application.cpp" line="217"/>
         <source>NAME</source>
         <translation>ΟΝΟΜΑ</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="204"/>
+        <location filename="../application.cpp" line="205"/>
         <source>Open new window</source>
         <translation>Άνοιγμα νέου παραθύρου</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="207"/>
+        <location filename="../application.cpp" line="208"/>
         <source>Open Find Files utility</source>
         <translation>Άνοιγμα του εργαλείου αναζήτησης αρχείων</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="210"/>
+        <location filename="../application.cpp" line="211"/>
         <source>Set desktop wallpaper from image FILE</source>
         <translation>Ορισμός της ταπετσαρίας της επιφάνειας εργασίας από ΑΡΧΕΙΟ εικόνας</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="210"/>
+        <location filename="../application.cpp" line="211"/>
         <source>FILE</source>
         <translation>ΑΡΧΕΙΟ</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="213"/>
+        <location filename="../application.cpp" line="214"/>
         <source>MODE</source>
         <translation>ΛΕΙΤΟΥΡΓΙΑ</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="213"/>
+        <location filename="../application.cpp" line="214"/>
         <source>Set mode of desktop wallpaper. MODE=(%1)</source>
         <translation>Ορισμός της λειτουργίας της ταπετσαρίας της επιφάνειας εργασίας. ΛΕΙΤΟΥΡΓΙΑ=(%1)</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="216"/>
+        <location filename="../application.cpp" line="217"/>
         <source>Open Preferences dialog on the page with the specified name</source>
         <translation>Άνοιγμα του διαλόγου προτιμήσεων στη σελίδα με το καθορισμένο όνομα</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="219"/>
+        <location filename="../application.cpp" line="220"/>
         <source>Files or directories to open</source>
         <translation>Αρχεία ή κατάλογοι προς άνοιγμα</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="219"/>
+        <location filename="../application.cpp" line="220"/>
         <source>[FILE1, FILE2,...]</source>
         <translation>[ΑΡΧΕΙΟ1, ΑΡΧΕΙΟ2,...]</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="648"/>
-        <location filename="../application.cpp" line="653"/>
+        <location filename="../application.cpp" line="655"/>
+        <location filename="../application.cpp" line="660"/>
         <source>Error</source>
         <translation>Σφάλμα</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="653"/>
+        <location filename="../application.cpp" line="660"/>
         <source>Terminal emulator is not set.</source>
         <translation>Δεν έχει οριστεί ο προσομοιωτής τερματικού.</translation>
     </message>
@@ -1713,33 +1713,33 @@ are left clicked, even when it is not the default file manager.</source>
         <translation>Δίκτυο</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="997"/>
+        <location filename="../desktopwindow.cpp" line="1011"/>
         <source>Open</source>
         <translation>Άνοιγμα</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1003"/>
-        <location filename="../desktopwindow.cpp" line="1043"/>
+        <location filename="../desktopwindow.cpp" line="1017"/>
+        <location filename="../desktopwindow.cpp" line="1057"/>
         <source>Stic&amp;k to Current Position</source>
         <translation>&amp;Παραμονή στην τρέχουσα θέση</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1011"/>
+        <location filename="../desktopwindow.cpp" line="1025"/>
         <source>Empty Trash</source>
         <translation>Άδειασμα απορριμμάτων</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1070"/>
+        <location filename="../desktopwindow.cpp" line="1084"/>
         <source>Hide Desktop Items</source>
         <translation>Απόκρυψη των αντικειμένων της επιφάνειας εργασίας</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1076"/>
+        <location filename="../desktopwindow.cpp" line="1090"/>
         <source>Create Launcher</source>
         <translation>Δημιουργία εκτελεστή</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1079"/>
+        <location filename="../desktopwindow.cpp" line="1093"/>
         <source>Desktop Preferences</source>
         <translation>Ιδιότητες της επιφάνειας εργασίας</translation>
     </message>
@@ -1763,60 +1763,60 @@ are left clicked, even when it is not the default file manager.</source>
 <context>
     <name>PCManFM::MainWindow</name>
     <message>
-        <location filename="../mainwindow.cpp" line="141"/>
+        <location filename="../mainwindow.cpp" line="142"/>
         <source>Root Instance</source>
         <translation>Άνοιγμα ως διαχειριστής</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="742"/>
+        <location filename="../mainwindow.cpp" line="780"/>
         <source>Hide menu bar</source>
         <translation>Απόκρυψη της γραμμή μενού</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="743"/>
+        <location filename="../mainwindow.cpp" line="781"/>
         <source>This will hide the menu bar completely, use Ctrl+M to show it again.</source>
         <translation>Αυτό θα καταχωνιάσει τη γραμμή μενού. Μπορείτε να την αποκαλύψετε πάλι με τον συνδυασμό πλήκτρων Ctrl+M.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1190"/>
+        <location filename="../mainwindow.cpp" line="1228"/>
         <source>Version: %1</source>
         <translation>Έκδοση: %1</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="174"/>
-        <location filename="../mainwindow.cpp" line="2161"/>
+        <location filename="../mainwindow.cpp" line="175"/>
+        <location filename="../mainwindow.cpp" line="2203"/>
         <source>&amp;Move to Trash</source>
         <translation>&amp;Μετακίνηση στα απορρίμματα</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="174"/>
-        <location filename="../mainwindow.cpp" line="2161"/>
+        <location filename="../mainwindow.cpp" line="175"/>
+        <location filename="../mainwindow.cpp" line="2203"/>
         <source>&amp;Delete</source>
         <translation>&amp;Διαγραφή</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1997"/>
+        <location filename="../mainwindow.cpp" line="2039"/>
         <source>Customized View Settings</source>
         <translation>Προσαρμοσμένες ρυθμίσεις προβολής</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="2268"/>
-        <location filename="../mainwindow.cpp" line="2276"/>
+        <location filename="../mainwindow.cpp" line="2310"/>
+        <location filename="../mainwindow.cpp" line="2318"/>
         <source>Error</source>
         <translation>Σφάλμα</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="2276"/>
+        <location filename="../mainwindow.cpp" line="2318"/>
         <source>Switch user command is not set.</source>
         <translation>Η εντολή εναλλαγής του χρήστη δεν έχει οριστεί.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="2378"/>
+        <location filename="../mainwindow.cpp" line="2420"/>
         <source>Cleaning Folder Settings</source>
         <translation>Εκκαθάριση των ρυθμίσεων του φακέλου</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="2379"/>
+        <location filename="../mainwindow.cpp" line="2421"/>
         <source>Do you want to remove settings of nonexistent folders?
 They might be useful if those folders are created again.</source>
         <translation>Επιθυμείτε την αφαίρεση των ρυθμίσεων ανύπαρκτων φακέλων;
@@ -1826,24 +1826,34 @@ They might be useful if those folders are created again.</source>
 <context>
     <name>PCManFM::PreferencesDialog</name>
     <message>
-        <location filename="../preferencesdialog.cpp" line="199"/>
+        <location filename="../preferencesdialog.cpp" line="206"/>
         <source>Icon View</source>
         <translation>Προβολή εικονιδίων</translation>
     </message>
     <message>
-        <location filename="../preferencesdialog.cpp" line="200"/>
+        <location filename="../preferencesdialog.cpp" line="207"/>
         <source>Compact View</source>
         <translation>Συμπαγής προβολή</translation>
     </message>
     <message>
-        <location filename="../preferencesdialog.cpp" line="201"/>
+        <location filename="../preferencesdialog.cpp" line="208"/>
         <source>Thumbnail View</source>
         <translation>Προβολή εικόνων επισκόπησης</translation>
     </message>
     <message>
-        <location filename="../preferencesdialog.cpp" line="202"/>
+        <location filename="../preferencesdialog.cpp" line="209"/>
         <source>Detailed List View</source>
         <translation>Αναλυτική προβολή λίστας</translation>
+    </message>
+    <message>
+        <location filename="../preferencesdialog.cpp" line="279"/>
+        <source>Remove if added by user</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../preferencesdialog.cpp" line="303"/>
+        <source>Open user-defined list</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -2061,12 +2071,12 @@ They might be useful if those folders are created again.</source>
         <translation>Άνοιγμα των αρχείων με μονό κλικ</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="113"/>
+        <location filename="../preferences.ui" line="162"/>
         <source>Default view mode:</source>
         <translation>Λειτουργία προβολής εξ ορισμού:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="129"/>
+        <location filename="../preferences.ui" line="119"/>
         <source> sec</source>
         <translation> δευτ</translation>
     </message>
@@ -2107,7 +2117,7 @@ They might be useful if those folders are created again.</source>
     </message>
     <message>
         <location filename="../preferences.ui" line="103"/>
-        <location filename="../preferences.ui" line="126"/>
+        <location filename="../preferences.ui" line="116"/>
         <source>Set to zero to disable auto-selection.</source>
         <translation>Ορίστε το σε μηδέν για απενεργοποίηση της αυτόματης επιλογής.</translation>
     </message>
@@ -2117,17 +2127,17 @@ They might be useful if those folders are created again.</source>
         <translation>Καθυστέρηση αυτόματης επιλογής σε λειτουργία μονού κλικ:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="147"/>
+        <location filename="../preferences.ui" line="144"/>
         <source>Open in current tab</source>
         <translation>Άνοιγμα στην τρέχουσα καρτέλα</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="152"/>
+        <location filename="../preferences.ui" line="149"/>
         <source>Open in new tab</source>
         <translation>Άνοιγμα σε νέα καρτέλα</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="157"/>
+        <location filename="../preferences.ui" line="154"/>
         <source>Open in new window</source>
         <translation>Άνοιγμα σε νέο παράθυρο</translation>
     </message>
@@ -2288,7 +2298,7 @@ A value of -1 means that there is no limit for the file size (the default).</sou
         <translation>Χωρίς όριο</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="853"/>
+        <location filename="../preferences.ui" line="860"/>
         <source>Examples:&lt;br&gt;For terminal: &lt;i&gt;xterm -e %s&lt;/i&gt;&lt;br&gt;For switching user: &lt;i&gt;lxsudo %s&lt;/i&gt; or &lt;i&gt;lxsudo dbus-run-session -- %s&lt;/i&gt;&lt;br&gt;&lt;i&gt;%s&lt;/i&gt; is the command line you want to execute with terminal or su.&lt;br&gt; Important: Please use lxsudo, sudo alone will wreck permissions of the settings file.</source>
         <translation>Παραδείγματα:&lt;br&gt;Για το τερματικό: &lt;i&gt;xterm -e %s&lt;/i&gt;&lt;br&gt;Για εναλλαγή χρήστη: &lt;i&gt;lxsudo %s&lt;/i&gt; ή &lt;i&gt;lxsudo dbus-run-session - %s&lt;/i&gt;&lt;br&gt;&lt;i&gt;%s&lt;/i&gt; είναι η γραμμή εντολών που θέλετε να εκτελέσετε με το τερματικό ή με su.&lt;br&gt; Σημαντικό: Παρακαλώ χρησιμοποιήστε lxsudo, η sudo μόνη της θα καταστρέψει τις άδειες του αρχείου ρυθμίσεων.</translation>
     </message>
@@ -2313,12 +2323,12 @@ A value of -1 means that there is no limit for the file size (the default).</sou
         <translation>Για να λάβουν χώρα οι τροποποιήσεις απαιτείται επανεκκίνηση της εφαρμογής.</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="139"/>
+        <location filename="../preferences.ui" line="136"/>
         <source>Bookmarks menu:</source>
         <translation>Μενού σελιδοδεικτών:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="165"/>
+        <location filename="../preferences.ui" line="129"/>
         <source>Show folder context menu with Ctrl + right click</source>
         <translation>Εμφάνιση του σχετικού μενού του φακέλου με Ctrl + δεξί κλικ</translation>
     </message>
@@ -2398,12 +2408,12 @@ A value of -1 means that there is no limit for the file size (the default).</sou
         <translation>Προσομοιωτής τερματικού:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="840"/>
+        <location filename="../preferences.ui" line="847"/>
         <source>Switch &amp;user command:</source>
         <translation>Εντολή εναλλαγής &amp;χρήστη:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="866"/>
+        <location filename="../preferences.ui" line="873"/>
         <source>Archiver in&amp;tegration:</source>
         <translation>Ενσωμάτωση αρ&amp;χειοθέτησης:</translation>
     </message>

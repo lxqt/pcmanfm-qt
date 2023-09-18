@@ -150,37 +150,37 @@ Fifth Floor, Boston, MA 02110-1301, USA 로 서면 문의하십시오.</translat
         <translation>원격 서버에 연결하기</translation>
     </message>
     <message>
-        <location filename="../connect.ui" line="23"/>
+        <location filename="../connect.ui" line="80"/>
         <source>Anonymous &amp;login</source>
         <translation>익명 로그인(&amp;L)</translation>
     </message>
     <message>
-        <location filename="../connect.ui" line="36"/>
+        <location filename="../connect.ui" line="90"/>
         <source>Login as &amp;user:</source>
         <translation>사용자로 로그인(&amp;U):</translation>
     </message>
     <message>
-        <location filename="../connect.ui" line="65"/>
+        <location filename="../connect.ui" line="29"/>
         <source>Specify remote folder to connect</source>
         <translation>연결할 원격 폴더 지정하기</translation>
     </message>
     <message>
-        <location filename="../connect.ui" line="72"/>
+        <location filename="../connect.ui" line="36"/>
         <source>Type:</source>
         <translation>유형:</translation>
     </message>
     <message>
-        <location filename="../connect.ui" line="79"/>
+        <location filename="../connect.ui" line="56"/>
         <source>Port:</source>
         <translation>포트:</translation>
     </message>
     <message>
-        <location filename="../connect.ui" line="86"/>
+        <location filename="../connect.ui" line="70"/>
         <source>Path:</source>
         <translation>경로:</translation>
     </message>
     <message>
-        <location filename="../connect.ui" line="96"/>
+        <location filename="../connect.ui" line="46"/>
         <source>Host:</source>
         <translation>호스트:</translation>
     </message>
@@ -231,79 +231,79 @@ It can be left empty.</source>
 비워둘 수 있습니다.</translation>
     </message>
     <message>
-        <location filename="../desktopentrydialog.ui" line="96"/>
+        <location filename="../desktopentrydialog.ui" line="117"/>
         <source>Command:</source>
         <translation>명령:</translation>
     </message>
     <message>
-        <location filename="../desktopentrydialog.ui" line="112"/>
-        <location filename="../desktopentrydialog.ui" line="143"/>
+        <location filename="../desktopentrydialog.ui" line="133"/>
+        <location filename="../desktopentrydialog.ui" line="164"/>
         <source>...</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../desktopentrydialog.ui" line="121"/>
+        <location filename="../desktopentrydialog.ui" line="142"/>
         <source>Icon:</source>
         <translation>아이콘:</translation>
     </message>
     <message>
-        <location filename="../desktopentrydialog.ui" line="130"/>
+        <location filename="../desktopentrydialog.ui" line="151"/>
         <source>Icon to display in file manager, menus, etc.</source>
         <translation>파일 관리자, 메뉴 등에 표시할 아이콘.</translation>
     </message>
     <message>
-        <location filename="../desktopentrydialog.ui" line="152"/>
-        <location filename="../desktopentrydialog.ui" line="162"/>
+        <location filename="../desktopentrydialog.ui" line="173"/>
+        <location filename="../desktopentrydialog.ui" line="183"/>
         <source>Run in terminal?</source>
         <translation>터미널에서 실행하시겠습니까?</translation>
     </message>
     <message>
-        <location filename="../desktopentrydialog.ui" line="155"/>
+        <location filename="../desktopentrydialog.ui" line="176"/>
         <source>Terminal:</source>
         <translation>터미널:</translation>
     </message>
     <message>
-        <location filename="../desktopentrydialog.ui" line="165"/>
+        <location filename="../desktopentrydialog.ui" line="186"/>
         <source>Whether the launched program should run in a terminal window.</source>
         <translation>시작된 프로그램이 터미널 창에서 실행되어야 하는지에 대한 판단.</translation>
     </message>
     <message>
-        <location filename="../desktopentrydialog.ui" line="169"/>
+        <location filename="../desktopentrydialog.ui" line="190"/>
         <source>No</source>
         <translation>아니오</translation>
     </message>
     <message>
-        <location filename="../desktopentrydialog.ui" line="174"/>
+        <location filename="../desktopentrydialog.ui" line="195"/>
         <source>Yes</source>
         <translation>예</translation>
     </message>
     <message>
-        <location filename="../desktopentrydialog.ui" line="182"/>
+        <location filename="../desktopentrydialog.ui" line="203"/>
         <source>Type:</source>
         <translation>유형:</translation>
     </message>
     <message>
-        <location filename="../desktopentrydialog.ui" line="189"/>
+        <location filename="../desktopentrydialog.ui" line="210"/>
         <source>Whether this is a link or executes a command.</source>
         <translation>이것이 링크인지 또는 명령을 실행할지를 결정짓기.</translation>
     </message>
     <message>
-        <location filename="../desktopentrydialog.ui" line="193"/>
+        <location filename="../desktopentrydialog.ui" line="214"/>
         <source>Application</source>
         <translation>응용프로그램</translation>
     </message>
     <message>
-        <location filename="../desktopentrydialog.ui" line="198"/>
+        <location filename="../desktopentrydialog.ui" line="219"/>
         <source>Link</source>
         <translation>링크</translation>
     </message>
     <message>
-        <location filename="../desktopentrydialog.ui" line="206"/>
+        <location filename="../desktopentrydialog.ui" line="96"/>
         <source>Categories:</source>
         <translation>카테고리:</translation>
     </message>
     <message>
-        <location filename="../desktopentrydialog.ui" line="213"/>
+        <location filename="../desktopentrydialog.ui" line="103"/>
         <source>Semicolon separated categories in which the entry should be shown if it is used by the DE&apos;s main menu (e.g., when put inside ~/.local/share/applications).
 
 It is needed only when you want to use the created file in the main menu. Otherwise, you could leave it empty.
@@ -433,18 +433,18 @@ Examples: AudioVideo, Audio, Video, Development, Education, Game, Graphics, Netw
         <translation>간격</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="152"/>
+        <location filename="../desktop-preferences.ui" line="145"/>
         <source>Minimum item margins:</source>
         <translation>최소 항목 여백:</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="189"/>
+        <location filename="../desktop-preferences.ui" line="152"/>
         <source>3 px by default.</source>
         <translation>기본적으로 3픽셀입니다.</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="176"/>
-        <location filename="../desktop-preferences.ui" line="192"/>
+        <location filename="../desktop-preferences.ui" line="155"/>
+        <location filename="../desktop-preferences.ui" line="179"/>
         <location filename="../desktop-preferences.ui" line="237"/>
         <location filename="../desktop-preferences.ui" line="249"/>
         <location filename="../desktop-preferences.ui" line="275"/>
@@ -453,19 +453,19 @@ Examples: AudioVideo, Audio, Video, Development, Education, Game, Graphics, Netw
         <translation></translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="205"/>
+        <location filename="../desktop-preferences.ui" line="168"/>
         <source>x</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="172"/>
+        <location filename="../desktop-preferences.ui" line="175"/>
         <source>1 px by default.
 A space is also reserved for 3 lines of text.</source>
         <translation>기본적으로 1픽셀입니다.
 3줄의 텍스트를 위한 공간도 확보됩니다.</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="145"/>
+        <location filename="../desktop-preferences.ui" line="192"/>
         <source>Lock</source>
         <translation>잠금</translation>
     </message>
@@ -522,37 +522,37 @@ PCManFM-Qt에서 열립니다.</translation>
         <translation>배경화면 이미지 폴더:</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="498"/>
+        <location filename="../desktop-preferences.ui" line="505"/>
         <source>Browse</source>
         <translation>찾아보기</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="505"/>
+        <location filename="../desktop-preferences.ui" line="512"/>
         <source> hour(s)</source>
         <translation> 시간</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="515"/>
+        <location filename="../desktop-preferences.ui" line="522"/>
         <source>and</source>
         <translation>:</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="528"/>
+        <location filename="../desktop-preferences.ui" line="535"/>
         <source>Intervals less than 5min will be ignored</source>
         <translation>5분 미만의 간격은 무시됩니다</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="531"/>
+        <location filename="../desktop-preferences.ui" line="538"/>
         <source>Interval:</source>
         <translation>간격:</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="538"/>
+        <location filename="../desktop-preferences.ui" line="545"/>
         <source> minute(s)</source>
         <translation> 분</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="564"/>
+        <location filename="../desktop-preferences.ui" line="498"/>
         <source>Wallpaper folder</source>
         <translation>배경화면 폴더</translation>
     </message>
@@ -1445,99 +1445,99 @@ PCManFM-Qt에서 열립니다.</translation>
 <context>
     <name>PCManFM::Application</name>
     <message>
-        <location filename="../application.cpp" line="186"/>
+        <location filename="../application.cpp" line="187"/>
         <source>Name of configuration profile</source>
         <translation>구성 프로필의 이름</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="186"/>
+        <location filename="../application.cpp" line="187"/>
         <source>PROFILE</source>
         <translation>&lt;프로필&gt;</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="189"/>
+        <location filename="../application.cpp" line="190"/>
         <source>Run PCManFM-Qt as a daemon</source>
         <translation>데몬으로 PCManFM-Qt 실행</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="192"/>
+        <location filename="../application.cpp" line="193"/>
         <source>Quit PCManFM-Qt</source>
         <translation>PCManFM-Qt 종료</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="195"/>
+        <location filename="../application.cpp" line="196"/>
         <source>Launch desktop manager</source>
         <translation>데스크톱 매니저 실행</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="198"/>
+        <location filename="../application.cpp" line="199"/>
         <source>Turn off desktop manager if it&apos;s running</source>
         <translation>실행 중인 경우 바탕화면 관리자 끄기</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="201"/>
+        <location filename="../application.cpp" line="202"/>
         <source>Open desktop preference dialog on the page with the specified name</source>
         <translation>지정된 이름으로 페이지에서 데스크톱 기본 설정 대화 상자 열기</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="201"/>
-        <location filename="../application.cpp" line="216"/>
+        <location filename="../application.cpp" line="202"/>
+        <location filename="../application.cpp" line="217"/>
         <source>NAME</source>
         <translation>&lt;이름&gt;</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="204"/>
+        <location filename="../application.cpp" line="205"/>
         <source>Open new window</source>
         <translation>새 창 열기</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="207"/>
+        <location filename="../application.cpp" line="208"/>
         <source>Open Find Files utility</source>
         <translation>파일 찾기 유틸리티 열기</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="210"/>
+        <location filename="../application.cpp" line="211"/>
         <source>Set desktop wallpaper from image FILE</source>
         <translation>이미지 파일에서 바탕화면 배경화면 설정하기</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="210"/>
+        <location filename="../application.cpp" line="211"/>
         <source>FILE</source>
         <translation>&lt;파일&gt;</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="213"/>
+        <location filename="../application.cpp" line="214"/>
         <source>MODE</source>
         <translation>&lt;모드&gt;</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="213"/>
+        <location filename="../application.cpp" line="214"/>
         <source>Set mode of desktop wallpaper. MODE=(%1)</source>
         <translation>바탕화면 배경화면 모드 설정하기. MODE=(%1)</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="216"/>
+        <location filename="../application.cpp" line="217"/>
         <source>Open Preferences dialog on the page with the specified name</source>
         <translation>지정된 이름의 페이지에서 기본설정 대화상자 열기</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="219"/>
+        <location filename="../application.cpp" line="220"/>
         <source>Files or directories to open</source>
         <translation>열기 위한 파일 또는 디렉터리</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="219"/>
+        <location filename="../application.cpp" line="220"/>
         <source>[FILE1, FILE2,...]</source>
         <translation>[파일1, 파일2,...]</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="648"/>
-        <location filename="../application.cpp" line="653"/>
+        <location filename="../application.cpp" line="655"/>
+        <location filename="../application.cpp" line="660"/>
         <source>Error</source>
         <translation>오류</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="653"/>
+        <location filename="../application.cpp" line="660"/>
         <source>Terminal emulator is not set.</source>
         <translation>터미널 에뮬레이터가 설정되지 않았습니다.</translation>
     </message>
@@ -1709,33 +1709,33 @@ PCManFM-Qt에서 열립니다.</translation>
         <translation>네트워크</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="997"/>
+        <location filename="../desktopwindow.cpp" line="1011"/>
         <source>Open</source>
         <translation>열기</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1003"/>
-        <location filename="../desktopwindow.cpp" line="1043"/>
+        <location filename="../desktopwindow.cpp" line="1017"/>
+        <location filename="../desktopwindow.cpp" line="1057"/>
         <source>Stic&amp;k to Current Position</source>
         <translation>현재 위치 유지(&amp;K)</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1011"/>
+        <location filename="../desktopwindow.cpp" line="1025"/>
         <source>Empty Trash</source>
         <translation>휴지통 비우기</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1070"/>
+        <location filename="../desktopwindow.cpp" line="1084"/>
         <source>Hide Desktop Items</source>
         <translation>데스크톱 항목 숨기기</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1076"/>
+        <location filename="../desktopwindow.cpp" line="1090"/>
         <source>Create Launcher</source>
         <translation>실행 프로그램 만들기</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1079"/>
+        <location filename="../desktopwindow.cpp" line="1093"/>
         <source>Desktop Preferences</source>
         <translation>데스크톱 기본설정</translation>
     </message>
@@ -1759,60 +1759,60 @@ PCManFM-Qt에서 열립니다.</translation>
 <context>
     <name>PCManFM::MainWindow</name>
     <message>
-        <location filename="../mainwindow.cpp" line="141"/>
+        <location filename="../mainwindow.cpp" line="142"/>
         <source>Root Instance</source>
         <translation>루트 인스턴스</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="742"/>
+        <location filename="../mainwindow.cpp" line="780"/>
         <source>Hide menu bar</source>
         <translation>메뉴 모음 숨김</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="743"/>
+        <location filename="../mainwindow.cpp" line="781"/>
         <source>This will hide the menu bar completely, use Ctrl+M to show it again.</source>
         <translation>이렇게하면 메뉴 모음이 완전히 숨겨지고, Ctrl + M을 사용하여 다시 표시합니다.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1190"/>
+        <location filename="../mainwindow.cpp" line="1228"/>
         <source>Version: %1</source>
         <translation>버전: %1</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="174"/>
-        <location filename="../mainwindow.cpp" line="2161"/>
+        <location filename="../mainwindow.cpp" line="175"/>
+        <location filename="../mainwindow.cpp" line="2203"/>
         <source>&amp;Move to Trash</source>
         <translation>휴지통으로 이동(&amp;M)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="174"/>
-        <location filename="../mainwindow.cpp" line="2161"/>
+        <location filename="../mainwindow.cpp" line="175"/>
+        <location filename="../mainwindow.cpp" line="2203"/>
         <source>&amp;Delete</source>
         <translation>삭제하기(&amp;D)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1997"/>
+        <location filename="../mainwindow.cpp" line="2039"/>
         <source>Customized View Settings</source>
         <translation>사용자 정의된 보기 설정</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="2268"/>
-        <location filename="../mainwindow.cpp" line="2276"/>
+        <location filename="../mainwindow.cpp" line="2310"/>
+        <location filename="../mainwindow.cpp" line="2318"/>
         <source>Error</source>
         <translation>오류</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="2276"/>
+        <location filename="../mainwindow.cpp" line="2318"/>
         <source>Switch user command is not set.</source>
         <translation>사용자 전환 명령이 설정되지 않았습니다.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="2378"/>
+        <location filename="../mainwindow.cpp" line="2420"/>
         <source>Cleaning Folder Settings</source>
         <translation>폴더 설정 정리하기</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="2379"/>
+        <location filename="../mainwindow.cpp" line="2421"/>
         <source>Do you want to remove settings of nonexistent folders?
 They might be useful if those folders are created again.</source>
         <translation>존재하지 않는 폴더의 설정을 제거하시겠습니까?
@@ -1822,24 +1822,34 @@ They might be useful if those folders are created again.</source>
 <context>
     <name>PCManFM::PreferencesDialog</name>
     <message>
-        <location filename="../preferencesdialog.cpp" line="199"/>
+        <location filename="../preferencesdialog.cpp" line="206"/>
         <source>Icon View</source>
         <translation>아이콘 보기</translation>
     </message>
     <message>
-        <location filename="../preferencesdialog.cpp" line="200"/>
+        <location filename="../preferencesdialog.cpp" line="207"/>
         <source>Compact View</source>
         <translation>작은 아이콘으로 보기</translation>
     </message>
     <message>
-        <location filename="../preferencesdialog.cpp" line="201"/>
+        <location filename="../preferencesdialog.cpp" line="208"/>
         <source>Thumbnail View</source>
         <translation>마중그림 보기</translation>
     </message>
     <message>
-        <location filename="../preferencesdialog.cpp" line="202"/>
+        <location filename="../preferencesdialog.cpp" line="209"/>
         <source>Detailed List View</source>
         <translation>자세한 목록 보기</translation>
+    </message>
+    <message>
+        <location filename="../preferencesdialog.cpp" line="279"/>
+        <source>Remove if added by user</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../preferencesdialog.cpp" line="303"/>
+        <source>Open user-defined list</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -2053,12 +2063,12 @@ They might be useful if those folders are created again.</source>
         <translation>클릭 한 번으로 파일 열기</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="113"/>
+        <location filename="../preferences.ui" line="162"/>
         <source>Default view mode:</source>
         <translation>기본 보기 모드:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="129"/>
+        <location filename="../preferences.ui" line="119"/>
         <source> sec</source>
         <translation> 초</translation>
     </message>
@@ -2099,7 +2109,7 @@ They might be useful if those folders are created again.</source>
     </message>
     <message>
         <location filename="../preferences.ui" line="103"/>
-        <location filename="../preferences.ui" line="126"/>
+        <location filename="../preferences.ui" line="116"/>
         <source>Set to zero to disable auto-selection.</source>
         <translation>자동 선택을 비활성화하려면 0으로 설정합니다.</translation>
     </message>
@@ -2109,17 +2119,17 @@ They might be useful if those folders are created again.</source>
         <translation>단일 클릭 모드에서 자동 선택 지연:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="147"/>
+        <location filename="../preferences.ui" line="144"/>
         <source>Open in current tab</source>
         <translation>현재 탭에서 열기</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="152"/>
+        <location filename="../preferences.ui" line="149"/>
         <source>Open in new tab</source>
         <translation>새 탭에서 열기</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="157"/>
+        <location filename="../preferences.ui" line="154"/>
         <source>Open in new window</source>
         <translation>새 창에서 열기</translation>
     </message>
@@ -2280,7 +2290,7 @@ A value of -1 means that there is no limit for the file size (the default).</sou
         <translation>제한 없음</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="853"/>
+        <location filename="../preferences.ui" line="860"/>
         <source>Examples:&lt;br&gt;For terminal: &lt;i&gt;xterm -e %s&lt;/i&gt;&lt;br&gt;For switching user: &lt;i&gt;lxsudo %s&lt;/i&gt; or &lt;i&gt;lxsudo dbus-run-session -- %s&lt;/i&gt;&lt;br&gt;&lt;i&gt;%s&lt;/i&gt; is the command line you want to execute with terminal or su.&lt;br&gt; Important: Please use lxsudo, sudo alone will wreck permissions of the settings file.</source>
         <translation>예시:&lt;br&gt;터미널의 경우: &lt;i&gt;xterm -e %s&lt;/i&gt;&lt;br&gt;사용자 전환의 경우: &lt;i&gt;lxsudo %s&lt;/i&gt; 또는 &lt;i&gt;lxsudo dbus-run-session -- %s&lt;/i&gt;&lt;br&gt;&lt;i&gt;%s&lt;/i&gt;은(는) 터미널 또는 su를 사용하여 실행할 명령줄입니다&lt;br&gt; 중요: lxsudo를 사용하십시오. sudo만 사용하면 설정 파일의 사용 권한이 손상됩니다.</translation>
     </message>
@@ -2305,12 +2315,12 @@ A value of -1 means that there is no limit for the file size (the default).</sou
         <translation>변경 내용을 적용하려면 프로그램을 다시 시작해야 합니다.</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="139"/>
+        <location filename="../preferences.ui" line="136"/>
         <source>Bookmarks menu:</source>
         <translation>바로찾기 메뉴:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="165"/>
+        <location filename="../preferences.ui" line="129"/>
         <source>Show folder context menu with Ctrl + right click</source>
         <translation>Ctrl + 마우스 오른쪽 클릭으로 폴더 컨텍스트 메뉴 표시하기</translation>
     </message>
@@ -2390,12 +2400,12 @@ A value of -1 means that there is no limit for the file size (the default).</sou
         <translation>터미널 에뮬레이터:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="840"/>
+        <location filename="../preferences.ui" line="847"/>
         <source>Switch &amp;user command:</source>
         <translation>사용자 명령 전환(&amp;U):</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="866"/>
+        <location filename="../preferences.ui" line="873"/>
         <source>Archiver in&amp;tegration:</source>
         <translation>압축파일 도구 통합(&amp;T):</translation>
     </message>
