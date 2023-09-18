@@ -21,10 +21,12 @@
 #include "preferencesdialog.h"
 #include "application.h"
 #include "settings.h"
+#include <QMenu>
 #include <QDir>
 #include <QHash>
 #include <QStringBuilder>
 #include <QSettings>
+#include <QStandardPaths>
 
 #include <libfm-qt/folderview.h>
 #include <libfm-qt/core/terminal.h>
@@ -42,6 +44,11 @@ PreferencesDialog::PreferencesDialog(const QString& activePage, QWidget* parent)
     // resize the list widget according to the width of its content.
     ui.listWidget->setSizePolicy(QSizePolicy::Fixed, QSizePolicy::Expanding);
     ui.listWidget->setMaximumWidth(ui.listWidget->sizeHintForColumn(0) + ui.listWidget->frameWidth() * 2 + 4);
+
+    ui.terminal->lineEdit()->setContextMenuPolicy(Qt::CustomContextMenu);
+    connect(ui.terminal->lineEdit(), &QWidget::customContextMenuRequested, this, &PreferencesDialog::terminalContextMenu);
+    // do not insert into the list by pressing Enter; only libfm-qt gets the terminals list
+    ui.terminal->setInsertPolicy(QComboBox::NoInsert);
 
     initFromSettings();
 
@@ -266,6 +273,41 @@ void PreferencesDialog::initTerminals(Settings& settings) {
     ui.terminal->setEditText(settings.terminal());
 }
 
+void PreferencesDialog::terminalContextMenu(const QPoint& p) {
+    QMenu menu(this);
+    if(!ui.terminal->currentText().isEmpty()) {
+        QAction* rmAct = menu.addAction(tr("Remove if added by user"));
+        connect(rmAct, &QAction::triggered, this, [this] {
+            QString term = ui.terminal->currentText();
+            auto parts = term.split(QRegularExpression(QStringLiteral("\\s+")), Qt::SkipEmptyParts);
+            if(parts.isEmpty()) {
+                return;
+            }
+            QString dataDir = QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation);
+            if(dataDir.isEmpty()) {
+                return;
+            }
+            QSettings termList(dataDir + QStringLiteral("/libfm-qt/terminals.list"), QSettings::IniFormat);
+            term = parts.at(0);
+            if(termList.childGroups().contains(term)) {
+                termList.remove(term);
+                ui.terminal->clear();
+                ui.terminal->clearEditText();
+                termList.sync(); // let libfm-qt pick it up here
+                for(auto& terminal: Fm::allKnownTerminals()) {
+                    ui.terminal->addItem(QString::fromUtf8(terminal.get()));
+                }
+            }
+        });
+    }
+    QAction* openAct = menu.addAction(tr("Open user-defined list"));
+    connect(openAct, &QAction::triggered, this, [] {
+        QString termList = QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + QStringLiteral("/libfm-qt/terminals.list");
+        static_cast<Application*>(qApp)->launchFiles(QDir::currentPath(), QStringList() << termList, false, false);
+    });
+    menu.exec(ui.terminal->lineEdit()->mapToGlobal(p));
+}
+
 void PreferencesDialog::initAdvancedPage(Settings& settings) {
     initArchivers(settings);
     initTerminals(settings);
@@ -377,8 +419,32 @@ void PreferencesDialog::applyVolumePage(Settings& settings) {
     settings.setCloseOnUnmount(ui.closeOnUnmount->isChecked());
 }
 
+void PreferencesDialog::applyTerminal(Settings& settings) {
+    // set the terminal, and if needed, add it to the custom list
+    QString term = ui.terminal->currentText();
+    auto parts = term.split(QRegularExpression(QStringLiteral("\\s+")), Qt::SkipEmptyParts);
+    if(parts.isEmpty()) {
+        return;
+    }
+    term = parts.at(0);
+    if(ui.terminal->findText(term) == -1) {
+        QString dataDir = QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation);
+        if(!dataDir.isEmpty()) {
+            QSettings termList(dataDir + QStringLiteral("/libfm-qt/terminals.list"), QSettings::IniFormat);
+            termList.beginGroup(term);
+            QString openArg;
+            if(parts.size() > 1) {
+                openArg = parts.at(1);
+            }
+            termList.setValue(QStringLiteral("open_arg"), openArg);
+            termList.endGroup();
+        }
+    }
+    settings.setTerminal(term);
+}
+
 void PreferencesDialog::applyAdvancedPage(Settings& settings) {
-    settings.setTerminal(ui.terminal->currentText());
+    applyTerminal(settings);
     settings.setSuCommand(ui.suCommand->text());
     settings.setArchiver(ui.archiver->itemData(ui.archiver->currentIndex()).toString());
 

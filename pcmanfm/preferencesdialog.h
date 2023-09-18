@@ -43,6 +43,7 @@ public:
 
 protected Q_SLOTS:
     void lockMargins(bool lock);
+    void terminalContextMenu(const QPoint& p);
 
 private:
     void initIconThemes(Settings& settings);
@@ -54,6 +55,8 @@ private:
     void initVolumePage(Settings& settings);
     void initAdvancedPage(Settings& settings);
     void initTerminals(Settings& settings);
+
+    void applyTerminal(Settings& settings);
 
     void applyUiPage(Settings& settings);
     void applyDisplayPage(Settings& settings);
