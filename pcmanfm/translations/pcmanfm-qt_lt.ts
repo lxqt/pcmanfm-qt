@@ -128,7 +128,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../bulk-rename.ui" line="80"/>
         <source>Pad numbers with zero if possible</source>
-        <translation type="unfinished"></translation>
+        <translation>Užpildyti skaičius nuliais, jei įmanoma</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="87"/>
@@ -313,9 +313,9 @@ Gali būti paliktas tuščias.</translation>
 It is needed only when you want to use the created file in the main menu. Otherwise, you could leave it empty.
 
 Examples: AudioVideo, Audio, Video, Development, Education, Game, Graphics, Network, Office, Settings, System, Utility, Qt.</source>
-        <translation>Kabliataškiu atskirtos grupės kuriose ši paleidyklė turėtų būti rodoma naudojant grafinės sąsajos pagrindinį menu (ty., sudiegus ~/.local/share/applications).
+        <translation>Kabliataškiu atskirtos grupės, kuriose šis įrašas turėtų būti rodomas tuo atveju, jei jį naudos pagrindinis darbalaukio aplinkos meniu (pvz., perkėlus į ~/.local/share/applications).
 
-Aktualu jei norite naudoti leidyklę per pagrindinį menu. Jeigu ne, šią skiltį galite palikti tuščią.
+To reikia tik tuomet, kai sukurtą failą norite naudoti pagrindiniame meniu. Priešingu atveju, šią skiltį galite palikti tuščią.
 
 Pavyzdžiai: AudioVideo, Audio, Video, Development, Education, Game, Graphics, Network, Office, Settings, System, Utility, Qt.</translation>
     </message>
@@ -476,7 +476,7 @@ Taip pat rezervuojama vieta 3 teksto eilutėms.</translation>
     <message>
         <location filename="../desktop-preferences.ui" line="230"/>
         <source>Margins of work area:</source>
-        <translation type="unfinished"></translation>
+        <translation>Darbo srities paraštės:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="303"/>
@@ -731,17 +731,17 @@ numatytoji failų tvarkytuvė.</translation>
     <message>
         <location filename="../shortcuts.ui" line="135"/>
         <source>Drop+Shift</source>
-        <translation type="unfinished"></translation>
+        <translation>Numesti+Shift</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="143"/>
         <source>Drop+Ctrl</source>
-        <translation type="unfinished"></translation>
+        <translation>Numesti+Ctrl</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="151"/>
         <source>Drop+Shift+Ctrl</source>
-        <translation type="unfinished"></translation>
+        <translation>Numesti+Shift+Ctrl</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="138"/>
@@ -769,7 +769,7 @@ numatytoji failų tvarkytuvė.</translation>
     <message>
         <location filename="../main-win.ui" line="81"/>
         <source>Recent F&amp;iles</source>
-        <translation type="unfinished"></translation>
+        <translation>Paskiausi f&amp;ailai</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="139"/>
@@ -964,12 +964,12 @@ numatytoji failų tvarkytuvė.</translation>
     <message>
         <location filename="../main-win.ui" line="502"/>
         <source>De&amp;select All</source>
-        <translation type="unfinished"></translation>
+        <translation>Nuimti žymėjimą nuo vi&amp;sko</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="505"/>
         <source>Ctrl+D</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+D</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="510"/>
@@ -1611,7 +1611,7 @@ numatytoji failų tvarkytuvė.</translation>
     <message>
         <location filename="../desktopentrydialog.cpp" line="40"/>
         <source>The URL to access.</source>
-        <translation type="unfinished"></translation>
+        <translation>URL adresas, prie kurio gauti prieigą.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="67"/>
@@ -1857,7 +1857,7 @@ Jie gali praversti tuo atveju, jeigu aplankai bus sukurti iš naujo.</translatio
     <message>
         <location filename="../tabpage.cpp" line="446"/>
         <source>Applications</source>
-        <translation type="unfinished"></translation>
+        <translation>Programos</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="450"/>
@@ -2166,7 +2166,7 @@ Jie gali praversti tuo atveju, jeigu aplankai bus sukurti iš naujo.</translatio
     <message>
         <location filename="../preferences.ui" line="244"/>
         <source>Number of recent files:</source>
-        <translation type="unfinished"></translation>
+        <translation>Paskiausių failų skaičius:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="325"/>
@@ -2306,7 +2306,7 @@ Reikšmė -1 reiškia, kad failų dydžiui nėra jokio apribojimo (pagal numatym
     <message>
         <location filename="../preferences.ui" line="934"/>
         <source>Maximum search history:</source>
-        <translation type="unfinished"></translation>
+        <translation>Daugiausia paieškos istorijos įrašų:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="948"/>
@@ -2351,7 +2351,7 @@ Reikšmė -1 reiškia, kad failų dydžiui nėra jokio apribojimo (pagal numatym
     <message>
         <location filename="../preferences.ui" line="436"/>
         <source>Disable smooth scrolling</source>
-        <translation type="unfinished"></translation>
+        <translation>Išjungti glotnų slinkimą</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="648"/>
