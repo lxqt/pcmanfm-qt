@@ -154,37 +154,37 @@ Foundation: Inc., 51 Franklin Street, 5º Andar, Boston, MA  02110-1301, EUA.</t
         <translation>Conectar a um servidor remoto</translation>
     </message>
     <message>
-        <location filename="../connect.ui" line="23"/>
+        <location filename="../connect.ui" line="80"/>
         <source>Anonymous &amp;login</source>
         <translation>&amp;Login anônimo</translation>
     </message>
     <message>
-        <location filename="../connect.ui" line="36"/>
+        <location filename="../connect.ui" line="90"/>
         <source>Login as &amp;user:</source>
         <translation>Entrar como &amp;usuário:</translation>
     </message>
     <message>
-        <location filename="../connect.ui" line="65"/>
+        <location filename="../connect.ui" line="29"/>
         <source>Specify remote folder to connect</source>
         <translation>Especifique a pasta remota para conexão</translation>
     </message>
     <message>
-        <location filename="../connect.ui" line="72"/>
+        <location filename="../connect.ui" line="36"/>
         <source>Type:</source>
         <translation>Tipo:</translation>
     </message>
     <message>
-        <location filename="../connect.ui" line="79"/>
+        <location filename="../connect.ui" line="56"/>
         <source>Port:</source>
         <translation>Porta:</translation>
     </message>
     <message>
-        <location filename="../connect.ui" line="86"/>
+        <location filename="../connect.ui" line="70"/>
         <source>Path:</source>
         <translation>Caminho:</translation>
     </message>
     <message>
-        <location filename="../connect.ui" line="96"/>
+        <location filename="../connect.ui" line="46"/>
         <source>Host:</source>
         <translation>Hospedeiro:</translation>
     </message>
@@ -231,79 +231,79 @@ It can be left empty.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../desktopentrydialog.ui" line="96"/>
+        <location filename="../desktopentrydialog.ui" line="117"/>
         <source>Command:</source>
         <translation>Comando:</translation>
     </message>
     <message>
-        <location filename="../desktopentrydialog.ui" line="112"/>
-        <location filename="../desktopentrydialog.ui" line="143"/>
+        <location filename="../desktopentrydialog.ui" line="133"/>
+        <location filename="../desktopentrydialog.ui" line="164"/>
         <source>...</source>
         <translation>...</translation>
     </message>
     <message>
-        <location filename="../desktopentrydialog.ui" line="121"/>
+        <location filename="../desktopentrydialog.ui" line="142"/>
         <source>Icon:</source>
         <translation>Icone:</translation>
     </message>
     <message>
-        <location filename="../desktopentrydialog.ui" line="130"/>
+        <location filename="../desktopentrydialog.ui" line="151"/>
         <source>Icon to display in file manager, menus, etc.</source>
         <translation>Ícone para exibir no gerenciador de arquivos, menus, etc.</translation>
     </message>
     <message>
-        <location filename="../desktopentrydialog.ui" line="152"/>
-        <location filename="../desktopentrydialog.ui" line="162"/>
+        <location filename="../desktopentrydialog.ui" line="173"/>
+        <location filename="../desktopentrydialog.ui" line="183"/>
         <source>Run in terminal?</source>
         <translation>Executar no terminal?</translation>
     </message>
     <message>
-        <location filename="../desktopentrydialog.ui" line="155"/>
+        <location filename="../desktopentrydialog.ui" line="176"/>
         <source>Terminal:</source>
         <translation>Terminal:</translation>
     </message>
     <message>
-        <location filename="../desktopentrydialog.ui" line="165"/>
+        <location filename="../desktopentrydialog.ui" line="186"/>
         <source>Whether the launched program should run in a terminal window.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../desktopentrydialog.ui" line="169"/>
+        <location filename="../desktopentrydialog.ui" line="190"/>
         <source>No</source>
         <translation>Não</translation>
     </message>
     <message>
-        <location filename="../desktopentrydialog.ui" line="174"/>
+        <location filename="../desktopentrydialog.ui" line="195"/>
         <source>Yes</source>
         <translation>Sim</translation>
     </message>
     <message>
-        <location filename="../desktopentrydialog.ui" line="182"/>
+        <location filename="../desktopentrydialog.ui" line="203"/>
         <source>Type:</source>
         <translation>Tipo:</translation>
     </message>
     <message>
-        <location filename="../desktopentrydialog.ui" line="189"/>
+        <location filename="../desktopentrydialog.ui" line="210"/>
         <source>Whether this is a link or executes a command.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../desktopentrydialog.ui" line="193"/>
+        <location filename="../desktopentrydialog.ui" line="214"/>
         <source>Application</source>
         <translation>Aplicativo</translation>
     </message>
     <message>
-        <location filename="../desktopentrydialog.ui" line="198"/>
+        <location filename="../desktopentrydialog.ui" line="219"/>
         <source>Link</source>
         <translation>Link</translation>
     </message>
     <message>
-        <location filename="../desktopentrydialog.ui" line="206"/>
+        <location filename="../desktopentrydialog.ui" line="96"/>
         <source>Categories:</source>
         <translation>Categorias:</translation>
     </message>
     <message>
-        <location filename="../desktopentrydialog.ui" line="213"/>
+        <location filename="../desktopentrydialog.ui" line="103"/>
         <source>Semicolon separated categories in which the entry should be shown if it is used by the DE&apos;s main menu (e.g., when put inside ~/.local/share/applications).
 
 It is needed only when you want to use the created file in the main menu. Otherwise, you could leave it empty.
@@ -429,18 +429,18 @@ Examples: AudioVideo, Audio, Video, Development, Education, Game, Graphics, Netw
         <translation>Espaçamento</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="152"/>
+        <location filename="../desktop-preferences.ui" line="145"/>
         <source>Minimum item margins:</source>
         <translation>Margens mínimas dos itens:</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="189"/>
+        <location filename="../desktop-preferences.ui" line="152"/>
         <source>3 px by default.</source>
         <translation>3 px por padrão.</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="176"/>
-        <location filename="../desktop-preferences.ui" line="192"/>
+        <location filename="../desktop-preferences.ui" line="155"/>
+        <location filename="../desktop-preferences.ui" line="179"/>
         <location filename="../desktop-preferences.ui" line="237"/>
         <location filename="../desktop-preferences.ui" line="249"/>
         <location filename="../desktop-preferences.ui" line="275"/>
@@ -449,19 +449,19 @@ Examples: AudioVideo, Audio, Video, Development, Education, Game, Graphics, Netw
         <translation> px</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="205"/>
+        <location filename="../desktop-preferences.ui" line="168"/>
         <source>x</source>
         <translation>x</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="172"/>
+        <location filename="../desktop-preferences.ui" line="175"/>
         <source>1 px by default.
 A space is also reserved for 3 lines of text.</source>
         <translation>1 px por padrão.
 Um espaço também é reservado para 3 linhas de texto.</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="145"/>
+        <location filename="../desktop-preferences.ui" line="192"/>
         <source>Lock</source>
         <translation>Bloquear</translation>
     </message>
@@ -518,37 +518,37 @@ clicadas com o botão esquerdo, mesmo quando não for o gerenciador de arquivos 
         <translation>Pasta dos papéis de parede:</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="498"/>
+        <location filename="../desktop-preferences.ui" line="505"/>
         <source>Browse</source>
         <translation>Procurar</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="505"/>
+        <location filename="../desktop-preferences.ui" line="512"/>
         <source> hour(s)</source>
         <translation> hora(s)</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="515"/>
+        <location filename="../desktop-preferences.ui" line="522"/>
         <source>and</source>
         <translation>e</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="528"/>
+        <location filename="../desktop-preferences.ui" line="535"/>
         <source>Intervals less than 5min will be ignored</source>
         <translation>Intervalos menores que 5min serão ignorados</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="531"/>
+        <location filename="../desktop-preferences.ui" line="538"/>
         <source>Interval:</source>
         <translation>Intervalo:</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="538"/>
+        <location filename="../desktop-preferences.ui" line="545"/>
         <source> minute(s)</source>
         <translation> minuto(s)</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="564"/>
+        <location filename="../desktop-preferences.ui" line="498"/>
         <source>Wallpaper folder</source>
         <translation>Pasta de papel de parede</translation>
     </message>
@@ -1440,99 +1440,99 @@ clicadas com o botão esquerdo, mesmo quando não for o gerenciador de arquivos 
 <context>
     <name>PCManFM::Application</name>
     <message>
-        <location filename="../application.cpp" line="186"/>
+        <location filename="../application.cpp" line="187"/>
         <source>Name of configuration profile</source>
         <translation>Nome do perfil de configuração</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="186"/>
+        <location filename="../application.cpp" line="187"/>
         <source>PROFILE</source>
         <translation>PERFIL</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="195"/>
+        <location filename="../application.cpp" line="196"/>
         <source>Launch desktop manager</source>
         <translation>Iniciar o gerenciador da área de trabalho</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="198"/>
+        <location filename="../application.cpp" line="199"/>
         <source>Turn off desktop manager if it&apos;s running</source>
         <translation>Desativar o gerenciador da área de trabalho se ele já estiver em execução</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="201"/>
+        <location filename="../application.cpp" line="202"/>
         <source>Open desktop preference dialog on the page with the specified name</source>
         <translation>Abrir o diálogo de preferências da área de trabalho na página especificada</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="201"/>
-        <location filename="../application.cpp" line="216"/>
+        <location filename="../application.cpp" line="202"/>
+        <location filename="../application.cpp" line="217"/>
         <source>NAME</source>
         <translation>NOME</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="210"/>
+        <location filename="../application.cpp" line="211"/>
         <source>Set desktop wallpaper from image FILE</source>
         <translation>Definir papel de parede de um ARQUIVO de imagem</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="210"/>
+        <location filename="../application.cpp" line="211"/>
         <source>FILE</source>
         <translation>ARQUIVO</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="213"/>
+        <location filename="../application.cpp" line="214"/>
         <source>MODE</source>
         <translation>MODO</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="216"/>
+        <location filename="../application.cpp" line="217"/>
         <source>Open Preferences dialog on the page with the specified name</source>
         <translation>Abrir a caixa de diálogo de preferências na página com o nome especificado</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="204"/>
+        <location filename="../application.cpp" line="205"/>
         <source>Open new window</source>
         <translation>Abrir nova janela</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="189"/>
+        <location filename="../application.cpp" line="190"/>
         <source>Run PCManFM-Qt as a daemon</source>
         <translation>Rodar PCManFM-Qt como um daemon</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="192"/>
+        <location filename="../application.cpp" line="193"/>
         <source>Quit PCManFM-Qt</source>
         <translation>Sair do PCManFM-Qt</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="207"/>
+        <location filename="../application.cpp" line="208"/>
         <source>Open Find Files utility</source>
         <translation>Abrir utilitário de pesquisa de arquivos</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="213"/>
+        <location filename="../application.cpp" line="214"/>
         <source>Set mode of desktop wallpaper. MODE=(%1)</source>
         <translation>Definir o modo de papel de parede da área de trabalho. MODO=(%1)</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="219"/>
+        <location filename="../application.cpp" line="220"/>
         <source>[FILE1, FILE2,...]</source>
         <translation>[ARQUIVO1, ARQUIVO2,...]</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="219"/>
+        <location filename="../application.cpp" line="220"/>
         <source>Files or directories to open</source>
         <translation>Arquivos ou pastas para abrir</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="648"/>
-        <location filename="../application.cpp" line="653"/>
+        <location filename="../application.cpp" line="655"/>
+        <location filename="../application.cpp" line="660"/>
         <source>Error</source>
         <translation>Erro</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="653"/>
+        <location filename="../application.cpp" line="660"/>
         <source>Terminal emulator is not set.</source>
         <translation>O emulador de terminal não foi definido.</translation>
     </message>
@@ -1705,33 +1705,33 @@ clicadas com o botão esquerdo, mesmo quando não for o gerenciador de arquivos 
         <translation>Rede</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="997"/>
+        <location filename="../desktopwindow.cpp" line="1011"/>
         <source>Open</source>
         <translation>Abrir</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1003"/>
-        <location filename="../desktopwindow.cpp" line="1043"/>
+        <location filename="../desktopwindow.cpp" line="1017"/>
+        <location filename="../desktopwindow.cpp" line="1057"/>
         <source>Stic&amp;k to Current Position</source>
         <translation>F&amp;ixar na posição atual</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1011"/>
+        <location filename="../desktopwindow.cpp" line="1025"/>
         <source>Empty Trash</source>
         <translation>Esvaziar lixeira</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1070"/>
+        <location filename="../desktopwindow.cpp" line="1084"/>
         <source>Hide Desktop Items</source>
         <translation>Ocultar itens da área de trabalho</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1076"/>
+        <location filename="../desktopwindow.cpp" line="1090"/>
         <source>Create Launcher</source>
         <translation>Criar lançador</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1079"/>
+        <location filename="../desktopwindow.cpp" line="1093"/>
         <source>Desktop Preferences</source>
         <translation>Preferências da área de trabalho</translation>
     </message>
@@ -1755,60 +1755,60 @@ clicadas com o botão esquerdo, mesmo quando não for o gerenciador de arquivos 
 <context>
     <name>PCManFM::MainWindow</name>
     <message>
-        <location filename="../mainwindow.cpp" line="141"/>
+        <location filename="../mainwindow.cpp" line="142"/>
         <source>Root Instance</source>
         <translation>Abrir como root</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="742"/>
+        <location filename="../mainwindow.cpp" line="780"/>
         <source>Hide menu bar</source>
         <translation>Ocultar barra de menu</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="743"/>
+        <location filename="../mainwindow.cpp" line="781"/>
         <source>This will hide the menu bar completely, use Ctrl+M to show it again.</source>
         <translation>Isto ocultará completamente a barra de menus, use Ctrl+M para exibi-la novamente.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1190"/>
+        <location filename="../mainwindow.cpp" line="1228"/>
         <source>Version: %1</source>
         <translation>Versão: %1</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="174"/>
-        <location filename="../mainwindow.cpp" line="2161"/>
+        <location filename="../mainwindow.cpp" line="175"/>
+        <location filename="../mainwindow.cpp" line="2203"/>
         <source>&amp;Move to Trash</source>
         <translation>&amp;Mover para a lixeira</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="174"/>
-        <location filename="../mainwindow.cpp" line="2161"/>
+        <location filename="../mainwindow.cpp" line="175"/>
+        <location filename="../mainwindow.cpp" line="2203"/>
         <source>&amp;Delete</source>
         <translation>&amp;Excluir</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1997"/>
+        <location filename="../mainwindow.cpp" line="2039"/>
         <source>Customized View Settings</source>
         <translation>Configuração de Visualização Personalizada</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="2268"/>
-        <location filename="../mainwindow.cpp" line="2276"/>
+        <location filename="../mainwindow.cpp" line="2310"/>
+        <location filename="../mainwindow.cpp" line="2318"/>
         <source>Error</source>
         <translation>Erro</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="2276"/>
+        <location filename="../mainwindow.cpp" line="2318"/>
         <source>Switch user command is not set.</source>
         <translation>O comando para trocar de usuário não está definido.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="2378"/>
+        <location filename="../mainwindow.cpp" line="2420"/>
         <source>Cleaning Folder Settings</source>
         <translation>Configurações de limpeza de pastas</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="2379"/>
+        <location filename="../mainwindow.cpp" line="2421"/>
         <source>Do you want to remove settings of nonexistent folders?
 They might be useful if those folders are created again.</source>
         <translation>Você deseja remover as configurações de pastas inexistentes?
@@ -1818,24 +1818,34 @@ Eles podem ser úteis se essas pastas forem criadas novamente.</translation>
 <context>
     <name>PCManFM::PreferencesDialog</name>
     <message>
-        <location filename="../preferencesdialog.cpp" line="199"/>
+        <location filename="../preferencesdialog.cpp" line="206"/>
         <source>Icon View</source>
         <translation>Visualização em ícones</translation>
     </message>
     <message>
-        <location filename="../preferencesdialog.cpp" line="200"/>
+        <location filename="../preferencesdialog.cpp" line="207"/>
         <source>Compact View</source>
         <translation>Visualização compacta</translation>
     </message>
     <message>
-        <location filename="../preferencesdialog.cpp" line="201"/>
+        <location filename="../preferencesdialog.cpp" line="208"/>
         <source>Thumbnail View</source>
         <translation>Visualização em miniaturas</translation>
     </message>
     <message>
-        <location filename="../preferencesdialog.cpp" line="202"/>
+        <location filename="../preferencesdialog.cpp" line="209"/>
         <source>Detailed List View</source>
         <translation>Visualização em lista detalhada</translation>
+    </message>
+    <message>
+        <location filename="../preferencesdialog.cpp" line="279"/>
+        <source>Remove if added by user</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../preferencesdialog.cpp" line="303"/>
+        <source>Open user-defined list</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1984,7 +1994,7 @@ Eles podem ser úteis se essas pastas forem criadas novamente.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="103"/>
-        <location filename="../preferences.ui" line="126"/>
+        <location filename="../preferences.ui" line="116"/>
         <source>Set to zero to disable auto-selection.</source>
         <translation>Defina como zero para desativar a seleção automática.</translation>
     </message>
@@ -1994,22 +2004,22 @@ Eles podem ser úteis se essas pastas forem criadas novamente.</translation>
         <translation>Atraso da seleção automática no modo de clique único:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="147"/>
+        <location filename="../preferences.ui" line="144"/>
         <source>Open in current tab</source>
         <translation>Abrir na aba atual</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="152"/>
+        <location filename="../preferences.ui" line="149"/>
         <source>Open in new tab</source>
         <translation>Abrir em nova aba</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="157"/>
+        <location filename="../preferences.ui" line="154"/>
         <source>Open in new window</source>
         <translation>Abrir em nova janela</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="165"/>
+        <location filename="../preferences.ui" line="129"/>
         <source>Show folder context menu with Ctrl + right click</source>
         <translation>Exibir o menu de contexto da pasta com Ctrl + clique direito</translation>
     </message>
@@ -2121,17 +2131,17 @@ Eles podem ser úteis se essas pastas forem criadas novamente.</translation>
         <translation>Abrir arquivos com clique único</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="113"/>
+        <location filename="../preferences.ui" line="162"/>
         <source>Default view mode:</source>
         <translation>Modo de visualização padrão:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="129"/>
+        <location filename="../preferences.ui" line="119"/>
         <source> sec</source>
         <translation> s</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="139"/>
+        <location filename="../preferences.ui" line="136"/>
         <source>Bookmarks menu:</source>
         <translation>Menu de favoritos:</translation>
     </message>
@@ -2295,7 +2305,7 @@ Um valor -1 significa que não há limite para o tamanho do arquivo (o padrão).
         <translation>Sem limite</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="853"/>
+        <location filename="../preferences.ui" line="860"/>
         <source>Examples:&lt;br&gt;For terminal: &lt;i&gt;xterm -e %s&lt;/i&gt;&lt;br&gt;For switching user: &lt;i&gt;lxsudo %s&lt;/i&gt; or &lt;i&gt;lxsudo dbus-run-session -- %s&lt;/i&gt;&lt;br&gt;&lt;i&gt;%s&lt;/i&gt; is the command line you want to execute with terminal or su.&lt;br&gt; Important: Please use lxsudo, sudo alone will wreck permissions of the settings file.</source>
         <translation>Exemplos:&lt;br&gt;Para terminal:&lt;i&gt;xterm -e %s&lt;/i&gt;&lt;br&gt;Para trocar o usuário:&lt;i&gt;lxsudo %s&lt;/i&gt; ou &lt;i&gt;lxsudo dbus-run-session --%s&lt;/i&gt;&lt;br&gt;&lt;i&gt;%s&lt;/i&gt; é a linha de comando que você deseja executar no terminal ou su. &lt;br&gt;Importante: Por favor use lxsudo, o sudo sozinho irá corromper as permissões do arquivo de configurações.</translation>
     </message>
@@ -2360,12 +2370,12 @@ Um valor -1 significa que não há limite para o tamanho do arquivo (o padrão).
         <translation>Quando uma mídia removível for desmontada:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="840"/>
+        <location filename="../preferences.ui" line="847"/>
         <source>Switch &amp;user command:</source>
         <translation>Alternar comando do &amp;usuário:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="866"/>
+        <location filename="../preferences.ui" line="873"/>
         <source>Archiver in&amp;tegration:</source>
         <translation>In&amp;tegração do arquivador:</translation>
     </message>

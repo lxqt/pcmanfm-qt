@@ -154,37 +154,37 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
         <translation>Kết nối với máy chủ từ xa</translation>
     </message>
     <message>
-        <location filename="../connect.ui" line="23"/>
+        <location filename="../connect.ui" line="80"/>
         <source>Anonymous &amp;login</source>
         <translation>Đăng nhập ẩn danh (&amp;L)</translation>
     </message>
     <message>
-        <location filename="../connect.ui" line="36"/>
+        <location filename="../connect.ui" line="90"/>
         <source>Login as &amp;user:</source>
         <translation>Đăng nhập với tư cách người dùng (&amp;U):</translation>
     </message>
     <message>
-        <location filename="../connect.ui" line="65"/>
+        <location filename="../connect.ui" line="29"/>
         <source>Specify remote folder to connect</source>
         <translation>Chỉ định thư mục từ xa để kết nối</translation>
     </message>
     <message>
-        <location filename="../connect.ui" line="72"/>
+        <location filename="../connect.ui" line="36"/>
         <source>Type:</source>
         <translation>Kiểu:</translation>
     </message>
     <message>
-        <location filename="../connect.ui" line="79"/>
+        <location filename="../connect.ui" line="56"/>
         <source>Port:</source>
         <translation>Cổng:</translation>
     </message>
     <message>
-        <location filename="../connect.ui" line="86"/>
+        <location filename="../connect.ui" line="70"/>
         <source>Path:</source>
         <translation>Đường dẫn:</translation>
     </message>
     <message>
-        <location filename="../connect.ui" line="96"/>
+        <location filename="../connect.ui" line="46"/>
         <source>Host:</source>
         <translation>Máy chủ:</translation>
     </message>
@@ -235,79 +235,79 @@ It can be left empty.</source>
 Nó có thể để trống.</translation>
     </message>
     <message>
-        <location filename="../desktopentrydialog.ui" line="96"/>
+        <location filename="../desktopentrydialog.ui" line="117"/>
         <source>Command:</source>
         <translation>Lệnh:</translation>
     </message>
     <message>
-        <location filename="../desktopentrydialog.ui" line="112"/>
-        <location filename="../desktopentrydialog.ui" line="143"/>
+        <location filename="../desktopentrydialog.ui" line="133"/>
+        <location filename="../desktopentrydialog.ui" line="164"/>
         <source>...</source>
         <translation>...</translation>
     </message>
     <message>
-        <location filename="../desktopentrydialog.ui" line="121"/>
+        <location filename="../desktopentrydialog.ui" line="142"/>
         <source>Icon:</source>
         <translation>Biểu tượng:</translation>
     </message>
     <message>
-        <location filename="../desktopentrydialog.ui" line="130"/>
+        <location filename="../desktopentrydialog.ui" line="151"/>
         <source>Icon to display in file manager, menus, etc.</source>
         <translation>Biểu tượng để hiển thị trong trình quản lý tập tin, trình đơn, v.v.</translation>
     </message>
     <message>
-        <location filename="../desktopentrydialog.ui" line="152"/>
-        <location filename="../desktopentrydialog.ui" line="162"/>
+        <location filename="../desktopentrydialog.ui" line="173"/>
+        <location filename="../desktopentrydialog.ui" line="183"/>
         <source>Run in terminal?</source>
         <translation>Chạy trong cửa sổ giao diện dòng lệnh?</translation>
     </message>
     <message>
-        <location filename="../desktopentrydialog.ui" line="155"/>
+        <location filename="../desktopentrydialog.ui" line="176"/>
         <source>Terminal:</source>
         <translation>Giao diện dòng lệnh:</translation>
     </message>
     <message>
-        <location filename="../desktopentrydialog.ui" line="165"/>
+        <location filename="../desktopentrydialog.ui" line="186"/>
         <source>Whether the launched program should run in a terminal window.</source>
         <translation>Chương trình đã khởi chạy có nên chạy trong cửa sổ giao diện dòng lệnh hay không.</translation>
     </message>
     <message>
-        <location filename="../desktopentrydialog.ui" line="169"/>
+        <location filename="../desktopentrydialog.ui" line="190"/>
         <source>No</source>
         <translation>Không</translation>
     </message>
     <message>
-        <location filename="../desktopentrydialog.ui" line="174"/>
+        <location filename="../desktopentrydialog.ui" line="195"/>
         <source>Yes</source>
         <translation>Có</translation>
     </message>
     <message>
-        <location filename="../desktopentrydialog.ui" line="182"/>
+        <location filename="../desktopentrydialog.ui" line="203"/>
         <source>Type:</source>
         <translation>Kiểu:</translation>
     </message>
     <message>
-        <location filename="../desktopentrydialog.ui" line="189"/>
+        <location filename="../desktopentrydialog.ui" line="210"/>
         <source>Whether this is a link or executes a command.</source>
         <translation>Có thể là một liên kết hoặc là thực thi một lệnh.</translation>
     </message>
     <message>
-        <location filename="../desktopentrydialog.ui" line="193"/>
+        <location filename="../desktopentrydialog.ui" line="214"/>
         <source>Application</source>
         <translation>Ứng dụng</translation>
     </message>
     <message>
-        <location filename="../desktopentrydialog.ui" line="198"/>
+        <location filename="../desktopentrydialog.ui" line="219"/>
         <source>Link</source>
         <translation>Liên kết</translation>
     </message>
     <message>
-        <location filename="../desktopentrydialog.ui" line="206"/>
+        <location filename="../desktopentrydialog.ui" line="96"/>
         <source>Categories:</source>
         <translation>Danh mục:</translation>
     </message>
     <message>
-        <location filename="../desktopentrydialog.ui" line="213"/>
+        <location filename="../desktopentrydialog.ui" line="103"/>
         <source>Semicolon separated categories in which the entry should be shown if it is used by the DE&apos;s main menu (e.g., when put inside ~/.local/share/applications).
 
 It is needed only when you want to use the created file in the main menu. Otherwise, you could leave it empty.
@@ -437,18 +437,18 @@ Ví dụ: AudioVideo, Audio, Video, Development, Education, Game, Graphics, Netw
         <translation>Khoảng cách</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="152"/>
+        <location filename="../desktop-preferences.ui" line="145"/>
         <source>Minimum item margins:</source>
         <translation>Lề tối thiểu:</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="189"/>
+        <location filename="../desktop-preferences.ui" line="152"/>
         <source>3 px by default.</source>
         <translation>3 điểm ảnh theo mặc định.</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="176"/>
-        <location filename="../desktop-preferences.ui" line="192"/>
+        <location filename="../desktop-preferences.ui" line="155"/>
+        <location filename="../desktop-preferences.ui" line="179"/>
         <location filename="../desktop-preferences.ui" line="237"/>
         <location filename="../desktop-preferences.ui" line="249"/>
         <location filename="../desktop-preferences.ui" line="275"/>
@@ -457,19 +457,19 @@ Ví dụ: AudioVideo, Audio, Video, Development, Education, Game, Graphics, Netw
         <translation> điểm ảnh</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="205"/>
+        <location filename="../desktop-preferences.ui" line="168"/>
         <source>x</source>
         <translation>x</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="172"/>
+        <location filename="../desktop-preferences.ui" line="175"/>
         <source>1 px by default.
 A space is also reserved for 3 lines of text.</source>
         <translation>1 điểm ảnh theo mặc định.
 Một khoảng trống cho 3 dòng văn bản cũng được thêm vào.</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="145"/>
+        <location filename="../desktop-preferences.ui" line="192"/>
         <source>Lock</source>
         <translation>Khóa</translation>
     </message>
@@ -526,37 +526,37 @@ are left clicked, even when it is not the default file manager.</source>
         <translation>Thư mục hình nền:</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="498"/>
+        <location filename="../desktop-preferences.ui" line="505"/>
         <source>Browse</source>
         <translation>Duyệt</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="505"/>
+        <location filename="../desktop-preferences.ui" line="512"/>
         <source> hour(s)</source>
         <translation> giờ</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="515"/>
+        <location filename="../desktop-preferences.ui" line="522"/>
         <source>and</source>
         <translation>và</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="528"/>
+        <location filename="../desktop-preferences.ui" line="535"/>
         <source>Intervals less than 5min will be ignored</source>
         <translation>Khoảng thời gian ít hơn 5 phút sẽ bị bỏ qua</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="531"/>
+        <location filename="../desktop-preferences.ui" line="538"/>
         <source>Interval:</source>
         <translation>Khoảng thời gian:</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="538"/>
+        <location filename="../desktop-preferences.ui" line="545"/>
         <source> minute(s)</source>
         <translation> phút</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="564"/>
+        <location filename="../desktop-preferences.ui" line="498"/>
         <source>Wallpaper folder</source>
         <translation>Thư mục hình nền</translation>
     </message>
@@ -1447,99 +1447,99 @@ are left clicked, even when it is not the default file manager.</source>
 <context>
     <name>PCManFM::Application</name>
     <message>
-        <location filename="../application.cpp" line="186"/>
+        <location filename="../application.cpp" line="187"/>
         <source>Name of configuration profile</source>
         <translation>Tên của hồ sơ cấu hình</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="186"/>
+        <location filename="../application.cpp" line="187"/>
         <source>PROFILE</source>
         <translation>PROFILE</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="189"/>
+        <location filename="../application.cpp" line="190"/>
         <source>Run PCManFM-Qt as a daemon</source>
         <translation>Chạy PCManFM-Qt dưới dạng tiến trình nền</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="192"/>
+        <location filename="../application.cpp" line="193"/>
         <source>Quit PCManFM-Qt</source>
         <translation>Thoát PCManFM-Qt</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="195"/>
+        <location filename="../application.cpp" line="196"/>
         <source>Launch desktop manager</source>
         <translation>Khởi chạy trình quản lý màn hình nền</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="198"/>
+        <location filename="../application.cpp" line="199"/>
         <source>Turn off desktop manager if it&apos;s running</source>
         <translation>Tắt trình quản lý màn hình nền nếu nó đang chạy</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="201"/>
+        <location filename="../application.cpp" line="202"/>
         <source>Open desktop preference dialog on the page with the specified name</source>
         <translation>Mở hộp thoại tùy chọn màn hình nền trên trang có tên được chỉ định</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="201"/>
-        <location filename="../application.cpp" line="216"/>
+        <location filename="../application.cpp" line="202"/>
+        <location filename="../application.cpp" line="217"/>
         <source>NAME</source>
         <translation>NAME</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="204"/>
+        <location filename="../application.cpp" line="205"/>
         <source>Open new window</source>
         <translation>Mở cửa sổ mới</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="207"/>
+        <location filename="../application.cpp" line="208"/>
         <source>Open Find Files utility</source>
         <translation>Mở tiện ích Tìm tập tin</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="210"/>
+        <location filename="../application.cpp" line="211"/>
         <source>Set desktop wallpaper from image FILE</source>
         <translation>Đặt hình nền máy tính từ tập tin ảnh</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="210"/>
+        <location filename="../application.cpp" line="211"/>
         <source>FILE</source>
         <translation>FILE</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="213"/>
+        <location filename="../application.cpp" line="214"/>
         <source>MODE</source>
         <translation>MODE</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="213"/>
+        <location filename="../application.cpp" line="214"/>
         <source>Set mode of desktop wallpaper. MODE=(%1)</source>
         <translation>Đặt chế độ cho hình nền máy tính. MODE=(%1)</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="216"/>
+        <location filename="../application.cpp" line="217"/>
         <source>Open Preferences dialog on the page with the specified name</source>
         <translation>Mở hộp thoại Tùy chọn trên trang có tên đã chỉ định</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="219"/>
+        <location filename="../application.cpp" line="220"/>
         <source>Files or directories to open</source>
         <translation>Tập tin hoặc Thư mục để mở</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="219"/>
+        <location filename="../application.cpp" line="220"/>
         <source>[FILE1, FILE2,...]</source>
         <translation>[FILE1, FILE2,...]</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="648"/>
-        <location filename="../application.cpp" line="653"/>
+        <location filename="../application.cpp" line="655"/>
+        <location filename="../application.cpp" line="660"/>
         <source>Error</source>
         <translation>Lỗi</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="653"/>
+        <location filename="../application.cpp" line="660"/>
         <source>Terminal emulator is not set.</source>
         <translation>Trình giả lập giao diện dòng lệnh chưa được cài đặt.</translation>
     </message>
@@ -1711,33 +1711,33 @@ are left clicked, even when it is not the default file manager.</source>
         <translation>Mạng</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="997"/>
+        <location filename="../desktopwindow.cpp" line="1011"/>
         <source>Open</source>
         <translation>Mở</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1003"/>
-        <location filename="../desktopwindow.cpp" line="1043"/>
+        <location filename="../desktopwindow.cpp" line="1017"/>
+        <location filename="../desktopwindow.cpp" line="1057"/>
         <source>Stic&amp;k to Current Position</source>
         <translation>Giữ nguyên vị trí hiện tại (&amp;K)</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1011"/>
+        <location filename="../desktopwindow.cpp" line="1025"/>
         <source>Empty Trash</source>
         <translation>Dọn sạch thùng rác</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1070"/>
+        <location filename="../desktopwindow.cpp" line="1084"/>
         <source>Hide Desktop Items</source>
         <translation>Ẩn các mục trên màn hình nền</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1076"/>
+        <location filename="../desktopwindow.cpp" line="1090"/>
         <source>Create Launcher</source>
         <translation>Tạo Trình khởi chạy</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1079"/>
+        <location filename="../desktopwindow.cpp" line="1093"/>
         <source>Desktop Preferences</source>
         <translation>Tùy chọn màn hình nền</translation>
     </message>
@@ -1761,60 +1761,60 @@ are left clicked, even when it is not the default file manager.</source>
 <context>
     <name>PCManFM::MainWindow</name>
     <message>
-        <location filename="../mainwindow.cpp" line="141"/>
+        <location filename="../mainwindow.cpp" line="142"/>
         <source>Root Instance</source>
         <translation>Tiến trình gốc</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="742"/>
+        <location filename="../mainwindow.cpp" line="780"/>
         <source>Hide menu bar</source>
         <translation>Ẩn thanh trình đơn</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="743"/>
+        <location filename="../mainwindow.cpp" line="781"/>
         <source>This will hide the menu bar completely, use Ctrl+M to show it again.</source>
         <translation>Thao tác này sẽ ẩn hoàn toàn thanh trình đơn, sử dụng Ctrl+M để hiển thị lại.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1190"/>
+        <location filename="../mainwindow.cpp" line="1228"/>
         <source>Version: %1</source>
         <translation>Phiên bản: %1</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="174"/>
-        <location filename="../mainwindow.cpp" line="2161"/>
+        <location filename="../mainwindow.cpp" line="175"/>
+        <location filename="../mainwindow.cpp" line="2203"/>
         <source>&amp;Move to Trash</source>
         <translation>Di chuyển vào thùng rác (&amp;M)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="174"/>
-        <location filename="../mainwindow.cpp" line="2161"/>
+        <location filename="../mainwindow.cpp" line="175"/>
+        <location filename="../mainwindow.cpp" line="2203"/>
         <source>&amp;Delete</source>
         <translation>Xóa (&amp;D)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1997"/>
+        <location filename="../mainwindow.cpp" line="2039"/>
         <source>Customized View Settings</source>
         <translation>Cài đặt chế độ xem tùy chỉnh</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="2268"/>
-        <location filename="../mainwindow.cpp" line="2276"/>
+        <location filename="../mainwindow.cpp" line="2310"/>
+        <location filename="../mainwindow.cpp" line="2318"/>
         <source>Error</source>
         <translation>Lỗi</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="2276"/>
+        <location filename="../mainwindow.cpp" line="2318"/>
         <source>Switch user command is not set.</source>
         <translation>Lệnh chuyển đổi người dùng chưa được thiết lập.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="2378"/>
+        <location filename="../mainwindow.cpp" line="2420"/>
         <source>Cleaning Folder Settings</source>
         <translation>Xóa cài đặt thư mục</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="2379"/>
+        <location filename="../mainwindow.cpp" line="2421"/>
         <source>Do you want to remove settings of nonexistent folders?
 They might be useful if those folders are created again.</source>
         <translation>Bạn có muốn xóa cài đặt của các thư mục không tồn tại không?
@@ -1824,24 +1824,34 @@ Chúng có thể hữu ích nếu những thư mục đó được tạo lại.<
 <context>
     <name>PCManFM::PreferencesDialog</name>
     <message>
-        <location filename="../preferencesdialog.cpp" line="199"/>
+        <location filename="../preferencesdialog.cpp" line="206"/>
         <source>Icon View</source>
         <translation>Chế độ xem biểu tượng</translation>
     </message>
     <message>
-        <location filename="../preferencesdialog.cpp" line="200"/>
+        <location filename="../preferencesdialog.cpp" line="207"/>
         <source>Compact View</source>
         <translation>Chế độ xem nhỏ gọn</translation>
     </message>
     <message>
-        <location filename="../preferencesdialog.cpp" line="201"/>
+        <location filename="../preferencesdialog.cpp" line="208"/>
         <source>Thumbnail View</source>
         <translation>Chế độ xem hình thu nhỏ</translation>
     </message>
     <message>
-        <location filename="../preferencesdialog.cpp" line="202"/>
+        <location filename="../preferencesdialog.cpp" line="209"/>
         <source>Detailed List View</source>
         <translation>Chế độ xem danh sách chi tiết</translation>
+    </message>
+    <message>
+        <location filename="../preferencesdialog.cpp" line="279"/>
+        <source>Remove if added by user</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../preferencesdialog.cpp" line="303"/>
+        <source>Open user-defined list</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -2055,12 +2065,12 @@ Chúng có thể hữu ích nếu những thư mục đó được tạo lại.<
         <translation>Mở tập tin bằng một cú nhấp chuột</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="113"/>
+        <location filename="../preferences.ui" line="162"/>
         <source>Default view mode:</source>
         <translation>Chế độ xem mặc định:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="129"/>
+        <location filename="../preferences.ui" line="119"/>
         <source> sec</source>
         <translation> giây</translation>
     </message>
@@ -2101,7 +2111,7 @@ Chúng có thể hữu ích nếu những thư mục đó được tạo lại.<
     </message>
     <message>
         <location filename="../preferences.ui" line="103"/>
-        <location filename="../preferences.ui" line="126"/>
+        <location filename="../preferences.ui" line="116"/>
         <source>Set to zero to disable auto-selection.</source>
         <translation>Đặt thành 0 để tắt Tự động chọn.</translation>
     </message>
@@ -2111,17 +2121,17 @@ Chúng có thể hữu ích nếu những thư mục đó được tạo lại.<
         <translation>Độ trễ của Tự động chọn trong chế độ nhấp chuột một lần:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="147"/>
+        <location filename="../preferences.ui" line="144"/>
         <source>Open in current tab</source>
         <translation>Mở trong thẻ hiện tại</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="152"/>
+        <location filename="../preferences.ui" line="149"/>
         <source>Open in new tab</source>
         <translation>Mở trong thẻ mới</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="157"/>
+        <location filename="../preferences.ui" line="154"/>
         <source>Open in new window</source>
         <translation>Mở trong cửa sổ mới</translation>
     </message>
@@ -2282,7 +2292,7 @@ Giá trị -1 có nghĩa là không có giới hạn cho kích thước tập ti
         <translation>Không giới hạn</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="853"/>
+        <location filename="../preferences.ui" line="860"/>
         <source>Examples:&lt;br&gt;For terminal: &lt;i&gt;xterm -e %s&lt;/i&gt;&lt;br&gt;For switching user: &lt;i&gt;lxsudo %s&lt;/i&gt; or &lt;i&gt;lxsudo dbus-run-session -- %s&lt;/i&gt;&lt;br&gt;&lt;i&gt;%s&lt;/i&gt; is the command line you want to execute with terminal or su.&lt;br&gt; Important: Please use lxsudo, sudo alone will wreck permissions of the settings file.</source>
         <translation>Ví dụ:&lt;br&gt;Để mở giao diện dòng lệnh: &lt;i&gt;xterm -e %s&lt;/i&gt;&lt;br&gt;Để chuyển đổi người dùng: &lt;i&gt;lxsudo %s&lt;/i&gt; hoặc &lt;i&gt;lxsudo dbus-run-session -- % s&lt;/i&gt;&lt;br&gt;&lt;i&gt;%s&lt;/i&gt; là dòng lệnh bạn muốn thực thi.&lt;br&gt; Quan trọng: Vui lòng sử dụng lxsudo, chỉ riêng sudo sẽ phá hỏng quyền của tệp cài đặt.</translation>
     </message>
@@ -2307,12 +2317,12 @@ Giá trị -1 có nghĩa là không có giới hạn cho kích thước tập ti
         <translation>Cần khởi động lại ứng dụng để các thay đổi có hiệu lực.</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="139"/>
+        <location filename="../preferences.ui" line="136"/>
         <source>Bookmarks menu:</source>
         <translation>Trình đơn dấu trang:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="165"/>
+        <location filename="../preferences.ui" line="129"/>
         <source>Show folder context menu with Ctrl + right click</source>
         <translation>Hiển thị trình đơn ngữ cảnh thư mục bằng Ctrl+Nhấp chuột phải</translation>
     </message>
@@ -2392,12 +2402,12 @@ Giá trị -1 có nghĩa là không có giới hạn cho kích thước tập ti
         <translation>Trình giả lập giao diện dòng lệnh:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="840"/>
+        <location filename="../preferences.ui" line="847"/>
         <source>Switch &amp;user command:</source>
         <translation>Lệnh chuyển đổi người dùng (&amp;U):</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="866"/>
+        <location filename="../preferences.ui" line="873"/>
         <source>Archiver in&amp;tegration:</source>
         <translation>Tích hợp trình lưu trữ (&amp;T):</translation>
     </message>
