@@ -992,7 +992,7 @@
   <customwidget>
    <class>Fm::SidePane</class>
    <extends>QWidget</extends>
-   <header location="global">libfm-qt/sidepane.h</header>
+   <header location="global">libfm-qt6/sidepane.h</header>
    <container>1</container>
   </customwidget>
  </customwidgets>

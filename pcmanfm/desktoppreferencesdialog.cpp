@@ -29,7 +29,7 @@
 #include <QSaveFile>
 #include <QDebug>
 #include <QStandardPaths>
-#include <libfm-qt/filedialog.h>
+#include <libfm-qt6/filedialog.h>
 
 namespace PCManFM {
 
@@ -147,7 +147,7 @@ void DesktopPreferencesDialog::setupDesktopFolderUi()
   desktopFolderWidget = new QWidget();
   uiDesktopFolder.setupUi(desktopFolderWidget);
   ui.advancedPageLayout->insertWidget(1, desktopFolderWidget);
-  uiDesktopFolder.verticalLayout->setMargin(0);
+  uiDesktopFolder.verticalLayout->setContentsMargins(0, 0, 0, 0);
 
   desktopFolder = XdgDir::readDesktopDir();
   qDebug("desktop folder: %s", desktopFolder.toStdString().c_str());
@@ -332,7 +332,8 @@ void DesktopPreferencesDialog::onBrowseDesktopFolderClicked()
   QFileDialog dlg;
   dlg.setAcceptMode(QFileDialog::AcceptOpen);
   dlg.setAcceptMode(QFileDialog::AcceptOpen);
-  dlg.setFileMode(QFileDialog::DirectoryOnly);
+  dlg.setFileMode(QFileDialog::Directory);
+  dlg.setOption(QFileDialog::ShowDirsOnly);
   if (dlg.exec() == QDialog::Accepted) {
     QString dir;
     dir = dlg.selectedFiles().constFirst();

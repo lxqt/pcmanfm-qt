@@ -25,9 +25,9 @@
 #include <QSettings>
 #include <QApplication>
 #include "desktopwindow.h"
-#include <libfm-qt/utilities.h>
-#include <libfm-qt/core/folderconfig.h>
-#include <libfm-qt/core/terminal.h>
+#include <libfm-qt6/utilities.h>
+#include <libfm-qt6/core/folderconfig.h>
+#include <libfm-qt6/core/terminal.h>
 #include <QStandardPaths>
 
 namespace PCManFM {
@@ -475,8 +475,13 @@ bool Settings::saveFile(QString filePath) {
 
     // detailed list columns
     settings.setValue(QStringLiteral("CustomColumnWidths"), customColumnWidths_);
-    std::sort(hiddenColumns_.begin(), hiddenColumns_.end());
-    settings.setValue(QStringLiteral("HiddenColumns"), hiddenColumns_);
+    QList<int> columns = getHiddenColumns();
+    std::sort(columns.begin(), columns.end());
+    QList<QVariant> hiddenColumns;
+    for(int i = 0; i < columns.size(); ++i) {
+        hiddenColumns << QVariant(columns.at(i));
+    }
+    settings.setValue(QStringLiteral("HiddenColumns"), hiddenColumns);
 
     settings.endGroup();
 

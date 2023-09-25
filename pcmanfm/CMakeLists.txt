@@ -18,7 +18,7 @@ set(pcmanfm_SRCS
     desktopentrydialog.cpp
 )
 
-qt5_add_dbus_adaptor(pcmanfm_DBUS_SRCS
+qt6_add_dbus_adaptor(pcmanfm_DBUS_SRCS
     org.pcmanfm.Application.xml
     application.h
     PCManFM::Application
@@ -26,7 +26,7 @@ qt5_add_dbus_adaptor(pcmanfm_DBUS_SRCS
     ApplicationAdaptor
 )
 
-qt5_add_dbus_adaptor(pcmanfm_DBUS_SRCS
+qt6_add_dbus_adaptor(pcmanfm_DBUS_SRCS
     org.freedesktop.FileManager1.xml
     application.h
     PCManFM::Application
@@ -34,7 +34,7 @@ qt5_add_dbus_adaptor(pcmanfm_DBUS_SRCS
     ApplicationAdaptorFreeDesktopFileManager
 )
 
-# qt5_add_dbus_adaptor() already generated the moc files. It also marked the
+# qt6_add_dbus_adaptor() already generated the moc files. It also marked the
 # files with SKIP_AUTOMOC but we still need to mark them with SKIP_AUTOGEN.
 # TODO: Check if this behaviour is a CMake bug.
 set_source_files_properties(${pcmanfm_DBUS_SRCS} PROPERTIES SKIP_AUTOGEN ON)
@@ -84,14 +84,13 @@ target_compile_definitions(pcmanfm-qt
 
 target_include_directories(pcmanfm-qt
     PRIVATE
-        "${Qt5Gui_PRIVATE_INCLUDE_DIRS}"
+        "${Qt6Gui_PRIVATE_INCLUDE_DIRS}"
 )
 
 target_link_libraries(pcmanfm-qt
-    Qt5::X11Extras
-    Qt5::Widgets
-    Qt5::DBus
-    fm-qt
+    Qt6::Widgets
+    Qt6::DBus
+    fm-qt6
 )
 
 install(TARGETS pcmanfm-qt RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR})

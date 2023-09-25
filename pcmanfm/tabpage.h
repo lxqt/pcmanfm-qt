@@ -24,13 +24,13 @@
 #include <QWidget>
 #include <QVBoxLayout>
 #include <QLineEdit>
-#include <libfm-qt/browsehistory.h>
+#include <libfm-qt6/browsehistory.h>
 #include "view.h"
 #include "settings.h"
 
-#include <libfm-qt/core/fileinfo.h>
-#include <libfm-qt/core/filepath.h>
-#include <libfm-qt/core/folder.h>
+#include <libfm-qt6/core/fileinfo.h>
+#include <libfm-qt6/core/filepath.h>
+#include <libfm-qt6/core/folder.h>
 
 namespace Fm {
 class FileLauncher;

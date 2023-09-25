@@ -45,20 +45,19 @@
 
 #include "./application.h"
 #include "mainwindow.h"
-#include <libfm-qt/foldermenu.h>
-#include <libfm-qt/filemenu.h>
-#include <libfm-qt/folderitemdelegate.h>
-#include <libfm-qt/cachedfoldermodel.h>
-#include <libfm-qt/folderview_p.h>
-#include <libfm-qt/fileoperation.h>
-#include <libfm-qt/filepropsdialog.h>
-#include <libfm-qt/utilities.h>
-#include <libfm-qt/core/fileinfo.h>
+#include <libfm-qt6/foldermenu.h>
+#include <libfm-qt6/filemenu.h>
+#include <libfm-qt6/folderitemdelegate.h>
+#include <libfm-qt6/cachedfoldermodel.h>
+#include <libfm-qt6/folderview_p.h>
+#include <libfm-qt6/fileoperation.h>
+#include <libfm-qt6/filepropsdialog.h>
+#include <libfm-qt6/utilities.h>
+#include <libfm-qt6/core/fileinfo.h>
 #include "xdgdir.h"
 #include "bulkrename.h"
 #include "desktopentrydialog.h"
 
-#include <QX11Info>
 #include <QScreen>
 #include <xcb/xcb.h>
 #include <X11/Xlib.h>
@@ -156,19 +155,19 @@ DesktopWindow::DesktopWindow(int screenNum):
 
     // setup shortcuts
     QShortcut* shortcut;
-    shortcut = new QShortcut(QKeySequence(Qt::CTRL + Qt::Key_X), this); // cut
+    shortcut = new QShortcut(QKeySequence(Qt::CTRL | Qt::Key_X), this); // cut
     connect(shortcut, &QShortcut::activated, this, &DesktopWindow::onCutActivated);
 
-    shortcut = new QShortcut(QKeySequence(Qt::CTRL + Qt::Key_C), this); // copy
+    shortcut = new QShortcut(QKeySequence(Qt::CTRL | Qt::Key_C), this); // copy
     connect(shortcut, &QShortcut::activated, this, &DesktopWindow::onCopyActivated);
 
-    shortcut = new QShortcut(QKeySequence(Qt::CTRL + Qt::SHIFT + Qt::Key_C), this); // copy full path
+    shortcut = new QShortcut(QKeySequence(Qt::CTRL | Qt::SHIFT | Qt::Key_C), this); // copy full path
     connect(shortcut, &QShortcut::activated, this, &DesktopWindow::onCopyFullPathActivated);
 
-    shortcut = new QShortcut(QKeySequence(Qt::CTRL + Qt::Key_V), this); // paste
+    shortcut = new QShortcut(QKeySequence(Qt::CTRL | Qt::Key_V), this); // paste
     connect(shortcut, &QShortcut::activated, this, &DesktopWindow::onPasteActivated);
 
-    shortcut = new QShortcut(QKeySequence(Qt::CTRL + Qt::Key_A), this); // select all
+    shortcut = new QShortcut(QKeySequence(Qt::CTRL | Qt::Key_A), this); // select all
     connect(shortcut, &QShortcut::activated, this, &DesktopWindow::selectAll);
 
     shortcut = new QShortcut(QKeySequence(Qt::Key_Delete), this); // delete
@@ -177,15 +176,15 @@ DesktopWindow::DesktopWindow(int screenNum):
     shortcut = new QShortcut(QKeySequence(Qt::Key_F2), this); // rename
     connect(shortcut, &QShortcut::activated, this, &DesktopWindow::onRenameActivated);
 
-    shortcut = new QShortcut(QKeySequence(Qt::SHIFT + Qt::Key_F2), this); // bulk rename
+    shortcut = new QShortcut(QKeySequence(Qt::SHIFT | Qt::Key_F2), this); // bulk rename
     connect(shortcut, &QShortcut::activated, this, &DesktopWindow::onBulkRenameActivated);
 
-    shortcut = new QShortcut(QKeySequence(Qt::ALT + Qt::Key_Return), this); // properties
+    shortcut = new QShortcut(QKeySequence(Qt::ALT | Qt::Key_Return), this); // properties
     connect(shortcut, &QShortcut::activated, this, &DesktopWindow::onFilePropertiesActivated);
-    shortcut = new QShortcut(QKeySequence(Qt::ALT + Qt::Key_Enter), this); // properties
+    shortcut = new QShortcut(QKeySequence(Qt::ALT | Qt::Key_Enter), this); // properties
     connect(shortcut, &QShortcut::activated, this, &DesktopWindow::onFilePropertiesActivated);
 
-    shortcut = new QShortcut(QKeySequence(Qt::SHIFT + Qt::Key_Delete), this); // force delete
+    shortcut = new QShortcut(QKeySequence(Qt::SHIFT | Qt::Key_Delete), this); // force delete
     connect(shortcut, &QShortcut::activated, this, &DesktopWindow::onDeleteActivated);
 }
 
@@ -1370,11 +1369,17 @@ void DesktopWindow::relayoutItems() {
 
     QRect workArea = getWorkArea(screen);
 
-    // FIXME: we use an internal class declared in a private header here, which is pretty bad.
     QPoint pos = workArea.topLeft();
     for(; row < rowCount; ++row) {
         QModelIndex index = proxyModel_->index(row, 0);
-        int itemWidth = delegate->sizeHint(listView_->getViewOptions(), index).width();
+        int itemWidth;
+        QVariant sizeVariant = index.data(Qt::SizeHintRole);
+        if(sizeVariant.isValid()) {
+            itemWidth = sizeVariant.toSize().width();
+        }
+        else {
+            itemWidth = delegate->itemSize().width();
+        }
         auto file = proxyModel_->fileInfoFromIndex(index);
         if(file == nullptr) {
             continue;
@@ -1843,14 +1848,16 @@ bool DesktopWindow::event(QEvent* event) {
             break;
         }
         // set freedesktop.org EWMH hints properly
-        if(QX11Info::isPlatformX11() && QX11Info::connection()) {
-            xcb_connection_t* con = QX11Info::connection();
-            const char* atom_name = "_NET_WM_WINDOW_TYPE_DESKTOP";
-            xcb_atom_t atom = xcb_intern_atom_reply(con, xcb_intern_atom(con, 0, strlen(atom_name), atom_name), nullptr)->atom;
-            const char* prop_atom_name = "_NET_WM_WINDOW_TYPE";
-            xcb_atom_t prop_atom = xcb_intern_atom_reply(con, xcb_intern_atom(con, 0, strlen(prop_atom_name), prop_atom_name), nullptr)->atom;
-            xcb_atom_t XA_ATOM = 4;
-            xcb_change_property(con, XCB_PROP_MODE_REPLACE, effectiveWinId(), prop_atom, XA_ATOM, 32, 1, &atom);
+        if(QGuiApplication::platformName() == QStringLiteral("xcb")) {
+            if(auto x11NativeInterfce = qApp->nativeInterface<QNativeInterface::QX11Application>()) {
+                xcb_connection_t* con = x11NativeInterfce->connection();
+                const char* atom_name = "_NET_WM_WINDOW_TYPE_DESKTOP";
+                xcb_atom_t atom = xcb_intern_atom_reply(con, xcb_intern_atom(con, 0, strlen(atom_name), atom_name), nullptr)->atom;
+                const char* prop_atom_name = "_NET_WM_WINDOW_TYPE";
+                xcb_atom_t prop_atom = xcb_intern_atom_reply(con, xcb_intern_atom(con, 0, strlen(prop_atom_name), prop_atom_name), nullptr)->atom;
+                xcb_atom_t XA_ATOM = 4;
+                xcb_change_property(con, XCB_PROP_MODE_REPLACE, effectiveWinId(), prop_atom, XA_ATOM, 32, 1, &atom);
+            }
         }
         break;
     }
@@ -1928,10 +1935,10 @@ void DesktopWindow::childDragMoveEvent(QDragMoveEvent* e) { // see DesktopWindow
     bool isTrash;
     QRect oldDropRect = dropRect_;
     dropRect_ = QRect();
-    QModelIndex dropIndex = indexForPos(&isTrash, e->pos(), workArea, grid);
+    QModelIndex dropIndex = indexForPos(&isTrash, e->position().toPoint(), workArea, grid);
     if(dropIndex.isValid()) {
         bool dragOnSelf = false;
-        if(e->source() == listView_ && e->keyboardModifiers() == Qt::NoModifier) { // drag source is desktop
+        if(e->source() == listView_ && e->modifiers() == Qt::NoModifier) { // drag source is desktop
             QModelIndex curIndx = listView_->currentIndex();
             if(curIndx.isValid() && curIndx == dropIndex) {
                 dragOnSelf = true;
@@ -1960,7 +1967,7 @@ void DesktopWindow::paintDropIndicator()
     if(!dropRect_.isNull()) {
         QPainter painter(listView_->viewport());
         QStyleOption opt;
-        opt.init(listView_->viewport());
+        opt.initFrom(listView_->viewport());
         opt.rect = dropRect_;
         style()->drawPrimitive(QStyle::PE_IndicatorItemViewItemDrop, &opt, &painter, listView_);
     }
@@ -1977,12 +1984,12 @@ void DesktopWindow::childDropEvent(QDropEvent* e) {
     const QMimeData* mimeData = e->mimeData();
     bool moveItem = false;
     QModelIndex curIndx = listView_->currentIndex();
-    if(e->source() == listView_ && e->keyboardModifiers() == Qt::NoModifier) {
+    if(e->source() == listView_ && e->modifiers() == Qt::NoModifier) {
         // drag source is our list view, and no other modifier keys are pressed
         // => we're dragging desktop items
         if(mimeData->hasFormat(QStringLiteral("application/x-qabstractitemmodeldatalist"))) {
             bool isTrash;
-            QModelIndex dropIndex = indexForPos(&isTrash, e->pos(), workArea, grid);
+            QModelIndex dropIndex = indexForPos(&isTrash, e->position().toPoint(), workArea, grid);
             if(dropIndex.isValid() // drop on an item
                && curIndx.isValid() && curIndx != dropIndex) { // not a drop on self
                 if(auto file = proxyModel_->fileInfoFromIndex(dropIndex)) {
@@ -2016,7 +2023,7 @@ void DesktopWindow::childDropEvent(QDropEvent* e) {
     if(moveItem) {
         e->accept();
         // move selected items to the drop position, preserving their relative positions
-        QPoint dropPos = e->pos();
+        QPoint dropPos = e->position().toPoint();
 
         if(curIndx.isValid() && !workArea.isEmpty()) {
             QPoint curPoint = listView_->visualRect(curIndx).topLeft();
@@ -2083,7 +2090,7 @@ void DesktopWindow::childDropEvent(QDropEvent* e) {
     else {
         // move items to Trash if they are dropped on Trash cell
         bool isTrash;
-        QModelIndex dropIndex = indexForPos(&isTrash, e->pos(), workArea, grid);
+        QModelIndex dropIndex = indexForPos(&isTrash, e->position().toPoint(), workArea, grid);
         if(dropIndex.isValid() && isTrash) {
             if(mimeData->hasUrls()) {
                 Fm::FilePathList paths;
@@ -2128,7 +2135,7 @@ void DesktopWindow::childDropEvent(QDropEvent* e) {
         if(!workArea.isEmpty()
            && mimeData->hasUrls()) {
             const QString desktopDir = XdgDir::readDesktopDir() + QString(QLatin1String("/"));
-            QPoint dropPos = e->pos();
+            QPoint dropPos = e->position().toPoint();
             if(rtl) { // see the previous case for the reason
                 dropPos.setX(width() - dropPos.x());
             }
@@ -2327,8 +2334,8 @@ QModelIndex DesktopWindow::indexForPos(bool* isTrash, const QPoint& pos, const Q
 }
 
 void DesktopWindow::closeEvent(QCloseEvent* event) {
-    // prevent the desktop window from being closed.
-    event->ignore();
+    saveItemPositions();
+    QWidget::closeEvent(event);
 }
 
 void DesktopWindow::paintEvent(QPaintEvent* event) {

@@ -1,5 +1,5 @@
 #include "application.h"
-#include <libfm-qt/libfmqt.h>
+#include <libfm-qt6/libfmqt.h>
 
 int main(int argc, char** argv) {
     // ensure that glib integration of Qt is not turned off
@@ -7,7 +7,6 @@ int main(int argc, char** argv) {
     qunsetenv("QT_NO_GLIB");
 
     PCManFM::Application app(argc, argv);
-    app.setAttribute(Qt::AA_UseHighDpiPixmaps, true);
 
     app.init();
     return app.exec();

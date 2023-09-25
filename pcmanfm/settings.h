@@ -22,13 +22,13 @@
 #define PCMANFM_SETTINGS_H
 
 #include <QObject>
-#include <libfm-qt/folderview.h>
-#include <libfm-qt/foldermodel.h>
+#include <libfm-qt6/folderview.h>
+#include <libfm-qt6/foldermodel.h>
 #include "desktopwindow.h"
-#include <libfm-qt/sidepane.h>
-#include <libfm-qt/core/thumbnailjob.h>
-#include <libfm-qt/core/archiver.h>
-#include <libfm-qt/core/legacy/fm-config.h>
+#include <libfm-qt6/sidepane.h>
+#include <libfm-qt6/core/thumbnailjob.h>
+#include <libfm-qt6/core/archiver.h>
+#include <libfm-qt6/core/legacy/fm-config.h>
 
 namespace PCManFM {
 

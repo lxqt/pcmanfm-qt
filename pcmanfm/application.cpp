@@ -39,13 +39,13 @@
 #include <gio/gio.h>
 #include <sys/socket.h>
 
-#include <libfm-qt/mountoperation.h>
-#include <libfm-qt/filepropsdialog.h>
-#include <libfm-qt/filesearchdialog.h>
-#include <libfm-qt/core/terminal.h>
-#include <libfm-qt/core/bookmarks.h>
-#include <libfm-qt/core/folderconfig.h>
-#include <libfm-qt/core/fileinfojob.h>
+#include <libfm-qt6/mountoperation.h>
+#include <libfm-qt6/filepropsdialog.h>
+#include <libfm-qt6/filesearchdialog.h>
+#include <libfm-qt6/core/terminal.h>
+#include <libfm-qt6/core/bookmarks.h>
+#include <libfm-qt6/core/folderconfig.h>
+#include <libfm-qt6/core/fileinfojob.h>
 
 #include "applicationadaptor.h"
 #include "applicationadaptorfreedesktopfilemanager.h"
@@ -331,15 +331,17 @@ bool Application::parseCommandLineArgs() {
 void Application::init() {
 
     // install the translations built-into Qt itself
-    qtTranslator.load(QStringLiteral("qt_") + QLocale::system().name(), QLibraryInfo::location(QLibraryInfo::TranslationsPath));
-    installTranslator(&qtTranslator);
+    if(qtTranslator.load(QStringLiteral("qt_") + QLocale::system().name(), QLibraryInfo::path(QLibraryInfo::TranslationsPath))) {
+        installTranslator(&qtTranslator);
+    }
 
     // install libfm-qt translator
     installTranslator(libFm_.translator());
 
-    // install our own translations
-    translator.load(QStringLiteral("pcmanfm-qt_") + QLocale::system().name(), QStringLiteral(PCMANFM_DATA_DIR) + QStringLiteral("/translations"));
-    installTranslator(&translator);
+    // install our own tranlations
+    if(translator.load(QStringLiteral("pcmanfm-qt_") + QLocale::system().name(), QStringLiteral(PCMANFM_DATA_DIR) + QStringLiteral("/translations"))) {
+        installTranslator(&translator);
+    }
 }
 
 int Application::exec() {
@@ -392,10 +394,6 @@ void Application::onUserDirsChanged() {
 
 void Application::onAboutToQuit() {
     qDebug("aboutToQuit");
-    // save custom positions of desktop items
-    if(!desktopWindows_.isEmpty()) {
-        desktopWindows_.first()->saveItemPositions();
-    }
 
     settings_.save();
 }
