@@ -1848,12 +1848,12 @@ Potrebbero essere utili se le cartelle vengono ricreate.</translation>
     <message>
         <location filename="../preferencesdialog.cpp" line="279"/>
         <source>Remove if added by user</source>
-        <translation type="unfinished"></translation>
+        <translation>Rimuovi se aggiunto da utente</translation>
     </message>
     <message>
         <location filename="../preferencesdialog.cpp" line="303"/>
         <source>Open user-defined list</source>
-        <translation type="unfinished"></translation>
+        <translation>Apri lista definita dell&apos;utente</translation>
     </message>
 </context>
 <context>
