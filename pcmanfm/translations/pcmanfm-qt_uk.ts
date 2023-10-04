@@ -1848,12 +1848,12 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferencesdialog.cpp" line="279"/>
         <source>Remove if added by user</source>
-        <translation type="unfinished"></translation>
+        <translation>Вилучити, якщо додано користувачем</translation>
     </message>
     <message>
         <location filename="../preferencesdialog.cpp" line="303"/>
         <source>Open user-defined list</source>
-        <translation type="unfinished"></translation>
+        <translation>Відкрити визначений користувачем список</translation>
     </message>
 </context>
 <context>

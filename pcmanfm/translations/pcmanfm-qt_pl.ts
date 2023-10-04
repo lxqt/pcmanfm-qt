@@ -1848,12 +1848,12 @@ Mogą się one przydać jeśli te foldery zostaną stworzone ponownie.</translat
     <message>
         <location filename="../preferencesdialog.cpp" line="279"/>
         <source>Remove if added by user</source>
-        <translation type="unfinished"></translation>
+        <translation>Usuń, jeśli dodano przez użytkownika</translation>
     </message>
     <message>
         <location filename="../preferencesdialog.cpp" line="303"/>
         <source>Open user-defined list</source>
-        <translation type="unfinished"></translation>
+        <translation>Otwórz listę zdefiniowaną przez użytkownika</translation>
     </message>
 </context>
 <context>
@@ -2175,7 +2175,7 @@ Mogą się one przydać jeśli te foldery zostaną stworzone ponownie.</translat
     <message>
         <location filename="../preferences.ui" line="219"/>
         <source>Renamed files will also be selected</source>
-        <translation>Pliki ze zmienioną nazwą również zostaną&#xa0;wybrane</translation>
+        <translation>Pliki ze zmienioną nazwą również zostaną wybrane</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="229"/>
