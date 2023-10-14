@@ -1847,12 +1847,12 @@ Elas podem ser úteis se essas pastas forem criadas novamente.</translation>
     <message>
         <location filename="../preferencesdialog.cpp" line="279"/>
         <source>Remove if added by user</source>
-        <translation type="unfinished"></translation>
+        <translation>Remover se for adicionado pelo utilizador</translation>
     </message>
     <message>
         <location filename="../preferencesdialog.cpp" line="303"/>
         <source>Open user-defined list</source>
-        <translation type="unfinished"></translation>
+        <translation>Abrir lista definida pelo utilizador</translation>
     </message>
 </context>
 <context>

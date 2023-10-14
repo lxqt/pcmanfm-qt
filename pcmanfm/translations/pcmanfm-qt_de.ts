@@ -733,17 +733,17 @@ geöffnet, selbst wenn dies nicht der Standard-Dateimanager ist.</translation>
     <message>
         <location filename="../shortcuts.ui" line="135"/>
         <source>Drop+Shift</source>
-        <translation type="unfinished"></translation>
+        <translation>Ablegen+Umschalt</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="143"/>
         <source>Drop+Ctrl</source>
-        <translation type="unfinished"></translation>
+        <translation>Ablegen+Strg</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="151"/>
         <source>Drop+Shift+Ctrl</source>
-        <translation type="unfinished"></translation>
+        <translation>Ablegen+Umschalt+Strg</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="138"/>
@@ -926,12 +926,12 @@ geöffnet, selbst wenn dies nicht der Standard-Dateimanager ist.</translation>
     <message>
         <location filename="../main-win.ui" line="502"/>
         <source>De&amp;select All</source>
-        <translation type="unfinished"></translation>
+        <translation>Au&amp;swahl aufheben</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="505"/>
         <source>Ctrl+D</source>
-        <translation type="unfinished"></translation>
+        <translation>Strg+D</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="510"/>
@@ -951,7 +951,7 @@ geöffnet, selbst wenn dies nicht der Standard-Dateimanager ist.</translation>
     <message>
         <location filename="../main-win.ui" line="534"/>
         <source>&amp;By File Name</source>
-        <translation>Nach &amp;Dateiname</translation>
+        <translation>&amp;Nach Dateiname</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="542"/>
@@ -961,7 +961,7 @@ geöffnet, selbst wenn dies nicht der Standard-Dateimanager ist.</translation>
     <message>
         <location filename="../main-win.ui" line="550"/>
         <source>By C&amp;reation Time</source>
-        <translation>Nach Erstellungszeit</translation>
+        <translation>Nach E&amp;rstellungszeit</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="558"/>
@@ -1136,7 +1136,7 @@ geöffnet, selbst wenn dies nicht der Standard-Dateimanager ist.</translation>
     <message>
         <location filename="../main-win.ui" line="947"/>
         <source>Open Tab in &amp;Admin Mode</source>
-        <translation>Tab im &amp;Admin-Modus öffnen</translation>
+        <translation>Tab als &amp;Administrator öffnen</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="952"/>
@@ -1467,7 +1467,7 @@ geöffnet, selbst wenn dies nicht der Standard-Dateimanager ist.</translation>
     <message>
         <location filename="../application.cpp" line="193"/>
         <source>Quit PCManFM-Qt</source>
-        <translation>Beende PCManFM-Qt</translation>
+        <translation>PCManFM-Qt verlassen</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="196"/>
@@ -1850,12 +1850,12 @@ Sie könnten nützlich sein, wenn diese Ordner erneut erstellt werden.</translat
     <message>
         <location filename="../preferencesdialog.cpp" line="279"/>
         <source>Remove if added by user</source>
-        <translation type="unfinished"></translation>
+        <translation>Entfernen, falls vom Nutzer hinzugefügt</translation>
     </message>
     <message>
         <location filename="../preferencesdialog.cpp" line="303"/>
         <source>Open user-defined list</source>
-        <translation type="unfinished"></translation>
+        <translation>Benutzerdefinierte Liste öffnen</translation>
     </message>
 </context>
 <context>
@@ -1868,7 +1868,7 @@ Sie könnten nützlich sein, wenn diese Ordner erneut erstellt werden.</translat
     <message>
         <location filename="../tabpage.cpp" line="446"/>
         <source>Applications</source>
-        <translation type="unfinished"></translation>
+        <translation>Anwendungen</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="450"/>
@@ -1912,7 +1912,7 @@ Sie könnten nützlich sein, wenn diese Ordner erneut erstellt werden.</translat
         <location filename="../tabpage.cpp" line="581"/>
         <source> (%n hidden)</source>
         <translation>
-            <numerusform> (%n versteckt)</numerusform>
+            <numerusform> (%n verstecktes)</numerusform>
             <numerusform> (%n versteckte)</numerusform>
         </translation>
     </message>
@@ -2357,7 +2357,7 @@ Wert -1 bedeutet ohne Größenbegrenzung (als Standard).</translation>
     <message>
         <location filename="../preferences.ui" line="436"/>
         <source>Disable smooth scrolling</source>
-        <translation type="unfinished"></translation>
+        <translation>Smooth Scrolling deaktivieren</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="648"/>
