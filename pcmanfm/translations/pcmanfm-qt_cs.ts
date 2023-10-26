@@ -1848,12 +1848,12 @@ Mohly by se ještě hodit v případě znovuvytvoření těchto složek.</transl
     <message>
         <location filename="../preferencesdialog.cpp" line="279"/>
         <source>Remove if added by user</source>
-        <translation type="unfinished"></translation>
+        <translation>Odebrat pokud přidáno uživatelem</translation>
     </message>
     <message>
         <location filename="../preferencesdialog.cpp" line="303"/>
         <source>Open user-defined list</source>
-        <translation type="unfinished"></translation>
+        <translation>Otevřít seznam definovaný uživatelem</translation>
     </message>
 </context>
 <context>

@@ -1459,7 +1459,7 @@ klikattiin, vaikka se ei olisi oletustiedostonhallintaohjelma.</translation>
     <message>
         <location filename="../application.cpp" line="190"/>
         <source>Run PCManFM-Qt as a daemon</source>
-        <translation type="unfinished"></translation>
+        <translation>Suorita PCManFM-Qt palveluna</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="193"/>
@@ -1495,7 +1495,7 @@ klikattiin, vaikka se ei olisi oletustiedostonhallintaohjelma.</translation>
     <message>
         <location filename="../application.cpp" line="208"/>
         <source>Open Find Files utility</source>
-        <translation type="unfinished"></translation>
+        <translation>Etsi tiedostoja</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="211"/>
