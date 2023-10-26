@@ -1846,7 +1846,7 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferencesdialog.cpp" line="279"/>
         <source>Remove if added by user</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">ユーザーが追加された場合は削除する</translation>
     </message>
     <message>
         <location filename="../preferencesdialog.cpp" line="303"/>

@@ -1849,12 +1849,12 @@ Jie gali praversti tuo atveju, jeigu aplankai bus sukurti iš naujo.</translatio
     <message>
         <location filename="../preferencesdialog.cpp" line="279"/>
         <source>Remove if added by user</source>
-        <translation type="unfinished"></translation>
+        <translation>Šalinti, jei pridėjo naudotojas</translation>
     </message>
     <message>
         <location filename="../preferencesdialog.cpp" line="303"/>
         <source>Open user-defined list</source>
-        <translation type="unfinished"></translation>
+        <translation>Atverti naudotojo apibrėžtą sąrašą</translation>
     </message>
 </context>
 <context>
@@ -2048,7 +2048,7 @@ Jie gali praversti tuo atveju, jeigu aplankai bus sukurti iš naujo.</translatio
     <message>
         <location filename="../preferences.ui" line="566"/>
         <source>Show &apos;Close&apos; buttons on tabs	</source>
-        <translation>Rodyti ant kortelių mygtuką &quot;Užverti&quot;	</translation>
+        <translation>Rodyti ant kortelių mygtuką „Užverti“	</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="580"/>
