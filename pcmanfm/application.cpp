@@ -676,8 +676,6 @@ void Application::preferences(const QString& page) {
 }
 
 void Application::setWallpaper(const QString& path, const QString& modeString) {
-    static const char* valid_wallpaper_modes[] = {"color", "stretch", "fit", "center", "tile"};
-    DesktopWindow::WallpaperMode mode = settings_.wallpaperMode();
     bool changed = false;
 
     if(!path.isEmpty() && path != settings_.wallpaper()) {
@@ -686,19 +684,12 @@ void Application::setWallpaper(const QString& path, const QString& modeString) {
             changed = true;
         }
     }
-    // convert mode string to value
-    for(std::size_t i = 0; i < G_N_ELEMENTS(valid_wallpaper_modes); ++i) {
-        if(modeString == QLatin1String(valid_wallpaper_modes[i])) {
-            // We don't take safety checks because valid_wallpaper_modes[] is
-            // defined in this function and we can clearly see that it does not
-            // overflow.
-            mode = static_cast<DesktopWindow::WallpaperMode>(i);
-            if(mode != settings_.wallpaperMode()) {
-                changed = true;
-            }
-            break;
-        }
+
+    DesktopWindow::WallpaperMode mode = DesktopWindow::WallpaperMode(Settings::wallpaperModeFromString(modeString));
+    if(mode != settings_.wallpaperMode()) {
+        changed = true;
     }
+
     // FIXME: support different wallpapers on different screen.
     // update wallpaper
     if(changed) {
@@ -708,6 +699,7 @@ void Application::setWallpaper(const QString& path, const QString& modeString) {
                     desktopWin->setWallpaperFile(path);
                 }
                 if(mode != settings_.wallpaperMode()) {
+                    settings_.setWallpaperMode(mode);
                     desktopWin->setWallpaperMode(mode);
                 }
                 desktopWin->updateWallpaper();
