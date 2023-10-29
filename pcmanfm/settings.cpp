@@ -36,7 +36,6 @@ inline static const char* bookmarkOpenMethodToString(OpenDirTargetType value);
 inline static OpenDirTargetType bookmarkOpenMethodFromString(const QString str);
 
 inline static const char* wallpaperModeToString(int value);
-inline static int wallpaperModeFromString(const QString str);
 
 inline static const char* viewModeToString(Fm::FolderView::ViewMode value);
 inline static Fm::FolderView::ViewMode viewModeFromString(const QString str);
@@ -815,7 +814,7 @@ static const char* wallpaperModeToString(int value) {
     return ret;
 }
 
-static int wallpaperModeFromString(const QString str) {
+int Settings::wallpaperModeFromString(const QString str) {
     int ret;
     if(str == QLatin1String("stretch")) {
         ret = DesktopWindow::WallpaperStretch;

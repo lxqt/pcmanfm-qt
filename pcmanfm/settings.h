@@ -168,6 +168,7 @@ public:
 
     static QString xdgUserConfigDir();
     static const QList<int> & iconSizes(IconType type);
+    static int wallpaperModeFromString(const QString str);
 
     QString profileDir(QString profile, bool useFallback = false);
 
