@@ -1847,12 +1847,12 @@ Ils peuvent être utiles si ces dossiers sont à nouveau créés.</translation>
     <message>
         <location filename="../preferencesdialog.cpp" line="279"/>
         <source>Remove if added by user</source>
-        <translation type="unfinished">Enlever si ajouté par l&apos;utilisateur</translation>
+        <translation>Supprimer si ajouté par l&apos;utilisateur</translation>
     </message>
     <message>
         <location filename="../preferencesdialog.cpp" line="303"/>
         <source>Open user-defined list</source>
-        <translation type="unfinished">Ouvrir la liste définie par l&apos;utilisateur</translation>
+        <translation>Ouvrir la liste définie par l&apos;utilisateur</translation>
     </message>
 </context>
 <context>

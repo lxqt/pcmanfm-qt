@@ -1847,12 +1847,12 @@ Det kan vara bra att behålla dom om mapparna återskapas.</translation>
     <message>
         <location filename="../preferencesdialog.cpp" line="279"/>
         <source>Remove if added by user</source>
-        <translation type="unfinished"></translation>
+        <translation>Ta bort om det har lagts till av användaren</translation>
     </message>
     <message>
         <location filename="../preferencesdialog.cpp" line="303"/>
         <source>Open user-defined list</source>
-        <translation type="unfinished"></translation>
+        <translation>Öppna användardefinierad lista</translation>
     </message>
 </context>
 <context>

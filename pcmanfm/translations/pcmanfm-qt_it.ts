@@ -1521,7 +1521,7 @@ sinistro anche se non è il gestore file predefinito.</translation>
     <message>
         <location filename="../application.cpp" line="214"/>
         <source>Set mode of desktop wallpaper. MODE=(%1)</source>
-        <translation>Scegli la modalità dello sfondo. Modalita=(%1)</translation>
+        <translation>Scegli la modalità dello sfondo. MODE=(%1)</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="220"/>

@@ -1847,7 +1847,7 @@ Niistä voi olla hyötyä, jos kyseiset kansiot tulevat takaisin.</translation>
     <message>
         <location filename="../preferencesdialog.cpp" line="279"/>
         <source>Remove if added by user</source>
-        <translation type="unfinished"></translation>
+        <translation>Poista käyttäjän syöttämä</translation>
     </message>
     <message>
         <location filename="../preferencesdialog.cpp" line="303"/>
@@ -1958,7 +1958,7 @@ Niistä voi olla hyötyä, jos kyseiset kansiot tulevat takaisin.</translation>
         <location filename="../view.cpp" line="134"/>
         <location filename="../view.cpp" line="152"/>
         <source>Open in Termina&amp;l</source>
-        <translation type="unfinished"></translation>
+        <translation>Avaa &amp;pääte tähän</translation>
     </message>
 </context>
 <context>
@@ -1966,17 +1966,17 @@ Niistä voi olla hyötyä, jos kyseiset kansiot tulevat takaisin.</translation>
     <message>
         <location filename="../preferences.ui" line="14"/>
         <source>Preferences</source>
-        <translation type="unfinished"></translation>
+        <translation>Asetukset</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="45"/>
         <source>User Interface</source>
-        <translation type="unfinished"></translation>
+        <translation>Käyttöliittymä</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="35"/>
         <source>Behavior</source>
-        <translation type="unfinished"></translation>
+        <translation>Toiminta</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="50"/>
