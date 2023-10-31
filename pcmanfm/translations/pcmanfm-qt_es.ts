@@ -181,7 +181,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../connect.ui" line="70"/>
         <source>Path:</source>
-        <translation>Dirección:</translation>
+        <translation>Ruta:</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="46"/>
@@ -216,7 +216,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
         <source>A short description or generic name, like &quot;Web Browser&quot; or &quot;Home Directory&quot;.
 
 It can be left empty.</source>
-        <translation>Una breve descripción o nombre genérico, como |«Navegador web» o «Carpeta personal».
+        <translation>Una breve descripción o nombre genérico, como &quot;Navegador web&quot; o &quot;Carpeta personal&quot;.
 
 Puede dejarse vacío.</translation>
     </message>
@@ -253,13 +253,13 @@ Se puede dejar vacío.</translation>
     <message>
         <location filename="../desktopentrydialog.ui" line="151"/>
         <source>Icon to display in file manager, menus, etc.</source>
-        <translation>Icono que se mostrará en el gestor de archivos, los menús, etc.</translation>
+        <translation>Icono que se mostrará en el gestor de archivos, menús, etc.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="173"/>
         <location filename="../desktopentrydialog.ui" line="183"/>
         <source>Run in terminal?</source>
-        <translation>¿Quiere ejecutarlo en la terminal?</translation>
+        <translation>¿Ejecutarlo en la terminal?</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="176"/>
@@ -1848,12 +1848,12 @@ Podrían ser útiles si esas carpetas se crean de nuevo.</translation>
     <message>
         <location filename="../preferencesdialog.cpp" line="279"/>
         <source>Remove if added by user</source>
-        <translation type="unfinished"></translation>
+        <translation>Eliminar si lo agrega el usuario</translation>
     </message>
     <message>
         <location filename="../preferencesdialog.cpp" line="303"/>
         <source>Open user-defined list</source>
-        <translation type="unfinished"></translation>
+        <translation>Abrir lista definida por el usuario</translation>
     </message>
 </context>
 <context>
@@ -2232,7 +2232,7 @@ miniaturas grandes, afecta tanto a las imagenes como a las carpetas</translation
     <message>
         <location filename="../preferences.ui" line="466"/>
         <source>3 px by default.</source>
-        <translation>De 3&#xa0;px de manera predeterminada.</translation>
+        <translation>De 3 px de manera predeterminada.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="469"/>
@@ -2249,7 +2249,7 @@ miniaturas grandes, afecta tanto a las imagenes como a las carpetas</translation
         <location filename="../preferences.ui" line="489"/>
         <source>3 px by default.
 A space is also reserved for 3 lines of text.</source>
-        <translation>De 3&#xa0;px de manera predeterminada.
+        <translation>De 3 px de manera predeterminada.
 También se reserva espacio para 3 renglones de texto.</translation>
     </message>
     <message>
@@ -2282,7 +2282,7 @@ visible cuando haya más de una pestaña abierta.</translation>
 Usually, most image types are supported. The default size limit is 4 MiB.</source>
         <translation>El miniaturizador integrado crea miniaturas de las imágenes que Qt admite.
 
-Por lo general, la mayoría de los tipos de imagen es compatible. El límite de tamaño predeterminado es de 4&#xa0;MiB.</translation>
+Por lo general, la mayoría de los tipos de imagen es compatible. El límite de tamaño predeterminado es de 4 MiB.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="670"/>
