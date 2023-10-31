@@ -1,3 +1,13 @@
+pcmanfm-qt-1.4.0 / 2023-11-05
+==============================
+ * Check if wallpaper cache is up-to-date on reading Desktop settings (needed when the wallpaper is changed but its path and name are not).
+ * Added an SVG app icon.
+ * Fixed the tab order in dialogs.
+ * Prevent invisible bulk renaming dialog dialog under Wayland.
+ * Include the state of split view on restoring tabs of the last window. The credit goes to @riverbl for the main idea.
+ * Allow users to add terminal commands.
+ * Fixed `--wallpaper-mode` command-line option.
+
 pcmanfm-qt-1.3.0 / 2023-04-15
 ==============================
  * Don't try to activate windows under Wayland (it isn't possible).
