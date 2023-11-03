@@ -1694,6 +1694,8 @@ are left clicked, even when it is not the default file manager.</source>
         <translation>
             <numerusform>אשפה (פריט אחד)</numerusform>
             <numerusform>אשפה (שני פריטים)</numerusform>
+            <numerusform>אשפה (%Ln פריטים)</numerusform>
+            <numerusform>אשפה (%Ln פריטים)</numerusform>
         </translation>
     </message>
     <message>
@@ -1847,12 +1849,12 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferencesdialog.cpp" line="279"/>
         <source>Remove if added by user</source>
-        <translation type="unfinished"></translation>
+        <translation>להסיר אם נוסף על ידי המשתמש</translation>
     </message>
     <message>
         <location filename="../preferencesdialog.cpp" line="303"/>
         <source>Open user-defined list</source>
-        <translation type="unfinished"></translation>
+        <translation>פתיחת רשימה בהגדרת המשתמש</translation>
     </message>
 </context>
 <context>
@@ -1903,6 +1905,8 @@ They might be useful if those folders are created again.</source>
         <translation>
             <numerusform>פריט אחד</numerusform>
             <numerusform>שני פריטים</numerusform>
+            <numerusform>%n פריטים</numerusform>
+            <numerusform>%n פריטים</numerusform>
         </translation>
     </message>
     <message numerus="yes">
@@ -1911,6 +1915,8 @@ They might be useful if those folders are created again.</source>
         <translation>
             <numerusform> (אחד מוסתר)</numerusform>
             <numerusform> (שניים מוסתרים)</numerusform>
+            <numerusform> (%n מוסתרים)</numerusform>
+            <numerusform> (%n מוסתרים)</numerusform>
         </translation>
     </message>
     <message>
@@ -1926,6 +1932,8 @@ They might be useful if those folders are created again.</source>
         <translation>
             <numerusform>נבחר פריט אחד</numerusform>
             <numerusform>נבחרו שני פריטים</numerusform>
+            <numerusform>נבחרו %n פריטים</numerusform>
+            <numerusform>נבחרו %n פריטים</numerusform>
         </translation>
     </message>
 </context>
@@ -1942,6 +1950,8 @@ They might be useful if those folders are created again.</source>
         <translation>
             <numerusform>לפתוח את הקובץ הזה?</numerusform>
             <numerusform>לפתוח את שני הקבצים האלה?</numerusform>
+            <numerusform>לפתוח את %1 הקבצים האלה?</numerusform>
+            <numerusform>לפתוח את %1 הקבצים האלה?</numerusform>
         </translation>
     </message>
     <message>

@@ -2007,12 +2007,12 @@ Niistä voi olla hyötyä, jos kyseiset kansiot tulevat takaisin.</translation>
     <message>
         <location filename="../preferences.ui" line="328"/>
         <source>Size of big icons:</source>
-        <translation type="unfinished"></translation>
+        <translation>Iso kuvakekoko:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="345"/>
         <source>Size of small icons:</source>
-        <translation type="unfinished"></translation>
+        <translation>Pieni kuvakekoko:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="362"/>
@@ -2022,22 +2022,22 @@ Niistä voi olla hyötyä, jos kyseiset kansiot tulevat takaisin.</translation>
     <message>
         <location filename="../preferences.ui" line="376"/>
         <source>Size of side pane icons:</source>
-        <translation type="unfinished"></translation>
+        <translation>Sivupaneelin kuvakekoko:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="308"/>
         <source>Icon theme:</source>
-        <translation type="unfinished"></translation>
+        <translation>Kuvaketeema:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="546"/>
         <source>Window</source>
-        <translation type="unfinished"></translation>
+        <translation>Ikkuna</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="559"/>
         <source>Always show the tab bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Näytä välilehtipalkki aina</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="566"/>
@@ -2107,7 +2107,7 @@ Niistä voi olla hyötyä, jos kyseiset kansiot tulevat takaisin.</translation>
     <message>
         <location filename="../preferences.ui" line="40"/>
         <source>Display</source>
-        <translation type="unfinished"></translation>
+        <translation>Ulkoasu</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="90"/>
@@ -2118,54 +2118,54 @@ Niistä voi olla hyötyä, jos kyseiset kansiot tulevat takaisin.</translation>
         <location filename="../preferences.ui" line="103"/>
         <location filename="../preferences.ui" line="116"/>
         <source>Set to zero to disable auto-selection.</source>
-        <translation type="unfinished"></translation>
+        <translation>Nolla poistaa automaattisen valinnan käytöstä.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="106"/>
         <source>Delay of auto-selection in single click mode:</source>
-        <translation type="unfinished"></translation>
+        <translation>Automaattisen valinnan viive yhden napsautuksen tilassa:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="144"/>
         <source>Open in current tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Avaa nykyisessä välilehdessä</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="149"/>
         <source>Open in new tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Avaa uuteen välilehteen</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="154"/>
         <source>Open in new window</source>
-        <translation type="unfinished"></translation>
+        <translation>Avaa uuteen ikkunaan</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="195"/>
         <source>Erase files on removable media instead of &quot;trash can&quot; creation</source>
-        <translation type="unfinished"></translation>
+        <translation>Poista tiedostot irrotettavilta laitteilta &quot;roskakorin&quot; luomisen sijaan</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="202"/>
         <source>Confirm before moving files into &quot;trash can&quot;</source>
-        <translation type="unfinished"></translation>
+        <translation>Vahvista tiedostojen siirto &quot;roskakoriin&quot;</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="209"/>
         <location filename="../preferences.ui" line="409"/>
         <location filename="../preferences.ui" line="419"/>
         <source>Requires application restart to take effect completely</source>
-        <translation type="unfinished"></translation>
+        <translation>Vaaditaan ohjelman uudelleenkäynnistys muutosten toimeen tulemiseksi</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="212"/>
         <source>Launch executable files without prompt</source>
-        <translation type="unfinished"></translation>
+        <translation>Käynnistä suoritettavat tiedostot kysymättä</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="219"/>
         <source>Renamed files will also be selected</source>
-        <translation type="unfinished"></translation>
+        <translation>Myös uudelleennimetyt tiedostot valitaan</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="244"/>
