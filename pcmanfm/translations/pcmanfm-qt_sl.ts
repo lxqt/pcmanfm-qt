@@ -368,7 +368,7 @@ Primeri: AudioVideo, Audio, Video, Development, Education, Game, Graphics, Netwo
     <message>
         <location filename="../desktop-preferences.ui" line="417"/>
         <source>Image file</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Slikovna datoteka</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="423"/>
@@ -378,7 +378,7 @@ Primeri: AudioVideo, Audio, Video, Development, Education, Game, Graphics, Netwo
     <message>
         <location filename="../desktop-preferences.ui" line="430"/>
         <source>&amp;Browse</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">&amp;Brskaj</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="30"/>
