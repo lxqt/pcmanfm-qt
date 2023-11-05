@@ -1694,7 +1694,6 @@ olarak seçilmese bile sol tıklandığında PCManFM-Qt&apos;de açılır.</tran
         <source>Trash (%Ln items)</source>
         <translation>
             <numerusform>Çöp Kutusu (%Ln öğe)</numerusform>
-            <numerusform>Çöp Kutusu (%Ln öğe)</numerusform>
         </translation>
     </message>
     <message>
@@ -1903,14 +1902,12 @@ Bu klasörler yeniden oluşturulursa faydalı olabilirler.</translation>
         <source>%n item(s)</source>
         <translation>
             <numerusform>%n nesne</numerusform>
-            <numerusform>%n nesne</numerusform>
         </translation>
     </message>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="581"/>
         <source> (%n hidden)</source>
         <translation>
-            <numerusform> (%n gizli)</numerusform>
             <numerusform> (%n gizli)</numerusform>
         </translation>
     </message>
@@ -1926,7 +1923,6 @@ Bu klasörler yeniden oluşturulursa faydalı olabilirler.</translation>
         <source>%n item(s) selected</source>
         <translation>
             <numerusform>%n nesne seçildi</numerusform>
-            <numerusform>%n nesne seçildi</numerusform>
         </translation>
     </message>
 </context>
@@ -1941,7 +1937,6 @@ Bu klasörler yeniden oluşturulursa faydalı olabilirler.</translation>
         <location filename="../view.cpp" line="60"/>
         <source>Do you want to open these %1 files?</source>
         <translation>
-            <numerusform>%1 dosyasını açmak istiyor musunuz?</numerusform>
             <numerusform>%1 dosyasını açmak istiyor musunuz?</numerusform>
         </translation>
     </message>

@@ -2175,7 +2175,7 @@ Mogą się one przydać jeśli te foldery zostaną stworzone ponownie.</translat
     <message>
         <location filename="../preferences.ui" line="219"/>
         <source>Renamed files will also be selected</source>
-        <translation>Pliki ze zmienioną nazwą również zostaną wybrane</translation>
+        <translation>Pliki ze zmienioną nazwą również zostaną&#xa0;wybrane</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="229"/>
