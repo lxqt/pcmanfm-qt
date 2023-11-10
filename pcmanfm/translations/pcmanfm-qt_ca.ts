@@ -1849,12 +1849,12 @@ Pot ser útil si es tornen a crear aquestes carpetes.</translation>
     <message>
         <location filename="../preferencesdialog.cpp" line="279"/>
         <source>Remove if added by user</source>
-        <translation type="unfinished"></translation>
+        <translation>Elimina si l&apos;ha afegit l&apos;usuari</translation>
     </message>
     <message>
         <location filename="../preferencesdialog.cpp" line="303"/>
         <source>Open user-defined list</source>
-        <translation type="unfinished"></translation>
+        <translation>Obriu la llista definida per l&apos;usuari</translation>
     </message>
 </context>
 <context>
@@ -1867,7 +1867,7 @@ Pot ser útil si es tornen a crear aquestes carpetes.</translation>
     <message>
         <location filename="../tabpage.cpp" line="446"/>
         <source>Applications</source>
-        <translation type="unfinished"></translation>
+        <translation>Aplicacions</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="450"/>
@@ -2358,7 +2358,7 @@ Un valor de -1 significa que no hi ha límit per a la mida del fitxer (per defec
     <message>
         <location filename="../preferences.ui" line="436"/>
         <source>Disable smooth scrolling</source>
-        <translation type="unfinished"></translation>
+        <translation>Desactiva el desplaçament suau</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="648"/>
