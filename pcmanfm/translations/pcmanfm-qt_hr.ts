@@ -1849,12 +1849,12 @@ Mogle bi biti korisne, ako se te mape ponovo kreiraju.</translation>
     <message>
         <location filename="../preferencesdialog.cpp" line="279"/>
         <source>Remove if added by user</source>
-        <translation type="unfinished"></translation>
+        <translation>Ukloni ako je dodano od korisnika</translation>
     </message>
     <message>
         <location filename="../preferencesdialog.cpp" line="303"/>
         <source>Open user-defined list</source>
-        <translation type="unfinished"></translation>
+        <translation>Otvori korisnički određen popis</translation>
     </message>
 </context>
 <context>

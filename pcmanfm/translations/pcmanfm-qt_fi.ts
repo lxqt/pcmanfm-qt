@@ -725,7 +725,7 @@ klikattiin, vaikka se ei olisi oletustiedostonhallintaohjelma.</translation>
     <message>
         <location filename="../shortcuts.ui" line="130"/>
         <source>Paste into transient filter bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Liitä pikasuodatinriviin</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="135"/>
@@ -1469,12 +1469,12 @@ klikattiin, vaikka se ei olisi oletustiedostonhallintaohjelma.</translation>
     <message>
         <location filename="../application.cpp" line="196"/>
         <source>Launch desktop manager</source>
-        <translation type="unfinished"></translation>
+        <translation>Käynnistä työpöytäympäristö</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="199"/>
         <source>Turn off desktop manager if it&apos;s running</source>
-        <translation type="unfinished"></translation>
+        <translation>Sulje työpöytäympäristö, jos se on käynnissä</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="202"/>
@@ -1643,27 +1643,27 @@ klikattiin, vaikka se ei olisi oletustiedostonhallintaohjelma.</translation>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="53"/>
         <source>Stretch to fill the entire screen</source>
-        <translation type="unfinished"></translation>
+        <translation>Venytä, että koko näyttö täyttyy</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="54"/>
         <source>Stretch to fit the screen</source>
-        <translation type="unfinished"></translation>
+        <translation>Venytä, että sopii näyttöön</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="55"/>
         <source>Center on the screen</source>
-        <translation type="unfinished"></translation>
+        <translation>Keskitä näytöllä</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="56"/>
         <source>Tile the image to fill the entire screen</source>
-        <translation type="unfinished"></translation>
+        <translation>Laatoita niin, että koko näyttö täyttyy</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="57"/>
         <source>Zoom the image to fill the entire screen</source>
-        <translation type="unfinished"></translation>
+        <translation>Lähennä niin, että koko näyttö täyttyy</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="264"/>
@@ -1852,7 +1852,7 @@ Niistä voi olla hyötyä, jos kyseiset kansiot tulevat takaisin.</translation>
     <message>
         <location filename="../preferencesdialog.cpp" line="303"/>
         <source>Open user-defined list</source>
-        <translation type="unfinished"></translation>
+        <translation>Avaa käyttäjän määrittämä luettelo</translation>
     </message>
 </context>
 <context>
@@ -1982,12 +1982,12 @@ Niistä voi olla hyötyä, jos kyseiset kansiot tulevat takaisin.</translation>
         <location filename="../preferences.ui" line="50"/>
         <location filename="../preferences.ui" line="642"/>
         <source>Thumbnail</source>
-        <translation type="unfinished"></translation>
+        <translation>Pienoiskuva</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="55"/>
         <source>Volume</source>
-        <translation type="unfinished"></translation>
+        <translation>Taltio</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="60"/>
@@ -1997,7 +1997,7 @@ Niistä voi olla hyötyä, jos kyseiset kansiot tulevat takaisin.</translation>
     <message>
         <location filename="../preferences.ui" line="222"/>
         <source>Select newly created files</source>
-        <translation type="unfinished"></translation>
+        <translation>Valitse juuri luodut tiedostot</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="296"/>
@@ -2017,7 +2017,7 @@ Niistä voi olla hyötyä, jos kyseiset kansiot tulevat takaisin.</translation>
     <message>
         <location filename="../preferences.ui" line="362"/>
         <source>Size of thumbnails:</source>
-        <translation type="unfinished"></translation>
+        <translation>Pienoiskuvan koko:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="376"/>
@@ -2112,7 +2112,7 @@ Niistä voi olla hyötyä, jos kyseiset kansiot tulevat takaisin.</translation>
     <message>
         <location filename="../preferences.ui" line="90"/>
         <source>If this is unchecked, the DE setting will be used.</source>
-        <translation type="unfinished"></translation>
+        <translation>Jos ei valittu, työpöydän asetusta käytetään.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="103"/>
@@ -2170,45 +2170,45 @@ Niistä voi olla hyötyä, jos kyseiset kansiot tulevat takaisin.</translation>
     <message>
         <location filename="../preferences.ui" line="244"/>
         <source>Number of recent files:</source>
-        <translation type="unfinished"></translation>
+        <translation>Viimeaikaisten tiedostojen määrä:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="325"/>
         <location filename="../preferences.ui" line="335"/>
         <source>Used by Icon View</source>
-        <translation type="unfinished"></translation>
+        <translation>Käytössä kuvakenäkymässä</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="342"/>
         <location filename="../preferences.ui" line="352"/>
         <source>Used by Compact View and Detailed List View</source>
-        <translation type="unfinished"></translation>
+        <translation>Käytössä tiivis- ja yksityiskohtaisnäkymissä</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="359"/>
         <location filename="../preferences.ui" line="369"/>
         <source>Used by Thumbnail View</source>
-        <translation type="unfinished"></translation>
+        <translation>Käytössä pienoiskuvanäkymässä</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="389"/>
         <source>User interface</source>
-        <translation type="unfinished"></translation>
+        <translation>Käyttöliittymä</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="402"/>
         <source>Treat backup files as hidden</source>
-        <translation type="unfinished"></translation>
+        <translation>Piilota varmuuskopiotiedostot</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="422"/>
         <source>Show icons of hidden files shadowed</source>
-        <translation type="unfinished"></translation>
+        <translation>Varjostetut piilotiedostojen kuvakkeet</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="459"/>
         <source>Minimum item margins in icon view:</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Nimikkeiden vähimmäisreunukset kuvakenäkymässä:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="466"/>
@@ -2242,17 +2242,18 @@ Tilaa varataan myös 3 tekstiriville. {3 ?} {3 ?}</translation>
         <location filename="../preferences.ui" line="555"/>
         <source>When unchecked, the tab bar will be shown
 only if there are more than one tab.</source>
-        <translation type="unfinished"></translation>
+        <translation>Jos ei valittu, välilehtipalkki näytetään vain,
+jos välilehtiä on enemmän kuin yksi.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="573"/>
         <source>Switch to newly opened tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Vaihda avattuun uuteen välilehteen</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="615"/>
         <source>Reopen last window tabs in a new window</source>
-        <translation type="unfinished"></translation>
+        <translation>Avaa viimeisen ikkunan välilehdet uudelleen uudessa ikkunassa</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="665"/>
@@ -2260,18 +2261,20 @@ only if there are more than one tab.</source>
         <source>The built-in thumbnailer makes thumbnails of images that are supported by Qt.
 
 Usually, most image types are supported. The default size limit is 4 MiB.</source>
-        <translation type="unfinished"></translation>
+        <translation>Sisäänrakennettu pienoiskuvien luonti voi hyödyntää kuvia, joita Qt tukee.
+
+Yleensä useimmat kuvatyypit ovat tuettuja. Oletuskokoraja on 4 MiB.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="670"/>
         <source>Image size limit for built-in thumbnailer:</source>
-        <translation type="unfinished"></translation>
+        <translation>Kokoraja sisäänrakennetulle pienoiskuvien luomiselle:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="682"/>
         <location filename="../preferences.ui" line="718"/>
         <source> MiB</source>
-        <translation type="unfinished"></translation>
+        <translation> MiB</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="698"/>
@@ -2279,162 +2282,164 @@ Usually, most image types are supported. The default size limit is 4 MiB.</sourc
         <source>If existing, external thumbnailers are used for videos, PDF documents, etc.
 
 A value of -1 means that there is no limit for the file size (the default).</source>
-        <translation type="unfinished"></translation>
+        <translation>Olemassa olevia pienoiskuvia käytetään videoille, PDF-dokumenteille, jne.
+
+Oletusarvo -1 poistaa kokorajoituksen käytöstä.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="703"/>
         <source>File size limit for external thumbnailers:</source>
-        <translation type="unfinished"></translation>
+        <translation>Kokoraja ulkoiselle pienoiskuvien luomiselle:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="715"/>
         <source>No limit</source>
-        <translation type="unfinished"></translation>
+        <translation>Ei rajoitusta</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="860"/>
         <source>Examples:&lt;br&gt;For terminal: &lt;i&gt;xterm -e %s&lt;/i&gt;&lt;br&gt;For switching user: &lt;i&gt;lxsudo %s&lt;/i&gt; or &lt;i&gt;lxsudo dbus-run-session -- %s&lt;/i&gt;&lt;br&gt;&lt;i&gt;%s&lt;/i&gt; is the command line you want to execute with terminal or su.&lt;br&gt; Important: Please use lxsudo, sudo alone will wreck permissions of the settings file.</source>
-        <translation type="unfinished"></translation>
+        <translation>Esimerkit:&lt;br&gt;Päätteelle: &lt;i&gt;xterm -e %s&lt;/i&gt;&lt;br&gt;Käyttäjän vaihdolle: &lt;i&gt;lxsudo %s&lt;/i&gt; tai &lt;i&gt;lxsudo dbus-run-session -- %s&lt;/i&gt;&lt;br&gt;&lt;i&gt;%s&lt;/i&gt; on se komentorivi, jota käyttäisit päätteessä tai su-komennolla.&lt;br&gt; Huomaa: Käytä lxsudo-komentoa, sudo-komento yksinään tuhoaa asetustiedoston käyttöoikeudet.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="919"/>
         <source>Search</source>
-        <translation type="unfinished"></translation>
+        <translation>Haku</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="934"/>
         <source>Maximum search history:</source>
-        <translation type="unfinished"></translation>
+        <translation>Hakuhistorian enimmäispituus:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="948"/>
         <source>Clear search history</source>
-        <translation type="unfinished"></translation>
+        <translation>Tyhjennä hakuhistoria</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="983"/>
         <source>Application restart is needed for changes to take effect.</source>
-        <translation type="unfinished"></translation>
+        <translation>Sovellus tulee käynnistää uudelleen, jotta muutokset tulevat voimaan.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="136"/>
         <source>Bookmarks menu:</source>
-        <translation type="unfinished"></translation>
+        <translation>Kirjanmerkkivalikko:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="129"/>
         <source>Show folder context menu with Ctrl + right click</source>
-        <translation type="unfinished"></translation>
+        <translation>Näytä kansion kontekstivalikko painamalla Ctrl + hiiren oikea</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="229"/>
         <source>Open folders in new tabs as far as possible</source>
-        <translation type="unfinished"></translation>
+        <translation>Avaa kansiot uusiin välilehtiin mahdollisimman paljon</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="232"/>
         <source>Single window mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Yhden ikkunan tila</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="412"/>
         <source>Always show real file names</source>
-        <translation type="unfinished"></translation>
+        <translation>Näytä aina oikeat tiedostonimet</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="429"/>
         <source>Do not show file tooltips</source>
-        <translation type="unfinished"></translation>
+        <translation>Älä näytä työkaluvihjettä tiedostoille</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="436"/>
         <source>Disable smooth scrolling</source>
-        <translation type="unfinished"></translation>
+        <translation>Poista tasainen vieritys käytöstä</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="648"/>
         <source>Needs ffmpegthumbnailer</source>
-        <translation type="unfinished"></translation>
+        <translation>Vaaditaan ffmpegthumbnailer</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="754"/>
         <source>Auto Mount</source>
-        <translation type="unfinished"></translation>
+        <translation>Automaattinen liittäminen</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="760"/>
         <source>Mount mountable volumes automatically on program startup</source>
-        <translation type="unfinished"></translation>
+        <translation>Liitä irrotettavat taltiot automaattisesti ohjelman käynnistyessä</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="767"/>
         <source>Mount removable media automatically when they are inserted</source>
-        <translation type="unfinished"></translation>
+        <translation>Liitä siirrettävät tietovälineet automaattisesti kytkettäessä</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="774"/>
         <source>Show available options for removable media when they are inserted</source>
-        <translation type="unfinished"></translation>
+        <translation>Näytä mahdolliset valinnat kytketyille siirrettäville tietovälineille</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="784"/>
         <source>When removable medium unmounted:</source>
-        <translation type="unfinished"></translation>
+        <translation>Kun irrotettava tietoväline on irrotettu:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="790"/>
         <source>Close &amp;tab containing removable medium</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Sulje irrotettavan tietovälineen välilehti</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="797"/>
         <source>Chan&amp;ge folder in the tab to home folder</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Vaihda välilehden kansio kotikansioon</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="824"/>
         <source>Programs</source>
-        <translation type="unfinished"></translation>
+        <translation>Ohjelmat</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="833"/>
         <source>Terminal emulator:</source>
-        <translation type="unfinished"></translation>
+        <translation>Pääte-emulaattori:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="847"/>
         <source>Switch &amp;user command:</source>
-        <translation type="unfinished"></translation>
+        <translation>Käyttäjänvaihtokomento:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="873"/>
         <source>Archiver in&amp;tegration:</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Arkistointi-integraatio:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="889"/>
         <source>Templates</source>
-        <translation type="unfinished"></translation>
+        <translation>Mallit</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="895"/>
         <source>Show only user defined templates in menu</source>
-        <translation type="unfinished"></translation>
+        <translation>Näytä valikossa vain käyttäjän määrittämät mallit</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="902"/>
         <source>Show only one template for each MIME type</source>
-        <translation type="unfinished"></translation>
+        <translation>Näytä vain yksi malli jokaiselle MIME-tyypille</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="909"/>
         <source>Run default application after creation from template</source>
-        <translation type="unfinished"></translation>
+        <translation>Suorita oletussovellus mallista luomisen jälkeen</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="395"/>
         <source>Use SI decimal prefixes instead of IEC binary prefixes</source>
-        <translation type="unfinished"></translation>
+        <translation>Käytä SI-desimaalietuliitteitä IEC-binäärietuliitteiden sijasta</translation>
     </message>
 </context>
 <context>
@@ -2442,22 +2447,22 @@ A value of -1 means that there is no limit for the file size (the default).</sou
     <message>
         <location filename="../bulkrename.cpp" line="86"/>
         <source>Renaming files...</source>
-        <translation type="unfinished"></translation>
+        <translation>Uudelleennimetään tiedostoja...</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="86"/>
         <source>Abort</source>
-        <translation type="unfinished"></translation>
+        <translation>Peruuta</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="95"/>
         <source>Warning</source>
-        <translation type="unfinished"></translation>
+        <translation>Varoitus</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="95"/>
         <source>Renaming is aborted.</source>
-        <translation type="unfinished"></translation>
+        <translation>Uudelleennimeäminen peruutettiin.</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="121"/>
@@ -2469,17 +2474,17 @@ A value of -1 means that there is no limit for the file size (the default).</sou
     <message>
         <location filename="../bulkrename.cpp" line="121"/>
         <source>No file could be renamed.</source>
-        <translation type="unfinished"></translation>
+        <translation>Tiedostoja ei uudelleennimetty.</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="124"/>
         <source>Some files could not be renamed.</source>
-        <translation type="unfinished"></translation>
+        <translation>Joitain tiedostoja ei voitu uudelleennimetä.</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="1142"/>
         <source>Cannot open as Admin.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ei voitu avata ylläpitotilassa.</translation>
     </message>
 </context>
 </TS>
