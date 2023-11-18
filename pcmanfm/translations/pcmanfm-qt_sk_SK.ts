@@ -1849,12 +1849,12 @@ Ak ich odstránite, nebudú sa dať použiť pri znovuvytvorení priečinkov.</t
     <message>
         <location filename="../preferencesdialog.cpp" line="279"/>
         <source>Remove if added by user</source>
-        <translation type="unfinished"></translation>
+        <translation>Odstráňte, ak ich pridal užívateľ</translation>
     </message>
     <message>
         <location filename="../preferencesdialog.cpp" line="303"/>
         <source>Open user-defined list</source>
-        <translation type="unfinished"></translation>
+        <translation>Otvorte zoznam definovaný používateľom</translation>
     </message>
 </context>
 <context>
