@@ -800,7 +800,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="293"/>
         <source>Alt+Up</source>
-        <translation></translation>
+        <translation>Alt+上</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="302"/>
@@ -1287,7 +1287,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="628"/>
         <source>Alt+Left</source>
-        <translation></translation>
+        <translation>Alt+左</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="637"/>
@@ -1302,7 +1302,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="643"/>
         <source>Alt+Right</source>
-        <translation></translation>
+        <translation>Alt+右</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="648"/>
@@ -1842,12 +1842,12 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferencesdialog.cpp" line="279"/>
         <source>Remove if added by user</source>
-        <translation type="unfinished"></translation>
+        <translation>如果由用户添加，则删除</translation>
     </message>
     <message>
         <location filename="../preferencesdialog.cpp" line="303"/>
         <source>Open user-defined list</source>
-        <translation type="unfinished"></translation>
+        <translation>打开用户定义列表</translation>
     </message>
 </context>
 <context>

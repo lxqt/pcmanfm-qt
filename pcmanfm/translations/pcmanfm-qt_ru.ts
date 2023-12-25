@@ -196,7 +196,7 @@ Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  021
     <message>
         <location filename="../desktopentrydialog.ui" line="14"/>
         <source>Create Launcher</source>
-        <translation>Создать кнопку запуска</translation>
+        <translation>Создать ярлык запуска</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="38"/>
@@ -206,7 +206,7 @@ Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  021
     <message>
         <location filename="../desktopentrydialog.ui" line="45"/>
         <source>Specific name of this launcher.</source>
-        <translation>Конкретное имя этого лаунчера.</translation>
+        <translation>Особое имя этого ярлыка запуска.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="58"/>
@@ -451,7 +451,7 @@ Examples: AudioVideo, Audio, Video, Development, Education, Game, Graphics, Netw
         <location filename="../desktop-preferences.ui" line="275"/>
         <location filename="../desktop-preferences.ui" line="287"/>
         <source> px</source>
-        <translation> пикс</translation>
+        <translation> пкс</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="168"/>
@@ -486,7 +486,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktop-preferences.ui" line="307"/>
         <source>Open desktop folders in default file manager by left clicking</source>
-        <translation>Открывать папки рабочего стола в диспетчере файлов по умолчанию при нажатии левой кнопки мыши</translation>
+        <translation>Открывать папки рабочего стола в стандартном диспетчере файлов щелчком левой кнопки</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="314"/>
@@ -733,17 +733,17 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../shortcuts.ui" line="135"/>
         <source>Drop+Shift</source>
-        <translation>Уронить+Shift</translation>
+        <translation>Перетянуть+Shift</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="143"/>
         <source>Drop+Ctrl</source>
-        <translation>Уронить+Ctrl</translation>
+        <translation>Перетянуть+Ctrl</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="151"/>
         <source>Drop+Shift+Ctrl</source>
-        <translation>Уронить+Shift+Ctrl</translation>
+        <translation>Перетянуть+Shift+Ctrl</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="138"/>
@@ -837,7 +837,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="211"/>
         <source>&amp;Go</source>
-        <translation>&amp;Перейти</translation>
+        <translation>&amp;Переход</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="253"/>
@@ -957,7 +957,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="429"/>
         <source>&amp;Icon View</source>
-        <translation>Просмотр &amp;значками</translation>
+        <translation>Ви&amp;д со значками</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="437"/>
@@ -967,7 +967,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="445"/>
         <source>&amp;Detailed List</source>
-        <translation>Просмотр &amp;подробным списком</translation>
+        <translation>Подробный &amp;список</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="453"/>
@@ -1248,7 +1248,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="787"/>
         <source>&amp;Clear All Filters</source>
-        <translation>&amp;Отменить все фильтры</translation>
+        <translation>&amp;Очистить все фильтры</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="790"/>
@@ -1329,7 +1329,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="160"/>
         <source>&amp;Customized View Settings</source>
-        <translation>Индивидуальные настройки просмотра</translation>
+        <translation>Индивидуальные на&amp;стройки вида</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="228"/>
@@ -1724,7 +1724,7 @@ are left clicked, even when it is not the default file manager.</source>
         <location filename="../desktopwindow.cpp" line="1017"/>
         <location filename="../desktopwindow.cpp" line="1057"/>
         <source>Stic&amp;k to Current Position</source>
-        <translation>&amp;Прикрепить к текущему положению</translation>
+        <translation>Закрепить в текущем по&amp;ложении</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="1025"/>
@@ -1739,7 +1739,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktopwindow.cpp" line="1090"/>
         <source>Create Launcher</source>
-        <translation>Создать кнопку запуска</translation>
+        <translation>Создать ярлык запуска</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="1093"/>
@@ -1789,7 +1789,7 @@ are left clicked, even when it is not the default file manager.</source>
         <location filename="../mainwindow.cpp" line="175"/>
         <location filename="../mainwindow.cpp" line="2203"/>
         <source>&amp;Move to Trash</source>
-        <translation>&amp;Переместить в корзину</translation>
+        <translation>Убрат&amp;ь в корзину</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="175"/>
@@ -1800,7 +1800,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../mainwindow.cpp" line="2039"/>
         <source>Customized View Settings</source>
-        <translation>Индивидуальные настройки просмотра</translation>
+        <translation>Индивидуальные настройки вида</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="2310"/>
@@ -1831,7 +1831,7 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferencesdialog.cpp" line="206"/>
         <source>Icon View</source>
-        <translation>Просмотр значками</translation>
+        <translation>Вид со значками</translation>
     </message>
     <message>
         <location filename="../preferencesdialog.cpp" line="207"/>
@@ -1841,7 +1841,7 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferencesdialog.cpp" line="208"/>
         <source>Thumbnail View</source>
-        <translation>Просмотр эскизами</translation>
+        <translation>Вид с эскизами</translation>
     </message>
     <message>
         <location filename="../preferencesdialog.cpp" line="209"/>
@@ -2199,7 +2199,7 @@ They might be useful if those folders are created again.</source>
         <location filename="../preferences.ui" line="325"/>
         <location filename="../preferences.ui" line="335"/>
         <source>Used by Icon View</source>
-        <translation>Используется в режиме просмотра значками</translation>
+        <translation>Используется в виде со значками</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="342"/>
@@ -2211,7 +2211,7 @@ They might be useful if those folders are created again.</source>
         <location filename="../preferences.ui" line="359"/>
         <location filename="../preferences.ui" line="369"/>
         <source>Used by Thumbnail View</source>
-        <translation>Используется в режиме просмотра эскизов</translation>
+        <translation>Используется в виде с эскизами</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="389"/>
