@@ -2414,7 +2414,7 @@ Oletusarvo -1 poistaa kokorajoituksen käytöstä.</translation>
     <message>
         <location filename="../preferences.ui" line="873"/>
         <source>Archiver in&amp;tegration:</source>
-        <translation type="unfinished">Arkistointi-integraatio:</translation>
+        <translation type="unfinished">Pakkaajaintegraatio:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="889"/>

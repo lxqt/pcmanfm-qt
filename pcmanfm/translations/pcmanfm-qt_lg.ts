@@ -125,7 +125,7 @@ Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  021
     <message>
         <location filename="../bulk-rename.ui" line="47"/>
         <source># will be replaced by numbers starting with:</source>
-        <translation># wajjakuddawo namba ezitandikira ku:</translation>
+        <translation>Awali akabonero # wajjakuddawo namba ezitandikira ku:</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="80"/>
@@ -681,7 +681,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../shortcuts.ui" line="87"/>
         <source>Ctrl+PageUp</source>
-        <translation>Ctrl_PageUp</translation>
+        <translation>Ctrl+PageUp</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="95"/>
@@ -920,7 +920,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="453"/>
         <source>&amp;Thumbnail View</source>
-        <translation>Fayiro zirage &amp;n&apos;obulozako bwazo</translation>
+        <translation>Fayiro zirage &amp;n&apos;obulozaako bwazo</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="462"/>
@@ -1150,7 +1150,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="926"/>
         <source>Show Thumbnails</source>
-        <translation>Laga obulozako bwa fayiro</translation>
+        <translation>Laga obulozaako bwa fayiro</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="934"/>
@@ -1170,7 +1170,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="947"/>
         <source>Open Tab in &amp;Admin Mode</source>
-        <translation>Leeta akatimbe akakola n&apos;obu&amp;yinza bwa muteesiteesi</translation>
+        <translation>Wa akatimbe kano obu&amp;yinza bwa muteesiteesi</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="952"/>
@@ -1201,7 +1201,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="808"/>
         <source>Close &amp;next tabs</source>
-        <translation>Gyawo obutimbe obu&amp;zeeko kano akukolebwa</translation>
+        <translation>Gyawo obutimbe obu&amp;koledw luvanyuma lwa kano</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="852"/>
@@ -1663,7 +1663,7 @@ Awali &lt;LINNYA&gt; w&apos;owandika erinnya ery&apos;akaboozi k&apos;oyagala ok
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="56"/>
         <source>Tile the image to fill the entire screen</source>
-        <translation>Yongerawo kopi z&apos;ekifaananyi zimaleyo olutimbe</translation>
+        <translation>Yongerawo koppi z&apos;ekifaananyi zimaleyo olutimbe</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="57"/>
@@ -1779,7 +1779,7 @@ Awali &lt;LINNYA&gt; w&apos;owandika erinnya ery&apos;akaboozi k&apos;oyagala ok
     <message>
         <location filename="../mainwindow.cpp" line="781"/>
         <source>This will hide the menu bar completely, use Ctrl+M to show it again.</source>
-        <translation type="unfinished"></translation>
+        <translation>Kino kijjakuviiramu obutabeera ne menyu, okugikomyawo nyiga amapeesa Ctrl+M.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="1228"/>
@@ -1812,18 +1812,19 @@ Awali &lt;LINNYA&gt; w&apos;owandika erinnya ery&apos;akaboozi k&apos;oyagala ok
     <message>
         <location filename="../mainwindow.cpp" line="2318"/>
         <source>Switch user command is not set.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ekiragiro ekikyusa mukozesa ssi kitegeke.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="2420"/>
         <source>Cleaning Folder Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Kuteggulula ntegeka ez&apos;oku materekero</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="2421"/>
         <source>Do you want to remove settings of nonexistent folders?
 They might be useful if those folders are created again.</source>
-        <translation type="unfinished"></translation>
+        <translation>Oyagala okuteggulula ebibadde ku materekero agatakyaliwo?
+Biyinza kuyamba ssinga amaterekero ago gaba gakomezedwawo.</translation>
     </message>
 </context>
 <context>
@@ -1841,7 +1842,7 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferencesdialog.cpp" line="208"/>
         <source>Thumbnail View</source>
-        <translation>Fayiro zirage n&apos;akalozako kazo</translation>
+        <translation>Fayiro zirage n&apos;akalozaako kazo</translation>
     </message>
     <message>
         <location filename="../preferencesdialog.cpp" line="209"/>
@@ -1970,12 +1971,12 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferences.ui" line="14"/>
         <source>Preferences</source>
-        <translation type="unfinished"></translation>
+        <translation>Enteekateeka</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="45"/>
         <source>User Interface</source>
-        <translation type="unfinished"></translation>
+        <translation>Ddirisa lya PCManFM-Qt</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="35"/>
@@ -1986,17 +1987,17 @@ They might be useful if those folders are created again.</source>
         <location filename="../preferences.ui" line="50"/>
         <location filename="../preferences.ui" line="642"/>
         <source>Thumbnail</source>
-        <translation>Eby&apos;obulozako bwa fayiro</translation>
+        <translation>Eby&apos;obulozaako bwa fayiro</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="55"/>
         <source>Volume</source>
-        <translation type="unfinished"></translation>
+        <translation>Ebikwata ku bitereka data</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="60"/>
         <source>Advanced</source>
-        <translation type="unfinished"></translation>
+        <translation>Ebyetaagisa bumanyirivu</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="222"/>
@@ -2006,22 +2007,22 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferences.ui" line="296"/>
         <source>Icons</source>
-        <translation type="unfinished"></translation>
+        <translation>Bufaananyi obuyunzi</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="328"/>
         <source>Size of big icons:</source>
-        <translation type="unfinished"></translation>
+        <translation>Bunene bw&apos;obufaananyi obunene:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="345"/>
         <source>Size of small icons:</source>
-        <translation type="unfinished"></translation>
+        <translation>Bunene bw&apos;obufaananyi obutono:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="362"/>
         <source>Size of thumbnails:</source>
-        <translation type="unfinished"></translation>
+        <translation>Bunene bw&apos;obulozaako bwa fayiro:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="376"/>
@@ -2031,17 +2032,17 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferences.ui" line="308"/>
         <source>Icon theme:</source>
-        <translation type="unfinished"></translation>
+        <translation>Lulyo lw&apos;obufaananyi:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="546"/>
         <source>Window</source>
-        <translation type="unfinished"></translation>
+        <translation>Enneyisa ye ddirisa</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="559"/>
         <source>Always show the tab bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Akatimbe ne bwe kaba kamu kokka kabeereko akapande k&apos;erinnya ly&apos;etterekero lye kalaga</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="566"/>
@@ -2051,17 +2052,17 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferences.ui" line="580"/>
         <source>Remember the size of the last closed window</source>
-        <translation>Jjukira bunene bw&apos;eddirisa erisembye okuggalibwa</translation>
+        <translation>Eddirisa eppya lijjenga nga lyenkana eryo mw&apos;osinzidde okuliggulirawo</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="587"/>
         <source>Default width of new windows:</source>
-        <translation type="unfinished"></translation>
+        <translation>Eddirisa ppya libeere n&apos;obugazi buno:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="601"/>
         <source>Default height of new windows:</source>
-        <translation type="unfinished"></translation>
+        <translation>Eddirisa ppya libeere n&apos;obugulumivu buno:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="81"/>
@@ -2101,28 +2102,30 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferences.ui" line="651"/>
         <source>Show thumbnails of files</source>
-        <translation type="unfinished"></translation>
+        <translation>Laganga obulozaako bwa fayiro</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="658"/>
         <source>Only show thumbnails for local files</source>
-        <translation type="unfinished"></translation>
+        <translation>Teraganga obulozaako bwa fayiro ezitali ddala ku kompyuta eno</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="40"/>
         <source>Display</source>
-        <translation type="unfinished"></translation>
+        <translation>Bigambo n&apos;obufaananyi obuyunzi</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="90"/>
         <source>If this is unchecked, the DE setting will be used.</source>
-        <translation>Bw&apos;obanga wano totonyezzawo, enkola eyategekdwa mu kiteekateeka awakolerwa y&apos;ejja okubeerawo.</translation>
+        <translation>Bw&apos;obanga wano totonyezzawo, enkola eyategekedwa
+mu kiteekateeka awakolerwa y&apos;ejja okubeerawo.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="103"/>
         <location filename="../preferences.ui" line="116"/>
         <source>Set to zero to disable auto-selection.</source>
-        <translation>Teekawo zero bw&apos;oba nga toyagala fayiro kwetangaazanga zokka.</translation>
+        <translation>Teekawo zero bw&apos;oba nga toyagala
+fayiro kwetangaazanga zokka.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="106"/>
@@ -2152,7 +2155,7 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferences.ui" line="202"/>
         <source>Confirm before moving files into &quot;trash can&quot;</source>
-        <translation>Sooka kukakasa nga fayiro zigenda okutwalibwa mu\&quot;bisuulidwa&quot;</translation>
+        <translation>Sooka kukakasa nga fayiro zigenda okutwalibwa mu &quot;bisuulidwa&quot;</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="209"/>
@@ -2174,7 +2177,7 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferences.ui" line="244"/>
         <source>Number of recent files:</source>
-        <translation>Obungi bwa fayiro ezaakabikkulibwa eziba zijjukirwa:</translation>
+        <translation>Obungi bwa fayiro ezaasemba okubikkulibwa eziba zijjukirwa:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="325"/>
@@ -2194,71 +2197,77 @@ mu tterekero bwe biba biragibwa mu bumpi oba mu bujjuvu</translation>
         <location filename="../preferences.ui" line="359"/>
         <location filename="../preferences.ui" line="369"/>
         <source>Used by Thumbnail View</source>
-        <translation>Kino kifuga obunene bw&apos;obulozako nga
-fayiro ziragibwa n&apos;obulozako bwa zo</translation>
+        <translation>Kino kifuga obunene bw&apos;obulozaako nga
+fayiro ziragibwa n&apos;obulozaako bwa zo</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="389"/>
         <source>User interface</source>
-        <translation type="unfinished"></translation>
+        <translation>Bigambo</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="402"/>
         <source>Treat backup files as hidden</source>
-        <translation type="unfinished"></translation>
+        <translation>Koppi ez&apos;okwerinda eza fayiro zikise</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="422"/>
         <source>Show icons of hidden files shadowed</source>
-        <translation type="unfinished"></translation>
+        <translation>Obufaananyi obwa fayiro nkise bubeere ng&apos;ebisiikirize</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="459"/>
         <source>Minimum item margins in icon view:</source>
-        <translation type="unfinished"></translation>
+        <translation>Obubanga obusembayo obutono
+obunaanyawalanga obufaananyi bwa fayiro:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="466"/>
         <source>3 px by default.</source>
-        <translation type="unfinished"></translation>
+        <translation>Bw&apos;otategeka kino zijjakuba px 3.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="469"/>
         <location filename="../preferences.ui" line="493"/>
         <source> px</source>
-        <translation type="unfinished"></translation>
+        <translation> px</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="482"/>
         <source>x</source>
-        <translation type="unfinished"></translation>
+        <translation>x</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="489"/>
         <source>3 px by default.
 A space is also reserved for 3 lines of text.</source>
-        <translation type="unfinished"></translation>
+        <translation>Bw&apos;otategeka kino zijjakuba px 3.
+Ku kabanga kano kwongerwako n&apos;ekifo
+ekijja mu ennyiriri 3 ez&apos;ebigambo.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="506"/>
         <source>Lock</source>
-        <translation type="unfinished"></translation>
+        <translation>Obubanga bwenkanankane</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="555"/>
         <source>When unchecked, the tab bar will be shown
 only if there are more than one tab.</source>
-        <translation type="unfinished"></translation>
+        <translation>Kano bw&apos;okaleka nga kereere, akatimbe bwe kabeera kamu kokka
+tekajjakubangako akapande akaliko erinnya ly&apos;etterekero eriragibwa.
+Obutimbe bwe busukka mu kamu, buli katimbe kajjanga kubeerako
+akapande akaliko erinnya ly&apos;etterekero lye kalaga.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="573"/>
         <source>Switch to newly opened tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Akatimbe akapya akaleetedwa ku kajjakulobebwanga</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="615"/>
         <source>Reopen last window tabs in a new window</source>
-        <translation type="unfinished"></translation>
+        <translation>Eddirisa eppya libeerengamu obutimbe bwe bumu n&apos;obuli mu lisangidwawo</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="665"/>
@@ -2266,18 +2275,26 @@ only if there are more than one tab.</source>
         <source>The built-in thumbnailer makes thumbnails of images that are supported by Qt.
 
 Usually, most image types are supported. The default size limit is 4 MiB.</source>
-        <translation type="unfinished"></translation>
+        <translation>Puloguramu eya mu PCManFM-Qt ekola
+obulozaako bwa fayiro esobola
+okweyambisa buli kika kya fayiro
+y&apos;ebifaananyi ekikolagana ne sisitemu eya Qt.
+Ekyo kizingiramu ebika by&apos;ebifaananyi
+ebisinga obungi. Puloguramu enkola
+ya yo eya bulijjo kwe kukolawo obufaananyi 
+butasukka obunene bwa MiB 4.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="670"/>
         <source>Image size limit for built-in thumbnailer:</source>
-        <translation type="unfinished"></translation>
+        <translation>Puloguramu ekola obulozaako bwa fayiro
+ereme okukola ebisinga obunene buno:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="682"/>
         <location filename="../preferences.ui" line="718"/>
         <source> MiB</source>
-        <translation type="unfinished"></translation>
+        <translation> MiB</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="698"/>
@@ -2285,42 +2302,51 @@ Usually, most image types are supported. The default size limit is 4 MiB.</sourc
         <source>If existing, external thumbnailers are used for videos, PDF documents, etc.
 
 A value of -1 means that there is no limit for the file size (the default).</source>
-        <translation type="unfinished"></translation>
+        <translation>Okufuna obulozaako obwa fayiro eza vidiyo,
+eza PDF, n&apos;ebika ebirala ebitalibimu,
+PCManFM-Qt ekozesa puloguramu endala
+z&apos;etaajja nazo.
+
+Wano bw&apos;osa wo -1 tewajjakubawo kkomo
+ku bunene bw&apos;ebintu puloguramu ezo
+bye zikolawo. Eno era y&apos;entegeka ebeerawo
+singa nga tokyusiza wo.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="703"/>
         <source>File size limit for external thumbnailers:</source>
-        <translation type="unfinished"></translation>
+        <translation>Puloguramu endala ezikola obulozaako bwa
+fayiro zireme okukola ebisinga obunene buno:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="715"/>
         <source>No limit</source>
-        <translation type="unfinished"></translation>
+        <translation>Tekuli kkomo</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="860"/>
         <source>Examples:&lt;br&gt;For terminal: &lt;i&gt;xterm -e %s&lt;/i&gt;&lt;br&gt;For switching user: &lt;i&gt;lxsudo %s&lt;/i&gt; or &lt;i&gt;lxsudo dbus-run-session -- %s&lt;/i&gt;&lt;br&gt;&lt;i&gt;%s&lt;/i&gt; is the command line you want to execute with terminal or su.&lt;br&gt; Important: Please use lxsudo, sudo alone will wreck permissions of the settings file.</source>
-        <translation type="unfinished"></translation>
+        <translation>Eby&apos;okulabirako:&lt;br&gt;Ekiwandikiro kisobola okuba: &lt;i&gt;xterm -e %s&lt;/i&gt;&lt;br&gt;Ekiragiro ekikyusa mukozesa kisobola okuba:&lt;br&gt;&lt;i&gt;lxsudo %s&lt;/i&gt; oba &lt;i&gt;lxsudo dbus-run-session -- %s&lt;/i&gt;&lt;br&gt;&lt;i&gt;%s&lt;/i&gt; kye kiragiro ky&apos;oyagala okuyisiza mu kiwandikiro oba&lt;br&gt;mu kaboozi akakozesa buyinza bwa muteesiteesi.&lt;br&gt; Genderera:&lt;br&gt;Bw&apos;obanga oyagala okukozesa obuyinza bwa muteesiteesi&lt;br&gt;weyambisenga kaboozi ka &apos;lxsudo&apos;.&lt;br&gt;Bw&apos;okozesa &apos;sudo&apos; ejjakutabulatabula endukusa ez&apos;oku &lt;br&gt;fayiro efuga enkola ya PCManFM-Qt.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="919"/>
         <source>Search</source>
-        <translation type="unfinished"></translation>
+        <translation>Ebifuga okunoonya</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="934"/>
         <source>Maximum search history:</source>
-        <translation type="unfinished"></translation>
+        <translation>Obungi bw&apos;ebinoonyezedwa sisitemu bw&apos;eba ejjukiranga:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="948"/>
         <source>Clear search history</source>
-        <translation type="unfinished"></translation>
+        <translation>Siimulawo ebiri ku lukalala olw&apos;ebinooyezedwa</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="983"/>
         <source>Application restart is needed for changes to take effect.</source>
-        <translation type="unfinished"></translation>
+        <translation>Kino okukakata kyetaagisa kuddamu okutandika PCManFM-Qt.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="136"/>
@@ -2335,7 +2361,9 @@ A value of -1 means that there is no limit for the file size (the default).</sou
     <message>
         <location filename="../preferences.ui" line="229"/>
         <source>Open folders in new tabs as far as possible</source>
-        <translation>Buli lwe kisoboka, PCManF-Qt bw&apos;eragirwa puloguramu endala okubikkula tterekero, ejjakuleetawo akatimbe akapya mw&apos;eba elibikkulira mu kifo eky&apos;okuleetawo ddirisa ppya</translation>
+        <translation>Buli lwe kisoboka, PCManF-Qt bw&apos;eragirwa puloguramu endala
+okubikkula tterekero, ejjakuleetawo akatimbe akapya mw&apos;eba
+elibikkulira mu kifo eky&apos;okuleetawo ddirisa ppya</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="232"/>
@@ -2345,47 +2373,50 @@ A value of -1 means that there is no limit for the file size (the default).</sou
     <message>
         <location filename="../preferences.ui" line="412"/>
         <source>Always show real file names</source>
-        <translation type="unfinished"></translation>
+        <translation>Laganga amannya aga fayiro mu bujjuvu</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="429"/>
         <source>Do not show file tooltips</source>
-        <translation type="unfinished"></translation>
+        <translation>Tompanga magezi ku bya fayiro</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="436"/>
         <source>Disable smooth scrolling</source>
-        <translation type="unfinished"></translation>
+        <translation>Ebiseesebwa ku lutimbe bitambulenga nga bwe biraba</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="648"/>
         <source>Needs ffmpegthumbnailer</source>
-        <translation type="unfinished"></translation>
+        <translation>Kino okusoboka kyetaagisa sisitemu
+ebeerako ne ffmpegthumbnailer</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="754"/>
         <source>Auto Mount</source>
-        <translation type="unfinished"></translation>
+        <translation>Sisitemu bye yewangira</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="760"/>
         <source>Mount mountable volumes automatically on program startup</source>
-        <translation type="unfinished"></translation>
+        <translation>PCManFM-Qt olutandika bwe wabawo ebitereka data
+ebitannawangibwa ku sisitem biwangibwenga</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="767"/>
         <source>Mount removable media automatically when they are inserted</source>
-        <translation type="unfinished"></translation>
+        <translation>Oluyunga ekitereka data ekyetongovu ku kompyuta kiwangibwenga</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="774"/>
         <source>Show available options for removable media when they are inserted</source>
-        <translation type="unfinished"></translation>
+        <translation>Oluyunga ekitereka data ekyetongovu ku kompyuta wajjengawo
+akaboozi akakulaga by&apos;oyinza okulondako okukola</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="784"/>
         <source>When removable medium unmounted:</source>
-        <translation type="unfinished"></translation>
+        <translation>Ekitereka data ekyetongovu bwe kiwangulwa ku sisitemu:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="790"/>
@@ -2400,47 +2431,48 @@ A value of -1 means that there is no limit for the file size (the default).</sou
     <message>
         <location filename="../preferences.ui" line="824"/>
         <source>Programs</source>
-        <translation type="unfinished"></translation>
+        <translation>Puloguramu</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="833"/>
         <source>Terminal emulator:</source>
-        <translation type="unfinished"></translation>
+        <translation>Kiwandikiro:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="847"/>
         <source>Switch &amp;user command:</source>
-        <translation type="unfinished"></translation>
+        <translation>Ekiragiro ekikyusa mukozesa:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="873"/>
         <source>Archiver in&amp;tegration:</source>
-        <translation type="unfinished"></translation>
+        <translation>Puloguramu ekola ku kupakira fayiro:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="889"/>
         <source>Templates</source>
-        <translation type="unfinished"></translation>
+        <translation>Ntiba</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="895"/>
         <source>Show only user defined templates in menu</source>
-        <translation type="unfinished"></translation>
+        <translation>Menyu erage entiba ze wekolera zokka</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="902"/>
         <source>Show only one template for each MIME type</source>
-        <translation type="unfinished"></translation>
+        <translation>Menyu buli kika kya MIME ekiragire olutiba lumu lwokka</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="909"/>
         <source>Run default application after creation from template</source>
-        <translation type="unfinished"></translation>
+        <translation>Olukolawo fayiro okuva mu lutiba, gibikkulire mu puloguramu
+eyategekebwa okubikkula ez&apos;ekika kya yo</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="395"/>
         <source>Use SI decimal prefixes instead of IEC binary prefixes</source>
-        <translation type="unfinished"></translation>
+        <translation>Kozesa obutandikwa obwa SI ennengakkumi mu kifo ky&apos;obwa IEC ennengabbiri</translation>
     </message>
 </context>
 <context>
@@ -2448,44 +2480,44 @@ A value of -1 means that there is no limit for the file size (the default).</sou
     <message>
         <location filename="../bulkrename.cpp" line="86"/>
         <source>Renaming files...</source>
-        <translation type="unfinished"></translation>
+        <translation>Nkyusa mannya ga fayiro...</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="86"/>
         <source>Abort</source>
-        <translation type="unfinished"></translation>
+        <translation>Biveeko</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="95"/>
         <source>Warning</source>
-        <translation type="unfinished"></translation>
+        <translation>Kulabula</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="95"/>
         <source>Renaming is aborted.</source>
-        <translation type="unfinished"></translation>
+        <translation>Okyusa mannya kusazidwamu.</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="121"/>
         <location filename="../bulkrename.cpp" line="124"/>
         <location filename="../tabpage.cpp" line="1142"/>
         <source>Error</source>
-        <translation type="unfinished"></translation>
+        <translation>Kiremya</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="121"/>
         <source>No file could be renamed.</source>
-        <translation type="unfinished"></translation>
+        <translation>Tekisobose kukyusa linnya lya fayiro n&apos;emu.</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="124"/>
         <source>Some files could not be renamed.</source>
-        <translation type="unfinished"></translation>
+        <translation>Fayiro ezimu tekisobose okuzikyusa mannya.</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="1142"/>
         <source>Cannot open as Admin.</source>
-        <translation type="unfinished"></translation>
+        <translation>Tekisobose okubikkuza buyinza bwa muteesiteesi.</translation>
     </message>
 </context>
 </TS>
