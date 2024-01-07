@@ -211,7 +211,7 @@ Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  021
     <message>
         <location filename="../desktopentrydialog.ui" line="58"/>
         <source>Description:</source>
-        <translation>Okunnyunyola:</translation>
+        <translation>Kunnyunyola:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="65"/>
@@ -225,7 +225,7 @@ Osobola ate okulekawo nga wereere.</translation>
     <message>
         <location filename="../desktopentrydialog.ui" line="77"/>
         <source>Comment:</source>
-        <translation>Okunnyonyola:</translation>
+        <translation>Okutangaaza:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="84"/>
@@ -845,7 +845,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="353"/>
         <source>&amp;New Window</source>
-        <translation>Ddirisa &amp;ppya</translation>
+        <translation>&amp;Leeta ddirisa ppya</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="356"/>
@@ -1600,7 +1600,7 @@ Awali &lt;LINNYA&gt; w&apos;owandika erinnya ery&apos;akaboozi k&apos;oyagala ok
     <message>
         <location filename="../desktopentrydialog.cpp" line="35"/>
         <source>Command:</source>
-        <translation type="unfinished"></translation>
+        <translation>Kiragiro:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="36"/>
