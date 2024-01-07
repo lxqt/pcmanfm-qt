@@ -800,7 +800,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="293"/>
         <source>Alt+Up</source>
-        <translation>Alt+上</translation>
+        <translation>Alt+Up</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="302"/>
@@ -1287,7 +1287,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="628"/>
         <source>Alt+Left</source>
-        <translation>Alt+左</translation>
+        <translation>Alt+Left</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="637"/>
