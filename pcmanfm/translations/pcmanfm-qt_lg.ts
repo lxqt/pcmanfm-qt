@@ -613,7 +613,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../shortcuts.ui" line="26"/>
         <source>Action</source>
-        <translation>Kyegakola</translation>
+        <translation>Kikolwa</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="31"/>
@@ -830,7 +830,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="326"/>
         <source>Go</source>
-        <translation>Kola</translation>
+        <translation>Genda ku</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="335"/>
@@ -840,12 +840,12 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="344"/>
         <source>&amp;About</source>
-        <translation>Ebi&amp;fa ku puloguramu</translation>
+        <translation>&amp;Ebifa ku LXimage-qt</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="353"/>
         <source>&amp;New Window</source>
-        <translation>&amp;Leeta ddirisa ppya</translation>
+        <translation>&amp;Leeta ddirisa Ppya</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="356"/>
@@ -1070,7 +1070,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="708"/>
         <source>By File &amp;Size</source>
-        <translation>Sengekera ku bu&amp;nene</translation>
+        <translation>Sengekera ku bu&amp;nene bwa fayiro</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="713"/>
@@ -1150,7 +1150,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="926"/>
         <source>Show Thumbnails</source>
-        <translation>Laga obulozaako bwa fayiro</translation>
+        <translation>Laga obulozaako</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="934"/>
@@ -1165,7 +1165,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="942"/>
         <source>Hidden &amp;Shortcuts</source>
-        <translation>Amapeesa a&amp;gagonza emirimu</translation>
+        <translation>&amp;Mapeesa agagonza emirimu</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="947"/>
@@ -1418,7 +1418,7 @@ are left clicked, even when it is not the default file manager.</source>
         <location filename="../main-win.ui" line="105"/>
         <location filename="../main-win.ui" line="129"/>
         <source>&amp;View</source>
-        <translation>End&amp;abika</translation>
+        <translation>&amp;Endabika</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="109"/>
@@ -1443,7 +1443,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="253"/>
         <source>Main Toolbar</source>
-        <translation>Olubaawo olw&apos;enkalakkalira</translation>
+        <translation>Ebiyamba ebya bulijjo</translation>
     </message>
 </context>
 <context>
@@ -2037,7 +2037,7 @@ Biyinza kuyamba ssinga amaterekero ago gaba gakomezedwawo.</translation>
     <message>
         <location filename="../preferences.ui" line="546"/>
         <source>Window</source>
-        <translation>Enneyisa ye ddirisa</translation>
+        <translation>Ddirisa</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="559"/>
