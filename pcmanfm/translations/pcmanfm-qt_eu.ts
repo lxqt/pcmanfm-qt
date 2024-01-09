@@ -122,12 +122,12 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../bulk-rename.ui" line="27"/>
         <source>Rename selected files to:</source>
-        <translation type="unfinished"></translation>
+        <translation>Aldatu izena hautatutako fitxategiak honela:</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="40"/>
         <source>Name#</source>
-        <translation type="unfinished"></translation>
+        <translation>Izena#</translation>
     </message>
 </context>
 <context>
@@ -135,7 +135,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../connect.ui" line="14"/>
         <source>Connect to remote server</source>
-        <translation type="unfinished"></translation>
+        <translation>Konektatu urruneko zerbitzariarekin</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="80"/>
@@ -150,27 +150,27 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../connect.ui" line="29"/>
         <source>Specify remote folder to connect</source>
-        <translation type="unfinished"></translation>
+        <translation>Zehaztu urruneko karpeta konektatzeko</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="36"/>
         <source>Type:</source>
-        <translation type="unfinished"></translation>
+        <translation>Mota:</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="56"/>
         <source>Port:</source>
-        <translation type="unfinished"></translation>
+        <translation>Portua:</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="70"/>
         <source>Path:</source>
-        <translation type="unfinished"></translation>
+        <translation>Bidea:</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="46"/>
         <source>Host:</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Ostalaria:</translation>
     </message>
 </context>
 <context>
@@ -178,22 +178,22 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../desktopentrydialog.ui" line="14"/>
         <source>Create Launcher</source>
-        <translation type="unfinished"></translation>
+        <translation>Sortu abiarazlea</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="38"/>
         <source>Name:</source>
-        <translation type="unfinished"></translation>
+        <translation>Izena:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="45"/>
         <source>Specific name of this launcher.</source>
-        <translation type="unfinished"></translation>
+        <translation>Abiarazle honen izen zehaztu.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="58"/>
         <source>Description:</source>
-        <translation type="unfinished"></translation>
+        <translation>Deskribapena:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="65"/>
@@ -217,34 +217,34 @@ It can be left empty.</source>
     <message>
         <location filename="../desktopentrydialog.ui" line="117"/>
         <source>Command:</source>
-        <translation type="unfinished"></translation>
+        <translation>Agindua:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="133"/>
         <location filename="../desktopentrydialog.ui" line="164"/>
         <source>...</source>
-        <translation type="unfinished"></translation>
+        <translation>...</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="142"/>
         <source>Icon:</source>
-        <translation type="unfinished"></translation>
+        <translation>Ikonoa:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="151"/>
         <source>Icon to display in file manager, menus, etc.</source>
-        <translation type="unfinished"></translation>
+        <translation>Fitxategi-kudeatzailean, menuetan, etab. bistaratzeko ikonoa.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="173"/>
         <location filename="../desktopentrydialog.ui" line="183"/>
         <source>Run in terminal?</source>
-        <translation type="unfinished"></translation>
+        <translation>Terminalean exekutatu?</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="176"/>
         <source>Terminal:</source>
-        <translation type="unfinished"></translation>
+        <translation>Terminala:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="186"/>
@@ -254,17 +254,17 @@ It can be left empty.</source>
     <message>
         <location filename="../desktopentrydialog.ui" line="190"/>
         <source>No</source>
-        <translation type="unfinished"></translation>
+        <translation>Ez</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="195"/>
         <source>Yes</source>
-        <translation type="unfinished"></translation>
+        <translation>Bai</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="203"/>
         <source>Type:</source>
-        <translation type="unfinished"></translation>
+        <translation>Mota:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="210"/>
@@ -274,7 +274,7 @@ It can be left empty.</source>
     <message>
         <location filename="../desktopentrydialog.ui" line="214"/>
         <source>Application</source>
-        <translation type="unfinished"></translation>
+        <translation>Aplikazioa</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="219"/>
@@ -284,7 +284,7 @@ It can be left empty.</source>
     <message>
         <location filename="../desktopentrydialog.ui" line="96"/>
         <source>Categories:</source>
-        <translation type="unfinished"></translation>
+        <translation>Kategoriak:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="103"/>
@@ -306,22 +306,22 @@ Examples: AudioVideo, Audio, Video, Development, Education, Game, Graphics, Netw
     <message>
         <location filename="../desktop-folder.ui" line="23"/>
         <source>Desktop</source>
-        <translation type="unfinished"></translation>
+        <translation>Mahaigaina</translation>
     </message>
     <message>
         <location filename="../desktop-folder.ui" line="29"/>
         <source>Desktop folder:</source>
-        <translation type="unfinished"></translation>
+        <translation>Mahaigaineko karpeta:</translation>
     </message>
     <message>
         <location filename="../desktop-folder.ui" line="36"/>
         <source>Image file</source>
-        <translation type="unfinished"></translation>
+        <translation>Irudi fitxategia</translation>
     </message>
     <message>
         <location filename="../desktop-folder.ui" line="42"/>
         <source>Folder path</source>
-        <translation type="unfinished"></translation>
+        <translation>Karpeta-bidea</translation>
     </message>
     <message>
         <location filename="../desktop-folder.ui" line="49"/>
@@ -334,38 +334,38 @@ Examples: AudioVideo, Audio, Video, Development, Education, Game, Graphics, Netw
     <message>
         <location filename="../desktop-preferences.ui" line="14"/>
         <source>Desktop Preferences</source>
-        <translation type="unfinished"></translation>
+        <translation>Mahaigaineko Hobespenak</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="338"/>
         <location filename="../desktop-preferences.ui" line="344"/>
         <source>Background</source>
-        <translation type="unfinished"></translation>
+        <translation>Aurrekariak</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="385"/>
         <source>Wallpaper mode:</source>
-        <translation type="unfinished"></translation>
+        <translation>Horma-paper modua:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="408"/>
         <source>Wallpaper image file:</source>
-        <translation type="unfinished"></translation>
+        <translation>Horma-irudiaren fitxategia:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="350"/>
         <source>Select background color:</source>
-        <translation type="unfinished"></translation>
+        <translation>Hautatu atzeko planoko kolorea:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="417"/>
         <source>Image file</source>
-        <translation type="unfinished"></translation>
+        <translation>Irudi fitxategia</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="423"/>
         <source>Image file path</source>
-        <translation type="unfinished"></translation>
+        <translation>Irudi fitxategiaren bidea</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="430"/>
@@ -375,52 +375,52 @@ Examples: AudioVideo, Audio, Video, Development, Education, Game, Graphics, Netw
     <message>
         <location filename="../desktop-preferences.ui" line="30"/>
         <source>Icons</source>
-        <translation type="unfinished"></translation>
+        <translation>Ikonoak</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="36"/>
         <source>Icon size:</source>
-        <translation type="unfinished"></translation>
+        <translation>Ikonoaren tamaina:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="49"/>
         <source>Label Text</source>
-        <translation type="unfinished"></translation>
+        <translation>Etiketa testua</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="113"/>
         <source>Select shadow color:</source>
-        <translation type="unfinished"></translation>
+        <translation>Hautatu itzal-kolorea:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="61"/>
         <source>Select font:</source>
-        <translation type="unfinished"></translation>
+        <translation>Hautatu letra-tipoa:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="24"/>
         <source>General</source>
-        <translation type="unfinished"></translation>
+        <translation>Orokorra</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="87"/>
         <source>Select text color:</source>
-        <translation type="unfinished"></translation>
+        <translation>Hautatu testuaren kolorea:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="136"/>
         <source>Spacing</source>
-        <translation type="unfinished"></translation>
+        <translation>Tartea</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="145"/>
         <source>Minimum item margins:</source>
-        <translation type="unfinished"></translation>
+        <translation>Elementuaren gutxieneko marjinak:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="152"/>
         <source>3 px by default.</source>
-        <translation type="unfinished"></translation>
+        <translation>3 px lehenespenez.</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="155"/>
@@ -430,12 +430,12 @@ Examples: AudioVideo, Audio, Video, Development, Education, Game, Graphics, Netw
         <location filename="../desktop-preferences.ui" line="275"/>
         <location filename="../desktop-preferences.ui" line="287"/>
         <source> px</source>
-        <translation type="unfinished"></translation>
+        <translation> px</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="168"/>
         <source>x</source>
-        <translation type="unfinished"></translation>
+        <translation>x</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="175"/>
@@ -446,12 +446,12 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../desktop-preferences.ui" line="192"/>
         <source>Lock</source>
-        <translation type="unfinished"></translation>
+        <translation>Blokeatu</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="230"/>
         <source>Margins of work area:</source>
-        <translation type="unfinished"></translation>
+        <translation>Lan-eremuaren marjinak:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="303"/>
@@ -2431,22 +2431,22 @@ A value of -1 means that there is no limit for the file size (the default).</sou
         <location filename="../bulkrename.cpp" line="124"/>
         <location filename="../tabpage.cpp" line="1142"/>
         <source>Error</source>
-        <translation type="unfinished"></translation>
+        <translation>Errorea</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="121"/>
         <source>No file could be renamed.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ezin izan da fitxategirik aldatu.</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="124"/>
         <source>Some files could not be renamed.</source>
-        <translation type="unfinished"></translation>
+        <translation>Fitxategi batzuei ezin izan zaie izena aldatu.</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="1142"/>
         <source>Cannot open as Admin.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ezin da ireki administratzaile gisa.</translation>
     </message>
 </context>
 </TS>
