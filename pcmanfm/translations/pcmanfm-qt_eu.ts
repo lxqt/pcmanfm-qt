@@ -170,7 +170,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../connect.ui" line="46"/>
         <source>Host:</source>
-        <translation type="unfinished">Ostalaria:</translation>
+        <translation>Ostalaria:</translation>
     </message>
 </context>
 <context>
@@ -205,14 +205,16 @@ It can be left empty.</source>
     <message>
         <location filename="../desktopentrydialog.ui" line="77"/>
         <source>Comment:</source>
-        <translation type="unfinished"></translation>
+        <translation>Iruzkina:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="84"/>
         <source>A short comment.
 
 It can be left empty.</source>
-        <translation type="unfinished"></translation>
+        <translation>Iruzkin labur bat.
+
+Hutsik utz daiteke.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="117"/>
@@ -441,7 +443,8 @@ Examples: AudioVideo, Audio, Video, Development, Education, Game, Graphics, Netw
         <location filename="../desktop-preferences.ui" line="175"/>
         <source>1 px by default.
 A space is also reserved for 3 lines of text.</source>
-        <translation type="unfinished"></translation>
+        <translation>1 px lehenespenez.
+3 testu-lerroetarako tarte bat ere gordetzen da.</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="192"/>
@@ -457,82 +460,83 @@ A space is also reserved for 3 lines of text.</source>
         <location filename="../desktop-preferences.ui" line="303"/>
         <source>By default, desktop folders will be opened in PCManFM-Qt if they
 are left clicked, even when it is not the default file manager.</source>
-        <translation type="unfinished"></translation>
+        <translation>Lehenespenez, mahaigaineko karpetak PCManFM-Qt-en irekiko dira baldin badira
+ezkerreko klik egiten dira, fitxategi-kudeatzaile lehenetsia ez denean ere.</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="307"/>
         <source>Open desktop folders in default file manager by left clicking</source>
-        <translation type="unfinished"></translation>
+        <translation>Ireki mahaigaineko karpetak fitxategi-kudeatzaile lehenetsian ezkerreko klik eginez</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="314"/>
         <source>Make all items stick to their positions</source>
-        <translation type="unfinished"></translation>
+        <translation>Egin elementu guztiak beren posizioetara itsatsi</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="373"/>
         <source>Wallpaper</source>
-        <translation type="unfinished"></translation>
+        <translation>Horma-papera</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="439"/>
         <source>Transform image based on EXIF data</source>
-        <translation type="unfinished"></translation>
+        <translation>Eraldatu irudia EXIF datuetan oinarrituta</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="446"/>
         <source>Individual wallpaper for each monitor</source>
-        <translation type="unfinished"></translation>
+        <translation>Banakako horma-papera monitore bakoitzarentzat</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="473"/>
         <source>Slide Show</source>
-        <translation type="unfinished"></translation>
+        <translation>Diapositiba aurkezpena</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="479"/>
         <source>Enable Slide Show</source>
-        <translation type="unfinished"></translation>
+        <translation>Gaitu diapositiba aurkezpena</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="491"/>
         <source>Wallpaper image folder:</source>
-        <translation type="unfinished"></translation>
+        <translation>Horma-irudien karpeta:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="505"/>
         <source>Browse</source>
-        <translation type="unfinished"></translation>
+        <translation>Arakatu</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="512"/>
         <source> hour(s)</source>
-        <translation type="unfinished"></translation>
+        <translation> ordua(k)</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="522"/>
         <source>and</source>
-        <translation type="unfinished"></translation>
+        <translation>eta</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="535"/>
         <source>Intervals less than 5min will be ignored</source>
-        <translation type="unfinished"></translation>
+        <translation>5min baino gutxiagoko tarteak ez dira aintzat hartuko</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="538"/>
         <source>Interval:</source>
-        <translation type="unfinished"></translation>
+        <translation>Tartea:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="545"/>
         <source> minute(s)</source>
-        <translation type="unfinished"></translation>
+        <translation> minutu(ak)</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="498"/>
         <source>Wallpaper folder</source>
-        <translation type="unfinished"></translation>
+        <translation>Horma-paperaren karpeta</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="587"/>
@@ -552,22 +556,22 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktop-preferences.ui" line="637"/>
         <source>Trash</source>
-        <translation type="unfinished"></translation>
+        <translation>Zaborrontzia</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="648"/>
         <source>Computer</source>
-        <translation type="unfinished"></translation>
+        <translation>Ordenagailua</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="659"/>
         <source>Network</source>
-        <translation type="unfinished"></translation>
+        <translation>Sarea</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="614"/>
         <source>Advanced</source>
-        <translation type="unfinished"></translation>
+        <translation>Aurreratua</translation>
     </message>
 </context>
 <context>
@@ -580,17 +584,17 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../shortcuts.ui" line="21"/>
         <source>Shortcut</source>
-        <translation type="unfinished"></translation>
+        <translation>Lasterbidea</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="26"/>
         <source>Action</source>
-        <translation type="unfinished"></translation>
+        <translation>Ekintza</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="31"/>
         <source>Esc</source>
-        <translation type="unfinished"></translation>
+        <translation>Esc</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="34"/>
@@ -600,7 +604,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../shortcuts.ui" line="39"/>
         <source>Ctrl+Esc</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Esc</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="42"/>
@@ -610,7 +614,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../shortcuts.ui" line="47"/>
         <source>Ctrl+L</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+L</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="50"/>
@@ -621,29 +625,29 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../shortcuts.ui" line="55"/>
         <source>Alt+D</source>
-        <translation type="unfinished"></translation>
+        <translation>Alt+D</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="63"/>
         <source>Ctrl+Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Tab</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="66"/>
         <location filename="../shortcuts.ui" line="82"/>
         <source>Next tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Hurrengo fitxa</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="71"/>
         <source>Ctrl+Shift+Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+Tab</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="74"/>
         <location filename="../shortcuts.ui" line="90"/>
         <source>Previous tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Aurreko fitxa</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="79"/>
@@ -658,18 +662,18 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../shortcuts.ui" line="95"/>
         <source>Ctrl+Number</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Zenbakia</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="98"/>
         <location filename="../shortcuts.ui" line="106"/>
         <source>Jump to tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Joan fitxara</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="103"/>
         <source>Alt+Number</source>
-        <translation type="unfinished"></translation>
+        <translation>Alt+Zenbakia</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="111"/>
