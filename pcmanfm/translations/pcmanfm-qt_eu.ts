@@ -107,7 +107,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../bulk-rename.ui" line="47"/>
         <source># will be replaced by numbers starting with:</source>
-        <translation type="unfinished"></translation>
+        <translation># honekin hasten diren zenbakiekin ordezkatuko da:</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="80"/>
@@ -2180,23 +2180,23 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferences.ui" line="459"/>
         <source>Minimum item margins in icon view:</source>
-        <translation type="unfinished"></translation>
+        <translation>Elementuaren gutxieneko marjinak ikonoen ikuspegian:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="466"/>
         <source>3 px by default.</source>
-        <translation type="unfinished"></translation>
+        <translation>3 px lehenespenez.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="469"/>
         <location filename="../preferences.ui" line="493"/>
         <source> px</source>
-        <translation type="unfinished"></translation>
+        <translation> px</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="482"/>
         <source>x</source>
-        <translation type="unfinished"></translation>
+        <translation>x</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="489"/>
@@ -2213,17 +2213,18 @@ A space is also reserved for 3 lines of text.</source>
         <location filename="../preferences.ui" line="555"/>
         <source>When unchecked, the tab bar will be shown
 only if there are more than one tab.</source>
-        <translation type="unfinished"></translation>
+        <translation>Hautatu gabe dagoenean, fitxa-barra erakutsiko da
+fitxa bat baino gehiago badaude soilik.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="573"/>
         <source>Switch to newly opened tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Aldatu ireki berri den fitxara</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="615"/>
         <source>Reopen last window tabs in a new window</source>
-        <translation type="unfinished"></translation>
+        <translation>Ireki berriro leihoko azken fitxak leiho berri batean</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="665"/>
@@ -2242,7 +2243,7 @@ Usually, most image types are supported. The default size limit is 4 MiB.</sourc
         <location filename="../preferences.ui" line="682"/>
         <location filename="../preferences.ui" line="718"/>
         <source> MiB</source>
-        <translation type="unfinished"></translation>
+        <translation> MiB</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="698"/>
@@ -2260,7 +2261,7 @@ A value of -1 means that there is no limit for the file size (the default).</sou
     <message>
         <location filename="../preferences.ui" line="715"/>
         <source>No limit</source>
-        <translation type="unfinished"></translation>
+        <translation>Mugarik ez</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="860"/>
@@ -2270,52 +2271,52 @@ A value of -1 means that there is no limit for the file size (the default).</sou
     <message>
         <location filename="../preferences.ui" line="919"/>
         <source>Search</source>
-        <translation type="unfinished"></translation>
+        <translation>Bilatu</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="934"/>
         <source>Maximum search history:</source>
-        <translation type="unfinished"></translation>
+        <translation>Gehienezko bilaketa-historia:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="948"/>
         <source>Clear search history</source>
-        <translation type="unfinished"></translation>
+        <translation>Garbitu bilaketa-historia</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="983"/>
         <source>Application restart is needed for changes to take effect.</source>
-        <translation type="unfinished"></translation>
+        <translation>Aplikazioa berrabiarazi behar da aldaketak eragina izan dezan.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="136"/>
         <source>Bookmarks menu:</source>
-        <translation type="unfinished"></translation>
+        <translation>Laster-marken menua:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="129"/>
         <source>Show folder context menu with Ctrl + right click</source>
-        <translation type="unfinished"></translation>
+        <translation>Erakutsi karpetaren testuinguru-menua Ctrl + eskuineko botoiarekin</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="229"/>
         <source>Open folders in new tabs as far as possible</source>
-        <translation type="unfinished"></translation>
+        <translation>Ireki karpetak fitxa berrietan ahal den neurrian</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="232"/>
         <source>Single window mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Leiho bakarreko modua</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="412"/>
         <source>Always show real file names</source>
-        <translation type="unfinished"></translation>
+        <translation>Erakutsi beti benetako fitxategi-izenak</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="429"/>
         <source>Do not show file tooltips</source>
-        <translation type="unfinished"></translation>
+        <translation>Ez erakutsi fitxategien argibideak</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="436"/>
@@ -2330,7 +2331,7 @@ A value of -1 means that there is no limit for the file size (the default).</sou
     <message>
         <location filename="../preferences.ui" line="754"/>
         <source>Auto Mount</source>
-        <translation type="unfinished"></translation>
+        <translation>Auto Muntaia</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="760"/>
@@ -2365,12 +2366,12 @@ A value of -1 means that there is no limit for the file size (the default).</sou
     <message>
         <location filename="../preferences.ui" line="824"/>
         <source>Programs</source>
-        <translation type="unfinished"></translation>
+        <translation>Programak</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="833"/>
         <source>Terminal emulator:</source>
-        <translation type="unfinished"></translation>
+        <translation>Terminal emuladorea:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="847"/>
@@ -2385,22 +2386,22 @@ A value of -1 means that there is no limit for the file size (the default).</sou
     <message>
         <location filename="../preferences.ui" line="889"/>
         <source>Templates</source>
-        <translation type="unfinished"></translation>
+        <translation>Txantiloiak</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="895"/>
         <source>Show only user defined templates in menu</source>
-        <translation type="unfinished"></translation>
+        <translation>Erakutsi erabiltzaileak definitutako txantiloiak soilik menuan</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="902"/>
         <source>Show only one template for each MIME type</source>
-        <translation type="unfinished"></translation>
+        <translation>Erakutsi txantiloi bakarra MIME mota bakoitzeko</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="909"/>
         <source>Run default application after creation from template</source>
-        <translation type="unfinished"></translation>
+        <translation>Exekutatu aplikazio lehenetsia txantiloitik sortu ondoren</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="395"/>
@@ -2413,7 +2414,7 @@ A value of -1 means that there is no limit for the file size (the default).</sou
     <message>
         <location filename="../bulkrename.cpp" line="86"/>
         <source>Renaming files...</source>
-        <translation type="unfinished"></translation>
+        <translation>Fitxategien izena aldatzen...</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="86"/>
@@ -2423,12 +2424,12 @@ A value of -1 means that there is no limit for the file size (the default).</sou
     <message>
         <location filename="../bulkrename.cpp" line="95"/>
         <source>Warning</source>
-        <translation type="unfinished"></translation>
+        <translation>Abisua</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="95"/>
         <source>Renaming is aborted.</source>
-        <translation type="unfinished"></translation>
+        <translation>Izena aldatzea bertan behera utzi da.</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="121"/>
