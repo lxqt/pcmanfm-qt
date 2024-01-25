@@ -2137,12 +2137,12 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferences.ui" line="219"/>
         <source>Renamed files will also be selected</source>
-        <translation type="unfinished"></translation>
+        <translation>Izena aldatutako fitxategiak ere hautatuko dira</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="244"/>
         <source>Number of recent files:</source>
-        <translation type="unfinished"></translation>
+        <translation>Azken fitxategi kopurua:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="325"/>
@@ -2154,7 +2154,7 @@ They might be useful if those folders are created again.</source>
         <location filename="../preferences.ui" line="342"/>
         <location filename="../preferences.ui" line="352"/>
         <source>Used by Compact View and Detailed List View</source>
-        <translation type="unfinished"></translation>
+        <translation>Ikuspegi trinkoa eta zerrenda ikuspegi xehatua erabiltzen da</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="359"/>
@@ -2165,17 +2165,17 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferences.ui" line="389"/>
         <source>User interface</source>
-        <translation type="unfinished"></translation>
+        <translation>Erabiltzaile interfazea</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="402"/>
         <source>Treat backup files as hidden</source>
-        <translation type="unfinished"></translation>
+        <translation>Segurtasun-kopiaren artxiboak ezkutu gisa tratatzea</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="422"/>
         <source>Show icons of hidden files shadowed</source>
-        <translation type="unfinished"></translation>
+        <translation>Erakutsi ezkutuko fitxategien ikonoak itzalpean</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="459"/>
@@ -2202,12 +2202,13 @@ They might be useful if those folders are created again.</source>
         <location filename="../preferences.ui" line="489"/>
         <source>3 px by default.
 A space is also reserved for 3 lines of text.</source>
-        <translation type="unfinished"></translation>
+        <translation>3 px lehenespenez.
+3 testu-lerroetarako tarte bat ere gordetzen da.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="506"/>
         <source>Lock</source>
-        <translation type="unfinished"></translation>
+        <translation>Blokeatu</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="555"/>
@@ -2256,7 +2257,7 @@ A value of -1 means that there is no limit for the file size (the default).</sou
     <message>
         <location filename="../preferences.ui" line="703"/>
         <source>File size limit for external thumbnailers:</source>
-        <translation type="unfinished"></translation>
+        <translation>Fitxategien tamainaren muga kanpoko koadro txikietarako:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="715"/>

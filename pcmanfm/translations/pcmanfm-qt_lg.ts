@@ -6,7 +6,7 @@
     <message>
         <location filename="../about.ui" line="14"/>
         <source>About</source>
-        <translation>Ebifa ku ScreenGrab</translation>
+        <translation>Kwanjula</translation>
     </message>
     <message>
         <location filename="../about.ui" line="25"/>
@@ -84,7 +84,7 @@ Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  021
     <message>
         <location filename="../about.ui" line="135"/>
         <source>License</source>
-        <translation>Layisinsi</translation>
+        <translation>Layisensi</translation>
     </message>
 </context>
 <context>
@@ -820,7 +820,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="314"/>
         <source>&amp;Reload</source>
-        <translation>&amp;Ddamu okubikkula tterekero</translation>
+        <translation>&amp;Ddamu okukebera ekipakire</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="317"/>
@@ -840,7 +840,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="344"/>
         <source>&amp;About</source>
-        <translation>&amp;Ebifa ku LXimage-qt</translation>
+        <translation>&amp;Ebifa ku LXQt-Archiver</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="353"/>
@@ -925,7 +925,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="462"/>
         <source>Cu&amp;t</source>
-        <translation>S&amp;itulawo</translation>
+        <translation>Si&amp;tulawo</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="465"/>
@@ -1060,7 +1060,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="651"/>
         <source>Ctrl+Shift+A</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+A</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="700"/>
@@ -1327,7 +1327,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="668"/>
         <source>&amp;Rename</source>
-        <translation>&amp;Kyusa erinnya</translation>
+        <translation>K&amp;yusa linnya</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="671"/>
@@ -1418,7 +1418,7 @@ are left clicked, even when it is not the default file manager.</source>
         <location filename="../main-win.ui" line="105"/>
         <location filename="../main-win.ui" line="129"/>
         <source>&amp;View</source>
-        <translation>&amp;Endabika</translation>
+        <translation>E&amp;ndabika</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="109"/>
@@ -1428,7 +1428,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="185"/>
         <source>&amp;Edit</source>
-        <translation>&amp;Kyusa</translation>
+        <translation>K&amp;yusa</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="204"/>
