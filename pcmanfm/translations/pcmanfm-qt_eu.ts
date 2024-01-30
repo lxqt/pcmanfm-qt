@@ -102,7 +102,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../bulk-rename.ui" line="6"/>
         <source>Bulk Rename</source>
-        <translation type="unfinished"></translation>
+        <translation>Mailan izena aldatu</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="47"/>
@@ -200,7 +200,10 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
         <source>A short description or generic name, like &quot;Web Browser&quot; or &quot;Home Directory&quot;.
 
 It can be left empty.</source>
-        <translation type="unfinished"></translation>
+        <translation>Deskribapen laburra edo izen generikoa, adibidez, &quot;Web arakatzailea&quot; edo &quot;Home Directory&quot;.
+
+
+Hutsik utz daiteke.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="77"/>
@@ -251,7 +254,7 @@ Hutsik utz daiteke.</translation>
     <message>
         <location filename="../desktopentrydialog.ui" line="186"/>
         <source>Whether the launched program should run in a terminal window.</source>
-        <translation type="unfinished"></translation>
+        <translation>Abiarazitako programa terminaleko leiho batean exekutatu behar den ala ez.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="190"/>
@@ -281,7 +284,7 @@ Hutsik utz daiteke.</translation>
     <message>
         <location filename="../desktopentrydialog.ui" line="219"/>
         <source>Link</source>
-        <translation type="unfinished"></translation>
+        <translation>Esteka</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="96"/>
@@ -546,12 +549,12 @@ ezkerreko klik egiten dira, fitxategi-kudeatzaile lehenetsia ez denean ere.</tra
     <message>
         <location filename="../desktop-preferences.ui" line="620"/>
         <source>Visible Shortcuts</source>
-        <translation type="unfinished"></translation>
+        <translation>Ikusgai dauden lasterbideak</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="626"/>
         <source>Home</source>
-        <translation type="unfinished"></translation>
+        <translation>Hasiera</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="637"/>
@@ -579,7 +582,7 @@ ezkerreko klik egiten dira, fitxategi-kudeatzaile lehenetsia ez denean ere.</tra
     <message>
         <location filename="../shortcuts.ui" line="14"/>
         <source>Hidden Shortcuts</source>
-        <translation type="unfinished"></translation>
+        <translation>Ezkutuko lasterbideak</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="21"/>
@@ -599,7 +602,7 @@ ezkerreko klik egiten dira, fitxategi-kudeatzaile lehenetsia ez denean ere.</tra
     <message>
         <location filename="../shortcuts.ui" line="34"/>
         <source>Focus view, clear filter bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Foku ikuspegia, garbitu iragazki-barra</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="39"/>
@@ -609,7 +612,7 @@ ezkerreko klik egiten dira, fitxategi-kudeatzaile lehenetsia ez denean ere.</tra
     <message>
         <location filename="../shortcuts.ui" line="42"/>
         <source>Focus side-pane</source>
-        <translation type="unfinished"></translation>
+        <translation>Foku alboko panela</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="47"/>
@@ -683,27 +686,27 @@ ezkerreko klik egiten dira, fitxategi-kudeatzaile lehenetsia ez denean ere.</tra
     <message>
         <location filename="../shortcuts.ui" line="114"/>
         <source>Go up</source>
-        <translation type="unfinished"></translation>
+        <translation>Igo</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="119"/>
         <source>Ctrl+F</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+F</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="122"/>
         <source>Search dialog</source>
-        <translation type="unfinished"></translation>
+        <translation>Bilatzeko elkarrizketa-koadroa</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="127"/>
         <source>Shift+Insert</source>
-        <translation type="unfinished"></translation>
+        <translation>Shift+Insert</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="130"/>
         <source>Paste into transient filter bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Itsatsi iragazki-barra iragankor batean</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="135"/>
@@ -723,17 +726,17 @@ ezkerreko klik egiten dira, fitxategi-kudeatzaile lehenetsia ez denean ere.</tra
     <message>
         <location filename="../shortcuts.ui" line="138"/>
         <source>Move file on dropping</source>
-        <translation type="unfinished"></translation>
+        <translation>Mugitu fitxategia jartzerakoan</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="146"/>
         <source>Copy file on dropping</source>
-        <translation type="unfinished"></translation>
+        <translation>Kopiatu fitxategia jartzerakoan</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="154"/>
         <source>Make a symlink on dropping</source>
-        <translation type="unfinished"></translation>
+        <translation>Jarritakoan esteka sinbolikoa egin</translation>
     </message>
 </context>
 <context>
@@ -741,7 +744,7 @@ ezkerreko klik egiten dira, fitxategi-kudeatzaile lehenetsia ez denean ere.</tra
     <message>
         <location filename="../main-win.ui" line="14"/>
         <source>File Manager</source>
-        <translation type="unfinished"></translation>
+        <translation>Artxiboen administratzailea</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="81"/>
@@ -781,7 +784,7 @@ ezkerreko klik egiten dira, fitxategi-kudeatzaile lehenetsia ez denean ere.</tra
     <message>
         <location filename="../main-win.ui" line="293"/>
         <source>Alt+Up</source>
-        <translation type="unfinished"></translation>
+        <translation>Alt+Up</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="302"/>
@@ -791,7 +794,7 @@ ezkerreko klik egiten dira, fitxategi-kudeatzaile lehenetsia ez denean ere.</tra
     <message>
         <location filename="../main-win.ui" line="305"/>
         <source>Alt+Home</source>
-        <translation type="unfinished"></translation>
+        <translation>Alt+Home</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="314"/>
@@ -801,7 +804,7 @@ ezkerreko klik egiten dira, fitxategi-kudeatzaile lehenetsia ez denean ere.</tra
     <message>
         <location filename="../main-win.ui" line="317"/>
         <source>F5</source>
-        <translation type="unfinished"></translation>
+        <translation>F5</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="326"/>
@@ -811,7 +814,7 @@ ezkerreko klik egiten dira, fitxategi-kudeatzaile lehenetsia ez denean ere.</tra
     <message>
         <location filename="../main-win.ui" line="335"/>
         <source>Quit</source>
-        <translation type="unfinished"></translation>
+        <translation>Irten</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="344"/>
@@ -826,12 +829,12 @@ ezkerreko klik egiten dira, fitxategi-kudeatzaile lehenetsia ez denean ere.</tra
     <message>
         <location filename="../main-win.ui" line="356"/>
         <source>New Window</source>
-        <translation type="unfinished"></translation>
+        <translation>Leiho Berria</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="359"/>
         <source>Ctrl+N</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+N</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="367"/>
@@ -841,7 +844,7 @@ ezkerreko klik egiten dira, fitxategi-kudeatzaile lehenetsia ez denean ere.</tra
     <message>
         <location filename="../main-win.ui" line="370"/>
         <source>Ctrl+H</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+H</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="379"/>
@@ -876,7 +879,7 @@ ezkerreko klik egiten dira, fitxategi-kudeatzaile lehenetsia ez denean ere.</tra
     <message>
         <location filename="../main-win.ui" line="421"/>
         <source>Reload</source>
-        <translation type="unfinished"></translation>
+        <translation>Berriz kargatu</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="429"/>
@@ -906,7 +909,7 @@ ezkerreko klik egiten dira, fitxategi-kudeatzaile lehenetsia ez denean ere.</tra
     <message>
         <location filename="../main-win.ui" line="465"/>
         <source>Ctrl+X</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+X</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="474"/>
@@ -916,7 +919,7 @@ ezkerreko klik egiten dira, fitxategi-kudeatzaile lehenetsia ez denean ere.</tra
     <message>
         <location filename="../main-win.ui" line="477"/>
         <source>Ctrl+C</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+C</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="486"/>
@@ -926,7 +929,7 @@ ezkerreko klik egiten dira, fitxategi-kudeatzaile lehenetsia ez denean ere.</tra
     <message>
         <location filename="../main-win.ui" line="489"/>
         <source>Ctrl+V</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+V</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="494"/>
@@ -936,7 +939,7 @@ ezkerreko klik egiten dira, fitxategi-kudeatzaile lehenetsia ez denean ere.</tra
     <message>
         <location filename="../main-win.ui" line="497"/>
         <source>Ctrl+A</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+A</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="502"/>
@@ -946,7 +949,7 @@ ezkerreko klik egiten dira, fitxategi-kudeatzaile lehenetsia ez denean ere.</tra
     <message>
         <location filename="../main-win.ui" line="505"/>
         <source>Ctrl+D</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+D</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="510"/>
