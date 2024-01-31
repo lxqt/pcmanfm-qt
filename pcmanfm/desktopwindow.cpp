@@ -2059,7 +2059,7 @@ void DesktopWindow::childDropEvent(QDropEvent* e) {
                 QPoint pb = listView_->visualRect(b).topLeft();
                 return (pa.x() != pb.x() ? pa.x() < pb.x() : pa.y() < pb.y());
             });
-            for(const QModelIndex& indx : qAsConst(selected)) {
+            for(const QModelIndex& indx : std::as_const(selected)) {
                 if(indx == curIndx) {
                     continue;
                 }

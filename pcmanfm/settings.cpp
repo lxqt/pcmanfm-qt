@@ -249,9 +249,9 @@ bool Settings::loadFile(QString filePath) {
     wallpaperRandomize_ = settings.value(QStringLiteral("WallpaperRandomize")).toBool();
     transformWallpaper_ = settings.value(QStringLiteral("TransformWallpaper")).toBool();
     perScreenWallpaper_ = settings.value(QStringLiteral("PerScreenWallpaper")).toBool();
-    desktopBgColor_.setNamedColor(settings.value(QStringLiteral("BgColor"), QStringLiteral("#000000")).toString());
-    desktopFgColor_.setNamedColor(settings.value(QStringLiteral("FgColor"), QStringLiteral("#ffffff")).toString());
-    desktopShadowColor_.setNamedColor(settings.value(QStringLiteral("ShadowColor"), QStringLiteral("#000000")).toString());
+    desktopBgColor_ = QColor::fromString(settings.value(QStringLiteral("BgColor"), QStringLiteral("#000000")).toString());
+    desktopFgColor_ = QColor::fromString(settings.value(QStringLiteral("FgColor"), QStringLiteral("#ffffff")).toString());
+    desktopShadowColor_ = QColor::fromString(settings.value(QStringLiteral("ShadowColor"), QStringLiteral("#000000")).toString());
     if(settings.contains(QStringLiteral("Font"))) {
         desktopFont_.fromString(settings.value(QStringLiteral("Font")).toString());
     }

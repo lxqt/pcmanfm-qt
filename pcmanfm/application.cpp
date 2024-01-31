@@ -573,7 +573,7 @@ void Application::launchFiles(const QString& cwd, const QStringList& paths, bool
         settings_.setTabPaths(QStringList());
     }
 
-    for(const QString& it : qAsConst(_paths)) {
+    for(const QString& it : std::as_const(_paths)) {
         QByteArray pathName = it.toLocal8Bit();
         Fm::FilePath path;
         if(pathName == "~") { // special case for home dir
@@ -698,7 +698,7 @@ void Application::setWallpaper(const QString& path, const QString& modeString) {
     // update wallpaper
     if(changed) {
         if(enableDesktopManager_) {
-            for(DesktopWindow* desktopWin :  qAsConst(desktopWindows_)) {
+            for(DesktopWindow* desktopWin :  std::as_const(desktopWindows_)) {
                 if(!path.isEmpty()) {
                     desktopWin->setWallpaperFile(path);
                 }
@@ -1013,7 +1013,7 @@ void Application::onScreenDestroyed(QObject* screenObj) {
     if(enableDesktopManager_) {
         bool reloadNeeded = false;
         // FIXME: add workarounds for Qt5 bug #40681 and #40791 here.
-        for(DesktopWindow* desktopWin :  qAsConst(desktopWindows_)) {
+        for(DesktopWindow* desktopWin :  std::as_const(desktopWindows_)) {
             if(desktopWin->windowHandle()->screen() == screenObj) {
                 desktopWin->destroy(); // destroy the underlying native window
                 reloadNeeded = true;
@@ -1028,7 +1028,7 @@ void Application::onScreenDestroyed(QObject* screenObj) {
 void Application::reloadDesktopsAsNeeded() {
     if(enableDesktopManager_) {
         // workarounds for Qt5 bug #40681 and #40791 here.
-        for(DesktopWindow* desktopWin : qAsConst(desktopWindows_)) {
+        for(DesktopWindow* desktopWin : std::as_const(desktopWindows_)) {
             if(!desktopWin->windowHandle()) {
                 desktopWin->create(); // re-create the underlying native window
                 desktopWin->queueRelayout();
@@ -1041,7 +1041,7 @@ void Application::reloadDesktopsAsNeeded() {
 void Application::onVirtualGeometryChanged(const QRect& /*rect*/) {
     // update desktop geometries
     if(enableDesktopManager_) {
-        for(DesktopWindow* desktopWin : qAsConst(desktopWindows_)) {
+        for(DesktopWindow* desktopWin : std::as_const(desktopWindows_)) {
             auto desktopScreen = desktopWin->getDesktopScreen();
             if(desktopScreen) {
                 desktopWin->setGeometry(desktopScreen->virtualGeometry());
@@ -1053,7 +1053,7 @@ void Application::onVirtualGeometryChanged(const QRect& /*rect*/) {
 void Application::onAvailableGeometryChanged(const QRect& /*rect*/) {
     // update desktop layouts
     if(enableDesktopManager_) {
-        for(DesktopWindow* desktopWin : qAsConst(desktopWindows_)) {
+        for(DesktopWindow* desktopWin : std::as_const(desktopWindows_)) {
             desktopWin->queueRelayout();
         }
     }
