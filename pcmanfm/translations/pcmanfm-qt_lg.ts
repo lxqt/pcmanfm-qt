@@ -840,7 +840,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="344"/>
         <source>&amp;About</source>
-        <translation>&amp;Ebifa ku LXQt-Archiver</translation>
+        <translation>&amp;Ebifa ku LXImage-Qt</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="353"/>

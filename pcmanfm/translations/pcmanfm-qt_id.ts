@@ -129,12 +129,12 @@ Boston, MA  02110-1301, USA.</translation>
     <message>
         <location filename="../bulk-rename.ui" line="80"/>
         <source>Pad numbers with zero if possible</source>
-        <translation type="unfinished"></translation>
+        <translation>Nomor papan dengan kemungkinan nol</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="87"/>
         <source>Use localized numbers</source>
-        <translation type="unfinished"></translation>
+        <translation>Menggunakan nomor lokal</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="27"/>
@@ -205,7 +205,7 @@ Boston, MA  02110-1301, USA.</translation>
     <message>
         <location filename="../desktopentrydialog.ui" line="45"/>
         <source>Specific name of this launcher.</source>
-        <translation type="unfinished"></translation>
+        <translation>Nama spesifik untuk peluncur ini.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="58"/>
@@ -217,7 +217,9 @@ Boston, MA  02110-1301, USA.</translation>
         <source>A short description or generic name, like &quot;Web Browser&quot; or &quot;Home Directory&quot;.
 
 It can be left empty.</source>
-        <translation type="unfinished"></translation>
+        <translation>Sebuah deskripsi singkat atau nama umum seperti, Peramban Web atau Direktori Beranda.
+
+Dapat dibiarkan kosong.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="77"/>
@@ -229,7 +231,9 @@ It can be left empty.</source>
         <source>A short comment.
 
 It can be left empty.</source>
-        <translation type="unfinished"></translation>
+        <translation>Sebuah komentar singkat.
+
+Dapat dibiarkan kosong.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="117"/>
@@ -250,7 +254,7 @@ It can be left empty.</source>
     <message>
         <location filename="../desktopentrydialog.ui" line="151"/>
         <source>Icon to display in file manager, menus, etc.</source>
-        <translation type="unfinished"></translation>
+        <translation>ikon untuk tampil di manajer dokumen, menu, dan lain-lain.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="173"/>
@@ -266,7 +270,7 @@ It can be left empty.</source>
     <message>
         <location filename="../desktopentrydialog.ui" line="186"/>
         <source>Whether the launched program should run in a terminal window.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ketika aplikasi yang terbuka harus berjalan di jendela terminal.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="190"/>
@@ -286,7 +290,7 @@ It can be left empty.</source>
     <message>
         <location filename="../desktopentrydialog.ui" line="210"/>
         <source>Whether this is a link or executes a command.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ketika ini sebuah tautan atau mengeksekusi sebuah perintah.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="214"/>
@@ -301,7 +305,7 @@ It can be left empty.</source>
     <message>
         <location filename="../desktopentrydialog.ui" line="96"/>
         <source>Categories:</source>
-        <translation type="unfinished"></translation>
+        <translation>Jenis Kategori:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="103"/>
