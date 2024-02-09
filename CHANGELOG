@@ -1,3 +1,7 @@
+pcmanfm-qt-1.4.1 / 2024-02-09
+==============================
+ * Fixed a regression in setting wallpaper with command-line.
+
 pcmanfm-qt-1.4.0 / 2023-11-05
 ==============================
  * Check if wallpaper cache is up-to-date on reading Desktop settings (needed when the wallpaper is changed but its path and name are not).
