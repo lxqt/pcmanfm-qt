@@ -685,9 +685,15 @@ void Application::setWallpaper(const QString& path, const QString& modeString) {
         }
     }
 
-    DesktopWindow::WallpaperMode mode = DesktopWindow::WallpaperMode(Settings::wallpaperModeFromString(modeString));
-    if(mode != settings_.wallpaperMode()) {
-        changed = true;
+    DesktopWindow::WallpaperMode mode;
+    if(modeString.isEmpty()) {
+        mode = settings_.wallpaperMode();
+    }
+    else {
+        mode = DesktopWindow::WallpaperMode(Settings::wallpaperModeFromString(modeString));
+        if(mode != settings_.wallpaperMode()) {
+            changed = true;
+        }
     }
 
     // FIXME: support different wallpapers on different screen.
