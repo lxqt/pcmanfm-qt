@@ -2318,7 +2318,7 @@ Un valore di -1 significa nessun limite (predefinito).</translation>
     <message>
         <location filename="../preferences.ui" line="919"/>
         <source>Search</source>
-        <translation>Cerca</translation>
+        <translation>Ricerca</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="934"/>

@@ -2322,7 +2322,7 @@ Wert -1 bedeutet ohne Größenbegrenzung (als Standard).</translation>
     <message>
         <location filename="../preferences.ui" line="919"/>
         <source>Search</source>
-        <translation>Suchen</translation>
+        <translation>Suche</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="934"/>
