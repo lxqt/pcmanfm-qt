@@ -840,7 +840,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="344"/>
         <source>&amp;About</source>
-        <translation>&amp;Ebifa ku LXImage-Qt</translation>
+        <translation>&amp;Ebifa ku PCManFm-qt</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="353"/>
@@ -1055,7 +1055,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="981"/>
         <source>&amp;Clear</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Yerula</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="651"/>
@@ -1605,37 +1605,37 @@ Awali &lt;LINNYA&gt; w&apos;owandika erinnya ery&apos;akaboozi k&apos;oyagala ok
     <message>
         <location filename="../desktopentrydialog.cpp" line="36"/>
         <source>The command to execute.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ekiragiro ekiyisibwa.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="39"/>
         <source>URL:</source>
-        <translation type="unfinished"></translation>
+        <translation>Endagiriro:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="40"/>
         <source>The URL to access.</source>
-        <translation type="unfinished"></translation>
+        <translation>Endagiriro ey&apos;okukebera ku mutimbagano.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="67"/>
         <source>Select an icon</source>
-        <translation type="unfinished"></translation>
+        <translation>Londa akafaananyi</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="69"/>
         <source>Images (*.png *.xpm *.svg *.svgz )</source>
-        <translation type="unfinished"></translation>
+        <translation>bifaananyi (*.png *.xpm *.svg *.svgz )</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="91"/>
         <source>Select an executable file</source>
-        <translation type="unfinished"></translation>
+        <translation>Londa fayiro eya puloguramu</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="99"/>
         <source>Select a file</source>
-        <translation type="unfinished"></translation>
+        <translation>Londa fayiro</translation>
     </message>
 </context>
 <context>
@@ -1769,7 +1769,7 @@ Awali &lt;LINNYA&gt; w&apos;owandika erinnya ery&apos;akaboozi k&apos;oyagala ok
     <message>
         <location filename="../mainwindow.cpp" line="142"/>
         <source>Root Instance</source>
-        <translation type="unfinished"></translation>
+        <translation>Ekikozesa buyinza bwa muteesiteesi</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="780"/>
@@ -1852,12 +1852,12 @@ Biyinza kuyamba ssinga amaterekero ago gaba gakomezedwawo.</translation>
     <message>
         <location filename="../preferencesdialog.cpp" line="279"/>
         <source>Remove if added by user</source>
-        <translation type="unfinished"></translation>
+        <translation>Gyawo oba kyateekebwawo mukozesa</translation>
     </message>
     <message>
         <location filename="../preferencesdialog.cpp" line="303"/>
         <source>Open user-defined list</source>
-        <translation type="unfinished"></translation>
+        <translation>Bikkula olukalala olwakolebwa mukozesa</translation>
     </message>
 </context>
 <context>
@@ -2441,12 +2441,12 @@ akaboozi akakulaga by&apos;oyinza okulondako okukola</translation>
     <message>
         <location filename="../preferences.ui" line="847"/>
         <source>Switch &amp;user command:</source>
-        <translation>Ekiragiro ekikyusa mukozesa:</translation>
+        <translation>Ekiragiro ekikyusa m&amp;ukozesa:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="873"/>
         <source>Archiver in&amp;tegration:</source>
-        <translation>Puloguramu ekola ku kupakira fayiro:</translation>
+        <translation>Puloguramu ekola ku kupakira fay&amp;iro:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="889"/>
