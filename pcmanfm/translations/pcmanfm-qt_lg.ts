@@ -820,7 +820,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="314"/>
         <source>&amp;Reload</source>
-        <translation>&amp;Ddamu okukebera ekipakire</translation>
+        <translation>&amp;Ddamu okubikkula</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="317"/>
@@ -840,7 +840,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="344"/>
         <source>&amp;About</source>
-        <translation>&amp;Ebifa ku PCManFm-qt</translation>
+        <translation>&amp;Okwanjula</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="353"/>
