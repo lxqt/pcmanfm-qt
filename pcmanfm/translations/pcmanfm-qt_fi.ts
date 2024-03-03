@@ -2230,8 +2230,8 @@ Niistä voi olla hyötyä, jos kyseiset kansiot tulevat takaisin.</translation>
         <location filename="../preferences.ui" line="489"/>
         <source>3 px by default.
 A space is also reserved for 3 lines of text.</source>
-        <translation type="unfinished">1 px oletuksena.
-Tilaa varataan myös 3 tekstiriville. {3 ?} {3 ?}</translation>
+        <translation>3 px oletuksena.
+Tilaa varataan myös 3 tekstiriville.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="506"/>
