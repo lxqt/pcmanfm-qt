@@ -43,6 +43,9 @@
 #include <QRandomGenerator>
 #include <QToolTip>
 
+#include <LayerShellQt/shell.h>
+#include <LayerShellQt/window.h>
+
 #include "./application.h"
 #include "mainwindow.h"
 #include <libfm-qt6/foldermenu.h>
@@ -186,6 +189,23 @@ DesktopWindow::DesktopWindow(int screenNum):
 
     shortcut = new QShortcut(QKeySequence(Qt::SHIFT | Qt::Key_Delete), this); // force delete
     connect(shortcut, &QShortcut::activated, this, &DesktopWindow::onDeleteActivated);
+
+    // set the layer and anchors under Wayland
+    if(static_cast<Application*>(qApp)->underWayland()) {
+        winId();
+        if(QWindow* win = windowHandle()) {
+            if(LayerShellQt::Window* layershell = LayerShellQt::Window::get(win)) {
+                layershell->setLayer(LayerShellQt::Window::Layer::LayerBackground);
+                LayerShellQt::Window::Anchors anchors = {LayerShellQt::Window::AnchorTop
+                                                         | LayerShellQt::Window::AnchorBottom
+                                                         | LayerShellQt::Window::AnchorLeft
+                                                         | LayerShellQt::Window::AnchorRight};
+                layershell->setAnchors(anchors);
+                layershell->setKeyboardInteractivity(LayerShellQt::Window::KeyboardInteractivityOnDemand);
+                layershell->setExclusiveZone(-1); // not moved to accommodate for other surfaces
+            }
+        }
+    }
 }
 
 DesktopWindow::~DesktopWindow() {
@@ -1191,10 +1211,13 @@ void DesktopWindow::onFolderStartLoading() { // desktop may be reloaded
 }
 
 void DesktopWindow::onFolderFinishLoading() {
-    QTimer::singleShot(10, [this]() { // Qt delays the UI update (as in TabPage::onFolderFinishLoading)
+    QTimer::singleShot(10, this, [this]() { // Qt delays the UI update (as in TabPage::onFolderFinishLoading)
         if(model_) {
             connect(model_, &Fm::FolderModel::filesAdded, this, &DesktopWindow::onFilesAdded);
         }
+        // For some reason, resetting of the layout after loading is needed under Wayland.
+        // It is also safe under X11.
+        queueRelayout(100);
     });
 }
 

@@ -90,6 +90,7 @@ target_include_directories(pcmanfm-qt
 target_link_libraries(pcmanfm-qt
     Qt6::Widgets
     Qt6::DBus
+    LayerShellQtInterface
     fm-qt6
 )
 
