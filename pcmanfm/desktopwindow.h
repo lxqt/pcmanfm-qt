@@ -31,7 +31,7 @@
 #include <QByteArray>
 #include <QScreen>
 #include <xcb/xcb.h>
-#include <libfm-qt/core/folder.h>
+#include <libfm-qt6/core/folder.h>
 
 namespace Fm {
 class CachedFolderModel;
@@ -79,8 +79,6 @@ public:
 
     void queueRelayout(int delay = 0);
 
-    void saveItemPositions();
-
     int screenNum() const {
         return screenNum_;
     }
@@ -96,6 +94,7 @@ protected:
     virtual void onFileClicked(int type, const std::shared_ptr<const Fm::FileInfo>& fileInfo) override;
 
     void loadItemPositions();
+    void saveItemPositions();
     void retrieveCustomPos();
     void storeCustomPos();
 

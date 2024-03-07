@@ -23,6 +23,7 @@
 #include <QMenu>
 #include <QMenuBar>
 #include <QAction>
+#include <QActionGroup>
 #include <QWidgetAction>
 #include <QVBoxLayout>
 #include <QMessageBox>
@@ -38,15 +39,15 @@
 
 #include "tabpage.h"
 #include "launcher.h"
-#include <libfm-qt/filemenu.h>
-#include <libfm-qt/bookmarkaction.h>
-#include <libfm-qt/fileoperation.h>
-#include <libfm-qt/utilities.h>
-#include <libfm-qt/filepropsdialog.h>
-#include <libfm-qt/pathedit.h>
-#include <libfm-qt/pathbar.h>
-#include <libfm-qt/core/fileinfo.h>
-#include <libfm-qt/mountoperation.h>
+#include <libfm-qt6/filemenu.h>
+#include <libfm-qt6/bookmarkaction.h>
+#include <libfm-qt6/fileoperation.h>
+#include <libfm-qt6/utilities.h>
+#include <libfm-qt6/filepropsdialog.h>
+#include <libfm-qt6/pathedit.h>
+#include <libfm-qt6/pathbar.h>
+#include <libfm-qt6/core/fileinfo.h>
+#include <libfm-qt6/mountoperation.h>
 #include "ui_about.h"
 #include "ui_shortcuts.h"
 #include "application.h"
@@ -299,40 +300,40 @@ MainWindow::MainWindow(Fm::FilePath path):
         }
     });
 
-    shortcut = new QShortcut(QKeySequence(Qt::CTRL + Qt::Key_Escape), this);
+    shortcut = new QShortcut(QKeySequence(Qt::CTRL | Qt::Key_Escape), this);
     connect(shortcut, &QShortcut::activated, [this] {
         if(ui.sidePane->isVisible() && ui.sidePane->view()) {
             ui.sidePane->view()->setFocus();
         }
     });
 
-    shortcut = new QShortcut(QKeySequence(Qt::CTRL + Qt::Key_L), this);
+    shortcut = new QShortcut(QKeySequence(Qt::CTRL | Qt::Key_L), this);
     connect(shortcut, &QShortcut::activated, this, &MainWindow::focusPathEntry);
 
-    shortcut = new QShortcut(Qt::ALT + Qt::Key_D, this);
+    shortcut = new QShortcut(Qt::ALT | Qt::Key_D, this);
     connect(shortcut, &QShortcut::activated, this, &MainWindow::focusPathEntry);
 
-    shortcut = new QShortcut(Qt::CTRL + Qt::Key_Tab, this);
+    shortcut = new QShortcut(Qt::CTRL | Qt::Key_Tab, this);
     connect(shortcut, &QShortcut::activated, this, &MainWindow::onShortcutNextTab);
 
-    shortcut = new QShortcut(Qt::CTRL + Qt::SHIFT + Qt::Key_Tab, this);
+    shortcut = new QShortcut(Qt::CTRL | Qt::SHIFT | Qt::Key_Tab, this);
     connect(shortcut, &QShortcut::activated, this, &MainWindow::onShortcutPrevTab);
 
     // Add Ctrl+PgUp and Ctrl+PgDown as well, because they are common in Firefox
     // , Opera, Google Chromium/Google Chrome and most other tab-using
     // applications.
-    shortcut = new QShortcut(Qt::CTRL + Qt::Key_PageDown, this);
+    shortcut = new QShortcut(Qt::CTRL | Qt::Key_PageDown, this);
     connect(shortcut, &QShortcut::activated, this, &MainWindow::onShortcutNextTab);
 
-    shortcut = new QShortcut(Qt::CTRL + Qt::Key_PageUp, this);
+    shortcut = new QShortcut(Qt::CTRL | Qt::Key_PageUp, this);
     connect(shortcut, &QShortcut::activated, this, &MainWindow::onShortcutPrevTab);
 
     int i;
     for(i = 0; i < 10; ++i) {
-        shortcut = new QShortcut(QKeySequence(Qt::ALT + Qt::Key_0 + i), this);
+        shortcut = new QShortcut(QKeySequence(Qt::ALT | (Qt::Key_0 + i)), this);
         connect(shortcut, &QShortcut::activated, this, &MainWindow::onShortcutJumpToTab);
 
-        shortcut = new QShortcut(QKeySequence(Qt::CTRL + Qt::Key_0 + i), this);
+        shortcut = new QShortcut(QKeySequence(Qt::CTRL | (Qt::Key_0 + i)), this);
         connect(shortcut, &QShortcut::activated, this, &MainWindow::onShortcutJumpToTab);
     }
 
@@ -346,15 +347,15 @@ MainWindow::MainWindow(Fm::FilePath path):
         on_actionGoUp_triggered();
     });
 
-    shortcut = new QShortcut(QKeySequence(Qt::SHIFT + Qt::Key_Delete), this);
+    shortcut = new QShortcut(QKeySequence(Qt::SHIFT | Qt::Key_Delete), this);
     connect(shortcut, &QShortcut::activated, this, &MainWindow::on_actionDelete_triggered);
 
     // in addition to F3, for convenience
-    shortcut = new QShortcut(QKeySequence(Qt::CTRL + Qt::Key_F), this);
+    shortcut = new QShortcut(QKeySequence(Qt::CTRL | Qt::Key_F), this);
     connect(shortcut, &QShortcut::activated, ui.actionFindFiles, &QAction::trigger);
 
     // in addition to Alt+Return, for convenience
-    shortcut = new QShortcut(Qt::ALT + Qt::Key_Enter, this);
+    shortcut = new QShortcut(Qt::ALT | Qt::Key_Enter, this);
     connect(shortcut, &QShortcut::activated, this, &MainWindow::on_actionFileProperties_triggered);
 
     addViewFrame(path);
@@ -484,6 +485,7 @@ void MainWindow::addViewFrame(const Fm::FilePath& path) {
     ViewFrame* viewFrame = new ViewFrame();
     viewFrame->getTabBar()->setDetachable(!splitView_); // no tab DND with the split view
     viewFrame->getTabBar()->setTabsClosable(settings.showTabClose());
+    viewFrame->getTabBar()->setAutoHide(!settings.alwaysShowTabs());
     ui.viewSplitter->addWidget(viewFrame); // the splitter takes ownership of viewFrame
     if(ui.viewSplitter->count() == 1) {
         activeViewFrame_ = viewFrame;
@@ -717,9 +719,6 @@ int MainWindow::addTabWithPage(TabPage* page, ViewFrame* viewFrame, Fm::FilePath
     }
     else if(TabPage* tabPage = currentPage()) {
         tabPage->folderView()->childView()->setFocus();
-    }
-    if(!settings.alwaysShowTabs()) {
-        viewFrame->getTabBar()->setVisible(viewFrame->getTabBar()->count() > 1);
     }
 
     // also set tab icon (if the folder is customized)
@@ -1654,12 +1653,6 @@ void MainWindow::onStackedWidgetWidgetRemoved(int index) {
                 on_actionSplitView_triggered(false);
             }
         }
-        else {
-            Settings& settings = static_cast<Application*>(qApp)->settings();
-            if(!settings.alwaysShowTabs() && viewFrame->getTabBar()->count() == 1) {
-                viewFrame->getTabBar()->setVisible(false);
-            }
-        }
     }
 }
 
@@ -2249,7 +2242,7 @@ void MainWindow::updateFromSettings(Settings& settings) {
     for(int i = 0; i < ui.viewSplitter->count(); ++i) {
         if(ViewFrame* viewFrame = qobject_cast<ViewFrame*>(ui.viewSplitter->widget(i))) {
             viewFrame->getTabBar()->setTabsClosable(settings.showTabClose());
-            viewFrame->getTabBar()->setVisible(settings.alwaysShowTabs() || (viewFrame->getTabBar()->count() > 1));
+            viewFrame->getTabBar()->setAutoHide(!settings.alwaysShowTabs());
 
             // all tab pages
             int n = viewFrame->getStackedWidget()->count();
@@ -2389,20 +2382,9 @@ void MainWindow::onShortcutPrevTab() {
 void MainWindow::onShortcutJumpToTab() {
     QShortcut* shortcut = reinterpret_cast<QShortcut*>(sender());
     QKeySequence seq = shortcut->key();
-    int keyValue = seq[0];
-    // See the source code of QKeySequence and refer to the method:
-    // QString QKeySequencePrivate::encodeString(int key, QKeySequence::SequenceFormat format).
-    // Then we know how to test if a key sequence contains a modifier.
-    // It's a shame that Qt has no API for this task.
+    QKeyCombination keyComb = seq[0];
+    Qt::Key keyValue = keyComb.key();
 
-    if((keyValue & Qt::ALT) == Qt::ALT) { // test if we have Alt key pressed
-        keyValue -= Qt::ALT;
-    }
-    else if((keyValue & Qt::CTRL) == Qt::CTRL) { // test if we have Ctrl key pressed
-        keyValue -= Qt::CTRL;
-    }
-
-    // now keyValue should contains '0' - '9' only
     int index;
     if(keyValue == '0') {
         index = 9;

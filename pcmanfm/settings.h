@@ -22,13 +22,13 @@
 #define PCMANFM_SETTINGS_H
 
 #include <QObject>
-#include <libfm-qt/folderview.h>
-#include <libfm-qt/foldermodel.h>
+#include <libfm-qt6/folderview.h>
+#include <libfm-qt6/foldermodel.h>
 #include "desktopwindow.h"
-#include <libfm-qt/sidepane.h>
-#include <libfm-qt/core/thumbnailjob.h>
-#include <libfm-qt/core/archiver.h>
-#include <libfm-qt/core/legacy/fm-config.h>
+#include <libfm-qt6/sidepane.h>
+#include <libfm-qt6/core/thumbnailjob.h>
+#include <libfm-qt6/core/archiver.h>
+#include <libfm-qt6/core/legacy/fm-config.h>
 
 namespace PCManFM {
 
@@ -1012,7 +1012,7 @@ public:
 
     QList<int> getCustomColumnWidths() const {
         QList<int> l;
-        for(auto width : qAsConst(customColumnWidths_)) {
+        for(auto width : std::as_const(customColumnWidths_)) {
             l << width.toInt();
         }
         return l;
@@ -1027,7 +1027,7 @@ public:
 
     QList<int> getHiddenColumns() const {
         QList<int> l;
-        for(auto width : qAsConst(hiddenColumns_)) {
+        for(auto width : std::as_const(hiddenColumns_)) {
             l << width.toInt();
         }
         return l;

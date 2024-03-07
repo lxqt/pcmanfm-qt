@@ -20,12 +20,12 @@
 
 #include "tabpage.h"
 #include "launcher.h"
-#include <libfm-qt/filemenu.h>
-#include <libfm-qt/mountoperation.h>
-#include <libfm-qt/proxyfoldermodel.h>
-#include <libfm-qt/cachedfoldermodel.h>
-#include <libfm-qt/core/fileinfo.h>
-#include <libfm-qt/utilities.h>
+#include <libfm-qt6/filemenu.h>
+#include <libfm-qt6/mountoperation.h>
+#include <libfm-qt6/proxyfoldermodel.h>
+#include <libfm-qt6/cachedfoldermodel.h>
+#include <libfm-qt6/core/fileinfo.h>
+#include <libfm-qt6/utilities.h>
 #include <QApplication>
 #include <QCursor>
 #include <QMessageBox>

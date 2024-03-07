@@ -22,7 +22,7 @@
 #include "ui_bulk-rename.h"
 #include <QDialog>
 
-#include <libfm-qt/core/fileinfo.h>
+#include <libfm-qt6/core/fileinfo.h>
 
 namespace PCManFM {
 

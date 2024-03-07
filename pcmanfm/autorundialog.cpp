@@ -22,8 +22,8 @@
 #include <QListWidgetItem>
 #include "application.h"
 #include "mainwindow.h"
-#include <libfm-qt/core/filepath.h>
-#include <libfm-qt/core/iconinfo.h>
+#include <libfm-qt6/core/filepath.h>
+#include <libfm-qt6/core/iconinfo.h>
 
 namespace PCManFM {
 

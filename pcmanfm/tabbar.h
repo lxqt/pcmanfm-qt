@@ -55,6 +55,7 @@ protected:
     virtual void mousePressEvent(QMouseEvent *event);
     virtual void mouseMoveEvent(QMouseEvent *event);
     virtual void dragEnterEvent(QDragEnterEvent *event);
+    virtual void tabInserted(int index);
 
 private:
     QPoint dragStartPosition_;

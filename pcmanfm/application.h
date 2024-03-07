@@ -23,16 +23,16 @@
 
 #include <QApplication>
 #include "settings.h"
-#include <libfm-qt/libfmqt.h>
-#include <libfm-qt/editbookmarksdialog.h>
+#include <libfm-qt6/libfmqt.h>
+#include <libfm-qt6/editbookmarksdialog.h>
 #include <QVector>
 #include <QPointer>
 #include <QProxyStyle>
 #include <QTranslator>
 #include <gio/gio.h>
 
-#include <libfm-qt/core/filepath.h>
-#include <libfm-qt/core/fileinfo.h>
+#include <libfm-qt6/core/filepath.h>
+#include <libfm-qt6/core/fileinfo.h>
 
 class QScreen;
 

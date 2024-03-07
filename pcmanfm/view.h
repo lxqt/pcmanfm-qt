@@ -21,8 +21,8 @@
 #ifndef PCMANFM_FOLDERVIEW_H
 #define PCMANFM_FOLDERVIEW_H
 
-#include <libfm-qt/folderview.h>
-#include <libfm-qt/core/filepath.h>
+#include <libfm-qt6/folderview.h>
+#include <libfm-qt6/core/filepath.h>
 
 
 namespace Fm {

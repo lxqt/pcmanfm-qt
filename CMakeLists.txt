@@ -7,27 +7,26 @@ cmake_minimum_required(VERSION 3.1.0 FATAL_ERROR)
 project(pcmanfm-qt)
 
 # PcmanFm-Qt Version
-set(PCMANFM_QT_VERSION_MAJOR 1)
-set(PCMANFM_QT_VERSION_MINOR 4)
-set(PCMANFM_QT_VERSION_PATCH 1)
+set(PCMANFM_QT_VERSION_MAJOR 2)
+set(PCMANFM_QT_VERSION_MINOR 0)
+set(PCMANFM_QT_VERSION_PATCH 0)
 
 set(PCMANFM_QT_VERSION ${PCMANFM_QT_VERSION_MAJOR}.${PCMANFM_QT_VERSION_MINOR}.${PCMANFM_QT_VERSION_PATCH})
 
 # Minimum versions
-set(LIBFMQT_MINIMUM_VERSION "1.4.0")
-set(LXQTBT_MINIMUM_VERSION "0.13.0")
-set(QT_MINIMUM_VERSION "5.15.0")
+set(LIBFMQT_MINIMUM_VERSION "2.0.0")
+set(LXQTBT_MINIMUM_VERSION "2.0.0")
+set(QT_MINIMUM_VERSION "6.6.0")
 
 list(APPEND CMAKE_MODULE_PATH "${PROJECT_SOURCE_DIR}/cmake")
 
-find_package(Qt5DBus ${QT_MINIMUM_VERSION} REQUIRED)
-find_package(Qt5LinguistTools ${QT_MINIMUM_VERSION} REQUIRED)
-find_package(Qt5Widgets ${QT_MINIMUM_VERSION} REQUIRED)
-find_package(Qt5X11Extras ${QT_MINIMUM_VERSION} REQUIRED)
-find_package(fm-qt ${LIBFMQT_MINIMUM_VERSION} REQUIRED)
-find_package(lxqt-build-tools ${LXQTBT_MINIMUM_VERSION} REQUIRED)
+find_package(Qt6DBus ${QT_MINIMUM_VERSION} REQUIRED)
+find_package(Qt6LinguistTools ${QT_MINIMUM_VERSION} REQUIRED)
+find_package(Qt6Widgets ${QT_MINIMUM_VERSION} REQUIRED)
+find_package(fm-qt6 ${LIBFMQT_MINIMUM_VERSION} REQUIRED)
+find_package(lxqt2-build-tools ${LXQTBT_MINIMUM_VERSION} REQUIRED)
 
-message(STATUS "Building ${PROJECT_NAME} with Qt ${Qt5Core_VERSION}")
+message(STATUS "Building ${PROJECT_NAME} with Qt ${Qt6Core_VERSION}")
 
 option(UPDATE_TRANSLATIONS "Update source translation translations/*.ts files" OFF)
 include(GNUInstallDirs)

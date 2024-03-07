@@ -33,8 +33,8 @@
 #include <QSplitter>
 #include "launcher.h"
 #include "tabbar.h"
-#include <libfm-qt/core/filepath.h>
-#include <libfm-qt/core/bookmarks.h>
+#include <libfm-qt6/core/filepath.h>
+#include <libfm-qt6/core/bookmarks.h>
 
 namespace Fm {
 class PathEdit;

@@ -22,7 +22,7 @@
 #include <QFileInfo>
 #include "mainwindow.h"
 #include "application.h"
-#include <libfm-qt/core/filepath.h>
+#include <libfm-qt6/core/filepath.h>
 
 namespace PCManFM {
 

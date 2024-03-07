@@ -63,7 +63,7 @@ void TabBar::mouseMoveEvent(QMouseEvent *event)
 
     if((event->buttons() & Qt::LeftButton)
        && dragStarted_
-       && !window()->geometry().contains(event->globalPos())) {
+       && !window()->geometry().contains(event->globalPosition().toPoint())) {
         if(currentIndex() == -1) {
             return;
         }
@@ -111,12 +111,12 @@ void TabBar::mouseMoveEvent(QMouseEvent *event)
 }
 
 void TabBar::finishMouseMoveEvent() {
-    QMouseEvent finishingEvent(QEvent::MouseMove, QPoint(), Qt::NoButton, Qt::NoButton, Qt::NoModifier);
+    QMouseEvent finishingEvent(QEvent::MouseMove, QPoint(), QCursor::pos(), Qt::NoButton, Qt::NoButton, Qt::NoModifier);
     mouseMoveEvent(&finishingEvent);
 }
 
 void TabBar::releaseMouse() {
-    QMouseEvent releasingEvent(QEvent::MouseButtonRelease, QPoint(), Qt::LeftButton, Qt::NoButton, Qt::NoModifier);
+    QMouseEvent releasingEvent(QEvent::MouseButtonRelease, QPoint(), QCursor::pos(), Qt::LeftButton, Qt::NoButton, Qt::NoModifier);
     mouseReleaseEvent(&releasingEvent);
 }
 
@@ -139,6 +139,16 @@ void TabBar::mouseReleaseEvent(QMouseEvent *event) {
 void TabBar::dragEnterEvent(QDragEnterEvent *event) {
     if(detachable_ && event->mimeData()->hasFormat(QStringLiteral("application/pcmanfm-qt-tab"))) {
         event->ignore();
+    }
+}
+
+void TabBar::tabInserted(int index) {
+    // WARNING: Qt6 has a bug that does not show the tabbar in our window on inserting the first
+    // tab unless the tab layout is updated after its insertion. Usually, the tab text is reset
+    // in MainWindow and the layout is updated, but it is also possible that the text is never
+    // touched after the insertion. Therefore, we need the following workaround.
+    if(!autoHide() && index == 0 && count() == 1) {
+        updateGeometry();
     }
 }
 

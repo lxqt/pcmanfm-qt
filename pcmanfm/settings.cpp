@@ -25,9 +25,9 @@
 #include <QSettings>
 #include <QApplication>
 #include "desktopwindow.h"
-#include <libfm-qt/utilities.h>
-#include <libfm-qt/core/folderconfig.h>
-#include <libfm-qt/core/terminal.h>
+#include <libfm-qt6/utilities.h>
+#include <libfm-qt6/core/folderconfig.h>
+#include <libfm-qt6/core/terminal.h>
 #include <QStandardPaths>
 
 namespace PCManFM {
@@ -249,9 +249,9 @@ bool Settings::loadFile(QString filePath) {
     wallpaperRandomize_ = settings.value(QStringLiteral("WallpaperRandomize")).toBool();
     transformWallpaper_ = settings.value(QStringLiteral("TransformWallpaper")).toBool();
     perScreenWallpaper_ = settings.value(QStringLiteral("PerScreenWallpaper")).toBool();
-    desktopBgColor_.setNamedColor(settings.value(QStringLiteral("BgColor"), QStringLiteral("#000000")).toString());
-    desktopFgColor_.setNamedColor(settings.value(QStringLiteral("FgColor"), QStringLiteral("#ffffff")).toString());
-    desktopShadowColor_.setNamedColor(settings.value(QStringLiteral("ShadowColor"), QStringLiteral("#000000")).toString());
+    desktopBgColor_ = QColor::fromString(settings.value(QStringLiteral("BgColor"), QStringLiteral("#000000")).toString());
+    desktopFgColor_ = QColor::fromString(settings.value(QStringLiteral("FgColor"), QStringLiteral("#ffffff")).toString());
+    desktopShadowColor_ = QColor::fromString(settings.value(QStringLiteral("ShadowColor"), QStringLiteral("#000000")).toString());
     if(settings.contains(QStringLiteral("Font"))) {
         desktopFont_.fromString(settings.value(QStringLiteral("Font")).toString());
     }
@@ -475,8 +475,13 @@ bool Settings::saveFile(QString filePath) {
 
     // detailed list columns
     settings.setValue(QStringLiteral("CustomColumnWidths"), customColumnWidths_);
-    std::sort(hiddenColumns_.begin(), hiddenColumns_.end());
-    settings.setValue(QStringLiteral("HiddenColumns"), hiddenColumns_);
+    QList<int> columns = getHiddenColumns();
+    std::sort(columns.begin(), columns.end());
+    QList<QVariant> hiddenColumns;
+    for(int i = 0; i < columns.size(); ++i) {
+        hiddenColumns << QVariant(columns.at(i));
+    }
+    settings.setValue(QStringLiteral("HiddenColumns"), hiddenColumns);
 
     settings.endGroup();
 

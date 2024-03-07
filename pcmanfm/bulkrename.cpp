@@ -23,7 +23,7 @@
 #include <QMessageBox>
 #include <QProgressDialog>
 
-#include <libfm-qt/utilities.h>
+#include <libfm-qt6/utilities.h>
 
 namespace PCManFM {
 
@@ -71,7 +71,10 @@ BulkRenamer::BulkRenamer(const Fm::FileInfoList& files, QWidget* parent) {
     // maximum space taken by numbers (if needed)
     int numSpace = zeroPadding ? QString::number(start + files.size()).size() : 0;
     // used for filling the space (if needed)
-    const QChar zero = respectLocale ? locale.zeroDigit() : QLatin1Char('0');
+    const QChar zero = respectLocale ? !locale.zeroDigit().isEmpty()
+                                     ? locale.zeroDigit().at(0)
+                                     : QLatin1Char('0')
+                                     : QLatin1Char('0');
     // used for changing numbers to strings
     const QString specifier = respectLocale ? QStringLiteral("%L1") : QStringLiteral("%1");
 

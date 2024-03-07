@@ -703,12 +703,12 @@ are left clicked, even when it is not the default file manager.</string>
   <customwidget>
    <class>Fm::ColorButton</class>
    <extends>QPushButton</extends>
-   <header location="global">libfm-qt/colorbutton.h</header>
+   <header location="global">libfm-qt6/colorbutton.h</header>
   </customwidget>
   <customwidget>
    <class>Fm::FontButton</class>
    <extends>QPushButton</extends>
-   <header location="global">libfm-qt/fontbutton.h</header>
+   <header location="global">libfm-qt6/fontbutton.h</header>
   </customwidget>
  </customwidgets>
  <resources/>
