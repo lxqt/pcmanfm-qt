@@ -166,7 +166,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../connect.ui" line="29"/>
         <source>Specify remote folder to connect</source>
-        <translation>Określ folder do połączenia</translation>
+        <translation>Określ katalog zdalny do połączenia się</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="36"/>
@@ -294,7 +294,7 @@ Może pozostać niewypełnione.</translation>
     <message>
         <location filename="../desktopentrydialog.ui" line="214"/>
         <source>Application</source>
-        <translation>Aplikacja</translation>
+        <translation>Program</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="219"/>
@@ -335,12 +335,12 @@ Przykłady: AudioWideo, Audio, Wideo, Programowanie, Edukacja, Gra, Grafika, Sie
     <message>
         <location filename="../desktop-folder.ui" line="29"/>
         <source>Desktop folder:</source>
-        <translation>Katalog Pulpitu:</translation>
+        <translation>Katalog pulpitu:</translation>
     </message>
     <message>
         <location filename="../desktop-folder.ui" line="36"/>
         <source>Image file</source>
-        <translation>Plik obrazka</translation>
+        <translation>Plik obrazu</translation>
     </message>
     <message>
         <location filename="../desktop-folder.ui" line="42"/>
@@ -369,12 +369,12 @@ Przykłady: AudioWideo, Audio, Wideo, Programowanie, Edukacja, Gra, Grafika, Sie
     <message>
         <location filename="../desktop-preferences.ui" line="385"/>
         <source>Wallpaper mode:</source>
-        <translation>Tryb:</translation>
+        <translation>Tryb tapety:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="408"/>
         <source>Wallpaper image file:</source>
-        <translation>Obraz tła:</translation>
+        <translation>Plik obrazu tapety:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="350"/>
@@ -384,12 +384,12 @@ Przykłady: AudioWideo, Audio, Wideo, Programowanie, Edukacja, Gra, Grafika, Sie
     <message>
         <location filename="../desktop-preferences.ui" line="417"/>
         <source>Image file</source>
-        <translation>Plik obrazka</translation>
+        <translation>Plik obrazu</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="423"/>
         <source>Image file path</source>
-        <translation>Ścieżka obrazka</translation>
+        <translation>Ścieżka pliku obrazu</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="430"/>
@@ -482,13 +482,13 @@ Zarezerwowane jest też miejsce dla 3 linii tekstu.</translation>
         <location filename="../desktop-preferences.ui" line="303"/>
         <source>By default, desktop folders will be opened in PCManFM-Qt if they
 are left clicked, even when it is not the default file manager.</source>
-        <translation>Domyślnie foldery pulpitu będą otwierane w PCManFM-Qt, jeśli
+        <translation>Domyślnie katalogi pulpitu będą otwierane w PCManFM-Qt, jeśli
 są klikane lewym przyciskiem, nawet jeśli nie jest to domyślny menedżer plików.</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="307"/>
         <source>Open desktop folders in default file manager by left clicking</source>
-        <translation>Otwórz foldery pulpitu w domyślnym menedżerze plików klikając lewy przycisk myszy</translation>
+        <translation>Otwórz katalogi pulpitu w domyślnym menedżerze plików, klikając lewy przycisk myszy</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="314"/>
@@ -523,7 +523,7 @@ są klikane lewym przyciskiem, nawet jeśli nie jest to domyślny menedżer plik
     <message>
         <location filename="../desktop-preferences.ui" line="491"/>
         <source>Wallpaper image folder:</source>
-        <translation>Folder z tłami pulpitu:</translation>
+        <translation>Katalog z tapetami pulpitu:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="505"/>
@@ -558,7 +558,7 @@ są klikane lewym przyciskiem, nawet jeśli nie jest to domyślny menedżer plik
     <message>
         <location filename="../desktop-preferences.ui" line="498"/>
         <source>Wallpaper folder</source>
-        <translation>Folder z tłami pulpitu</translation>
+        <translation>Katalog z tapetami pulpitu</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="587"/>
@@ -968,7 +968,7 @@ są klikane lewym przyciskiem, nawet jeśli nie jest to domyślny menedżer plik
     <message>
         <location filename="../main-win.ui" line="566"/>
         <source>By File &amp;Type</source>
-        <translation>Według rodzaju pliku (&amp;T)</translation>
+        <translation>Według ro&amp;dzaju pliku</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="574"/>
@@ -1008,7 +1008,7 @@ są klikane lewym przyciskiem, nawet jeśli nie jest to domyślny menedżer plik
     <message>
         <location filename="../main-win.ui" line="973"/>
         <source>&amp;Remove Settings of Nonexistent Folders</source>
-        <translation>Usuń ustawienia nieistniejących folderów</translation>
+        <translation>Usuń ustawienia nieistniejących katalogów</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="981"/>
@@ -1043,7 +1043,7 @@ są klikane lewym przyciskiem, nawet jeśli nie jest to domyślny menedżer plik
     <message>
         <location filename="../main-win.ui" line="708"/>
         <source>By File &amp;Size</source>
-        <translation>Według rozmiaru pliku (&amp;S)</translation>
+        <translation>Według roz&amp;miaru pliku</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="713"/>
@@ -1063,7 +1063,7 @@ są klikane lewym przyciskiem, nawet jeśli nie jest to domyślny menedżer plik
     <message>
         <location filename="../main-win.ui" line="847"/>
         <source>Preserve Settings for &amp;This Folder</source>
-        <translation>Zachowaj ustawienia dla &amp;tego folderu</translation>
+        <translation>Zachowaj ustawienia dla &amp;tego katalogu</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="884"/>
@@ -1500,7 +1500,7 @@ są klikane lewym przyciskiem, nawet jeśli nie jest to domyślny menedżer plik
     <message>
         <location filename="../application.cpp" line="211"/>
         <source>Set desktop wallpaper from image FILE</source>
-        <translation>Ustaw tło pulpitu z obrazka PLIK</translation>
+        <translation>Ustaw tapetę pulpitu z PLIKU obrazu</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="211"/>
@@ -1515,7 +1515,7 @@ są klikane lewym przyciskiem, nawet jeśli nie jest to domyślny menedżer plik
     <message>
         <location filename="../application.cpp" line="214"/>
         <source>Set mode of desktop wallpaper. MODE=(%1)</source>
-        <translation>Ustaw tryb tła pulpitu. TRYB=(%1)</translation>
+        <translation>Ustaw tryb tapety pulpitu. TRYB=(%1)</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="217"/>
@@ -1572,7 +1572,7 @@ są klikane lewym przyciskiem, nawet jeśli nie jest to domyślny menedżer plik
     <message>
         <location filename="../connectserverdialog.cpp" line="11"/>
         <source>WebDav</source>
-        <translation>WebDav</translation>
+        <translation>WebDAV</translation>
     </message>
     <message>
         <location filename="../connectserverdialog.cpp" line="12"/>
@@ -1673,12 +1673,12 @@ są klikane lewym przyciskiem, nawet jeśli nie jest to domyślny menedżer plik
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="268"/>
         <source>Image Files</source>
-        <translation>Pliki obrazków</translation>
+        <translation>Pliki obrazów</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="310"/>
         <source>Select Wallpaper Folder</source>
-        <translation>Wybierz folder tapety</translation>
+        <translation>Wybierz katalog tapety</translation>
     </message>
 </context>
 <context>
@@ -1813,14 +1813,14 @@ są klikane lewym przyciskiem, nawet jeśli nie jest to domyślny menedżer plik
     <message>
         <location filename="../mainwindow.cpp" line="2420"/>
         <source>Cleaning Folder Settings</source>
-        <translation>Ustawienia folderu czyszczenia</translation>
+        <translation>Czyszczenie ustawień katalogu</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="2421"/>
         <source>Do you want to remove settings of nonexistent folders?
 They might be useful if those folders are created again.</source>
-        <translation>Czy chcesz usunąć ustawienia nieistniejących folderów?
-Mogą się one przydać jeśli te foldery zostaną stworzone ponownie.</translation>
+        <translation>Czy chcesz usunąć ustawienia nieistniejących katalogów?
+Mogą się one przydać, jeśli te katalogi zostaną stworzone ponownie.</translation>
     </message>
 </context>
 <context>
@@ -2148,7 +2148,7 @@ Mogą się one przydać jeśli te foldery zostaną stworzone ponownie.</translat
     <message>
         <location filename="../preferences.ui" line="129"/>
         <source>Show folder context menu with Ctrl + right click</source>
-        <translation>Otwórz menu kontekstowe folderu za pomocą Ctrl + prawy przycisk myszy</translation>
+        <translation>Otwórz menu kontekstowe katalogu za pomocą Ctrl + prawy przycisk myszy</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="195"/>
@@ -2165,7 +2165,7 @@ Mogą się one przydać jeśli te foldery zostaną stworzone ponownie.</translat
         <location filename="../preferences.ui" line="409"/>
         <location filename="../preferences.ui" line="419"/>
         <source>Requires application restart to take effect completely</source>
-        <translation>Wymaga ponownego uruchomienia aplikacji, aby uzyskać pełny efekt</translation>
+        <translation>Wymaga ponownego uruchomienia programu, aby uzyskać pełny efekt</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="212"/>
@@ -2175,12 +2175,12 @@ Mogą się one przydać jeśli te foldery zostaną stworzone ponownie.</translat
     <message>
         <location filename="../preferences.ui" line="219"/>
         <source>Renamed files will also be selected</source>
-        <translation>Pliki ze zmienioną nazwą również zostaną&#xa0;wybrane</translation>
+        <translation>Pliki ze zmienioną nazwą również zostaną wybrane</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="229"/>
         <source>Open folders in new tabs as far as possible</source>
-        <translation>Otwórz foldery w nowych kartach w miarę możliwości</translation>
+        <translation>Otwórz katalogi w nowych kartach w miarę możliwości</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="232"/>
@@ -2339,7 +2339,7 @@ Wartość -1 oznacza, brak limitu dla rozmiaru pliku (ustawienie domyślne).</tr
     <message>
         <location filename="../preferences.ui" line="983"/>
         <source>Application restart is needed for changes to take effect.</source>
-        <translation>Aby uzyskać efekt, musisz uruchomić aplikację ponownie.</translation>
+        <translation>Aby uzyskać efekt, musisz uruchomić ponownie program.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="136"/>
@@ -2429,7 +2429,7 @@ Wartość -1 oznacza, brak limitu dla rozmiaru pliku (ustawienie domyślne).</tr
     <message>
         <location filename="../preferences.ui" line="909"/>
         <source>Run default application after creation from template</source>
-        <translation>Uruchom domyślną aplikację po utworzeniu pliku z szablonu</translation>
+        <translation>Uruchom domyślny program po utworzeniu pliku z szablonu</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="824"/>

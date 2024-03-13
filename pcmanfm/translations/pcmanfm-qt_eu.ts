@@ -1059,7 +1059,7 @@ ezkerreko klik egiten dira, fitxategi-kudeatzaile lehenetsia ez denean ere.</tra
     <message>
         <location filename="../main-win.ui" line="716"/>
         <source>Ctrl+Q</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Q</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="734"/>
@@ -1094,7 +1094,7 @@ ezkerreko klik egiten dira, fitxategi-kudeatzaile lehenetsia ez denean ere.</tra
     <message>
         <location filename="../main-win.ui" line="890"/>
         <source>Ctrl+I</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+I</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="898"/>
@@ -1104,12 +1104,12 @@ ezkerreko klik egiten dira, fitxategi-kudeatzaile lehenetsia ez denean ere.</tra
     <message>
         <location filename="../main-win.ui" line="901"/>
         <source>Split View</source>
-        <translation type="unfinished"></translation>
+        <translation>Ikuspegi Zatitua</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="904"/>
         <source>F6</source>
-        <translation type="unfinished"></translation>
+        <translation>F6</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="909"/>
@@ -1119,7 +1119,7 @@ ezkerreko klik egiten dira, fitxategi-kudeatzaile lehenetsia ez denean ere.</tra
     <message>
         <location filename="../main-win.ui" line="912"/>
         <source>Ctrl+Shift+C</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+C</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="923"/>
@@ -1129,7 +1129,7 @@ ezkerreko klik egiten dira, fitxategi-kudeatzaile lehenetsia ez denean ere.</tra
     <message>
         <location filename="../main-win.ui" line="926"/>
         <source>Show Thumbnails</source>
-        <translation type="unfinished"></translation>
+        <translation>Erakutsi Miniaturak</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="934"/>
@@ -1139,7 +1139,7 @@ ezkerreko klik egiten dira, fitxategi-kudeatzaile lehenetsia ez denean ere.</tra
     <message>
         <location filename="../main-win.ui" line="937"/>
         <source>F9</source>
-        <translation type="unfinished"></translation>
+        <translation>F9</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="942"/>
@@ -1155,12 +1155,12 @@ ezkerreko klik egiten dira, fitxategi-kudeatzaile lehenetsia ez denean ere.</tra
         <location filename="../main-win.ui" line="952"/>
         <location filename="../main-win.ui" line="955"/>
         <source>Create Launcher</source>
-        <translation type="unfinished"></translation>
+        <translation>Sortu Abiarazlea</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="782"/>
         <source>Ctrl+B</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+B</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="787"/>
@@ -1170,7 +1170,7 @@ ezkerreko klik egiten dira, fitxategi-kudeatzaile lehenetsia ez denean ere.</tra
     <message>
         <location filename="../main-win.ui" line="790"/>
         <source>Ctrl+Shift+K</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+K</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="799"/>
@@ -1205,7 +1205,7 @@ ezkerreko klik egiten dira, fitxategi-kudeatzaile lehenetsia ez denean ere.</tra
     <message>
         <location filename="../main-win.ui" line="876"/>
         <source>Bulk Rename</source>
-        <translation type="unfinished"></translation>
+        <translation>Mailan Aldatu Izena</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="813"/>
@@ -1225,18 +1225,18 @@ ezkerreko klik egiten dira, fitxategi-kudeatzaile lehenetsia ez denean ere.</tra
     <message>
         <location filename="../main-win.ui" line="824"/>
         <source>Menu bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Menu-barra</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="827"/>
         <source>Ctrl+M</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+M</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="836"/>
         <location filename="../main-win.ui" line="839"/>
         <source>Menu</source>
-        <translation type="unfinished"></translation>
+        <translation>Menua</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="607"/>
@@ -1251,12 +1251,12 @@ ezkerreko klik egiten dira, fitxategi-kudeatzaile lehenetsia ez denean ere.</tra
     <message>
         <location filename="../main-win.ui" line="610"/>
         <source>New Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Fitxa Berria</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="613"/>
         <source>Ctrl+T</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+T</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="622"/>
@@ -1266,12 +1266,12 @@ ezkerreko klik egiten dira, fitxategi-kudeatzaile lehenetsia ez denean ere.</tra
     <message>
         <location filename="../main-win.ui" line="625"/>
         <source>Go Back</source>
-        <translation type="unfinished"></translation>
+        <translation>Atzera Egin</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="628"/>
         <source>Alt+Left</source>
-        <translation type="unfinished"></translation>
+        <translation>Alt+Left</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="637"/>
@@ -1281,12 +1281,12 @@ ezkerreko klik egiten dira, fitxategi-kudeatzaile lehenetsia ez denean ere.</tra
     <message>
         <location filename="../main-win.ui" line="640"/>
         <source>Go Forward</source>
-        <translation type="unfinished"></translation>
+        <translation>Aurrera Joan</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="643"/>
         <source>Alt+Right</source>
-        <translation type="unfinished"></translation>
+        <translation>Alt+Right</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="648"/>
@@ -1301,7 +1301,7 @@ ezkerreko klik egiten dira, fitxategi-kudeatzaile lehenetsia ez denean ere.</tra
     <message>
         <location filename="../main-win.ui" line="663"/>
         <source>Del</source>
-        <translation type="unfinished"></translation>
+        <translation>Del</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="668"/>
@@ -1311,7 +1311,7 @@ ezkerreko klik egiten dira, fitxategi-kudeatzaile lehenetsia ez denean ere.</tra
     <message>
         <location filename="../main-win.ui" line="671"/>
         <source>F2</source>
-        <translation type="unfinished"></translation>
+        <translation>F2</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="676"/>
@@ -1321,7 +1321,7 @@ ezkerreko klik egiten dira, fitxategi-kudeatzaile lehenetsia ez denean ere.</tra
     <message>
         <location filename="../main-win.ui" line="679"/>
         <source>Ctrl+W</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+W</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="684"/>
@@ -1331,7 +1331,7 @@ ezkerreko klik egiten dira, fitxategi-kudeatzaile lehenetsia ez denean ere.</tra
     <message>
         <location filename="../main-win.ui" line="687"/>
         <source>Alt+Return</source>
-        <translation type="unfinished"></translation>
+        <translation>Alt+Return</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="692"/>
@@ -1341,7 +1341,7 @@ ezkerreko klik egiten dira, fitxategi-kudeatzaile lehenetsia ez denean ere.</tra
     <message>
         <location filename="../main-win.ui" line="721"/>
         <source>Edit Bookmarks</source>
-        <translation type="unfinished"></translation>
+        <translation>Editatu Laster-markak</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="726"/>
@@ -1351,7 +1351,7 @@ ezkerreko klik egiten dira, fitxategi-kudeatzaile lehenetsia ez denean ere.</tra
     <message>
         <location filename="../main-win.ui" line="729"/>
         <source>F4</source>
-        <translation type="unfinished"></translation>
+        <translation>F4</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="739"/>
@@ -1361,12 +1361,12 @@ ezkerreko klik egiten dira, fitxategi-kudeatzaile lehenetsia ez denean ere.</tra
     <message>
         <location filename="../main-win.ui" line="751"/>
         <source>Ctrl+Shift+N</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+N</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="763"/>
         <source>Ctrl+Alt+N</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Alt+N</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="768"/>
@@ -1376,7 +1376,7 @@ ezkerreko klik egiten dira, fitxategi-kudeatzaile lehenetsia ez denean ere.</tra
     <message>
         <location filename="../main-win.ui" line="771"/>
         <source>F3</source>
-        <translation type="unfinished"></translation>
+        <translation>F3</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="70"/>
@@ -1422,7 +1422,7 @@ ezkerreko klik egiten dira, fitxategi-kudeatzaile lehenetsia ez denean ere.</tra
     <message>
         <location filename="../main-win.ui" line="253"/>
         <source>Main Toolbar</source>
-        <translation type="unfinished"></translation>
+        <translation>Tresna-barra Nagusia</translation>
     </message>
 </context>
 <context>
@@ -1430,53 +1430,53 @@ ezkerreko klik egiten dira, fitxategi-kudeatzaile lehenetsia ez denean ere.</tra
     <message>
         <location filename="../application.cpp" line="187"/>
         <source>Name of configuration profile</source>
-        <translation type="unfinished"></translation>
+        <translation>Konfigurazio-profilaren Izena</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="187"/>
         <source>PROFILE</source>
-        <translation type="unfinished"></translation>
+        <translation>PERFILA</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="190"/>
         <source>Run PCManFM-Qt as a daemon</source>
-        <translation type="unfinished"></translation>
+        <translation>Exekutatu PCManFM-Qt deabru gisa</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="193"/>
         <source>Quit PCManFM-Qt</source>
-        <translation type="unfinished"></translation>
+        <translation>Irten PCManFM-Qt</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="196"/>
         <source>Launch desktop manager</source>
-        <translation type="unfinished"></translation>
+        <translation>Abiarazi mahaigaineko kudeatzailea</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="199"/>
         <source>Turn off desktop manager if it&apos;s running</source>
-        <translation type="unfinished"></translation>
+        <translation>Desaktibatu mahaigaineko kudeatzailea exekutatzen ari bada</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="202"/>
         <source>Open desktop preference dialog on the page with the specified name</source>
-        <translation type="unfinished"></translation>
+        <translation>Ireki mahaigaineko hobespenen elkarrizketa-koadroa zehaztutako izena duen orrian</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="202"/>
         <location filename="../application.cpp" line="217"/>
         <source>NAME</source>
-        <translation type="unfinished"></translation>
+        <translation>IZENA</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="205"/>
         <source>Open new window</source>
-        <translation type="unfinished"></translation>
+        <translation>Ireki leiho berria</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="208"/>
         <source>Open Find Files utility</source>
-        <translation type="unfinished"></translation>
+        <translation>Ireki Bilatu fitxategiak utilitatea</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="211"/>
@@ -1501,12 +1501,12 @@ ezkerreko klik egiten dira, fitxategi-kudeatzaile lehenetsia ez denean ere.</tra
     <message>
         <location filename="../application.cpp" line="217"/>
         <source>Open Preferences dialog on the page with the specified name</source>
-        <translation type="unfinished"></translation>
+        <translation>Ireki Hobespenen elkarrizketa-koadroa zehaztutako izena duen orrian</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="220"/>
         <source>Files or directories to open</source>
-        <translation type="unfinished"></translation>
+        <translation>Ireki beharreko fitxategiak edo direktorioak</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="220"/>
@@ -1517,12 +1517,12 @@ ezkerreko klik egiten dira, fitxategi-kudeatzaile lehenetsia ez denean ere.</tra
         <location filename="../application.cpp" line="655"/>
         <location filename="../application.cpp" line="660"/>
         <source>Error</source>
-        <translation type="unfinished"></translation>
+        <translation>Errorea</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="660"/>
         <source>Terminal emulator is not set.</source>
-        <translation type="unfinished"></translation>
+        <translation>Terminal-emuladorea ez dago ezarrita.</translation>
     </message>
 </context>
 <context>
@@ -1530,12 +1530,12 @@ ezkerreko klik egiten dira, fitxategi-kudeatzaile lehenetsia ez denean ere.</tra
     <message>
         <location filename="../autorundialog.cpp" line="44"/>
         <source>Open in file manager</source>
-        <translation type="unfinished"></translation>
+        <translation>Ireki fitxategi-kudeatzailean</translation>
     </message>
     <message>
         <location filename="../autorundialog.cpp" line="138"/>
         <source>Removable Disk</source>
-        <translation type="unfinished"></translation>
+        <translation>Disko Aldagarria</translation>
     </message>
 </context>
 <context>
@@ -1543,32 +1543,32 @@ ezkerreko klik egiten dira, fitxategi-kudeatzaile lehenetsia ez denean ere.</tra
     <message>
         <location filename="../connectserverdialog.cpp" line="9"/>
         <source>SSH</source>
-        <translation type="unfinished"></translation>
+        <translation>SSH</translation>
     </message>
     <message>
         <location filename="../connectserverdialog.cpp" line="10"/>
         <source>FTP</source>
-        <translation type="unfinished"></translation>
+        <translation>FTP</translation>
     </message>
     <message>
         <location filename="../connectserverdialog.cpp" line="11"/>
         <source>WebDav</source>
-        <translation type="unfinished"></translation>
+        <translation>WebDav</translation>
     </message>
     <message>
         <location filename="../connectserverdialog.cpp" line="12"/>
         <source>Secure WebDav</source>
-        <translation type="unfinished"></translation>
+        <translation>WebDav Segurua</translation>
     </message>
     <message>
         <location filename="../connectserverdialog.cpp" line="13"/>
         <source>HTTP</source>
-        <translation type="unfinished"></translation>
+        <translation>HTTP</translation>
     </message>
     <message>
         <location filename="../connectserverdialog.cpp" line="14"/>
         <source>HTTPS</source>
-        <translation type="unfinished"></translation>
+        <translation>HTTPS</translation>
     </message>
 </context>
 <context>
@@ -1576,42 +1576,42 @@ ezkerreko klik egiten dira, fitxategi-kudeatzaile lehenetsia ez denean ere.</tra
     <message>
         <location filename="../desktopentrydialog.cpp" line="35"/>
         <source>Command:</source>
-        <translation type="unfinished"></translation>
+        <translation>Agindua:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="36"/>
         <source>The command to execute.</source>
-        <translation type="unfinished"></translation>
+        <translation>Exekutatu beharreko komandoa.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="39"/>
         <source>URL:</source>
-        <translation type="unfinished"></translation>
+        <translation>URL:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="40"/>
         <source>The URL to access.</source>
-        <translation type="unfinished"></translation>
+        <translation>Sartzeko URLa.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="67"/>
         <source>Select an icon</source>
-        <translation type="unfinished"></translation>
+        <translation>Hautatu ikono bat</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="69"/>
         <source>Images (*.png *.xpm *.svg *.svgz )</source>
-        <translation type="unfinished"></translation>
+        <translation>Irudiak (*.png *.xpm *.svg *.svgz )</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="91"/>
         <source>Select an executable file</source>
-        <translation type="unfinished"></translation>
+        <translation>Hautatu fitxategi exekutagarri bat</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="99"/>
         <source>Select a file</source>
-        <translation type="unfinished"></translation>
+        <translation>Hautatu fitxategi bat</translation>
     </message>
 </context>
 <context>
@@ -1619,47 +1619,47 @@ ezkerreko klik egiten dira, fitxategi-kudeatzaile lehenetsia ez denean ere.</tra
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="52"/>
         <source>Fill with background color only</source>
-        <translation type="unfinished"></translation>
+        <translation>Bete atzeko planoko kolorearekin soilik</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="53"/>
         <source>Stretch to fill the entire screen</source>
-        <translation type="unfinished"></translation>
+        <translation>Luzatu pantaila osoa betetzeko</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="54"/>
         <source>Stretch to fit the screen</source>
-        <translation type="unfinished"></translation>
+        <translation>Luzatu pantailara egokitzeko</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="55"/>
         <source>Center on the screen</source>
-        <translation type="unfinished"></translation>
+        <translation>Zentratu pantailan</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="56"/>
         <source>Tile the image to fill the entire screen</source>
-        <translation type="unfinished"></translation>
+        <translation>Lauzatu irudia pantaila osoa betetzeko</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="57"/>
         <source>Zoom the image to fill the entire screen</source>
-        <translation type="unfinished"></translation>
+        <translation>Handitu irudia pantaila osoa betetzeko</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="264"/>
         <source>Select Wallpaper</source>
-        <translation type="unfinished"></translation>
+        <translation>Hautatu Horma-papera</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="268"/>
         <source>Image Files</source>
-        <translation type="unfinished"></translation>
+        <translation>Irudi fitxategiak</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="310"/>
         <source>Select Wallpaper Folder</source>
-        <translation type="unfinished"></translation>
+        <translation>Hautatu Horma-irudiaren Karpeta</translation>
     </message>
 </context>
 <context>
@@ -1667,34 +1667,35 @@ ezkerreko klik egiten dira, fitxategi-kudeatzaile lehenetsia ez denean ere.</tra
     <message>
         <location filename="../desktopwindow.cpp" line="303"/>
         <source>Trash (One item)</source>
-        <translation type="unfinished"></translation>
+        <translation>Zaborrontzia (Elementu bat)</translation>
     </message>
     <message numerus="yes">
         <location filename="../desktopwindow.cpp" line="306"/>
         <source>Trash (%Ln items)</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>Zaborrontzia (%Ln elementu)</numerusform>
+            <numerusform>Zaborrontzia (%Ln elementu)</numerusform>
         </translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="310"/>
         <source>Trash (Empty)</source>
-        <translation type="unfinished"></translation>
+        <translation>Zaborrontzia (hutsik)</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="345"/>
         <source>Computer</source>
-        <translation type="unfinished"></translation>
+        <translation>Ordenagailua</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="359"/>
         <source>Network</source>
-        <translation type="unfinished"></translation>
+        <translation>Sarea</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="1011"/>
         <source>Open</source>
-        <translation type="unfinished"></translation>
+        <translation>Ireki</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="1017"/>
@@ -1705,22 +1706,22 @@ ezkerreko klik egiten dira, fitxategi-kudeatzaile lehenetsia ez denean ere.</tra
     <message>
         <location filename="../desktopwindow.cpp" line="1025"/>
         <source>Empty Trash</source>
-        <translation type="unfinished"></translation>
+        <translation>Hustu Zakarrontzia</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="1084"/>
         <source>Hide Desktop Items</source>
-        <translation type="unfinished"></translation>
+        <translation>Ezkutatu Mahaigaineko Elementuak</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="1090"/>
         <source>Create Launcher</source>
-        <translation type="unfinished"></translation>
+        <translation>Sortu Abiarazlea</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="1093"/>
         <source>Desktop Preferences</source>
-        <translation type="unfinished"></translation>
+        <translation>Mahaigaineko Hobespenak</translation>
     </message>
 </context>
 <context>
@@ -1736,7 +1737,7 @@ ezkerreko klik egiten dira, fitxategi-kudeatzaile lehenetsia ez denean ere.</tra
     <message>
         <location filename="../tabpage.cpp" line="65"/>
         <source>Clear text (Ctrl+K or Esc)</source>
-        <translation type="unfinished"></translation>
+        <translation>Garbitu testua (Ktrl+K edo Esc)</translation>
     </message>
 </context>
 <context>
@@ -1744,22 +1745,22 @@ ezkerreko klik egiten dira, fitxategi-kudeatzaile lehenetsia ez denean ere.</tra
     <message>
         <location filename="../mainwindow.cpp" line="142"/>
         <source>Root Instance</source>
-        <translation type="unfinished"></translation>
+        <translation>Root Instantzia</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="780"/>
         <source>Hide menu bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Ezkutatu menu-barra</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="781"/>
         <source>This will hide the menu bar completely, use Ctrl+M to show it again.</source>
-        <translation type="unfinished"></translation>
+        <translation>Honek menu-barra guztiz ezkutatuko du, erabili Ctrl+M berriro erakusteko.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="1228"/>
         <source>Version: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Bertsioa: %1</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="175"/>
@@ -1776,13 +1777,13 @@ ezkerreko klik egiten dira, fitxategi-kudeatzaile lehenetsia ez denean ere.</tra
     <message>
         <location filename="../mainwindow.cpp" line="2039"/>
         <source>Customized View Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Ikuspegi Pertsonalizatuaren Ezarpenak</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="2310"/>
         <location filename="../mainwindow.cpp" line="2318"/>
         <source>Error</source>
-        <translation type="unfinished"></translation>
+        <translation>Errorea</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="2318"/>
