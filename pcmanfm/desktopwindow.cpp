@@ -203,6 +203,7 @@ DesktopWindow::DesktopWindow(int screenNum):
                 layershell->setAnchors(anchors);
                 layershell->setKeyboardInteractivity(LayerShellQt::Window::KeyboardInteractivityOnDemand);
                 layershell->setExclusiveZone(-1); // not moved to accommodate for other surfaces
+                layershell->setScope(QStringLiteral("desktop")); // just for distinguishing it
             }
         }
     }
@@ -926,10 +927,8 @@ void DesktopWindow::nextWallpaper() {
 }
 
 void DesktopWindow::updateFromSettings(Settings& settings, bool changeSlide) {
-    // Sicne the layout may be changed by what follows, we need to redo our layout.
-    // We also clear the current index to set it to the visually first item.
-    selectionModel()->clearCurrentIndex();
-    queueRelayout();
+    // Resetting of the layout will be done after (re-)loading the desktop folder (see onFolderFinishLoading).
+    listView_->setUpdatesEnabled(false); // prevent items from shaking
 
     // general PCManFM::View settings
     setAutoSelectionDelay(settings.singleClick() ? settings.autoSelectionDelay() : 0);
@@ -1215,9 +1214,10 @@ void DesktopWindow::onFolderFinishLoading() {
         if(model_) {
             connect(model_, &Fm::FolderModel::filesAdded, this, &DesktopWindow::onFilesAdded);
         }
-        // For some reason, resetting of the layout after loading is needed under Wayland.
-        // It is also safe under X11.
-        queueRelayout(100);
+        // With Qt6, resetting of the layout should be done after loading.
+        // We also clear the current index to set it to the visually first item.
+        selectionModel()->clearCurrentIndex();
+        queueRelayout();
     });
 }
 

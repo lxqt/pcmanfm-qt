@@ -822,6 +822,7 @@ DesktopWindow* Application::createDesktopWindow(int screenNum) {
 
     window->updateFromSettings(settings_);
     window->show();
+    window->queueRelayout(); // for some reason, sometimes needed with Qt6
     return window;
 }
 
