@@ -2348,12 +2348,12 @@ A value of -1 means that there is no limit for the file size (the default).</sou
     <message>
         <location filename="../preferences.ui" line="767"/>
         <source>Mount removable media automatically when they are inserted</source>
-        <translation type="unfinished"></translation>
+        <translation>Muntatu euskarri aldagarriak automatikoki sartzen direnean</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="774"/>
         <source>Show available options for removable media when they are inserted</source>
-        <translation type="unfinished"></translation>
+        <translation>Erakutsi euskarri aldagarrietarako eskuragarri dauden aukerak sartzen direnean</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="784"/>
