@@ -490,6 +490,10 @@
    </property>
   </action>
   <action name="actionSelectAll">
+   <property name="icon">
+    <iconset theme="edit-select-all">
+     <normaloff>.</normaloff>.</iconset>
+   </property>
    <property name="text">
     <string>Select &amp;All</string>
    </property>
@@ -680,6 +684,10 @@
    </property>
   </action>
   <action name="actionFileProperties">
+   <property name="icon">
+    <iconset theme="document-properties">
+     <normaloff>.</normaloff>.</iconset>
+   </property>
    <property name="text">
     <string>File &amp;Properties</string>
    </property>
@@ -709,6 +717,10 @@
    </property>
   </action>
   <action name="actionCloseWindow">
+   <property name="icon">
+    <iconset theme="window-close">
+     <normaloff>.</normaloff>.</iconset>
+   </property>
    <property name="text">
     <string>&amp;Close Window</string>
    </property>
@@ -722,6 +734,10 @@
    </property>
   </action>
   <action name="actionOpenTerminal">
+   <property name="icon">
+    <iconset theme="utilities-terminal">
+     <normaloff>.</normaloff>.</iconset>
+   </property>
    <property name="text">
     <string>Open &amp;Terminal</string>
    </property>
@@ -848,6 +864,10 @@
    </property>
   </action>
   <action name="actionConnectToServer">
+   <property name="icon">
+    <iconset theme="network-server">
+     <normaloff>.</normaloff>.</iconset>
+   </property>
    <property name="text">
     <string>Connect to &amp;Server</string>
    </property>
