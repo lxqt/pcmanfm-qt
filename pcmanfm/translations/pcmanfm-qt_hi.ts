@@ -72,12 +72,12 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../about.ui" line="58"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/lxqt/pcmanfm-qt&quot;&gt;https://github.com/lxqt/pcmanfm-qt&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/lxqt/pcmanfm-qt&quot;&gt;https://github.com/lxqt/pcmanfm-qt&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../about.ui" line="74"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Wiki: &lt;a href=&quot;https://github.com/lxqt/pcmanfm-qt/wiki&quot;&gt;https://github.com/lxqt/pcmanfm-qt/wiki&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Wiki: &lt;a href=&quot;https://github.com/lxqt/pcmanfm-qt/wiki&quot;&gt;https://github.com/lxqt/pcmanfm-qt/wiki&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../about.ui" line="135"/>
@@ -129,12 +129,12 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../bulk-rename.ui" line="80"/>
         <source>Pad numbers with zero if possible</source>
-        <translation type="unfinished"></translation>
+        <translation>संभव हो तो संख्याओं को शून्य से पैडिंग करें</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="87"/>
         <source>Use localized numbers</source>
-        <translation type="unfinished"></translation>
+        <translation>स्थानीयकृत संख्याओं का प्रयोग करें</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="27"/>
@@ -162,7 +162,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../connect.ui" line="90"/>
         <source>Login as &amp;user:</source>
-        <translation>&amp;उपयोगकर्ता के रूप में लॉगिन करें :</translation>
+        <translation>उपयोगकर्ता के रूप में लॉगिन करें (&amp;U):</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="29"/>
@@ -195,7 +195,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../desktopentrydialog.ui" line="14"/>
         <source>Create Launcher</source>
-        <translation>लॉन्चर बनाएं</translation>
+        <translation>लॉन्चर बनाएँ</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="38"/>
@@ -205,7 +205,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../desktopentrydialog.ui" line="45"/>
         <source>Specific name of this launcher.</source>
-        <translation type="unfinished"></translation>
+        <translation>इस लॉन्चर का विशिष्ट नाम।</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="58"/>
@@ -217,7 +217,9 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
         <source>A short description or generic name, like &quot;Web Browser&quot; or &quot;Home Directory&quot;.
 
 It can be left empty.</source>
-        <translation type="unfinished"></translation>
+        <translation>संक्षिप्त विवरण या सामान्य नाम, जैसे &quot;वेब ब्राउज़र&quot; या &quot;Home Directory&quot;।
+
+इसे खाली छोड़ा जा सकता है।</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="77"/>
@@ -229,7 +231,9 @@ It can be left empty.</source>
         <source>A short comment.
 
 It can be left empty.</source>
-        <translation type="unfinished"></translation>
+        <translation>एक संक्षिप्त टिप्पणी।
+
+इसे खाली छोड़ा जा सकता है।</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="117"/>
@@ -250,7 +254,7 @@ It can be left empty.</source>
     <message>
         <location filename="../desktopentrydialog.ui" line="151"/>
         <source>Icon to display in file manager, menus, etc.</source>
-        <translation type="unfinished"></translation>
+        <translation>फ़ाइल प्रबंधक, मेनू आदि में प्रदर्शित करने के लिए चिह्न।</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="173"/>
@@ -266,7 +270,7 @@ It can be left empty.</source>
     <message>
         <location filename="../desktopentrydialog.ui" line="186"/>
         <source>Whether the launched program should run in a terminal window.</source>
-        <translation type="unfinished"></translation>
+        <translation>यदि लॉन्च किये गए प्रोग्राम को टर्मिनल विंडो में चलना चाहिए।</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="190"/>
@@ -286,7 +290,7 @@ It can be left empty.</source>
     <message>
         <location filename="../desktopentrydialog.ui" line="210"/>
         <source>Whether this is a link or executes a command.</source>
-        <translation type="unfinished"></translation>
+        <translation>यदि यह एक लिंक है या एक कमांड निष्पादित करता है।</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="214"/>
@@ -301,7 +305,7 @@ It can be left empty.</source>
     <message>
         <location filename="../desktopentrydialog.ui" line="96"/>
         <source>Categories:</source>
-        <translation type="unfinished"></translation>
+        <translation>श्रेणियाँ :</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="103"/>
@@ -310,7 +314,11 @@ It can be left empty.</source>
 It is needed only when you want to use the created file in the main menu. Otherwise, you could leave it empty.
 
 Examples: AudioVideo, Audio, Video, Development, Education, Game, Graphics, Network, Office, Settings, System, Utility, Qt.</source>
-        <translation type="unfinished"></translation>
+        <translation>सेमीकोलन से अलग की गई श्रेणियाँ जिनमें इस प्रविष्टि को दिखाया जाना चाहिए यदि इसका उपयोग डीई के मुख्य मेनू मे किया जाता है (उदाहरण के लिए, जब इसे ~/.local/share/applications के अंदर रखा जाता है)।
+
+इसकी आवश्यकता तभी होती है जब आप बनाई गई फ़ाइल को मुख्य मेनू में उपयोग करना चाहते हैं। अन्यथा, आप इसे खाली छोड़ सकते हैं।
+
+उदाहरण : AudioVideo, Audio, Video, Development, Education, Game, Graphics, Network, Office, Settings, System, Utility, Qt।</translation>
     </message>
 </context>
 <context>
@@ -469,7 +477,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../desktop-preferences.ui" line="230"/>
         <source>Margins of work area:</source>
-        <translation type="unfinished"></translation>
+        <translation>कार्य क्षेत्र की सीमाएँ :</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="303"/>
@@ -571,7 +579,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktop-preferences.ui" line="637"/>
         <source>Trash</source>
-        <translation>कचरा</translation>
+        <translation>रद्दी</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="648"/>
@@ -723,17 +731,17 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../shortcuts.ui" line="135"/>
         <source>Drop+Shift</source>
-        <translation type="unfinished"></translation>
+        <translation>Drop+Shift</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="143"/>
         <source>Drop+Ctrl</source>
-        <translation type="unfinished"></translation>
+        <translation>Drop+Ctrl</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="151"/>
         <source>Drop+Shift+Ctrl</source>
-        <translation type="unfinished"></translation>
+        <translation>Drop+Shift+Ctrl</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="138"/>
@@ -866,7 +874,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="388"/>
         <source>&amp;Trash</source>
-        <translation>&amp;कचरा</translation>
+        <translation>&amp;रद्दी</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="393"/>
@@ -901,7 +909,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="437"/>
         <source>&amp;Compact View</source>
-        <translation>&amp;कॉम्पैक्ट दृश्य</translation>
+        <translation>संक्षिप्त दृश्य (&amp;C)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="445"/>
@@ -956,7 +964,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="502"/>
         <source>De&amp;select All</source>
-        <translation type="unfinished"></translation>
+        <translation>सबको अचयनित करें (&amp;S)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="505"/>
@@ -1076,7 +1084,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="734"/>
         <source>Open Tab in &amp;Root Instance</source>
-        <translation>&amp;रूट इंस्टेंस में टैब खोलें</translation>
+        <translation>रूट इंस्टेंस में टैब खोलें (&amp;R)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="748"/>
@@ -1318,7 +1326,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="668"/>
         <source>&amp;Rename</source>
-        <translation type="unfinished"></translation>
+        <translation>नाम बदलें (&amp;R)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="671"/>
@@ -1328,7 +1336,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="676"/>
         <source>C&amp;lose Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>टैब बंद करें (&amp;L)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="679"/>
@@ -1338,27 +1346,27 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="684"/>
         <source>File &amp;Properties</source>
-        <translation type="unfinished"></translation>
+        <translation>फ़ाइल के गुण (&amp;P)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="687"/>
         <source>Alt+Return</source>
-        <translation type="unfinished"></translation>
+        <translation>Alt+Return</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="692"/>
         <source>&amp;Folder Properties</source>
-        <translation type="unfinished"></translation>
+        <translation>फ़ोल्डर के गुण (&amp;F)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="721"/>
         <source>Edit Bookmarks</source>
-        <translation type="unfinished"></translation>
+        <translation>बुकमार्क संपादित करें</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="726"/>
         <source>Open &amp;Terminal</source>
-        <translation type="unfinished"></translation>
+        <translation>टर्मिनल खोलें (&amp;T)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="729"/>
@@ -1368,22 +1376,22 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="739"/>
         <source>&amp;Edit Bookmarks</source>
-        <translation type="unfinished"></translation>
+        <translation>बुकमार्क संपादित करें (&amp;E)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="751"/>
         <source>Ctrl+Shift+N</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+N</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="763"/>
         <source>Ctrl+Alt+N</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Alt+N</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="768"/>
         <source>&amp;Find Files</source>
-        <translation type="unfinished"></translation>
+        <translation>फ़ाइलें ढूंढें (&amp;F)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="771"/>
@@ -1398,7 +1406,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="74"/>
         <source>C&amp;reate New</source>
-        <translation type="unfinished"></translation>
+        <translation>नया बनाएं (&amp;R)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="98"/>
@@ -1414,7 +1422,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="109"/>
         <source>&amp;Sorting</source>
-        <translation type="unfinished"></translation>
+        <translation>छँटाई (&amp;S)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="185"/>
@@ -1424,12 +1432,12 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="204"/>
         <source>&amp;Bookmarks</source>
-        <translation type="unfinished"></translation>
+        <translation>बुकमार्क (&amp;B)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="211"/>
         <source>&amp;Go</source>
-        <translation type="unfinished"></translation>
+        <translation>जाएँ (&amp;G)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="253"/>
@@ -1442,99 +1450,99 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../application.cpp" line="187"/>
         <source>Name of configuration profile</source>
-        <translation type="unfinished"></translation>
+        <translation>कॉन्फ़िगरेशन प्रोफ़ाइल का नाम</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="187"/>
         <source>PROFILE</source>
-        <translation type="unfinished"></translation>
+        <translation>PROFILE</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="190"/>
         <source>Run PCManFM-Qt as a daemon</source>
-        <translation type="unfinished"></translation>
+        <translation>PCManFM-Qt को डेमन के रूप में चलाएँ</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="193"/>
         <source>Quit PCManFM-Qt</source>
-        <translation type="unfinished"></translation>
+        <translation>PCManFM-Qt से बाहर आएं</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="196"/>
         <source>Launch desktop manager</source>
-        <translation type="unfinished"></translation>
+        <translation>डेस्कटॉप मैनेजर चलाएँ</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="199"/>
         <source>Turn off desktop manager if it&apos;s running</source>
-        <translation type="unfinished"></translation>
+        <translation>यदि डेस्कटॉप मैनेजर चल रहा है उसे बंद करें</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="202"/>
         <source>Open desktop preference dialog on the page with the specified name</source>
-        <translation type="unfinished"></translation>
+        <translation>निर्दिष्ट नाम वाले पृष्ठ पर डेस्कटॉप प्राथमिकता संवाद खोलें</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="202"/>
         <location filename="../application.cpp" line="217"/>
         <source>NAME</source>
-        <translation type="unfinished"></translation>
+        <translation>NAME</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="205"/>
         <source>Open new window</source>
-        <translation type="unfinished"></translation>
+        <translation>नई विंडो खोलें</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="208"/>
         <source>Open Find Files utility</source>
-        <translation type="unfinished"></translation>
+        <translation>फ़ाइलें ढूँढें उपयोगिता खोलें</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="211"/>
         <source>Set desktop wallpaper from image FILE</source>
-        <translation type="unfinished"></translation>
+        <translation>चित्र FILE से डेस्कटॉप वॉलपेपर सेट करें</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="211"/>
         <source>FILE</source>
-        <translation type="unfinished"></translation>
+        <translation>FILE</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="214"/>
         <source>MODE</source>
-        <translation type="unfinished"></translation>
+        <translation>MODE</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="214"/>
         <source>Set mode of desktop wallpaper. MODE=(%1)</source>
-        <translation type="unfinished"></translation>
+        <translation>डेस्कटॉप वॉलपेपर का मोड सेट करें। MODE=(%1)</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="217"/>
         <source>Open Preferences dialog on the page with the specified name</source>
-        <translation type="unfinished"></translation>
+        <translation>निर्दिष्ट नाम वाले पृष्ठ पर प्राथमिकताएँ संवाद खोलें</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="220"/>
         <source>Files or directories to open</source>
-        <translation type="unfinished"></translation>
+        <translation>खोलने के लिए फ़ाइलें या डैरेक्टरियाँ</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="220"/>
         <source>[FILE1, FILE2,...]</source>
-        <translation type="unfinished"></translation>
+        <translation>[FILE1, FILE2,...]</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="655"/>
         <location filename="../application.cpp" line="660"/>
         <source>Error</source>
-        <translation type="unfinished"></translation>
+        <translation>त्रुटि</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="660"/>
         <source>Terminal emulator is not set.</source>
-        <translation type="unfinished"></translation>
+        <translation>टर्मिनल एम्यूलेटर सेट नहीं है।</translation>
     </message>
 </context>
 <context>
@@ -1542,12 +1550,12 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../autorundialog.cpp" line="44"/>
         <source>Open in file manager</source>
-        <translation type="unfinished"></translation>
+        <translation>फ़ाइल प्रबंधक में खोलें</translation>
     </message>
     <message>
         <location filename="../autorundialog.cpp" line="138"/>
         <source>Removable Disk</source>
-        <translation type="unfinished"></translation>
+        <translation>हटाने योग्य डिस्क</translation>
     </message>
 </context>
 <context>
@@ -1555,32 +1563,32 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../connectserverdialog.cpp" line="9"/>
         <source>SSH</source>
-        <translation type="unfinished"></translation>
+        <translation>SSH</translation>
     </message>
     <message>
         <location filename="../connectserverdialog.cpp" line="10"/>
         <source>FTP</source>
-        <translation type="unfinished"></translation>
+        <translation>FTP</translation>
     </message>
     <message>
         <location filename="../connectserverdialog.cpp" line="11"/>
         <source>WebDav</source>
-        <translation type="unfinished"></translation>
+        <translation>WebDav</translation>
     </message>
     <message>
         <location filename="../connectserverdialog.cpp" line="12"/>
         <source>Secure WebDav</source>
-        <translation type="unfinished"></translation>
+        <translation>सुरक्षित WebDav</translation>
     </message>
     <message>
         <location filename="../connectserverdialog.cpp" line="13"/>
         <source>HTTP</source>
-        <translation type="unfinished"></translation>
+        <translation>HTTP</translation>
     </message>
     <message>
         <location filename="../connectserverdialog.cpp" line="14"/>
         <source>HTTPS</source>
-        <translation type="unfinished"></translation>
+        <translation>HTTPS</translation>
     </message>
 </context>
 <context>
@@ -1593,37 +1601,37 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktopentrydialog.cpp" line="36"/>
         <source>The command to execute.</source>
-        <translation type="unfinished"></translation>
+        <translation>निष्पादित करने का कमांड.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="39"/>
         <source>URL:</source>
-        <translation type="unfinished"></translation>
+        <translation>URL:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="40"/>
         <source>The URL to access.</source>
-        <translation type="unfinished"></translation>
+        <translation>एक्सेस करने के लिए URL।</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="67"/>
         <source>Select an icon</source>
-        <translation type="unfinished"></translation>
+        <translation>चिह्न चुनें</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="69"/>
         <source>Images (*.png *.xpm *.svg *.svgz )</source>
-        <translation type="unfinished"></translation>
+        <translation>चित्रें (*.png *.xpm *.svg *.svgz )</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="91"/>
         <source>Select an executable file</source>
-        <translation type="unfinished"></translation>
+        <translation>निष्पादन योग्य फ़ाइल चुनें</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="99"/>
         <source>Select a file</source>
-        <translation type="unfinished"></translation>
+        <translation>फाइलें चुनें</translation>
     </message>
 </context>
 <context>
@@ -1631,47 +1639,47 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="52"/>
         <source>Fill with background color only</source>
-        <translation type="unfinished"></translation>
+        <translation>केवल पृष्ठभूमि रंग से भरें</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="53"/>
         <source>Stretch to fill the entire screen</source>
-        <translation type="unfinished"></translation>
+        <translation>पूरी स्क्रीन भरने के लिए खींचें</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="54"/>
         <source>Stretch to fit the screen</source>
-        <translation type="unfinished"></translation>
+        <translation>खींचकर स्क्रीन भरें</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="55"/>
         <source>Center on the screen</source>
-        <translation type="unfinished"></translation>
+        <translation>स्क्रीन पर केन्द्रित करें</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="56"/>
         <source>Tile the image to fill the entire screen</source>
-        <translation type="unfinished"></translation>
+        <translation>चित्र को टाइल करके पूरी स्क्रीन भरें</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="57"/>
         <source>Zoom the image to fill the entire screen</source>
-        <translation type="unfinished"></translation>
+        <translation>चित्र को ज़ूम करके पूरी स्क्रीन भरें</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="264"/>
         <source>Select Wallpaper</source>
-        <translation type="unfinished"></translation>
+        <translation>वॉलपेपर चुनें</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="268"/>
         <source>Image Files</source>
-        <translation type="unfinished"></translation>
+        <translation>चित्र फ़ाइलें</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="310"/>
         <source>Select Wallpaper Folder</source>
-        <translation type="unfinished"></translation>
+        <translation>वॉलपेपर फ़ोल्डर चुनें</translation>
     </message>
 </context>
 <context>
@@ -1679,20 +1687,20 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktopwindow.cpp" line="303"/>
         <source>Trash (One item)</source>
-        <translation type="unfinished"></translation>
+        <translation>रद्दी (1 वस्तु)</translation>
     </message>
     <message numerus="yes">
         <location filename="../desktopwindow.cpp" line="306"/>
         <source>Trash (%Ln items)</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>रद्दी (%Ln वस्तु)</numerusform>
+            <numerusform>रद्दी (%Ln वस्तुएँ)</numerusform>
         </translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="310"/>
         <source>Trash (Empty)</source>
-        <translation type="unfinished"></translation>
+        <translation>रद्दी (खाली)</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="345"/>
@@ -1707,23 +1715,23 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktopwindow.cpp" line="1011"/>
         <source>Open</source>
-        <translation type="unfinished"></translation>
+        <translation>खोलें</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="1017"/>
         <location filename="../desktopwindow.cpp" line="1057"/>
         <source>Stic&amp;k to Current Position</source>
-        <translation type="unfinished"></translation>
+        <translation>वर्तमान स्थिति पर कायम रहें (&amp;K)</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="1025"/>
         <source>Empty Trash</source>
-        <translation type="unfinished"></translation>
+        <translation>रद्दी खाली करें</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="1084"/>
         <source>Hide Desktop Items</source>
-        <translation type="unfinished"></translation>
+        <translation>डेस्कटॉप के वस्तुएँ छिपाएँ</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="1090"/>
@@ -1741,7 +1749,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../tabpage.cpp" line="95"/>
         <source>Filter:</source>
-        <translation type="unfinished"></translation>
+        <translation>फ़िल्टर करें :</translation>
     </message>
 </context>
 <context>
@@ -1749,7 +1757,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../tabpage.cpp" line="65"/>
         <source>Clear text (Ctrl+K or Esc)</source>
-        <translation type="unfinished"></translation>
+        <translation>टेक्स्ट साफ़ करें (Ctrl+K या Esc)</translation>
     </message>
 </context>
 <context>
@@ -1757,28 +1765,28 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../mainwindow.cpp" line="142"/>
         <source>Root Instance</source>
-        <translation type="unfinished"></translation>
+        <translation>रूट इंस्टेंस</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="780"/>
         <source>Hide menu bar</source>
-        <translation type="unfinished"></translation>
+        <translation>मेनू बार छिपाएँ</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="781"/>
         <source>This will hide the menu bar completely, use Ctrl+M to show it again.</source>
-        <translation type="unfinished"></translation>
+        <translation>इससे मेनू बार पूरी तरह छिप जाएगा, इसे दोबारा दिखाने के लिए Ctrl+M का उपयोग करें।</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="1228"/>
         <source>Version: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>संस्करण : %1</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="175"/>
         <location filename="../mainwindow.cpp" line="2203"/>
         <source>&amp;Move to Trash</source>
-        <translation type="unfinished"></translation>
+        <translation>रद्दी में भेजें (&amp;M)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="175"/>
@@ -1789,29 +1797,30 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../mainwindow.cpp" line="2039"/>
         <source>Customized View Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>अनुकूलित दृश्य सेटिंग्स</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="2310"/>
         <location filename="../mainwindow.cpp" line="2318"/>
         <source>Error</source>
-        <translation type="unfinished"></translation>
+        <translation>त्रुटि</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="2318"/>
         <source>Switch user command is not set.</source>
-        <translation type="unfinished"></translation>
+        <translation>उपयोगकर्ता बदलने का कमांड सेट नहीं है.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="2420"/>
         <source>Cleaning Folder Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>फ़ोल्डर सेटिंग्स की सफाई</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="2421"/>
         <source>Do you want to remove settings of nonexistent folders?
 They might be useful if those folders are created again.</source>
-        <translation type="unfinished"></translation>
+        <translation>क्या आप अस्तित्वहीन फ़ोल्डरों की सेटिंग हटाना चाहते हैं?
+यदि उन फ़ोल्डरों को दोबारा बनाया जाए तो वे उपयोगी हो सकते हैं।</translation>
     </message>
 </context>
 <context>
@@ -1819,32 +1828,32 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferencesdialog.cpp" line="206"/>
         <source>Icon View</source>
-        <translation type="unfinished"></translation>
+        <translation>चिह्न दृश्य</translation>
     </message>
     <message>
         <location filename="../preferencesdialog.cpp" line="207"/>
         <source>Compact View</source>
-        <translation type="unfinished"></translation>
+        <translation>संक्षिप्त दृश्य</translation>
     </message>
     <message>
         <location filename="../preferencesdialog.cpp" line="208"/>
         <source>Thumbnail View</source>
-        <translation type="unfinished"></translation>
+        <translation>थंबनेल दृश्य</translation>
     </message>
     <message>
         <location filename="../preferencesdialog.cpp" line="209"/>
         <source>Detailed List View</source>
-        <translation type="unfinished"></translation>
+        <translation>विस्तृत सूची दृश्य</translation>
     </message>
     <message>
         <location filename="../preferencesdialog.cpp" line="279"/>
         <source>Remove if added by user</source>
-        <translation type="unfinished"></translation>
+        <translation>यदि उपयोगकर्ता द्वारा डाला गया है तो हटा दें</translation>
     </message>
     <message>
         <location filename="../preferencesdialog.cpp" line="303"/>
         <source>Open user-defined list</source>
-        <translation type="unfinished"></translation>
+        <translation>उपयोगकर्ता द्वारा परिभाषित सूची खोलें</translation>
     </message>
 </context>
 <context>
@@ -1852,12 +1861,12 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../tabpage.cpp" line="443"/>
         <source>Search Results</source>
-        <translation type="unfinished"></translation>
+        <translation>खोज के परिणाम</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="446"/>
         <source>Applications</source>
-        <translation type="unfinished"></translation>
+        <translation>अनुप्रयोग</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="450"/>
@@ -1872,7 +1881,7 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../tabpage.cpp" line="456"/>
         <source>Trash</source>
-        <translation>कचरा</translation>
+        <translation>रद्दी</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="462"/>
@@ -1882,27 +1891,27 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../tabpage.cpp" line="553"/>
         <source>Error</source>
-        <translation type="unfinished"></translation>
+        <translation>त्रुटि</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="562"/>
         <source>Free space: %1 (Total: %2)</source>
-        <translation type="unfinished"></translation>
+        <translation>खाली जगह : %1 (कुल : %2)</translation>
     </message>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="579"/>
         <source>%n item(s)</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>%n वस्तु</numerusform>
+            <numerusform>%n वस्तुएँ</numerusform>
         </translation>
     </message>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="581"/>
         <source> (%n hidden)</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform> (%n छुपी)</numerusform>
+            <numerusform> (%n छुपी)</numerusform>
         </translation>
     </message>
     <message>
@@ -1910,14 +1919,14 @@ They might be useful if those folders are created again.</source>
         <location filename="../tabpage.cpp" line="789"/>
         <location filename="../tabpage.cpp" line="803"/>
         <source>Link to</source>
-        <translation type="unfinished"></translation>
+        <translation>लिंक गंतव्य</translation>
     </message>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="815"/>
         <source>%n item(s) selected</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>%n चयनित वस्तु</numerusform>
+            <numerusform>%n चयनित वस्तुएँ</numerusform>
         </translation>
     </message>
 </context>
@@ -1926,31 +1935,31 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../view.cpp" line="59"/>
         <source>Many files</source>
-        <translation type="unfinished"></translation>
+        <translation>कई फ़ाइलें</translation>
     </message>
     <message numerus="yes">
         <location filename="../view.cpp" line="60"/>
         <source>Do you want to open these %1 files?</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>क्या आप यह %1 फ़ाइल खोलना चाहते हैं?</numerusform>
+            <numerusform>क्या आप ये %1 फ़ाइलें खोलना चाहते हैं?</numerusform>
         </translation>
     </message>
     <message>
         <location filename="../view.cpp" line="122"/>
         <source>Open in New T&amp;ab</source>
-        <translation type="unfinished"></translation>
+        <translation>नए टैब में खोलें (&amp;A)</translation>
     </message>
     <message>
         <location filename="../view.cpp" line="126"/>
         <source>Open in New Win&amp;dow</source>
-        <translation type="unfinished"></translation>
+        <translation>नई विंडो में खोलें (&amp;D)</translation>
     </message>
     <message>
         <location filename="../view.cpp" line="134"/>
         <location filename="../view.cpp" line="152"/>
         <source>Open in Termina&amp;l</source>
-        <translation type="unfinished"></translation>
+        <translation>टर्मिनल में खोलें (&amp;L)</translation>
     </message>
 </context>
 <context>
@@ -1963,23 +1972,23 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferences.ui" line="45"/>
         <source>User Interface</source>
-        <translation type="unfinished"></translation>
+        <translation>यूज़र इंटरफ़ेस</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="35"/>
         <source>Behavior</source>
-        <translation type="unfinished"></translation>
+        <translation>व्यवहार</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="50"/>
         <location filename="../preferences.ui" line="642"/>
         <source>Thumbnail</source>
-        <translation type="unfinished"></translation>
+        <translation>थंबनेल</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="55"/>
         <source>Volume</source>
-        <translation type="unfinished"></translation>
+        <translation>वॉल्यूम</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="60"/>
@@ -1989,7 +1998,7 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferences.ui" line="222"/>
         <source>Select newly created files</source>
-        <translation type="unfinished"></translation>
+        <translation>नव निर्मित फ़ाइलों का चयन करें</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="296"/>
@@ -1999,22 +2008,22 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferences.ui" line="328"/>
         <source>Size of big icons:</source>
-        <translation type="unfinished"></translation>
+        <translation>बड़े चिह्नों का आकार :</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="345"/>
         <source>Size of small icons:</source>
-        <translation type="unfinished"></translation>
+        <translation>छोटे चिह्नों का आकार :</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="362"/>
         <source>Size of thumbnails:</source>
-        <translation type="unfinished"></translation>
+        <translation>थंबनेल का आकार :</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="376"/>
         <source>Size of side pane icons:</source>
-        <translation type="unfinished"></translation>
+        <translation>साइड पेन चिह्न का आकार :</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="308"/>
@@ -2029,178 +2038,178 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferences.ui" line="559"/>
         <source>Always show the tab bar</source>
-        <translation type="unfinished"></translation>
+        <translation>हमेशा टैब बार दिखाएं</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="566"/>
         <source>Show &apos;Close&apos; buttons on tabs	</source>
-        <translation type="unfinished"></translation>
+        <translation>टैब पर &apos;बंद करें&apos; बटन दिखाएं	</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="580"/>
         <source>Remember the size of the last closed window</source>
-        <translation type="unfinished"></translation>
+        <translation>अंतिम बंद विंडो का आकार याद रखें</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="587"/>
         <source>Default width of new windows:</source>
-        <translation type="unfinished"></translation>
+        <translation>नई विंडो की डिफ़ॉल्ट चौड़ाई :</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="601"/>
         <source>Default height of new windows:</source>
-        <translation type="unfinished"></translation>
+        <translation>नई विंडो की डिफ़ॉल्ट ऊंचाई :</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="81"/>
         <source>Browsing</source>
-        <translation type="unfinished"></translation>
+        <translation>ब्राउज़िंग</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="93"/>
         <source>Open files with single click</source>
-        <translation type="unfinished"></translation>
+        <translation>सिंगल क्लिक से फ़ाइलें खोलें</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="162"/>
         <source>Default view mode:</source>
-        <translation type="unfinished"></translation>
+        <translation>डिफ़ॉल्ट दृश्य मोड :</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="119"/>
         <source> sec</source>
-        <translation type="unfinished"></translation>
+        <translation> सेकेंड</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="175"/>
         <source>File Operations</source>
-        <translation type="unfinished"></translation>
+        <translation>फ़ाइल संचालन</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="181"/>
         <source>Confirm before deleting files</source>
-        <translation type="unfinished"></translation>
+        <translation>फ़ाइलें मिटाने से पहले पुष्टि करें</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="188"/>
         <source>Move deleted files to &quot;trash bin&quot; instead of erasing from disk.</source>
-        <translation type="unfinished"></translation>
+        <translation>मिटाई गई फ़ाइलों को डिस्क से निकालने के बजाय &quot;रद्दी&quot; में भेजें।</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="651"/>
         <source>Show thumbnails of files</source>
-        <translation type="unfinished"></translation>
+        <translation>फ़ाइलों के थंबनेल दिखाएँ</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="658"/>
         <source>Only show thumbnails for local files</source>
-        <translation type="unfinished"></translation>
+        <translation>केवल स्थानीय फ़ाइलों के लिए थंबनेल दिखाएं</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="40"/>
         <source>Display</source>
-        <translation type="unfinished"></translation>
+        <translation>डिस्प्ले</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="90"/>
         <source>If this is unchecked, the DE setting will be used.</source>
-        <translation type="unfinished"></translation>
+        <translation>यदि यह चेक नहीं किया गया है, तो डीई की सेटिंग का उपयोग किया जाएगा।</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="103"/>
         <location filename="../preferences.ui" line="116"/>
         <source>Set to zero to disable auto-selection.</source>
-        <translation type="unfinished"></translation>
+        <translation>स्वतः-चयन को अक्षम करने के लिए शून्य पर सेट करें।</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="106"/>
         <source>Delay of auto-selection in single click mode:</source>
-        <translation type="unfinished"></translation>
+        <translation>सिंगल क्लिक मोड में स्वतः चयन में देरी :</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="144"/>
         <source>Open in current tab</source>
-        <translation type="unfinished"></translation>
+        <translation>वर्तमान टैब में खोलें</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="149"/>
         <source>Open in new tab</source>
-        <translation type="unfinished"></translation>
+        <translation>नये टैब में खोलें</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="154"/>
         <source>Open in new window</source>
-        <translation type="unfinished"></translation>
+        <translation>नई विंडो में खोलें</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="195"/>
         <source>Erase files on removable media instead of &quot;trash can&quot; creation</source>
-        <translation type="unfinished"></translation>
+        <translation>हटाने योग्य मीडिया पर &quot;रद्दी&quot; बनाने के बजाय फ़ाइलों को सीधे मिटा दें</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="202"/>
         <source>Confirm before moving files into &quot;trash can&quot;</source>
-        <translation type="unfinished"></translation>
+        <translation>फ़ाइलों को &quot;रद्दी&quot; में भेजने से पहले पुष्टि करें</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="209"/>
         <location filename="../preferences.ui" line="409"/>
         <location filename="../preferences.ui" line="419"/>
         <source>Requires application restart to take effect completely</source>
-        <translation type="unfinished"></translation>
+        <translation>पूर्ण प्रभाव के लिए एप्लिकेशन को पुनरारंभ करें</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="212"/>
         <source>Launch executable files without prompt</source>
-        <translation type="unfinished"></translation>
+        <translation>पुष्टिकरण के बिना निष्पादन योग्य फ़ाइल लॉन्च करें</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="219"/>
         <source>Renamed files will also be selected</source>
-        <translation type="unfinished"></translation>
+        <translation>पुनर्नामित फ़ाइलें भी चयनित की जाएंगी</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="244"/>
         <source>Number of recent files:</source>
-        <translation type="unfinished"></translation>
+        <translation>हाल ही में उपयोग की गई फ़ाइलों की संख्या :</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="325"/>
         <location filename="../preferences.ui" line="335"/>
         <source>Used by Icon View</source>
-        <translation type="unfinished"></translation>
+        <translation>चिह्न दृश्य द्वारा प्रयुक्त</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="342"/>
         <location filename="../preferences.ui" line="352"/>
         <source>Used by Compact View and Detailed List View</source>
-        <translation type="unfinished"></translation>
+        <translation>संक्षिप्त दृश्य और विस्तृत सूची दृश्य द्वारा प्रयुक्त</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="359"/>
         <location filename="../preferences.ui" line="369"/>
         <source>Used by Thumbnail View</source>
-        <translation type="unfinished"></translation>
+        <translation>थंबनेल दृश्य द्वारा प्रयुक्त</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="389"/>
         <source>User interface</source>
-        <translation type="unfinished"></translation>
+        <translation>यूज़र इंटरफ़ेस</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="402"/>
         <source>Treat backup files as hidden</source>
-        <translation type="unfinished"></translation>
+        <translation>बैकअप फ़ाइलों को छिपा हुआ समझें</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="422"/>
         <source>Show icons of hidden files shadowed</source>
-        <translation type="unfinished"></translation>
+        <translation>छुपे हुए फ़ाइल चिह्न को छायांकित दिखाएँ</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="459"/>
         <source>Minimum item margins in icon view:</source>
-        <translation type="unfinished"></translation>
+        <translation>चिह्न दृश्य में न्यूनतम आइटम मार्जिन :</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="466"/>
@@ -2222,8 +2231,8 @@ They might be useful if those folders are created again.</source>
         <location filename="../preferences.ui" line="489"/>
         <source>3 px by default.
 A space is also reserved for 3 lines of text.</source>
-        <translation>1 px आरंभिक मान.
-3 पंक्तियों के आलेख के लिए भी स्थान आरक्षित है. {3 ?} {3 ?}</translation>
+        <translation>3 px आरंभिक मान।
+3 पंक्तियों के आलेख के लिए भी स्थान आरक्षित है।</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="506"/>
@@ -2234,17 +2243,18 @@ A space is also reserved for 3 lines of text.</source>
         <location filename="../preferences.ui" line="555"/>
         <source>When unchecked, the tab bar will be shown
 only if there are more than one tab.</source>
-        <translation type="unfinished"></translation>
+        <translation>यदि यह अनचेक हैं,
+टैब बार तब दिखाया जाता है जब अनेक टैब हों।</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="573"/>
         <source>Switch to newly opened tab</source>
-        <translation type="unfinished"></translation>
+        <translation>नए खुले टैब पर स्विच करें</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="615"/>
         <source>Reopen last window tabs in a new window</source>
-        <translation type="unfinished"></translation>
+        <translation>अंतिम विंडो के टैब को नई विंडो में पुनः खोलें</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="665"/>
@@ -2252,12 +2262,14 @@ only if there are more than one tab.</source>
         <source>The built-in thumbnailer makes thumbnails of images that are supported by Qt.
 
 Usually, most image types are supported. The default size limit is 4 MiB.</source>
-        <translation type="unfinished"></translation>
+        <translation>अंतर्निहित थंबनेलर Qt द्वारा समर्थित चित्रों के लिए थंबनेल बनाता है।
+
+आम तौर पर, अधिकांश चित्र प्रकार समर्थित होते हैं। डिफ़ॉल्ट आकार सीमा 4 MiB है.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="670"/>
         <source>Image size limit for built-in thumbnailer:</source>
-        <translation type="unfinished"></translation>
+        <translation>अंतर्निर्मित थंबनेलर के लिए चित्र आकार सीमा :</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="682"/>
@@ -2271,162 +2283,164 @@ Usually, most image types are supported. The default size limit is 4 MiB.</sourc
         <source>If existing, external thumbnailers are used for videos, PDF documents, etc.
 
 A value of -1 means that there is no limit for the file size (the default).</source>
-        <translation type="unfinished"></translation>
+        <translation>यदि कोई बाहरी थंबनेलर मौजूद है, तो इसका उपयोग वीडियो, पीडीऍफ दस्तावेजों आदि के लिए किया जाता है।
+
+-1 के मान का अर्थ है कि फ़ाइल आकार की कोई सीमा नहीं है (डिफ़ॉल्ट मान)।</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="703"/>
         <source>File size limit for external thumbnailers:</source>
-        <translation type="unfinished"></translation>
+        <translation>बाहरी थंबनेलर के लिए फ़ाइल आकार सीमा :</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="715"/>
         <source>No limit</source>
-        <translation type="unfinished"></translation>
+        <translation>कोई सीमा नहीं</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="860"/>
         <source>Examples:&lt;br&gt;For terminal: &lt;i&gt;xterm -e %s&lt;/i&gt;&lt;br&gt;For switching user: &lt;i&gt;lxsudo %s&lt;/i&gt; or &lt;i&gt;lxsudo dbus-run-session -- %s&lt;/i&gt;&lt;br&gt;&lt;i&gt;%s&lt;/i&gt; is the command line you want to execute with terminal or su.&lt;br&gt; Important: Please use lxsudo, sudo alone will wreck permissions of the settings file.</source>
-        <translation type="unfinished"></translation>
+        <translation>उदाहरण :&lt;br&gt;टर्मिनल के लिए : &lt;i&gt;xterm -e %s&lt;/i&gt;&lt;br&gt;उपयोगकर्ता बदलने के लिए : &lt;i&gt;lxsudo %s&lt;/i&gt; या &lt;i&gt;lxsudo dbus-run-session -- % s&lt;/i&gt;&lt;br&gt;&lt;i&gt;%s&lt;/i&gt; वह कमांड लाइन है जिसे आप टर्मिनल या su के साथ निष्पादित करना चाहते हैं। &lt;br&gt; महत्वपूर्ण : कृपया lxsudo का उपयोग करें, क्योंकि sudo सेटिंग्स फ़ाइल की अनुमतियों को नष्ट कर सकता है।</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="919"/>
         <source>Search</source>
-        <translation type="unfinished"></translation>
+        <translation>खोज</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="934"/>
         <source>Maximum search history:</source>
-        <translation type="unfinished"></translation>
+        <translation>अधिकतम खोज इतिहास :</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="948"/>
         <source>Clear search history</source>
-        <translation type="unfinished"></translation>
+        <translation>खोज इतिहास साफ़ करें</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="983"/>
         <source>Application restart is needed for changes to take effect.</source>
-        <translation type="unfinished"></translation>
+        <translation>परिवर्तनों को प्रभावी करने के लिए एप्लिकेशन का पुनरारंभ आवश्यक है।</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="136"/>
         <source>Bookmarks menu:</source>
-        <translation type="unfinished"></translation>
+        <translation>बुकमार्क मेनू :</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="129"/>
         <source>Show folder context menu with Ctrl + right click</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl + राइट क्लिक के साथ फ़ोल्डर संदर्भ मेनू दिखाएं</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="229"/>
         <source>Open folders in new tabs as far as possible</source>
-        <translation type="unfinished"></translation>
+        <translation>जब भी संभव हो नए टैब में फ़ोल्डर खोलें</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="232"/>
         <source>Single window mode</source>
-        <translation type="unfinished"></translation>
+        <translation>सिंगल विंडो मोड</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="412"/>
         <source>Always show real file names</source>
-        <translation type="unfinished"></translation>
+        <translation>हमेशा वास्तविक फ़ाइल नाम दिखाएँ</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="429"/>
         <source>Do not show file tooltips</source>
-        <translation type="unfinished"></translation>
+        <translation>फ़ाइल टूलटिप न दिखाएं</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="436"/>
         <source>Disable smooth scrolling</source>
-        <translation type="unfinished"></translation>
+        <translation>सहज स्क्रॉलिंग अक्षम करें</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="648"/>
         <source>Needs ffmpegthumbnailer</source>
-        <translation type="unfinished"></translation>
+        <translation>ffmpegthumbnailer की आवश्यकता है</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="754"/>
         <source>Auto Mount</source>
-        <translation type="unfinished"></translation>
+        <translation>स्वचालित माउंट</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="760"/>
         <source>Mount mountable volumes automatically on program startup</source>
-        <translation type="unfinished"></translation>
+        <translation>प्रोग्राम स्टार्टअप पर स्वचालित रूप से माउंट करने योग्य वॉल्यूम माउंट करें</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="767"/>
         <source>Mount removable media automatically when they are inserted</source>
-        <translation type="unfinished"></translation>
+        <translation>कनेक्ट होने पर स्वचालित रूप से हटाने योग्य मीडिया माउंट करें</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="774"/>
         <source>Show available options for removable media when they are inserted</source>
-        <translation type="unfinished"></translation>
+        <translation>कनेक्ट होने पर हटाने योग्य मीडिया के लिए उपलब्ध विकल्प दिखाएं</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="784"/>
         <source>When removable medium unmounted:</source>
-        <translation type="unfinished"></translation>
+        <translation>हटाने योग्य मीडिया को अनमाउंट करते समय :</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="790"/>
         <source>Close &amp;tab containing removable medium</source>
-        <translation type="unfinished"></translation>
+        <translation>हटाने योग्य मीडिया वाले टैब बंद करें (&amp;T)</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="797"/>
         <source>Chan&amp;ge folder in the tab to home folder</source>
-        <translation type="unfinished"></translation>
+        <translation>टैब में फ़ोल्डर को होम फ़ोल्डर में बदलें (&amp;G)</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="824"/>
         <source>Programs</source>
-        <translation type="unfinished"></translation>
+        <translation>प्रोग्राम</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="833"/>
         <source>Terminal emulator:</source>
-        <translation type="unfinished"></translation>
+        <translation>टर्मिनल एमुलेटर :</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="847"/>
         <source>Switch &amp;user command:</source>
-        <translation type="unfinished"></translation>
+        <translation>उपयोगकर्ता बदलने का कमांड (&amp;U):</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="873"/>
         <source>Archiver in&amp;tegration:</source>
-        <translation type="unfinished"></translation>
+        <translation>संग्रहकर्ता एकीकरण (&amp;T):</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="889"/>
         <source>Templates</source>
-        <translation type="unfinished"></translation>
+        <translation>टेम्पलेट</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="895"/>
         <source>Show only user defined templates in menu</source>
-        <translation type="unfinished"></translation>
+        <translation>मेनू में केवल उपयोगकर्ता परिभाषित टेम्पलेट दिखाएँ</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="902"/>
         <source>Show only one template for each MIME type</source>
-        <translation type="unfinished"></translation>
+        <translation>प्रत्येक MIME प्रकार के लिए केवल एक टेम्पलेट दिखाएँ</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="909"/>
         <source>Run default application after creation from template</source>
-        <translation type="unfinished"></translation>
+        <translation>टेम्पलेट से निर्माण के बाद डिफ़ॉल्ट एप्लिकेशन चलाएँ</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="395"/>
         <source>Use SI decimal prefixes instead of IEC binary prefixes</source>
-        <translation type="unfinished"></translation>
+        <translation>IEC बाइनरी उपसर्गों के बजाय SI दशमलव उपसर्गों का उपयोग करें</translation>
     </message>
 </context>
 <context>
@@ -2434,44 +2448,44 @@ A value of -1 means that there is no limit for the file size (the default).</sou
     <message>
         <location filename="../bulkrename.cpp" line="86"/>
         <source>Renaming files...</source>
-        <translation type="unfinished"></translation>
+        <translation>फ़ाइलों का नाम बदला जा रहा है...</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="86"/>
         <source>Abort</source>
-        <translation type="unfinished"></translation>
+        <translation>निरस्त</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="95"/>
         <source>Warning</source>
-        <translation type="unfinished"></translation>
+        <translation>चेतावनी</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="95"/>
         <source>Renaming is aborted.</source>
-        <translation type="unfinished"></translation>
+        <translation>नाम बदलना निरस्त कर दिया गया है।</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="121"/>
         <location filename="../bulkrename.cpp" line="124"/>
         <location filename="../tabpage.cpp" line="1142"/>
         <source>Error</source>
-        <translation type="unfinished"></translation>
+        <translation>त्रुटि</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="121"/>
         <source>No file could be renamed.</source>
-        <translation type="unfinished"></translation>
+        <translation>किसी भी फ़ाइल का नाम नहीं बदला जा सका।</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="124"/>
         <source>Some files could not be renamed.</source>
-        <translation type="unfinished"></translation>
+        <translation>कुछ फाइलों का नाम नहीं बदला जा सका।</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="1142"/>
         <source>Cannot open as Admin.</source>
-        <translation type="unfinished"></translation>
+        <translation>व्यवस्थापक के रूप में खोलने में असमर्थ।</translation>
     </message>
 </context>
 </TS>
