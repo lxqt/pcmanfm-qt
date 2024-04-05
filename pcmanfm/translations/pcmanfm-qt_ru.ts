@@ -163,7 +163,7 @@ Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  021
     <message>
         <location filename="../connect.ui" line="90"/>
         <source>Login as &amp;user:</source>
-        <translation>Войти как &amp;пользователь:</translation>
+        <translation>Войти &amp;пользователем:</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="29"/>
@@ -451,7 +451,7 @@ Examples: AudioVideo, Audio, Video, Development, Education, Game, Graphics, Netw
         <location filename="../desktop-preferences.ui" line="275"/>
         <location filename="../desktop-preferences.ui" line="287"/>
         <source> px</source>
-        <translation> пкс</translation>
+        <translation> пикс</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="168"/>
@@ -531,7 +531,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktop-preferences.ui" line="512"/>
         <source> hour(s)</source>
-        <translation> час.</translation>
+        <translation> ч</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="522"/>
@@ -596,7 +596,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktop-preferences.ui" line="87"/>
         <source>Select text color:</source>
-        <translation>Выберите цвет текста:</translation>
+        <translation>Выбрать цвет текста:</translation>
     </message>
 </context>
 <context>
@@ -645,7 +645,7 @@ are left clicked, even when it is not the default file manager.</source>
         <location filename="../shortcuts.ui" line="50"/>
         <location filename="../shortcuts.ui" line="58"/>
         <source>Focus path entry</source>
-        <translation>Переключить фокус на запись пути</translation>
+        <translation>Переключить фокус на ввод пути</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="55"/>
@@ -837,7 +837,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="211"/>
         <source>&amp;Go</source>
-        <translation>&amp;Переход</translation>
+        <translation>Пере&amp;ход</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="253"/>
@@ -882,7 +882,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="326"/>
         <source>Go</source>
-        <translation>Перейти</translation>
+        <translation>Переход</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="335"/>
@@ -962,7 +962,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="437"/>
         <source>&amp;Compact View</source>
-        <translation>&amp;Компактный просмотр</translation>
+        <translation>&amp;Компактный вид</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="445"/>
@@ -1047,7 +1047,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="542"/>
         <source>By &amp;Modification Time</source>
-        <translation>По времени &amp;изменения</translation>
+        <translation>По дате &amp;изменения</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="550"/>
@@ -1057,7 +1057,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="558"/>
         <source>By Deletio&amp;n Time</source>
-        <translation>По времени &amp;удаления</translation>
+        <translation>По дате &amp;удаления</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="566"/>
@@ -1329,7 +1329,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="160"/>
         <source>&amp;Customized View Settings</source>
-        <translation>Индивидуальные на&amp;стройки вида</translation>
+        <translation>Собственные на&amp;стройки вида</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="228"/>
@@ -1703,7 +1703,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktopwindow.cpp" line="310"/>
         <source>Trash (Empty)</source>
-        <translation>Корзина (пусто)</translation>
+        <translation>Корзина (пустая)</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="345"/>
@@ -1724,7 +1724,7 @@ are left clicked, even when it is not the default file manager.</source>
         <location filename="../desktopwindow.cpp" line="1017"/>
         <location filename="../desktopwindow.cpp" line="1057"/>
         <source>Stic&amp;k to Current Position</source>
-        <translation>Закрепить в текущем по&amp;ложении</translation>
+        <translation>Закрепить текущее по&amp;ложение</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="1025"/>
@@ -1836,7 +1836,7 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferencesdialog.cpp" line="207"/>
         <source>Compact View</source>
-        <translation>Компактный просмотр</translation>
+        <translation>Компактный вид</translation>
     </message>
     <message>
         <location filename="../preferencesdialog.cpp" line="208"/>
@@ -2205,7 +2205,7 @@ They might be useful if those folders are created again.</source>
         <location filename="../preferences.ui" line="342"/>
         <location filename="../preferences.ui" line="352"/>
         <source>Used by Compact View and Detailed List View</source>
-        <translation>Используется в компактном режиме и просмотре подробным списком</translation>
+        <translation>Используется в компактном виде и просмотре подробным списком</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="359"/>
@@ -2231,12 +2231,12 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferences.ui" line="459"/>
         <source>Minimum item margins in icon view:</source>
-        <translation>Минимальные границы элементов в режиме значков:</translation>
+        <translation>Минимальные границы объектов в режиме значков:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="466"/>
         <source>3 px by default.</source>
-        <translation>по умолчанию - 3 пикселя.</translation>
+        <translation>по умолчанию — 3 пикселя.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="469"/>
@@ -2253,7 +2253,7 @@ They might be useful if those folders are created again.</source>
         <location filename="../preferences.ui" line="489"/>
         <source>3 px by default.
 A space is also reserved for 3 lines of text.</source>
-        <translation>По умолчанию - 3 пикселя.
+        <translation>По умолчанию — 3 пикселя.
 Также резервируется место для 3 строк текста.</translation>
     </message>
     <message>
