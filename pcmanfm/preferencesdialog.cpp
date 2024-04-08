@@ -54,6 +54,11 @@ PreferencesDialog::PreferencesDialog(const QString& activePage, QWidget* parent)
 
     selectPage(activePage);
     adjustSize();
+
+    if(static_cast<Application*>(qApp)->underWayland()) {
+        ui.suCommand->setEnabled(false);
+        ui.suLabel->setEnabled(false);
+    }
 }
 
 PreferencesDialog::~PreferencesDialog() = default;

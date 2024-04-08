@@ -392,6 +392,10 @@ MainWindow::MainWindow(Fm::FilePath path):
     if(QApplication::layoutDirection() == Qt::RightToLeft) {
         setRTLIcons(true);
     }
+
+    if(static_cast<Application*>(qApp)->underWayland()) {
+        ui.actionOpenAsRoot->setEnabled(false);
+    }
 }
 
 MainWindow::~MainWindow() = default;
