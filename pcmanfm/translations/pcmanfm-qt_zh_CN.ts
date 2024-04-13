@@ -79,7 +79,7 @@ Copyright (C) 2009 - 2014 洪任谕 (Hong Jen Yee)
     <message>
         <location filename="../about.ui" line="135"/>
         <source>License</source>
-        <translation>协议</translation>
+        <translation>许可</translation>
     </message>
 </context>
 <context>
@@ -815,7 +815,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="314"/>
         <source>&amp;Reload</source>
-        <translation>刷新(&amp;R)</translation>
+        <translation>重新载入(&amp;R)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="317"/>
@@ -930,7 +930,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="474"/>
         <source>&amp;Copy</source>
-        <translation>复制(&amp;C)</translation>
+        <translation>复制 (&amp;C)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="477"/>
