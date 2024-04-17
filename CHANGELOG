@@ -1,3 +1,11 @@
+pcmanfm-qt-2.0.0 / 2024-04-17
+==============================
+ * Ported to Qt6.
+ * Used layer-shell-qt for Desktop under Wayland.
+ * Fixed rare misplacement of desktop icons with Qt6.
+ * Added 5 menu icons to the main window.
+ * Disabled root instance under Wayland.
+
 pcmanfm-qt-1.4.1 / 2024-02-09
 ==============================
  * Fixed a regression in setting wallpaper with command-line.
