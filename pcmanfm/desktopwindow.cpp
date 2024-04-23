@@ -43,9 +43,10 @@
 #include <QRandomGenerator>
 #include <QToolTip>
 
+#ifdef ENABLE_SHELLQT
 #include <LayerShellQt/shell.h>
 #include <LayerShellQt/window.h>
-
+#endif
 #include "./application.h"
 #include "mainwindow.h"
 #include <libfm-qt6/foldermenu.h>
@@ -190,6 +191,7 @@ DesktopWindow::DesktopWindow(int screenNum):
     shortcut = new QShortcut(QKeySequence(Qt::SHIFT | Qt::Key_Delete), this); // force delete
     connect(shortcut, &QShortcut::activated, this, &DesktopWindow::onDeleteActivated);
 
+#ifdef ENABLE_SHELLQT
     // set the layer and anchors under Wayland
     if(static_cast<Application*>(qApp)->underWayland()) {
         winId();
@@ -207,6 +209,7 @@ DesktopWindow::DesktopWindow(int screenNum):
             }
         }
     }
+#endif
 }
 
 DesktopWindow::~DesktopWindow() {
