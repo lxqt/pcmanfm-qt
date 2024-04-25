@@ -687,6 +687,10 @@
    <property name="text">
     <string>&amp;Rename</string>
    </property>
+   <property name="icon">
+    <iconset theme="edit-rename">
+     <normaloff>.</normaloff>.</iconset>
+   </property>
    <property name="shortcut">
     <string>F2</string>
    </property>
@@ -915,6 +919,10 @@
   <action name="actionBulkRename">
    <property name="text">
     <string>&amp;Bulk Rename</string>
+   </property>
+   <property name="icon">
+    <iconset theme="edit-rename">
+     <normaloff>.</normaloff>.</iconset>
    </property>
    <property name="toolTip">
     <string>Bulk Rename</string>
