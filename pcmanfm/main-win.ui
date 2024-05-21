@@ -80,6 +80,10 @@
      <property name="title">
       <string>Recent F&amp;iles</string>
      </property>
+     <property name="icon">
+      <iconset theme="document-open-recent">
+       <normaloff>.</normaloff>.</iconset>
+     </property>
     </widget>
     <addaction name="actionNewTab"/>
     <addaction name="actionNewWin"/>
@@ -392,6 +396,10 @@
    <property name="text">
     <string>&amp;Network</string>
    </property>
+   <property name="icon">
+    <iconset theme="folder-network">
+     <normaloff>.</normaloff>.</iconset>
+   </property>
   </action>
   <action name="actionDesktop">
    <property name="icon">
@@ -521,6 +529,10 @@
    <property name="text">
     <string>&amp;Ascending</string>
    </property>
+   <property name="icon">
+    <iconset theme="view-sort-ascending">
+     <normaloff>.</normaloff>.</iconset>
+   </property>
   </action>
   <action name="actionDescending">
    <property name="checkable">
@@ -528,6 +540,10 @@
    </property>
    <property name="text">
     <string>&amp;Descending</string>
+   </property>
+   <property name="icon">
+    <iconset theme="view-sort-descending">
+     <normaloff>.</normaloff>.</iconset>
    </property>
   </action>
   <action name="actionByFileName">
@@ -671,11 +687,19 @@
    <property name="text">
     <string>&amp;Rename</string>
    </property>
+   <property name="icon">
+    <iconset theme="edit-rename">
+     <normaloff>.</normaloff>.</iconset>
+   </property>
    <property name="shortcut">
     <string>F2</string>
    </property>
   </action>
   <action name="actionCloseTab">
+   <property name="icon">
+    <iconset theme="tab-close">
+     <normaloff>.</normaloff>.</iconset>
+   </property>
    <property name="text">
     <string>C&amp;lose Tab</string>
    </property>
@@ -782,6 +806,10 @@
   <action name="actionFindFiles">
    <property name="text">
     <string>&amp;Find Files</string>
+   </property>
+   <property name="icon">
+    <iconset theme="edit-find">
+     <normaloff>.</normaloff>.</iconset>
    </property>
    <property name="shortcut">
     <string>F3</string>
@@ -892,6 +920,10 @@
    <property name="text">
     <string>&amp;Bulk Rename</string>
    </property>
+   <property name="icon">
+    <iconset theme="edit-rename">
+     <normaloff>.</normaloff>.</iconset>
+   </property>
    <property name="toolTip">
     <string>Bulk Rename</string>
    </property>
@@ -927,6 +959,10 @@
   <action name="actionCopyFullPath">
    <property name="text">
     <string>&amp;Copy Full Path</string>
+   </property>
+   <property name="icon">
+    <iconset theme="edit-copy">
+     <normaloff>.</normaloff>.</iconset>
    </property>
    <property name="shortcut">
     <string>Ctrl+Shift+C</string>
