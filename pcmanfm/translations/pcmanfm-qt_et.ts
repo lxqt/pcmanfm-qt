@@ -593,7 +593,7 @@ on olemas klõpsatakse vasakul, isegi kui see pole vaikefailihaldur.</translatio
     <message>
         <location filename="../desktop-preferences.ui" line="614"/>
         <source>Advanced</source>
-        <translation>Täpsem</translation>
+        <translation>Lisaseadistused</translation>
     </message>
 </context>
 <context>
@@ -1992,7 +1992,7 @@ Kui need kaustad hiljem uuesti tekivad, siis võib-olla pole mõtet seda teha.</
     <message>
         <location filename="../preferences.ui" line="60"/>
         <source>Advanced</source>
-        <translation>Täpsem</translation>
+        <translation>Lisaseadistused</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="222"/>
