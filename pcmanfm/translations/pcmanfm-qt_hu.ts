@@ -979,7 +979,7 @@ ha bal gombbal kattintanak rájuk, még akkor is, ha az nem az alapértelmezett 
     <message>
         <location filename="../main-win.ui" line="534"/>
         <source>&amp;By File Name</source>
-        <translation>&amp;Fájlnév szerint</translation>
+        <translation>Fájlnév szerint (&amp;B)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="542"/>
@@ -989,7 +989,7 @@ ha bal gombbal kattintanak rájuk, még akkor is, ha az nem az alapértelmezett 
     <message>
         <location filename="../main-win.ui" line="550"/>
         <source>By C&amp;reation Time</source>
-        <translation type="unfinished"></translation>
+        <translation>Létrehozási idő szerint (&amp;r)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="558"/>
@@ -999,7 +999,7 @@ ha bal gombbal kattintanak rájuk, még akkor is, ha az nem az alapértelmezett 
     <message>
         <location filename="../main-win.ui" line="566"/>
         <source>By File &amp;Type</source>
-        <translation>Fájltí&amp;pus szerint</translation>
+        <translation>Fájl &amp;Típus Szerint</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="574"/>
@@ -1059,7 +1059,7 @@ ha bal gombbal kattintanak rájuk, még akkor is, ha az nem az alapértelmezett 
     <message>
         <location filename="../main-win.ui" line="708"/>
         <source>By File &amp;Size</source>
-        <translation>Fá&amp;jlméret szerint</translation>
+        <translation>Fájl Méret &amp;Szerint</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="713"/>

@@ -254,7 +254,7 @@ Pódese deixar baleiro.</translation>
     <message>
         <location filename="../desktopentrydialog.ui" line="151"/>
         <source>Icon to display in file manager, menus, etc.</source>
-        <translation>Icona para mostrar no xestor de ficheiros, menús, etc</translation>
+        <translation>Icona para mostrar no xestor de ficheiros, menús, etc.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="173"/>
@@ -480,7 +480,7 @@ Tamén se reserva espazo para 3 liñas de texto.</translation>
         <source>By default, desktop folders will be opened in PCManFM-Qt if they
 are left clicked, even when it is not the default file manager.</source>
         <translation>Por defecto, os cartafoles do escritorio abriranse en PCManFM-Qt se son
- preme co botón esquerdo, aínda que non sexa o xestor de ficheiros predeterminado</translation>
+ preme co botón esquerdo, aínda que non sexa o xestor de ficheiros predeterminado.</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="307"/>

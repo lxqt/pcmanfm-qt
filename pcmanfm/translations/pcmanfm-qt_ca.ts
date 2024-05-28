@@ -602,7 +602,7 @@ el gestor de fitxers predeterminat.</translation>
     <message>
         <location filename="../shortcuts.ui" line="14"/>
         <source>Hidden Shortcuts</source>
-        <translation>Dreceres ocultes</translation>
+        <translation>Dreceres amagades</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="21"/>

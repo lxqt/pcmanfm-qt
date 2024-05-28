@@ -377,7 +377,7 @@ Examples: AudioVideo, Audio, Video, Development, Education, Game, Graphics, Netw
     <message>
         <location filename="../desktop-preferences.ui" line="350"/>
         <source>Select background color:</source>
-        <translation>Избиране на цвят:</translation>
+        <translation>Цвят:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="417"/>
@@ -412,12 +412,12 @@ Examples: AudioVideo, Audio, Video, Development, Education, Game, Graphics, Netw
     <message>
         <location filename="../desktop-preferences.ui" line="113"/>
         <source>Select shadow color:</source>
-        <translation>Избиране цвят на сянката:</translation>
+        <translation>Цвят на сянка:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="61"/>
         <source>Select font:</source>
-        <translation>Избиране на шрифт:</translation>
+        <translation>Шрифт:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="24"/>
@@ -427,7 +427,7 @@ Examples: AudioVideo, Audio, Video, Development, Education, Game, Graphics, Netw
     <message>
         <location filename="../desktop-preferences.ui" line="87"/>
         <source>Select text color:</source>
-        <translation>Избиране цвят на текста:</translation>
+        <translation>Цвят на текст:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="136"/>
@@ -511,12 +511,12 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktop-preferences.ui" line="473"/>
         <source>Slide Show</source>
-        <translation>Автоматична смяна (слайд шоу)</translation>
+        <translation>Автоматична смяна</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="479"/>
         <source>Enable Slide Show</source>
-        <translation>Активиране на слайд шоу</translation>
+        <translation>Активиране на автоматична смяна</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="491"/>
@@ -566,7 +566,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktop-preferences.ui" line="620"/>
         <source>Visible Shortcuts</source>
-        <translation>Видими връзки</translation>
+        <translation>Показване на:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="626"/>
@@ -916,7 +916,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="453"/>
         <source>&amp;Thumbnail View</source>
-        <translation>Изглед &amp;миниатури</translation>
+        <translation>Изглед &amp;миниатюри</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="462"/>
@@ -951,7 +951,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="494"/>
         <source>Select &amp;All</source>
-        <translation>Избиране на &amp;Всичко</translation>
+        <translation>Избиране на &amp;всички</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="497"/>
@@ -1081,7 +1081,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="734"/>
         <source>Open Tab in &amp;Root Instance</source>
-        <translation>Отваряне на раздел в режим на привилегий</translation>
+        <translation>Отваряне на раздел в режим с root привилегии</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="748"/>
@@ -1547,7 +1547,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../autorundialog.cpp" line="44"/>
         <source>Open in file manager</source>
-        <translation>Отваряне във файловия маниджер</translation>
+        <translation>Отваряне във файловия мениджър</translation>
     </message>
     <message>
         <location filename="../autorundialog.cpp" line="138"/>
@@ -1646,7 +1646,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="54"/>
         <source>Stretch to fit the screen</source>
-        <translation>Изображение, скалирано да пасне на екрана</translation>
+        <translation>Изображение, мащабирано да пасне на екрана</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="55"/>
@@ -1835,7 +1835,7 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferencesdialog.cpp" line="208"/>
         <source>Thumbnail View</source>
-        <translation>Изглед миниатури</translation>
+        <translation>Изглед миниатюри</translation>
     </message>
     <message>
         <location filename="../preferencesdialog.cpp" line="209"/>
@@ -2116,7 +2116,7 @@ They might be useful if those folders are created again.</source>
         <location filename="../preferences.ui" line="103"/>
         <location filename="../preferences.ui" line="116"/>
         <source>Set to zero to disable auto-selection.</source>
-        <translation>Настройте на нула за да изключите автоматично избиране.</translation>
+        <translation>Настройте на нула, за да изключите автоматично избиране.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="106"/>
@@ -2186,7 +2186,7 @@ They might be useful if those folders are created again.</source>
         <location filename="../preferences.ui" line="359"/>
         <location filename="../preferences.ui" line="369"/>
         <source>Used by Thumbnail View</source>
-        <translation>Използван при Изглед Миниатури</translation>
+        <translation>Използван при изглед Миниатюри</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="389"/>
@@ -2196,7 +2196,7 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferences.ui" line="402"/>
         <source>Treat backup files as hidden</source>
-        <translation>Третирай backup файловете като скрити</translation>
+        <translation>Резервните копия (backup) да се показват като скрити файлове</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="422"/>
@@ -2259,8 +2259,8 @@ only if there are more than one tab.</source>
         <source>The built-in thumbnailer makes thumbnails of images that are supported by Qt.
 
 Usually, most image types are supported. The default size limit is 4 MiB.</source>
-        <translation>Вграденият създател на миниатюри създава миниатюри на изображения които са поддържани от Qt.
-Обикновено, повечето типове изображения са поддържани. Разберът по подразбиране е 4 MiB.</translation>
+        <translation>Вграденият създател на миниатюри създава миниатюри на изображения, които са поддържани от Qt.
+Обикновено, повечето типове изображения са поддържани. Размерът по подразбиране е 4 MiB.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="670"/>
@@ -2386,7 +2386,7 @@ A value of -1 means that there is no limit for the file size (the default).</sou
     <message>
         <location filename="../preferences.ui" line="790"/>
         <source>Close &amp;tab containing removable medium</source>
-        <translation>&amp;Затваряне на раздела, показващ сменяемото устроство</translation>
+        <translation>&amp;Затваряне на раздела, показващ сменяемото устройство</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="797"/>

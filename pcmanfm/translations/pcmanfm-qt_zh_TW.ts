@@ -998,7 +998,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="963"/>
         <source>Preserve Settings Recursively from &amp;Here</source>
-        <translation type="unfinished"></translation>
+        <translation>遞歸地保留＆Here的設定</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="968"/>
@@ -1058,7 +1058,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="734"/>
         <source>Open Tab in &amp;Root Instance</source>
-        <translation type="unfinished">以 root 實例開啟分頁(&amp;R)</translation>
+        <translation>以 root 實例開啟分頁(&amp;R)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="751"/>
@@ -1846,12 +1846,12 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferencesdialog.cpp" line="279"/>
         <source>Remove if added by user</source>
-        <translation type="unfinished"></translation>
+        <translation>移除如果被用戶新增</translation>
     </message>
     <message>
         <location filename="../preferencesdialog.cpp" line="303"/>
         <source>Open user-defined list</source>
-        <translation type="unfinished"></translation>
+        <translation>開啟用戶定義的列表</translation>
     </message>
 </context>
 <context>

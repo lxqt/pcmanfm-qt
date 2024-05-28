@@ -1847,12 +1847,12 @@ De kan være nyttige hvis mapperne bliver oprettet igen.</translation>
     <message>
         <location filename="../preferencesdialog.cpp" line="279"/>
         <source>Remove if added by user</source>
-        <translation type="unfinished"></translation>
+        <translation>Fjern hvis tilføjet af bruger</translation>
     </message>
     <message>
         <location filename="../preferencesdialog.cpp" line="303"/>
         <source>Open user-defined list</source>
-        <translation type="unfinished"></translation>
+        <translation>Åben brugerdefineret liste</translation>
     </message>
 </context>
 <context>
@@ -1865,7 +1865,7 @@ De kan være nyttige hvis mapperne bliver oprettet igen.</translation>
     <message>
         <location filename="../tabpage.cpp" line="446"/>
         <source>Applications</source>
-        <translation type="unfinished"></translation>
+        <translation>Programmer</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="450"/>
@@ -2356,7 +2356,7 @@ En værdi på -1 betyder, at der ikke er nogen grænse for filstørrelsen (stand
     <message>
         <location filename="../preferences.ui" line="436"/>
         <source>Disable smooth scrolling</source>
-        <translation type="unfinished"></translation>
+        <translation>Deaktiver udglattet rulning</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="648"/>

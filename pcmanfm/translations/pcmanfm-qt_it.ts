@@ -953,7 +953,7 @@ sinistro anche se non è il gestore file predefinito.</translation>
     <message>
         <location filename="../main-win.ui" line="542"/>
         <source>By &amp;Modification Time</source>
-        <translation>Per  &amp;data di modifica</translation>
+        <translation>Per &amp;data di modifica</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="550"/>
