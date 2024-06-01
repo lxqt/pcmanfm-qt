@@ -135,7 +135,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../connect.ui" line="14"/>
         <source>Connect to remote server</source>
-        <translation type="unfinished"></translation>
+        <translation>Poveži se na oddaljen strežnik</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="80"/>
@@ -150,7 +150,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../connect.ui" line="29"/>
         <source>Specify remote folder to connect</source>
-        <translation type="unfinished"></translation>
+        <translation>Navedi strežnik za povezavo</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="36"/>
@@ -160,7 +160,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../connect.ui" line="56"/>
         <source>Port:</source>
-        <translation type="unfinished"></translation>
+        <translation>Vrata:</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="70"/>
@@ -170,7 +170,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../connect.ui" line="46"/>
         <source>Host:</source>
-        <translation type="unfinished"></translation>
+        <translation>Gostitelj:</translation>
     </message>
 </context>
 <context>
@@ -188,7 +188,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../desktopentrydialog.ui" line="45"/>
         <source>Specific name of this launcher.</source>
-        <translation type="unfinished"></translation>
+        <translation>Navedi ime tega zaganjalnika.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="58"/>
