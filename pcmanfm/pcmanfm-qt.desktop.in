@@ -2,6 +2,6 @@
 Type=Application
 Exec=pcmanfm-qt %U
 MimeType=inode/directory;
-Icon=system-file-manager
+Icon=pcmanfm-qt
 Categories=FileManager;Utility;Core;Qt;
 StartupNotify=true
