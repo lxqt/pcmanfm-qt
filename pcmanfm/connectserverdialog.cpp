@@ -41,11 +41,11 @@ QString ConnectServerDialog::uriText() {
   uri = QString::fromLatin1(serverType.scheme);
   uri += QStringLiteral("://");
   if(ui.loginAsUser->isChecked()) {
-    uri += ui.userName->text();
+    uri += ui.userName->text().trimmed();
     uri += QLatin1Char('@');
   }
 
-  uri += ui.host->text();
+  uri += ui.host->text().trimmed();
   int port = ui.port->value();
   if(port != serverType.defaultPort) {
     uri += QLatin1Char(':');
@@ -75,10 +75,10 @@ void ConnectServerDialog::onCurrentIndexChanged(int /*index*/) {
 
 void ConnectServerDialog::checkInput() {
   bool valid = true;
-  if(ui.host->text().isEmpty()) {
+  if(ui.host->text().trimmed().isEmpty()) {
     valid = false;
   }
-  else if(ui.loginAsUser->isChecked() && ui.userName->text().isEmpty()) {
+  else if(ui.loginAsUser->isChecked() && ui.userName->text().trimmed().isEmpty()) {
     valid = false;
   }
   ui.buttonBox->button(QDialogButtonBox::Ok)->setEnabled(valid);
