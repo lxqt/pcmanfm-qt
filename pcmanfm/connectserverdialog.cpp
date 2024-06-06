@@ -41,11 +41,11 @@ QString ConnectServerDialog::uriText() {
   uri = QString::fromLatin1(serverType.scheme);
   uri += QStringLiteral("://");
   if(ui.loginAsUser->isChecked()) {
-    uri += ui.userName->text();
+    uri += ui.userName->text().trimmed();
     uri += QLatin1Char('@');
   }
 
-  uri += ui.host->text();
+  uri += ui.host->text().trimmed();
   int port = ui.port->value();
   if(port != serverType.defaultPort) {
     uri += QLatin1Char(':');
