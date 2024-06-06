@@ -75,10 +75,10 @@ void ConnectServerDialog::onCurrentIndexChanged(int /*index*/) {
 
 void ConnectServerDialog::checkInput() {
   bool valid = true;
-  if(ui.host->text().isEmpty()) {
+  if(ui.host->text().trimmed().isEmpty()) {
     valid = false;
   }
-  else if(ui.loginAsUser->isChecked() && ui.userName->text().isEmpty()) {
+  else if(ui.loginAsUser->isChecked() && ui.userName->text().trimmed().isEmpty()) {
     valid = false;
   }
   ui.buttonBox->button(QDialogButtonBox::Ok)->setEnabled(valid);
