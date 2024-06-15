@@ -16,7 +16,7 @@
     <message>
         <location filename="../about.ui" line="48"/>
         <source>Lightweight file manager</source>
-        <translation>Letvægtsfilhåndtering</translation>
+        <translation>Letvægt filhåndtering</translation>
     </message>
     <message>
         <location filename="../about.ui" line="122"/>
@@ -67,7 +67,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.</
     <message>
         <location filename="../about.ui" line="113"/>
         <source>Authors</source>
-        <translation>Forfattere</translation>
+        <translation>Udviklere</translation>
     </message>
     <message>
         <location filename="../about.ui" line="58"/>
@@ -166,7 +166,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.</
     <message>
         <location filename="../connect.ui" line="29"/>
         <source>Specify remote folder to connect</source>
-        <translation>Specificér fjern-mappe som der skal oprettes forbindelse til</translation>
+        <translation>Specificér den fjern-mappe, der skal oprettes forbindelse til</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="36"/>
@@ -216,7 +216,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.</
         <source>A short description or generic name, like &quot;Web Browser&quot; or &quot;Home Directory&quot;.
 
 It can be left empty.</source>
-        <translation>En kort beskrivelse eller generisk navn, f.eks. &quot;Webbrowser&quot; eller Hjemmekatalog&quot;&quot;
+        <translation>En kort beskrivelse eller generisk navn, f.eks. &quot;Netlæser&quot; eller Hjemmekatalog&quot;&quot;
 
 Det kan stå tomt.</translation>
     </message>
@@ -358,7 +358,7 @@ Eksempler: LydVideo, Lyd, Video, Udvikling, Uddannelse, Spil, Grafik, Netværk, 
     <message>
         <location filename="../desktop-preferences.ui" line="14"/>
         <source>Desktop Preferences</source>
-        <translation>Skrivebordspræferencer</translation>
+        <translation>Skrivebordsindstillinger</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="338"/>
@@ -369,12 +369,12 @@ Eksempler: LydVideo, Lyd, Video, Udvikling, Uddannelse, Spil, Grafik, Netværk, 
     <message>
         <location filename="../desktop-preferences.ui" line="385"/>
         <source>Wallpaper mode:</source>
-        <translation>Tapettype:</translation>
+        <translation>Tapettilstand:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="408"/>
         <source>Wallpaper image file:</source>
-        <translation>Fil til tapetbilled:</translation>
+        <translation>Billedfil til tapet:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="350"/>
@@ -465,8 +465,8 @@ Eksempler: LydVideo, Lyd, Video, Udvikling, Uddannelse, Spil, Grafik, Netværk, 
         <location filename="../desktop-preferences.ui" line="175"/>
         <source>1 px by default.
 A space is also reserved for 3 lines of text.</source>
-        <translation>1 px som standard
-Et mellemrum er også reserverte for tre linjers tekst.</translation>
+        <translation>1 pixel som standard
+Et mellemrum er også reserveret til tre linjers tekst.</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="192"/>
@@ -482,13 +482,13 @@ Et mellemrum er også reserverte for tre linjers tekst.</translation>
         <location filename="../desktop-preferences.ui" line="303"/>
         <source>By default, desktop folders will be opened in PCManFM-Qt if they
 are left clicked, even when it is not the default file manager.</source>
-        <translation>Som standard åbnes skrivebordsmapper i PCManFM-Qt hvis de
-venstreklikkes, selv hvis det ikke er standardfilhåndteringen.</translation>
+        <translation>Som standard åbnes skrivebordsmapper i PCManFM-Qt hvis der
+venstreklikkes på dem, selv hvis den ikke er defineret som standardfilhåndtering.</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="307"/>
         <source>Open desktop folders in default file manager by left clicking</source>
-        <translation>Åbn skrivebordsmapper i standardfilhåntering ved venstreklik</translation>
+        <translation>Åbn skrivebordsmapper i standardfilhåndtering ved venstreklik</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="314"/>
@@ -543,7 +543,7 @@ venstreklikkes, selv hvis det ikke er standardfilhåndteringen.</translation>
     <message>
         <location filename="../desktop-preferences.ui" line="535"/>
         <source>Intervals less than 5min will be ignored</source>
-        <translation>Intervaller mindre end 5 min. ignoreres</translation>
+        <translation>Intervaller mindre end 5 min ignoreres</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="538"/>
@@ -642,7 +642,7 @@ venstreklikkes, selv hvis det ikke er standardfilhåndteringen.</translation>
         <location filename="../shortcuts.ui" line="50"/>
         <location filename="../shortcuts.ui" line="58"/>
         <source>Focus path entry</source>
-        <translation>Fokusér stiindtastning</translation>
+        <translation>Fokusér på stiindtastning</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="55"/>
@@ -700,7 +700,7 @@ venstreklikkes, selv hvis det ikke er standardfilhåndteringen.</translation>
     <message>
         <location filename="../shortcuts.ui" line="111"/>
         <source>Backspace</source>
-        <translation>Backspace</translation>
+        <translation>Tilbage</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="114"/>
@@ -730,17 +730,17 @@ venstreklikkes, selv hvis det ikke er standardfilhåndteringen.</translation>
     <message>
         <location filename="../shortcuts.ui" line="135"/>
         <source>Drop+Shift</source>
-        <translation type="unfinished"></translation>
+        <translation>Slip+Skift</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="143"/>
         <source>Drop+Ctrl</source>
-        <translation type="unfinished"></translation>
+        <translation>Slip+Çtrl</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="151"/>
         <source>Drop+Shift+Ctrl</source>
-        <translation type="unfinished"></translation>
+        <translation>Slip+Skift+Ctrl</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="138"/>
@@ -813,12 +813,12 @@ venstreklikkes, selv hvis det ikke er standardfilhåndteringen.</translation>
     <message>
         <location filename="../main-win.ui" line="305"/>
         <source>Alt+Home</source>
-        <translation>Alt+Hjem</translation>
+        <translation>Alt+Home</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="314"/>
         <source>&amp;Reload</source>
-        <translation>&amp;Genindlæs</translation>
+        <translation>Gen&amp;indlæs</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="317"/>
@@ -923,7 +923,7 @@ venstreklikkes, selv hvis det ikke er standardfilhåndteringen.</translation>
     <message>
         <location filename="../main-win.ui" line="462"/>
         <source>Cu&amp;t</source>
-        <translation>Kli&amp;p</translation>
+        <translation>K&amp;lip</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="465"/>
@@ -933,7 +933,7 @@ venstreklikkes, selv hvis det ikke er standardfilhåndteringen.</translation>
     <message>
         <location filename="../main-win.ui" line="474"/>
         <source>&amp;Copy</source>
-        <translation>K&amp;opier</translation>
+        <translation>&amp;Kopiér</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="477"/>
@@ -973,7 +973,7 @@ venstreklikkes, selv hvis det ikke er standardfilhåndteringen.</translation>
     <message>
         <location filename="../main-win.ui" line="510"/>
         <source>Pr&amp;eferences</source>
-        <translation>Præf&amp;erencer</translation>
+        <translation>&amp;Indstillinger</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="518"/>
@@ -998,7 +998,7 @@ venstreklikkes, selv hvis det ikke er standardfilhåndteringen.</translation>
     <message>
         <location filename="../main-win.ui" line="550"/>
         <source>By C&amp;reation Time</source>
-        <translation>Ved oprettelse tidspunkt</translation>
+        <translation>Efter op&amp;rettelsestidspunkt</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="558"/>
@@ -1033,17 +1033,17 @@ venstreklikkes, selv hvis det ikke er standardfilhåndteringen.</translation>
     <message>
         <location filename="../main-win.ui" line="879"/>
         <source>Shift+F2</source>
-        <translation>Shift+F2</translation>
+        <translation>Skift+F2</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="963"/>
         <source>Preserve Settings Recursively from &amp;Here</source>
-        <translation>Behold indstillingerne rekursivt fra &amp;her</translation>
+        <translation>Behold indstillingerne rekursivt &amp;herfra</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="968"/>
         <source>&amp;Go to Source of Inherited Settings</source>
-        <translation>&amp;Gå til kilde til nedarvede indstillinger</translation>
+        <translation>&amp;Gå til kilde for nedarvede indstillinger</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="973"/>
@@ -1058,7 +1058,7 @@ venstreklikkes, selv hvis det ikke er standardfilhåndteringen.</translation>
     <message>
         <location filename="../main-win.ui" line="651"/>
         <source>Ctrl+Shift+A</source>
-        <translation>Ctrl+Shift+A</translation>
+        <translation>Ctrl+Skift+A</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="700"/>
@@ -1068,7 +1068,7 @@ venstreklikkes, selv hvis det ikke er standardfilhåndteringen.</translation>
     <message>
         <location filename="../main-win.ui" line="708"/>
         <source>By File &amp;Size</source>
-        <translation>Efter fil &amp;størrelse</translation>
+        <translation>Efter fil&amp;størrelse</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="713"/>
@@ -1083,7 +1083,7 @@ venstreklikkes, selv hvis det ikke er standardfilhåndteringen.</translation>
     <message>
         <location filename="../main-win.ui" line="734"/>
         <source>Open Tab in &amp;Root Instance</source>
-        <translation>Åbn faneblad i &amp;root-instans</translation>
+        <translation>Åbn nyt vindue i administrato&amp;rtilstand</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="748"/>
@@ -1163,7 +1163,7 @@ venstreklikkes, selv hvis det ikke er standardfilhåndteringen.</translation>
     <message>
         <location filename="../main-win.ui" line="942"/>
         <source>Hidden &amp;Shortcuts</source>
-        <translation>Skjulte&amp;Genveje</translation>
+        <translation>Skjulte &amp;Genveje</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="947"/>
@@ -1310,7 +1310,7 @@ venstreklikkes, selv hvis det ikke er standardfilhåndteringen.</translation>
     <message>
         <location filename="../main-win.ui" line="648"/>
         <source>&amp;Invert Selection</source>
-        <translation>&amp;Inventer markering</translation>
+        <translation>&amp;Invertér markering</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="660"/>
@@ -1320,7 +1320,7 @@ venstreklikkes, selv hvis det ikke er standardfilhåndteringen.</translation>
     <message>
         <location filename="../main-win.ui" line="663"/>
         <source>Del</source>
-        <translation>Slet</translation>
+        <translation>Del</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="668"/>
@@ -1350,7 +1350,7 @@ venstreklikkes, selv hvis det ikke er standardfilhåndteringen.</translation>
     <message>
         <location filename="../main-win.ui" line="687"/>
         <source>Alt+Return</source>
-        <translation>Alt+Return</translation>
+        <translation>Alt+Retur</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="692"/>
@@ -1426,7 +1426,7 @@ venstreklikkes, selv hvis det ikke er standardfilhåndteringen.</translation>
     <message>
         <location filename="../main-win.ui" line="185"/>
         <source>&amp;Edit</source>
-        <translation>&amp;Rediger</translation>
+        <translation>R&amp;ediger</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="204"/>
@@ -1441,7 +1441,7 @@ venstreklikkes, selv hvis det ikke er standardfilhåndteringen.</translation>
     <message>
         <location filename="../main-win.ui" line="253"/>
         <source>Main Toolbar</source>
-        <translation>Hoved værtøjslinje</translation>
+        <translation>Hovedværktøjslinje</translation>
     </message>
 </context>
 <context>
@@ -1449,17 +1449,17 @@ venstreklikkes, selv hvis det ikke er standardfilhåndteringen.</translation>
     <message>
         <location filename="../application.cpp" line="187"/>
         <source>Name of configuration profile</source>
-        <translation>Konfigurationsprofilnavn</translation>
+        <translation>Navn på indstillingsprofil</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="187"/>
         <source>PROFILE</source>
-        <translation>Profil</translation>
+        <translation>PROFIL</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="190"/>
         <source>Run PCManFM-Qt as a daemon</source>
-        <translation>Kør PCManFM-Qt som en dæmon</translation>
+        <translation>Kør PCManFM-Qt som en tjeneste</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="193"/>
@@ -1479,13 +1479,13 @@ venstreklikkes, selv hvis det ikke er standardfilhåndteringen.</translation>
     <message>
         <location filename="../application.cpp" line="202"/>
         <source>Open desktop preference dialog on the page with the specified name</source>
-        <translation>Åbn skrivebordspræferencer på siden med det specifcerede navn</translation>
+        <translation>Åbn skrivebordsindstillinger på siden med det specificerede navn</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="202"/>
         <location filename="../application.cpp" line="217"/>
         <source>NAME</source>
-        <translation>Navn</translation>
+        <translation>NAVN</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="205"/>
@@ -1510,12 +1510,12 @@ venstreklikkes, selv hvis det ikke er standardfilhåndteringen.</translation>
     <message>
         <location filename="../application.cpp" line="214"/>
         <source>MODE</source>
-        <translation>tapetype</translation>
+        <translation>TILSTAND</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="214"/>
         <source>Set mode of desktop wallpaper. MODE=(%1)</source>
-        <translation>Sæt typen af tapet til typen=(%1)</translation>
+        <translation>Sæt skrivebordets tilstand til TILSTAND=(%1)</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="217"/>
@@ -1541,7 +1541,7 @@ venstreklikkes, selv hvis det ikke er standardfilhåndteringen.</translation>
     <message>
         <location filename="../application.cpp" line="660"/>
         <source>Terminal emulator is not set.</source>
-        <translation>Termnialemulator er ikke indstillet.</translation>
+        <translation>Terminalemulator er ikke indstillet.</translation>
     </message>
 </context>
 <context>
@@ -1625,7 +1625,7 @@ venstreklikkes, selv hvis det ikke er standardfilhåndteringen.</translation>
     <message>
         <location filename="../desktopentrydialog.cpp" line="91"/>
         <source>Select an executable file</source>
-        <translation>Vælg en eksekverbar fil</translation>
+        <translation>Vælg en kørbar fil</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="99"/>
@@ -1714,7 +1714,7 @@ venstreklikkes, selv hvis det ikke er standardfilhåndteringen.</translation>
     <message>
         <location filename="../desktopwindow.cpp" line="1011"/>
         <source>Open</source>
-        <translation>Åbn</translation>
+        <translation>Åben</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="1017"/>
@@ -1740,7 +1740,7 @@ venstreklikkes, selv hvis det ikke er standardfilhåndteringen.</translation>
     <message>
         <location filename="../desktopwindow.cpp" line="1093"/>
         <source>Desktop Preferences</source>
-        <translation>Skrivebordspræferencer</translation>
+        <translation>Skrivebordsindstillinger</translation>
     </message>
 </context>
 <context>
@@ -1807,7 +1807,7 @@ venstreklikkes, selv hvis det ikke er standardfilhåndteringen.</translation>
     <message>
         <location filename="../mainwindow.cpp" line="2318"/>
         <source>Switch user command is not set.</source>
-        <translation>Skiftbrugerkommando ikke indstillet.</translation>
+        <translation>Skift brugerkommando ikke indstillet.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="2420"/>
@@ -1860,7 +1860,7 @@ De kan være nyttige hvis mapperne bliver oprettet igen.</translation>
     <message>
         <location filename="../tabpage.cpp" line="443"/>
         <source>Search Results</source>
-        <translation>Vi resultaterne</translation>
+        <translation>Søgeresultater</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="446"/>
@@ -1966,7 +1966,7 @@ De kan være nyttige hvis mapperne bliver oprettet igen.</translation>
     <message>
         <location filename="../preferences.ui" line="14"/>
         <source>Preferences</source>
-        <translation>Præferencer</translation>
+        <translation>Indstillinger</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="45"/>
@@ -2193,7 +2193,7 @@ De kan være nyttige hvis mapperne bliver oprettet igen.</translation>
     <message>
         <location filename="../preferences.ui" line="389"/>
         <source>User interface</source>
-        <translation>Brugerflade</translation>
+        <translation>Brugergrænseflade</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="402"/>
@@ -2230,8 +2230,8 @@ De kan være nyttige hvis mapperne bliver oprettet igen.</translation>
         <location filename="../preferences.ui" line="489"/>
         <source>3 px by default.
 A space is also reserved for 3 lines of text.</source>
-        <translation>3 px som standard
-Et mellemrum er også reserveret for tre linjers tekst.</translation>
+        <translation>3 pixel som standard
+Et mellemrum er også reserveret til tre linjers tekst.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="506"/>
@@ -2261,7 +2261,7 @@ hvis der er mere end et faneblad.</translation>
         <source>The built-in thumbnailer makes thumbnails of images that are supported by Qt.
 
 Usually, most image types are supported. The default size limit is 4 MiB.</source>
-        <translation>Den indbyggede thumbnailer laver thumbnails af billeder, der understøttes af Qt.
+        <translation>Det indbyggede miniatureværktøj laver miniaturer af billeder, der understøttes af Qt.
 
 
 Normalt er de fleste billedtyper understøttet. Standard størrelsesgrænsen er 4 MiB.</translation>
