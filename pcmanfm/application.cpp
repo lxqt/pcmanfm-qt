@@ -459,7 +459,8 @@ void Application::desktopManager(bool enabled) {
             // NOTE: there are two modes
             // When virtual desktop is used (all screens are combined to form a large virtual desktop),
             // we only create one DesktopWindow. Otherwise, we create one for each screen.
-            if(primaryScreen() && primaryScreen()->virtualSiblings().size() > 1) {
+            // Under Wayland, separate desktops are created for avoiding problems.
+            if(!underWayland_ && primaryScreen() && primaryScreen()->virtualSiblings().size() > 1) {
                 DesktopWindow* window = createDesktopWindow(-1);
                 desktopWindows_.push_back(window);
             }
@@ -934,7 +935,8 @@ void Application::onScreenAdded(QScreen* newScreen) {
         connect(newScreen, &QScreen::availableGeometryChanged, this, &Application::onAvailableGeometryChanged);
         connect(newScreen, &QObject::destroyed, this, &Application::onScreenDestroyed);
         const auto siblings = primaryScreen()->virtualSiblings();
-        if(siblings.contains(newScreen)) { // the primary screen is changed
+        if(!underWayland_ // Under Wayland, separate desktops are created for avoiding problems.
+           && siblings.contains(newScreen)) { // the primary screen is changed
             if(desktopWindows_.size() == 1) {
                 desktopWindows_.at(0)->setGeometry(newScreen->virtualGeometry());
                 if(siblings.size() > 1) { // a virtual desktop is created
