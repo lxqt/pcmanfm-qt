@@ -2361,7 +2361,7 @@ En værdi på -1 betyder, at der ikke er nogen grænse for filstørrelsen (stand
     <message>
         <location filename="../preferences.ui" line="648"/>
         <source>Needs ffmpegthumbnailer</source>
-        <translation>Dette behøver programmet ffmpegthumbnailer</translation>
+        <translation>Har brug for ffmpeg miniatureværktøjet</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="754"/>
