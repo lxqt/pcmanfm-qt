@@ -133,6 +133,7 @@ DesktopWindow::DesktopWindow(int screenNum):
         proxyModel_->setSourceModel(model_);
         proxyModel_->setShowThumbnails(settings.showThumbnails());
         proxyModel_->setBackupAsHidden(settings.backupAsHidden());
+        proxyModel_->setShowHidden(settings.desktopShowHidden());
         proxyModel_->sort(settings.desktopSortColumn(), settings.desktopSortOrder());
         proxyModel_->setFolderFirst(settings.desktopSortFolderFirst());
         proxyModel_->setHiddenLast(settings.desktopSortHiddenLast());
@@ -936,6 +937,7 @@ void DesktopWindow::updateFromSettings(Settings& settings, bool changeSlide) {
     if(proxyModel_) {
         proxyModel_->setShowThumbnails(settings.showThumbnails());
         proxyModel_->setBackupAsHidden(settings.backupAsHidden());
+        proxyModel_->setShowHidden(settings.desktopShowHidden());
     }
 
     setDesktopFolder();
@@ -1096,6 +1098,13 @@ void DesktopWindow::prepareFolderMenu(Fm::FolderMenu* menu) {
     menu->removeAction(menu->propertiesAction());
     // add desktop actions instead
     addDesktopActions(menu);
+    // handle showing of hidden desktop items
+    if(auto showHiddenAction = menu->showHiddenAction()) {
+        connect(showHiddenAction, &QAction::triggered, this, [](bool checked) {
+            Settings& settings = static_cast<Application*>(qApp)->settings();
+            settings.setDesktopShowHidden(checked);
+        });
+    }
 }
 
 void DesktopWindow::addDesktopActions(QMenu* menu) {
