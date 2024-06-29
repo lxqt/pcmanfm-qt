@@ -83,7 +83,8 @@ DesktopPreferencesDialog::DesktopPreferencesDialog(QWidget* parent, Qt::WindowFl
 
   if (mode == DesktopWindow::WallpaperStretch || mode == DesktopWindow::WallpaperCenter
       || mode == DesktopWindow::WallpaperFit || mode == DesktopWindow::WallpaperZoom) {
-    ui.perScreenWallpaper->setEnabled(true);
+    // Under Wayland, separate desktops are created for avoiding problems.
+    ui.perScreenWallpaper->setEnabled(!static_cast<Application*>(qApp)->underWayland());
   }
   else
     ui.perScreenWallpaper->setEnabled(false);
@@ -246,7 +247,8 @@ void DesktopPreferencesDialog::onWallpaperModeChanged(int index) {
 
   if (mode == DesktopWindow::WallpaperStretch || mode == DesktopWindow::WallpaperCenter
       || mode == DesktopWindow::WallpaperFit || mode == DesktopWindow::WallpaperZoom) {
-    ui.perScreenWallpaper->setEnabled(true);
+    // Under Wayland, separate desktops are created for avoiding problems.
+    ui.perScreenWallpaper->setEnabled(!static_cast<Application*>(qApp)->underWayland());
   }
   else
     ui.perScreenWallpaper->setEnabled(false);
