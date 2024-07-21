@@ -691,13 +691,21 @@ void DesktopWindow::updateWallpaper(bool checkMTime) {
         QImage image;
         Settings& settings = static_cast<Application* >(qApp)->settings();
         const auto screens = screen->virtualSiblings();
-        bool perScreenWallpaper(screens.size() > 1 && settings.perScreenWallpaper());
 
-        // the pixmap's size should be calculated by considering
-        // the positions and device pixel ratios of all screens
+        bool perScreenWallpaper;
         QRect pixmapRect;
-        for(const auto& scr : screens) {
-            pixmapRect |= QRect(scr->geometry().topLeft(), scr->size() * scr->devicePixelRatio());
+        if(static_cast<Application*>(qApp)->underWayland()) {
+            // Under Wayland, separate desktops are created for avoiding problems.
+            perScreenWallpaper = false;
+            pixmapRect = QRect(screen->geometry().topLeft(), screen->size() * screen->devicePixelRatio());
+        }
+        else {
+            perScreenWallpaper = screens.size() > 1 && settings.perScreenWallpaper();
+            // the pixmap's size should be calculated by considering
+            // the positions and device pixel ratios of all screens
+            for(const auto& scr : screens) {
+                pixmapRect |= QRect(scr->geometry().topLeft(), scr->size() * scr->devicePixelRatio());
+            }
         }
         const QSize pixmapSize = pixmapRect.size();
 
@@ -1250,6 +1258,14 @@ void DesktopWindow::removeBottomGap() {
     if(screen == nullptr) {
         return;
     }
+    int h;
+    if(static_cast<Application*>(qApp)->underWayland()) {
+        // Under Wayland, separate desktops are created for avoiding problems.
+        h = screen->availableGeometry().height();
+    }
+    else {
+        h = screen->availableVirtualGeometry().height();
+    }
     /************************************************************
      NOTE: Desktop is an area bounded from below while icons snap
      to its grid srarting from above. Therefore, we try to adjust
@@ -1261,7 +1277,7 @@ void DesktopWindow::removeBottomGap() {
     //qDebug() << "delegate:" << delegate->itemSize();
     QSize cellMargins = getMargins();
     Settings& settings = static_cast<Application* >(qApp)->settings();
-    int workAreaHeight = screen->availableVirtualGeometry().height()
+    int workAreaHeight = h
                          - settings.workAreaMargins().top()
                          - settings.workAreaMargins().bottom();
     if(workAreaHeight <= 0) {
@@ -1361,7 +1377,14 @@ void DesktopWindow::trustOurDesktopShortcut(std::shared_ptr<const Fm::FileInfo> 
 }
 
 QRect DesktopWindow::getWorkArea(QScreen* screen) const {
-    QRect workArea = screen->availableVirtualGeometry();
+    QRect workArea;
+    if(static_cast<Application*>(qApp)->underWayland()) {
+        // Under Wayland, separate desktops are created for avoiding problems.
+        workArea = QRect(QPoint(0, 0), screen->availableGeometry().size());
+    }
+    else {
+        workArea = screen->availableVirtualGeometry();
+    }
     QMargins margins = static_cast<Application* >(qApp)->settings().workAreaMargins();
     // switch between right and left with RTL to use the usual (LTR) calculations later
     if(layoutDirection() == Qt::RightToLeft) {
