@@ -1992,7 +1992,7 @@ Niistä voi olla hyötyä, jos kyseiset kansiot tulevat takaisin.</translation>
     <message>
         <location filename="../preferences.ui" line="60"/>
         <source>Advanced</source>
-        <translation type="unfinished">Lisäasetukset</translation>
+        <translation>Lisäasetukset</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="222"/>
@@ -2002,7 +2002,7 @@ Niistä voi olla hyötyä, jos kyseiset kansiot tulevat takaisin.</translation>
     <message>
         <location filename="../preferences.ui" line="296"/>
         <source>Icons</source>
-        <translation type="unfinished">Kuvakkeet</translation>
+        <translation>Kuvakkeet</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="328"/>
@@ -2213,18 +2213,18 @@ Niistä voi olla hyötyä, jos kyseiset kansiot tulevat takaisin.</translation>
     <message>
         <location filename="../preferences.ui" line="466"/>
         <source>3 px by default.</source>
-        <translation type="unfinished">3 px oletuksena.</translation>
+        <translation>3 px oletuksena.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="469"/>
         <location filename="../preferences.ui" line="493"/>
         <source> px</source>
-        <translation type="unfinished"> px</translation>
+        <translation> px</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="482"/>
         <source>x</source>
-        <translation type="unfinished">x</translation>
+        <translation>x</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="489"/>
@@ -2389,12 +2389,12 @@ Oletusarvo -1 poistaa kokorajoituksen käytöstä.</translation>
     <message>
         <location filename="../preferences.ui" line="790"/>
         <source>Close &amp;tab containing removable medium</source>
-        <translation type="unfinished">Sulje irrotettavan tietovälineen välilehti</translation>
+        <translation>Sulje irrotettavan tietovälineen &amp;välilehti</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="797"/>
         <source>Chan&amp;ge folder in the tab to home folder</source>
-        <translation type="unfinished">Vaihda välilehden kansio kotikansioon</translation>
+        <translation>Vaihda välilehden kansio &amp;kotikansioon</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="824"/>
@@ -2414,7 +2414,7 @@ Oletusarvo -1 poistaa kokorajoituksen käytöstä.</translation>
     <message>
         <location filename="../preferences.ui" line="873"/>
         <source>Archiver in&amp;tegration:</source>
-        <translation type="unfinished">Pakkaajaintegraatio:</translation>
+        <translation>Pakkaajain&amp;tegraatio:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="889"/>
