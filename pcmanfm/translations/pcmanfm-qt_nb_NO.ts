@@ -90,12 +90,12 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../autorun.ui" line="14"/>
         <source>Removable medium is inserted</source>
-        <translation>Uttagbart medium er satt inn</translation>
+        <translation>Flyttbart medium er satt inn</translation>
     </message>
     <message>
         <location filename="../autorun.ui" line="33"/>
         <source>&lt;b&gt;Removable medium is inserted&lt;/b&gt;</source>
-        <translation>&lt;b&gt;Uttagbart medium er satt inn&lt;/b&gt;</translation>
+        <translation>&lt;b&gt;Flyttbart medium er satt inn&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../autorun.ui" line="40"/>
@@ -566,7 +566,7 @@ venstreklikkes, selv når det ikke er forvalgt filbehandler.</translation>
     <message>
         <location filename="../desktop-preferences.ui" line="620"/>
         <source>Visible Shortcuts</source>
-        <translation>Synlige snareveier</translation>
+        <translation>Synlige snarveier</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="626"/>
@@ -1141,17 +1141,17 @@ venstreklikkes, selv når det ikke er forvalgt filbehandler.</translation>
     <message>
         <location filename="../main-win.ui" line="923"/>
         <source>Show Thumb&amp;nails</source>
-        <translation>Vis forhå&amp;ndsvisninger</translation>
+        <translation>Vis mini&amp;bilder</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="926"/>
         <source>Show Thumbnails</source>
-        <translation>Vis forhåndsvisninger</translation>
+        <translation>Vis minibilder</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="934"/>
         <source>S&amp;ide Pane</source>
-        <translation>&amp;Siderute</translation>
+        <translation>&amp;Sidepanel</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="937"/>
@@ -1414,7 +1414,7 @@ venstreklikkes, selv når det ikke er forvalgt filbehandler.</translation>
         <location filename="../main-win.ui" line="105"/>
         <location filename="../main-win.ui" line="129"/>
         <source>&amp;View</source>
-        <translation>&amp;Visning</translation>
+        <translation>&amp;Vis</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="109"/>
@@ -1457,12 +1457,12 @@ venstreklikkes, selv når det ikke er forvalgt filbehandler.</translation>
     <message>
         <location filename="../application.cpp" line="190"/>
         <source>Run PCManFM-Qt as a daemon</source>
-        <translation>Kjør PCManFM-Qt som nisse</translation>
+        <translation>Kjør PCManFM-Qt som bakgrunnstjeneste</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="193"/>
         <source>Quit PCManFM-Qt</source>
-        <translation>Avslut PCManFM-Qt</translation>
+        <translation>Avslutt PCManFM-Qt</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="196"/>
@@ -1552,7 +1552,7 @@ venstreklikkes, selv når det ikke er forvalgt filbehandler.</translation>
     <message>
         <location filename="../autorundialog.cpp" line="138"/>
         <source>Removable Disk</source>
-        <translation>Uttagbar disk</translation>
+        <translation>Flyttbar disk</translation>
     </message>
 </context>
 <context>
@@ -2158,7 +2158,7 @@ De kan være nyttige hvis disse mappene opprettes igjen.</translation>
     <message>
         <location filename="../preferences.ui" line="212"/>
         <source>Launch executable files without prompt</source>
-        <translation>Kjør kjørbare filer uten å spør</translation>
+        <translation>Start kjørbare filer uten spørring</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="219"/>
@@ -2259,14 +2259,14 @@ hvis det er mer enn en fane.</translation>
         <source>The built-in thumbnailer makes thumbnails of images that are supported by Qt.
 
 Usually, most image types are supported. The default size limit is 4 MiB.</source>
-        <translation>Programmet som lager småikoner gjør det bare av bilder som er støttet av Qt.
+        <translation>Den innebygde minibildevisningen lager bare minibilder av bilder som er støttet av Qt.
 
 Vanligvis er de fleste bildetyper støttet. Begrensningen i størrelse er 4 MiB som standard.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="670"/>
         <source>Image size limit for built-in thumbnailer:</source>
-        <translation>Maks størrelse for innebygde små-ikoner:</translation>
+        <translation>Maks størrelse for innebygd minibildevisning:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="682"/>
@@ -2280,14 +2280,14 @@ Vanligvis er de fleste bildetyper støttet. Begrensningen i størrelse er 4 MiB 
         <source>If existing, external thumbnailers are used for videos, PDF documents, etc.
 
 A value of -1 means that there is no limit for the file size (the default).</source>
-        <translation>Hvis de fins brukes eksterne småikonsprogrammer for videoer, PDF-dokumenter osv.
+        <translation>Hvis de finnes brukes eksterne minibildeprogrammer for videoer, PDF-dokumenter osv.
 
 En verdi på -1 betyr at det ikke er noen begrensning på filstørrelsen (standard).</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="703"/>
         <source>File size limit for external thumbnailers:</source>
-        <translation>Maksimal filstørrelse for eksterne småikonsprogrammer:</translation>
+        <translation>Maks. filstørrelse for eksterne minibildeprogrammer:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="715"/>
@@ -2327,7 +2327,7 @@ En verdi på -1 betyr at det ikke er noen begrensning på filstørrelsen (standa
     <message>
         <location filename="../preferences.ui" line="129"/>
         <source>Show folder context menu with Ctrl + right click</source>
-        <translation>Vis mappens snareveismeny med Ctrl + høyreklikk</translation>
+        <translation>Vis mappens kontekstmeny med Ctrl + høyreklikk</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="229"/>
@@ -2362,32 +2362,32 @@ En verdi på -1 betyr at det ikke er noen begrensning på filstørrelsen (standa
     <message>
         <location filename="../preferences.ui" line="754"/>
         <source>Auto Mount</source>
-        <translation>Automatisk innlasting</translation>
+        <translation>Automatisk montering</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="760"/>
         <source>Mount mountable volumes automatically on program startup</source>
-        <translation>Last inn monterbare disker autmatisk ved programstart</translation>
+        <translation>Monter automatisk monterbare volumer ved programstart</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="767"/>
         <source>Mount removable media automatically when they are inserted</source>
-        <translation>Lst inn uttagbare medier automatisk når de settes inn</translation>
+        <translation>Monter flyttbare medier automatisk når de settes inn</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="774"/>
         <source>Show available options for removable media when they are inserted</source>
-        <translation>Vis valg for uttagbare medier når de settes inn</translation>
+        <translation>Vis tilgjengelige alternativer for flyttbare medier når de settes inn</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="784"/>
         <source>When removable medium unmounted:</source>
-        <translation>Når et uttagbart medium avmonteres:</translation>
+        <translation>Når flyttbart medium avmonteres:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="790"/>
         <source>Close &amp;tab containing removable medium</source>
-        <translation>Lukk &amp;faner der uttagbare medier er åpne</translation>
+        <translation>Lukk &amp;faner der flyttbare medier er åpne</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="797"/>
