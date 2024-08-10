@@ -87,12 +87,18 @@ target_include_directories(pcmanfm-qt
         "${Qt6Gui_PRIVATE_INCLUDE_DIRS}"
 )
 
-target_link_libraries(pcmanfm-qt
+set(LINK_LIBS
+    pcmanfm-qt
     Qt6::Widgets
     Qt6::DBus
-    LayerShellQtInterface
     fm-qt6
 )
+
+if(ENABLE_SHELLQT)
+    list(APPEND LINK_LIBS LayerShellQtInterface)
+endif()
+
+target_link_libraries(${LINK_LIBS})
 
 install(TARGETS pcmanfm-qt RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR})
 

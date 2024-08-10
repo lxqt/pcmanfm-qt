@@ -26,7 +26,13 @@ find_package(Qt6LinguistTools ${QT_MINIMUM_VERSION} REQUIRED)
 find_package(Qt6Widgets ${QT_MINIMUM_VERSION} REQUIRED)
 find_package(fm-qt6 ${LIBFMQT_MINIMUM_VERSION} REQUIRED)
 find_package(lxqt2-build-tools ${LXQTBT_MINIMUM_VERSION} REQUIRED)
-find_package(LayerShellQt ${SHELLQT_MINIMUM_VERSION} REQUIRED)
+
+option(ENABLE_SHELLQT "Enable ShellQt if building for Wayland" ON)
+if(ENABLE_SHELLQT)
+    add_definitions(-DUSE_ENABLE_SHELLQT)
+    find_package(LayerShellQt ${SHELLQT_MINIMUM_VERSION} REQUIRED)
+endif()
+
 
 message(STATUS "Building ${PROJECT_NAME} with Qt ${Qt6Core_VERSION}")
 
