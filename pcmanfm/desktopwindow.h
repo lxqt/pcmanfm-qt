@@ -111,6 +111,7 @@ protected Q_SLOTS:
     void onDesktopPreferences();
     void onCreatingShortcut();
     void selectAll();
+    void invertSelection();
     void toggleDesktop();
 
     void onRowsAboutToBeRemoved(const QModelIndex& parent, int start, int end);

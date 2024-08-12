@@ -174,6 +174,9 @@ DesktopWindow::DesktopWindow(int screenNum):
     shortcut = new QShortcut(QKeySequence(Qt::CTRL | Qt::Key_A), this); // select all
     connect(shortcut, &QShortcut::activated, this, &DesktopWindow::selectAll);
 
+    shortcut = new QShortcut(QKeySequence(Qt::CTRL | Qt::SHIFT | Qt::Key_A), this); // invert selection
+    connect(shortcut, &QShortcut::activated, this, &DesktopWindow::invertSelection);
+
     shortcut = new QShortcut(QKeySequence(Qt::Key_Delete), this); // delete
     connect(shortcut, &QShortcut::activated, this, &DesktopWindow::onDeleteActivated);
 
@@ -1153,6 +1156,12 @@ void DesktopWindow::toggleDesktop() {
 void DesktopWindow::selectAll() {
     if(!desktopHideItems_) {
         FolderView::selectAll();
+    }
+}
+
+void DesktopWindow::invertSelection() {
+    if(!desktopHideItems_) {
+        FolderView::invertSelection();
     }
 }
 
