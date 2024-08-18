@@ -2289,7 +2289,7 @@ A value of -1 means that there is no limit for the file size (the default).</sou
     <message>
         <location filename="../preferences.ui" line="919"/>
         <source>Search</source>
-        <translation type="unfinished"></translation>
+        <translation>Maghanap</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="934"/>

@@ -194,7 +194,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../desktopentrydialog.ui" line="14"/>
         <source>Create Launcher</source>
-        <translation>Skap oppstarter</translation>
+        <translation>Lag oppstarter</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="38"/>
@@ -1733,7 +1733,7 @@ venstreklikkes, selv når det ikke er forvalgt filbehandler.</translation>
     <message>
         <location filename="../desktopwindow.cpp" line="1090"/>
         <source>Create Launcher</source>
-        <translation>Skap oppstarter</translation>
+        <translation>Lag oppstarter</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="1093"/>
