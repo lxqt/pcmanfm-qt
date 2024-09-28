@@ -721,7 +721,7 @@ PCManFM-Qt에서 열립니다.</translation>
     <message>
         <location filename="../shortcuts.ui" line="130"/>
         <source>Paste into transient filter bar</source>
-        <translation>임시 필터 표시줄에 붙여넣기</translation>
+        <translation>검색창에 복사된 검색어 붙여넣기</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="135"/>
@@ -2342,7 +2342,7 @@ A value of -1 means that there is no limit for the file size (the default).</sou
     <message>
         <location filename="../preferences.ui" line="429"/>
         <source>Do not show file tooltips</source>
-        <translation>파일 도구 설명 표시 안함</translation>
+        <translation>파일 툴팁 표시 안함</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="436"/>

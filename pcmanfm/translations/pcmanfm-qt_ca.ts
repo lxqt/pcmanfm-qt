@@ -128,7 +128,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA.</trans
     <message>
         <location filename="../bulk-rename.ui" line="80"/>
         <source>Pad numbers with zero if possible</source>
-        <translation>Afegeix zeros als nombres si és possible</translation>
+        <translation>Afegeix zeros als nombres si es possible</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="87"/>
@@ -731,17 +731,17 @@ el gestor de fitxers predeterminat.</translation>
     <message>
         <location filename="../shortcuts.ui" line="135"/>
         <source>Drop+Shift</source>
-        <translation type="unfinished"></translation>
+        <translation>Deixar anar+Maj</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="143"/>
         <source>Drop+Ctrl</source>
-        <translation type="unfinished"></translation>
+        <translation>Deixar anar+Ctrl</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="151"/>
         <source>Drop+Shift+Ctrl</source>
-        <translation type="unfinished"></translation>
+        <translation>Deixar anar+Maj+Ctrl</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="138"/>

@@ -1360,7 +1360,7 @@ są klikane lewym przyciskiem, nawet jeśli nie jest to domyślny menedżer plik
     <message>
         <location filename="../main-win.ui" line="253"/>
         <source>Main Toolbar</source>
-        <translation>Główny pasek narzędzi</translation>
+        <translation>Główny pasek narzędziowy</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="679"/>
@@ -2133,12 +2133,12 @@ Mogą się one przydać, jeśli te katalogi zostaną stworzone ponownie.</transl
     <message>
         <location filename="../preferences.ui" line="144"/>
         <source>Open in current tab</source>
-        <translation>Otwórz w aktualnej zakładce</translation>
+        <translation>Otwórz w bieżącej karcie</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="149"/>
         <source>Open in new tab</source>
-        <translation>Otwórz w nowej zakładce</translation>
+        <translation>Otwórz w nowej karcie</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="154"/>
@@ -2281,7 +2281,7 @@ tylko wtedy, gdy jest więcej niż jedna karta.</translation>
         <source>The built-in thumbnailer makes thumbnails of images that are supported by Qt.
 
 Usually, most image types are supported. The default size limit is 4 MiB.</source>
-        <translation>Wbudowany miniaturownik robi miniaturki obrazów, które są wspierane przez Qt.
+        <translation>Wbudowany miniaturownik robi miniatury obrazów, które są wspierane przez Qt.
 
 Zazwyczaj, większość typów obrazów jest wspierana. Domyślny limit wielkości to 4MiB.</translation>
     </message>
