@@ -194,8 +194,9 @@ DesktopWindow::DesktopWindow(int screenNum):
     shortcut = new QShortcut(QKeySequence(Qt::SHIFT | Qt::Key_Delete), this); // force delete
     connect(shortcut, &QShortcut::activated, this, &DesktopWindow::onDeleteActivated);
 
-    // set the layer and anchors under Wayland
+    // under Wayland, set the layer and anchors as well as window transparency
     if(static_cast<Application*>(qApp)->underWayland()) {
+        setAttribute(Qt::WA_TranslucentBackground);
         winId();
         if(QWindow* win = windowHandle()) {
             if(LayerShellQt::Window* layershell = LayerShellQt::Window::get(win)) {
@@ -691,6 +692,7 @@ void DesktopWindow::updateWallpaper(bool checkMTime) {
             return;
         }
         QPixmap pixmap;
+        QColor bgColor;
         QImage image;
         Settings& settings = static_cast<Application* >(qApp)->settings();
         const auto screens = screen->virtualSiblings();
@@ -701,6 +703,7 @@ void DesktopWindow::updateWallpaper(bool checkMTime) {
             // Under Wayland, separate desktops are created for avoiding problems.
             perScreenWallpaper = false;
             pixmapRect = QRect(screen->geometry().topLeft(), screen->size() * screen->devicePixelRatio());
+            bgColor = Qt::transparent; // the window is transparent
         }
         else {
             perScreenWallpaper = screens.size() > 1 && settings.perScreenWallpaper();
@@ -709,6 +712,7 @@ void DesktopWindow::updateWallpaper(bool checkMTime) {
             for(const auto& scr : screens) {
                 pixmapRect |= QRect(scr->geometry().topLeft(), scr->size() * scr->devicePixelRatio());
             }
+            bgColor = bgColor_;
         }
         const QSize pixmapSize = pixmapRect.size();
 
@@ -734,7 +738,7 @@ void DesktopWindow::updateWallpaper(bool checkMTime) {
             if(perScreenWallpaper) {
                 pixmap = QPixmap{pixmapSize};
                 QPainter painter{&pixmap};
-                pixmap.fill(bgColor_);
+                pixmap.fill(bgColor);
                 image = getWallpaperImage();
                 if(!image.isNull()) {
                     QImage scaled;
@@ -755,7 +759,7 @@ void DesktopWindow::updateWallpaper(bool checkMTime) {
             if(perScreenWallpaper) {
                 pixmap = QPixmap{pixmapSize};
                 QPainter painter{&pixmap};
-                pixmap.fill(bgColor_);
+                pixmap.fill(bgColor);
                 image = getWallpaperImage();
                 if(!image.isNull()) {
                     QImage scaled;
@@ -847,7 +851,7 @@ void DesktopWindow::updateWallpaper(bool checkMTime) {
                 if(!image.isNull()) {
                     pixmap = QPixmap{pixmapSize};
                     QPainter painter(&pixmap);
-                    pixmap.fill(bgColor_);
+                    pixmap.fill(bgColor);
                     int x = (pixmapSize.width() - image.width()) / 2;
                     int y = (pixmapSize.height() - image.height()) / 2;
                     painter.drawImage(x, y, image);
