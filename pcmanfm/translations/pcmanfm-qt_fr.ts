@@ -72,16 +72,16 @@ Copyright (C) 2009 - 2014 洪任諭 (Hong Jen Yee)
 
 Ce programme est un logiciel libre ; vous pouvez le redistribuer et/ou
 le modifier selon les termes de la licence publique générale GNU
-tel que publié par la Free Software Foundation ; soit la version 2
+telle que publiée par la Free Software Foundation ; soit la version 2
 de la licence, ou (à votre choix) toute version ultérieure.
 
 Ce programme est distribué dans l’espoir qu’il sera utile,
 mais SANS AUCUNE GARANTIE ; sans même la garantie implicite de
-QUALITÉ MARCHANDE ou ADAPTATION À UN USAGE PARTICULIER. Voir le
-Licence publique générale GNU pour plus de détails.
+COMMERCIALISATION ou d&apos;ADAPTATION POUR UN USAGE PARTICULIER.
+Voir la licence publique générale GNU pour plus de détails.
 
 Vous devriez avoir reçu une copie de la licence publique générale GNU
-avec ce programme ; sinon écriver à la Free Software
+avec ce programme ; sinon écrivez à la Free Software
 Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.</translation>
     </message>
 </context>
@@ -110,7 +110,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../autorun.ui" line="56"/>
         <source>Please select the action you want to perform:</source>
-        <translation>Veuillez sélectionner l&apos;action que vous souhaitez effectuer :</translation>
+        <translation>Choisissez l&apos;action que vous souhaitez faire :</translation>
     </message>
 </context>
 <context>
@@ -128,7 +128,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../bulk-rename.ui" line="80"/>
         <source>Pad numbers with zero if possible</source>
-        <translation>Remplir les chiffres avec des zéros si possible</translation>
+        <translation>Si possible, remplir les chiffres avec des zéros</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="87"/>
@@ -171,12 +171,12 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../connect.ui" line="36"/>
         <source>Type:</source>
-        <translation>Type :</translation>
+        <translation>Type :</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="56"/>
         <source>Port:</source>
-        <translation>Port :</translation>
+        <translation>Port :</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="70"/>
@@ -209,7 +209,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../desktopentrydialog.ui" line="58"/>
         <source>Description:</source>
-        <translation>Description :</translation>
+        <translation>Description :</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="65"/>
@@ -218,37 +218,37 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
 It can be left empty.</source>
         <translation>Une courte description ou un nom générique, comme &quot;Navigateur Web&quot; ou &quot;Répertoire personnel&quot;.
 
-Elle peut être laissée vide.</translation>
+Peut rester vide.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="77"/>
         <source>Comment:</source>
-        <translation>Commentaire :</translation>
+        <translation>Commentaire :</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="84"/>
         <source>A short comment.
 
 It can be left empty.</source>
-        <translation>Un petit commentaire.
+        <translation>Un bref commentaire.
 
-Il peut être laissé vide.</translation>
+Peut rester vide.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="117"/>
         <source>Command:</source>
-        <translation>Commande :</translation>
+        <translation>Commande :</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="133"/>
         <location filename="../desktopentrydialog.ui" line="164"/>
         <source>...</source>
-        <translation>. . .</translation>
+        <translation>…</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="142"/>
         <source>Icon:</source>
-        <translation>Icône :</translation>
+        <translation>Icône :</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="151"/>
@@ -269,7 +269,7 @@ Il peut être laissé vide.</translation>
     <message>
         <location filename="../desktopentrydialog.ui" line="186"/>
         <source>Whether the launched program should run in a terminal window.</source>
-        <translation>Si le programme lancé doit s&apos;exécuter dans une fenêtre de terminal.</translation>
+        <translation>Indique si le programme doit s&apos;exécuter dans une fenêtre de terminal.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="190"/>
@@ -289,12 +289,12 @@ Il peut être laissé vide.</translation>
     <message>
         <location filename="../desktopentrydialog.ui" line="210"/>
         <source>Whether this is a link or executes a command.</source>
-        <translation>S&apos;il s&apos;agit d&apos;un lien ou de l&apos;exécution d&apos;une commande.</translation>
+        <translation>Indique s&apos;il s&apos;agit d&apos;un lien ou de l&apos;exécution d&apos;une commande.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="214"/>
         <source>Application</source>
-        <translation>Application(s)</translation>
+        <translation>Application</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="219"/>
@@ -369,12 +369,12 @@ Exemples : AudioVideo, Audio, Video, Development, Education, Game, Graphics, Net
     <message>
         <location filename="../desktop-preferences.ui" line="385"/>
         <source>Wallpaper mode:</source>
-        <translation>Mode du papier-peint :</translation>
+        <translation>Mode de fond d&apos;écran :</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="408"/>
         <source>Wallpaper image file:</source>
-        <translation>Fichier image du papier peint :</translation>
+        <translation>Fichier image du fond d&apos;écran :</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="350"/>
@@ -483,7 +483,7 @@ Un espace est également réservé pour 3 lignes de texte.</translation>
         <source>By default, desktop folders will be opened in PCManFM-Qt if they
 are left clicked, even when it is not the default file manager.</source>
         <translation>Par défaut, les dossiers de bureau s&apos;ouvrent dans PCManFM-Qt 
-par un clic gauche, même si aucun gestionnaire de fichiers n&apos;est défini par défaut.</translation>
+avec un clic gauche, même si aucun gestionnaire de fichiers n&apos;est défini par défaut.</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="307"/>
@@ -523,7 +523,7 @@ par un clic gauche, même si aucun gestionnaire de fichiers n&apos;est défini p
     <message>
         <location filename="../desktop-preferences.ui" line="491"/>
         <source>Wallpaper image folder:</source>
-        <translation>Répertoire des fonds d&apos;écran :</translation>
+        <translation>Dossier des fonds d&apos;écran :</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="505"/>
@@ -558,7 +558,7 @@ par un clic gauche, même si aucun gestionnaire de fichiers n&apos;est défini p
     <message>
         <location filename="../desktop-preferences.ui" line="498"/>
         <source>Wallpaper folder</source>
-        <translation>Répertoire des fonds d&apos;écran</translation>
+        <translation>Dossier des fonds d&apos;écran</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="587"/>
@@ -621,7 +621,7 @@ par un clic gauche, même si aucun gestionnaire de fichiers n&apos;est défini p
     <message>
         <location filename="../shortcuts.ui" line="34"/>
         <source>Focus view, clear filter bar</source>
-        <translation>Vue concentrée, nettoyer la bar de filtres</translation>
+        <translation type="unfinished">Vue concentrée, nettoyer la barre de filtres</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="39"/>
@@ -631,7 +631,7 @@ par un clic gauche, même si aucun gestionnaire de fichiers n&apos;est défini p
     <message>
         <location filename="../shortcuts.ui" line="42"/>
         <source>Focus side-pane</source>
-        <translation>Mise au point sur le volet latéral</translation>
+        <translation type="unfinished">Mise au point sur le volet latéral</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="47"/>
@@ -642,7 +642,7 @@ par un clic gauche, même si aucun gestionnaire de fichiers n&apos;est défini p
         <location filename="../shortcuts.ui" line="50"/>
         <location filename="../shortcuts.ui" line="58"/>
         <source>Focus path entry</source>
-        <translation>Focus sur l&apos;entrée du chemin</translation>
+        <translation type="unfinished">Focus sur l&apos;entrée du chemin</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="55"/>
@@ -730,7 +730,7 @@ par un clic gauche, même si aucun gestionnaire de fichiers n&apos;est défini p
     <message>
         <location filename="../shortcuts.ui" line="135"/>
         <source>Drop+Shift</source>
-        <translation>Déposer+Majuscule</translation>
+        <translation>Déposer+Maj</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="143"/>
@@ -740,22 +740,22 @@ par un clic gauche, même si aucun gestionnaire de fichiers n&apos;est défini p
     <message>
         <location filename="../shortcuts.ui" line="151"/>
         <source>Drop+Shift+Ctrl</source>
-        <translation>Déposer+Majuscule+Ctrl</translation>
+        <translation>Déposer+Maj+Ctrl</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="138"/>
         <source>Move file on dropping</source>
-        <translation>Déplacer le fichier lors du dépôt</translation>
+        <translation type="unfinished">Déplacer le fichier lors du dépôt</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="146"/>
         <source>Copy file on dropping</source>
-        <translation>Copier le fichier lors du dépôt</translation>
+        <translation type="unfinished">Copier le fichier lors du dépôt</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="154"/>
         <source>Make a symlink on dropping</source>
-        <translation>Créer un lien symbolique lors du dépôt</translation>
+        <translation type="unfinished">Créer un lien symbolique lors du dépôt</translation>
     </message>
 </context>
 <context>
@@ -838,7 +838,7 @@ par un clic gauche, même si aucun gestionnaire de fichiers n&apos;est défini p
     <message>
         <location filename="../main-win.ui" line="344"/>
         <source>&amp;About</source>
-        <translation>&amp;A propos</translation>
+        <translation>&amp;À propos</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="356"/>
@@ -888,7 +888,7 @@ par un clic gauche, même si aucun gestionnaire de fichiers n&apos;est défini p
     <message>
         <location filename="../main-win.ui" line="416"/>
         <source>&amp;Applications</source>
-        <translation>&amp;Logiciels</translation>
+        <translation>&amp;Applications</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="465"/>
@@ -923,7 +923,7 @@ par un clic gauche, même si aucun gestionnaire de fichiers n&apos;est défini p
     <message>
         <location filename="../main-win.ui" line="502"/>
         <source>De&amp;select All</source>
-        <translation>Dé&amp;sélectionner tous</translation>
+        <translation>Tout dé&amp;sélectionner</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="505"/>
@@ -973,7 +973,7 @@ par un clic gauche, même si aucun gestionnaire de fichiers n&apos;est défini p
     <message>
         <location filename="../main-win.ui" line="574"/>
         <source>By &amp;Owner</source>
-        <translation>Par &amp;Propriétaire</translation>
+        <translation>Par &amp;propriétaire</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="582"/>
@@ -983,7 +983,7 @@ par un clic gauche, même si aucun gestionnaire de fichiers n&apos;est défini p
     <message>
         <location filename="../main-win.ui" line="590"/>
         <source>&amp;Folder First</source>
-        <translation>&amp;Répertoires d&apos;abord</translation>
+        <translation>&amp;Dossier d&apos;abord</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="598"/>
@@ -998,7 +998,7 @@ par un clic gauche, même si aucun gestionnaire de fichiers n&apos;est défini p
     <message>
         <location filename="../main-win.ui" line="963"/>
         <source>Preserve Settings Recursively from &amp;Here</source>
-        <translation>Conserver les paramètres de manière récursive à partir d&apos;&amp;Ici</translation>
+        <translation>Préserver les paramètres de manière récurrente à partir d&apos;&amp;Ici</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="968"/>
@@ -1053,17 +1053,17 @@ par un clic gauche, même si aucun gestionnaire de fichiers n&apos;est défini p
     <message>
         <location filename="../main-win.ui" line="734"/>
         <source>Open Tab in &amp;Root Instance</source>
-        <translation>Ouvrir l&apos;onglet en tant que &amp;Root</translation>
+        <translation>Ouvrir l&apos;onglet en tant qu&apos;&amp;administrateur</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="847"/>
         <source>Preserve Settings for &amp;This Folder</source>
-        <translation>Conserver les paramètres de ce &amp;Dossier</translation>
+        <translation>Conserver les paramètres de ce &amp;dossier</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="884"/>
         <source>&amp;Show/Focus Filter Bar</source>
-        <translation>&amp;Montrer/Focus sur la barre de filtre</translation>
+        <translation type="unfinished">&amp;Montrer/Focus sur la barre de filtre</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="887"/>
@@ -1078,12 +1078,12 @@ par un clic gauche, même si aucun gestionnaire de fichiers n&apos;est défini p
     <message>
         <location filename="../main-win.ui" line="898"/>
         <source>S&amp;plit View</source>
-        <translation>Vue &amp;partagée</translation>
+        <translation type="unfinished">Vue &amp;partagée</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="901"/>
         <source>Split View</source>
-        <translation>Vue partagée</translation>
+        <translation type="unfinished">Vue partagée</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="904"/>
@@ -1103,17 +1103,17 @@ par un clic gauche, même si aucun gestionnaire de fichiers n&apos;est défini p
     <message>
         <location filename="../main-win.ui" line="923"/>
         <source>Show Thumb&amp;nails</source>
-        <translation>Afficher les mi&amp;niatures</translation>
+        <translation type="unfinished">Afficher les mi&amp;niatures</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="926"/>
         <source>Show Thumbnails</source>
-        <translation>Afficher les miniatures</translation>
+        <translation type="unfinished">Afficher les miniatures</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="934"/>
         <source>S&amp;ide Pane</source>
-        <translation>vollet &amp;latéral</translation>
+        <translation>Panneau &amp;latéral</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="937"/>
@@ -1128,7 +1128,7 @@ par un clic gauche, même si aucun gestionnaire de fichiers n&apos;est défini p
     <message>
         <location filename="../main-win.ui" line="947"/>
         <source>Open Tab in &amp;Admin Mode</source>
-        <translation>Ouvrir un onglet en mode &amp;Admin</translation>
+        <translation>Ouvrir un onglet en mode &amp;administrateur</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="952"/>
@@ -1164,7 +1164,7 @@ par un clic gauche, même si aucun gestionnaire de fichiers n&apos;est défini p
     <message>
         <location filename="../main-win.ui" line="821"/>
         <source>&amp;Menu bar</source>
-        <translation>Barre des &amp;menus</translation>
+        <translation>Barre de &amp;menu</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="852"/>
@@ -1370,7 +1370,7 @@ par un clic gauche, même si aucun gestionnaire de fichiers n&apos;est défini p
     <message>
         <location filename="../main-win.ui" line="687"/>
         <source>Alt+Return</source>
-        <translation>Alt+Return</translation>
+        <translation>Alt+Retour</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="721"/>

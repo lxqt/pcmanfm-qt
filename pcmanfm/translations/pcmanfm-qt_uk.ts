@@ -317,7 +317,7 @@ Examples: AudioVideo, Audio, Video, Development, Education, Game, Graphics, Netw
 
 Це потрібно лише тоді, коли ви хочете використовувати створений файл у головному меню. В іншому випадку ви можете залишити його порожнім.
 
-Приклади: АудіоВідео, Аудіо, Відео, Розробка, Освіта, Ігри, Графіка, Мережа, Офіс, Налаштування, Система, Утиліти, Qt.</translation>
+Приклади: AudioVideo, Audio, Video, Development, Education, Game, Graphics, Network, Office, Settings, System, Utility, Qt.</translation>
     </message>
 </context>
 <context>

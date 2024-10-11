@@ -320,7 +320,7 @@ Amannya g&apos;ebiti gaawule n&apos;akabonero &apos;,&apos;.
 
 Eky&apos;okulabirako: Ebiwulirizibwa, Ebya vidiyo, Byanjigiriza, Ebizanyisibwa, Eby&apos;ebifaananyi, Yintaneti, Wofiisi, Byanteekateeka, Sisitemu
 
-Olukalala luno lwetaagibwa bw&apos;oba nga fayiro eno oyagala ekola ku menyu y&apos;awakolera enkulu. Bwe kiba nga ssi kyo osobola okulekawo nga wereere.</translation>
+Examples: AudioVideo, Audio, Video, Development, Education, Game, Graphics, Network, Office, Settings, System, Utility, Qt.</translation>
     </message>
 </context>
 <context>

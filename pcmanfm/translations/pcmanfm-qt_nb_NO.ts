@@ -315,7 +315,7 @@ Examples: AudioVideo, Audio, Video, Development, Education, Game, Graphics, Netw
 
 Det trengs kun når du bruker den opprettede filen i hovedmenyen. Ellers kan du la den stå tom.
 
-Eksempler: LydVideo, Lyd, Video, Utvikling, Utdanning, Spill, Grafikk, Nettverk, Kontorprogramvare, Innstillinger, System, Verktøy, Qt.</translation>
+Eksempler: AudioVideo, Audio, Video, Development, Education, Game, Graphics, Network, Office, Settings, System, Utility, Qt.</translation>
     </message>
 </context>
 <context>
