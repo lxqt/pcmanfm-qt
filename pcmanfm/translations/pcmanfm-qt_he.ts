@@ -316,7 +316,7 @@ Examples: AudioVideo, Audio, Video, Development, Education, Game, Graphics, Netw
 
 נחוץ רק כאשר רוצים להשתמש בקובץ שנוצר בתפריט הראשי. אחרת, אפשר להשאיר את זה ריק.
 
-דוגמאות: שמעוידאו, שמע, וידאו, פיתוח, חינוך, משחקים, גרפיקה, רשת, כלימשרד, הגדרות, מערכת, כלים, Qt.</translation>
+דוגמאות: AudioVideo, Audio, Video, Development, Education, Game, Graphics, Network, Office, Settings, System, Utility, Qt.</translation>
     </message>
 </context>
 <context>

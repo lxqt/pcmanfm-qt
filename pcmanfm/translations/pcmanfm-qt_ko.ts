@@ -313,7 +313,7 @@ Examples: AudioVideo, Audio, Video, Development, Education, Game, Graphics, Netw
 
 생성된 파일을 메인 메뉴에서 사용하고자 할 때만 필요합니다. 그렇지 않으면 비워 둘 수 있습니다.
 
-예: 오디오 비디오, 오디오, 비디오, 개발, 교육, 게임, 그래픽, 네트워크, 사무실, 설정, 시스템, 유틸리티, Qt.</translation>
+예: AudioVideo, Audio, Video, Development, Education, Game, Graphics, Network, Office, Settings, System, Utility, Qt.</translation>
     </message>
 </context>
 <context>

@@ -317,7 +317,7 @@ Examples: AudioVideo, Audio, Video, Development, Education, Game, Graphics, Netw
 
 Jest to potrzebne tylko wtedy, gdy chcesz użyć utworzonego pliku w menu głównym. W przeciwnym razie możesz pozostawić to puste.
 
-Przykłady: AudioWideo, Audio, Wideo, Programowanie, Edukacja, Gra, Grafika, Sieć, Biuro, Ustawienia, System, Narzędzie, Qt.</translation>
+Przykłady: AudioVideo, Audio, Video, Development, Education, Game, Graphics, Network, Office, Settings, System, Utility, Qt.</translation>
     </message>
 </context>
 <context>
@@ -818,7 +818,7 @@ są klikane lewym przyciskiem, nawet jeśli nie jest to domyślny menedżer plik
     <message>
         <location filename="../main-win.ui" line="302"/>
         <source>&amp;Home</source>
-        <translation>Katalog &amp;użytkownika</translation>
+        <translation>Katalog &amp;domowy</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="314"/>
@@ -2399,7 +2399,7 @@ Wartość -1 oznacza, brak limitu dla rozmiaru pliku (ustawienie domyślne).</tr
     <message>
         <location filename="../preferences.ui" line="797"/>
         <source>Chan&amp;ge folder in the tab to home folder</source>
-        <translation>Z&amp;mień katalog w karcie na katalog użytkownika</translation>
+        <translation>Zmień katalog karty na katalog domowy</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="847"/>
@@ -2467,7 +2467,7 @@ Wartość -1 oznacza, brak limitu dla rozmiaru pliku (ustawienie domyślne).</tr
     <message>
         <location filename="../bulkrename.cpp" line="95"/>
         <source>Renaming is aborted.</source>
-        <translation>Anulowanie zmiany nazw..</translation>
+        <translation>Anulowanie zmiany nazwy.</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="121"/>
