@@ -110,7 +110,8 @@ TabPage::TabPage(QWidget* parent):
     verticalLayout{nullptr},
     overrideCursor_(false),
     selectionTimer_(nullptr),
-    filterBar_(nullptr) {
+    filterBar_(nullptr),
+    changingDir_(false) {
 
     Settings& settings = static_cast<Application*>(qApp)->settings();
 
@@ -121,8 +122,10 @@ TabPage::TabPage(QWidget* parent):
     proxyModel_->setShowThumbnails(settings.showThumbnails());
     connect(proxyModel_, &ProxyFolderModel::sortFilterChanged, this, [this] {
         QToolTip::showText(QPoint(), QString()); // remove the tooltip, if any
-        saveFolderSorting();
-        Q_EMIT sortFilterChanged();
+        if(!changingDir_) {
+            saveFolderSorting();
+            Q_EMIT sortFilterChanged();
+        }
     });
 
     verticalLayout = new QVBoxLayout(this);
@@ -677,6 +680,8 @@ void TabPage::chdir(Fm::FilePath newPath, bool addHistory) {
         freeFolder();
     }
 
+    changingDir_ = true;
+
     // remove the tooltip, if any
     QToolTip::showText(QPoint(), QString());
     // set title as with path button (will change if the new folder is loaded)
@@ -715,22 +720,16 @@ void TabPage::chdir(Fm::FilePath newPath, bool addHistory) {
         proxyFilter_->filterFullName(true);
     }
 
-    // folderSettings_ will be set by saveFolderSorting() when the sort filter is changed below
-    // (and also by setViewMode()); here, we only need to know whether it should be saved
-    FolderSettings folderSettings = settings.loadFolderSettings(path());
-    folderSettings_.setCustomized(folderSettings.isCustomized());
-    folderSettings_.setRecursive(folderSettings.recursive());
-    folderSettings_.seInheritedPath(folderSettings.inheritedPath());
-
+    folderSettings_ = settings.loadFolderSettings(path());
     // set sorting
-    proxyModel_->sort(folderSettings.sortColumn(), folderSettings.sortOrder());
-    proxyModel_->setFolderFirst(folderSettings.sortFolderFirst());
-    proxyModel_->setHiddenLast(folderSettings.sortHiddenLast());
-    proxyModel_->setShowHidden(folderSettings.showHidden());
-    proxyModel_->setSortCaseSensitivity(folderSettings.sortCaseSensitive() ? Qt::CaseSensitive : Qt::CaseInsensitive);
+    proxyModel_->sort(folderSettings_.sortColumn(), folderSettings_.sortOrder());
+    proxyModel_->setFolderFirst(folderSettings_.sortFolderFirst());
+    proxyModel_->setHiddenLast(folderSettings_.sortHiddenLast());
+    proxyModel_->setShowHidden(folderSettings_.showHidden());
+    proxyModel_->setSortCaseSensitivity(folderSettings_.sortCaseSensitive() ? Qt::CaseSensitive : Qt::CaseInsensitive);
     proxyModel_->setSourceModel(folderModel_);
     // set view mode
-    setViewMode(folderSettings.viewMode());
+    setViewMode(folderSettings_.viewMode());
 
     if(folder_->isLoaded()) {
         onFolderStartLoading();
@@ -740,6 +739,8 @@ void TabPage::chdir(Fm::FilePath newPath, bool addHistory) {
     else {
         onFolderStartLoading();
     }
+
+    changingDir_ = false;
 }
 
 void TabPage::selectAll() {
@@ -901,7 +902,7 @@ void TabPage::setViewMode(Fm::FolderView::ViewMode mode) {
     Settings& settings = static_cast<Application*>(qApp)->settings();
     if(folderSettings_.viewMode() != mode) {
         folderSettings_.setViewMode(mode);
-        if(folderSettings_.isCustomized()) {
+        if(!changingDir_ && folderSettings_.isCustomized()) {
             settings.saveFolderSettings(path(), folderSettings_);
         }
     }
