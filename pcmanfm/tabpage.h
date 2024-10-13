@@ -345,6 +345,7 @@ private:
     FilterBar* filterBar_;
     QStringList filesToTrust_;
     Fm::FilePathList filesToSelect_; // files to select
+    bool changingDir_; // chdir is in progress
 };
 
 }
