@@ -349,7 +349,7 @@ Voorbeelden: AudioVideo;Audio;Video;Ontwikkeling;Onderwijs;Spellen;Grafisch;Netw
     <message>
         <location filename="../desktop-folder.ui" line="49"/>
         <source>&amp;Browse</source>
-        <translation>&amp;Verkennen</translation>
+        <translation>&amp;Kiezen</translation>
     </message>
 </context>
 <context>
@@ -373,7 +373,7 @@ Voorbeelden: AudioVideo;Audio;Video;Ontwikkeling;Onderwijs;Spellen;Grafisch;Netw
     <message>
         <location filename="../desktop-preferences.ui" line="408"/>
         <source>Wallpaper image file:</source>
-        <translation>Achtergrondafbeeldingsbestand:</translation>
+        <translation>Achtergrondafbeelding:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="350"/>
@@ -393,7 +393,7 @@ Voorbeelden: AudioVideo;Audio;Video;Ontwikkeling;Onderwijs;Spellen;Grafisch;Netw
     <message>
         <location filename="../desktop-preferences.ui" line="430"/>
         <source>&amp;Browse</source>
-        <translation>&amp;Verkennen</translation>
+        <translation>&amp;Kiezen</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="30"/>
@@ -438,7 +438,7 @@ Voorbeelden: AudioVideo;Audio;Video;Ontwikkeling;Onderwijs;Spellen;Grafisch;Netw
     <message>
         <location filename="../desktop-preferences.ui" line="145"/>
         <source>Minimum item margins:</source>
-        <translation>Minimale marges tussen elementen:</translation>
+        <translation>Minimale afstand tussen items:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="152"/>
@@ -481,13 +481,13 @@ Er is tevens ruimte gereserveerd voor drie regels tekst.</translation>
         <location filename="../desktop-preferences.ui" line="303"/>
         <source>By default, desktop folders will be opened in PCManFM-Qt if they
 are left clicked, even when it is not the default file manager.</source>
-        <translation>Standaard worden bureaubladmappen na links klikken geopend in PCManFM-Qt,
+        <translation>Standaard worden bureaubladmappen geopend in PCManFM-Qt,
 zelfs als dat niet de standaard bestandsbeheerder is.</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="307"/>
         <source>Open desktop folders in default file manager by left clicking</source>
-        <translation>Buereaubladmappen na links klikken openen in standaard bestandsbeheerder</translation>
+        <translation>Buereaubladmappen openen in standaard bestandsbeheerder</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="314"/>
@@ -502,12 +502,12 @@ zelfs als dat niet de standaard bestandsbeheerder is.</translation>
     <message>
         <location filename="../desktop-preferences.ui" line="439"/>
         <source>Transform image based on EXIF data</source>
-        <translation>Afbeelding transformeren aan de hand van exif-gegevens</translation>
+        <translation>Afbeelding inpassen op basis van exif-gegevens</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="446"/>
         <source>Individual wallpaper for each monitor</source>
-        <translation>Elk beeldscherm voorzien van andere achtergrond</translation>
+        <translation>Ieder beeldscherm voorzien van andere achtergrond</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="473"/>
@@ -527,7 +527,7 @@ zelfs als dat niet de standaard bestandsbeheerder is.</translation>
     <message>
         <location filename="../desktop-preferences.ui" line="505"/>
         <source>Browse</source>
-        <translation>Verkennen</translation>
+        <translation>Kiezen</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="512"/>
@@ -1894,7 +1894,7 @@ Ze kunnen van pas komen als u ze opnieuw aanmaakt.</translation>
     <message>
         <location filename="../tabpage.cpp" line="562"/>
         <source>Free space: %1 (Total: %2)</source>
-        <translation>Vrije ruimte: %1 (totaal&#xa0;: %2)</translation>
+        <translation>Vrije ruimte: %1 (totaal : %2)</translation>
     </message>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="579"/>
@@ -2207,7 +2207,7 @@ Ze kunnen van pas komen als u ze opnieuw aanmaakt.</translation>
     <message>
         <location filename="../preferences.ui" line="459"/>
         <source>Minimum item margins in icon view:</source>
-        <translation>Minimale marges rond items in pictogramweergave:</translation>
+        <translation>Minimale afstand tussen items in pictogramweergave:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="466"/>
