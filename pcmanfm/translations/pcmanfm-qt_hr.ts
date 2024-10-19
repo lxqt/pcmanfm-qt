@@ -772,629 +772,629 @@ upravljač datoteka.</translation>
         <translation>Nedavne &amp;datoteke</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="139"/>
+        <location filename="../main-win.ui" line="143"/>
         <source>&amp;Toolbars</source>
         <translation>&amp;Alatne trake</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="146"/>
+        <location filename="../main-win.ui" line="150"/>
         <source>Path &amp;Bar</source>
         <translation>&amp;Traka staze</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="153"/>
+        <location filename="../main-win.ui" line="157"/>
         <source>&amp;Filtering</source>
         <translation>&amp;Filtriranje</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="228"/>
+        <location filename="../main-win.ui" line="232"/>
         <source>&amp;Tools</source>
         <translation>&amp;Alati</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="287"/>
+        <location filename="../main-win.ui" line="291"/>
         <source>Go &amp;Up</source>
         <translation>Idi &amp;gore</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="290"/>
+        <location filename="../main-win.ui" line="294"/>
         <source>Go Up</source>
         <translation>Idi gore</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="293"/>
+        <location filename="../main-win.ui" line="297"/>
         <source>Alt+Up</source>
         <translation>Alt+Gore</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="302"/>
+        <location filename="../main-win.ui" line="306"/>
         <source>&amp;Home</source>
         <translation>&amp;Početna mapa</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="305"/>
+        <location filename="../main-win.ui" line="309"/>
         <source>Alt+Home</source>
         <translation>Alt+Home</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="314"/>
+        <location filename="../main-win.ui" line="318"/>
         <source>&amp;Reload</source>
         <translation>&amp;Učitaj ponovo</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="317"/>
+        <location filename="../main-win.ui" line="321"/>
         <source>F5</source>
         <translation>F5</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="326"/>
+        <location filename="../main-win.ui" line="330"/>
         <source>Go</source>
         <translation>Idi</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="335"/>
+        <location filename="../main-win.ui" line="339"/>
         <source>Quit</source>
         <translation>Zatvori</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="344"/>
+        <location filename="../main-win.ui" line="348"/>
         <source>&amp;About</source>
         <translation>&amp;Informacije</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="353"/>
+        <location filename="../main-win.ui" line="357"/>
         <source>&amp;New Window</source>
         <translation>&amp;Novi prozor</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="356"/>
+        <location filename="../main-win.ui" line="360"/>
         <source>New Window</source>
         <translation>Novi prozor</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="359"/>
+        <location filename="../main-win.ui" line="363"/>
         <source>Ctrl+N</source>
         <translation>Ctrl+N</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="367"/>
+        <location filename="../main-win.ui" line="371"/>
         <source>Show &amp;Hidden</source>
         <translation>Prikaži &amp;skrivene</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="370"/>
+        <location filename="../main-win.ui" line="374"/>
         <source>Ctrl+H</source>
         <translation>Ctrl+S</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="379"/>
+        <location filename="../main-win.ui" line="383"/>
         <source>&amp;Computer</source>
         <translation>Rač&amp;unalo</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="388"/>
+        <location filename="../main-win.ui" line="392"/>
         <source>&amp;Trash</source>
         <translation>&amp;Smeće</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="393"/>
+        <location filename="../main-win.ui" line="397"/>
         <source>&amp;Network</source>
         <translation>&amp;Mreža</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="402"/>
+        <location filename="../main-win.ui" line="410"/>
         <source>&amp;Desktop</source>
         <translation>&amp;Radna površina</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="411"/>
+        <location filename="../main-win.ui" line="419"/>
         <source>&amp;Add to Bookmarks</source>
         <translation>&amp;Dodaj knjižne oznake</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="416"/>
+        <location filename="../main-win.ui" line="424"/>
         <source>&amp;Applications</source>
         <translation>&amp;Programi</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="421"/>
+        <location filename="../main-win.ui" line="429"/>
         <source>Reload</source>
         <translation>Učitaj ponovo</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="429"/>
+        <location filename="../main-win.ui" line="437"/>
         <source>&amp;Icon View</source>
         <translation>Prikaz i&amp;kona</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="437"/>
+        <location filename="../main-win.ui" line="445"/>
         <source>&amp;Compact View</source>
         <translation>&amp;Kompaktan prikaz</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="445"/>
+        <location filename="../main-win.ui" line="453"/>
         <source>&amp;Detailed List</source>
         <translation>&amp;Detaljan popis</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="453"/>
+        <location filename="../main-win.ui" line="461"/>
         <source>&amp;Thumbnail View</source>
         <translation>Prikaz &amp;sličica</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="462"/>
+        <location filename="../main-win.ui" line="470"/>
         <source>Cu&amp;t</source>
         <translation>&amp;Izreži</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="465"/>
+        <location filename="../main-win.ui" line="473"/>
         <source>Ctrl+X</source>
         <translation>Ctrl+X</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="474"/>
+        <location filename="../main-win.ui" line="482"/>
         <source>&amp;Copy</source>
         <translation>&amp;Kopiraj</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="477"/>
+        <location filename="../main-win.ui" line="485"/>
         <source>Ctrl+C</source>
         <translation>Ctrl+C</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="486"/>
+        <location filename="../main-win.ui" line="494"/>
         <source>&amp;Paste</source>
         <translation>&amp;Zalijepi</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="489"/>
+        <location filename="../main-win.ui" line="497"/>
         <source>Ctrl+V</source>
         <translation>Ctrl+V</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="494"/>
+        <location filename="../main-win.ui" line="506"/>
         <source>Select &amp;All</source>
         <translation>Od&amp;aberi sve</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="497"/>
+        <location filename="../main-win.ui" line="509"/>
         <source>Ctrl+A</source>
         <translation>Ctrl+A</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="502"/>
+        <location filename="../main-win.ui" line="514"/>
         <source>De&amp;select All</source>
         <translation>Odznači &amp;sve</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="505"/>
+        <location filename="../main-win.ui" line="517"/>
         <source>Ctrl+D</source>
         <translation>Ctrl+D</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="510"/>
+        <location filename="../main-win.ui" line="522"/>
         <source>Pr&amp;eferences</source>
         <translation>Postavk&amp;e</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="518"/>
+        <location filename="../main-win.ui" line="530"/>
         <source>&amp;Ascending</source>
         <translation>&amp;Uzlazno</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="526"/>
+        <location filename="../main-win.ui" line="542"/>
         <source>&amp;Descending</source>
         <translation>&amp;Silazno</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="534"/>
+        <location filename="../main-win.ui" line="554"/>
         <source>&amp;By File Name</source>
         <translation>Prema &amp;imenu datoteka</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="542"/>
+        <location filename="../main-win.ui" line="562"/>
         <source>By &amp;Modification Time</source>
         <translation>Prema &amp;vremenu promjene</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="550"/>
+        <location filename="../main-win.ui" line="570"/>
         <source>By C&amp;reation Time</source>
         <translation>Prema vremenu &amp;stvaranja</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="558"/>
+        <location filename="../main-win.ui" line="578"/>
         <source>By Deletio&amp;n Time</source>
         <translation>Po datumu &amp;brisanja</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="566"/>
+        <location filename="../main-win.ui" line="586"/>
         <source>By File &amp;Type</source>
         <translation>Prema vrs&amp;ti datoteke</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="574"/>
+        <location filename="../main-win.ui" line="594"/>
         <source>By &amp;Owner</source>
         <translation>Po vla&amp;sniku</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="582"/>
+        <location filename="../main-win.ui" line="602"/>
         <source>By &amp;Group</source>
         <translation>Po &amp;grupi</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="590"/>
+        <location filename="../main-win.ui" line="610"/>
         <source>&amp;Folder First</source>
         <translation>Najprije &amp;mape</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="598"/>
+        <location filename="../main-win.ui" line="618"/>
         <source>&amp;Hidden Last</source>
         <translation>S&amp;krivene na kraj</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="879"/>
+        <location filename="../main-win.ui" line="931"/>
         <source>Shift+F2</source>
         <translation>Shift+F2</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="963"/>
+        <location filename="../main-win.ui" line="1019"/>
         <source>Preserve Settings Recursively from &amp;Here</source>
         <translation>Sačuvaj postavke rekurzivno odavde</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="968"/>
+        <location filename="../main-win.ui" line="1024"/>
         <source>&amp;Go to Source of Inherited Settings</source>
         <translation>&amp;Idi na izvor naslijeđenih postavki</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="973"/>
+        <location filename="../main-win.ui" line="1029"/>
         <source>&amp;Remove Settings of Nonexistent Folders</source>
         <translation>&amp;Ukloni postavke nepostojećih mapa</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="981"/>
+        <location filename="../main-win.ui" line="1037"/>
         <source>&amp;Clear</source>
         <translation>&amp;Izbriši</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="651"/>
+        <location filename="../main-win.ui" line="671"/>
         <source>Ctrl+Shift+A</source>
         <translation>Ctrl+Shift+V</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="700"/>
+        <location filename="../main-win.ui" line="732"/>
         <source>&amp;Case Sensitive</source>
         <translation>&amp;Razlikovanje velikih/malih slova</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="708"/>
+        <location filename="../main-win.ui" line="740"/>
         <source>By File &amp;Size</source>
         <translation>Prema veličini &amp;datoteke</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="713"/>
+        <location filename="../main-win.ui" line="749"/>
         <source>&amp;Close Window</source>
         <translation>&amp;Zatvori prozor</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="716"/>
+        <location filename="../main-win.ui" line="752"/>
         <source>Ctrl+Q</source>
         <translation>Ctrl+Q</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="734"/>
+        <location filename="../main-win.ui" line="774"/>
         <source>Open Tab in &amp;Root Instance</source>
         <translation>Otvo&amp;ri karticu u administratorskoj instanci</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="748"/>
+        <location filename="../main-win.ui" line="788"/>
         <source>&amp;Folder</source>
         <translation>&amp;Mapa</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="760"/>
+        <location filename="../main-win.ui" line="800"/>
         <source>&amp;Blank File</source>
         <translation>&amp;Prazna datoteka</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="847"/>
+        <location filename="../main-win.ui" line="891"/>
         <source>Preserve Settings for &amp;This Folder</source>
         <translation>Sačuvaj postavke za ovu &amp;mapu</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="884"/>
+        <location filename="../main-win.ui" line="936"/>
         <source>&amp;Show/Focus Filter Bar</source>
         <translation>&amp;Prikaži/fokusiraj traku filtra</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="887"/>
+        <location filename="../main-win.ui" line="939"/>
         <source>Show Filter Bar</source>
         <translation>Prikaži traku filtra</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="890"/>
+        <location filename="../main-win.ui" line="942"/>
         <source>Ctrl+I</source>
         <translation>Ctrl+I</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="898"/>
+        <location filename="../main-win.ui" line="950"/>
         <source>S&amp;plit View</source>
         <translation>Podijeli &amp;prikaz</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="901"/>
+        <location filename="../main-win.ui" line="953"/>
         <source>Split View</source>
         <translation>Podijeli prikaz</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="904"/>
+        <location filename="../main-win.ui" line="956"/>
         <source>F6</source>
         <translation>F6</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="909"/>
+        <location filename="../main-win.ui" line="961"/>
         <source>&amp;Copy Full Path</source>
         <translation>&amp;Kopiraj potpunu stazu</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="912"/>
+        <location filename="../main-win.ui" line="968"/>
         <source>Ctrl+Shift+C</source>
         <translation>Ctrl+Shift+L</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="923"/>
+        <location filename="../main-win.ui" line="979"/>
         <source>Show Thumb&amp;nails</source>
         <translation>Prikaži &amp;sličice</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="926"/>
+        <location filename="../main-win.ui" line="982"/>
         <source>Show Thumbnails</source>
         <translation>Prikaži sličice</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="934"/>
+        <location filename="../main-win.ui" line="990"/>
         <source>S&amp;ide Pane</source>
         <translation>&amp;Bočna ploča</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="937"/>
+        <location filename="../main-win.ui" line="993"/>
         <source>F9</source>
         <translation>F9</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="942"/>
+        <location filename="../main-win.ui" line="998"/>
         <source>Hidden &amp;Shortcuts</source>
         <translation>&amp;Skriveni prečaci</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="947"/>
+        <location filename="../main-win.ui" line="1003"/>
         <source>Open Tab in &amp;Admin Mode</source>
         <translation>Otvori karticu u &amp;administratorskom modusu</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="952"/>
-        <location filename="../main-win.ui" line="955"/>
+        <location filename="../main-win.ui" line="1008"/>
+        <location filename="../main-win.ui" line="1011"/>
         <source>Create Launcher</source>
         <translation>Stvori pokretača</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="782"/>
+        <location filename="../main-win.ui" line="826"/>
         <source>Ctrl+B</source>
         <translation>Ctrl+B</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="787"/>
+        <location filename="../main-win.ui" line="831"/>
         <source>&amp;Clear All Filters</source>
         <translation>&amp;Ukloni sve filtre</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="790"/>
+        <location filename="../main-win.ui" line="834"/>
         <source>Ctrl+Shift+K</source>
         <translation>Ctrl+Shift+K</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="799"/>
+        <location filename="../main-win.ui" line="843"/>
         <source>Close &amp;previous tabs</source>
         <translation>Zatvori &amp;prethodnu karticu</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="808"/>
+        <location filename="../main-win.ui" line="852"/>
         <source>Close &amp;next tabs</source>
         <translation>Zatvori &amp;sljedeću karticu</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="852"/>
+        <location filename="../main-win.ui" line="900"/>
         <source>Connect to &amp;Server</source>
         <translation>Poveži se s po&amp;služiteljem</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="860"/>
+        <location filename="../main-win.ui" line="908"/>
         <source>&amp;Location</source>
         <translation>&amp;Mjesto</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="868"/>
+        <location filename="../main-win.ui" line="916"/>
         <source>&amp;Path Buttons</source>
         <translation>&amp;Gumbi za staze</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="873"/>
+        <location filename="../main-win.ui" line="921"/>
         <source>&amp;Bulk Rename</source>
         <translation>&amp;Grupno preimenovanje</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="876"/>
+        <location filename="../main-win.ui" line="928"/>
         <source>Bulk Rename</source>
         <translation>Grupno preimenovanje</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="813"/>
+        <location filename="../main-win.ui" line="857"/>
         <source>Close &amp;other tabs</source>
         <translation>Zatvori &amp;ostale kartice</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="779"/>
+        <location filename="../main-win.ui" line="823"/>
         <source>Permanent &amp;filter bar</source>
         <translation>Stalna traka &amp;filtra</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="821"/>
+        <location filename="../main-win.ui" line="865"/>
         <source>&amp;Menu bar</source>
         <translation>Traka iz&amp;bornika</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="824"/>
+        <location filename="../main-win.ui" line="868"/>
         <source>Menu bar</source>
         <translation>Traka izbornika</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="827"/>
+        <location filename="../main-win.ui" line="871"/>
         <source>Ctrl+M</source>
         <translation>Ctrl+G</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="836"/>
-        <location filename="../main-win.ui" line="839"/>
+        <location filename="../main-win.ui" line="880"/>
+        <location filename="../main-win.ui" line="883"/>
         <source>Menu</source>
         <translation>Izbornik</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="607"/>
+        <location filename="../main-win.ui" line="627"/>
         <source>New &amp;Tab</source>
         <translation>Nova kar&amp;tica</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="160"/>
+        <location filename="../main-win.ui" line="164"/>
         <source>&amp;Customized View Settings</source>
         <translation>&amp;Postavke prilagođenog prikaza</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="610"/>
+        <location filename="../main-win.ui" line="630"/>
         <source>New Tab</source>
         <translation>Nova kartica</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="613"/>
+        <location filename="../main-win.ui" line="633"/>
         <source>Ctrl+T</source>
         <translation>Ctrl+T</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="622"/>
+        <location filename="../main-win.ui" line="642"/>
         <source>Go &amp;Back</source>
         <translation>Idi &amp;natrag</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="625"/>
+        <location filename="../main-win.ui" line="645"/>
         <source>Go Back</source>
         <translation>Idi natrag</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="628"/>
+        <location filename="../main-win.ui" line="648"/>
         <source>Alt+Left</source>
         <translation>Alt+Lijevo</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="637"/>
+        <location filename="../main-win.ui" line="657"/>
         <source>Go &amp;Forward</source>
         <translation>Idi na&amp;prijed</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="640"/>
+        <location filename="../main-win.ui" line="660"/>
         <source>Go Forward</source>
         <translation>Idi naprijed</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="643"/>
+        <location filename="../main-win.ui" line="663"/>
         <source>Alt+Right</source>
         <translation>Alt+Desno</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="648"/>
+        <location filename="../main-win.ui" line="668"/>
         <source>&amp;Invert Selection</source>
         <translation>Preo&amp;kreni odabir</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="660"/>
+        <location filename="../main-win.ui" line="680"/>
         <source>&amp;Delete</source>
         <translation>&amp;Ukloni</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="663"/>
+        <location filename="../main-win.ui" line="683"/>
         <source>Del</source>
         <translation>Del</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="668"/>
+        <location filename="../main-win.ui" line="688"/>
         <source>&amp;Rename</source>
         <translation>Prei&amp;menuj</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="671"/>
+        <location filename="../main-win.ui" line="695"/>
         <source>F2</source>
         <translation>F2</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="676"/>
+        <location filename="../main-win.ui" line="704"/>
         <source>C&amp;lose Tab</source>
         <translation>&amp;Zatvori karticu</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="679"/>
+        <location filename="../main-win.ui" line="707"/>
         <source>Ctrl+W</source>
         <translation>Ctrl+W</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="684"/>
+        <location filename="../main-win.ui" line="716"/>
         <source>File &amp;Properties</source>
         <translation>S&amp;vojstva datoteke</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="687"/>
+        <location filename="../main-win.ui" line="719"/>
         <source>Alt+Return</source>
         <translation>Alt+Return</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="692"/>
+        <location filename="../main-win.ui" line="724"/>
         <source>&amp;Folder Properties</source>
         <translation>Svojstva &amp;mape</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="721"/>
+        <location filename="../main-win.ui" line="757"/>
         <source>Edit Bookmarks</source>
         <translation>Uredi knjižne oznake</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="726"/>
+        <location filename="../main-win.ui" line="766"/>
         <source>Open &amp;Terminal</source>
         <translation>Otvori &amp;terminal</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="729"/>
+        <location filename="../main-win.ui" line="769"/>
         <source>F4</source>
         <translation>F4</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="739"/>
+        <location filename="../main-win.ui" line="779"/>
         <source>&amp;Edit Bookmarks</source>
         <translation>&amp;Uredi knjižne oznake</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="751"/>
+        <location filename="../main-win.ui" line="791"/>
         <source>Ctrl+Shift+N</source>
         <translation>Ctrl+Shift+N</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="763"/>
+        <location filename="../main-win.ui" line="803"/>
         <source>Ctrl+Alt+N</source>
         <translation>Ctrl+Alt+N</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="768"/>
+        <location filename="../main-win.ui" line="808"/>
         <source>&amp;Find Files</source>
         <translation>&amp;Pronađi datoteke</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="771"/>
+        <location filename="../main-win.ui" line="815"/>
         <source>F3</source>
         <translation>F3</translation>
     </message>
@@ -1409,38 +1409,38 @@ upravljač datoteka.</translation>
         <translation>Stvo&amp;ri novu</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="98"/>
+        <location filename="../main-win.ui" line="102"/>
         <source>&amp;Help</source>
         <translation>P&amp;omoć</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="105"/>
-        <location filename="../main-win.ui" line="129"/>
+        <location filename="../main-win.ui" line="109"/>
+        <location filename="../main-win.ui" line="133"/>
         <source>&amp;View</source>
         <translation>&amp;Prikaz</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="109"/>
+        <location filename="../main-win.ui" line="113"/>
         <source>&amp;Sorting</source>
         <translation>&amp;Razvrstavanje</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="185"/>
+        <location filename="../main-win.ui" line="189"/>
         <source>&amp;Edit</source>
         <translation>&amp;Uredi</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="204"/>
+        <location filename="../main-win.ui" line="208"/>
         <source>&amp;Bookmarks</source>
         <translation>&amp;Knjižne oznake</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="211"/>
+        <location filename="../main-win.ui" line="215"/>
         <source>&amp;Go</source>
         <translation>&amp;Idi</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="253"/>
+        <location filename="../main-win.ui" line="257"/>
         <source>Main Toolbar</source>
         <translation>Glavna traka alata</translation>
     </message>
@@ -1534,13 +1534,13 @@ upravljač datoteka.</translation>
         <translation>[DATOTEKA1, DATOTEKA2, …]</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="655"/>
-        <location filename="../application.cpp" line="660"/>
+        <location filename="../application.cpp" line="654"/>
+        <location filename="../application.cpp" line="659"/>
         <source>Error</source>
         <translation>Greška</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="660"/>
+        <location filename="../application.cpp" line="659"/>
         <source>Terminal emulator is not set.</source>
         <translation>Emulator terminala nije postavljen.</translation>
     </message>
@@ -1667,17 +1667,17 @@ upravljač datoteka.</translation>
         <translation>Ispuni</translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="264"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="266"/>
         <source>Select Wallpaper</source>
         <translation>Odaberi sliku pozadine</translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="268"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="270"/>
         <source>Image Files</source>
         <translation>Slikovne datoteke</translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="310"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="312"/>
         <source>Select Wallpaper Folder</source>
         <translation>Odaberi mapu sa slikama pozadine</translation>
     </message>
@@ -1685,12 +1685,12 @@ upravljač datoteka.</translation>
 <context>
     <name>PCManFM::DesktopWindow</name>
     <message>
-        <location filename="../desktopwindow.cpp" line="303"/>
+        <location filename="../desktopwindow.cpp" line="328"/>
         <source>Trash (One item)</source>
         <translation>Smeće (jedan element)</translation>
     </message>
     <message numerus="yes">
-        <location filename="../desktopwindow.cpp" line="306"/>
+        <location filename="../desktopwindow.cpp" line="331"/>
         <source>Trash (%Ln items)</source>
         <translation>
             <numerusform>Smeće (%Ln element)</numerusform>
@@ -1699,48 +1699,48 @@ upravljač datoteka.</translation>
         </translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="310"/>
+        <location filename="../desktopwindow.cpp" line="335"/>
         <source>Trash (Empty)</source>
         <translation>Smeće (prazno)</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="345"/>
+        <location filename="../desktopwindow.cpp" line="370"/>
         <source>Computer</source>
         <translation>Računalo</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="359"/>
+        <location filename="../desktopwindow.cpp" line="384"/>
         <source>Network</source>
         <translation>Mreža</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1011"/>
+        <location filename="../desktopwindow.cpp" line="1046"/>
         <source>Open</source>
         <translation>Otvori</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1017"/>
-        <location filename="../desktopwindow.cpp" line="1057"/>
+        <location filename="../desktopwindow.cpp" line="1052"/>
+        <location filename="../desktopwindow.cpp" line="1092"/>
         <source>Stic&amp;k to Current Position</source>
         <translation>Fi&amp;ksiraj na trenutačnom položaju</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1025"/>
+        <location filename="../desktopwindow.cpp" line="1060"/>
         <source>Empty Trash</source>
         <translation>Isprazni smeće</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1084"/>
+        <location filename="../desktopwindow.cpp" line="1126"/>
         <source>Hide Desktop Items</source>
         <translation>Sakrij elemente radne površine</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1090"/>
+        <location filename="../desktopwindow.cpp" line="1132"/>
         <source>Create Launcher</source>
         <translation>Stvori pokretača</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1093"/>
+        <location filename="../desktopwindow.cpp" line="1135"/>
         <source>Desktop Preferences</source>
         <translation>Postavke radne površine</translation>
     </message>
@@ -1764,60 +1764,60 @@ upravljač datoteka.</translation>
 <context>
     <name>PCManFM::MainWindow</name>
     <message>
-        <location filename="../mainwindow.cpp" line="142"/>
+        <location filename="../mainwindow.cpp" line="143"/>
         <source>Root Instance</source>
         <translation>Administratorska instanca</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="780"/>
+        <location filename="../mainwindow.cpp" line="783"/>
         <source>Hide menu bar</source>
         <translation>Sakrij traku izbornika</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="781"/>
+        <location filename="../mainwindow.cpp" line="784"/>
         <source>This will hide the menu bar completely, use Ctrl+M to show it again.</source>
         <translation>Ovo će kompletno sakriti traku izbornika. Za ponovno prikazivanje, koristi Ctrl+M.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1228"/>
+        <location filename="../mainwindow.cpp" line="1231"/>
         <source>Version: %1</source>
         <translation>Verzija: %1</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="175"/>
-        <location filename="../mainwindow.cpp" line="2203"/>
+        <location filename="../mainwindow.cpp" line="176"/>
+        <location filename="../mainwindow.cpp" line="2200"/>
         <source>&amp;Move to Trash</source>
         <translation>Pre&amp;mjesti u smeće</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="175"/>
-        <location filename="../mainwindow.cpp" line="2203"/>
+        <location filename="../mainwindow.cpp" line="176"/>
+        <location filename="../mainwindow.cpp" line="2200"/>
         <source>&amp;Delete</source>
         <translation>&amp;Ukloni</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="2039"/>
+        <location filename="../mainwindow.cpp" line="2036"/>
         <source>Customized View Settings</source>
         <translation>Postavke prilagođenog prikaza</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="2310"/>
-        <location filename="../mainwindow.cpp" line="2318"/>
+        <location filename="../mainwindow.cpp" line="2307"/>
+        <location filename="../mainwindow.cpp" line="2315"/>
         <source>Error</source>
         <translation>Greška</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="2318"/>
+        <location filename="../mainwindow.cpp" line="2315"/>
         <source>Switch user command is not set.</source>
         <translation>Naredba za mijenjanje korisnika nije postavljena.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="2420"/>
+        <location filename="../mainwindow.cpp" line="2406"/>
         <source>Cleaning Folder Settings</source>
         <translation>Postavke čišćenja mape</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="2421"/>
+        <location filename="../mainwindow.cpp" line="2407"/>
         <source>Do you want to remove settings of nonexistent folders?
 They might be useful if those folders are created again.</source>
         <translation>Želiš li ukloniti postavke nepostojećih mapa?
@@ -1827,32 +1827,32 @@ Mogle bi biti korisne, ako se te mape ponovo kreiraju.</translation>
 <context>
     <name>PCManFM::PreferencesDialog</name>
     <message>
-        <location filename="../preferencesdialog.cpp" line="206"/>
+        <location filename="../preferencesdialog.cpp" line="211"/>
         <source>Icon View</source>
         <translation>Prikaz ikona</translation>
     </message>
     <message>
-        <location filename="../preferencesdialog.cpp" line="207"/>
+        <location filename="../preferencesdialog.cpp" line="212"/>
         <source>Compact View</source>
         <translation>Kompaktan prikaz</translation>
     </message>
     <message>
-        <location filename="../preferencesdialog.cpp" line="208"/>
+        <location filename="../preferencesdialog.cpp" line="213"/>
         <source>Thumbnail View</source>
         <translation>Prikaz sličica</translation>
     </message>
     <message>
-        <location filename="../preferencesdialog.cpp" line="209"/>
+        <location filename="../preferencesdialog.cpp" line="214"/>
         <source>Detailed List View</source>
         <translation>Detaljan popis</translation>
     </message>
     <message>
-        <location filename="../preferencesdialog.cpp" line="279"/>
+        <location filename="../preferencesdialog.cpp" line="284"/>
         <source>Remove if added by user</source>
         <translation>Ukloni ako je dodano od korisnika</translation>
     </message>
     <message>
-        <location filename="../preferencesdialog.cpp" line="303"/>
+        <location filename="../preferencesdialog.cpp" line="308"/>
         <source>Open user-defined list</source>
         <translation>Otvori korisnički određen popis</translation>
     </message>
@@ -2451,39 +2451,39 @@ Vrijednost -1 znači da ne postoji ograničenje za veličinu datoteke (standardn
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../bulkrename.cpp" line="86"/>
+        <location filename="../bulkrename.cpp" line="89"/>
         <source>Renaming files...</source>
         <translation>Preimenovanje datoteka …</translation>
     </message>
     <message>
-        <location filename="../bulkrename.cpp" line="86"/>
+        <location filename="../bulkrename.cpp" line="89"/>
         <source>Abort</source>
         <translation>Prekini</translation>
     </message>
     <message>
-        <location filename="../bulkrename.cpp" line="95"/>
+        <location filename="../bulkrename.cpp" line="98"/>
         <source>Warning</source>
         <translation>Upozorenje</translation>
     </message>
     <message>
-        <location filename="../bulkrename.cpp" line="95"/>
+        <location filename="../bulkrename.cpp" line="98"/>
         <source>Renaming is aborted.</source>
         <translation>Preimenovanje je prekinuto.</translation>
     </message>
     <message>
-        <location filename="../bulkrename.cpp" line="121"/>
         <location filename="../bulkrename.cpp" line="124"/>
+        <location filename="../bulkrename.cpp" line="127"/>
         <location filename="../tabpage.cpp" line="1142"/>
         <source>Error</source>
         <translation>Greška</translation>
     </message>
     <message>
-        <location filename="../bulkrename.cpp" line="121"/>
+        <location filename="../bulkrename.cpp" line="124"/>
         <source>No file could be renamed.</source>
         <translation>Nijednu datoteku nije bilo moguće preimenovati.</translation>
     </message>
     <message>
-        <location filename="../bulkrename.cpp" line="124"/>
+        <location filename="../bulkrename.cpp" line="127"/>
         <source>Some files could not be renamed.</source>
         <translation>Neke datoteke nije bilo moguće preimenovati.</translation>
     </message>
