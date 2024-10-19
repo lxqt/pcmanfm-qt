@@ -1796,6 +1796,7 @@ void MainWindow::loadBookmarksMenu() {
     QAction* before = ui.actionAddToBookmarks;
     for(auto& item: bookmarks_->items()) {
         BookmarkAction* action = new BookmarkAction(item, ui.menu_Bookmarks);
+        action->setIcon(item->icon()->qicon());
         connect(action, &QAction::triggered, this, &MainWindow::onBookmarkActionTriggered);
         ui.menu_Bookmarks->insertAction(before, action);
     }
