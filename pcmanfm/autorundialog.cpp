@@ -50,8 +50,7 @@ AutoRunDialog::AutoRunDialog(GVolume* volume, GMount* mount, QWidget* parent, Qt
 }
 
 AutoRunDialog::~AutoRunDialog() {
-    g_list_foreach(applications, (GFunc)g_object_unref, nullptr);
-    g_list_free(applications);
+    g_list_free_full(applications, g_object_unref);
 
     if(mount_) {
         g_object_unref(mount_);
