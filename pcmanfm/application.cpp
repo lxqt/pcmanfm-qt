@@ -1067,7 +1067,8 @@ static int sigterm_fd[2];
 
 static void sigtermHandler(int) {
     char c = 1;
-    ::write(sigterm_fd[0], &c, sizeof(c));
+    auto w = ::write(sigterm_fd[0], &c, sizeof(c));
+    Q_UNUSED(w);
 }
 
 void Application::installSigtermHandler() {
@@ -1092,7 +1093,8 @@ void Application::onSigtermNotified() {
     if(QSocketNotifier* notifier = qobject_cast<QSocketNotifier*>(sender())) {
         notifier->setEnabled(false);
         char c;
-        ::read(sigterm_fd[1], &c, sizeof(c));
+        auto r = ::read(sigterm_fd[1], &c, sizeof(c));
+        Q_UNUSED(r);
         // close all windows cleanly; otherwise, we might get this warning:
         // "QBasicTimer::start: QBasicTimer can only be used with threads started with QThread"
         const auto windows = topLevelWidgets();
