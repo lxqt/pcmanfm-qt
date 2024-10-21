@@ -175,6 +175,9 @@ MainWindow::MainWindow(Fm::FilePath path):
     // menu
     ui.actionDelete->setText(settings.useTrash() ? tr("&Move to Trash") : tr("&Delete"));
     ui.actionDelete->setIcon(settings.useTrash() ? QIcon::fromTheme(QStringLiteral("user-trash")) : QIcon::fromTheme(QStringLiteral("edit-delete")));
+    ui.actionNetwork->setIcon(QIcon::fromTheme(QStringLiteral("network"), QIcon::fromTheme(QStringLiteral("folder-network"))));
+    ui.actionApplications->setIcon(QIcon::fromTheme(QStringLiteral("system-software-install"),
+        QIcon::fromTheme(QStringLiteral("applications-accessories"))));
 
     // side pane
     ui.sidePane->setVisible(settings.isSidePaneVisible());

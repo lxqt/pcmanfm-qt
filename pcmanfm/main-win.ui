@@ -396,10 +396,6 @@
    <property name="text">
     <string>&amp;Network</string>
    </property>
-   <property name="icon">
-    <iconset theme="folder-network">
-     <normaloff>.</normaloff>.</iconset>
-   </property>
   </action>
   <action name="actionDesktop">
    <property name="icon">
