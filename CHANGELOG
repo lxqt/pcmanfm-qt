@@ -1,3 +1,16 @@
+pcmanfm-qt-2.1.0 / 2024-11-05
+==============================
+ * Add 8 menu icons.
+ * Use own icon in the desktop entry.
+ * Trim leading and trailing spaces in server connection dialog.
+ * Remember showing of hidden desktop items.
+ * Separate multi-screen desktops under Wayland.
+ * Enabled shortcut for inverting selection on Desktop.
+ * Enable translucency for desktop under Wayland.
+ * Simplified the code for folder settings.
+ * Silenced compilation warnings.
+ * Add remaining icons to "Go" menu.
+
 pcmanfm-qt-2.0.0 / 2024-04-17
 ==============================
  * Ported to Qt6.
