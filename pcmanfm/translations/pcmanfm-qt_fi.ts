@@ -601,7 +601,7 @@ klikattiin, vaikka se ei olisi oletustiedostonhallintaohjelma.</translation>
     <message>
         <location filename="../shortcuts.ui" line="14"/>
         <source>Hidden Shortcuts</source>
-        <translation>Piilotetut pikakuvakkeet</translation>
+        <translation>Piilotetut pikanäppäimet</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="21"/>

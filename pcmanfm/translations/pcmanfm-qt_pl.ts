@@ -923,7 +923,7 @@ są klikane lewym przyciskiem, nawet jeśli nie jest to domyślny menedżer plik
     <message>
         <location filename="../main-win.ui" line="502"/>
         <source>De&amp;select All</source>
-        <translation>Odznacz Wszystko</translation>
+        <translation>Odznacz w&amp;szystko</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="505"/>
@@ -973,7 +973,7 @@ są klikane lewym przyciskiem, nawet jeśli nie jest to domyślny menedżer plik
     <message>
         <location filename="../main-win.ui" line="574"/>
         <source>By &amp;Owner</source>
-        <translation>W&amp;łaściciel</translation>
+        <translation>Według właścici&amp;ela</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="582"/>
