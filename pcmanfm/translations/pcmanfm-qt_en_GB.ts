@@ -961,17 +961,17 @@ are left clicked, even when it is not the default file manager.</translation>
     <message>
         <location filename="../main-win.ui" line="534"/>
         <source>&amp;By File Name</source>
-        <translation></translation>
+        <translation>By File Name</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="542"/>
         <source>By &amp;Modification Time</source>
-        <translation></translation>
+        <translation>By Modification Time</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="550"/>
         <source>By C&amp;reation Time</source>
-        <translation type="unfinished"></translation>
+        <translation>By Creation Time</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="558"/>
@@ -981,7 +981,7 @@ are left clicked, even when it is not the default file manager.</translation>
     <message>
         <location filename="../main-win.ui" line="566"/>
         <source>By File &amp;Type</source>
-        <translation></translation>
+        <translation>By File Type</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="574"/>
@@ -1041,7 +1041,7 @@ are left clicked, even when it is not the default file manager.</translation>
     <message>
         <location filename="../main-win.ui" line="708"/>
         <source>By File &amp;Size</source>
-        <translation></translation>
+        <translation>By File Size</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="713"/>
@@ -2243,7 +2243,7 @@ Usually, most image types are supported. The default size limit is 4 MiB.</sourc
         <location filename="../preferences.ui" line="682"/>
         <location filename="../preferences.ui" line="718"/>
         <source> MiB</source>
-        <translation type="unfinished"></translation>
+        <translation> MiB</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="698"/>

@@ -216,7 +216,9 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
         <source>A short description or generic name, like &quot;Web Browser&quot; or &quot;Home Directory&quot;.
 
 It can be left empty.</source>
-        <translation>Valgfri kort beskrivelse eller generisk navn, som f.eks. «Nettleser», eller «Hjemmemappe».</translation>
+        <translation>En kort beskrivelse eller generisk navn, som f.eks. «Nettleser» eller «Hjemmemappe».
+
+Kan stå tomt.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="77"/>
@@ -246,7 +248,7 @@ Kan stå tom.</translation>
     <message>
         <location filename="../desktopentrydialog.ui" line="142"/>
         <source>Icon:</source>
-        <translation>Symbol:</translation>
+        <translation>Ikon:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="151"/>
@@ -356,7 +358,7 @@ Eksempler: AudioVideo, Audio, Video, Development, Education, Game, Graphics, Net
     <message>
         <location filename="../desktop-preferences.ui" line="14"/>
         <source>Desktop Preferences</source>
-        <translation>Skrivebordsvalg</translation>
+        <translation>Skrivebordsinnstillinger</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="338"/>
@@ -397,12 +399,12 @@ Eksempler: AudioVideo, Audio, Video, Development, Education, Game, Graphics, Net
     <message>
         <location filename="../desktop-preferences.ui" line="30"/>
         <source>Icons</source>
-        <translation>Symboler</translation>
+        <translation>Ikoner</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="36"/>
         <source>Icon size:</source>
-        <translation>Symbolstørrelse:</translation>
+        <translation>Ikonstørrelse:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="49"/>
@@ -442,7 +444,7 @@ Eksempler: AudioVideo, Audio, Video, Development, Education, Game, Graphics, Net
     <message>
         <location filename="../desktop-preferences.ui" line="152"/>
         <source>3 px by default.</source>
-        <translation>Standard er 3 punkter.</translation>
+        <translation>Standard er 3 piksler.</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="155"/>
@@ -463,8 +465,8 @@ Eksempler: AudioVideo, Audio, Video, Development, Education, Game, Graphics, Net
         <location filename="../desktop-preferences.ui" line="175"/>
         <source>1 px by default.
 A space is also reserved for 3 lines of text.</source>
-        <translation>1 punkt er standard.
-Et mellomrom er også reservert for 3 linjers tekst.</translation>
+        <translation>1 piksel er standard.
+Et mellomrom er også reservert for tre-linjers tekst.</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="192"/>
@@ -901,7 +903,7 @@ venstreklikkes, selv når det ikke er forvalgt filbehandler.</translation>
     <message>
         <location filename="../main-win.ui" line="429"/>
         <source>&amp;Icon View</source>
-        <translation>&amp;Symbolvisning</translation>
+        <translation>&amp;Ikonvisning</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="437"/>
@@ -1477,7 +1479,7 @@ venstreklikkes, selv når det ikke er forvalgt filbehandler.</translation>
     <message>
         <location filename="../application.cpp" line="202"/>
         <source>Open desktop preference dialog on the page with the specified name</source>
-        <translation>Åpne skrivebordsvalg på siden med det spesifiserte navnet</translation>
+        <translation>Åpne skrivebordinnstillingsdialog på siden med det spesifiserte navnet</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="202"/>
@@ -1518,7 +1520,7 @@ venstreklikkes, selv når det ikke er forvalgt filbehandler.</translation>
     <message>
         <location filename="../application.cpp" line="217"/>
         <source>Open Preferences dialog on the page with the specified name</source>
-        <translation>Åpne valg på siden med det spesifiserte navnet</translation>
+        <translation>Åpne innstillingsdialog på siden med det spesifiserte navnet</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="220"/>
@@ -1613,7 +1615,7 @@ venstreklikkes, selv når det ikke er forvalgt filbehandler.</translation>
     <message>
         <location filename="../desktopentrydialog.cpp" line="67"/>
         <source>Select an icon</source>
-        <translation>Velg et symbol</translation>
+        <translation>Velg et ikon</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="69"/>
@@ -1738,7 +1740,7 @@ venstreklikkes, selv når det ikke er forvalgt filbehandler.</translation>
     <message>
         <location filename="../desktopwindow.cpp" line="1093"/>
         <source>Desktop Preferences</source>
-        <translation>Skrivebordsvalg</translation>
+        <translation>Skrivebordsinnstillinger</translation>
     </message>
 </context>
 <context>
@@ -1816,7 +1818,7 @@ venstreklikkes, selv når det ikke er forvalgt filbehandler.</translation>
         <location filename="../mainwindow.cpp" line="2421"/>
         <source>Do you want to remove settings of nonexistent folders?
 They might be useful if those folders are created again.</source>
-        <translation>Fjern innstillinger for ikke-eksisterende mapper?
+        <translation>Vil du fjerne innstillinger for ikke-eksisterende mapper?
 De kan være nyttige hvis disse mappene opprettes igjen.</translation>
     </message>
 </context>
@@ -1825,7 +1827,7 @@ De kan være nyttige hvis disse mappene opprettes igjen.</translation>
     <message>
         <location filename="../preferencesdialog.cpp" line="206"/>
         <source>Icon View</source>
-        <translation>Symbolvisning</translation>
+        <translation>Ikonvisning</translation>
     </message>
     <message>
         <location filename="../preferencesdialog.cpp" line="207"/>
@@ -2000,17 +2002,17 @@ De kan være nyttige hvis disse mappene opprettes igjen.</translation>
     <message>
         <location filename="../preferences.ui" line="296"/>
         <source>Icons</source>
-        <translation>Symboler</translation>
+        <translation>Ikoner</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="328"/>
         <source>Size of big icons:</source>
-        <translation>Størrelse på store symboler:</translation>
+        <translation>Størrelse på store ikoner:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="345"/>
         <source>Size of small icons:</source>
-        <translation>Størrelse på små symboler:</translation>
+        <translation>Størrelse på små ikoner:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="362"/>
@@ -2020,12 +2022,12 @@ De kan være nyttige hvis disse mappene opprettes igjen.</translation>
     <message>
         <location filename="../preferences.ui" line="376"/>
         <source>Size of side pane icons:</source>
-        <translation>Størrelse på symboler i sidepanelet:</translation>
+        <translation>Størrelse på sidepanelikoner:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="308"/>
         <source>Icon theme:</source>
-        <translation>Symboltema:</translation>
+        <translation>Ikontema:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="546"/>
@@ -2174,7 +2176,7 @@ De kan være nyttige hvis disse mappene opprettes igjen.</translation>
         <location filename="../preferences.ui" line="325"/>
         <location filename="../preferences.ui" line="335"/>
         <source>Used by Icon View</source>
-        <translation>Brukt av symbolvisning</translation>
+        <translation>Brukt av ikonvisning</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="342"/>
@@ -2201,17 +2203,17 @@ De kan være nyttige hvis disse mappene opprettes igjen.</translation>
     <message>
         <location filename="../preferences.ui" line="422"/>
         <source>Show icons of hidden files shadowed</source>
-        <translation>Vis skyggelagte symboler for skjulte filer</translation>
+        <translation>Vis skyggelagte ikoner for skjulte filer</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="459"/>
         <source>Minimum item margins in icon view:</source>
-        <translation>Minimum marg i symbolvisning:</translation>
+        <translation>Minimum-marger i ikonvisning:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="466"/>
         <source>3 px by default.</source>
-        <translation>Standard er 3 punkter.</translation>
+        <translation>Standard er 3 piksler.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="469"/>
@@ -2228,8 +2230,8 @@ De kan være nyttige hvis disse mappene opprettes igjen.</translation>
         <location filename="../preferences.ui" line="489"/>
         <source>3 px by default.
 A space is also reserved for 3 lines of text.</source>
-        <translation>3 punkter er standard.
-Et mellomrom er også reservert for tre linjers tekst.</translation>
+        <translation>3 piksler er standard.
+Et mellomrom er også reservert for tre-linjers tekst.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="506"/>
@@ -2352,7 +2354,7 @@ En verdi på -1 betyr at det ikke er noen begrensning på filstørrelsen (standa
     <message>
         <location filename="../preferences.ui" line="436"/>
         <source>Disable smooth scrolling</source>
-        <translation type="unfinished"></translation>
+        <translation>Slå av jevn rulling</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="648"/>
