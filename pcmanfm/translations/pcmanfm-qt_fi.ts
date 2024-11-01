@@ -771,629 +771,629 @@ klikattiin, vaikka se ei olisi oletustiedostonhallintaohjelma.</translation>
         <translation>V&amp;iimeisimmät tiedostot</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="139"/>
+        <location filename="../main-win.ui" line="143"/>
         <source>&amp;Toolbars</source>
         <translation>&amp;Työkalurivit</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="146"/>
+        <location filename="../main-win.ui" line="150"/>
         <source>Path &amp;Bar</source>
         <translation>&amp;Polkurivi</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="153"/>
+        <location filename="../main-win.ui" line="157"/>
         <source>&amp;Filtering</source>
         <translation>&amp;Suodata</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="228"/>
+        <location filename="../main-win.ui" line="232"/>
         <source>&amp;Tools</source>
         <translation>&amp;Työkalut</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="287"/>
+        <location filename="../main-win.ui" line="291"/>
         <source>Go &amp;Up</source>
         <translation>Polkua &amp;ylös</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="290"/>
+        <location filename="../main-win.ui" line="294"/>
         <source>Go Up</source>
         <translation>Polkua ylös</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="293"/>
+        <location filename="../main-win.ui" line="297"/>
         <source>Alt+Up</source>
         <translation>Alt+Ylänuoli</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="302"/>
+        <location filename="../main-win.ui" line="306"/>
         <source>&amp;Home</source>
         <translation>&amp;Koti</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="305"/>
+        <location filename="../main-win.ui" line="309"/>
         <source>Alt+Home</source>
         <translation>Alt+Home</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="314"/>
+        <location filename="../main-win.ui" line="318"/>
         <source>&amp;Reload</source>
         <translation>Päi&amp;vitä</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="317"/>
+        <location filename="../main-win.ui" line="321"/>
         <source>F5</source>
         <translation>F5</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="326"/>
+        <location filename="../main-win.ui" line="330"/>
         <source>Go</source>
         <translation>Siirry</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="335"/>
+        <location filename="../main-win.ui" line="339"/>
         <source>Quit</source>
         <translation>Lopeta</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="344"/>
+        <location filename="../main-win.ui" line="348"/>
         <source>&amp;About</source>
         <translation>&amp;Tietoja</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="353"/>
+        <location filename="../main-win.ui" line="357"/>
         <source>&amp;New Window</source>
         <translation>&amp;Uusi ikkuna</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="356"/>
+        <location filename="../main-win.ui" line="360"/>
         <source>New Window</source>
         <translation>Uusi ikkuna</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="359"/>
+        <location filename="../main-win.ui" line="363"/>
         <source>Ctrl+N</source>
         <translation>Ctrl+N</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="367"/>
+        <location filename="../main-win.ui" line="371"/>
         <source>Show &amp;Hidden</source>
         <translation>&amp;Näytä piilotiedostot</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="370"/>
+        <location filename="../main-win.ui" line="374"/>
         <source>Ctrl+H</source>
         <translation>Ctrl+H</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="379"/>
+        <location filename="../main-win.ui" line="383"/>
         <source>&amp;Computer</source>
         <translation>T&amp;ietokone</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="388"/>
+        <location filename="../main-win.ui" line="392"/>
         <source>&amp;Trash</source>
         <translation>&amp;Roskakori</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="393"/>
+        <location filename="../main-win.ui" line="397"/>
         <source>&amp;Network</source>
         <translation>&amp;Verkko</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="402"/>
+        <location filename="../main-win.ui" line="406"/>
         <source>&amp;Desktop</source>
         <translation>&amp;Työpöytä</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="411"/>
+        <location filename="../main-win.ui" line="415"/>
         <source>&amp;Add to Bookmarks</source>
         <translation>&amp;Lisää kirjanmerkkeihin</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="416"/>
+        <location filename="../main-win.ui" line="420"/>
         <source>&amp;Applications</source>
         <translation>&amp;Sovellukset</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="421"/>
+        <location filename="../main-win.ui" line="425"/>
         <source>Reload</source>
         <translation>Päivitä</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="429"/>
+        <location filename="../main-win.ui" line="433"/>
         <source>&amp;Icon View</source>
         <translation>&amp;Kuvakkeet</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="437"/>
+        <location filename="../main-win.ui" line="441"/>
         <source>&amp;Compact View</source>
         <translation>&amp;Tiivis</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="445"/>
+        <location filename="../main-win.ui" line="449"/>
         <source>&amp;Detailed List</source>
         <translation>&amp;Yksityiskohtainen</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="453"/>
+        <location filename="../main-win.ui" line="457"/>
         <source>&amp;Thumbnail View</source>
         <translation>&amp;Pienoiskuvat</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="462"/>
+        <location filename="../main-win.ui" line="466"/>
         <source>Cu&amp;t</source>
         <translation>&amp;Leikkaa</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="465"/>
+        <location filename="../main-win.ui" line="469"/>
         <source>Ctrl+X</source>
         <translation>Ctrl+X</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="474"/>
+        <location filename="../main-win.ui" line="478"/>
         <source>&amp;Copy</source>
         <translation>&amp;Kopioi</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="477"/>
+        <location filename="../main-win.ui" line="481"/>
         <source>Ctrl+C</source>
         <translation>Ctrl+C</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="486"/>
+        <location filename="../main-win.ui" line="490"/>
         <source>&amp;Paste</source>
         <translation>L&amp;iitä</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="489"/>
+        <location filename="../main-win.ui" line="493"/>
         <source>Ctrl+V</source>
         <translation>Ctrl+V</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="494"/>
+        <location filename="../main-win.ui" line="502"/>
         <source>Select &amp;All</source>
         <translation>&amp;Valitse kaikki</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="497"/>
+        <location filename="../main-win.ui" line="505"/>
         <source>Ctrl+A</source>
         <translation>Ctrl+A</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="502"/>
+        <location filename="../main-win.ui" line="510"/>
         <source>De&amp;select All</source>
         <translation>&amp;Epävalitse kaikki</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="505"/>
+        <location filename="../main-win.ui" line="513"/>
         <source>Ctrl+D</source>
         <translation>Ctrl+D</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="510"/>
+        <location filename="../main-win.ui" line="518"/>
         <source>Pr&amp;eferences</source>
         <translation>&amp;Asetukset</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="518"/>
+        <location filename="../main-win.ui" line="526"/>
         <source>&amp;Ascending</source>
         <translation>Nouseva (&amp;A-Ö)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="526"/>
+        <location filename="../main-win.ui" line="538"/>
         <source>&amp;Descending</source>
         <translation>Laskeva (&amp;Ö-A)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="534"/>
+        <location filename="../main-win.ui" line="550"/>
         <source>&amp;By File Name</source>
         <translation>&amp;Nimi</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="542"/>
+        <location filename="../main-win.ui" line="558"/>
         <source>By &amp;Modification Time</source>
         <translation>&amp;Muokkaus</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="550"/>
+        <location filename="../main-win.ui" line="566"/>
         <source>By C&amp;reation Time</source>
         <translation>&amp;Luotu</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="558"/>
+        <location filename="../main-win.ui" line="574"/>
         <source>By Deletio&amp;n Time</source>
         <translation>P&amp;oistettu</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="566"/>
+        <location filename="../main-win.ui" line="582"/>
         <source>By File &amp;Type</source>
         <translation>&amp;Tyyppi</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="574"/>
+        <location filename="../main-win.ui" line="590"/>
         <source>By &amp;Owner</source>
         <translation>&amp;Omistaja</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="582"/>
+        <location filename="../main-win.ui" line="598"/>
         <source>By &amp;Group</source>
         <translation>&amp;Ryhmä</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="590"/>
+        <location filename="../main-win.ui" line="606"/>
         <source>&amp;Folder First</source>
         <translation>Kan&amp;siot ensin</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="598"/>
+        <location filename="../main-win.ui" line="614"/>
         <source>&amp;Hidden Last</source>
         <translation>&amp;Piilotiedostot viimeisenä</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="879"/>
+        <location filename="../main-win.ui" line="927"/>
         <source>Shift+F2</source>
         <translation>Vaihto+F2</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="963"/>
+        <location filename="../main-win.ui" line="1015"/>
         <source>Preserve Settings Recursively from &amp;Here</source>
         <translation>Muista asetukset rekursiivisesti &amp;tästä alkaen</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="968"/>
+        <location filename="../main-win.ui" line="1020"/>
         <source>&amp;Go to Source of Inherited Settings</source>
         <translation>&amp;Siirry perittyjen asetusten lähteeseen</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="973"/>
+        <location filename="../main-win.ui" line="1025"/>
         <source>&amp;Remove Settings of Nonexistent Folders</source>
         <translation>&amp;Unohda poistettujen kansioiden asetukset</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="981"/>
+        <location filename="../main-win.ui" line="1033"/>
         <source>&amp;Clear</source>
         <translation>&amp;Tyhjennä</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="651"/>
+        <location filename="../main-win.ui" line="667"/>
         <source>Ctrl+Shift+A</source>
         <translation>Ctrl+Vaihto+A</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="700"/>
+        <location filename="../main-win.ui" line="728"/>
         <source>&amp;Case Sensitive</source>
         <translation>K&amp;irjainkokoerotus</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="708"/>
+        <location filename="../main-win.ui" line="736"/>
         <source>By File &amp;Size</source>
         <translation>&amp;Koko</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="713"/>
+        <location filename="../main-win.ui" line="745"/>
         <source>&amp;Close Window</source>
         <translation>Sulje &amp;ikkuna</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="716"/>
+        <location filename="../main-win.ui" line="748"/>
         <source>Ctrl+Q</source>
         <translation>Ctrl+Q</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="734"/>
+        <location filename="../main-win.ui" line="770"/>
         <source>Open Tab in &amp;Root Instance</source>
         <translation>Avaa välilehti pääkäyttäjä&amp;instanssissa</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="748"/>
+        <location filename="../main-win.ui" line="784"/>
         <source>&amp;Folder</source>
         <translation>&amp;Kansio</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="760"/>
+        <location filename="../main-win.ui" line="796"/>
         <source>&amp;Blank File</source>
         <translation>&amp;Tyhjä tiedosto</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="847"/>
+        <location filename="../main-win.ui" line="887"/>
         <source>Preserve Settings for &amp;This Folder</source>
         <translation>&amp;Muista asetukset tälle kansiolle</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="884"/>
+        <location filename="../main-win.ui" line="932"/>
         <source>&amp;Show/Focus Filter Bar</source>
         <translation>&amp;Näytä/kohdista suodatinrivi</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="887"/>
+        <location filename="../main-win.ui" line="935"/>
         <source>Show Filter Bar</source>
         <translation>Näytä suodatinrivi</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="890"/>
+        <location filename="../main-win.ui" line="938"/>
         <source>Ctrl+I</source>
         <translation>Ctrl+I</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="898"/>
+        <location filename="../main-win.ui" line="946"/>
         <source>S&amp;plit View</source>
         <translation>&amp;Jaettu näkymä</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="901"/>
+        <location filename="../main-win.ui" line="949"/>
         <source>Split View</source>
         <translation>Jaettu näkymä</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="904"/>
+        <location filename="../main-win.ui" line="952"/>
         <source>F6</source>
         <translation>F6</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="909"/>
+        <location filename="../main-win.ui" line="957"/>
         <source>&amp;Copy Full Path</source>
         <translation>&amp;Kopioi koko polku</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="912"/>
+        <location filename="../main-win.ui" line="964"/>
         <source>Ctrl+Shift+C</source>
         <translation>Ctrl+Vaihto+C</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="923"/>
+        <location filename="../main-win.ui" line="975"/>
         <source>Show Thumb&amp;nails</source>
         <translation>N&amp;äytä pienoiskuvat</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="926"/>
+        <location filename="../main-win.ui" line="978"/>
         <source>Show Thumbnails</source>
         <translation>Näytä pienoiskuvat</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="934"/>
+        <location filename="../main-win.ui" line="986"/>
         <source>S&amp;ide Pane</source>
         <translation>S&amp;ivupaneeli</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="937"/>
+        <location filename="../main-win.ui" line="989"/>
         <source>F9</source>
         <translation>F9</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="942"/>
+        <location filename="../main-win.ui" line="994"/>
         <source>Hidden &amp;Shortcuts</source>
         <translation>&amp;Piilotetut pikanäppäimet</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="947"/>
+        <location filename="../main-win.ui" line="999"/>
         <source>Open Tab in &amp;Admin Mode</source>
         <translation>Avaa välilehti &amp;ylläpitotilassa</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="952"/>
-        <location filename="../main-win.ui" line="955"/>
+        <location filename="../main-win.ui" line="1004"/>
+        <location filename="../main-win.ui" line="1007"/>
         <source>Create Launcher</source>
         <translation>Luo käynnistin</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="782"/>
+        <location filename="../main-win.ui" line="822"/>
         <source>Ctrl+B</source>
         <translation>Ctrl+B</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="787"/>
+        <location filename="../main-win.ui" line="827"/>
         <source>&amp;Clear All Filters</source>
         <translation>&amp;Tyhjennä kaikki suodattimet</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="790"/>
+        <location filename="../main-win.ui" line="830"/>
         <source>Ctrl+Shift+K</source>
         <translation>Ctrl+Vaihto+K</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="799"/>
+        <location filename="../main-win.ui" line="839"/>
         <source>Close &amp;previous tabs</source>
         <translation>Sulje välilehdet &amp;vasemmalle</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="808"/>
+        <location filename="../main-win.ui" line="848"/>
         <source>Close &amp;next tabs</source>
         <translation>Sulje välilehdet &amp;oikealle</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="852"/>
+        <location filename="../main-win.ui" line="896"/>
         <source>Connect to &amp;Server</source>
         <translation>Y&amp;hdistä palvelimeen</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="860"/>
+        <location filename="../main-win.ui" line="904"/>
         <source>&amp;Location</source>
         <translation>&amp;Sijainti</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="868"/>
+        <location filename="../main-win.ui" line="912"/>
         <source>&amp;Path Buttons</source>
         <translation>&amp;Polkupainikkeet</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="873"/>
+        <location filename="../main-win.ui" line="917"/>
         <source>&amp;Bulk Rename</source>
         <translation>&amp;Massanimeä uudelleen</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="876"/>
+        <location filename="../main-win.ui" line="924"/>
         <source>Bulk Rename</source>
         <translation>Massanimeä uudelleen</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="813"/>
+        <location filename="../main-win.ui" line="853"/>
         <source>Close &amp;other tabs</source>
         <translation>Su&amp;lje muut välilehdet</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="779"/>
+        <location filename="../main-win.ui" line="819"/>
         <source>Permanent &amp;filter bar</source>
         <translation>&amp;Pysyvä suodatinrivi</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="821"/>
+        <location filename="../main-win.ui" line="861"/>
         <source>&amp;Menu bar</source>
         <translation>&amp;Valikkorivi</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="824"/>
+        <location filename="../main-win.ui" line="864"/>
         <source>Menu bar</source>
         <translation>Valikkorivi</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="827"/>
+        <location filename="../main-win.ui" line="867"/>
         <source>Ctrl+M</source>
         <translation>Ctrl+M</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="836"/>
-        <location filename="../main-win.ui" line="839"/>
+        <location filename="../main-win.ui" line="876"/>
+        <location filename="../main-win.ui" line="879"/>
         <source>Menu</source>
         <translation>Valikko</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="607"/>
+        <location filename="../main-win.ui" line="623"/>
         <source>New &amp;Tab</source>
         <translation>Uusi &amp;välilehti</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="160"/>
+        <location filename="../main-win.ui" line="164"/>
         <source>&amp;Customized View Settings</source>
         <translation>M&amp;uokatut näkymäasetukset</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="610"/>
+        <location filename="../main-win.ui" line="626"/>
         <source>New Tab</source>
         <translation>Uusi välilehti</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="613"/>
+        <location filename="../main-win.ui" line="629"/>
         <source>Ctrl+T</source>
         <translation>Ctrl+T</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="622"/>
+        <location filename="../main-win.ui" line="638"/>
         <source>Go &amp;Back</source>
         <translation>&amp;Edellinen</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="625"/>
+        <location filename="../main-win.ui" line="641"/>
         <source>Go Back</source>
         <translation>Edellinen</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="628"/>
+        <location filename="../main-win.ui" line="644"/>
         <source>Alt+Left</source>
         <translation>Alt+Vasen nuoli</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="637"/>
+        <location filename="../main-win.ui" line="653"/>
         <source>Go &amp;Forward</source>
         <translation>Se&amp;uraava</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="640"/>
+        <location filename="../main-win.ui" line="656"/>
         <source>Go Forward</source>
         <translation>Seuraava</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="643"/>
+        <location filename="../main-win.ui" line="659"/>
         <source>Alt+Right</source>
         <translation>Alt+Oikea nuoli</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="648"/>
+        <location filename="../main-win.ui" line="664"/>
         <source>&amp;Invert Selection</source>
         <translation>Kään&amp;teinen valinta</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="660"/>
+        <location filename="../main-win.ui" line="676"/>
         <source>&amp;Delete</source>
         <translation>&amp;Poista</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="663"/>
+        <location filename="../main-win.ui" line="679"/>
         <source>Del</source>
         <translation>Del</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="668"/>
+        <location filename="../main-win.ui" line="684"/>
         <source>&amp;Rename</source>
         <translation>&amp;Uudelleennimeä</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="671"/>
+        <location filename="../main-win.ui" line="691"/>
         <source>F2</source>
         <translation>F2</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="676"/>
+        <location filename="../main-win.ui" line="700"/>
         <source>C&amp;lose Tab</source>
         <translation>S&amp;ulje välilehti</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="679"/>
+        <location filename="../main-win.ui" line="703"/>
         <source>Ctrl+W</source>
         <translation>Ctrl+W</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="684"/>
+        <location filename="../main-win.ui" line="712"/>
         <source>File &amp;Properties</source>
         <translation>Tied&amp;oston ominaisuudet</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="687"/>
+        <location filename="../main-win.ui" line="715"/>
         <source>Alt+Return</source>
         <translation>Alt+Enter</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="692"/>
+        <location filename="../main-win.ui" line="720"/>
         <source>&amp;Folder Properties</source>
         <translation>&amp;Kansion ominaisuudet</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="721"/>
+        <location filename="../main-win.ui" line="753"/>
         <source>Edit Bookmarks</source>
         <translation>Muokkaa kirjanmerkkejä</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="726"/>
+        <location filename="../main-win.ui" line="762"/>
         <source>Open &amp;Terminal</source>
         <translation>Avaa &amp;pääte</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="729"/>
+        <location filename="../main-win.ui" line="765"/>
         <source>F4</source>
         <translation>F4</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="739"/>
+        <location filename="../main-win.ui" line="775"/>
         <source>&amp;Edit Bookmarks</source>
         <translation>&amp;Muokkaa kirjanmerkkejä</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="751"/>
+        <location filename="../main-win.ui" line="787"/>
         <source>Ctrl+Shift+N</source>
         <translation>Ctrl+Vaihto+N</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="763"/>
+        <location filename="../main-win.ui" line="799"/>
         <source>Ctrl+Alt+N</source>
         <translation>Ctrl+Alt+N</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="768"/>
+        <location filename="../main-win.ui" line="804"/>
         <source>&amp;Find Files</source>
         <translation>&amp;Etsi tiedostoja</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="771"/>
+        <location filename="../main-win.ui" line="811"/>
         <source>F3</source>
         <translation>F3</translation>
     </message>
@@ -1408,38 +1408,38 @@ klikattiin, vaikka se ei olisi oletustiedostonhallintaohjelma.</translation>
         <translation>&amp;Luo uusi</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="98"/>
+        <location filename="../main-win.ui" line="102"/>
         <source>&amp;Help</source>
         <translation>&amp;Ohje</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="105"/>
-        <location filename="../main-win.ui" line="129"/>
+        <location filename="../main-win.ui" line="109"/>
+        <location filename="../main-win.ui" line="133"/>
         <source>&amp;View</source>
         <translation>&amp;Näytä</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="109"/>
+        <location filename="../main-win.ui" line="113"/>
         <source>&amp;Sorting</source>
         <translation>&amp;Lajitteluperuste</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="185"/>
+        <location filename="../main-win.ui" line="189"/>
         <source>&amp;Edit</source>
         <translation>&amp;Muokkaa</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="204"/>
+        <location filename="../main-win.ui" line="208"/>
         <source>&amp;Bookmarks</source>
         <translation>&amp;Kirjanmerkit</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="211"/>
+        <location filename="../main-win.ui" line="215"/>
         <source>&amp;Go</source>
         <translation>&amp;Siirry</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="253"/>
+        <location filename="../main-win.ui" line="257"/>
         <source>Main Toolbar</source>
         <translation>Päätyökalurivi</translation>
     </message>
@@ -1533,13 +1533,13 @@ klikattiin, vaikka se ei olisi oletustiedostonhallintaohjelma.</translation>
         <translation>[TIEDOSTO1, TIEDOSTO2,...]</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="655"/>
-        <location filename="../application.cpp" line="660"/>
+        <location filename="../application.cpp" line="654"/>
+        <location filename="../application.cpp" line="659"/>
         <source>Error</source>
         <translation>Virhe</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="660"/>
+        <location filename="../application.cpp" line="659"/>
         <source>Terminal emulator is not set.</source>
         <translation>Pääte-emulaattoria ei ole määritetty.</translation>
     </message>
@@ -1552,7 +1552,7 @@ klikattiin, vaikka se ei olisi oletustiedostonhallintaohjelma.</translation>
         <translation>Avaa tiedostonhallinnassa</translation>
     </message>
     <message>
-        <location filename="../autorundialog.cpp" line="138"/>
+        <location filename="../autorundialog.cpp" line="137"/>
         <source>Removable Disk</source>
         <translation>Irrotettava tallennuslaite</translation>
     </message>
@@ -1666,17 +1666,17 @@ klikattiin, vaikka se ei olisi oletustiedostonhallintaohjelma.</translation>
         <translation>Lähennä niin, että koko näyttö täyttyy</translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="264"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="266"/>
         <source>Select Wallpaper</source>
         <translation>Valitse taustakuva</translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="268"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="270"/>
         <source>Image Files</source>
         <translation>Kuvatiedostot</translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="310"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="312"/>
         <source>Select Wallpaper Folder</source>
         <translation>Valitse taustakuvan kansio</translation>
     </message>
@@ -1684,12 +1684,12 @@ klikattiin, vaikka se ei olisi oletustiedostonhallintaohjelma.</translation>
 <context>
     <name>PCManFM::DesktopWindow</name>
     <message>
-        <location filename="../desktopwindow.cpp" line="303"/>
+        <location filename="../desktopwindow.cpp" line="328"/>
         <source>Trash (One item)</source>
         <translation>Roskakori (yksi kohde)</translation>
     </message>
     <message numerus="yes">
-        <location filename="../desktopwindow.cpp" line="306"/>
+        <location filename="../desktopwindow.cpp" line="331"/>
         <source>Trash (%Ln items)</source>
         <translation>
             <numerusform>Roskakori (%Ln kohde)</numerusform>
@@ -1697,48 +1697,48 @@ klikattiin, vaikka se ei olisi oletustiedostonhallintaohjelma.</translation>
         </translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="310"/>
+        <location filename="../desktopwindow.cpp" line="335"/>
         <source>Trash (Empty)</source>
         <translation>Roskakori (tyhjä)</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="345"/>
+        <location filename="../desktopwindow.cpp" line="370"/>
         <source>Computer</source>
         <translation>Tietokone</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="359"/>
+        <location filename="../desktopwindow.cpp" line="384"/>
         <source>Network</source>
         <translation>Verkko</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1011"/>
+        <location filename="../desktopwindow.cpp" line="1046"/>
         <source>Open</source>
         <translation>Avaa</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1017"/>
-        <location filename="../desktopwindow.cpp" line="1057"/>
+        <location filename="../desktopwindow.cpp" line="1052"/>
+        <location filename="../desktopwindow.cpp" line="1092"/>
         <source>Stic&amp;k to Current Position</source>
         <translation>&amp;Lukitse paikalleen</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1025"/>
+        <location filename="../desktopwindow.cpp" line="1060"/>
         <source>Empty Trash</source>
         <translation>Tyhjennä roskakori</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1084"/>
+        <location filename="../desktopwindow.cpp" line="1126"/>
         <source>Hide Desktop Items</source>
         <translation>Piilota työpöytäkuvakkeet</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1090"/>
+        <location filename="../desktopwindow.cpp" line="1132"/>
         <source>Create Launcher</source>
         <translation>Luo käynnistin</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1093"/>
+        <location filename="../desktopwindow.cpp" line="1135"/>
         <source>Desktop Preferences</source>
         <translation>Työpöydän asetukset</translation>
     </message>
@@ -1762,33 +1762,33 @@ klikattiin, vaikka se ei olisi oletustiedostonhallintaohjelma.</translation>
 <context>
     <name>PCManFM::MainWindow</name>
     <message>
-        <location filename="../mainwindow.cpp" line="142"/>
+        <location filename="../mainwindow.cpp" line="143"/>
         <source>Root Instance</source>
         <translation>Pääkäyttäjäinstanssi</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="780"/>
+        <location filename="../mainwindow.cpp" line="786"/>
         <source>Hide menu bar</source>
         <translation>Piilota valikkorivi</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="781"/>
+        <location filename="../mainwindow.cpp" line="787"/>
         <source>This will hide the menu bar completely, use Ctrl+M to show it again.</source>
         <translation>Tämä piilottaa valikkorivin kokonaan, palauta painamalla Ctrl+M.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1228"/>
+        <location filename="../mainwindow.cpp" line="1234"/>
         <source>Version: %1</source>
         <translation>Versio: %1</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="175"/>
+        <location filename="../mainwindow.cpp" line="176"/>
         <location filename="../mainwindow.cpp" line="2203"/>
         <source>&amp;Move to Trash</source>
         <translation>Siirrä &amp;roskakoriin</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="175"/>
+        <location filename="../mainwindow.cpp" line="176"/>
         <location filename="../mainwindow.cpp" line="2203"/>
         <source>&amp;Delete</source>
         <translation>&amp;Poista</translation>
@@ -1810,12 +1810,12 @@ klikattiin, vaikka se ei olisi oletustiedostonhallintaohjelma.</translation>
         <translation>Käyttäjän vaihtamiskomentoa ei ole määritetty.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="2420"/>
+        <location filename="../mainwindow.cpp" line="2409"/>
         <source>Cleaning Folder Settings</source>
         <translation>Kansioasetuksien puhdistus</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="2421"/>
+        <location filename="../mainwindow.cpp" line="2410"/>
         <source>Do you want to remove settings of nonexistent folders?
 They might be useful if those folders are created again.</source>
         <translation>Haluatko varmasti unohtaa poistettujen kansioiden asetukset?
@@ -1825,32 +1825,32 @@ Niistä voi olla hyötyä, jos kyseiset kansiot tulevat takaisin.</translation>
 <context>
     <name>PCManFM::PreferencesDialog</name>
     <message>
-        <location filename="../preferencesdialog.cpp" line="206"/>
+        <location filename="../preferencesdialog.cpp" line="211"/>
         <source>Icon View</source>
         <translation>Kuvakkeet</translation>
     </message>
     <message>
-        <location filename="../preferencesdialog.cpp" line="207"/>
+        <location filename="../preferencesdialog.cpp" line="212"/>
         <source>Compact View</source>
         <translation>Tiivis</translation>
     </message>
     <message>
-        <location filename="../preferencesdialog.cpp" line="208"/>
+        <location filename="../preferencesdialog.cpp" line="213"/>
         <source>Thumbnail View</source>
         <translation>Pienoiskuvat</translation>
     </message>
     <message>
-        <location filename="../preferencesdialog.cpp" line="209"/>
+        <location filename="../preferencesdialog.cpp" line="214"/>
         <source>Detailed List View</source>
         <translation>Yksityiskohtainen</translation>
     </message>
     <message>
-        <location filename="../preferencesdialog.cpp" line="279"/>
+        <location filename="../preferencesdialog.cpp" line="284"/>
         <source>Remove if added by user</source>
         <translation>Poista käyttäjän syöttämä</translation>
     </message>
     <message>
-        <location filename="../preferencesdialog.cpp" line="303"/>
+        <location filename="../preferencesdialog.cpp" line="308"/>
         <source>Open user-defined list</source>
         <translation>Avaa käyttäjän määrittämä luettelo</translation>
     </message>
@@ -1858,47 +1858,47 @@ Niistä voi olla hyötyä, jos kyseiset kansiot tulevat takaisin.</translation>
 <context>
     <name>PCManFM::TabPage</name>
     <message>
-        <location filename="../tabpage.cpp" line="443"/>
+        <location filename="../tabpage.cpp" line="446"/>
         <source>Search Results</source>
         <translation>Hakutulokset</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="446"/>
+        <location filename="../tabpage.cpp" line="449"/>
         <source>Applications</source>
         <translation>Sovellukset</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="450"/>
+        <location filename="../tabpage.cpp" line="453"/>
         <source>Computer</source>
         <translation>Tietokone</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="453"/>
+        <location filename="../tabpage.cpp" line="456"/>
         <source>Network</source>
         <translation>Verkko</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="456"/>
+        <location filename="../tabpage.cpp" line="459"/>
         <source>Trash</source>
         <translation>Roskakori</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="462"/>
+        <location filename="../tabpage.cpp" line="465"/>
         <source>Desktop</source>
         <translation>Työpöytä</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="553"/>
+        <location filename="../tabpage.cpp" line="556"/>
         <source>Error</source>
         <translation>Virhe</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="562"/>
+        <location filename="../tabpage.cpp" line="565"/>
         <source>Free space: %1 (Total: %2)</source>
         <translation>Vapaa tila: %1 (Yhteensä: %2)</translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="579"/>
+        <location filename="../tabpage.cpp" line="582"/>
         <source>%n item(s)</source>
         <translation>
             <numerusform>%n kohde</numerusform>
@@ -1906,7 +1906,7 @@ Niistä voi olla hyötyä, jos kyseiset kansiot tulevat takaisin.</translation>
         </translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="581"/>
+        <location filename="../tabpage.cpp" line="584"/>
         <source> (%n hidden)</source>
         <translation>
             <numerusform> (%n piilotettua)</numerusform>
@@ -1914,14 +1914,14 @@ Niistä voi olla hyötyä, jos kyseiset kansiot tulevat takaisin.</translation>
         </translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="586"/>
-        <location filename="../tabpage.cpp" line="789"/>
-        <location filename="../tabpage.cpp" line="803"/>
+        <location filename="../tabpage.cpp" line="589"/>
+        <location filename="../tabpage.cpp" line="790"/>
+        <location filename="../tabpage.cpp" line="804"/>
         <source>Link to</source>
         <translation>Linkki kohteeseen</translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="815"/>
+        <location filename="../tabpage.cpp" line="816"/>
         <source>%n item(s) selected</source>
         <translation>
             <numerusform>%n kohde valittu</numerusform>
@@ -2445,44 +2445,44 @@ Oletusarvo -1 poistaa kokorajoituksen käytöstä.</translation>
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../bulkrename.cpp" line="86"/>
+        <location filename="../bulkrename.cpp" line="89"/>
         <source>Renaming files...</source>
         <translation>Uudelleennimetään tiedostoja...</translation>
     </message>
     <message>
-        <location filename="../bulkrename.cpp" line="86"/>
+        <location filename="../bulkrename.cpp" line="89"/>
         <source>Abort</source>
         <translation>Peruuta</translation>
     </message>
     <message>
-        <location filename="../bulkrename.cpp" line="95"/>
+        <location filename="../bulkrename.cpp" line="98"/>
         <source>Warning</source>
         <translation>Varoitus</translation>
     </message>
     <message>
-        <location filename="../bulkrename.cpp" line="95"/>
+        <location filename="../bulkrename.cpp" line="98"/>
         <source>Renaming is aborted.</source>
         <translation>Uudelleennimeäminen peruutettiin.</translation>
     </message>
     <message>
-        <location filename="../bulkrename.cpp" line="121"/>
         <location filename="../bulkrename.cpp" line="124"/>
-        <location filename="../tabpage.cpp" line="1142"/>
+        <location filename="../bulkrename.cpp" line="127"/>
+        <location filename="../tabpage.cpp" line="1143"/>
         <source>Error</source>
         <translation>Virhe</translation>
     </message>
     <message>
-        <location filename="../bulkrename.cpp" line="121"/>
+        <location filename="../bulkrename.cpp" line="124"/>
         <source>No file could be renamed.</source>
         <translation>Tiedostoja ei uudelleennimetty.</translation>
     </message>
     <message>
-        <location filename="../bulkrename.cpp" line="124"/>
+        <location filename="../bulkrename.cpp" line="127"/>
         <source>Some files could not be renamed.</source>
         <translation>Joitain tiedostoja ei voitu uudelleennimetä.</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="1142"/>
+        <location filename="../tabpage.cpp" line="1143"/>
         <source>Cannot open as Admin.</source>
         <translation>Ei voitu avata ylläpitotilassa.</translation>
     </message>
