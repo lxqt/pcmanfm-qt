@@ -135,7 +135,7 @@ Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  021
     <message>
         <location filename="../bulk-rename.ui" line="87"/>
         <source>Use localized numbers</source>
-        <translation>Использовать локализованные числа</translation>
+        <translation>Использовать локализованные номера</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="27"/>
@@ -1613,7 +1613,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktopentrydialog.cpp" line="40"/>
         <source>The URL to access.</source>
-        <translation>URL-адрес доступа.</translation>
+        <translation>URL, который будет открыт.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="67"/>
@@ -2297,7 +2297,7 @@ Usually, most image types are supported. The default size limit is 4 MiB.</sourc
         <location filename="../preferences.ui" line="682"/>
         <location filename="../preferences.ui" line="718"/>
         <source> MiB</source>
-        <translation> МБ</translation>
+        <translation> МиБ</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="698"/>
@@ -2332,7 +2332,7 @@ A value of -1 means that there is no limit for the file size (the default).</sou
     <message>
         <location filename="../preferences.ui" line="934"/>
         <source>Maximum search history:</source>
-        <translation>Максимум хранимой истории поиска:</translation>
+        <translation>Максимальный размер истории поиска:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="948"/>
