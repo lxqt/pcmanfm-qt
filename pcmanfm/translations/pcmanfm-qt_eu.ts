@@ -2428,7 +2428,7 @@ A value of -1 means that there is no limit for the file size (the default).</sou
     <message>
         <location filename="../bulkrename.cpp" line="89"/>
         <source>Abort</source>
-        <translation type="unfinished"></translation>
+        <translation>Abortatu</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="98"/>
