@@ -151,7 +151,9 @@ private:
     void paintDropIndicator();
     bool stickToPosition(const std::string& file, QPoint& pos,
                          const QRect& workArea, const QSize& grid,
-                         const std::set<std::string>& droppedFiles,  bool reachedLastCell);
+                         bool reachedLastCell,
+                         const std::set<std::string>& droppedFiles,
+                         const std::set<std::string>& draggedFiles = std::set<std::string>{});
     static void alignToGrid(QPoint& pos, const QPoint& topLeft, const QSize& grid, const int spacing);
 
     void updateShortcutsFromSettings(Settings& settings);
