@@ -697,12 +697,16 @@ void DesktopWindow::updateWallpaper(bool checkMTime) {
         Settings& settings = static_cast<Application* >(qApp)->settings();
         const auto screens = screen->virtualSiblings();
 
+        // the pixmap's device pixel ratio
+        qreal DPRatio = windowHandle() ? windowHandle()->devicePixelRatio() : qApp->devicePixelRatio();
+
         bool perScreenWallpaper;
         QRect pixmapRect;
         if(static_cast<Application*>(qApp)->underWayland()) {
             // Under Wayland, separate desktops are created for avoiding problems.
             perScreenWallpaper = false;
-            pixmapRect = QRect(screen->geometry().topLeft(), screen->size() * screen->devicePixelRatio());
+            // WARNING: "QScreen::devicePixelRatio()" may give a rounded integer on Wayland.
+            pixmapRect = QRect(screen->geometry().topLeft(), screen->size() * DPRatio);
             bgColor = Qt::transparent; // the window is transparent
         }
         else {
@@ -715,9 +719,6 @@ void DesktopWindow::updateWallpaper(bool checkMTime) {
             bgColor = bgColor_;
         }
         const QSize pixmapSize = pixmapRect.size();
-
-        // the pixmap's device pixel ratio
-        qreal DPRatio = windowHandle() ? windowHandle()->devicePixelRatio() : qApp->devicePixelRatio();
 
         if(wallpaperMode_ == WallpaperTile) { // use the original size
             image = getWallpaperImage();
