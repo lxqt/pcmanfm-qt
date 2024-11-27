@@ -106,7 +106,7 @@ Fifth Floor, Boston, MA 02110-1301, USA 로 서면 문의하십시오.</translat
     <message>
         <location filename="../autorun.ui" line="56"/>
         <source>Please select the action you want to perform:</source>
-        <translation>수행할 작업을 선택하십시오:</translation>
+        <translation>수행하려는 작업을 선택해 주세요:</translation>
     </message>
 </context>
 <context>
@@ -212,7 +212,7 @@ Fifth Floor, Boston, MA 02110-1301, USA 로 서면 문의하십시오.</translat
         <source>A short description or generic name, like &quot;Web Browser&quot; or &quot;Home Directory&quot;.
 
 It can be left empty.</source>
-        <translation>&quot;웹 브라우저&quot; 또는 &quot;홈 디렉토리&quot;와 같은 간단한 설명 또는 일반적인 이름입니다.
+        <translation>&quot;웹 브라우저&quot; 또는 &quot;홈 디렉터리&quot;와 같은 간단한 설명 또는 일반적인 이름입니다.
 
 비워둘 수 있습니다.</translation>
     </message>
@@ -2292,7 +2292,7 @@ A value of -1 means that there is no limit for the file size (the default).</sou
     <message>
         <location filename="../preferences.ui" line="860"/>
         <source>Examples:&lt;br&gt;For terminal: &lt;i&gt;xterm -e %s&lt;/i&gt;&lt;br&gt;For switching user: &lt;i&gt;lxsudo %s&lt;/i&gt; or &lt;i&gt;lxsudo dbus-run-session -- %s&lt;/i&gt;&lt;br&gt;&lt;i&gt;%s&lt;/i&gt; is the command line you want to execute with terminal or su.&lt;br&gt; Important: Please use lxsudo, sudo alone will wreck permissions of the settings file.</source>
-        <translation>예시:&lt;br&gt;터미널의 경우: &lt;i&gt;xterm -e %s&lt;/i&gt;&lt;br&gt;사용자 전환의 경우: &lt;i&gt;lxsudo %s&lt;/i&gt; 또는 &lt;i&gt;lxsudo dbus-run-session -- %s&lt;/i&gt;&lt;br&gt;&lt;i&gt;%s&lt;/i&gt;은(는) 터미널 또는 su를 사용하여 실행할 명령줄입니다&lt;br&gt; 중요: lxsudo를 사용하십시오. sudo만 사용하면 설정 파일의 사용 권한이 손상됩니다.</translation>
+        <translation>예시:&lt;br&gt;터미널의 경우: &lt;i&gt;xterm -e %s&lt;/i&gt;&lt;br&gt;사용자 전환의 경우: &lt;i&gt;lxsudo %s&lt;/i&gt; 또는 &lt;i&gt;lxsudo dbus-run-session -- %s&lt;/i&gt;&lt;br&gt;&lt;i&gt;%s&lt;/i&gt;은(는) 터미널 또는 su를 사용하여 실행할 명령줄입니다&lt;br&gt; 중요: sudo만으로는 설정 파일의 권한이 손상되므로, lxsudo를 사용해 주세요.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="919"/>
