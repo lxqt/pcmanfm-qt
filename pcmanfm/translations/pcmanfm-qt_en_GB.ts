@@ -54,12 +54,12 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../about.ui" line="58"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/lxqt/pcmanfm-qt&quot;&gt;https://github.com/lxqt/pcmanfm-qt&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/lxqt/pcmanfm-qt&quot;&gt;https://github.com/lxqt/pcmanfm-qt&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../about.ui" line="74"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Wiki: &lt;a href=&quot;https://github.com/lxqt/pcmanfm-qt/wiki&quot;&gt;https://github.com/lxqt/pcmanfm-qt/wiki&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Wiki: &lt;a href=&quot;https://github.com/lxqt/pcmanfm-qt/wiki&quot;&gt;https://github.com/lxqt/pcmanfm-qt/wiki&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../about.ui" line="135"/>
@@ -110,12 +110,12 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../bulk-rename.ui" line="80"/>
         <source>Pad numbers with zero if possible</source>
-        <translation type="unfinished"></translation>
+        <translation>Pad numbers with zero if possible</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="87"/>
         <source>Use localized numbers</source>
-        <translation type="unfinished"></translation>
+        <translation>Use localised numbers</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="27"/>
@@ -186,7 +186,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../desktopentrydialog.ui" line="45"/>
         <source>Specific name of this launcher.</source>
-        <translation type="unfinished"></translation>
+        <translation>Specific name of this launcher.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="58"/>
@@ -198,7 +198,9 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
         <source>A short description or generic name, like &quot;Web Browser&quot; or &quot;Home Directory&quot;.
 
 It can be left empty.</source>
-        <translation type="unfinished"></translation>
+        <translation>A short description or generic name, like &quot;Web Browser&quot; or &quot;Home Directory&quot;.
+
+It can be left empty.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="77"/>
@@ -210,7 +212,9 @@ It can be left empty.</source>
         <source>A short comment.
 
 It can be left empty.</source>
-        <translation type="unfinished"></translation>
+        <translation>A short comment.
+
+It can be left empty.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="117"/>
@@ -231,7 +235,7 @@ It can be left empty.</source>
     <message>
         <location filename="../desktopentrydialog.ui" line="151"/>
         <source>Icon to display in file manager, menus, etc.</source>
-        <translation type="unfinished"></translation>
+        <translation>Icon to display in file manager, menus, etc.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="173"/>
@@ -247,7 +251,7 @@ It can be left empty.</source>
     <message>
         <location filename="../desktopentrydialog.ui" line="186"/>
         <source>Whether the launched program should run in a terminal window.</source>
-        <translation type="unfinished"></translation>
+        <translation>Whether the launched program should run in a terminal window.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="190"/>
@@ -267,7 +271,7 @@ It can be left empty.</source>
     <message>
         <location filename="../desktopentrydialog.ui" line="210"/>
         <source>Whether this is a link or executes a command.</source>
-        <translation type="unfinished"></translation>
+        <translation>Whether this is a link or executes a command.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="214"/>
@@ -282,7 +286,7 @@ It can be left empty.</source>
     <message>
         <location filename="../desktopentrydialog.ui" line="96"/>
         <source>Categories:</source>
-        <translation type="unfinished"></translation>
+        <translation>Categories:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="103"/>
@@ -291,7 +295,11 @@ It can be left empty.</source>
 It is needed only when you want to use the created file in the main menu. Otherwise, you could leave it empty.
 
 Examples: AudioVideo, Audio, Video, Development, Education, Game, Graphics, Network, Office, Settings, System, Utility, Qt.</source>
-        <translation type="unfinished"></translation>
+        <translation>Semicolon separated categories in which the entry should be shown if it is used by the DE&apos;s main menu (e.g., when put inside ~/.local/share/applications).
+
+It is needed only when you want to use the created file in the main menu. Otherwise, you could leave it empty.
+
+Examples: AudioVideo, Audio, Video, Development, Education, Game, Graphics, Network, Office, Settings, System, Utility, Qt.</translation>
     </message>
 </context>
 <context>
@@ -449,7 +457,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../desktop-preferences.ui" line="230"/>
         <source>Margins of work area:</source>
-        <translation type="unfinished"></translation>
+        <translation>Margins of work area:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="303"/>
@@ -594,81 +602,81 @@ are left clicked, even when it is not the default file manager.</translation>
     <message>
         <location filename="../shortcuts.ui" line="34"/>
         <source>Focus view, clear filter bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Focus view, clear filter bar</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="39"/>
         <source>Ctrl+Esc</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Esc</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="42"/>
         <source>Focus side-pane</source>
-        <translation type="unfinished"></translation>
+        <translation>Focus side-pane</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="47"/>
         <source>Ctrl+L</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+L</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="50"/>
         <location filename="../shortcuts.ui" line="58"/>
         <source>Focus path entry</source>
-        <translation type="unfinished"></translation>
+        <translation>Focus path entry</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="55"/>
         <source>Alt+D</source>
-        <translation type="unfinished"></translation>
+        <translation>Alt+D</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="63"/>
         <source>Ctrl+Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Tab</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="66"/>
         <location filename="../shortcuts.ui" line="82"/>
         <source>Next tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Next tab</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="71"/>
         <source>Ctrl+Shift+Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+Tab</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="74"/>
         <location filename="../shortcuts.ui" line="90"/>
         <source>Previous tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Previous tab</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="79"/>
         <source>Ctrl+PageDown</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+PageDown</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="87"/>
         <source>Ctrl+PageUp</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+PageUp</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="95"/>
         <source>Ctrl+Number</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Number</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="98"/>
         <location filename="../shortcuts.ui" line="106"/>
         <source>Jump to tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Jump to tab</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="103"/>
         <source>Alt+Number</source>
-        <translation type="unfinished"></translation>
+        <translation>Alt+Number</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="111"/>
@@ -678,57 +686,57 @@ are left clicked, even when it is not the default file manager.</translation>
     <message>
         <location filename="../shortcuts.ui" line="114"/>
         <source>Go up</source>
-        <translation type="unfinished"></translation>
+        <translation>Go up</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="119"/>
         <source>Ctrl+F</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+F</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="122"/>
         <source>Search dialog</source>
-        <translation type="unfinished"></translation>
+        <translation>Search dialogue</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="127"/>
         <source>Shift+Insert</source>
-        <translation type="unfinished"></translation>
+        <translation>Shift+Insert</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="130"/>
         <source>Paste into transient filter bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Paste into transient filter bar</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="135"/>
         <source>Drop+Shift</source>
-        <translation type="unfinished"></translation>
+        <translation>Drop+Shift</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="143"/>
         <source>Drop+Ctrl</source>
-        <translation type="unfinished"></translation>
+        <translation>Drop+Ctrl</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="151"/>
         <source>Drop+Shift+Ctrl</source>
-        <translation type="unfinished"></translation>
+        <translation>Drop+Shift+Ctrl</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="138"/>
         <source>Move file on dropping</source>
-        <translation type="unfinished"></translation>
+        <translation>Move file on dropping</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="146"/>
         <source>Copy file on dropping</source>
-        <translation type="unfinished"></translation>
+        <translation>Copy file on dropping</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="154"/>
         <source>Make a symlink on dropping</source>
-        <translation type="unfinished"></translation>
+        <translation>Make a symlink on dropping</translation>
     </message>
 </context>
 <context>
@@ -741,7 +749,7 @@ are left clicked, even when it is not the default file manager.</translation>
     <message>
         <location filename="../main-win.ui" line="81"/>
         <source>Recent F&amp;iles</source>
-        <translation type="unfinished"></translation>
+        <translation>Recent F&amp;iles</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="143"/>
@@ -761,7 +769,7 @@ are left clicked, even when it is not the default file manager.</translation>
     <message>
         <location filename="../main-win.ui" line="232"/>
         <source>&amp;Tools</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Tools</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="291"/>
@@ -936,12 +944,12 @@ are left clicked, even when it is not the default file manager.</translation>
     <message>
         <location filename="../main-win.ui" line="510"/>
         <source>De&amp;select All</source>
-        <translation type="unfinished"></translation>
+        <translation>De&amp;select All</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="513"/>
         <source>Ctrl+D</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+D</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="518"/>
@@ -976,7 +984,7 @@ are left clicked, even when it is not the default file manager.</translation>
     <message>
         <location filename="../main-win.ui" line="574"/>
         <source>By Deletio&amp;n Time</source>
-        <translation type="unfinished"></translation>
+        <translation>By Deletio&amp;n Time</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="582"/>
@@ -991,7 +999,7 @@ are left clicked, even when it is not the default file manager.</translation>
     <message>
         <location filename="../main-win.ui" line="598"/>
         <source>By &amp;Group</source>
-        <translation type="unfinished"></translation>
+        <translation>By &amp;Group</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="606"/>
@@ -1001,37 +1009,37 @@ are left clicked, even when it is not the default file manager.</translation>
     <message>
         <location filename="../main-win.ui" line="614"/>
         <source>&amp;Hidden Last</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Hidden Last</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="927"/>
         <source>Shift+F2</source>
-        <translation type="unfinished"></translation>
+        <translation>Shift+F2</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="1015"/>
         <source>Preserve Settings Recursively from &amp;Here</source>
-        <translation type="unfinished"></translation>
+        <translation>Preserve Settings Recursively from &amp;Here</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="1020"/>
         <source>&amp;Go to Source of Inherited Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Go to Source of Inherited Settings</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="1025"/>
         <source>&amp;Remove Settings of Nonexistent Folders</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Remove Settings of Nonexistent Folders</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="1033"/>
         <source>&amp;Clear</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Clear</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="667"/>
         <source>Ctrl+Shift+A</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+A</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="728"/>
@@ -1056,7 +1064,7 @@ are left clicked, even when it is not the default file manager.</translation>
     <message>
         <location filename="../main-win.ui" line="770"/>
         <source>Open Tab in &amp;Root Instance</source>
-        <translation type="unfinished"></translation>
+        <translation>Open Tab in &amp;Root Instance</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="784"/>
@@ -1071,7 +1079,7 @@ are left clicked, even when it is not the default file manager.</translation>
     <message>
         <location filename="../main-win.ui" line="887"/>
         <source>Preserve Settings for &amp;This Folder</source>
-        <translation type="unfinished"></translation>
+        <translation>Preserve Settings for &amp;This Folder</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="932"/>
@@ -1116,22 +1124,22 @@ are left clicked, even when it is not the default file manager.</translation>
     <message>
         <location filename="../main-win.ui" line="975"/>
         <source>Show Thumb&amp;nails</source>
-        <translation type="unfinished"></translation>
+        <translation>Show Thumb&amp;nails</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="978"/>
         <source>Show Thumbnails</source>
-        <translation type="unfinished"></translation>
+        <translation>Show Thumbnails</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="986"/>
         <source>S&amp;ide Pane</source>
-        <translation type="unfinished"></translation>
+        <translation>S&amp;ide Pane</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="989"/>
         <source>F9</source>
-        <translation type="unfinished"></translation>
+        <translation>F9</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="994"/>
@@ -1141,7 +1149,7 @@ are left clicked, even when it is not the default file manager.</translation>
     <message>
         <location filename="../main-win.ui" line="999"/>
         <source>Open Tab in &amp;Admin Mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Open Tab in &amp;Admin Mode</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="1004"/>
@@ -1238,7 +1246,7 @@ are left clicked, even when it is not the default file manager.</translation>
     <message>
         <location filename="../main-win.ui" line="164"/>
         <source>&amp;Customized View Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Customised View Settings</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="626"/>
@@ -1432,12 +1440,12 @@ are left clicked, even when it is not the default file manager.</translation>
     <message>
         <location filename="../application.cpp" line="190"/>
         <source>Run PCManFM-Qt as a daemon</source>
-        <translation type="unfinished"></translation>
+        <translation>Run PCManFM-Qt as a daemon</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="193"/>
         <source>Quit PCManFM-Qt</source>
-        <translation type="unfinished"></translation>
+        <translation>Quit PCManFM-Qt</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="196"/>
@@ -1573,37 +1581,37 @@ are left clicked, even when it is not the default file manager.</translation>
     <message>
         <location filename="../desktopentrydialog.cpp" line="36"/>
         <source>The command to execute.</source>
-        <translation type="unfinished"></translation>
+        <translation>The command to execute.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="39"/>
         <source>URL:</source>
-        <translation type="unfinished"></translation>
+        <translation>URL:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="40"/>
         <source>The URL to access.</source>
-        <translation type="unfinished"></translation>
+        <translation>The URL to access.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="67"/>
         <source>Select an icon</source>
-        <translation type="unfinished"></translation>
+        <translation>Select an icon</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="69"/>
         <source>Images (*.png *.xpm *.svg *.svgz )</source>
-        <translation type="unfinished"></translation>
+        <translation>Images (*.png *.xpm *.svg *.svgz )</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="91"/>
         <source>Select an executable file</source>
-        <translation type="unfinished"></translation>
+        <translation>Select an executable file</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="99"/>
         <source>Select a file</source>
-        <translation type="unfinished"></translation>
+        <translation>Select a file</translation>
     </message>
 </context>
 <context>
@@ -1641,7 +1649,7 @@ are left clicked, even when it is not the default file manager.</translation>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="266"/>
         <source>Select Wallpaper</source>
-        <translation type="unfinished"></translation>
+        <translation>Select Wallpaper</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="270"/>
@@ -1651,7 +1659,7 @@ are left clicked, even when it is not the default file manager.</translation>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="312"/>
         <source>Select Wallpaper Folder</source>
-        <translation type="unfinished"></translation>
+        <translation>Select Wallpaper Folder</translation>
     </message>
 </context>
 <context>
@@ -1672,7 +1680,7 @@ are left clicked, even when it is not the default file manager.</translation>
     <message>
         <location filename="../desktopwindow.cpp" line="335"/>
         <source>Trash (Empty)</source>
-        <translation></translation>
+        <translation>Wastebasket (Empty)</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="370"/>
@@ -1729,7 +1737,7 @@ are left clicked, even when it is not the default file manager.</translation>
     <message>
         <location filename="../tabpage.cpp" line="65"/>
         <source>Clear text (Ctrl+K or Esc)</source>
-        <translation type="unfinished"></translation>
+        <translation>Clear text (Ctrl+K or Esc)</translation>
     </message>
 </context>
 <context>
@@ -1769,7 +1777,7 @@ are left clicked, even when it is not the default file manager.</translation>
     <message>
         <location filename="../mainwindow.cpp" line="2039"/>
         <source>Customized View Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Customised View Settings</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="2310"/>
@@ -1785,13 +1793,14 @@ are left clicked, even when it is not the default file manager.</translation>
     <message>
         <location filename="../mainwindow.cpp" line="2409"/>
         <source>Cleaning Folder Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Cleaning Folder Settings</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="2410"/>
         <source>Do you want to remove settings of nonexistent folders?
 They might be useful if those folders are created again.</source>
-        <translation type="unfinished"></translation>
+        <translation>Do you want to remove settings of nonexistent folders?
+They might be useful if those folders are created again.</translation>
     </message>
 </context>
 <context>
@@ -1819,12 +1828,12 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferencesdialog.cpp" line="284"/>
         <source>Remove if added by user</source>
-        <translation type="unfinished"></translation>
+        <translation>Remove if added by user</translation>
     </message>
     <message>
         <location filename="../preferencesdialog.cpp" line="308"/>
         <source>Open user-defined list</source>
-        <translation type="unfinished"></translation>
+        <translation>Open user-defined list</translation>
     </message>
 </context>
 <context>
@@ -1832,32 +1841,32 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../tabpage.cpp" line="446"/>
         <source>Search Results</source>
-        <translation type="unfinished"></translation>
+        <translation>Search Results</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="449"/>
         <source>Applications</source>
-        <translation type="unfinished"></translation>
+        <translation>Applications</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="453"/>
         <source>Computer</source>
-        <translation type="unfinished"></translation>
+        <translation>Computer</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="456"/>
         <source>Network</source>
-        <translation type="unfinished"></translation>
+        <translation>Network</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="459"/>
         <source>Trash</source>
-        <translation type="unfinished"></translation>
+        <translation>Wastebasket</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="465"/>
         <source>Desktop</source>
-        <translation type="unfinished"></translation>
+        <translation>Desktop</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="556"/>
@@ -1906,14 +1915,14 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../view.cpp" line="59"/>
         <source>Many files</source>
-        <translation type="unfinished"></translation>
+        <translation>Many files</translation>
     </message>
     <message numerus="yes">
         <location filename="../view.cpp" line="60"/>
         <source>Do you want to open these %1 files?</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>Do you want to open these %1 files?</numerusform>
+            <numerusform>Do you want to open these %1 files?</numerusform>
         </translation>
     </message>
     <message>
@@ -2084,18 +2093,18 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferences.ui" line="90"/>
         <source>If this is unchecked, the DE setting will be used.</source>
-        <translation type="unfinished"></translation>
+        <translation>If this is unchecked, the DE setting will be used.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="103"/>
         <location filename="../preferences.ui" line="116"/>
         <source>Set to zero to disable auto-selection.</source>
-        <translation type="unfinished"></translation>
+        <translation>Set to zero to disable auto-selection.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="106"/>
         <source>Delay of auto-selection in single click mode:</source>
-        <translation type="unfinished"></translation>
+        <translation>Delay of auto-selection in single click mode:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="144"/>
@@ -2137,12 +2146,12 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferences.ui" line="219"/>
         <source>Renamed files will also be selected</source>
-        <translation type="unfinished"></translation>
+        <translation>Renamed files will also be selected</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="244"/>
         <source>Number of recent files:</source>
-        <translation type="unfinished"></translation>
+        <translation>Number of recent files:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="325"/>
@@ -2219,12 +2228,12 @@ only if there is more than one tab.</translation>
     <message>
         <location filename="../preferences.ui" line="573"/>
         <source>Switch to newly opened tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Switch to newly opened tab</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="615"/>
         <source>Reopen last window tabs in a new window</source>
-        <translation type="unfinished"></translation>
+        <translation>Reopen last window tabs in a new window</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="665"/>
@@ -2232,12 +2241,14 @@ only if there is more than one tab.</translation>
         <source>The built-in thumbnailer makes thumbnails of images that are supported by Qt.
 
 Usually, most image types are supported. The default size limit is 4 MiB.</source>
-        <translation type="unfinished"></translation>
+        <translation>The built-in thumbnailer makes thumbnails of images that are supported by Qt.
+
+Usually, most image types are supported. The default size limit is 4 MiB.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="670"/>
         <source>Image size limit for built-in thumbnailer:</source>
-        <translation type="unfinished"></translation>
+        <translation>Image size limit for built-in thumbnailer:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="682"/>
@@ -2251,37 +2262,39 @@ Usually, most image types are supported. The default size limit is 4 MiB.</sourc
         <source>If existing, external thumbnailers are used for videos, PDF documents, etc.
 
 A value of -1 means that there is no limit for the file size (the default).</source>
-        <translation type="unfinished"></translation>
+        <translation>If existing, external thumbnailers are used for videos, PDF documents, etc.
+
+A value of -1 means that there is no limit for the file size (the default).</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="703"/>
         <source>File size limit for external thumbnailers:</source>
-        <translation type="unfinished"></translation>
+        <translation>File size limit for external thumbnailers:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="715"/>
         <source>No limit</source>
-        <translation type="unfinished"></translation>
+        <translation>No limit</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="860"/>
         <source>Examples:&lt;br&gt;For terminal: &lt;i&gt;xterm -e %s&lt;/i&gt;&lt;br&gt;For switching user: &lt;i&gt;lxsudo %s&lt;/i&gt; or &lt;i&gt;lxsudo dbus-run-session -- %s&lt;/i&gt;&lt;br&gt;&lt;i&gt;%s&lt;/i&gt; is the command line you want to execute with terminal or su.&lt;br&gt; Important: Please use lxsudo, sudo alone will wreck permissions of the settings file.</source>
-        <translation type="unfinished"></translation>
+        <translation>Examples:&lt;br&gt;For terminal: &lt;i&gt;xterm -e %s&lt;/i&gt;&lt;br&gt;For switching user: &lt;i&gt;lxsudo %s&lt;/i&gt; or &lt;i&gt;lxsudo dbus-run-session -- %s&lt;/i&gt;&lt;br&gt;&lt;i&gt;%s&lt;/i&gt; is the command line you want to execute with terminal or su.&lt;br&gt; Important: Please use lxsudo, sudo alone will wreck permissions of the settings file.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="919"/>
         <source>Search</source>
-        <translation type="unfinished"></translation>
+        <translation>Search</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="934"/>
         <source>Maximum search history:</source>
-        <translation type="unfinished"></translation>
+        <translation>Maximum search history:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="948"/>
         <source>Clear search history</source>
-        <translation type="unfinished"></translation>
+        <translation>Clear search history</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="983"/>
@@ -2291,37 +2304,37 @@ A value of -1 means that there is no limit for the file size (the default).</sou
     <message>
         <location filename="../preferences.ui" line="136"/>
         <source>Bookmarks menu:</source>
-        <translation type="unfinished"></translation>
+        <translation>Bookmarks menu:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="129"/>
         <source>Show folder context menu with Ctrl + right click</source>
-        <translation type="unfinished"></translation>
+        <translation>Show folder context menu with Ctrl + right click</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="229"/>
         <source>Open folders in new tabs as far as possible</source>
-        <translation type="unfinished"></translation>
+        <translation>Open folders in new tabs as far as possible</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="232"/>
         <source>Single window mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Single window mode</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="412"/>
         <source>Always show real file names</source>
-        <translation type="unfinished"></translation>
+        <translation>Always show real file names</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="429"/>
         <source>Do not show file tooltips</source>
-        <translation type="unfinished"></translation>
+        <translation>Do not show file tooltips</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="436"/>
         <source>Disable smooth scrolling</source>
-        <translation type="unfinished"></translation>
+        <translation>Disable smooth scrolling</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="648"/>
@@ -2451,7 +2464,7 @@ A value of -1 means that there is no limit for the file size (the default).</sou
     <message>
         <location filename="../tabpage.cpp" line="1143"/>
         <source>Cannot open as Admin.</source>
-        <translation type="unfinished"></translation>
+        <translation>Cannot open as Admin.</translation>
     </message>
 </context>
 </TS>

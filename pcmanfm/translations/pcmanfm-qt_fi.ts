@@ -843,7 +843,7 @@ klikattiin, vaikka se ei olisi oletustiedostonhallintaohjelma.</translation>
     <message>
         <location filename="../main-win.ui" line="357"/>
         <source>&amp;New Window</source>
-        <translation>&amp;Uusi ikkuna</translation>
+        <translation>Uusi &amp;ikkuna</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="360"/>
