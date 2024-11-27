@@ -451,7 +451,9 @@ void Application::desktopManager(bool enabled) {
             for(QScreen* screen : allScreens) {
                 connect(screen, &QScreen::virtualGeometryChanged, this, &Application::onVirtualGeometryChanged);
                 connect(screen, &QScreen::availableGeometryChanged, this, &Application::onAvailableGeometryChanged);
-                connect(screen, &QObject::destroyed, this, &Application::onScreenDestroyed);
+                if(!underWayland_) {
+                    connect(screen, &QObject::destroyed, this, &Application::onScreenDestroyed);
+                }
             }
             connect(this, &QApplication::screenAdded, this, &Application::onScreenAdded);
             connect(this, &QApplication::screenRemoved, this, &Application::onScreenRemoved);
@@ -486,7 +488,9 @@ void Application::desktopManager(bool enabled) {
             for(QScreen* screen : allScreens) {
                 disconnect(screen, &QScreen::virtualGeometryChanged, this, &Application::onVirtualGeometryChanged);
                 disconnect(screen, &QScreen::availableGeometryChanged, this, &Application::onAvailableGeometryChanged);
-                disconnect(screen, &QObject::destroyed, this, &Application::onScreenDestroyed);
+                if(!underWayland_) {
+                    disconnect(screen, &QObject::destroyed, this, &Application::onScreenDestroyed);
+                }
             }
             disconnect(this, &QApplication::screenAdded, this, &Application::onScreenAdded);
             disconnect(this, &QApplication::screenRemoved, this, &Application::onScreenRemoved);
@@ -933,7 +937,9 @@ void Application::onScreenAdded(QScreen* newScreen) {
     if(enableDesktopManager_) {
         connect(newScreen, &QScreen::virtualGeometryChanged, this, &Application::onVirtualGeometryChanged);
         connect(newScreen, &QScreen::availableGeometryChanged, this, &Application::onAvailableGeometryChanged);
-        connect(newScreen, &QObject::destroyed, this, &Application::onScreenDestroyed);
+        if(!underWayland_) {
+            connect(newScreen, &QObject::destroyed, this, &Application::onScreenDestroyed);
+        }
         const auto siblings = primaryScreen()->virtualSiblings();
         if(!underWayland_ // Under Wayland, separate desktops are created for avoiding problems.
            && siblings.contains(newScreen)) { // the primary screen is changed
@@ -959,7 +965,9 @@ void Application::onScreenRemoved(QScreen* oldScreen) {
     if(enableDesktopManager_){
         disconnect(oldScreen, &QScreen::virtualGeometryChanged, this, &Application::onVirtualGeometryChanged);
         disconnect(oldScreen, &QScreen::availableGeometryChanged, this, &Application::onAvailableGeometryChanged);
-        disconnect(oldScreen, &QObject::destroyed, this, &Application::onScreenDestroyed);
+        if(!underWayland_) {
+            disconnect(oldScreen, &QObject::destroyed, this, &Application::onScreenDestroyed);
+        }
         if(desktopWindows_.isEmpty()) {
             return;
         }
