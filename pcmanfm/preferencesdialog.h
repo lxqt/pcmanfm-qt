@@ -43,6 +43,7 @@ public:
 
 protected Q_SLOTS:
     void lockMargins(bool lock);
+    void terminalChanged(int index);
     void terminalContextMenu(const QPoint& p);
 
 private:

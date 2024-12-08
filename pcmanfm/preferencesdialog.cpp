@@ -45,6 +45,7 @@ PreferencesDialog::PreferencesDialog(const QString& activePage, QWidget* parent)
     ui.listWidget->setSizePolicy(QSizePolicy::Fixed, QSizePolicy::Expanding);
     ui.listWidget->setMaximumWidth(ui.listWidget->sizeHintForColumn(0) + ui.listWidget->frameWidth() * 2 + 4);
 
+    connect(ui.terminal, &QComboBox::currentIndexChanged, this, &PreferencesDialog::terminalChanged);
     ui.terminal->lineEdit()->setContextMenuPolicy(Qt::CustomContextMenu);
     connect(ui.terminal->lineEdit(), &QWidget::customContextMenuRequested, this, &PreferencesDialog::terminalContextMenu);
     // do not insert into the list by pressing Enter; only libfm-qt gets the terminals list
@@ -275,7 +276,30 @@ void PreferencesDialog::initTerminals(Settings& settings) {
     for(auto& terminal: Fm::allKnownTerminals()) {
         ui.terminal->addItem(QString::fromUtf8(terminal.get()));
     }
-    ui.terminal->setEditText(settings.terminal());
+    int index = ui.terminal->findText(settings.terminal());
+    ui.terminal->setCurrentIndex(index); // the options are set in "terminalChanged"
+    if(index == -1) {
+        ui.terminal->setEditText(settings.terminal());
+    }
+}
+
+void PreferencesDialog::terminalChanged(int index) {
+    // set the options if they exist in the local file
+    QString dataDir = QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation);
+    if(!dataDir.isEmpty()) {
+        const QString term = ui.terminal->itemText(index);
+        QSettings termList(dataDir + QStringLiteral("/libfm-qt/terminals.list"), QSettings::IniFormat);
+        if(termList.childGroups().contains(term)) {
+            termList.beginGroup(term);
+            ui.terminalExec->setText(termList.value(QStringLiteral("open_arg")).toString());
+            ui.terminalCustom->setText(termList.value(QStringLiteral("custom_args")).toString());
+            termList.endGroup();
+        }
+        else {
+            ui.terminalExec->clear();
+            ui.terminalCustom->clear();
+        }
+    }
 }
 
 void PreferencesDialog::terminalContextMenu(const QPoint& p) {
@@ -432,17 +456,26 @@ void PreferencesDialog::applyTerminal(Settings& settings) {
         return;
     }
     term = parts.at(0);
-    if(ui.terminal->findText(term) == -1) {
-        QString dataDir = QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation);
-        if(!dataDir.isEmpty()) {
-            QSettings termList(dataDir + QStringLiteral("/libfm-qt/terminals.list"), QSettings::IniFormat);
-            termList.beginGroup(term);
-            QString openArg;
-            if(parts.size() > 1) {
-                openArg = parts.at(1);
+    QString dataDir = QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation);
+    if(!dataDir.isEmpty()) {
+        bool isGlobal(false);
+        for(auto& terminal: Fm::internalTerminals()) {
+            if(term == QString::fromUtf8(terminal.get())) {
+                isGlobal = true;
+                break;
             }
-            termList.setValue(QStringLiteral("open_arg"), openArg);
+        }
+        QSettings termList(dataDir + QStringLiteral("/libfm-qt/terminals.list"), QSettings::IniFormat);
+        if(!isGlobal
+           || !ui.terminalExec->text().isEmpty()
+           || !ui.terminalCustom->text().isEmpty()) {
+            termList.beginGroup(term);
+            termList.setValue(QStringLiteral("open_arg"), ui.terminalExec->text());
+            termList.setValue(QStringLiteral("custom_args"), ui.terminalCustom->text());
             termList.endGroup();
+        }
+        else if(termList.childGroups().contains(term)) {
+            termList.remove(term);
         }
     }
     settings.setTerminal(term);
