@@ -827,18 +827,71 @@ A value of -1 means that there is no limit for the file size (the default).</str
             <property name="fieldGrowthPolicy">
              <enum>QFormLayout::AllNonFixedFieldsGrow</enum>
             </property>
-            <item row="0" column="0">
-             <widget class="QLabel" name="label_14">
-              <property name="text">
-               <string>Terminal emulator:</string>
+            <item row="0" column="0" colspan="2">
+             <widget class="QGroupBox" name="groupBox_12">
+              <property name="title">
+               <string>Terminal emulator</string>
               </property>
-             </widget>
-            </item>
-            <item row="0" column="1">
-             <widget class="QComboBox" name="terminal">
-              <property name="editable">
-               <bool>true</bool>
-              </property>
+              <layout class="QFormLayout" name="formLayout_6">
+               <property name="fieldGrowthPolicy">
+                <enum>QFormLayout::AllNonFixedFieldsGrow</enum>
+               </property>
+               <item row="0" column="0">
+                <widget class="QLabel" name="label_14">
+                 <property name="text">
+                  <string>Command:</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="1">
+                <widget class="QComboBox" name="terminal">
+                 <property name="toolTip">
+                  <string>Example: qterminal
+It is the name of the executable file.</string>
+                 </property>
+                 <property name="editable">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="0">
+                <widget class="QLabel" name="label_3">
+                 <property name="text">
+                  <string>Execution option:</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="1">
+                <widget class="QLineEdit" name="terminalExec">
+                 <property name="toolTip">
+                  <string>Example: -e
+It can be left empty if the terminal is already supported
+or does not have such an option; required otherwise.</string>
+                 </property>
+                 <property name="clearButtonEnabled">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="0">
+                <widget class="QLabel" name="label_20">
+                 <property name="text">
+                  <string>Custom option(s):</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="1">
+                <widget class="QLineEdit" name="terminalCustom">
+                 <property name="toolTip">
+                  <string>This is optional, depends on the terminal,
+and can be any group of custom options.</string>
+                 </property>
+                 <property name="clearButtonEnabled">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+              </layout>
              </widget>
             </item>
             <item row="1" column="0">
@@ -852,22 +905,14 @@ A value of -1 means that there is no limit for the file size (the default).</str
              </widget>
             </item>
             <item row="1" column="1">
-             <widget class="QLineEdit" name="suCommand"/>
-            </item>
-            <item row="2" column="0" colspan="2">
-             <widget class="QLabel" name="label_4">
-              <property name="text">
-               <string>Examples:&lt;br&gt;For terminal: &lt;i&gt;xterm -e %s&lt;/i&gt;&lt;br&gt;For switching user: &lt;i&gt;lxsudo %s&lt;/i&gt; or &lt;i&gt;lxsudo dbus-run-session -- %s&lt;/i&gt;&lt;br&gt;&lt;i&gt;%s&lt;/i&gt; is the command line you want to execute with terminal or su.&lt;br&gt; Important: Please use lxsudo, sudo alone will wreck permissions of the settings file.</string>
-              </property>
-              <property name="textFormat">
-               <enum>Qt::RichText</enum>
-              </property>
-              <property name="wordWrap">
-               <bool>true</bool>
+             <widget class="QLineEdit" name="suCommand">
+              <property name="toolTip">
+               <string>Example:
+lxsudo dbus-run-session -- %s</string>
               </property>
              </widget>
             </item>
-            <item row="3" column="0">
+            <item row="2" column="0">
              <widget class="QLabel" name="label_5">
               <property name="text">
                <string>Archiver in&amp;tegration:</string>
@@ -877,7 +922,7 @@ A value of -1 means that there is no limit for the file size (the default).</str
               </property>
              </widget>
             </item>
-            <item row="3" column="1">
+            <item row="2" column="1">
              <widget class="QComboBox" name="archiver"/>
             </item>
            </layout>
