@@ -1527,13 +1527,13 @@ are left clicked, even when it is not the default file manager.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="654"/>
-        <location filename="../application.cpp" line="659"/>
+        <location filename="../application.cpp" line="658"/>
+        <location filename="../application.cpp" line="663"/>
         <source>Error</source>
         <translation>දෝෂ</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="659"/>
+        <location filename="../application.cpp" line="663"/>
         <source>Terminal emulator is not set.</source>
         <translation>ටර්මිනල් එමියුලේටරය සකසා නැත.</translation>
     </message>
@@ -1706,33 +1706,33 @@ are left clicked, even when it is not the default file manager.</source>
         <translation>ජාල</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1046"/>
+        <location filename="../desktopwindow.cpp" line="1047"/>
         <source>Open</source>
         <translation>විවෘත කරන්න</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1052"/>
-        <location filename="../desktopwindow.cpp" line="1092"/>
+        <location filename="../desktopwindow.cpp" line="1053"/>
+        <location filename="../desktopwindow.cpp" line="1093"/>
         <source>Stic&amp;k to Current Position</source>
         <translation>පවතින ස්ථානයේ අලවා තබන්න (&amp;K)</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1060"/>
+        <location filename="../desktopwindow.cpp" line="1061"/>
         <source>Empty Trash</source>
         <translation>කුණු කූඩය හිස් කරන්න</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1126"/>
+        <location filename="../desktopwindow.cpp" line="1127"/>
         <source>Hide Desktop Items</source>
         <translation>ඩෙස්ක්ටොප් අයිතම සඟවන්න</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1132"/>
+        <location filename="../desktopwindow.cpp" line="1133"/>
         <source>Create Launcher</source>
         <translation>ලොන්චරයක් නිර්මාණය</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1135"/>
+        <location filename="../desktopwindow.cpp" line="1136"/>
         <source>Desktop Preferences</source>
         <translation>ඩෙස්ක්ටොප් අභිරුචි සැකසුම්</translation>
     </message>
@@ -1818,32 +1818,32 @@ They might be useful if those folders are created again.</source>
 <context>
     <name>PCManFM::PreferencesDialog</name>
     <message>
-        <location filename="../preferencesdialog.cpp" line="211"/>
+        <location filename="../preferencesdialog.cpp" line="212"/>
         <source>Icon View</source>
         <translation>අයිකන පෙනුම</translation>
     </message>
     <message>
-        <location filename="../preferencesdialog.cpp" line="212"/>
+        <location filename="../preferencesdialog.cpp" line="213"/>
         <source>Compact View</source>
         <translation>සංයුක්ත පෙනුම</translation>
     </message>
     <message>
-        <location filename="../preferencesdialog.cpp" line="213"/>
+        <location filename="../preferencesdialog.cpp" line="214"/>
         <source>Thumbnail View</source>
         <translation>තබ්නෙයිල් පෙනුම</translation>
     </message>
     <message>
-        <location filename="../preferencesdialog.cpp" line="214"/>
+        <location filename="../preferencesdialog.cpp" line="215"/>
         <source>Detailed List View</source>
         <translation>විස්තරාත්මක පෙනුම</translation>
     </message>
     <message>
-        <location filename="../preferencesdialog.cpp" line="284"/>
+        <location filename="../preferencesdialog.cpp" line="308"/>
         <source>Remove if added by user</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../preferencesdialog.cpp" line="308"/>
+        <location filename="../preferencesdialog.cpp" line="332"/>
         <source>Open user-defined list</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2285,27 +2285,61 @@ A value of -1 means that there is no limit for the file size (the default).</sou
         <translation>සීමා රහිත</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="860"/>
-        <source>Examples:&lt;br&gt;For terminal: &lt;i&gt;xterm -e %s&lt;/i&gt;&lt;br&gt;For switching user: &lt;i&gt;lxsudo %s&lt;/i&gt; or &lt;i&gt;lxsudo dbus-run-session -- %s&lt;/i&gt;&lt;br&gt;&lt;i&gt;%s&lt;/i&gt; is the command line you want to execute with terminal or su.&lt;br&gt; Important: Please use lxsudo, sudo alone will wreck permissions of the settings file.</source>
+        <location filename="../preferences.ui" line="833"/>
+        <source>Terminal emulator</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="919"/>
+        <location filename="../preferences.ui" line="842"/>
+        <source>Command:</source>
+        <translation type="unfinished">විධානය:</translation>
+    </message>
+    <message>
+        <location filename="../preferences.ui" line="849"/>
+        <source>Example: qterminal
+It is the name of the executable file.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../preferences.ui" line="860"/>
+        <source>Execution option:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../preferences.ui" line="867"/>
+        <source>Example: -e
+It can be left empty if the terminal is already supported
+or does not have such an option; required otherwise.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../preferences.ui" line="879"/>
+        <source>Custom option(s):</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../preferences.ui" line="886"/>
+        <source>This is optional, depends on the terminal,
+and can be any group of custom options.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../preferences.ui" line="964"/>
         <source>Search</source>
         <translation>සෙවුම්</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="934"/>
+        <location filename="../preferences.ui" line="979"/>
         <source>Maximum search history:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="948"/>
+        <location filename="../preferences.ui" line="993"/>
         <source>Clear search history</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="983"/>
+        <location filename="../preferences.ui" line="1028"/>
         <source>Application restart is needed for changes to take effect.</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2390,37 +2424,38 @@ A value of -1 means that there is no limit for the file size (the default).</sou
         <translation>වැඩසටහන්</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="833"/>
-        <source>Terminal emulator:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../preferences.ui" line="847"/>
+        <location filename="../preferences.ui" line="900"/>
         <source>Switch &amp;user command:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="873"/>
+        <location filename="../preferences.ui" line="910"/>
+        <source>Example:
+lxsudo dbus-run-session -- %s</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../preferences.ui" line="918"/>
         <source>Archiver in&amp;tegration:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="889"/>
+        <location filename="../preferences.ui" line="934"/>
         <source>Templates</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="895"/>
+        <location filename="../preferences.ui" line="940"/>
         <source>Show only user defined templates in menu</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="902"/>
+        <location filename="../preferences.ui" line="947"/>
         <source>Show only one template for each MIME type</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="909"/>
+        <location filename="../preferences.ui" line="954"/>
         <source>Run default application after creation from template</source>
         <translation type="unfinished"></translation>
     </message>

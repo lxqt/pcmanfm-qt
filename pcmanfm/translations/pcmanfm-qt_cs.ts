@@ -1533,13 +1533,13 @@ kliknete levým tlačítkem, i když to není výchozí správce souborů.</tran
         <translation>[SOUBOR1, SOUBOR2,…]</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="654"/>
-        <location filename="../application.cpp" line="659"/>
+        <location filename="../application.cpp" line="658"/>
+        <location filename="../application.cpp" line="663"/>
         <source>Error</source>
         <translation>Chyba</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="659"/>
+        <location filename="../application.cpp" line="663"/>
         <source>Terminal emulator is not set.</source>
         <translation>Není nastaven emulátor terminálu.</translation>
     </message>
@@ -1713,33 +1713,33 @@ kliknete levým tlačítkem, i když to není výchozí správce souborů.</tran
         <translation>Síť</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1046"/>
+        <location filename="../desktopwindow.cpp" line="1047"/>
         <source>Open</source>
         <translation>Otevřít</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1052"/>
-        <location filename="../desktopwindow.cpp" line="1092"/>
+        <location filename="../desktopwindow.cpp" line="1053"/>
+        <location filename="../desktopwindow.cpp" line="1093"/>
         <source>Stic&amp;k to Current Position</source>
         <translation>Připnout &amp;ke stávající poloze</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1060"/>
+        <location filename="../desktopwindow.cpp" line="1061"/>
         <source>Empty Trash</source>
         <translation>Vyprázdnit koš</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1126"/>
+        <location filename="../desktopwindow.cpp" line="1127"/>
         <source>Hide Desktop Items</source>
         <translation>Skrýt položky plochy</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1132"/>
+        <location filename="../desktopwindow.cpp" line="1133"/>
         <source>Create Launcher</source>
         <translation>Vytvořit spouštěč</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1135"/>
+        <location filename="../desktopwindow.cpp" line="1136"/>
         <source>Desktop Preferences</source>
         <translation>Předvolby pracovní plochy</translation>
     </message>
@@ -1826,32 +1826,32 @@ Mohly by se ještě hodit v případě znovuvytvoření těchto složek.</transl
 <context>
     <name>PCManFM::PreferencesDialog</name>
     <message>
-        <location filename="../preferencesdialog.cpp" line="211"/>
+        <location filename="../preferencesdialog.cpp" line="212"/>
         <source>Icon View</source>
         <translation>S ikonami</translation>
     </message>
     <message>
-        <location filename="../preferencesdialog.cpp" line="212"/>
+        <location filename="../preferencesdialog.cpp" line="213"/>
         <source>Compact View</source>
         <translation>Kompaktní</translation>
     </message>
     <message>
-        <location filename="../preferencesdialog.cpp" line="213"/>
+        <location filename="../preferencesdialog.cpp" line="214"/>
         <source>Thumbnail View</source>
         <translation>S náhledy</translation>
     </message>
     <message>
-        <location filename="../preferencesdialog.cpp" line="214"/>
+        <location filename="../preferencesdialog.cpp" line="215"/>
         <source>Detailed List View</source>
         <translation>Seznam s podrobnostmi</translation>
     </message>
     <message>
-        <location filename="../preferencesdialog.cpp" line="284"/>
+        <location filename="../preferencesdialog.cpp" line="308"/>
         <source>Remove if added by user</source>
         <translation>Odebrat pokud přidáno uživatelem</translation>
     </message>
     <message>
-        <location filename="../preferencesdialog.cpp" line="308"/>
+        <location filename="../preferencesdialog.cpp" line="332"/>
         <source>Open user-defined list</source>
         <translation>Otevřít seznam definovaný uživatelem</translation>
     </message>
@@ -2317,27 +2317,22 @@ Hodnota -1 znamená, že neexistuje žádný limit pro velikost souboru (výchoz
         <translation>Bez limitu</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="860"/>
-        <source>Examples:&lt;br&gt;For terminal: &lt;i&gt;xterm -e %s&lt;/i&gt;&lt;br&gt;For switching user: &lt;i&gt;lxsudo %s&lt;/i&gt; or &lt;i&gt;lxsudo dbus-run-session -- %s&lt;/i&gt;&lt;br&gt;&lt;i&gt;%s&lt;/i&gt; is the command line you want to execute with terminal or su.&lt;br&gt; Important: Please use lxsudo, sudo alone will wreck permissions of the settings file.</source>
-        <translation>Příklady:&lt;br&gt;Pro terminál: &lt;i&gt;xterm -e %s&lt;/i&gt;&lt;br&gt;Pro přepnutí uživatele: &lt;i&gt;lxsudo %s&lt;/i&gt; nebo &lt;i&gt;lxsudo dbus-run-session -- %s&lt;/i&gt;&lt;br&gt;&lt;i&gt;%s&lt;/i&gt; je příkazový řádek, který chcete vykonat v terminálu nebo pomocí su.&lt;br&gt; Důležité: použijte lxsudo, sudo samotné pokazí oprávnění na souboru s nastaveními.</translation>
-    </message>
-    <message>
-        <location filename="../preferences.ui" line="919"/>
+        <location filename="../preferences.ui" line="964"/>
         <source>Search</source>
         <translation>Hledat</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="934"/>
+        <location filename="../preferences.ui" line="979"/>
         <source>Maximum search history:</source>
         <translation>Maximální hloubka historie hledání:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="948"/>
+        <location filename="../preferences.ui" line="993"/>
         <source>Clear search history</source>
         <translation>Vymazat historii hledání</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="983"/>
+        <location filename="../preferences.ui" line="1028"/>
         <source>Application restart is needed for changes to take effect.</source>
         <translation>Aby se změny projevily, je třeba aplikaci restartovat.</translation>
     </message>
@@ -2402,32 +2397,77 @@ Hodnota -1 znamená, že neexistuje žádný limit pro velikost souboru (výchoz
         <translation>V jemu příslušném &amp;panelu přepnout do domovské složky</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="847"/>
+        <location filename="../preferences.ui" line="833"/>
+        <source>Terminal emulator</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../preferences.ui" line="842"/>
+        <source>Command:</source>
+        <translation type="unfinished">Příkaz:</translation>
+    </message>
+    <message>
+        <location filename="../preferences.ui" line="849"/>
+        <source>Example: qterminal
+It is the name of the executable file.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../preferences.ui" line="860"/>
+        <source>Execution option:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../preferences.ui" line="867"/>
+        <source>Example: -e
+It can be left empty if the terminal is already supported
+or does not have such an option; required otherwise.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../preferences.ui" line="879"/>
+        <source>Custom option(s):</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../preferences.ui" line="886"/>
+        <source>This is optional, depends on the terminal,
+and can be any group of custom options.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../preferences.ui" line="900"/>
         <source>Switch &amp;user command:</source>
         <translation>Příkaz kterým přepnout &amp;uživatele:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="873"/>
+        <location filename="../preferences.ui" line="910"/>
+        <source>Example:
+lxsudo dbus-run-session -- %s</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../preferences.ui" line="918"/>
         <source>Archiver in&amp;tegration:</source>
         <translation>&amp;Napojení na správce archivů:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="889"/>
+        <location filename="../preferences.ui" line="934"/>
         <source>Templates</source>
         <translation>Šablony</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="895"/>
+        <location filename="../preferences.ui" line="940"/>
         <source>Show only user defined templates in menu</source>
         <translation>V nabídce zobrazovat pouze uživatelem vytvořené šablony</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="902"/>
+        <location filename="../preferences.ui" line="947"/>
         <source>Show only one template for each MIME type</source>
         <translation>Zobrazit pro každý MIME typ pouze jednu šablonu</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="909"/>
+        <location filename="../preferences.ui" line="954"/>
         <source>Run default application after creation from template</source>
         <translation>Po vytvoření ze šablony spustit výchozí aplikaci</translation>
     </message>
@@ -2435,11 +2475,6 @@ Hodnota -1 znamená, že neexistuje žádný limit pro velikost souboru (výchoz
         <location filename="../preferences.ui" line="824"/>
         <source>Programs</source>
         <translation>Programy</translation>
-    </message>
-    <message>
-        <location filename="../preferences.ui" line="833"/>
-        <source>Terminal emulator:</source>
-        <translation>Emulátor terminálu:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="395"/>

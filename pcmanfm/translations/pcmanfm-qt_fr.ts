@@ -1533,13 +1533,13 @@ avec un clic gauche, même si aucun gestionnaire de fichiers n&apos;est défini 
         <translation>Fichiers ou dossiers à ouvrir</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="654"/>
-        <location filename="../application.cpp" line="659"/>
+        <location filename="../application.cpp" line="658"/>
+        <location filename="../application.cpp" line="663"/>
         <source>Error</source>
         <translation>Erreur</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="659"/>
+        <location filename="../application.cpp" line="663"/>
         <source>Terminal emulator is not set.</source>
         <translation>L&apos;émulateur de terminal n&apos;est pas défini.</translation>
     </message>
@@ -1712,33 +1712,33 @@ avec un clic gauche, même si aucun gestionnaire de fichiers n&apos;est défini 
         <translation>Réseau</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1046"/>
+        <location filename="../desktopwindow.cpp" line="1047"/>
         <source>Open</source>
         <translation>Ouvrir</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1052"/>
-        <location filename="../desktopwindow.cpp" line="1092"/>
+        <location filename="../desktopwindow.cpp" line="1053"/>
+        <location filename="../desktopwindow.cpp" line="1093"/>
         <source>Stic&amp;k to Current Position</source>
         <translation>Res&amp;ter à la position actuelle</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1060"/>
+        <location filename="../desktopwindow.cpp" line="1061"/>
         <source>Empty Trash</source>
         <translation>Vider la corbeille</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1126"/>
+        <location filename="../desktopwindow.cpp" line="1127"/>
         <source>Hide Desktop Items</source>
         <translation>Masquer les éléments du bureau</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1132"/>
+        <location filename="../desktopwindow.cpp" line="1133"/>
         <source>Create Launcher</source>
         <translation>Créer un lanceur</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1135"/>
+        <location filename="../desktopwindow.cpp" line="1136"/>
         <source>Desktop Preferences</source>
         <translation>Préférences du bureau</translation>
     </message>
@@ -1825,32 +1825,32 @@ Ils peuvent être utiles si ces dossiers sont à nouveau créés.</translation>
 <context>
     <name>PCManFM::PreferencesDialog</name>
     <message>
-        <location filename="../preferencesdialog.cpp" line="211"/>
+        <location filename="../preferencesdialog.cpp" line="212"/>
         <source>Icon View</source>
         <translation>Vue en icônes</translation>
     </message>
     <message>
-        <location filename="../preferencesdialog.cpp" line="212"/>
+        <location filename="../preferencesdialog.cpp" line="213"/>
         <source>Compact View</source>
         <translation>Vue compacte</translation>
     </message>
     <message>
-        <location filename="../preferencesdialog.cpp" line="213"/>
+        <location filename="../preferencesdialog.cpp" line="214"/>
         <source>Thumbnail View</source>
         <translation>Vue en vignettes</translation>
     </message>
     <message>
-        <location filename="../preferencesdialog.cpp" line="214"/>
+        <location filename="../preferencesdialog.cpp" line="215"/>
         <source>Detailed List View</source>
         <translation>Vue en liste détaillée</translation>
     </message>
     <message>
-        <location filename="../preferencesdialog.cpp" line="284"/>
+        <location filename="../preferencesdialog.cpp" line="308"/>
         <source>Remove if added by user</source>
         <translation>Supprimer si ajouté par l&apos;utilisateur</translation>
     </message>
     <message>
-        <location filename="../preferencesdialog.cpp" line="308"/>
+        <location filename="../preferencesdialog.cpp" line="332"/>
         <source>Open user-defined list</source>
         <translation>Ouvrir la liste définie par l&apos;utilisateur</translation>
     </message>
@@ -2312,27 +2312,22 @@ Une valeur de -1 signifie qu&apos;il n&apos;y a pas de limite pour la taille du 
         <translation>Pas de limite</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="860"/>
-        <source>Examples:&lt;br&gt;For terminal: &lt;i&gt;xterm -e %s&lt;/i&gt;&lt;br&gt;For switching user: &lt;i&gt;lxsudo %s&lt;/i&gt; or &lt;i&gt;lxsudo dbus-run-session -- %s&lt;/i&gt;&lt;br&gt;&lt;i&gt;%s&lt;/i&gt; is the command line you want to execute with terminal or su.&lt;br&gt; Important: Please use lxsudo, sudo alone will wreck permissions of the settings file.</source>
-        <translation>Exemples&#xa0;:&lt;br&gt;Pour le terminal : &lt;i&gt;xterm -e %s&lt;/i&gt;&lt;br&gt;Pour changer d&apos;utilisateur : &lt;i&gt;lxsudo %s&lt;/i&gt; ou &lt;i&gt;lxsudo dbus-run-session -- %s&lt;/i&gt;&lt;br&gt;&lt;i&gt;%s&lt;/i&gt; est la commande que vous devez exécuter dans le terminal avec accès root.&lt;br&gt; Important : veuillez utilisez lxsudo, car sudo seul peut casser les permission du fichier de configuration.</translation>
-    </message>
-    <message>
-        <location filename="../preferences.ui" line="919"/>
+        <location filename="../preferences.ui" line="964"/>
         <source>Search</source>
         <translation>Recherche</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="934"/>
+        <location filename="../preferences.ui" line="979"/>
         <source>Maximum search history:</source>
         <translation>Historique de recherche maximum&#xa0;:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="948"/>
+        <location filename="../preferences.ui" line="993"/>
         <source>Clear search history</source>
         <translation>Effacer l&apos;historique de recherche</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="983"/>
+        <location filename="../preferences.ui" line="1028"/>
         <source>Application restart is needed for changes to take effect.</source>
         <translation>Le redémarrage de l&apos;application est nécessaire pour que les modifications prennent effet.</translation>
     </message>
@@ -2397,32 +2392,77 @@ Une valeur de -1 signifie qu&apos;il n&apos;y a pas de limite pour la taille du 
         <translation>Remplacer le dossier de l&apos;on&amp;glet par le dossier home</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="847"/>
+        <location filename="../preferences.ui" line="833"/>
+        <source>Terminal emulator</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../preferences.ui" line="842"/>
+        <source>Command:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../preferences.ui" line="849"/>
+        <source>Example: qterminal
+It is the name of the executable file.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../preferences.ui" line="860"/>
+        <source>Execution option:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../preferences.ui" line="867"/>
+        <source>Example: -e
+It can be left empty if the terminal is already supported
+or does not have such an option; required otherwise.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../preferences.ui" line="879"/>
+        <source>Custom option(s):</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../preferences.ui" line="886"/>
+        <source>This is optional, depends on the terminal,
+and can be any group of custom options.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../preferences.ui" line="900"/>
         <source>Switch &amp;user command:</source>
         <translation>Basculer en commande &amp;utilisateur :</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="873"/>
+        <location filename="../preferences.ui" line="910"/>
+        <source>Example:
+lxsudo dbus-run-session -- %s</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../preferences.ui" line="918"/>
         <source>Archiver in&amp;tegration:</source>
         <translation>In&amp;tégration de l&apos;archiveur :</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="889"/>
+        <location filename="../preferences.ui" line="934"/>
         <source>Templates</source>
         <translation>Modèles</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="895"/>
+        <location filename="../preferences.ui" line="940"/>
         <source>Show only user defined templates in menu</source>
         <translation>Afficher uniquement les modèles définis par l&apos;utilisateur dans le menu</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="902"/>
+        <location filename="../preferences.ui" line="947"/>
         <source>Show only one template for each MIME type</source>
         <translation>Ne montrer qu&apos;un modèle pour chaque type MIME</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="909"/>
+        <location filename="../preferences.ui" line="954"/>
         <source>Run default application after creation from template</source>
         <translation>Exécuter l&apos;application par défaut après la création à partir d&apos;un modèle</translation>
     </message>
@@ -2430,11 +2470,6 @@ Une valeur de -1 signifie qu&apos;il n&apos;y a pas de limite pour la taille du 
         <location filename="../preferences.ui" line="824"/>
         <source>Programs</source>
         <translation>Programmes</translation>
-    </message>
-    <message>
-        <location filename="../preferences.ui" line="833"/>
-        <source>Terminal emulator:</source>
-        <translation>Émulateur de terminal&#xa0;:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="395"/>

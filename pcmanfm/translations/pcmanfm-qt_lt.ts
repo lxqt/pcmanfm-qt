@@ -1534,13 +1534,13 @@ numatytoji failų tvarkytuvė.</translation>
         <translation>[FAILAS1, FAILAS2,...]</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="654"/>
-        <location filename="../application.cpp" line="659"/>
+        <location filename="../application.cpp" line="658"/>
+        <location filename="../application.cpp" line="663"/>
         <source>Error</source>
         <translation>Klaida</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="659"/>
+        <location filename="../application.cpp" line="663"/>
         <source>Terminal emulator is not set.</source>
         <translation>Terminalo emuliatorius nėra nustatytas.</translation>
     </message>
@@ -1714,33 +1714,33 @@ numatytoji failų tvarkytuvė.</translation>
         <translation>Tinklas</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1046"/>
+        <location filename="../desktopwindow.cpp" line="1047"/>
         <source>Open</source>
         <translation>Atverti</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1052"/>
-        <location filename="../desktopwindow.cpp" line="1092"/>
+        <location filename="../desktopwindow.cpp" line="1053"/>
+        <location filename="../desktopwindow.cpp" line="1093"/>
         <source>Stic&amp;k to Current Position</source>
         <translation>Pritvirtinti prie esamos &amp;vietos</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1060"/>
+        <location filename="../desktopwindow.cpp" line="1061"/>
         <source>Empty Trash</source>
         <translation>Išvalyti šiukšlinę</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1126"/>
+        <location filename="../desktopwindow.cpp" line="1127"/>
         <source>Hide Desktop Items</source>
         <translation>Slėpti darbalaukio elementus</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1132"/>
+        <location filename="../desktopwindow.cpp" line="1133"/>
         <source>Create Launcher</source>
         <translation>Sukurti paleidyklę</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1135"/>
+        <location filename="../desktopwindow.cpp" line="1136"/>
         <source>Desktop Preferences</source>
         <translation>Darbalaukio nuostatos</translation>
     </message>
@@ -1827,32 +1827,32 @@ Jie gali praversti tuo atveju, jeigu aplankai bus sukurti iš naujo.</translatio
 <context>
     <name>PCManFM::PreferencesDialog</name>
     <message>
-        <location filename="../preferencesdialog.cpp" line="211"/>
+        <location filename="../preferencesdialog.cpp" line="212"/>
         <source>Icon View</source>
         <translation>Piktogramų rodinys</translation>
     </message>
     <message>
-        <location filename="../preferencesdialog.cpp" line="212"/>
+        <location filename="../preferencesdialog.cpp" line="213"/>
         <source>Compact View</source>
         <translation>Glaustas rodinys</translation>
     </message>
     <message>
-        <location filename="../preferencesdialog.cpp" line="213"/>
+        <location filename="../preferencesdialog.cpp" line="214"/>
         <source>Thumbnail View</source>
         <translation>Miniatiūrų rodinys</translation>
     </message>
     <message>
-        <location filename="../preferencesdialog.cpp" line="214"/>
+        <location filename="../preferencesdialog.cpp" line="215"/>
         <source>Detailed List View</source>
         <translation>Išsamaus sąrašo rodinys</translation>
     </message>
     <message>
-        <location filename="../preferencesdialog.cpp" line="284"/>
+        <location filename="../preferencesdialog.cpp" line="308"/>
         <source>Remove if added by user</source>
         <translation>Šalinti, jei pridėjo naudotojas</translation>
     </message>
     <message>
-        <location filename="../preferencesdialog.cpp" line="308"/>
+        <location filename="../preferencesdialog.cpp" line="332"/>
         <source>Open user-defined list</source>
         <translation>Atverti naudotojo apibrėžtą sąrašą</translation>
     </message>
@@ -2304,27 +2304,61 @@ Reikšmė -1 reiškia, kad failų dydžiui nėra jokio apribojimo (pagal numatym
         <translation>Jokios ribos</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="860"/>
-        <source>Examples:&lt;br&gt;For terminal: &lt;i&gt;xterm -e %s&lt;/i&gt;&lt;br&gt;For switching user: &lt;i&gt;lxsudo %s&lt;/i&gt; or &lt;i&gt;lxsudo dbus-run-session -- %s&lt;/i&gt;&lt;br&gt;&lt;i&gt;%s&lt;/i&gt; is the command line you want to execute with terminal or su.&lt;br&gt; Important: Please use lxsudo, sudo alone will wreck permissions of the settings file.</source>
-        <translation>Pavyzdžiai:&lt;br&gt;Terminalui: &lt;i&gt;xterm -e %s&lt;/i&gt;&lt;br&gt;Naudotojo perjungimui: &lt;i&gt;lxsudo %s&lt;/i&gt; arba &lt;i&gt;lxsudo dbus-run-session -- %s&lt;/i&gt;&lt;br&gt;&lt;i&gt;%s&lt;/i&gt; yra komandų eilutė, kurią norite vykdyti naudojant terminalą ar su.&lt;br&gt; Svarbu: Naudokite lxsudo, nes vien tik sudo sugadins nustatymų failo leidimus.</translation>
+        <location filename="../preferences.ui" line="833"/>
+        <source>Terminal emulator</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="919"/>
+        <location filename="../preferences.ui" line="842"/>
+        <source>Command:</source>
+        <translation type="unfinished">Komanda:</translation>
+    </message>
+    <message>
+        <location filename="../preferences.ui" line="849"/>
+        <source>Example: qterminal
+It is the name of the executable file.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../preferences.ui" line="860"/>
+        <source>Execution option:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../preferences.ui" line="867"/>
+        <source>Example: -e
+It can be left empty if the terminal is already supported
+or does not have such an option; required otherwise.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../preferences.ui" line="879"/>
+        <source>Custom option(s):</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../preferences.ui" line="886"/>
+        <source>This is optional, depends on the terminal,
+and can be any group of custom options.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../preferences.ui" line="964"/>
         <source>Search</source>
         <translation>Paieška</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="934"/>
+        <location filename="../preferences.ui" line="979"/>
         <source>Maximum search history:</source>
         <translation>Daugiausia paieškos istorijos įrašų:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="948"/>
+        <location filename="../preferences.ui" line="993"/>
         <source>Clear search history</source>
         <translation>Išvalyti paieškos istoriją</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="983"/>
+        <location filename="../preferences.ui" line="1028"/>
         <source>Application restart is needed for changes to take effect.</source>
         <translation>Tam, kad įsigaliotų pakeitimai, reikia paleisti programą iš naujo.</translation>
     </message>
@@ -2409,37 +2443,38 @@ Reikšmė -1 reiškia, kad failų dydžiui nėra jokio apribojimo (pagal numatym
         <translation>Programos</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="833"/>
-        <source>Terminal emulator:</source>
-        <translation>Terminalo emuliatorius:</translation>
-    </message>
-    <message>
-        <location filename="../preferences.ui" line="847"/>
+        <location filename="../preferences.ui" line="900"/>
         <source>Switch &amp;user command:</source>
         <translation>Na&amp;udotojo perjungimo komanda:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="873"/>
+        <location filename="../preferences.ui" line="910"/>
+        <source>Example:
+lxsudo dbus-run-session -- %s</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../preferences.ui" line="918"/>
         <source>Archiver in&amp;tegration:</source>
         <translation>Archyvavimo programos in&amp;tegracija:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="889"/>
+        <location filename="../preferences.ui" line="934"/>
         <source>Templates</source>
         <translation>Šablonai</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="895"/>
+        <location filename="../preferences.ui" line="940"/>
         <source>Show only user defined templates in menu</source>
         <translation>Meniu rodyti tik naudotojo apibrėžtus šablonus</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="902"/>
+        <location filename="../preferences.ui" line="947"/>
         <source>Show only one template for each MIME type</source>
         <translation>Kiekvienam MIME tipui rodyti tik po vieną šabloną</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="909"/>
+        <location filename="../preferences.ui" line="954"/>
         <source>Run default application after creation from template</source>
         <translation>Sukūrus šabloną, paleisti numatytąją programą</translation>
     </message>

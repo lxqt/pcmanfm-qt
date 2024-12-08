@@ -1533,13 +1533,13 @@ are left clicked, even when it is not the default file manager.</source>
         <translation>開くファイルまたはディレクトリ</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="654"/>
-        <location filename="../application.cpp" line="659"/>
+        <location filename="../application.cpp" line="658"/>
+        <location filename="../application.cpp" line="663"/>
         <source>Error</source>
         <translation>エラー</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="659"/>
+        <location filename="../application.cpp" line="663"/>
         <source>Terminal emulator is not set.</source>
         <translation>端末エミュレーターを設定していません。</translation>
     </message>
@@ -1711,33 +1711,33 @@ are left clicked, even when it is not the default file manager.</source>
         <translation>ネットワーク</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1046"/>
+        <location filename="../desktopwindow.cpp" line="1047"/>
         <source>Open</source>
         <translation>開く</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1052"/>
-        <location filename="../desktopwindow.cpp" line="1092"/>
+        <location filename="../desktopwindow.cpp" line="1053"/>
+        <location filename="../desktopwindow.cpp" line="1093"/>
         <source>Stic&amp;k to Current Position</source>
         <translation>現在の場所に固定(&amp;K)</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1060"/>
+        <location filename="../desktopwindow.cpp" line="1061"/>
         <source>Empty Trash</source>
         <translation>ゴミ箱を空にする</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1126"/>
+        <location filename="../desktopwindow.cpp" line="1127"/>
         <source>Hide Desktop Items</source>
         <translation>デスクトップのアイテムを非表示</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1132"/>
+        <location filename="../desktopwindow.cpp" line="1133"/>
         <source>Create Launcher</source>
         <translation>ランチャーの作成</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1135"/>
+        <location filename="../desktopwindow.cpp" line="1136"/>
         <source>Desktop Preferences</source>
         <translation>デスクトップの設定</translation>
     </message>
@@ -1824,32 +1824,32 @@ They might be useful if those folders are created again.</source>
 <context>
     <name>PCManFM::PreferencesDialog</name>
     <message>
-        <location filename="../preferencesdialog.cpp" line="211"/>
+        <location filename="../preferencesdialog.cpp" line="212"/>
         <source>Icon View</source>
         <translation>アイコン表示</translation>
     </message>
     <message>
-        <location filename="../preferencesdialog.cpp" line="212"/>
+        <location filename="../preferencesdialog.cpp" line="213"/>
         <source>Compact View</source>
         <translation>コンパクト表示</translation>
     </message>
     <message>
-        <location filename="../preferencesdialog.cpp" line="213"/>
+        <location filename="../preferencesdialog.cpp" line="214"/>
         <source>Thumbnail View</source>
         <translation>サムネイル表示</translation>
     </message>
     <message>
-        <location filename="../preferencesdialog.cpp" line="214"/>
+        <location filename="../preferencesdialog.cpp" line="215"/>
         <source>Detailed List View</source>
         <translation>詳細リスト表示</translation>
     </message>
     <message>
-        <location filename="../preferencesdialog.cpp" line="284"/>
+        <location filename="../preferencesdialog.cpp" line="308"/>
         <source>Remove if added by user</source>
         <translation>ユーザーが追加された場合は削除する</translation>
     </message>
     <message>
-        <location filename="../preferencesdialog.cpp" line="308"/>
+        <location filename="../preferencesdialog.cpp" line="332"/>
         <source>Open user-defined list</source>
         <translation>ユーザー定義リストを開く</translation>
     </message>
@@ -2307,27 +2307,22 @@ A value of -1 means that there is no limit for the file size (the default).</sou
         <translation>無制限</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="860"/>
-        <source>Examples:&lt;br&gt;For terminal: &lt;i&gt;xterm -e %s&lt;/i&gt;&lt;br&gt;For switching user: &lt;i&gt;lxsudo %s&lt;/i&gt; or &lt;i&gt;lxsudo dbus-run-session -- %s&lt;/i&gt;&lt;br&gt;&lt;i&gt;%s&lt;/i&gt; is the command line you want to execute with terminal or su.&lt;br&gt; Important: Please use lxsudo, sudo alone will wreck permissions of the settings file.</source>
-        <translation>例:&lt;br&gt;端末の場合: &lt;i&gt;xterm -e %s&lt;/i&gt;&lt;br&gt;ユーザー切り替えの場合: &lt;i&gt;lxsudo %s&lt;/i&gt; または &lt;i&gt;lxsudo dbus-run-session -- %s&lt;/i&gt;&lt;br&gt;&lt;i&gt;%s&lt;/i&gt; は、端末またはユーザー切り替えで実行するコマンドラインです。&lt;br&gt;重要: sudo では設定ファイルのアクセス権が壊れることがあるので、lxsudo を使用して下さい。</translation>
-    </message>
-    <message>
-        <location filename="../preferences.ui" line="919"/>
+        <location filename="../preferences.ui" line="964"/>
         <source>Search</source>
         <translation>検索</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="934"/>
+        <location filename="../preferences.ui" line="979"/>
         <source>Maximum search history:</source>
         <translation>検索履歴の最大数:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="948"/>
+        <location filename="../preferences.ui" line="993"/>
         <source>Clear search history</source>
         <translation>検索履歴をクリアする</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="983"/>
+        <location filename="../preferences.ui" line="1028"/>
         <source>Application restart is needed for changes to take effect.</source>
         <translation>変更を有効にするにはアプリケーションを再起動します。</translation>
     </message>
@@ -2342,22 +2337,67 @@ A value of -1 means that there is no limit for the file size (the default).</sou
         <translation>ファイルのサムネイルを表示する</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="889"/>
+        <location filename="../preferences.ui" line="833"/>
+        <source>Terminal emulator</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../preferences.ui" line="842"/>
+        <source>Command:</source>
+        <translation type="unfinished">コマンド:</translation>
+    </message>
+    <message>
+        <location filename="../preferences.ui" line="849"/>
+        <source>Example: qterminal
+It is the name of the executable file.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../preferences.ui" line="860"/>
+        <source>Execution option:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../preferences.ui" line="867"/>
+        <source>Example: -e
+It can be left empty if the terminal is already supported
+or does not have such an option; required otherwise.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../preferences.ui" line="879"/>
+        <source>Custom option(s):</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../preferences.ui" line="886"/>
+        <source>This is optional, depends on the terminal,
+and can be any group of custom options.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../preferences.ui" line="910"/>
+        <source>Example:
+lxsudo dbus-run-session -- %s</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../preferences.ui" line="934"/>
         <source>Templates</source>
         <translation>テンプレート</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="895"/>
+        <location filename="../preferences.ui" line="940"/>
         <source>Show only user defined templates in menu</source>
         <translation>メニューにユーザー定義のテンプレートのみを表示する</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="902"/>
+        <location filename="../preferences.ui" line="947"/>
         <source>Show only one template for each MIME type</source>
         <translation>MIME タイプごとにテンプレートを１つだけを表示する</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="909"/>
+        <location filename="../preferences.ui" line="954"/>
         <source>Run default application after creation from template</source>
         <translation>テンプレートから作成した後に既定のアプリケーションを実行する</translation>
     </message>
@@ -2372,19 +2412,14 @@ A value of -1 means that there is no limit for the file size (the default).</sou
         <translation>リムーバブルメディアをアンマウントする際に:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="847"/>
+        <location filename="../preferences.ui" line="900"/>
         <source>Switch &amp;user command:</source>
         <translation>ユーザー切り替えのコマンド(&amp;U):</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="873"/>
+        <location filename="../preferences.ui" line="918"/>
         <source>Archiver in&amp;tegration:</source>
         <translation>アーカイバーの統合(&amp;T):</translation>
-    </message>
-    <message>
-        <location filename="../preferences.ui" line="833"/>
-        <source>Terminal emulator:</source>
-        <translation>端末エミュレーター:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="412"/>
