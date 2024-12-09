@@ -2393,41 +2393,45 @@ Un valore di -1 significa nessun limite (predefinito).</translation>
     <message>
         <location filename="../preferences.ui" line="833"/>
         <source>Terminal emulator</source>
-        <translation type="unfinished"></translation>
+        <translation>Emulatore di terminale</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="842"/>
         <source>Command:</source>
-        <translation type="unfinished">Comando:</translation>
+        <translation>Comando:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="849"/>
         <source>Example: qterminal
 It is the name of the executable file.</source>
-        <translation type="unfinished"></translation>
+        <translation>Esempio: qterminal
+Il nome del eseguibile.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="860"/>
         <source>Execution option:</source>
-        <translation type="unfinished"></translation>
+        <translation>Opzione di esecuzione:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="867"/>
         <source>Example: -e
 It can be left empty if the terminal is already supported
 or does not have such an option; required otherwise.</source>
-        <translation type="unfinished"></translation>
+        <translation>Esempio: -e
+Può essere lasciato vuoto se il terminale lo supporta già
+o non è presente questa opzione; altrimenti necessario.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="879"/>
         <source>Custom option(s):</source>
-        <translation type="unfinished"></translation>
+        <translation>Opzioni personalizzate:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="886"/>
         <source>This is optional, depends on the terminal,
 and can be any group of custom options.</source>
-        <translation type="unfinished"></translation>
+        <translation>Questo è facoltativo, dipende dal terminale
+e può essere qualsiasi gruppo di opzioni personalizzate.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="900"/>
@@ -2438,7 +2442,8 @@ and can be any group of custom options.</source>
         <location filename="../preferences.ui" line="910"/>
         <source>Example:
 lxsudo dbus-run-session -- %s</source>
-        <translation type="unfinished"></translation>
+        <translation>Esempio:
+lxsudo dbus-run-session -- %s</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="918"/>

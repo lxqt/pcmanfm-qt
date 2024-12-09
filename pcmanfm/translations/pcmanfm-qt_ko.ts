@@ -2292,7 +2292,7 @@ A value of -1 means that there is no limit for the file size (the default).</sou
     <message>
         <location filename="../preferences.ui" line="833"/>
         <source>Terminal emulator</source>
-        <translation type="unfinished"></translation>
+        <translation>터미널 에뮬레이터</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="842"/>
@@ -2336,12 +2336,12 @@ and can be any group of custom options.</source>
     <message>
         <location filename="../preferences.ui" line="979"/>
         <source>Maximum search history:</source>
-        <translation>최대 검색 내역:</translation>
+        <translation>최대 검색 히스토리:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="993"/>
         <source>Clear search history</source>
-        <translation>검색 내역 비우기</translation>
+        <translation>검색 히스토리 비우기</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="1028"/>
