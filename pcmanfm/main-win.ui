@@ -216,10 +216,10 @@
     </property>
     <addaction name="actionHome"/>
     <addaction name="actionDesktop"/>
-    <addaction name="actionComputer"/>
     <addaction name="actionTrash"/>
-    <addaction name="actionNetwork"/>
+    <addaction name="actionComputer"/>
     <addaction name="actionApplications"/>
+    <addaction name="actionNetwork"/>
     <addaction name="separator"/>
     <addaction name="actionGoBack"/>
     <addaction name="actionGoForward"/>
