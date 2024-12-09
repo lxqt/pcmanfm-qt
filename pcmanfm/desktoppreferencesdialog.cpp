@@ -122,6 +122,9 @@ DesktopPreferencesDialog::DesktopPreferencesDialog(QWidget* parent, Qt::WindowFl
   ui.computerBox->setChecked(ds.contains(QLatin1String("Computer")));
   ui.networkBox->setChecked(ds.contains(QLatin1String("Network")));
 
+  // set fallback icon here (cannot be done in .ui)
+  ui.networkBox->setIcon(QIcon::fromTheme(QStringLiteral("network"), QIcon::fromTheme(QStringLiteral("folder-network"))));
+
   connect(ui.buttonBox->button(QDialogButtonBox::Apply), &QPushButton::clicked,
           this, &DesktopPreferencesDialog::onApplyClicked);
 
