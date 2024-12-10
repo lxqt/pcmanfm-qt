@@ -658,10 +658,6 @@ are left clicked, even when it is not the default file manager.</string>
             <property name="text">
              <string>Network</string>
             </property>
-            <property name="icon">
-             <iconset theme="folder-network">
-              <normaloff>.</normaloff>.</iconset>
-            </property>
            </widget>
           </item>
          </layout>
