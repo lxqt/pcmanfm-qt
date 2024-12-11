@@ -2298,41 +2298,45 @@ Väärtus -1 tähendab, et failisuuruse piir puudub (see on ka vaikimisi väärt
     <message>
         <location filename="../preferences.ui" line="833"/>
         <source>Terminal emulator</source>
-        <translation type="unfinished"></translation>
+        <translation>Terminaliemulaator</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="842"/>
         <source>Command:</source>
-        <translation type="unfinished">Käsk:</translation>
+        <translation>Käsk:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="849"/>
         <source>Example: qterminal
 It is the name of the executable file.</source>
-        <translation type="unfinished"></translation>
+        <translation>Näide: qterminal
+See on käivitatava faili nimi.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="860"/>
         <source>Execution option:</source>
-        <translation type="unfinished"></translation>
+        <translation>Käivituse lisavalikud:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="867"/>
         <source>Example: -e
 It can be left empty if the terminal is already supported
 or does not have such an option; required otherwise.</source>
-        <translation type="unfinished"></translation>
+        <translation>Näide: -e
+Kui terminal on juba toetatud või selline valik puudub,
+siis võib ta jääda tühjaks. Muul puhul nõutav.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="879"/>
         <source>Custom option(s):</source>
-        <translation type="unfinished"></translation>
+        <translation>Sinu täiendav(ad) tingimus(ed):</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="886"/>
         <source>This is optional, depends on the terminal,
 and can be any group of custom options.</source>
-        <translation type="unfinished"></translation>
+        <translation>See pole kohustuslik, sõltub termnali tüübist,
+ja siin võib olla erisuguseid sinu soovitud tingimusi.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="964"/>
@@ -2443,7 +2447,8 @@ and can be any group of custom options.</source>
         <location filename="../preferences.ui" line="910"/>
         <source>Example:
 lxsudo dbus-run-session -- %s</source>
-        <translation type="unfinished"></translation>
+        <translation>Näide:
+lxsudo dbus-run-session -- %s</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="918"/>
