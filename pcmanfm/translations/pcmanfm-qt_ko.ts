@@ -2292,41 +2292,45 @@ A value of -1 means that there is no limit for the file size (the default).</sou
     <message>
         <location filename="../preferences.ui" line="833"/>
         <source>Terminal emulator</source>
-        <translation type="unfinished"></translation>
+        <translation>터미널 에뮬레이터</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="842"/>
         <source>Command:</source>
-        <translation type="unfinished">명령:</translation>
+        <translation>명령어:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="849"/>
         <source>Example: qterminal
 It is the name of the executable file.</source>
-        <translation type="unfinished"></translation>
+        <translation>예시: qterminal
+실행 파일의 이름입니다.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="860"/>
         <source>Execution option:</source>
-        <translation type="unfinished"></translation>
+        <translation>실행 옵션:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="867"/>
         <source>Example: -e
 It can be left empty if the terminal is already supported
 or does not have such an option; required otherwise.</source>
-        <translation type="unfinished"></translation>
+        <translation>예시: -e
+이 필드는 터미널이 이미 지원되거나 해당 옵션이 없는 경우
+비워둘 수 있으며, 그렇지 않은 경우 필수입니다.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="879"/>
         <source>Custom option(s):</source>
-        <translation type="unfinished"></translation>
+        <translation>사용자 정의 옵션:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="886"/>
         <source>This is optional, depends on the terminal,
 and can be any group of custom options.</source>
-        <translation type="unfinished"></translation>
+        <translation>이것은 옵션이며, 터미널에 따라 다르며,
+사용자 정의 옵션 그룹일 수 있습니다.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="964"/>
@@ -2336,12 +2340,12 @@ and can be any group of custom options.</source>
     <message>
         <location filename="../preferences.ui" line="979"/>
         <source>Maximum search history:</source>
-        <translation>최대 검색 내역:</translation>
+        <translation>최대 검색 히스토리:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="993"/>
         <source>Clear search history</source>
-        <translation>검색 내역 비우기</translation>
+        <translation>검색 히스토리 비우기</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="1028"/>
@@ -2437,7 +2441,8 @@ and can be any group of custom options.</source>
         <location filename="../preferences.ui" line="910"/>
         <source>Example:
 lxsudo dbus-run-session -- %s</source>
-        <translation type="unfinished"></translation>
+        <translation>예시:
+lxsudo dbus-run-session -- %s</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="918"/>

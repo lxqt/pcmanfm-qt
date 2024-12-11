@@ -789,7 +789,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="294"/>
         <source>Go Up</source>
-        <translation>Μετάβαση&#xa0;πάνω</translation>
+        <translation>Μετάβαση πάνω</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="297"/>
@@ -1029,17 +1029,17 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="1015"/>
         <source>Preserve Settings Recursively from &amp;Here</source>
-        <translation>Διατήρηση των ρυθμίσεων αναδρομικά από εδώ</translation>
+        <translation>Διατήρηση των ρυθμίσεων αναδρομικά από &amp;εδώ</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="1020"/>
         <source>&amp;Go to Source of Inherited Settings</source>
-        <translation>Μετάβαση στην πηγή των κληρονομημένων ρυθμίσεων</translation>
+        <translation>&amp;Μετάβαση στην πηγή των κληρονομημένων ρυθμίσεων</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="1025"/>
         <source>&amp;Remove Settings of Nonexistent Folders</source>
-        <translation>Αφαίρεση των ρυθμίσεων ανύπαρκτων φακέλων</translation>
+        <translation>&amp;Αφαίρεση των ρυθμίσεων ανύπαρκτων φακέλων</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="1033"/>
@@ -2300,41 +2300,44 @@ A value of -1 means that there is no limit for the file size (the default).</sou
     <message>
         <location filename="../preferences.ui" line="833"/>
         <source>Terminal emulator</source>
-        <translation type="unfinished"></translation>
+        <translation>Προσομοιωτής τερματικού</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="842"/>
         <source>Command:</source>
-        <translation type="unfinished">Εντολή:</translation>
+        <translation>Εντολή:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="849"/>
         <source>Example: qterminal
 It is the name of the executable file.</source>
-        <translation type="unfinished"></translation>
+        <translation>Παράδειγμα: qterminal
+Είναι το όνομα του εκτελέσιμου αρχείου.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="860"/>
         <source>Execution option:</source>
-        <translation type="unfinished"></translation>
+        <translation>Όρισμα εκτέλεσης:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="867"/>
         <source>Example: -e
 It can be left empty if the terminal is already supported
 or does not have such an option; required otherwise.</source>
-        <translation type="unfinished"></translation>
+        <translation>Παράδειγμα: -e
+Μπορεί να αφεθεί κενό αν το τερματικό υποστηρίζεται ήδη
+ή αν δεν διαθέτει τέτοιο όρισμα· διαφορετικά είναι υποχρεωτικό.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="879"/>
         <source>Custom option(s):</source>
-        <translation type="unfinished"></translation>
+        <translation>Προσαρμοσμένα ορίσματα:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="886"/>
         <source>This is optional, depends on the terminal,
 and can be any group of custom options.</source>
-        <translation type="unfinished"></translation>
+        <translation>Είναι προαιρετικό και εξαρτάται από το τερματικό, και μπορεί να είναι οποιαδήποτε ομάδα προσαρμοσμένων ορισμάτων.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="964"/>
@@ -2445,7 +2448,8 @@ and can be any group of custom options.</source>
         <location filename="../preferences.ui" line="910"/>
         <source>Example:
 lxsudo dbus-run-session -- %s</source>
-        <translation type="unfinished"></translation>
+        <translation>Παράδειγμα:
+lxsudo dbus-run-session -- %s</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="918"/>
