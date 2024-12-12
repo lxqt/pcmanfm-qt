@@ -2299,7 +2299,7 @@ Oletusarvo -1 poistaa kokorajoituksen käytöstä.</translation>
     <message>
         <location filename="../preferences.ui" line="833"/>
         <source>Terminal emulator</source>
-        <translation type="unfinished"></translation>
+        <translation>Pääte-emulaattori</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="842"/>
@@ -2310,19 +2310,22 @@ Oletusarvo -1 poistaa kokorajoituksen käytöstä.</translation>
         <location filename="../preferences.ui" line="849"/>
         <source>Example: qterminal
 It is the name of the executable file.</source>
-        <translation type="unfinished"></translation>
+        <translation>Esimerkki: qterminal
+Tähän annetaan suoritettavan tiedoston nimi.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="860"/>
         <source>Execution option:</source>
-        <translation type="unfinished"></translation>
+        <translation>Käynnistysvalinnat:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="867"/>
         <source>Example: -e
 It can be left empty if the terminal is already supported
 or does not have such an option; required otherwise.</source>
-        <translation type="unfinished"></translation>
+        <translation>Esimerkki: -e
+Voi jättää tyhjäksi, jos pääte on jo tuettu tai sillä ei ole
+tällaista vaihtoehtoa; vaaditaan muuten.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="879"/>
@@ -2444,7 +2447,8 @@ and can be any group of custom options.</source>
         <location filename="../preferences.ui" line="910"/>
         <source>Example:
 lxsudo dbus-run-session -- %s</source>
-        <translation type="unfinished"></translation>
+        <translation>Esimerkki:
+lxsudo dbus-run-session -- %s</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="918"/>
