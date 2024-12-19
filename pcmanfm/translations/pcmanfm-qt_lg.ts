@@ -805,7 +805,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="297"/>
         <source>Alt+Up</source>
-        <translation>Alt+Kasaale akambuka</translation>
+        <translation>Alt+Yambuka</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="306"/>
@@ -1292,7 +1292,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="644"/>
         <source>Alt+Left</source>
-        <translation>Alt+Kasaale ka kkono</translation>
+        <translation>Alt+Kkono</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="653"/>
@@ -1307,7 +1307,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="659"/>
         <source>Alt+Right</source>
-        <translation>Alt+Kasaale ka ddyo</translation>
+        <translation>Alt+Ddyo</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="664"/>
@@ -2326,41 +2326,44 @@ fayiro zireme okukola ebisinga obunene buno:</translation>
     <message>
         <location filename="../preferences.ui" line="833"/>
         <source>Terminal emulator</source>
-        <translation type="unfinished"></translation>
+        <translation>Puloguramu egeegeenya kiwandikiro</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="842"/>
         <source>Command:</source>
-        <translation type="unfinished">Kiragiro:</translation>
+        <translation>Kiragiro:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="849"/>
         <source>Example: qterminal
 It is the name of the executable file.</source>
-        <translation type="unfinished"></translation>
+        <translation>Okugeza: qterminal
+Lye erinnya lya puloguramu.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="860"/>
         <source>Execution option:</source>
-        <translation type="unfinished"></translation>
+        <translation>Obuwayiro obunaateekebwanga ku kiragiro:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="867"/>
         <source>Example: -e
 It can be left empty if the terminal is already supported
 or does not have such an option; required otherwise.</source>
-        <translation type="unfinished"></translation>
+        <translation>Okugeza: -e
+Osobola okulekawo nga wereere ekiwandikiro bwe kiba nga tekikyetaaga.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="879"/>
         <source>Custom option(s):</source>
-        <translation type="unfinished"></translation>
+        <translation>Obuwayiro obulala:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="886"/>
         <source>This is optional, depends on the terminal,
 and can be any group of custom options.</source>
-        <translation type="unfinished"></translation>
+        <translation>Bino ssi bya tteeka, era bisinzira ne ku puloguramu
+egeegeenya kiwandikiro.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="964"/>
@@ -2476,7 +2479,8 @@ akaboozi akakulaga by&apos;oyinza okulondako okukola</translation>
         <location filename="../preferences.ui" line="910"/>
         <source>Example:
 lxsudo dbus-run-session -- %s</source>
-        <translation type="unfinished"></translation>
+        <translation>Okugeza:
+lxsudo dbus-run-session -- %s</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="918"/>
