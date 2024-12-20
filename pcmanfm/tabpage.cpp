@@ -110,6 +110,7 @@ TabPage::TabPage(QWidget* parent):
     verticalLayout{nullptr},
     overrideCursor_(false),
     selectionTimer_(nullptr),
+    filesystemInfoTimer_(nullptr),
     filterBar_(nullptr),
     changingDir_(false) {
 
@@ -406,7 +407,7 @@ void TabPage::onFileSizeChanged(const QModelIndex& index) {
 void TabPage::onFilesAdded(Fm::FileInfoList files) {
     if(static_cast<Application*>(qApp)->settings().selectNewFiles()) {
         if(!selectionTimer_) {
-            selectionTimer_ = new QTimer (this);
+            selectionTimer_ = new QTimer(this);
             selectionTimer_->setSingleShot(true);
             if(folderView_->selectFiles(files, false)) {
                 selectionTimer_->start(200);
@@ -631,6 +632,18 @@ void TabPage::onFolderContentChanged() {
     /* update status text */
     statusText_[StatusTextNormal] = formatStatusText();
     Q_EMIT statusChanged(StatusTextNormal, statusText_[StatusTextNormal]);
+
+    /* also, update filesystem info after the folder settles down */
+    if(!filesystemInfoTimer_) {
+        filesystemInfoTimer_ = new QTimer(this);
+        filesystemInfoTimer_->setSingleShot(true);
+        connect(filesystemInfoTimer_, &QTimer::timeout, this, [this]() {
+            if(folder_) {
+                folder_->queryFilesystemInfo();
+            }
+        });
+    }
+    filesystemInfoTimer_->start(250);
 }
 
 QString TabPage::pathName() {

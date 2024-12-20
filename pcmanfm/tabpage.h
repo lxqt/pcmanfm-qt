@@ -342,6 +342,7 @@ private:
     bool overrideCursor_;
     FolderSettings folderSettings_;
     QTimer* selectionTimer_;
+    QTimer* filesystemInfoTimer_;
     FilterBar* filterBar_;
     QStringList filesToTrust_;
     Fm::FilePathList filesToSelect_; // files to select
