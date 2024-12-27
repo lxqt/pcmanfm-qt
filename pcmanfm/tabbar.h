@@ -50,12 +50,13 @@ Q_SIGNALS:
     void tabDetached();
 
 protected:
-    void mouseReleaseEvent(QMouseEvent *event);
-    // from qtabbar.cpp
-    virtual void mousePressEvent(QMouseEvent *event);
-    virtual void mouseMoveEvent(QMouseEvent *event);
-    virtual void dragEnterEvent(QDragEnterEvent *event);
-    virtual void tabInserted(int index);
+    void mouseReleaseEvent(QMouseEvent *event) override;
+    void mousePressEvent(QMouseEvent *event) override;
+    void mouseMoveEvent(QMouseEvent *event) override;
+    void dragEnterEvent(QDragEnterEvent *event) override;
+    QSize tabSizeHint (int index) const override;
+    QSize minimumTabSizeHint (int index) const override;
+    void tabInserted(int index) override;
 
 private:
     QPoint dragStartPosition_;

@@ -34,6 +34,7 @@ TabBar::TabBar(QWidget *parent):
     dragStarted_(false),
     detachable_(true)
 {
+    setElideMode(Qt::ElideRight); // works with minimumTabSizeHint()
 }
 
 void TabBar::mousePressEvent(QMouseEvent *event) {
@@ -140,6 +141,26 @@ void TabBar::dragEnterEvent(QDragEnterEvent *event) {
     if(detachable_ && event->mimeData()->hasFormat(QStringLiteral("application/pcmanfm-qt-tab"))) {
         event->ignore();
     }
+}
+
+// Limit the size of large tabs to 2/3 of the width of the tabbar.
+QSize TabBar::tabSizeHint(int index) const {
+    switch (shape()) {
+    case QTabBar::RoundedWest:
+    case QTabBar::TriangularWest:
+    case QTabBar::RoundedEast:
+    case QTabBar::TriangularEast:
+        return QSize(QTabBar::tabSizeHint(index).width(),
+                     qMin(2 * height() / 3, QTabBar::tabSizeHint(index).height()));
+    default:
+        return QSize(qMin(2 * width() / 3, QTabBar::tabSizeHint(index).width()),
+                     QTabBar::tabSizeHint(index).height());
+    }
+}
+
+// Set minimumTabSizeHint to tabSizeHint to keep tabs from shrinking with eliding.
+QSize TabBar::minimumTabSizeHint(int index) const {
+    return tabSizeHint(index);
 }
 
 void TabBar::tabInserted(int index) {
