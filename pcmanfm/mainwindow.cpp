@@ -72,7 +72,6 @@ ViewFrame::ViewFrame(QWidget* parent):
 
     // tabbed browsing interface
     tabBar_->setDocumentMode(true);
-    tabBar_->setElideMode(Qt::ElideRight);
     tabBar_->setExpanding(false);
     tabBar_->setMovable(true); // reorder the tabs by dragging
     // switch to the tab under the cursor during dnd.
