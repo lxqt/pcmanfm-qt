@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="he">
+<TS version="2.1" language="ka">
 <context>
     <name>AboutDialog</name>
     <message>
         <location filename="../about.ui" line="14"/>
         <source>About</source>
-        <translation>על אודות</translation>
+        <translation>შესახებ</translation>
     </message>
     <message>
         <location filename="../about.ui" line="25"/>
@@ -16,15 +16,15 @@
     <message>
         <location filename="../about.ui" line="48"/>
         <source>Lightweight file manager</source>
-        <translation>מנהל קבצים קליל</translation>
+        <translation>მსუბუქი ფაილების მმართველი</translation>
     </message>
     <message>
         <location filename="../about.ui" line="122"/>
         <source>Programming:
 * Hong Jen Yee (PCMan) &lt;pcman.tw@gmail.com&gt;
 </source>
-        <translation>פיתוח:
-* Hong Jen Yee (PCMan) &lt;pcman.tw@gmail.com&gt;‎
+        <translation>პროგრამირება:
+* Hong Jen Yee (PCMan) &lt;pcman.tw@gmail.com&gt;
 </translation>
     </message>
     <message>
@@ -46,27 +46,28 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.</source>
-        <translation>מנהל הקבצים PCManFM-Qt
+        <translation>PCManFM-Qt File Manager
 
-כל הזכויות שמורות (C) 2009‏ - 2014 洪任諭 (הוֹנְג גֵ׳ן יִי)
+საავტორო უფლებები დაცულია (C) 2009 - 2014 洪任諭 (Hong Jen Yee)
 
-תוכנית זו היא תוכנה חופשית; ניתן להפיץ מחדש ו/או לשנות אותה תחת
-תנאי הרישיון הציבורי הכללי של GNU כפי שמפורסם על ידי קרן
-התוכנה החופשית; בין אם גרסה 2 של הרישיון או (לבחירתך)
-כל מהדורה עדכנית יותר שלו.
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
 
-תוכנית זו מופצת בתקווה שתביא תועלת אך ללא כל אחריות, אפילו לא מרומזת,
-להתאמה לצורכי מסחר או התאמה למטרה ייעודית. ניתן לעיין ברישיון הציבורי
-הכללי של GNU לקבלת פרטים נוספים.
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
 
-לתוכנית זו אמור להיות מצורף עותק של הרישיון הציבורי הכללי של GNU,
-אם לא צורף אחד כזה, ניתן לכתוב אל Free Software Foundation, Inc.,‎
- 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.</translation>
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.</translation>
     </message>
     <message>
         <location filename="../about.ui" line="113"/>
         <source>Authors</source>
-        <translation>יוצרים</translation>
+        <translation>ავტორები</translation>
     </message>
     <message>
         <location filename="../about.ui" line="58"/>
@@ -76,12 +77,12 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../about.ui" line="74"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Wiki: &lt;a href=&quot;https://github.com/lxqt/pcmanfm-qt/wiki&quot;&gt;https://github.com/lxqt/pcmanfm-qt/wiki&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;ויקי: &lt;a href=&quot;https://github.com/lxqt/pcmanfm-qt/wiki&quot;&gt;https://github.com/lxqt/pcmanfm-qt/wiki&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Wiki: &lt;a href=&quot;https://github.com/lxqt/pcmanfm-qt/wiki&quot;&gt;https://github.com/lxqt/pcmanfm-qt/wiki&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../about.ui" line="135"/>
         <source>License</source>
-        <translation>רישיון</translation>
+        <translation>ლიცენზია</translation>
     </message>
 </context>
 <context>
@@ -89,27 +90,27 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../autorun.ui" line="14"/>
         <source>Removable medium is inserted</source>
-        <translation>מדיה נתיקה הוכנסה</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../autorun.ui" line="33"/>
         <source>&lt;b&gt;Removable medium is inserted&lt;/b&gt;</source>
-        <translation>&lt;b&gt;מדיה נתיקה הוכנסה&lt;/b&gt;</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../autorun.ui" line="40"/>
         <source>Type of medium:</source>
-        <translation>סוג המדיה:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../autorun.ui" line="47"/>
         <source>Detecting...</source>
-        <translation>מתבצע זיהוי…</translation>
+        <translation>მიმდინარეობს აღმოჩენა...</translation>
     </message>
     <message>
         <location filename="../autorun.ui" line="56"/>
         <source>Please select the action you want to perform:</source>
-        <translation>נא לבחור את הפעולה שברצונך לבצע:</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -117,32 +118,32 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../bulk-rename.ui" line="6"/>
         <source>Bulk Rename</source>
-        <translation>שינוי שם בכמות</translation>
+        <translation>ერთზე მეტი ფაილის სახელი გადარქმევა</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="47"/>
         <source># will be replaced by numbers starting with:</source>
-        <translation># יוחלף במספרים החל מ־:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="80"/>
         <source>Pad numbers with zero if possible</source>
-        <translation>לרפד מספרים באפסים אם ניתן</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="87"/>
         <source>Use localized numbers</source>
-        <translation>להשתמש במספרים תואמי אזור</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="27"/>
         <source>Rename selected files to:</source>
-        <translation>שינוי שמות הקבצים הנבחרים ל־:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="40"/>
         <source>Name#</source>
-        <translation>שם#</translation>
+        <translation>სახელი#</translation>
     </message>
 </context>
 <context>
@@ -150,42 +151,42 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../connect.ui" line="14"/>
         <source>Connect to remote server</source>
-        <translation>התחברות לשרת מרוחק</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../connect.ui" line="80"/>
         <source>Anonymous &amp;login</source>
-        <translation>כניסה &amp;אלמונית</translation>
+        <translation>ანონიმურად შესვ&amp;ლა</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="90"/>
         <source>Login as &amp;user:</source>
-        <translation>כניסה בתור מ&amp;שתמש:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../connect.ui" line="29"/>
         <source>Specify remote folder to connect</source>
-        <translation>נא לציין את התיקייה המרוחקת לחיבור</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../connect.ui" line="36"/>
         <source>Type:</source>
-        <translation>סוג:</translation>
+        <translation>ტიპი:</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="56"/>
         <source>Port:</source>
-        <translation>פתחה:</translation>
+        <translation>პორტი:</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="70"/>
         <source>Path:</source>
-        <translation>נתיב:</translation>
+        <translation>მისამართი:</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="46"/>
         <source>Host:</source>
-        <translation>מארח:</translation>
+        <translation>ჰოსტი:</translation>
     </message>
 </context>
 <context>
@@ -193,117 +194,113 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../desktopentrydialog.ui" line="14"/>
         <source>Create Launcher</source>
-        <translation>יצירת משגר</translation>
+        <translation>გამშვების შექმნა</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="38"/>
         <source>Name:</source>
-        <translation>שם:</translation>
+        <translation>სახელი:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="45"/>
         <source>Specific name of this launcher.</source>
-        <translation>שם מסוים למפעיל הזה.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="58"/>
         <source>Description:</source>
-        <translation>תיאור:</translation>
+        <translation>აღწერა:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="65"/>
         <source>A short description or generic name, like &quot;Web Browser&quot; or &quot;Home Directory&quot;.
 
 It can be left empty.</source>
-        <translation>תיאור קצר או שם כוללני, כגון „דפדפן אינטרנט” או „תיקיית בית”.
-
-אפשר להשאיר ריק.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="77"/>
         <source>Comment:</source>
-        <translation>הערה:</translation>
+        <translation>კომენტარი:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="84"/>
         <source>A short comment.
 
 It can be left empty.</source>
-        <translation>הערה קצרה.
-
-אפשר להשאיר ריק.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="117"/>
         <source>Command:</source>
-        <translation>פקודה:</translation>
+        <translation>ბრძანება:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="133"/>
         <location filename="../desktopentrydialog.ui" line="164"/>
         <source>...</source>
-        <translation>…</translation>
+        <translation>...</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="142"/>
         <source>Icon:</source>
-        <translation>סמל:</translation>
+        <translation>ხატულა:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="151"/>
         <source>Icon to display in file manager, menus, etc.</source>
-        <translation>סמל להצגה במנהל קבצים, תפריטים וכו׳.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="173"/>
         <location filename="../desktopentrydialog.ui" line="183"/>
         <source>Run in terminal?</source>
-        <translation>להריץ במסוף?</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="176"/>
         <source>Terminal:</source>
-        <translation>מסוף:</translation>
+        <translation>ტერმინალი:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="186"/>
         <source>Whether the launched program should run in a terminal window.</source>
-        <translation>האם התוכנית שהופעלה אמור לרוץ בחלון מסוף.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="190"/>
         <source>No</source>
-        <translation>לא</translation>
+        <translation>არა</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="195"/>
         <source>Yes</source>
-        <translation>כן</translation>
+        <translation>კი</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="203"/>
         <source>Type:</source>
-        <translation>סוג:</translation>
+        <translation>ტიპი:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="210"/>
         <source>Whether this is a link or executes a command.</source>
-        <translation>האם זה קישור או מפעיל פקודה.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="214"/>
         <source>Application</source>
-        <translation>יישום</translation>
+        <translation>პროგრამა</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="219"/>
         <source>Link</source>
-        <translation>קישור</translation>
+        <translation>ბმული</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="96"/>
         <source>Categories:</source>
-        <translation>קטגוריות:</translation>
+        <translation>კატეგორიები:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="103"/>
@@ -312,11 +309,7 @@ It can be left empty.</source>
 It is needed only when you want to use the created file in the main menu. Otherwise, you could leave it empty.
 
 Examples: AudioVideo, Audio, Video, Development, Education, Game, Graphics, Network, Office, Settings, System, Utility, Qt.</source>
-        <translation>קטגוריות מופרדות בפסיקים שבהן תופיע הרשומה אם היא משמשת את התפריט הראשי של סביבת שולחן העבודה (למשל: כאשר שמים בתוך ‎~/.local/share/applications).
-
-נחוץ רק כאשר רוצים להשתמש בקובץ שנוצר בתפריט הראשי. אחרת, אפשר להשאיר את זה ריק.
-
-דוגמאות: AudioVideo, Audio, Video, Development, Education, Game, Graphics, Network, Office, Settings, System, Utility, Qt.</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -324,32 +317,32 @@ Examples: AudioVideo, Audio, Video, Development, Education, Game, Graphics, Netw
     <message>
         <location filename="../desktop-folder.ui" line="14"/>
         <source>Form</source>
-        <translation>טופס</translation>
+        <translation>ფორმა</translation>
     </message>
     <message>
         <location filename="../desktop-folder.ui" line="23"/>
         <source>Desktop</source>
-        <translation>שולחן עבודה</translation>
+        <translation>სამაგიდო</translation>
     </message>
     <message>
         <location filename="../desktop-folder.ui" line="29"/>
         <source>Desktop folder:</source>
-        <translation>תיקיית שולחן העבודה:</translation>
+        <translation>სამუშაო მაგიდის საქაღალდე:</translation>
     </message>
     <message>
         <location filename="../desktop-folder.ui" line="36"/>
         <source>Image file</source>
-        <translation>קובץ תמונה</translation>
+        <translation>გამოსახულების ფაილი</translation>
     </message>
     <message>
         <location filename="../desktop-folder.ui" line="42"/>
         <source>Folder path</source>
-        <translation>נתיב התיקייה</translation>
+        <translation>საქაღალდის ბილიკი</translation>
     </message>
     <message>
         <location filename="../desktop-folder.ui" line="49"/>
         <source>&amp;Browse</source>
-        <translation>&amp;עיון</translation>
+        <translation>&amp;არჩევა</translation>
     </message>
 </context>
 <context>
@@ -357,93 +350,93 @@ Examples: AudioVideo, Audio, Video, Development, Education, Game, Graphics, Netw
     <message>
         <location filename="../desktop-preferences.ui" line="14"/>
         <source>Desktop Preferences</source>
-        <translation>העדפות שולחן העבודה</translation>
+        <translation>სამუშაო მაგიდის მორგება</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="338"/>
         <location filename="../desktop-preferences.ui" line="344"/>
         <source>Background</source>
-        <translation>רקע</translation>
+        <translation>ფონი</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="385"/>
         <source>Wallpaper mode:</source>
-        <translation>מצב רקע:</translation>
+        <translation>ფონის სურათის რეჟიმი:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="408"/>
         <source>Wallpaper image file:</source>
-        <translation>קובץ תמונת רקע:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="350"/>
         <source>Select background color:</source>
-        <translation>נא לבחור צבע רקע:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="417"/>
         <source>Image file</source>
-        <translation>קובץ תמונה</translation>
+        <translation>გამოსახულების ფაილი</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="423"/>
         <source>Image file path</source>
-        <translation>נתיב קובץ תמונה</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="430"/>
         <source>&amp;Browse</source>
-        <translation>&amp;עיון</translation>
+        <translation>&amp;არჩევა</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="30"/>
         <source>Icons</source>
-        <translation>סמלים</translation>
+        <translation>ხატულები</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="36"/>
         <source>Icon size:</source>
-        <translation>גודל סמל:</translation>
+        <translation>ხატულების ზომა:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="49"/>
         <source>Label Text</source>
-        <translation>טקסט תווית</translation>
+        <translation>ჭდის ტექსტი</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="113"/>
         <source>Select shadow color:</source>
-        <translation>בחירת צבע צללית:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="61"/>
         <source>Select font:</source>
-        <translation>בחירת גופן:</translation>
+        <translation>აირჩიეთ ფონტი:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="24"/>
         <source>General</source>
-        <translation>כללי</translation>
+        <translation>ზოგადი</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="87"/>
         <source>Select text color:</source>
-        <translation>בחירת צבע טקסט:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="136"/>
         <source>Spacing</source>
-        <translation>ריווח</translation>
+        <translation>გამოტოვება</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="145"/>
         <source>Minimum item margins:</source>
-        <translation>שולי הפריט המזעריים:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="152"/>
         <source>3 px by default.</source>
-        <translation>3 פיקסלים כבררת מחדל.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="155"/>
@@ -453,146 +446,144 @@ Examples: AudioVideo, Audio, Video, Development, Education, Game, Graphics, Netw
         <location filename="../desktop-preferences.ui" line="275"/>
         <location filename="../desktop-preferences.ui" line="287"/>
         <source> px</source>
-        <translation> פיקסלים</translation>
+        <translation> პქს</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="168"/>
         <source>x</source>
-        <translation>×</translation>
+        <translation>x</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="175"/>
         <source>1 px by default.
 A space is also reserved for 3 lines of text.</source>
-        <translation>פיקסל אחד כברירת המחדל.
-נשמר גם רווח ל־3 שורות טקסט.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="192"/>
         <source>Lock</source>
-        <translation>נעילה</translation>
+        <translation>ჩაკეტვა</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="230"/>
         <source>Margins of work area:</source>
-        <translation>גבולות אזור העבודה:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="303"/>
         <source>By default, desktop folders will be opened in PCManFM-Qt if they
 are left clicked, even when it is not the default file manager.</source>
-        <translation>כבררת מחדל, תיקיות שולחן העבודה תיפתחנה עם PCManFM-Qt
-בלחיצה שמאלית, אפילו אם זה אינו מנהל הקבצים כבררת המחדל.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="307"/>
         <source>Open desktop folders in default file manager by left clicking</source>
-        <translation>לפתוח את תיקיות שולחן העבודה במנהל הקבצים כבררת המחדל בלחיצה שמאלית</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="314"/>
         <source>Make all items stick to their positions</source>
-        <translation>הצמדת הפריטים למיקום שלהם</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="373"/>
         <source>Wallpaper</source>
-        <translation>רקע</translation>
+        <translation>ფონის სურათი</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="439"/>
         <source>Transform image based on EXIF data</source>
-        <translation>התמרת תמונה על בסיס נתוני EXIF</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="446"/>
         <source>Individual wallpaper for each monitor</source>
-        <translation>רקע ייחודי לכל צג נפרד</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="473"/>
         <source>Slide Show</source>
-        <translation>מצגת</translation>
+        <translation>სლაიდების ჩვენება</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="479"/>
         <source>Enable Slide Show</source>
-        <translation>הפעלת מצגת</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="491"/>
         <source>Wallpaper image folder:</source>
-        <translation>תיקיית תמונות הרקע:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="505"/>
         <source>Browse</source>
-        <translation>עיון</translation>
+        <translation>პოვნა</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="512"/>
         <source> hour(s)</source>
-        <translation> שעה/ות</translation>
+        <translation> საათი</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="522"/>
         <source>and</source>
-        <translation>וגם</translation>
+        <translation>და</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="535"/>
         <source>Intervals less than 5min will be ignored</source>
-        <translation>הפרשים של פחות מ־5 דקות לא ייחשבו</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="538"/>
         <source>Interval:</source>
-        <translation>הפרש:</translation>
+        <translation>ინტერვალი:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="545"/>
         <source> minute(s)</source>
-        <translation> דקה/ות</translation>
+        <translation> წუთი</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="498"/>
         <source>Wallpaper folder</source>
-        <translation>תיקיית רקע</translation>
+        <translation>ფონის სურათის საქაღალდე</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="587"/>
         <source>Randomize the slide show</source>
-        <translation>הרצת המצגת בסדר אקראי</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="620"/>
         <source>Visible Shortcuts</source>
-        <translation>קיצורי דרך גלויים</translation>
+        <translation>ხილული მალსახმობები</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="626"/>
         <source>Home</source>
-        <translation>בית</translation>
+        <translation>Home</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="637"/>
         <source>Trash</source>
-        <translation>אשפה</translation>
+        <translation>ნაგავი</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="648"/>
         <source>Computer</source>
-        <translation>מחשב</translation>
+        <translation>კომპიუტერი</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="659"/>
         <source>Network</source>
-        <translation>רשת</translation>
+        <translation>ქსელი</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="614"/>
         <source>Advanced</source>
-        <translation>מתקדם</translation>
+        <translation>დამატებით</translation>
     </message>
 </context>
 <context>
@@ -600,17 +591,17 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../shortcuts.ui" line="14"/>
         <source>Hidden Shortcuts</source>
-        <translation>קיצורי דרך נסתרים</translation>
+        <translation>დამალული მალსახმობები</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="21"/>
         <source>Shortcut</source>
-        <translation>קיצור דרך</translation>
+        <translation>მალმხმობი</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="26"/>
         <source>Action</source>
-        <translation>פעולה</translation>
+        <translation>პარამეტრები</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="31"/>
@@ -620,7 +611,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../shortcuts.ui" line="34"/>
         <source>Focus view, clear filter bar</source>
-        <translation>תצוגת התמקדות, ניקוי סרגל הסינון</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="39"/>
@@ -630,7 +621,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../shortcuts.ui" line="42"/>
         <source>Focus side-pane</source>
-        <translation>התמקדות חלונית־הצד</translation>
+        <translation>ფოკუსი გვერდით პანელზე</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="47"/>
@@ -641,7 +632,7 @@ are left clicked, even when it is not the default file manager.</source>
         <location filename="../shortcuts.ui" line="50"/>
         <location filename="../shortcuts.ui" line="58"/>
         <source>Focus path entry</source>
-        <translation>התמקדות בהכנסת נתיב</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="55"/>
@@ -657,7 +648,7 @@ are left clicked, even when it is not the default file manager.</source>
         <location filename="../shortcuts.ui" line="66"/>
         <location filename="../shortcuts.ui" line="82"/>
         <source>Next tab</source>
-        <translation>הלשונית הבאה</translation>
+        <translation>_შემდეგი ჩანართი</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="71"/>
@@ -668,7 +659,7 @@ are left clicked, even when it is not the default file manager.</source>
         <location filename="../shortcuts.ui" line="74"/>
         <location filename="../shortcuts.ui" line="90"/>
         <source>Previous tab</source>
-        <translation>הלשונית הקודמת</translation>
+        <translation>_წინა ჩანართი</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="79"/>
@@ -683,18 +674,18 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../shortcuts.ui" line="95"/>
         <source>Ctrl+Number</source>
-        <translation>Ctrl+מספר</translation>
+        <translation>Ctrl+რიცხვი</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="98"/>
         <location filename="../shortcuts.ui" line="106"/>
         <source>Jump to tab</source>
-        <translation>קפיצה ללשונית</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="103"/>
         <source>Alt+Number</source>
-        <translation>Alt+מספר</translation>
+        <translation>Alt+რიცხვი</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="111"/>
@@ -704,7 +695,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../shortcuts.ui" line="114"/>
         <source>Go up</source>
-        <translation>לך למעלה</translation>
+        <translation>მაღლა ასვლა</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="119"/>
@@ -714,7 +705,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../shortcuts.ui" line="122"/>
         <source>Search dialog</source>
-        <translation>דו־שיח חיפוש</translation>
+        <translation>ძებნის დიალოგი</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="127"/>
@@ -724,37 +715,37 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../shortcuts.ui" line="130"/>
         <source>Paste into transient filter bar</source>
-        <translation>הדבקה לתוך סרגל הסינון הזמני</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="135"/>
         <source>Drop+Shift</source>
-        <translation>להשליך+Shift</translation>
+        <translation>დაგდება+Shift</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="143"/>
         <source>Drop+Ctrl</source>
-        <translation>להשליך+Ctrl</translation>
+        <translation>დაგდება+Ctrl</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="151"/>
         <source>Drop+Shift+Ctrl</source>
-        <translation>להשליך+Shift+Ctrl</translation>
+        <translation>დაგდება+Shift+Ctrl</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="138"/>
         <source>Move file on dropping</source>
-        <translation>העברת הקובץ בשחרור</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="146"/>
         <source>Copy file on dropping</source>
-        <translation>העתקת הקובץ בשחרור</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="154"/>
         <source>Make a symlink on dropping</source>
-        <translation>יצירת symlink בשחרור</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -762,52 +753,52 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="14"/>
         <source>File Manager</source>
-        <translation>מנהל קבצים</translation>
+        <translation>ფაილების მმართველი</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="81"/>
         <source>Recent F&amp;iles</source>
-        <translation>קבצים אח&amp;רונים</translation>
+        <translation>უახლესი ფა&amp;ილები</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="143"/>
         <source>&amp;Toolbars</source>
-        <translation>&amp;סרגלי כלים</translation>
+        <translation>&amp;ხელსაწყოთა ზოლები</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="150"/>
         <source>Path &amp;Bar</source>
-        <translation>סרגל &amp;נתיב</translation>
+        <translation>&amp;ბილიკის ზოლი</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="157"/>
         <source>&amp;Filtering</source>
-        <translation>&amp;סינון</translation>
+        <translation>&amp;გაფილტვრა</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="232"/>
         <source>&amp;Tools</source>
-        <translation>&amp;כלים</translation>
+        <translation>&amp;ხელსაწყოები</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="291"/>
         <source>Go &amp;Up</source>
-        <translation>ל&amp;עלות</translation>
+        <translation>&amp;ასვლა</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="294"/>
         <source>Go Up</source>
-        <translation>לעלות</translation>
+        <translation>მაღლა ასვლა</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="297"/>
         <source>Alt+Up</source>
-        <translation>‪Alt+למעלה</translation>
+        <translation>Alt+Up</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="306"/>
         <source>&amp;Home</source>
-        <translation>&amp;בית</translation>
+        <translation>&amp;საწყისი</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="309"/>
@@ -817,7 +808,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="318"/>
         <source>&amp;Reload</source>
-        <translation>&amp;רענון</translation>
+        <translation>თავიდან ჩატვირთვა</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="321"/>
@@ -827,28 +818,27 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="330"/>
         <source>Go</source>
-        <translation>לגשת אל</translation>
+        <translation>წინ</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="339"/>
         <source>Quit</source>
-        <translation>יציאה</translation>
+        <translation>გასვლა</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="348"/>
         <source>&amp;About</source>
-        <translatorcomment>המילה &quot;על&quot; לא נחוצה, אז הסרתי אותה.</translatorcomment>
-        <translation>על &amp;אודות</translation>
+        <translation>&amp;შესახებ</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="357"/>
         <source>&amp;New Window</source>
-        <translation>&amp;חלון חדש</translation>
+        <translation>&amp;ახალი ფანჯარა</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="360"/>
         <source>New Window</source>
-        <translation>חלון חדש</translation>
+        <translation>ახალი ფანჯარა</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="363"/>
@@ -858,7 +848,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="371"/>
         <source>Show &amp;Hidden</source>
-        <translation>הצגת מוס&amp;תרים</translation>
+        <translation>დამა&amp;ლულების ჩვენება</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="374"/>
@@ -868,62 +858,62 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="383"/>
         <source>&amp;Computer</source>
-        <translation>מ&amp;חשב</translation>
+        <translation>&amp;კომპიუტერი</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="392"/>
         <source>&amp;Trash</source>
-        <translation>&amp;אשפה</translation>
+        <translation>&amp;ნაგვის ყუთი</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="397"/>
         <source>&amp;Network</source>
-        <translation>&amp;רשת</translation>
+        <translation>&amp;ქსელი</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="406"/>
         <source>&amp;Desktop</source>
-        <translation>שו&amp;לחן עבודה</translation>
+        <translation>&amp;სამუშაო მაგიდა</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="415"/>
         <source>&amp;Add to Bookmarks</source>
-        <translation>הוספה לסימ&amp;ניות</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="420"/>
         <source>&amp;Applications</source>
-        <translation>&amp;יישומים</translation>
+        <translation>&amp;აპლიკაციები</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="425"/>
         <source>Reload</source>
-        <translation>רענון</translation>
+        <translation>თავიდან ჩატვირთვა</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="433"/>
         <source>&amp;Icon View</source>
-        <translation>תצוגת סמ&amp;לים</translation>
+        <translation>&amp;ხატულების ხედი</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="441"/>
         <source>&amp;Compact View</source>
-        <translation>תצוגה &amp;חסכונית</translation>
+        <translation>&amp;კომპაქტური ხედი</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="449"/>
         <source>&amp;Detailed List</source>
-        <translation>רשימה מ&amp;פורטת</translation>
+        <translation>&amp;დეტალური სია</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="457"/>
         <source>&amp;Thumbnail View</source>
-        <translation>תצוגת &amp;תמונות ממוזערות</translation>
+        <translation>მინია&amp;ტურების ხედი</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="466"/>
         <source>Cu&amp;t</source>
-        <translation>ג&amp;זירה</translation>
+        <translation>ამ&amp;ოჭრა</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="469"/>
@@ -933,7 +923,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="478"/>
         <source>&amp;Copy</source>
-        <translation>ה&amp;עתקה</translation>
+        <translation>&amp;კოპირება</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="481"/>
@@ -943,7 +933,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="490"/>
         <source>&amp;Paste</source>
-        <translation>ה&amp;דבקה</translation>
+        <translation>&amp;ჩასმა</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="493"/>
@@ -953,7 +943,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="502"/>
         <source>Select &amp;All</source>
-        <translation>לבחור ה&amp;כול</translation>
+        <translation>ყველაფრის &amp;მონიშვნა</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="505"/>
@@ -963,7 +953,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="510"/>
         <source>De&amp;select All</source>
-        <translation>ביטול &amp;בחירה</translation>
+        <translation>მონიშვნი&amp;ს მოხსნა ყველაფერზე</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="513"/>
@@ -973,62 +963,62 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="518"/>
         <source>Pr&amp;eferences</source>
-        <translation>ה&amp;עדפות</translation>
+        <translation>&amp;მორგება</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="526"/>
         <source>&amp;Ascending</source>
-        <translation>עו&amp;לה</translation>
+        <translation>&amp;აღმავალი</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="538"/>
         <source>&amp;Descending</source>
-        <translation>יו&amp;רד</translation>
+        <translation>&amp;დაღმავალი</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="550"/>
         <source>&amp;By File Name</source>
-        <translation>לפי &amp;שם קובץ</translation>
+        <translation>&amp;ფაილის სახელით</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="558"/>
         <source>By &amp;Modification Time</source>
-        <translation>לפי מו&amp;עד שינוי</translation>
+        <translation>&amp;ცვლილების დროით</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="566"/>
         <source>By C&amp;reation Time</source>
-        <translation>לפי מועד י&amp;צירה</translation>
+        <translation>შექმნის დ&amp;როით</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="574"/>
         <source>By Deletio&amp;n Time</source>
-        <translation>לפי מועד מ&amp;חיקה</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="582"/>
         <source>By File &amp;Type</source>
-        <translation>לפי &amp;סוג קובץ</translation>
+        <translation>ფაილის &amp;ტიპით</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="590"/>
         <source>By &amp;Owner</source>
-        <translation>לפי &amp;בעלות</translation>
+        <translation>მფლ&amp;ოფელით</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="598"/>
         <source>By &amp;Group</source>
-        <translation>לפי &amp;קבוצה</translation>
+        <translation>ჯ&amp;გუფით</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="606"/>
         <source>&amp;Folder First</source>
-        <translation>&amp;תיקיות בהתחלה</translation>
+        <translation>ჯერ სა&amp;ქაღალდეები</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="614"/>
         <source>&amp;Hidden Last</source>
-        <translation>&amp;הוסתר לאחרונה</translation>
+        <translation>დამალულები &amp;ბოლოში</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="927"/>
@@ -1038,22 +1028,22 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="1015"/>
         <source>Preserve Settings Recursively from &amp;Here</source>
-        <translation>שימור ההגדרות רקורסיבית מ&amp;כאן</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="1020"/>
         <source>&amp;Go to Source of Inherited Settings</source>
-        <translation>מעבר למ&amp;קור של ההגדרות שהגיעו בירושה</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="1025"/>
         <source>&amp;Remove Settings of Nonexistent Folders</source>
-        <translation>ה&amp;סרת הגדרות של תיקיות שאינן קיימות</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="1033"/>
         <source>&amp;Clear</source>
-        <translation>&amp;ניקוי</translation>
+        <translation>&amp;გასუფთავება</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="667"/>
@@ -1063,17 +1053,17 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="728"/>
         <source>&amp;Case Sensitive</source>
-        <translation>&amp;תלוי רישיות</translation>
+        <translation>რეგისტრ&amp;ზე დამოკიდებული</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="736"/>
         <source>By File &amp;Size</source>
-        <translation>לפי &amp;גודל קובץ</translation>
+        <translation>ფაილი&amp;ს ზომით</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="745"/>
         <source>&amp;Close Window</source>
-        <translation>&amp;סגירת חלון</translation>
+        <translation>&amp;ფანრჯის დახურვა</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="748"/>
@@ -1083,32 +1073,32 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="770"/>
         <source>Open Tab in &amp;Root Instance</source>
-        <translation>פתיחת לשונית במופע מ&amp;שתמש על</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="784"/>
         <source>&amp;Folder</source>
-        <translation>&amp;תיקייה</translation>
+        <translation>&amp;საქაღალდე</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="796"/>
         <source>&amp;Blank File</source>
-        <translation>קובץ &amp;ריק</translation>
+        <translation>&amp;ცარიელი ფაილი</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="887"/>
         <source>Preserve Settings for &amp;This Folder</source>
-        <translation>שימור הגדרות לתיקייה ה&amp;זאת</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="932"/>
         <source>&amp;Show/Focus Filter Bar</source>
-        <translation>ה&amp;צגה/התמקדות של סרגל הסינון</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="935"/>
         <source>Show Filter Bar</source>
-        <translation>הצגת סרגל סינון</translation>
+        <translation>ფილტრის ზოლის ჩვენება</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="938"/>
@@ -1118,12 +1108,12 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="946"/>
         <source>S&amp;plit View</source>
-        <translation>תצוגה מ&amp;פוצלת</translation>
+        <translation>გა&amp;ყოფილი ხედი</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="949"/>
         <source>Split View</source>
-        <translation>תצוגה מפוצלת</translation>
+        <translation>ხედის გაყოფა</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="952"/>
@@ -1133,7 +1123,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="957"/>
         <source>&amp;Copy Full Path</source>
-        <translation>העתקת ה&amp;נתיב המלא</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="964"/>
@@ -1143,17 +1133,17 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="975"/>
         <source>Show Thumb&amp;nails</source>
-        <translation>הצגת תמונות ממו&amp;זערות</translation>
+        <translation>მი&amp;ნიატურების ჩვენება</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="978"/>
         <source>Show Thumbnails</source>
-        <translation>הצגת תמונות ממוזערות</translation>
+        <translation>მინიატურების ჩვენება</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="986"/>
         <source>S&amp;ide Pane</source>
-        <translation>חלונית צ&amp;ד</translation>
+        <translation>გვერდ&amp;ითი პანელი</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="989"/>
@@ -1163,18 +1153,18 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="994"/>
         <source>Hidden &amp;Shortcuts</source>
-        <translation>קיצורי דרך &amp;נסתרים</translation>
+        <translation>დამალული მალ&amp;სახმობები</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="999"/>
         <source>Open Tab in &amp;Admin Mode</source>
-        <translation>פתיחת לשונית במצב &amp;ניהול</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="1004"/>
         <location filename="../main-win.ui" line="1007"/>
         <source>Create Launcher</source>
-        <translation>יצירת משגר</translation>
+        <translation>გამშვების შექმნა</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="822"/>
@@ -1184,7 +1174,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="827"/>
         <source>&amp;Clear All Filters</source>
-        <translation>פינוי &amp;כל המסננים</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="830"/>
@@ -1194,57 +1184,57 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="839"/>
         <source>Close &amp;previous tabs</source>
-        <translation>סגירת הלשוניות ה&amp;קודמות</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="848"/>
         <source>Close &amp;next tabs</source>
-        <translation>סגירת הלשוניות ה&amp;באות</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="896"/>
         <source>Connect to &amp;Server</source>
-        <translation>התחברות לש&amp;רת</translation>
+        <translation>მიერთება &amp;სერვერთან</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="904"/>
         <source>&amp;Location</source>
-        <translation>מי&amp;קום</translation>
+        <translation>&amp;მდებარეობა</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="912"/>
         <source>&amp;Path Buttons</source>
-        <translation>כפתור &amp;נתיב</translation>
+        <translation>&amp;ბილიკის ღილაკები</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="917"/>
         <source>&amp;Bulk Rename</source>
-        <translation>שינוי שם &amp;כמותי</translation>
+        <translation>ერთ&amp;ზე მეტი ფაილის სახელის გადარქმევა</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="924"/>
         <source>Bulk Rename</source>
-        <translation>שינוי שם כמותי</translation>
+        <translation>ერთზე მეტი ფაილის სახელის გადარქმევა</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="853"/>
         <source>Close &amp;other tabs</source>
-        <translation>לסגור לשוניות א&amp;חרות</translation>
+        <translation>სხვა ჩანართების დახურვ&amp;ა</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="819"/>
         <source>Permanent &amp;filter bar</source>
-        <translation>סרגל סינון &amp;קבוע</translation>
+        <translation>მუდმივი &amp;ფილტრის პანელი</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="861"/>
         <source>&amp;Menu bar</source>
-        <translation>סרגל &amp;תפריטים</translation>
+        <translation>&amp;მენიუს ზოლი</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="864"/>
         <source>Menu bar</source>
-        <translation>סרגל תפריטים</translation>
+        <translation>მენიუს ზოლი</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="867"/>
@@ -1255,22 +1245,22 @@ are left clicked, even when it is not the default file manager.</source>
         <location filename="../main-win.ui" line="876"/>
         <location filename="../main-win.ui" line="879"/>
         <source>Menu</source>
-        <translation>תפריט</translation>
+        <translation>მენიუ</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="623"/>
         <source>New &amp;Tab</source>
-        <translation>לשונית &amp;חדשה</translation>
+        <translation>&amp;ახალი ჩანართი</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="164"/>
         <source>&amp;Customized View Settings</source>
-        <translation>הגדרות ת&amp;צוגה מותאמת</translation>
+        <translation>&amp;მორგებული ხედის პარამეტრები</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="626"/>
         <source>New Tab</source>
-        <translation>לשונית חדשה</translation>
+        <translation>ახალი ჩანართი</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="629"/>
@@ -1280,42 +1270,42 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="638"/>
         <source>Go &amp;Back</source>
-        <translation>ח&amp;זרה</translation>
+        <translation>უკან &amp;დაბრუნება</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="641"/>
         <source>Go Back</source>
-        <translation>חזר אחורה</translation>
+        <translation>უკან დაბრუნება</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="644"/>
         <source>Alt+Left</source>
-        <translation>‪Alt+שמאלה</translation>
+        <translation>Alt+Left</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="653"/>
         <source>Go &amp;Forward</source>
-        <translation>הת&amp;קדמות</translation>
+        <translation>&amp;წინ გადასვლა</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="656"/>
         <source>Go Forward</source>
-        <translation>התקדמות קדימה</translation>
+        <translation>წინ გადასვლა</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="659"/>
         <source>Alt+Right</source>
-        <translation>‪Alt+ימינה</translation>
+        <translation>Alt+Right</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="664"/>
         <source>&amp;Invert Selection</source>
-        <translation>הי&amp;פוך בחירה</translation>
+        <translation>მონიშვნის &amp;ინვერსია</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="676"/>
         <source>&amp;Delete</source>
-        <translation>מ&amp;חיקה</translation>
+        <translation>&amp;წაშლა</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="679"/>
@@ -1325,7 +1315,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="684"/>
         <source>&amp;Rename</source>
-        <translation>&amp;שינוי שם</translation>
+        <translation>&amp;სახელის გადარქმევა</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="691"/>
@@ -1335,7 +1325,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="700"/>
         <source>C&amp;lose Tab</source>
-        <translation>&amp;סגירת לשונית</translation>
+        <translation>ჩა&amp;ნართის დახურვა</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="703"/>
@@ -1345,7 +1335,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="712"/>
         <source>File &amp;Properties</source>
-        <translation>מ&amp;אפייני קובץ</translation>
+        <translation>&amp;ფაილის თვისებები</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="715"/>
@@ -1355,17 +1345,17 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="720"/>
         <source>&amp;Folder Properties</source>
-        <translation>מאפייני &amp;תיקייה</translation>
+        <translation>&amp;საქაღალდის თვისებები</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="753"/>
         <source>Edit Bookmarks</source>
-        <translation>עריכת סימניות</translation>
+        <translation>სანიშნების ჩასწორება</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="762"/>
         <source>Open &amp;Terminal</source>
-        <translation>פתיחת מ&amp;סוף</translation>
+        <translation>&amp;ტერმინალის გახსნა</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="765"/>
@@ -1375,7 +1365,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="775"/>
         <source>&amp;Edit Bookmarks</source>
-        <translation>&amp;עריכת סימניות</translation>
+        <translation>&amp;სანიშნების ჩასწორება</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="787"/>
@@ -1390,7 +1380,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="804"/>
         <source>&amp;Find Files</source>
-        <translation>&amp;איתור קבצים</translation>
+        <translation>&amp;ფაილების ძებნა</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="811"/>
@@ -1400,48 +1390,48 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="70"/>
         <source>&amp;File</source>
-        <translation>&amp;קובץ</translation>
+        <translation>&amp;ფაილი</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="74"/>
         <source>C&amp;reate New</source>
-        <translation>י&amp;צירת חדש</translation>
+        <translation>ახლის შე&amp;ქმნა</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="102"/>
         <source>&amp;Help</source>
-        <translation>ע&amp;זרה</translation>
+        <translation>&amp;დახმარება</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="109"/>
         <location filename="../main-win.ui" line="133"/>
         <source>&amp;View</source>
-        <translation>ת&amp;צוגה</translation>
+        <translation>&amp;ნახვა</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="113"/>
         <source>&amp;Sorting</source>
-        <translation>&amp;מיון</translation>
+        <translation>&amp;დალაგება</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="189"/>
         <source>&amp;Edit</source>
-        <translation>ע&amp;ריכה</translation>
+        <translation>&amp;ჩასწორება</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="208"/>
         <source>&amp;Bookmarks</source>
-        <translation>&amp;סימניות</translation>
+        <translation>&amp;სანიშნები</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="215"/>
         <source>&amp;Go</source>
-        <translation>ל&amp;גשת אל</translation>
+        <translation>&amp;წავიდა</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="257"/>
         <source>Main Toolbar</source>
-        <translation>סרגל הכלים הראשי</translation>
+        <translation>ხელსაწყოთა მთავარი ზოლი</translation>
     </message>
 </context>
 <context>
@@ -1449,99 +1439,99 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../application.cpp" line="187"/>
         <source>Name of configuration profile</source>
-        <translation>שם פרופיל התצורה</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../application.cpp" line="187"/>
         <source>PROFILE</source>
-        <translation>פרופיל</translation>
+        <translation>პროფილი</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="190"/>
         <source>Run PCManFM-Qt as a daemon</source>
-        <translation>הפעלת PCManFM-Qt כסוכן ברקע</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../application.cpp" line="193"/>
         <source>Quit PCManFM-Qt</source>
-        <translation>יציאה מ־PCManFM-Qt</translation>
+        <translation>გასვლა PCManFM-Qt-დან</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="196"/>
         <source>Launch desktop manager</source>
-        <translation>הפעלת מנהל שולחן עבודה</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../application.cpp" line="199"/>
         <source>Turn off desktop manager if it&apos;s running</source>
-        <translation>כיבוי מנהל שולחן עבודה אם הוא פעיל</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../application.cpp" line="202"/>
         <source>Open desktop preference dialog on the page with the specified name</source>
-        <translation>פתיחת דו־שיח העדפות שולחן עבודה בעמוד עם השם שמצוין</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../application.cpp" line="202"/>
         <location filename="../application.cpp" line="217"/>
         <source>NAME</source>
-        <translation>שם</translation>
+        <translation>სახელი</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="205"/>
         <source>Open new window</source>
-        <translation>פתיחת חלון חדש</translation>
+        <translation>ახალ ფანჯრის გახსნა</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="208"/>
         <source>Open Find Files utility</source>
-        <translation>פתיחת כלי חיפוש קבצים</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../application.cpp" line="211"/>
         <source>Set desktop wallpaper from image FILE</source>
-        <translation>הגדרת רקע שולחן עבודה מקובץ תמונה</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../application.cpp" line="211"/>
         <source>FILE</source>
-        <translation>קובץ</translation>
+        <translation>FILE</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="214"/>
         <source>MODE</source>
-        <translation>מצב</translation>
+        <translation>რეჟიმი</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="214"/>
         <source>Set mode of desktop wallpaper. MODE=(%1)</source>
-        <translation>הגדרת מצב רקע שולחן העבודה. מצב=(%1)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../application.cpp" line="217"/>
         <source>Open Preferences dialog on the page with the specified name</source>
-        <translation>פתח את דו־שיח ההעדפות בעמוד עם השם שצויין</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../application.cpp" line="220"/>
         <source>Files or directories to open</source>
-        <translation>קבצים או תיקיות לפתיחה</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../application.cpp" line="220"/>
         <source>[FILE1, FILE2,...]</source>
-        <translation>[קובץ1, קובץ2,...]</translation>
+        <translation>[ფაილი1, ფაილი2,...]</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="658"/>
         <location filename="../application.cpp" line="663"/>
         <source>Error</source>
-        <translation>שגיאה</translation>
+        <translation>შეცდომა</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="663"/>
         <source>Terminal emulator is not set.</source>
-        <translation>מדמה המסוף לא הוגדר.</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1549,12 +1539,12 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../autorundialog.cpp" line="44"/>
         <source>Open in file manager</source>
-        <translation>פתיחה במנהל הקבצים</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../autorundialog.cpp" line="137"/>
         <source>Removable Disk</source>
-        <translation>דיסק נשלף</translation>
+        <translation>მოხსნადი დისკი</translation>
     </message>
 </context>
 <context>
@@ -1577,7 +1567,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../connectserverdialog.cpp" line="12"/>
         <source>Secure WebDav</source>
-        <translation>WebDav מאובטח</translation>
+        <translation>დაცული WebDav</translation>
     </message>
     <message>
         <location filename="../connectserverdialog.cpp" line="13"/>
@@ -1595,42 +1585,42 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktopentrydialog.cpp" line="35"/>
         <source>Command:</source>
-        <translation>פקודה:</translation>
+        <translation>ბრძანება:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="36"/>
         <source>The command to execute.</source>
-        <translation>הפקודה להרצה.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="39"/>
         <source>URL:</source>
-        <translation>כתובת:</translation>
+        <translation>URL:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="40"/>
         <source>The URL to access.</source>
-        <translation>הכתובת אליה לגשת.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="67"/>
         <source>Select an icon</source>
-        <translation>נא לבחור סמל</translation>
+        <translation>აირჩიეთ ხატულა</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="69"/>
         <source>Images (*.png *.xpm *.svg *.svgz )</source>
-        <translation>תמונות (‎*.png *.xpm *.svg *.svgz )</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="91"/>
         <source>Select an executable file</source>
-        <translation>נא לבחור קובץ בר הרצה</translation>
+        <translation>აირჩიეთ გამშვები ფაილი</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="99"/>
         <source>Select a file</source>
-        <translation>נא לבחור קובץ</translation>
+        <translation>აირჩიეთ ფაილი</translation>
     </message>
 </context>
 <context>
@@ -1638,47 +1628,47 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="52"/>
         <source>Fill with background color only</source>
-        <translation>מילוי עם צבע הרקע בלבד</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="53"/>
         <source>Stretch to fill the entire screen</source>
-        <translation>למתוח כדי למלא את כל המסך</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="54"/>
         <source>Stretch to fit the screen</source>
-        <translation>מתיחה על מנת להתאים למסך</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="55"/>
         <source>Center on the screen</source>
-        <translation>מרכוז על המסך</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="56"/>
         <source>Tile the image to fill the entire screen</source>
-        <translation>הפיכת התמונה לאריח על מנת למלא את כל המסך</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="57"/>
         <source>Zoom the image to fill the entire screen</source>
-        <translation>הגדלת התמונה על מנת למלא את כל המסך</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="266"/>
         <source>Select Wallpaper</source>
-        <translation>נא לבחור רקע</translation>
+        <translation>აირჩიეთ ფონის სურათი</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="270"/>
         <source>Image Files</source>
-        <translation>קובצי תמונה</translation>
+        <translation>ასლის ფაილები</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="312"/>
         <source>Select Wallpaper Folder</source>
-        <translation>נא לבחור תיקיית רקעים</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1686,61 +1676,60 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktopwindow.cpp" line="328"/>
         <source>Trash (One item)</source>
-        <translation>אשפה (פריט אחד)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message numerus="yes">
         <location filename="../desktopwindow.cpp" line="331"/>
         <source>Trash (%Ln items)</source>
-        <translation>
-            <numerusform>אשפה (פריט אחד)</numerusform>
-            <numerusform>אשפה (שני פריטים)</numerusform>
+        <translation type="unfinished">
+            <numerusform></numerusform>
         </translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="335"/>
         <source>Trash (Empty)</source>
-        <translation>אשפה (ריק)</translation>
+        <translation>ნაგვის ყუთი (ცარიელია)</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="370"/>
         <source>Computer</source>
-        <translation>מחשב</translation>
+        <translation>კომპიუტერი</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="384"/>
         <source>Network</source>
-        <translation>רשת</translation>
+        <translation>ქსელი</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="1047"/>
         <source>Open</source>
-        <translation>פתיחה</translation>
+        <translation>გახსნა</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="1053"/>
         <location filename="../desktopwindow.cpp" line="1093"/>
         <source>Stic&amp;k to Current Position</source>
-        <translation>היצמדו&amp;ת לאזור הנוכחי</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="1061"/>
         <source>Empty Trash</source>
-        <translation>ריקון האשפה</translation>
+        <translation>ნაგვის დაცარიელება</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="1127"/>
         <source>Hide Desktop Items</source>
-        <translation>הסתרת פריטי שולחן העבודה</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="1133"/>
         <source>Create Launcher</source>
-        <translation>יצירת משגר</translation>
+        <translation>გამშვების შექმნა</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="1136"/>
         <source>Desktop Preferences</source>
-        <translation>העדפות שולחן העבודה</translation>
+        <translation>სამუშაო მაგიდის მორგება</translation>
     </message>
 </context>
 <context>
@@ -1748,7 +1737,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../tabpage.cpp" line="95"/>
         <source>Filter:</source>
-        <translation>מסנן:</translation>
+        <translation>ფილტრი:</translation>
     </message>
 </context>
 <context>
@@ -1756,7 +1745,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../tabpage.cpp" line="65"/>
         <source>Clear text (Ctrl+K or Esc)</source>
-        <translation>ניקוי טקסט (Ctrl+K או Esc)</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1764,62 +1753,61 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../mainwindow.cpp" line="143"/>
         <source>Root Instance</source>
-        <translation>מופע חשבון על</translation>
+        <translation>ძირითადი გაშვებული ასლი</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="786"/>
         <source>Hide menu bar</source>
-        <translation>הסתר את שורת התפריט</translation>
+        <translation>მენიუს ზოლის დამალვა</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="787"/>
         <source>This will hide the menu bar completely, use Ctrl+M to show it again.</source>
-        <translation>שורת התפריט תוסתר לגמרי, נא להשתמש במקשים Ctrl+M על מנת להציגה.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="1234"/>
         <source>Version: %1</source>
-        <translation>גרסה: %1</translation>
+        <translation>ვერსია: %1</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="176"/>
         <location filename="../mainwindow.cpp" line="2203"/>
         <source>&amp;Move to Trash</source>
-        <translation>&amp;העברה לאשפה</translation>
+        <translation>&amp;სანაგვე ყუთში გადატანა</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="176"/>
         <location filename="../mainwindow.cpp" line="2203"/>
         <source>&amp;Delete</source>
-        <translation>מ&amp;חיקה</translation>
+        <translation>&amp;წაშლა</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="2039"/>
         <source>Customized View Settings</source>
-        <translation>הגדרות תצוגה מותאמת</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="2310"/>
         <location filename="../mainwindow.cpp" line="2318"/>
         <source>Error</source>
-        <translation>שגיאה</translation>
+        <translation>შეცდომა</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="2318"/>
         <source>Switch user command is not set.</source>
-        <translation>פקודת החלפת המשתמש לא נקבעה.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="2409"/>
         <source>Cleaning Folder Settings</source>
-        <translation>הגדרות ניקוי תיקייה</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="2410"/>
         <source>Do you want to remove settings of nonexistent folders?
 They might be useful if those folders are created again.</source>
-        <translation>להסיר את ההגדרות של תיקיות שאינן קיימות?
-הן יכולות להועיל אם התיקיות תיווצרנה מחדש.</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1827,32 +1815,32 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferencesdialog.cpp" line="212"/>
         <source>Icon View</source>
-        <translation>תצוגת סמלים</translation>
+        <translation>ხატულის ხედი</translation>
     </message>
     <message>
         <location filename="../preferencesdialog.cpp" line="213"/>
         <source>Compact View</source>
-        <translation>תצוגה חסכונית</translation>
+        <translation>შემჭიდროებული ხედი</translation>
     </message>
     <message>
         <location filename="../preferencesdialog.cpp" line="214"/>
         <source>Thumbnail View</source>
-        <translation>תצוגת תמונות ממוזערות</translation>
+        <translation>მინიატურის ხედი</translation>
     </message>
     <message>
         <location filename="../preferencesdialog.cpp" line="215"/>
         <source>Detailed List View</source>
-        <translation>תצוגת רשימה מפורטת</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferencesdialog.cpp" line="308"/>
         <source>Remove if added by user</source>
-        <translation>להסיר אם נוסף על ידי המשתמש</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferencesdialog.cpp" line="332"/>
         <source>Open user-defined list</source>
-        <translation>פתיחת רשימה בהגדרת המשתמש</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1860,57 +1848,57 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../tabpage.cpp" line="446"/>
         <source>Search Results</source>
-        <translation>תוצאות חיפוש</translation>
+        <translation>ძებნს შედეგები</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="449"/>
         <source>Applications</source>
-        <translation>יישומים</translation>
+        <translation>აპლიკაციები</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="453"/>
         <source>Computer</source>
-        <translation>מחשב</translation>
+        <translation>კომპიუტერი</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="456"/>
         <source>Network</source>
-        <translation>רשת</translation>
+        <translation>ქსელი</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="459"/>
         <source>Trash</source>
-        <translation>אשפה</translation>
+        <translation>ნაგავი</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="465"/>
         <source>Desktop</source>
-        <translation>שולחן עבודה</translation>
+        <translation>სამაგიდო</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="556"/>
         <source>Error</source>
-        <translation>שגיאה</translation>
+        <translation>შეცდომა</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="565"/>
         <source>Free space: %1 (Total: %2)</source>
-        <translation>שטח פנוי: %1 (בסך הכול: %2)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="582"/>
         <source>%n item(s)</source>
         <translation>
-            <numerusform>פריט אחד</numerusform>
-            <numerusform>שני פריטים</numerusform>
+            <numerusform>%n ელემენტი</numerusform>
+            <numerusform>%n ელემენტი</numerusform>
         </translation>
     </message>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="584"/>
         <source> (%n hidden)</source>
         <translation>
-            <numerusform> (אחד מוסתר)</numerusform>
-            <numerusform> (שניים מוסתרים)</numerusform>
+            <numerusform> (%n დამალული)</numerusform>
+            <numerusform> (%n დამალული)</numerusform>
         </translation>
     </message>
     <message>
@@ -1918,14 +1906,13 @@ They might be useful if those folders are created again.</source>
         <location filename="../tabpage.cpp" line="790"/>
         <location filename="../tabpage.cpp" line="804"/>
         <source>Link to</source>
-        <translation>קישור אל</translation>
+        <translation>ბმული</translation>
     </message>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="816"/>
         <source>%n item(s) selected</source>
-        <translation>
-            <numerusform>נבחר פריט אחד</numerusform>
-            <numerusform>נבחרו שני פריטים</numerusform>
+        <translation type="unfinished">
+            <numerusform></numerusform>
         </translation>
     </message>
 </context>
@@ -1934,31 +1921,30 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../view.cpp" line="59"/>
         <source>Many files</source>
-        <translation>מגוון קבצים</translation>
+        <translation>მეტისმეტად ბევრი ფაილი</translation>
     </message>
     <message numerus="yes">
         <location filename="../view.cpp" line="60"/>
         <source>Do you want to open these %1 files?</source>
-        <translation>
-            <numerusform>לפתוח את הקובץ הזה?</numerusform>
-            <numerusform>לפתוח את שני הקבצים האלה?</numerusform>
+        <translation type="unfinished">
+            <numerusform></numerusform>
         </translation>
     </message>
     <message>
         <location filename="../view.cpp" line="122"/>
         <source>Open in New T&amp;ab</source>
-        <translation>פתיחה בלשונית חד&amp;שה</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../view.cpp" line="126"/>
         <source>Open in New Win&amp;dow</source>
-        <translation>פתיחה בחלון ח&amp;דש</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../view.cpp" line="134"/>
         <location filename="../view.cpp" line="152"/>
         <source>Open in Termina&amp;l</source>
-        <translation>פתיחה במסו&amp;ף</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1966,294 +1952,292 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferences.ui" line="14"/>
         <source>Preferences</source>
-        <translation>העדפות</translation>
+        <translation>მორგება</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="45"/>
         <source>User Interface</source>
-        <translation>ממשק משתמש</translation>
+        <translation>სამომხმარებლო ინტერფეისი</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="35"/>
         <source>Behavior</source>
-        <translation>התנהגות</translation>
+        <translation>ქცევა</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="50"/>
         <location filename="../preferences.ui" line="642"/>
         <source>Thumbnail</source>
-        <translation>תמונה ממוזערת</translation>
+        <translation>მინიატურა</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="55"/>
         <source>Volume</source>
-        <translation>עוצמת שמע</translation>
+        <translation>მოცულობა</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="60"/>
         <source>Advanced</source>
-        <translation>מתקדם</translation>
+        <translation>დამატებით</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="222"/>
         <source>Select newly created files</source>
-        <translation>בחירת קבצים חדשים שנוצרו</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="296"/>
         <source>Icons</source>
-        <translation>סמלים</translation>
+        <translation>ხატულები</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="328"/>
         <source>Size of big icons:</source>
-        <translation>גודל סמלים גדולים:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="345"/>
         <source>Size of small icons:</source>
-        <translation>גודל סמלים קטנים:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="362"/>
         <source>Size of thumbnails:</source>
-        <translation>גודל תמונות ממוזערות:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="376"/>
         <source>Size of side pane icons:</source>
-        <translation>גודל סמלי חלוניות צד:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="308"/>
         <source>Icon theme:</source>
-        <translation>ערכת סמלים:</translation>
+        <translation>ხატულას თემა:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="546"/>
         <source>Window</source>
-        <translation>חלון</translation>
+        <translation>ფანჯარა</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="559"/>
         <source>Always show the tab bar</source>
-        <translation>הצג את שורת הלשוניות תמיד</translation>
+        <translation>ჩანართების ზოლის ყოველთვის ჩვენება</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="566"/>
         <source>Show &apos;Close&apos; buttons on tabs	</source>
-        <translation>הצגת כפתורי &quot;סגירה&quot; בלשוניות	</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="580"/>
         <source>Remember the size of the last closed window</source>
-        <translation>זכור את גודל החלון האחרון שנסגר</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="587"/>
         <source>Default width of new windows:</source>
-        <translation>רוחב ברירת־המחדל של חלונות חדשים:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="601"/>
         <source>Default height of new windows:</source>
-        <translation>גובה ברירת־המחדל של חלונות חדשים:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="81"/>
         <source>Browsing</source>
-        <translation>דפדוף</translation>
+        <translation>არჩევა</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="93"/>
         <source>Open files with single click</source>
-        <translation>פתיחת קבצים עם קליק אחד</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="162"/>
         <source>Default view mode:</source>
-        <translation>מצב תצוגת ברירת־המחדל:</translation>
+        <translation>თვალიერების ნაგულისხმები რეჟიმი:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="119"/>
         <source> sec</source>
-        <translation> שניות</translation>
+        <translation> წმ</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="175"/>
         <source>File Operations</source>
-        <translation>פעולות קובץ</translation>
+        <translation>ფაილის ოპერაციები</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="181"/>
         <source>Confirm before deleting files</source>
-        <translation>אישור לפני מחיקת קבצים</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="188"/>
         <source>Move deleted files to &quot;trash bin&quot; instead of erasing from disk.</source>
-        <translation>העברת קבצים אל &quot;סל האשפה&quot; במקום מחיקתם מהכונן.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="651"/>
         <source>Show thumbnails of files</source>
-        <translation>הצגת תמונות ממוזערות של קבצים</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="658"/>
         <source>Only show thumbnails for local files</source>
-        <translation>הצגת תמונות ממוזערות עבור קבצים מקומיים בלבד</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="40"/>
         <source>Display</source>
-        <translation>צג</translation>
+        <translation>ჩვენება</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="90"/>
         <source>If this is unchecked, the DE setting will be used.</source>
-        <translation>כשהאפשרות לא מסומנת, הגדרת DE תהיה בשימוש.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="103"/>
         <location filename="../preferences.ui" line="116"/>
         <source>Set to zero to disable auto-selection.</source>
-        <translation>יש להגדיר לאפס כדי להשבית בחירה אוטומטית.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="106"/>
         <source>Delay of auto-selection in single click mode:</source>
-        <translation>השהיית הבחירה אוטומטית במצב לחיצה בודדת:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="144"/>
         <source>Open in current tab</source>
-        <translation>פתיחה בלשונית הנוכחית</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="149"/>
         <source>Open in new tab</source>
-        <translation>פתיחה בלשונית חדשה</translation>
+        <translation>ახალ ჩანართში გახსნა</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="154"/>
         <source>Open in new window</source>
-        <translation>פתיחה בחלון חדש</translation>
+        <translation>ახალ ფანჯარაში გახსნა</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="195"/>
         <source>Erase files on removable media instead of &quot;trash can&quot; creation</source>
-        <translation>מחיקת קבצים במדיה הנתיקה במקום יצירת &quot;פח אשפה&quot;</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="202"/>
         <source>Confirm before moving files into &quot;trash can&quot;</source>
-        <translation>אישור לפני העברה לתוך &quot;פח האשפה&quot;</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="209"/>
         <location filename="../preferences.ui" line="409"/>
         <location filename="../preferences.ui" line="419"/>
         <source>Requires application restart to take effect completely</source>
-        <translation>הפעלת היישום מחדש נחוצה על מנת לקבל את כל ההשפעה</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="212"/>
         <source>Launch executable files without prompt</source>
-        <translation>הפעלת קבצים ברי הרצה בלי שורת פקודה</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="219"/>
         <source>Renamed files will also be selected</source>
-        <translation>גם קבצים ששמם השתנה ייבחרו</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="244"/>
         <source>Number of recent files:</source>
-        <translation>מספר הקבצים האחרונים:</translation>
+        <translation>უკანასკნელი ფაილების რაოდენობა:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="325"/>
         <location filename="../preferences.ui" line="335"/>
         <source>Used by Icon View</source>
-        <translation>בשימוש על ידי תצוגת הסמלים</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="342"/>
         <location filename="../preferences.ui" line="352"/>
         <source>Used by Compact View and Detailed List View</source>
-        <translation>בשימוש על ידי התצוגה החסכונית ותצוגת הרשימה המפורטת</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="359"/>
         <location filename="../preferences.ui" line="369"/>
         <source>Used by Thumbnail View</source>
-        <translation>בשימוש על ידי תצוגת התמונות הממוזערות</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="389"/>
         <source>User interface</source>
-        <translation>ממשק משתמש</translation>
+        <translation>მომხმარებლის ინტერფეისი</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="402"/>
         <source>Treat backup files as hidden</source>
-        <translation>התייחסות אל קבצי גיבוי כמוסתרים</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="422"/>
         <source>Show icons of hidden files shadowed</source>
-        <translation>הצגת סמלים של קבצים מוסתרים כמוצללים</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="459"/>
         <source>Minimum item margins in icon view:</source>
-        <translation>השוליים המינימליים של פריט בתצוגת הסמלים:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="466"/>
         <source>3 px by default.</source>
-        <translation>3 פיקסלים כברירת המחדל.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="469"/>
         <location filename="../preferences.ui" line="493"/>
         <source> px</source>
-        <translation> פיקסלים</translation>
+        <translation> პქს</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="482"/>
         <source>x</source>
-        <translation>×</translation>
+        <translation>x</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="489"/>
         <source>3 px by default.
 A space is also reserved for 3 lines of text.</source>
-        <translation>3 פיקסלים כברירת המחדל.
-גם רווח מיועד ל־3 שורות טקסט.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="506"/>
         <source>Lock</source>
-        <translation>נעילה</translation>
+        <translation>ჩაკეტვა</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="555"/>
         <source>When unchecked, the tab bar will be shown
 only if there are more than one tab.</source>
-        <translation>כשהאפשרות לא מסומנת, סרגל הלשוניות יוצג
-רק אם ישנה יותר מלשונית אחת.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="573"/>
         <source>Switch to newly opened tab</source>
-        <translation>מעבר ללשונית החדשה שנפתחה</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="615"/>
         <source>Reopen last window tabs in a new window</source>
-        <translation>לפתוח מחדש את הלשוניות מהחלון האחרון בחלון חדש</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="665"/>
@@ -2261,20 +2245,18 @@ only if there are more than one tab.</source>
         <source>The built-in thumbnailer makes thumbnails of images that are supported by Qt.
 
 Usually, most image types are supported. The default size limit is 4 MiB.</source>
-        <translation>ממזער התמונות המובנה מייצר גרסאות מוקטנות של תמונות שנתמכות על ידי Qt.
-
-בדרך כלל, רוב סוגי התמונות נתמכים. מגבלת הגודל כבררת מחדל היא 4 MiB.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="670"/>
         <source>Image size limit for built-in thumbnailer:</source>
-        <translation>הגבלת גודל תמונות ממוזערות בממזער המובנה:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="682"/>
         <location filename="../preferences.ui" line="718"/>
         <source> MiB</source>
-        <translation> MiB</translation>
+        <translation> მიბ</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="698"/>
@@ -2282,206 +2264,197 @@ Usually, most image types are supported. The default size limit is 4 MiB.</sourc
         <source>If existing, external thumbnailers are used for videos, PDF documents, etc.
 
 A value of -1 means that there is no limit for the file size (the default).</source>
-        <translation>אם הם קיימים, מקטיני תמונות חיצוניים משמשים לסרטונים, מסמכי PDF וכו׳.
-
-ערך של ‎-1 משמעו שאין מגבלה על גודל הקובץ (בררת המחדל).</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="703"/>
         <source>File size limit for external thumbnailers:</source>
-        <translation>מגבלת גודל קובץ לממזערים חיצוניים:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="715"/>
         <source>No limit</source>
-        <translation>ללא מגבלה</translation>
+        <translation>უსაზღვრო</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="833"/>
         <source>Terminal emulator</source>
-        <translation>מדמה מסוף</translation>
+        <translation>ტერმინალის ემულატორი</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="842"/>
         <source>Command:</source>
-        <translation>פקודה:</translation>
+        <translation>ბრძანება:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="849"/>
         <source>Example: qterminal
 It is the name of the executable file.</source>
-        <translation>דוגמה: qterminal
-זה שם קובץ ההפעלה.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="860"/>
         <source>Execution option:</source>
-        <translation>אפשרות הפעלה:</translation>
+        <translation>გაშვების ვარიანტი:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="867"/>
         <source>Example: -e
 It can be left empty if the terminal is already supported
 or does not have such an option; required otherwise.</source>
-        <translation>דוגמה: ‎-e
-אפשר להשאיר אותו ריק אם המסוף כבר נתמך
-או שאין אפשרות כזאת, נחוץ בכל מקרה אחר.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="879"/>
         <source>Custom option(s):</source>
-        <translation>אפשרויות מותאמות אישית:</translation>
+        <translation>მორგებული პარამეტრები:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="886"/>
         <source>This is optional, depends on the terminal,
 and can be any group of custom options.</source>
-        <translation>זה בגדר רשות, כתלות במסוף,
-ויכול להיות כל קבוצה של אפשרויות מותאמות אישית.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="964"/>
         <source>Search</source>
-        <translation>חיפוש</translation>
+        <translation>ძებნა</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="979"/>
         <source>Maximum search history:</source>
-        <translation>כמות הפריטים המרבית בהיסטוריית החיפוש:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="993"/>
         <source>Clear search history</source>
-        <translation>פינוי היסטוריית החיפוש</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="1028"/>
         <source>Application restart is needed for changes to take effect.</source>
-        <translation>הפעלת היישום מחדש נחוצה על מנת שהשפעת השינויים תחול.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="136"/>
         <source>Bookmarks menu:</source>
-        <translation>תפריט סימניות:</translation>
+        <translation>სანიშნეების მენიუ:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="129"/>
         <source>Show folder context menu with Ctrl + right click</source>
-        <translation>הצגת תפריט תוכן התיקייה עם Ctrl+קליק ימני</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="229"/>
         <source>Open folders in new tabs as far as possible</source>
-        <translation>פתיחת תיקיות בלשוניות חדשות ככל שאפשר</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="232"/>
         <source>Single window mode</source>
-        <translation>מצב חלון יחיד</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="412"/>
         <source>Always show real file names</source>
-        <translation>הצג את שמות הקבצים האמיתיים תמיד</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="429"/>
         <source>Do not show file tooltips</source>
-        <translatorcomment>התרגום למחרוזת הזה לא טוב ב־100%, לדעתי הוא דורש שיפור.
-The translation of this string isn&apos;t 100% well.</translatorcomment>
-        <translation>לא להציג תיבות צצות בקבצים</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="436"/>
         <source>Disable smooth scrolling</source>
-        <translation>השבתת גלילה חלקה</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="648"/>
         <source>Needs ffmpegthumbnailer</source>
-        <translation>צריך את ffmpegthumbnailer</translation>
+        <translation>სჭირდება ffmpegthumbnailer</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="754"/>
         <source>Auto Mount</source>
-        <translation>עגינה אוטומטית</translation>
+        <translation>ავტომატური მიმაგრება</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="760"/>
         <source>Mount mountable volumes automatically on program startup</source>
-        <translation>עגינת אמצעי אחסון נתיקים באופן אוטומטי בהפעלת התוכנית</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="767"/>
         <source>Mount removable media automatically when they are inserted</source>
-        <translation>עגינת מדיה נתיקה באופן אוטומטי כאשר היא מוכנסת</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="774"/>
         <source>Show available options for removable media when they are inserted</source>
-        <translation>הצגת אפשרויות זמינות עבור מדיה נתיקה כאשר היא מוכנסת</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="784"/>
         <source>When removable medium unmounted:</source>
-        <translation>כשהמדיה הניתקת מוסרת:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="790"/>
         <source>Close &amp;tab containing removable medium</source>
-        <translation>סגירת ה&amp;כרטיסיה שכוללת את המדיה הנתיקה</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="797"/>
         <source>Chan&amp;ge folder in the tab to home folder</source>
-        <translation>שינ&amp;וי התיקייה בלשונית לתיקיית הבית</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="824"/>
         <source>Programs</source>
-        <translation>תוכניות</translation>
+        <translation>პროგრამები</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="900"/>
         <source>Switch &amp;user command:</source>
-        <translation>פקודת החלפת &amp;משתמש:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="910"/>
         <source>Example:
 lxsudo dbus-run-session -- %s</source>
-        <translation>למשל:
-lxsudo dbus-run-session -- %s</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="918"/>
         <source>Archiver in&amp;tegration:</source>
-        <translation>חיבור מנהל אר&amp;כיונים:</translation>
+        <translation>არქივატორის ინ&amp;ტეგრაცია:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="934"/>
         <source>Templates</source>
-        <translation>תבניות</translation>
+        <translation>შაბლონები</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="940"/>
         <source>Show only user defined templates in menu</source>
-        <translation>הצגת תבניות שמוגדרות למשתמש בלבד בתפריט</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="947"/>
         <source>Show only one template for each MIME type</source>
-        <translation>הצגת תבנית אחת בלבד לכל סוג MIME נפרד</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="954"/>
         <source>Run default application after creation from template</source>
-        <translation>הרצת יישום ברירת־מחדל אחרי יצירה מתבנית</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="395"/>
         <source>Use SI decimal prefixes instead of IEC binary prefixes</source>
-        <translation>שימוש בקידומות עשרוניות של SI במקום בקידומות בינאריות של IEC</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -2489,44 +2462,44 @@ lxsudo dbus-run-session -- %s</translation>
     <message>
         <location filename="../bulkrename.cpp" line="89"/>
         <source>Renaming files...</source>
-        <translation>שמות הקבצים משתנים…</translation>
+        <translation>ფაილები სახელის გადარქმევა...</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="89"/>
         <source>Abort</source>
-        <translation>ביטול</translation>
+        <translation>შეწყვეტა</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="98"/>
         <source>Warning</source>
-        <translation>אזהרה</translation>
+        <translation>გაფრთხილება</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="98"/>
         <source>Renaming is aborted.</source>
-        <translation>שינוי השם בוטל.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="124"/>
         <location filename="../bulkrename.cpp" line="127"/>
         <location filename="../tabpage.cpp" line="1143"/>
         <source>Error</source>
-        <translation>שגיאה</translation>
+        <translation>შეცდომა</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="124"/>
         <source>No file could be renamed.</source>
-        <translation>שם אף קובץ לא יכול להשתנות.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="127"/>
         <source>Some files could not be renamed.</source>
-        <translation>שמם של כמה קבצים לא יכול להשתנות.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="1143"/>
         <source>Cannot open as Admin.</source>
-        <translation>לא ניתן לפתוח במצב ניהול.</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 </TS>
