@@ -339,16 +339,6 @@ MainWindow::MainWindow(Fm::FilePath path):
         connect(shortcut, &QShortcut::activated, this, &MainWindow::onShortcutJumpToTab);
     }
 
-    shortcut = new QShortcut(QKeySequence(Qt::Key_Backspace), this);
-    connect(shortcut, &QShortcut::activated, [this, &settings] {
-        // pass Backspace to current page if it has a visible, transient filter-bar
-        if(!settings.showFilter() && currentPage() && currentPage()->isFilterBarVisible()) {
-            currentPage()->backspacePressed();
-            return;
-        }
-        on_actionGoUp_triggered();
-    });
-
     shortcut = new QShortcut(QKeySequence(Qt::SHIFT | Qt::Key_Delete), this);
     connect(shortcut, &QShortcut::activated, this, &MainWindow::on_actionDelete_triggered);
 
@@ -703,6 +693,7 @@ int MainWindow::addTabWithPage(TabPage* page, ViewFrame* viewFrame, Fm::FilePath
     connect(page, &TabPage::sortFilterChanged, this, &MainWindow::onTabPageSortFilterChanged);
     connect(page, &TabPage::backwardRequested, this, &MainWindow::on_actionGoBack_triggered);
     connect(page, &TabPage::forwardRequested, this, &MainWindow::on_actionGoForward_triggered);
+    connect(page, &TabPage::backspacePressed, this, &MainWindow::on_actionGoUp_triggered);
     connect(page, &TabPage::folderUnmounted, this, &MainWindow::onFolderUnmounted);
 
     if(path) {

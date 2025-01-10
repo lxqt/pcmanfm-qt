@@ -222,10 +222,23 @@ void TabPage::showFilterBar() {
 bool TabPage::eventFilter(QObject* watched, QEvent* event) {
     if(watched == folderView_->childView() && event->type() == QEvent::KeyPress) {
         QToolTip::showText(QPoint(), QString()); // remove the tooltip, if any
-        // when a text is typed inside the view, type it inside the transient filter-bar
-        if(filterBar_ && !static_cast<Application*>(qApp)->settings().showFilter()) {
-            if(QKeyEvent* ke = static_cast<QKeyEvent*>(event)) {
-                filterBar_->keyPressed(ke);
+        if(QKeyEvent* ke = static_cast<QKeyEvent*>(event)) {
+            if(filterBar_ && !static_cast<Application*>(qApp)->settings().showFilter()) {
+                // With a transient filter-bar, transfer the pressed keys to the bar, but only
+                // emit a signal on pressing a non-autorepeated Backspace if the bar is hidden.
+                // That signal will be used in MainWindow for going up.
+                if(ke->key() == Qt::Key_Backspace && ke->modifiers() == Qt::NoModifier
+                   && !filterBar_->isVisible()) {
+                    if(!ke->isAutoRepeat()) {
+                        Q_EMIT backspacePressed();
+                    }
+                }
+                else {
+                    filterBar_->keyPressed(ke);
+                }
+            }
+            else if(ke->key() == Qt::Key_Backspace && ke->modifiers() == Qt::NoModifier) {
+                Q_EMIT backspacePressed();
             }
         }
     }
@@ -233,13 +246,6 @@ bool TabPage::eventFilter(QObject* watched, QEvent* event) {
         return true;
     }
     return QWidget::eventFilter(watched, event);
-}
-
-void TabPage::backspacePressed() {
-    if(filterBar_ && filterBar_->isVisible()) {
-        QKeyEvent bs = QKeyEvent(QEvent::KeyPress, Qt::Key_Backspace, Qt::NoModifier);
-        filterBar_->keyPressed(&bs);
-    }
 }
 
 void TabPage::onFilterStringChanged(QString str) {
