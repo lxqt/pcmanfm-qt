@@ -283,8 +283,6 @@ public:
         }
     }
 
-    void backspacePressed();
-
     void createShortcut();
 
     void setFilesToSelect(const Fm::FilePathList& files) {
@@ -298,6 +296,7 @@ Q_SIGNALS:
     void forwardRequested();
     void backwardRequested();
     void folderUnmounted();
+    void backspacePressed();
 
 protected:
     virtual bool eventFilter(QObject* watched, QEvent* event);
