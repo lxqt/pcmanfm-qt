@@ -56,7 +56,7 @@ public:
         WallpaperZoom
     };
 
-    explicit DesktopWindow(int screenNum);
+    explicit DesktopWindow(int screenNum, const QString& screenName = QString());
     virtual ~DesktopWindow();
 
     void setForeground(const QColor& color);
@@ -81,8 +81,12 @@ public:
     int screenNum() const {
         return screenNum_;
     }
-
     void setScreenNum(int num);
+
+    QString screenName() const {
+        return screenName_;
+    }
+    void setScreenName(const QString& name);
 
     QScreen* getDesktopScreen() const;
 
@@ -193,7 +197,8 @@ private:
     Launcher fileLauncher_;
     bool desktopHideItems_;
 
-    int screenNum_;
+    int screenNum_; // for X11
+    QString screenName_; // for Wayland
     std::unordered_map<std::string, QPoint> customItemPos_; // real custom positions
     std::unordered_map<std::string, QPoint> customPosStorage_; // savable custom positions
     QTimer* relayoutTimer_;
