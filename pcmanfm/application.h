@@ -130,7 +130,7 @@ protected Q_SLOTS:
 protected:
     //virtual bool eventFilter(QObject* watched, QEvent* event);
     bool parseCommandLineArgs();
-    DesktopWindow* createDesktopWindow(int screenNum);
+    DesktopWindow* createDesktopWindow(int screenNum, const QString& screenName = QString());
     bool autoMountVolume(GVolume* volume, bool interactive = true);
 
     static void onVolumeAdded(GVolumeMonitor* monitor, GVolume* volume, Application* pThis);

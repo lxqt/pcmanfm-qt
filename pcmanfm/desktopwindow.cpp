@@ -70,7 +70,7 @@
 
 namespace PCManFM {
 
-DesktopWindow::DesktopWindow(int screenNum):
+DesktopWindow::DesktopWindow(int screenNum, const QString& screenName):
     View(Fm::FolderView::IconMode),
     proxyModel_(nullptr),
     model_(nullptr),
@@ -81,6 +81,7 @@ DesktopWindow::DesktopWindow(int screenNum):
     fileLauncher_(nullptr),
     desktopHideItems_(false),
     screenNum_(screenNum),
+    screenName_(screenName),
     relayoutTimer_(nullptr),
     selectionTimer_(nullptr),
     trashUpdateTimer_(nullptr),
@@ -116,7 +117,9 @@ DesktopWindow::DesktopWindow(int screenNum):
     // In some older multihead setups, such as xinerama, every physical screen
     // is treated as a separate desktop so many instances of DesktopWindow may be created.
     // In this case we only want to show desktop icons on the primary screen.
-    if((screenNum_ == 0 || qApp->primaryScreen()->virtualSiblings().size() > 1)) {
+    if(static_cast<Application*>(qApp)->underWayland()
+       || screenNum_ == 0
+       || qApp->primaryScreen()->virtualSiblings().size() > 1) {
         loadItemPositions();
 
         setShadowHidden(settings.shadowHidden());
@@ -1535,7 +1538,11 @@ void DesktopWindow::loadItemPositions() {
     // load custom item positions from the config file and store them in the memory
     customPosStorage_.clear();
     Settings& settings = static_cast<Application*>(qApp)->settings();
-    QString configFile = QStringLiteral("%1/desktop-items-%2.conf").arg(settings.profileDir(settings.profileName())).arg(screenNum_);
+    QString configFile;
+    if(static_cast<Application*>(qApp)->underWayland())
+        configFile = QStringLiteral("%1/desktop-items-%2.conf").arg(settings.profileDir(settings.profileName())).arg(screenName_);
+    else
+        configFile = QStringLiteral("%1/desktop-items-%2.conf").arg(settings.profileDir(settings.profileName())).arg(screenNum_);
     QSettings file(configFile, QSettings::IniFormat);
 
     const auto names = file.childGroups();
@@ -1593,7 +1600,11 @@ void DesktopWindow::retrieveCustomPos() {
 void DesktopWindow::saveItemPositions() {
     // write custom item positions to the config file
     Settings& settings = static_cast<Application*>(qApp)->settings();
-    QString configFile = QStringLiteral("%1/desktop-items-%2.conf").arg(settings.profileDir(settings.profileName())).arg(screenNum_);
+    QString configFile;
+    if(static_cast<Application*>(qApp)->underWayland())
+        configFile = QStringLiteral("%1/desktop-items-%2.conf").arg(settings.profileDir(settings.profileName())).arg(screenName_);
+    else
+        configFile = QStringLiteral("%1/desktop-items-%2.conf").arg(settings.profileDir(settings.profileName())).arg(screenNum_);
     QSettings file(configFile, QSettings::IniFormat);
     file.clear(); // remove all existing entries
 
@@ -2428,26 +2439,50 @@ void DesktopWindow::paintEvent(QPaintEvent* event) {
     QWidget::paintEvent(event);
 }
 
+// Only on X11.
 void DesktopWindow::setScreenNum(int num) {
     if(screenNum_ != num) {
         screenNum_ = num;
-        loadItemPositions(); // the config file is different
-        queueRelayout();
+        if(!static_cast<Application*>(qApp)->underWayland()) {
+            loadItemPositions(); // the config file is different
+            queueRelayout();
+        }
+    }
+}
+
+// Only on Wayland.
+void DesktopWindow::setScreenName(const QString& name) {
+    if(screenName_ != name) {
+        screenName_ = name;
+        if(static_cast<Application*>(qApp)->underWayland()) {
+            loadItemPositions();
+            queueRelayout();
+        }
     }
 }
 
 QScreen* DesktopWindow::getDesktopScreen() const {
     QScreen* desktopScreen = nullptr;
-    if(screenNum_ == -1) {
-        desktopScreen = qApp->primaryScreen();
+    if(static_cast<Application*>(qApp)->underWayland()) {
+        const auto allScreens = qApp->screens();
+        for(const auto& screen : allScreens) {
+            if(screen->name() == screenName_) {
+                return screen;
+            }
+        }
     }
     else {
-        const auto allScreens = qApp->screens();
-        if(allScreens.size() > screenNum_) {
-            desktopScreen = allScreens.at(screenNum_);
+        if(screenNum_ == -1) {
+            desktopScreen = qApp->primaryScreen();
         }
-        if(desktopScreen == nullptr && windowHandle()) {
-            desktopScreen = windowHandle()->screen();
+        else {
+            const auto allScreens = qApp->screens();
+            if(allScreens.size() > screenNum_) {
+                desktopScreen = allScreens.at(screenNum_);
+            }
+            if(desktopScreen == nullptr && windowHandle()) {
+                desktopScreen = windowHandle()->screen();
+            }
         }
     }
     return desktopScreen;

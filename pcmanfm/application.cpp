@@ -470,7 +470,7 @@ void Application::desktopManager(bool enabled) {
                 int n = qMax(allScreens.size(), 1);
                 desktopWindows_.reserve(n);
                 for(int i = 0; i < n; ++i) {
-                    DesktopWindow* window = createDesktopWindow(i);
+                    DesktopWindow* window = createDesktopWindow(i, !allScreens.isEmpty() && underWayland_ ? allScreens.at(i)->name() : QString());
                     desktopWindows_.push_back(window);
                 }
             }
@@ -810,8 +810,8 @@ void Application::onPropJobFinished() {
     }
 }
 
-DesktopWindow* Application::createDesktopWindow(int screenNum) {
-    DesktopWindow* window = new DesktopWindow(screenNum);
+DesktopWindow* Application::createDesktopWindow(int screenNum, const QString& screenName) {
+    DesktopWindow* window = new DesktopWindow(screenNum, screenName);
 
     if(screenNum == -1) { // one large virtual desktop only
         QRect rect = primaryScreen()->virtualGeometry();
@@ -955,14 +955,14 @@ void Application::onScreenAdded(QScreen* newScreen) {
             }
         }
         else { // a separate screen is added
-            DesktopWindow* window = createDesktopWindow(desktopWindows_.size());
+            DesktopWindow* window = createDesktopWindow(desktopWindows_.size(), underWayland_ ? newScreen->name() : QString());
             desktopWindows_.push_back(window);
         }
     }
 }
 
 void Application::onScreenRemoved(QScreen* oldScreen) {
-    if(enableDesktopManager_){
+    if(enableDesktopManager_) {
         disconnect(oldScreen, &QScreen::virtualGeometryChanged, this, &Application::onVirtualGeometryChanged);
         disconnect(oldScreen, &QScreen::availableGeometryChanged, this, &Application::onAvailableGeometryChanged);
         if(!underWayland_) {
@@ -976,6 +976,9 @@ void Application::onScreenRemoved(QScreen* oldScreen) {
                 desktopWindows_.at(0)->setGeometry(primaryScreen()->virtualGeometry());
                 if(primaryScreen()->virtualSiblings().size() == 1) {
                     desktopWindows_.at(0)->setScreenNum(0); // there is no virtual desktop anymore
+                    if(underWayland_) {
+                        desktopWindows_.at(0)->setScreenName(primaryScreen()->name());
+                    }
                 }
             }
             else if (screens().isEmpty()) { // for the sake of certainty
@@ -1053,8 +1056,7 @@ void Application::onVirtualGeometryChanged(const QRect& /*rect*/) {
     // update desktop geometries
     if(enableDesktopManager_) {
         for(DesktopWindow* desktopWin : std::as_const(desktopWindows_)) {
-            auto desktopScreen = desktopWin->getDesktopScreen();
-            if(desktopScreen) {
+            if(auto desktopScreen = desktopWin->getDesktopScreen()) {
                 desktopWin->setGeometry(desktopScreen->virtualGeometry());
             }
         }
