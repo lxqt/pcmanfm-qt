@@ -2450,17 +2450,6 @@ void DesktopWindow::setScreenNum(int num) {
     }
 }
 
-// Only on Wayland.
-void DesktopWindow::setScreenName(const QString& name) {
-    if(screenName_ != name) {
-        screenName_ = name;
-        if(static_cast<Application*>(qApp)->underWayland()) {
-            loadItemPositions();
-            queueRelayout();
-        }
-    }
-}
-
 QScreen* DesktopWindow::getDesktopScreen() const {
     QScreen* desktopScreen = nullptr;
     if(static_cast<Application*>(qApp)->underWayland()) {
