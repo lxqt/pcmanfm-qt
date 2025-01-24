@@ -86,7 +86,6 @@ public:
     QString screenName() const {
         return screenName_;
     }
-    void setScreenName(const QString& name);
 
     QScreen* getDesktopScreen() const;
 

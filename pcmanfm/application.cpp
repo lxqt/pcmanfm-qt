@@ -971,14 +971,11 @@ void Application::onScreenRemoved(QScreen* oldScreen) {
         if(desktopWindows_.isEmpty()) {
             return;
         }
-        if(desktopWindows_.size() == 1) { // a single desktop is changed
+        if(!underWayland_ && desktopWindows_.size() == 1) { // a single desktop is changed
             if(primaryScreen() != nullptr) {
                 desktopWindows_.at(0)->setGeometry(primaryScreen()->virtualGeometry());
                 if(primaryScreen()->virtualSiblings().size() == 1) {
                     desktopWindows_.at(0)->setScreenNum(0); // there is no virtual desktop anymore
-                    if(underWayland_) {
-                        desktopWindows_.at(0)->setScreenName(primaryScreen()->name());
-                    }
                 }
             }
             else if (screens().isEmpty()) { // for the sake of certainty
