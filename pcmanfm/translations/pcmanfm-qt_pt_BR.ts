@@ -216,7 +216,9 @@ Foundation: Inc., 51 Franklin Street, 5º Andar, Boston, MA  02110-1301, EUA.</t
         <source>A short description or generic name, like &quot;Web Browser&quot; or &quot;Home Directory&quot;.
 
 It can be left empty.</source>
-        <translation type="unfinished"></translation>
+        <translation>Uma pequena descrição ou nome genérico, como &quot;Navegador Web&quot; ou &quot;Pasta Pessoal&quot;.
+
+Pode ser deixado vazio.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="77"/>
@@ -228,7 +230,9 @@ It can be left empty.</source>
         <source>A short comment.
 
 It can be left empty.</source>
-        <translation type="unfinished"></translation>
+        <translation>Um pequeno comentário.
+
+Pode ser deixado vazio.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="117"/>
@@ -265,7 +269,7 @@ It can be left empty.</source>
     <message>
         <location filename="../desktopentrydialog.ui" line="186"/>
         <source>Whether the launched program should run in a terminal window.</source>
-        <translation type="unfinished"></translation>
+        <translation>Se o programa lançado deve ser executado em um terminal.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="190"/>
@@ -285,7 +289,7 @@ It can be left empty.</source>
     <message>
         <location filename="../desktopentrydialog.ui" line="210"/>
         <source>Whether this is a link or executes a command.</source>
-        <translation type="unfinished"></translation>
+        <translation>Se isso é um link ou executa um comando.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="214"/>
@@ -309,7 +313,11 @@ It can be left empty.</source>
 It is needed only when you want to use the created file in the main menu. Otherwise, you could leave it empty.
 
 Examples: AudioVideo, Audio, Video, Development, Education, Game, Graphics, Network, Office, Settings, System, Utility, Qt.</source>
-        <translation type="unfinished"></translation>
+        <translation>Categorias separadas por ponto e vírgula nas quais a entrada deve ser exibida se for utilizada pelo menu principal do ambiente de trabalho (por exemplo, quando inserida em ~/.local/share/applications).
+
+Isso é necessário apenas quando você deseja usar o arquivo criado no menu principal. Caso contrário, você pode deixá-lo vazio.
+
+Exemplos: Áudio e Vídeo, Áudio, Vídeo, Desenvolvimento, Educação, Jogo, Gráficos, Rede, Escritório, Configurações, Sistema, Utilitário, Qt.</translation>
     </message>
 </context>
 <context>
@@ -2337,12 +2345,12 @@ Um valor -1 significa que não há limite para o tamanho do arquivo (o padrão).
     <message>
         <location filename="../preferences.ui" line="833"/>
         <source>Terminal emulator</source>
-        <translation type="unfinished"></translation>
+        <translation>Emulador do terminal</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="842"/>
         <source>Command:</source>
-        <translation type="unfinished">Comando:</translation>
+        <translation>Comando:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="849"/>
@@ -2353,7 +2361,7 @@ It is the name of the executable file.</source>
     <message>
         <location filename="../preferences.ui" line="860"/>
         <source>Execution option:</source>
-        <translation type="unfinished"></translation>
+        <translation>Opção de execução:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="867"/>
@@ -2377,7 +2385,8 @@ and can be any group of custom options.</source>
         <location filename="../preferences.ui" line="910"/>
         <source>Example:
 lxsudo dbus-run-session -- %s</source>
-        <translation type="unfinished"></translation>
+        <translation>Exemplo:
+lxsudo dbus-run-session -- %s</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="934"/>
