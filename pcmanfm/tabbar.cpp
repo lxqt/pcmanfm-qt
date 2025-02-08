@@ -24,6 +24,7 @@
 #include <QApplication>
 #include <QDrag>
 #include <QMimeData>
+#include <algorithm>
 
 namespace PCManFM {
 
@@ -151,9 +152,9 @@ QSize TabBar::tabSizeHint(int index) const {
     case QTabBar::RoundedEast:
     case QTabBar::TriangularEast:
         return QSize(QTabBar::tabSizeHint(index).width(),
-                     qMin(2 * height() / 3, QTabBar::tabSizeHint(index).height()));
+                     std::min(2 * height() / 3, QTabBar::tabSizeHint(index).height()));
     default:
-        return QSize(qMin(2 * width() / 3, QTabBar::tabSizeHint(index).width()),
+        return QSize(std::min(2 * width() / 3, QTabBar::tabSizeHint(index).width()),
                      QTabBar::tabSizeHint(index).height());
     }
 }

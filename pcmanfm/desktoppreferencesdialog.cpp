@@ -29,6 +29,9 @@
 #include <QSaveFile>
 #include <QDebug>
 #include <QStandardPaths>
+
+#include <algorithm>
+
 #include <libfm-qt6/filedialog.h>
 
 namespace PCManFM {
@@ -97,7 +100,7 @@ DesktopPreferencesDialog::DesktopPreferencesDialog(QWidget* parent, Qt::WindowFl
 
   ui.slideShow->setChecked(settings.slideShowInterval() > 0);
   ui.imageFolder->setText(settings.wallpaperDir());
-  int minutes = qMax(settings.slideShowInterval() / 60000, 5); // 5 min at least
+  int minutes = std::max(settings.slideShowInterval() / 60000, 5); // 5 min at least
   ui.hours->setValue(minutes / 60);
   ui.minutes->setValue(minutes % 60);
   ui.randomize->setChecked(settings.wallpaperRandomize());

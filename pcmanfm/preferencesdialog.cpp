@@ -28,6 +28,8 @@
 #include <QSettings>
 #include <QStandardPaths>
 
+#include <algorithm>
+
 #include <libfm-qt6/folderview.h>
 #include <libfm-qt6/core/terminal.h>
 #include <libfm-qt6/core/archiver.h>
@@ -254,9 +256,9 @@ void PreferencesDialog::initThumbnailPage(Settings& settings) {
 
     // the max. thumbnail size spinboxes are in MiB
     double m = settings.maxThumbnailFileSize();
-    ui.maxThumbnailFileSize->setValue(qBound(0.0, m / 1024, 1024.0));
+    ui.maxThumbnailFileSize->setValue(std::clamp(m / 1024, 0.0, 1024.0));
     int m1 = settings.maxExternalThumbnailFileSize();
-    ui.maxExternalThumbnailFileSize->setValue(m1 < 0 ? -1 : qMin(m1 / 1024, 2048));
+    ui.maxExternalThumbnailFileSize->setValue(m1 < 0 ? -1 : std::min(m1 / 1024, 2048));
 }
 
 void PreferencesDialog::initVolumePage(Settings& settings) {
@@ -436,7 +438,7 @@ void PreferencesDialog::applyThumbnailPage(Settings& settings) {
     settings.setShowThumbnails(ui.showThumbnails->isChecked());
     settings.setThumbnailLocalFilesOnly(ui.thumbnailLocal->isChecked());
     // the max. thumbnail size spinboxes are in MiB
-    settings.setMaxThumbnailFileSize(qRound(ui.maxThumbnailFileSize->value() * 1024));
+    settings.setMaxThumbnailFileSize(std::round(ui.maxThumbnailFileSize->value() * 1024));
     int m = ui.maxExternalThumbnailFileSize->value();
     settings.setMaxExternalThumbnailFileSize(m < 0 ? -1 : m * 1024);
 }
