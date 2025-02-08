@@ -36,6 +36,8 @@
 #include <QWindow>
 #include <QFileSystemWatcher>
 
+#include <algorithm>
+
 #include <gio/gio.h>
 #include <sys/socket.h>
 
@@ -467,7 +469,7 @@ void Application::desktopManager(bool enabled) {
                 desktopWindows_.push_back(window);
             }
             else {
-                int n = qMax(allScreens.size(), 1);
+                int n = std::max(allScreens.size(), (qsizetype) 1);
                 desktopWindows_.reserve(n);
                 for(int i = 0; i < n; ++i) {
                     DesktopWindow* window = createDesktopWindow(i, !allScreens.isEmpty() && underWayland_ ? allScreens.at(i)->name() : QString());

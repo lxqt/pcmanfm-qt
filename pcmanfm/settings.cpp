@@ -30,6 +30,8 @@
 #include <libfm-qt6/core/terminal.h>
 #include <QStandardPaths>
 
+#include <algorithm>
+
 namespace PCManFM {
 
 inline static const char* bookmarkOpenMethodToString(OpenDirTargetType value);
@@ -235,7 +237,7 @@ bool Settings::loadFile(QString filePath) {
     confirmTrash_ = settings.value(QStringLiteral("ConfirmTrash"), false).toBool();
     setQuickExec(settings.value(QStringLiteral("QuickExec"), false).toBool());
     selectNewFiles_ = settings.value(QStringLiteral("SelectNewFiles"), false).toBool();
-    recentFilesNumber_ = qBound(0, settings.value(QStringLiteral("RecentFilesNumber"), 0).toInt(), 50);
+    recentFilesNumber_ = std::clamp(settings.value(QStringLiteral("RecentFilesNumber"), 0).toInt(), 0, 50);
     settings.endGroup();
 
     settings.beginGroup(QStringLiteral("Desktop"));
@@ -272,10 +274,10 @@ bool Settings::loadFile(QString filePath) {
                            .expandedTo(QSize(0, 0))).boundedTo(QSize(48, 48));
     auto l = settings.value(QStringLiteral("WorkAreaMargins")).toList();
     if(l.size() >= 4) {
-        workAreaMargins_.setLeft(qBound(0, l.at(0).toInt(), 200));
-        workAreaMargins_.setTop(qBound(0, l.at(1).toInt(), 200));
-        workAreaMargins_.setRight(qBound(0, l.at(2).toInt(), 200));
-        workAreaMargins_.setBottom(qBound(0, l.at(3).toInt(), 200));
+        workAreaMargins_.setLeft(std::clamp(l.at(0).toInt(), 0, 200));
+        workAreaMargins_.setTop(std::clamp(l.at(1).toInt(), 0, 200));
+        workAreaMargins_.setRight(std::clamp(l.at(2).toInt(), 0, 200));
+        workAreaMargins_.setBottom(std::clamp(l.at(3).toInt(), 0, 200));
     }
 
     openWithDefaultFileManager_ = settings.value(QStringLiteral("OpenWithDefaultFileManager"), false).toBool();
@@ -360,7 +362,7 @@ bool Settings::loadFile(QString filePath) {
     searchContentRegexp_ = settings.value(QStringLiteral("searchContentRegexp"), true).toBool();
     searchRecursive_ = settings.value(QStringLiteral("searchRecursive"), false).toBool();
     searchhHidden_ = settings.value(QStringLiteral("searchhHidden"), false).toBool();
-    maxSearchHistory_ = qBound(0, settings.value(QStringLiteral("MaxSearchHistory"), 0).toInt(), 50);
+    maxSearchHistory_ = std::clamp(settings.value(QStringLiteral("MaxSearchHistory"), 0).toInt(), 0, 50);
     namePatterns_ = settings.value(QStringLiteral("NamePatterns")).toStringList();
     namePatterns_.removeDuplicates();
     contentPatterns_ = settings.value(QStringLiteral("ContentPatterns")).toStringList();
@@ -530,7 +532,7 @@ bool Settings::saveFile(QString filePath) {
 }
 
 void Settings::setRecentFilesNumber(int n) {
-    recentFilesNumber_ = qBound(0, n, 50);
+    recentFilesNumber_ = std::clamp(n, 0, 50);
     if(recentFilesNumber_ == 0) {
         clearRecentFiles();
     }
@@ -584,7 +586,7 @@ void Settings::clearSearchHistory() {
 }
 
 void Settings::setMaxSearchHistory(int max) {
-    maxSearchHistory_ = qMax(max, 0);
+    maxSearchHistory_ = std::max(max, 0);
     if(maxSearchHistory_ == 0) {
         namePatterns_.clear();
         contentPatterns_.clear();

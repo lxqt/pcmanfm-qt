@@ -43,6 +43,8 @@
 #include <QRandomGenerator>
 #include <QToolTip>
 
+#include <algorithm>
+
 #include <LayerShellQt/shell.h>
 #include <LayerShellQt/window.h>
 
@@ -774,9 +776,9 @@ void DesktopWindow::updateWallpaper(bool checkMTime) {
                             // get the gap between image and screen to avoid overlapping and displacement
                             int x_gap = (image.width() - scrSize.width()) / 2;
                             int y_gap = (image.height() - scrSize.height()) / 2;
-                            scaled = image.copy(qMax(x_gap, 0), qMax(y_gap, 0), scrSize.width(), scrSize.height());
-                            x = scr->geometry().x() + qMax(0, -x_gap);
-                            y = scr->geometry().y() + qMax(0, -y_gap);
+                            scaled = image.copy(std::max(x_gap, 0), std::max(y_gap, 0), scrSize.width(), scrSize.height());
+                            x = scr->geometry().x() + std::max(0, -x_gap);
+                            y = scr->geometry().y() + std::max(0, -y_gap);
                             painter.save();
                             painter.setClipRect(QRect(x, y, image.width(), image.height()));
                             painter.drawImage(x, y, scaled);
@@ -970,7 +972,7 @@ void DesktopWindow::updateFromSettings(Settings& settings, bool changeSlide) {
     setWallpaperDir(wallpaperDir);
     int interval = settings.slideShowInterval();
     if(interval > 0 && (interval < MIN_SLIDE_INTERVAL || interval > MAX_SLIDE_INTERVAL)) {
-        interval = qBound(MIN_SLIDE_INTERVAL, interval, MAX_SLIDE_INTERVAL);
+        interval = std::clamp(interval, MIN_SLIDE_INTERVAL, MAX_SLIDE_INTERVAL);
         settings.setSlideShowInterval(interval);
     }
     setSlideShowInterval(interval);
@@ -2284,8 +2286,8 @@ bool DesktopWindow::stickToPosition(const std::string& file, QPoint& pos,
         if(pos.x() + grid.width() > workArea.right() + 1) {
             pos.setX(workArea.right() + 1 - grid.width());
         }
-        pos.setX(qMax(workArea.left(), pos.x()));
-        pos.setY(qMax(workArea.top(), pos.y()));
+        pos.setX(std::max(workArea.left(), pos.x()));
+        pos.setY(std::max(workArea.top(), pos.y()));
 
         alignToGrid(pos, workArea.topLeft(), grid, listView_->spacing());
     }
@@ -2401,8 +2403,8 @@ QModelIndex DesktopWindow::indexForPos(bool* isTrash, const QPoint& pos, const Q
     if(p.x() + grid.width() > workArea.right() + 1) {
         p.setX(workArea.right() + 1 - grid.width());
     }
-    p.setX(qMax(workArea.left(), p.x()));
-    p.setY(qMax(workArea.top(), p.y()));
+    p.setX(std::max(workArea.left(), p.x()));
+    p.setY(std::max(workArea.top(), p.y()));
     alignToGrid(p, workArea.topLeft(), grid, listView_->spacing());
     // then put the point where the icon rectangle may be
     // (if there is any item, its icon is immediately below the middle of its top side)
