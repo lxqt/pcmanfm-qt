@@ -89,7 +89,7 @@ void DesktopEntryDialog::onClickingCommandButton() {
     if(ui.typeCombo->currentIndex() == 0) {
         const QString path = QFileDialog::getOpenFileName(this,
                                                           tr("Select an executable file"),
-                                                          QString::fromUtf8(Fm::FilePath::homeDir().toString().get()));
+                                                          QStringLiteral("/usr/bin/"));
         if(!path.isEmpty()) {
             ui.commandEdit->setText(path);
         }
