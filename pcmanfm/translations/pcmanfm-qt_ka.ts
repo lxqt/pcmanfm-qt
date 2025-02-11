@@ -161,12 +161,12 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../connect.ui" line="90"/>
         <source>Login as &amp;user:</source>
-        <translation type="unfinished"></translation>
+        <translation>შესვლა მომხმარ&amp;ებლით:</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="29"/>
         <source>Specify remote folder to connect</source>
-        <translation type="unfinished"></translation>
+        <translation>მიუთითეთ დაშორებული საქაღალდე დასაკავშირებლად</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="36"/>
@@ -204,7 +204,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../desktopentrydialog.ui" line="45"/>
         <source>Specific name of this launcher.</source>
-        <translation type="unfinished"></translation>
+        <translation>ამ გამშვების სახელი.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="58"/>
@@ -216,7 +216,9 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
         <source>A short description or generic name, like &quot;Web Browser&quot; or &quot;Home Directory&quot;.
 
 It can be left empty.</source>
-        <translation type="unfinished"></translation>
+        <translation>მოკლე აღწერა, ან ზოგადი სახელი, როგორიცაა &quot;ბრაუზერი&quot; ან &quot;საწყისის საქაღალდე&quot;.
+
+ან, უბრალოდ, ცარიელი დატოვეთ.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="77"/>
@@ -228,7 +230,9 @@ It can be left empty.</source>
         <source>A short comment.
 
 It can be left empty.</source>
-        <translation type="unfinished"></translation>
+        <translation>მოკლე კომენტარი.
+
+შეიძლება, ცარიელი იყოს.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="117"/>
@@ -249,13 +253,13 @@ It can be left empty.</source>
     <message>
         <location filename="../desktopentrydialog.ui" line="151"/>
         <source>Icon to display in file manager, menus, etc.</source>
-        <translation type="unfinished"></translation>
+        <translation>ხატულა ფაილების მმართველში, მენიუებში და ა.შ. საჩვენებლად.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="173"/>
         <location filename="../desktopentrydialog.ui" line="183"/>
         <source>Run in terminal?</source>
-        <translation type="unfinished"></translation>
+        <translation>გავუშვა ტერმინალში?</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="176"/>
@@ -265,7 +269,7 @@ It can be left empty.</source>
     <message>
         <location filename="../desktopentrydialog.ui" line="186"/>
         <source>Whether the launched program should run in a terminal window.</source>
-        <translation type="unfinished"></translation>
+        <translation>უნდა გაეშვას თუ არა გაშვებული პროგრამა ტერმინალის ფანჯარაში.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="190"/>
@@ -285,7 +289,7 @@ It can be left empty.</source>
     <message>
         <location filename="../desktopentrydialog.ui" line="210"/>
         <source>Whether this is a link or executes a command.</source>
-        <translation type="unfinished"></translation>
+        <translation>უშვებს თუ არა ეს ბმული ბრძანებას.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="214"/>

@@ -90,12 +90,12 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.</translation
     <message>
         <location filename="../autorun.ui" line="14"/>
         <source>Removable medium is inserted</source>
-        <translation>Sisestati eemaldatav andmekandja</translation>
+        <translation>Eemaldatav andmekandja on sisestatud</translation>
     </message>
     <message>
         <location filename="../autorun.ui" line="33"/>
         <source>&lt;b&gt;Removable medium is inserted&lt;/b&gt;</source>
-        <translation>&lt;b&gt;Sisestati eemaldatav andmekandja&lt;/b&gt;</translation>
+        <translation>&lt;b&gt;Eemaldatav andmekandja on sisestatud&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../autorun.ui" line="40"/>
@@ -105,7 +105,7 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.</translation
     <message>
         <location filename="../autorun.ui" line="47"/>
         <source>Detecting...</source>
-        <translation>Tuvastamine...</translation>
+        <translation>Tuvastame...</translation>
     </message>
     <message>
         <location filename="../autorun.ui" line="56"/>
@@ -138,7 +138,7 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.</translation
     <message>
         <location filename="../bulk-rename.ui" line="27"/>
         <source>Rename selected files to:</source>
-        <translation>Nimeta valitud failid ümber:</translation>
+        <translation>Muuda valitud failide nimesid:</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="40"/>
@@ -259,7 +259,7 @@ Võib jääda tühjaks.</translation>
         <location filename="../desktopentrydialog.ui" line="173"/>
         <location filename="../desktopentrydialog.ui" line="183"/>
         <source>Run in terminal?</source>
-        <translation>Kas käivitada terminalis?</translation>
+        <translation>Kas käivitame terminalis?</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="176"/>
@@ -389,7 +389,7 @@ Näited: AudioVideo, Audio, Video, Development, Education, Game, Graphics, Netwo
     <message>
         <location filename="../desktop-preferences.ui" line="423"/>
         <source>Image file path</source>
-        <translation>Pildifaili rada</translation>
+        <translation>Pildifaili asukoht</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="430"/>
@@ -414,7 +414,7 @@ Näited: AudioVideo, Audio, Video, Development, Education, Game, Graphics, Netwo
     <message>
         <location filename="../desktop-preferences.ui" line="113"/>
         <source>Select shadow color:</source>
-        <translation>Vali taustavärv:</translation>
+        <translation>Vali varju värv:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="61"/>
@@ -482,13 +482,13 @@ Ruumi varuti ka 3 tekstirea jaoks.</translation>
         <location filename="../desktop-preferences.ui" line="303"/>
         <source>By default, desktop folders will be opened in PCManFM-Qt if they
 are left clicked, even when it is not the default file manager.</source>
-        <translation>Vaikimisi avatakse töölaua kaustad PCManFM-Qt-s, kui need
-on olemas klõpsatakse vasakul, isegi kui see pole vaikefailihaldur.</translation>
+        <translation>Vasaku hiireklõpsu puhul avatakse töölaua kaustad vaikimisi
+PCManFM-Qt rakendusega ka siis, kui ta pole vaikimisi failihaldur.</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="307"/>
         <source>Open desktop folders in default file manager by left clicking</source>
-        <translation>Avage vaikefailihalduris töölaua kaustad, klõpsates vasakul</translation>
+        <translation>Vasaku klõpsu puhul ava töölaua kaustad vaikimisi failihalduris</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="314"/>
@@ -508,7 +508,7 @@ on olemas klõpsatakse vasakul, isegi kui see pole vaikefailihaldur.</translatio
     <message>
         <location filename="../desktop-preferences.ui" line="446"/>
         <source>Individual wallpaper for each monitor</source>
-        <translation>Iga monitori jaoks eraldi tapeet</translation>
+        <translation>Eraldi taustapilt iga monitori jaoks</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="473"/>
@@ -1416,7 +1416,7 @@ on olemas klõpsatakse vasakul, isegi kui see pole vaikefailihaldur.</translatio
         <location filename="../main-win.ui" line="109"/>
         <location filename="../main-win.ui" line="133"/>
         <source>&amp;View</source>
-        <translation>&amp;Vaata</translation>
+        <translation>&amp;Vaade</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="113"/>
@@ -1997,7 +1997,7 @@ Kui need kaustad hiljem uuesti tekivad, siis võib-olla pole mõtet seda teha.</
     <message>
         <location filename="../preferences.ui" line="222"/>
         <source>Select newly created files</source>
-        <translation>Valige äsja loodud failid</translation>
+        <translation>Vali äsjaloodud failid</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="296"/>
