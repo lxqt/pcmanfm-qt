@@ -2402,41 +2402,45 @@ A value of -1 means that there is no limit for the file size (the default).</sou
     <message>
         <location filename="../preferences.ui" line="833"/>
         <source>Terminal emulator</source>
-        <translation type="unfinished"></translation>
+        <translation>Эмулятор терминала</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="842"/>
         <source>Command:</source>
-        <translation type="unfinished">Команда:</translation>
+        <translation>Команда:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="849"/>
         <source>Example: qterminal
 It is the name of the executable file.</source>
-        <translation type="unfinished"></translation>
+        <translation>Пример: qterminal
+Это название исполняемого файла.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="860"/>
         <source>Execution option:</source>
-        <translation type="unfinished"></translation>
+        <translation>Параметры выполнения:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="867"/>
         <source>Example: -e
 It can be left empty if the terminal is already supported
 or does not have such an option; required otherwise.</source>
-        <translation type="unfinished"></translation>
+        <translation>Пример: -e
+Поле может быть оставлено пустым, если терминал уже поддерживается
+или не имеет такой опции; требуется в противном случае.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="879"/>
         <source>Custom option(s):</source>
-        <translation type="unfinished"></translation>
+        <translation>Пользовательские настройки:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="886"/>
         <source>This is optional, depends on the terminal,
 and can be any group of custom options.</source>
-        <translation type="unfinished"></translation>
+        <translation>Это необязательно, зависит от терминала 
+и может быть любой группой пользовательских настроек.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="900"/>
@@ -2447,7 +2451,8 @@ and can be any group of custom options.</source>
         <location filename="../preferences.ui" line="910"/>
         <source>Example:
 lxsudo dbus-run-session -- %s</source>
-        <translation type="unfinished"></translation>
+        <translation>Пример:
+lxsudo dbus-run-session -- %s</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="918"/>
