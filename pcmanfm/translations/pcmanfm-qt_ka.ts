@@ -313,7 +313,11 @@ It can be left empty.</source>
 It is needed only when you want to use the created file in the main menu. Otherwise, you could leave it empty.
 
 Examples: AudioVideo, Audio, Video, Development, Education, Game, Graphics, Network, Office, Settings, System, Utility, Qt.</source>
-        <translation type="unfinished"></translation>
+        <translation>კატეგორიის სახელები მენიუსთვის .desktop ფაილში, მხოლოდ, ინგლისურად მუშაობს.
+
+ეს, მხოლოდ, მაშინაა საჭირო, როცა ფაილს მთავარ მენიუში ქმნით. წინააღმდეგ შემთხვევაშ შეეშვით მას.
+
+მაგ: AudioVideo, Audio, Video, Development, Education, Game, Graphics, Network, Office, Settings, System, Utility, Qt.</translation>
     </message>
 </context>
 <context>
@@ -370,12 +374,12 @@ Examples: AudioVideo, Audio, Video, Development, Education, Game, Graphics, Netw
     <message>
         <location filename="../desktop-preferences.ui" line="408"/>
         <source>Wallpaper image file:</source>
-        <translation type="unfinished"></translation>
+        <translation>ფონის სურათის ფაილი:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="350"/>
         <source>Select background color:</source>
-        <translation type="unfinished"></translation>
+        <translation>აირჩიეთ ფონის ფერი:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="417"/>
@@ -385,7 +389,7 @@ Examples: AudioVideo, Audio, Video, Development, Education, Game, Graphics, Netw
     <message>
         <location filename="../desktop-preferences.ui" line="423"/>
         <source>Image file path</source>
-        <translation type="unfinished"></translation>
+        <translation>გამოსახულების ფაილის ბილიკი</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="430"/>
@@ -410,7 +414,7 @@ Examples: AudioVideo, Audio, Video, Development, Education, Game, Graphics, Netw
     <message>
         <location filename="../desktop-preferences.ui" line="113"/>
         <source>Select shadow color:</source>
-        <translation type="unfinished"></translation>
+        <translation>აირჩიეთ ჩრდილის ფერი:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="61"/>
@@ -425,7 +429,7 @@ Examples: AudioVideo, Audio, Video, Development, Education, Game, Graphics, Netw
     <message>
         <location filename="../desktop-preferences.ui" line="87"/>
         <source>Select text color:</source>
-        <translation type="unfinished"></translation>
+        <translation>აირჩიეთ ტექსტის ფერი:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="136"/>
@@ -435,12 +439,12 @@ Examples: AudioVideo, Audio, Video, Development, Education, Game, Graphics, Netw
     <message>
         <location filename="../desktop-preferences.ui" line="145"/>
         <source>Minimum item margins:</source>
-        <translation type="unfinished"></translation>
+        <translation>მინიმალური ელემენტის საზღვრები:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="152"/>
         <source>3 px by default.</source>
-        <translation type="unfinished"></translation>
+        <translation>3 px ნაგულისხმევად.</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="155"/>
@@ -461,7 +465,8 @@ Examples: AudioVideo, Audio, Video, Development, Education, Game, Graphics, Netw
         <location filename="../desktop-preferences.ui" line="175"/>
         <source>1 px by default.
 A space is also reserved for 3 lines of text.</source>
-        <translation type="unfinished"></translation>
+        <translation>1 px ნაგულისხმევად.
+ასევე დაცულია ადგილი 3 ხაზი ტექსტისთვის.</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="192"/>
@@ -471,7 +476,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../desktop-preferences.ui" line="230"/>
         <source>Margins of work area:</source>
-        <translation type="unfinished"></translation>
+        <translation>სამუშაო ადგილის საზღვრები:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="303"/>
@@ -512,12 +517,12 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktop-preferences.ui" line="479"/>
         <source>Enable Slide Show</source>
-        <translation type="unfinished"></translation>
+        <translation>სლაიდშოუს ჩართვა</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="491"/>
         <source>Wallpaper image folder:</source>
-        <translation type="unfinished"></translation>
+        <translation>ფონის სურათის საქაღალდე:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="505"/>
@@ -636,7 +641,7 @@ are left clicked, even when it is not the default file manager.</source>
         <location filename="../shortcuts.ui" line="50"/>
         <location filename="../shortcuts.ui" line="58"/>
         <source>Focus path entry</source>
-        <translation type="unfinished"></translation>
+        <translation>ფოკუსი მისამართის ველზე</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="55"/>
@@ -684,7 +689,7 @@ are left clicked, even when it is not the default file manager.</source>
         <location filename="../shortcuts.ui" line="98"/>
         <location filename="../shortcuts.ui" line="106"/>
         <source>Jump to tab</source>
-        <translation type="unfinished"></translation>
+        <translation>გადასვლა ჩანართზე</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="103"/>
@@ -882,7 +887,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="415"/>
         <source>&amp;Add to Bookmarks</source>
-        <translation type="unfinished"></translation>
+        <translation>ს&amp;ანიშნეებში ჩამატება</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="420"/>
@@ -997,7 +1002,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="574"/>
         <source>By Deletio&amp;n Time</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;წაშლის დროით</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="582"/>
@@ -1097,7 +1102,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="932"/>
         <source>&amp;Show/Focus Filter Bar</source>
-        <translation type="unfinished"></translation>
+        <translation>ფილტრის პანელის ჩვენება/ფოკუ&amp;სი</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="935"/>
@@ -1127,7 +1132,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="957"/>
         <source>&amp;Copy Full Path</source>
-        <translation type="unfinished"></translation>
+        <translation>სრული ბილიკის &amp;კოპირება</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="964"/>
@@ -1178,7 +1183,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="827"/>
         <source>&amp;Clear All Filters</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;ყველა ფილტრის გასუფთავება</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="830"/>
@@ -1188,12 +1193,12 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="839"/>
         <source>Close &amp;previous tabs</source>
-        <translation type="unfinished"></translation>
+        <translation>წინა ჩანართების და&amp;ხურვა</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="848"/>
         <source>Close &amp;next tabs</source>
-        <translation type="unfinished"></translation>
+        <translation>შემდეგი ჩა&amp;ნართების დახურვა</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="896"/>
@@ -1463,7 +1468,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../application.cpp" line="196"/>
         <source>Launch desktop manager</source>
-        <translation type="unfinished"></translation>
+        <translation>სამუშაო მაგიდის მმართველის გაშვება</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="199"/>
@@ -1672,7 +1677,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="312"/>
         <source>Select Wallpaper Folder</source>
-        <translation type="unfinished"></translation>
+        <translation>აირჩიეთ ფონის სურათის საქაღალდე</translation>
     </message>
 </context>
 <context>
@@ -1680,13 +1685,14 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktopwindow.cpp" line="328"/>
         <source>Trash (One item)</source>
-        <translation type="unfinished"></translation>
+        <translation>ნაგავი (ერთი ელემენტი)</translation>
     </message>
     <message numerus="yes">
         <location filename="../desktopwindow.cpp" line="331"/>
         <source>Trash (%Ln items)</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>ნაგავი (%Ln ელემენტი)</numerusform>
+            <numerusform>ნაგავი (%Ln ელემენტი)</numerusform>
         </translation>
     </message>
     <message>
@@ -1723,7 +1729,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktopwindow.cpp" line="1127"/>
         <source>Hide Desktop Items</source>
-        <translation type="unfinished"></translation>
+        <translation>სამუშაო მაგიდის ელემენტების დამალვა</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="1133"/>
@@ -1789,7 +1795,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../mainwindow.cpp" line="2039"/>
         <source>Customized View Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>ხედის მორგებული პარამეტრები</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="2310"/>
@@ -1805,7 +1811,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../mainwindow.cpp" line="2409"/>
         <source>Cleaning Folder Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>საქაღალდის პარამეტრების გაწმენდა</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="2410"/>
@@ -1834,7 +1840,7 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferencesdialog.cpp" line="215"/>
         <source>Detailed List View</source>
-        <translation type="unfinished"></translation>
+        <translation>დეტალური სიის ხედი</translation>
     </message>
     <message>
         <location filename="../preferencesdialog.cpp" line="308"/>
@@ -1844,7 +1850,7 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferencesdialog.cpp" line="332"/>
         <source>Open user-defined list</source>
-        <translation type="unfinished"></translation>
+        <translation>მომხმარებლის აღწერილი სიის გახსნა</translation>
     </message>
 </context>
 <context>
@@ -1915,8 +1921,9 @@ They might be useful if those folders are created again.</source>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="816"/>
         <source>%n item(s) selected</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>მონიშნულია %n ელემენტი</numerusform>
+            <numerusform>მონიშნულია %n ელემენტი</numerusform>
         </translation>
     </message>
 </context>
@@ -1948,7 +1955,7 @@ They might be useful if those folders are created again.</source>
         <location filename="../view.cpp" line="134"/>
         <location filename="../view.cpp" line="152"/>
         <source>Open in Termina&amp;l</source>
-        <translation type="unfinished"></translation>
+        <translation>ტერმინა&amp;ლში გახსნა</translation>
     </message>
 </context>
 <context>
@@ -2007,7 +2014,7 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferences.ui" line="362"/>
         <source>Size of thumbnails:</source>
-        <translation type="unfinished"></translation>
+        <translation>მინიატურების ზომა:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="376"/>
@@ -2327,12 +2334,12 @@ and can be any group of custom options.</source>
     <message>
         <location filename="../preferences.ui" line="979"/>
         <source>Maximum search history:</source>
-        <translation type="unfinished"></translation>
+        <translation>მაქსიმალური ძებნის ისტორია:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="993"/>
         <source>Clear search history</source>
-        <translation type="unfinished"></translation>
+        <translation>ძებნის ისტორიის გასუფთავება</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="1028"/>
@@ -2357,7 +2364,7 @@ and can be any group of custom options.</source>
     <message>
         <location filename="../preferences.ui" line="232"/>
         <source>Single window mode</source>
-        <translation type="unfinished"></translation>
+        <translation>ერთფანჯრიანი რეჟიმი</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="412"/>
@@ -2372,7 +2379,7 @@ and can be any group of custom options.</source>
     <message>
         <location filename="../preferences.ui" line="436"/>
         <source>Disable smooth scrolling</source>
-        <translation type="unfinished"></translation>
+        <translation>გლუვი გადახვევის გამორთვა</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="648"/>
@@ -2422,7 +2429,7 @@ and can be any group of custom options.</source>
     <message>
         <location filename="../preferences.ui" line="900"/>
         <source>Switch &amp;user command:</source>
-        <translation type="unfinished"></translation>
+        <translation>მომხმარებლის ბრძანების &amp;გადართვა:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="910"/>
@@ -2481,7 +2488,7 @@ lxsudo dbus-run-session -- %s</source>
     <message>
         <location filename="../bulkrename.cpp" line="98"/>
         <source>Renaming is aborted.</source>
-        <translation type="unfinished"></translation>
+        <translation>სახელის გადარქმევა გაუქმდა.</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="124"/>

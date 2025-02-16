@@ -1785,7 +1785,7 @@ PCManFM-Qt rakendusega ka siis, kui ta pole vaikimisi failihaldur.</translation>
         <location filename="../mainwindow.cpp" line="176"/>
         <location filename="../mainwindow.cpp" line="2203"/>
         <source>&amp;Move to Trash</source>
-        <translation>&amp;Liiguta prügikasti</translation>
+        <translation>&amp;Viska prügikasti</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="176"/>
