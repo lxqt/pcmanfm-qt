@@ -28,6 +28,7 @@
 #include <QSettings>
 #include <QStandardPaths>
 
+#include <cmath>
 #include <algorithm>
 
 #include <libfm-qt6/folderview.h>
