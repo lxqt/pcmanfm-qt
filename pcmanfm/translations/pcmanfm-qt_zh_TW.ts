@@ -335,7 +335,7 @@ Examples: AudioVideo, Audio, Video, Development, Education, Game, Graphics, Netw
     <message>
         <location filename="../desktop-folder.ui" line="29"/>
         <source>Desktop folder:</source>
-        <translation>桌面資料夾:</translation>
+        <translation>桌面資料夾：</translation>
     </message>
     <message>
         <location filename="../desktop-folder.ui" line="36"/>
@@ -482,8 +482,8 @@ A space is also reserved for 3 lines of text.</source>
         <location filename="../desktop-preferences.ui" line="303"/>
         <source>By default, desktop folders will be opened in PCManFM-Qt if they
 are left clicked, even when it is not the default file manager.</source>
-        <translation>在預設情況下，當點擊桌面上的資料夾時，
-即使預設的檔案管理程式不是 PCManFM-Qt，也會以 PCManFM-Qt 開啟。</translation>
+        <translation>預設情況下，當點按桌面上的資料夾時，
+即使預設檔案管理程式不是 PCManFM-Qt，也會以 PCManFM-Qt 開啟。</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="307"/>
@@ -983,7 +983,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="606"/>
         <source>&amp;Folder First</source>
-        <translation>資料夾優先 (&amp;F)</translation>
+        <translation>資料夾優先(&amp;F)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="614"/>
@@ -1008,7 +1008,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="1025"/>
         <source>&amp;Remove Settings of Nonexistent Folders</source>
-        <translation>刪除不存在的資料夾的設定 (&amp;R)</translation>
+        <translation>刪除不存在的資料夾的設定(&amp;R)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="1033"/>
@@ -1073,7 +1073,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="887"/>
         <source>Preserve Settings for &amp;This Folder</source>
-        <translation>儲存這個資料夾的設定 (&amp;T)</translation>
+        <translation>為此資料夾保留設定(&amp;T)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="932"/>
@@ -1395,7 +1395,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="784"/>
         <source>&amp;Folder</source>
-        <translation>資料夾 (&amp;F)</translation>
+        <translation>資料夾(&amp;F)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="796"/>
@@ -1449,7 +1449,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../application.cpp" line="187"/>
         <source>Name of configuration profile</source>
-        <translation>配置文件名稱</translation>
+        <translation>設定資料檔案名稱</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="187"/>
@@ -1495,7 +1495,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../application.cpp" line="208"/>
         <source>Open Find Files utility</source>
-        <translation>打開「尋找檔案」工具</translation>
+        <translation>開啟尋找檔案工具</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="211"/>
@@ -1520,7 +1520,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../application.cpp" line="217"/>
         <source>Open Preferences dialog on the page with the specified name</source>
-        <translation>在指定名稱的頁面打開偏好設定對話框</translation>
+        <translation>在指定名稱的頁面開啟偏好設定對話框</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="220"/>
@@ -1817,8 +1817,8 @@ are left clicked, even when it is not the default file manager.</source>
         <location filename="../mainwindow.cpp" line="2410"/>
         <source>Do you want to remove settings of nonexistent folders?
 They might be useful if those folders are created again.</source>
-        <translation>請問您要刪除資料夾不存在的設定嗎？
-如果又重新建立資料夾時可能會有用。</translation>
+        <translation>請問您要刪除不存在資料夾的設定嗎？
+如果再度建立資料夾時，可能會有用。</translation>
     </message>
 </context>
 <context>
@@ -2023,7 +2023,7 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferences.ui" line="129"/>
         <source>Show folder context menu with Ctrl + right click</source>
-        <translation>Ctrl+右鍵以顯示資料夾的右鍵選單</translation>
+        <translation>Ctrl+右鍵 顯示資料夾上下文選單</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="195"/>
@@ -2100,47 +2100,52 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferences.ui" line="833"/>
         <source>Terminal emulator</source>
-        <translation type="unfinished"></translation>
+        <translation>終端模擬器</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="842"/>
         <source>Command:</source>
-        <translation type="unfinished">指令:</translation>
+        <translation>指令：</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="849"/>
         <source>Example: qterminal
 It is the name of the executable file.</source>
-        <translation type="unfinished"></translation>
+        <translation>例如： qterminal
+這是可執行檔案的名稱。</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="860"/>
         <source>Execution option:</source>
-        <translation type="unfinished"></translation>
+        <translation>執行選項：</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="867"/>
         <source>Example: -e
 It can be left empty if the terminal is already supported
 or does not have such an option; required otherwise.</source>
-        <translation type="unfinished"></translation>
+        <translation>例如： -e
+如果終端機已有支持，可以留空
+或沒有這樣的選項；需要其它的。</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="879"/>
         <source>Custom option(s):</source>
-        <translation type="unfinished"></translation>
+        <translation>自訂選項：</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="886"/>
         <source>This is optional, depends on the terminal,
 and can be any group of custom options.</source>
-        <translation type="unfinished"></translation>
+        <translation>這是可選項目，取決於終端機，
+並且可以是自訂選項任何一組。</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="910"/>
         <source>Example:
 lxsudo dbus-run-session -- %s</source>
-        <translation type="unfinished"></translation>
+        <translation>例如：
+lxsudo dbus-run-session -- %s</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="964"/>
