@@ -482,17 +482,18 @@ A space is also reserved for 3 lines of text.</source>
         <location filename="../desktop-preferences.ui" line="303"/>
         <source>By default, desktop folders will be opened in PCManFM-Qt if they
 are left clicked, even when it is not the default file manager.</source>
-        <translation type="unfinished"></translation>
+        <translation>ნაგულისხმევად სამუშაო მაგიდის საქაღალდეები PCManFM-Qt-ში გაიხსნება, თუ
+მათზე მარცხენა ღილაკით დააწკაპუნებთ, მაშინაც, კი, თუ ის ნაგულისხმევი ფაილების მმართველი არაა.</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="307"/>
         <source>Open desktop folders in default file manager by left clicking</source>
-        <translation type="unfinished"></translation>
+        <translation>სამუშაო ფაილის საქაღაღალდეების ნაგულისხმევ ფაილების მმართველში გახსნა მასზე მარცხენა წკაპით</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="314"/>
         <source>Make all items stick to their positions</source>
-        <translation type="unfinished"></translation>
+        <translation>ყველა ელემენტის მიწებება თავის მდებარეობაზე</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="373"/>
@@ -502,12 +503,12 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktop-preferences.ui" line="439"/>
         <source>Transform image based on EXIF data</source>
-        <translation type="unfinished"></translation>
+        <translation>გამოსახულების გარდაქმნა მისი EXIF მონაცემების მიხედვით</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="446"/>
         <source>Individual wallpaper for each monitor</source>
-        <translation type="unfinished"></translation>
+        <translation>ცალ-ცალკე ფონის სურათი თითოეული ეკრანისთვის</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="473"/>
@@ -542,7 +543,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktop-preferences.ui" line="535"/>
         <source>Intervals less than 5min will be ignored</source>
-        <translation type="unfinished"></translation>
+        <translation>5 წუთზე ნაკლები ინტერვალები გამოტოვებული იქნება</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="538"/>
@@ -562,7 +563,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktop-preferences.ui" line="587"/>
         <source>Randomize the slide show</source>
-        <translation type="unfinished"></translation>
+        <translation>სლაიდშოუს შემთხვევითობა</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="620"/>
@@ -620,7 +621,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../shortcuts.ui" line="34"/>
         <source>Focus view, clear filter bar</source>
-        <translation type="unfinished"></translation>
+        <translation>ფოკუსი ხედზე, ფილტრის პანელის გასუფთავება</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="39"/>
@@ -724,7 +725,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../shortcuts.ui" line="130"/>
         <source>Paste into transient filter bar</source>
-        <translation type="unfinished"></translation>
+        <translation>ჩასმა გარდამავალი ფილტრის პანელში</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="135"/>
@@ -744,17 +745,17 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../shortcuts.ui" line="138"/>
         <source>Move file on dropping</source>
-        <translation type="unfinished"></translation>
+        <translation>ფაილის გადატანა დაგდებისას</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="146"/>
         <source>Copy file on dropping</source>
-        <translation type="unfinished"></translation>
+        <translation>ფაილის კოპირება დაგდებისას</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="154"/>
         <source>Make a symlink on dropping</source>
-        <translation type="unfinished"></translation>
+        <translation>სიმბმულის შექმნა დაგდებისას</translation>
     </message>
 </context>
 <context>
@@ -1082,7 +1083,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="770"/>
         <source>Open Tab in &amp;Root Instance</source>
-        <translation type="unfinished"></translation>
+        <translation>ჩანართის გახსნა &amp;ძირითად გაშვებულ ასლში</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="784"/>
