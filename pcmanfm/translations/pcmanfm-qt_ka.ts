@@ -1038,17 +1038,17 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="1015"/>
         <source>Preserve Settings Recursively from &amp;Here</source>
-        <translation type="unfinished"></translation>
+        <translation>პარამეტრების რეკურსიულად შენარჩუნება &amp;აქედან</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="1020"/>
         <source>&amp;Go to Source of Inherited Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>მემკვიდრეობით მიღებული პარამეტრების &amp;წყაროზე გადასვლა</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="1025"/>
         <source>&amp;Remove Settings of Nonexistent Folders</source>
-        <translation type="unfinished"></translation>
+        <translation>არარსებული საქაღალდეების პარამეტრების &amp;წაშლა</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="1033"/>
@@ -1098,7 +1098,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="887"/>
         <source>Preserve Settings for &amp;This Folder</source>
-        <translation type="unfinished"></translation>
+        <translation>პარამეტრების შენარჩუნება &amp;ამ საქაღალდისთვის</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="932"/>
@@ -1168,7 +1168,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="999"/>
         <source>Open Tab in &amp;Admin Mode</source>
-        <translation type="unfinished"></translation>
+        <translation>ჩანართის გახსნა &amp;ადმინისტრატორის რეჟიმში</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="1004"/>
@@ -1449,7 +1449,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../application.cpp" line="187"/>
         <source>Name of configuration profile</source>
-        <translation type="unfinished"></translation>
+        <translation>კონფიგურაციის პროფილის სახელი</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="187"/>
@@ -1459,7 +1459,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../application.cpp" line="190"/>
         <source>Run PCManFM-Qt as a daemon</source>
-        <translation type="unfinished"></translation>
+        <translation>PCManFR-Qt-ის დემონად გაშვება</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="193"/>
@@ -1474,12 +1474,12 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../application.cpp" line="199"/>
         <source>Turn off desktop manager if it&apos;s running</source>
-        <translation type="unfinished"></translation>
+        <translation>სამუშაო მაგიდის მმართველის გამორთვა, თუ ის გაშვებულია</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="202"/>
         <source>Open desktop preference dialog on the page with the specified name</source>
-        <translation type="unfinished"></translation>
+        <translation>სამუშაო მაგიდის მორგების დიალოგის გახსნა მითითებული სახელის მქონე გვერდზე</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="202"/>
@@ -1495,12 +1495,12 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../application.cpp" line="208"/>
         <source>Open Find Files utility</source>
-        <translation type="unfinished"></translation>
+        <translation>ფაილების ძებნის პროგრამის გახსნა</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="211"/>
         <source>Set desktop wallpaper from image FILE</source>
-        <translation type="unfinished"></translation>
+        <translation>სამუშაო მაგიდის ფონის სურათის დაყენება მითითებული ფაილიდან</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="211"/>
@@ -1515,17 +1515,17 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../application.cpp" line="214"/>
         <source>Set mode of desktop wallpaper. MODE=(%1)</source>
-        <translation type="unfinished"></translation>
+        <translation>სამუშაო მაგიდის ფონის რეჟიმის დაყენება. რეჟიმი=(%1)</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="217"/>
         <source>Open Preferences dialog on the page with the specified name</source>
-        <translation type="unfinished"></translation>
+        <translation>მორგების დიალოგის გახსნა მითითებული სახელის მქონე გვერდზე</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="220"/>
         <source>Files or directories to open</source>
-        <translation type="unfinished"></translation>
+        <translation>გასახსნელი ფაილები ან საქაღალდეები</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="220"/>
@@ -1541,7 +1541,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../application.cpp" line="663"/>
         <source>Terminal emulator is not set.</source>
-        <translation type="unfinished"></translation>
+        <translation>ტერმინალის ემულატორი დაყენებული არაა.</translation>
     </message>
 </context>
 <context>
@@ -1549,7 +1549,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../autorundialog.cpp" line="44"/>
         <source>Open in file manager</source>
-        <translation type="unfinished"></translation>
+        <translation>გახსნა ფაილების მმართველში</translation>
     </message>
     <message>
         <location filename="../autorundialog.cpp" line="137"/>
@@ -1600,7 +1600,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktopentrydialog.cpp" line="36"/>
         <source>The command to execute.</source>
-        <translation type="unfinished"></translation>
+        <translation>შესასრულებელი ბრძანება.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="39"/>
@@ -1610,7 +1610,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktopentrydialog.cpp" line="40"/>
         <source>The URL to access.</source>
-        <translation type="unfinished"></translation>
+        <translation>URL წვდომისთვის.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="67"/>
@@ -1620,7 +1620,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktopentrydialog.cpp" line="69"/>
         <source>Images (*.png *.xpm *.svg *.svgz )</source>
-        <translation type="unfinished"></translation>
+        <translation>გამოსახულებები (*.png *.xpm *.svg *.svgz )</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="91"/>
@@ -1638,32 +1638,32 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="52"/>
         <source>Fill with background color only</source>
-        <translation type="unfinished"></translation>
+        <translation>მხოლოდ ფონის ფერით შევსება</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="53"/>
         <source>Stretch to fill the entire screen</source>
-        <translation type="unfinished"></translation>
+        <translation>გაწელვა მთელი ეკრანის შესავსებად</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="54"/>
         <source>Stretch to fit the screen</source>
-        <translation type="unfinished"></translation>
+        <translation>გაწელვა ეკრანის შესავსებად</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="55"/>
         <source>Center on the screen</source>
-        <translation type="unfinished"></translation>
+        <translation>ეკრანის ცენტრზე</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="56"/>
         <source>Tile the image to fill the entire screen</source>
-        <translation type="unfinished"></translation>
+        <translation>გამოსახულების ფილებად დალაგება, სანამ ეკრანი სრულად არ შეივსება</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="57"/>
         <source>Zoom the image to fill the entire screen</source>
-        <translation type="unfinished"></translation>
+        <translation>გამოსახულებსი გადიდება მთელი ეკრანის შესავსებად</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="266"/>
@@ -1720,7 +1720,7 @@ are left clicked, even when it is not the default file manager.</source>
         <location filename="../desktopwindow.cpp" line="1053"/>
         <location filename="../desktopwindow.cpp" line="1093"/>
         <source>Stic&amp;k to Current Position</source>
-        <translation type="unfinished"></translation>
+        <translation>დაწებება &amp;მიმდინარე მდებარეობაზე</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="1061"/>
@@ -1756,7 +1756,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../tabpage.cpp" line="65"/>
         <source>Clear text (Ctrl+K or Esc)</source>
-        <translation type="unfinished"></translation>
+        <translation>ეკრანის გასუფთავება (Ctrl+K ან Esc)</translation>
     </message>
 </context>
 <context>
@@ -1774,7 +1774,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../mainwindow.cpp" line="787"/>
         <source>This will hide the menu bar completely, use Ctrl+M to show it again.</source>
-        <translation type="unfinished"></translation>
+        <translation>ეს მენიუს ზოლს სრულად დაფარავს. თავიდან საჩვენებლად გამოიყენეთ Ctrl+M.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="1234"/>
@@ -1807,7 +1807,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../mainwindow.cpp" line="2318"/>
         <source>Switch user command is not set.</source>
-        <translation type="unfinished"></translation>
+        <translation>მომხმარებლის გადართვის ბრძანება დაყენებული არაა.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="2409"/>
@@ -1818,7 +1818,8 @@ are left clicked, even when it is not the default file manager.</source>
         <location filename="../mainwindow.cpp" line="2410"/>
         <source>Do you want to remove settings of nonexistent folders?
 They might be useful if those folders are created again.</source>
-        <translation type="unfinished"></translation>
+        <translation>გნებავთ წაშალოთ პარამეტრები არარსებული საქაღალდეებისთვის?
+ისინი, შეიძლება, გამოგადგეთ, თუ საქაღალდეებს თავიდან შექმნით.</translation>
     </message>
 </context>
 <context>
@@ -1846,7 +1847,7 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferencesdialog.cpp" line="308"/>
         <source>Remove if added by user</source>
-        <translation type="unfinished"></translation>
+        <translation>წაშლა, თუ დამატებულია მომხმარებლის მიერ</translation>
     </message>
     <message>
         <location filename="../preferencesdialog.cpp" line="332"/>
@@ -1894,7 +1895,7 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../tabpage.cpp" line="565"/>
         <source>Free space: %1 (Total: %2)</source>
-        <translation type="unfinished"></translation>
+        <translation>თავისუფალი ადგილი: %1 (სულ: %2)</translation>
     </message>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="582"/>
@@ -1938,19 +1939,20 @@ They might be useful if those folders are created again.</source>
     <message numerus="yes">
         <location filename="../view.cpp" line="60"/>
         <source>Do you want to open these %1 files?</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>მართლა გნებავთ, გახსნათ ეს %1 ფაილი?</numerusform>
+            <numerusform>მართლა გნებავთ, გახსნათ ეს %1 ფაილი?</numerusform>
         </translation>
     </message>
     <message>
         <location filename="../view.cpp" line="122"/>
         <source>Open in New T&amp;ab</source>
-        <translation type="unfinished"></translation>
+        <translation>გახსნა ახალ &amp;ჩანართში</translation>
     </message>
     <message>
         <location filename="../view.cpp" line="126"/>
         <source>Open in New Win&amp;dow</source>
-        <translation type="unfinished"></translation>
+        <translation>გახსნა &amp;ახალ ფანჯარაში</translation>
     </message>
     <message>
         <location filename="../view.cpp" line="134"/>
@@ -1995,7 +1997,7 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferences.ui" line="222"/>
         <source>Select newly created files</source>
-        <translation type="unfinished"></translation>
+        <translation>ახალი ფაილების მონიშვნა</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="296"/>
@@ -2005,12 +2007,12 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferences.ui" line="328"/>
         <source>Size of big icons:</source>
-        <translation type="unfinished"></translation>
+        <translation>დიდი ხატულების ზომა:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="345"/>
         <source>Size of small icons:</source>
-        <translation type="unfinished"></translation>
+        <translation>პატარა ხატულების ზომა:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="362"/>
@@ -2020,7 +2022,7 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferences.ui" line="376"/>
         <source>Size of side pane icons:</source>
-        <translation type="unfinished"></translation>
+        <translation>გვერდითი პანელის ხატულების ზომა:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="308"/>
@@ -2040,22 +2042,22 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferences.ui" line="566"/>
         <source>Show &apos;Close&apos; buttons on tabs	</source>
-        <translation type="unfinished"></translation>
+        <translation>ჩანართებზე &apos;დახურვის&apos; ღილაკის ჩვენება	</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="580"/>
         <source>Remember the size of the last closed window</source>
-        <translation type="unfinished"></translation>
+        <translation>ბოლოს დახურული ფანჯრის ზომების დამახსოვრება</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="587"/>
         <source>Default width of new windows:</source>
-        <translation type="unfinished"></translation>
+        <translation>ახალი ფანჯრების ნაგულისხმევი სიგანე:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="601"/>
         <source>Default height of new windows:</source>
-        <translation type="unfinished"></translation>
+        <translation>ახალი ფანჯრების ნაგულისხმევი სიმაღლე:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="81"/>
@@ -2065,7 +2067,7 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferences.ui" line="93"/>
         <source>Open files with single click</source>
-        <translation type="unfinished"></translation>
+        <translation>ფაილების გახსნა ერთი წკაპით</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="162"/>
@@ -2085,22 +2087,22 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferences.ui" line="181"/>
         <source>Confirm before deleting files</source>
-        <translation type="unfinished"></translation>
+        <translation>დადასტურება ფაილების წაშლამდე</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="188"/>
         <source>Move deleted files to &quot;trash bin&quot; instead of erasing from disk.</source>
-        <translation type="unfinished"></translation>
+        <translation>წაშლილი ფაილების &quot;ნაგვის ყუთში&quot; გადატანა მათი რეალური წაშლის მაგიერ.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="651"/>
         <source>Show thumbnails of files</source>
-        <translation type="unfinished"></translation>
+        <translation>ფაილების მინიატურის ჩვენება</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="658"/>
         <source>Only show thumbnails for local files</source>
-        <translation type="unfinished"></translation>
+        <translation>მინიატურების, მხოლოდ, ლოკალური ფაილებისთვის ჩვენება</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="40"/>
@@ -2110,23 +2112,23 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferences.ui" line="90"/>
         <source>If this is unchecked, the DE setting will be used.</source>
-        <translation type="unfinished"></translation>
+        <translation>თუ ეს დასმული არაა, გამოყენებული იქნება DE პარამეტრი.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="103"/>
         <location filename="../preferences.ui" line="116"/>
         <source>Set to zero to disable auto-selection.</source>
-        <translation type="unfinished"></translation>
+        <translation>ნულზე დაყენება ავტომონიშვნას გამორთავს.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="106"/>
         <source>Delay of auto-selection in single click mode:</source>
-        <translation type="unfinished"></translation>
+        <translation>ავტომონიშვნის დაყოვნება ერთი წკაპის რეჟიმში:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="144"/>
         <source>Open in current tab</source>
-        <translation type="unfinished"></translation>
+        <translation>გახსნა მიმდინარე ჩანართში</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="149"/>
@@ -2141,29 +2143,29 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferences.ui" line="195"/>
         <source>Erase files on removable media instead of &quot;trash can&quot; creation</source>
-        <translation type="unfinished"></translation>
+        <translation>მოხსნად მედიაზე ფაილების ნამდვილად წაშლა მათი &quot;ნაგვის ყუთში&quot; გადატანის მაგიერ</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="202"/>
         <source>Confirm before moving files into &quot;trash can&quot;</source>
-        <translation type="unfinished"></translation>
+        <translation>დადასტურება &quot;ნაგვის ყუთში&quot; გადატანამდე</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="209"/>
         <location filename="../preferences.ui" line="409"/>
         <location filename="../preferences.ui" line="419"/>
         <source>Requires application restart to take effect completely</source>
-        <translation type="unfinished"></translation>
+        <translation>ძალაში სრულად შესასვლელად აპლიკაციის გადატვირთვა სჭირდება</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="212"/>
         <source>Launch executable files without prompt</source>
-        <translation type="unfinished"></translation>
+        <translation>გამშვები ფაილის შესრულება კითხვის გარეშე</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="219"/>
         <source>Renamed files will also be selected</source>
-        <translation type="unfinished"></translation>
+        <translation>ასევე მოინიშნება სახელგადარქმეული ფაილებიც</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="244"/>
@@ -2174,19 +2176,19 @@ They might be useful if those folders are created again.</source>
         <location filename="../preferences.ui" line="325"/>
         <location filename="../preferences.ui" line="335"/>
         <source>Used by Icon View</source>
-        <translation type="unfinished"></translation>
+        <translation>გამოყენება ხატულების ხედის მიერ</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="342"/>
         <location filename="../preferences.ui" line="352"/>
         <source>Used by Compact View and Detailed List View</source>
-        <translation type="unfinished"></translation>
+        <translation>გამოიყენება კომპაქტური და დეტალური სიის ხედის მიერ</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="359"/>
         <location filename="../preferences.ui" line="369"/>
         <source>Used by Thumbnail View</source>
-        <translation type="unfinished"></translation>
+        <translation>გამოიყენება მინიატურების ხედის მეირ</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="389"/>
@@ -2196,22 +2198,22 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferences.ui" line="402"/>
         <source>Treat backup files as hidden</source>
-        <translation type="unfinished"></translation>
+        <translation>მარქაფის ფაილების დამალულად არქმა</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="422"/>
         <source>Show icons of hidden files shadowed</source>
-        <translation type="unfinished"></translation>
+        <translation>დამალული ფაილების ხატულების დაჩრდილულად ჩვენება</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="459"/>
         <source>Minimum item margins in icon view:</source>
-        <translation type="unfinished"></translation>
+        <translation>მინიმალური ელემენტის საზღვრები ხატულების ხედში:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="466"/>
         <source>3 px by default.</source>
-        <translation type="unfinished"></translation>
+        <translation>3 პიქსელი ნაგულისხმევად.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="469"/>
@@ -2228,7 +2230,8 @@ They might be useful if those folders are created again.</source>
         <location filename="../preferences.ui" line="489"/>
         <source>3 px by default.
 A space is also reserved for 3 lines of text.</source>
-        <translation type="unfinished"></translation>
+        <translation>3 პიქსელი ნაგულისხმევად.
+ასევე შემონახულია ადგილი 3 ხაზი ტექსტისთვის.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="506"/>
@@ -2239,17 +2242,18 @@ A space is also reserved for 3 lines of text.</source>
         <location filename="../preferences.ui" line="555"/>
         <source>When unchecked, the tab bar will be shown
 only if there are more than one tab.</source>
-        <translation type="unfinished"></translation>
+        <translation>როცა გამორთულია, ჩანართების ველი, მხოლოდ,
+მაშინაა ნაჩვენები, როცა არსებობს ერთზე მეტი ჩანართი.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="573"/>
         <source>Switch to newly opened tab</source>
-        <translation type="unfinished"></translation>
+        <translation>გადართვა ახლად გახსნილ ჩანართზე</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="615"/>
         <source>Reopen last window tabs in a new window</source>
-        <translation type="unfinished"></translation>
+        <translation>ბოლოს გახსნილი ფანჯრის ჩანართების გახსნა ახალ ფანჯარაში</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="665"/>
@@ -2257,12 +2261,14 @@ only if there are more than one tab.</source>
         <source>The built-in thumbnailer makes thumbnails of images that are supported by Qt.
 
 Usually, most image types are supported. The default size limit is 4 MiB.</source>
-        <translation type="unfinished"></translation>
+        <translation>ჩაშენებული მინიატურების პროგრამა ქმნის მინიატურებს გამოსახულებებისთვის, რომლების მხარდაჭერაც Qt-ს აქვს.
+
+ჩვეულებრივ, გამოსახულების ტიპების უმრავლესობა მხარდაჭერილია. ნაგულსიხმევი ზომის ზღვარია 4 მიბ.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="670"/>
         <source>Image size limit for built-in thumbnailer:</source>
-        <translation type="unfinished"></translation>
+        <translation>გამოსახულების ზომის ზღვარი ჩასენებული მემინიატურესთვის:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="682"/>
@@ -2276,12 +2282,14 @@ Usually, most image types are supported. The default size limit is 4 MiB.</sourc
         <source>If existing, external thumbnailers are used for videos, PDF documents, etc.
 
 A value of -1 means that there is no limit for the file size (the default).</source>
-        <translation type="unfinished"></translation>
+        <translation>თუ არსებობს, ვიდეოებისთვის, PDF დოკუმენტებისთვის და ა.შ. გარე მემინიატურე გამოიყენება.
+
+მნიშვნელობა -1 ნიშნავს, რომ ფაილის ზომას ზღვარი არ აქვს (ნაგულისხმევი).</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="703"/>
         <source>File size limit for external thumbnailers:</source>
-        <translation type="unfinished"></translation>
+        <translation>ფაილის ზომის ზღვარი გარე მემინიატურეებისთვის:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="715"/>
@@ -2302,7 +2310,8 @@ A value of -1 means that there is no limit for the file size (the default).</sou
         <location filename="../preferences.ui" line="849"/>
         <source>Example: qterminal
 It is the name of the executable file.</source>
-        <translation type="unfinished"></translation>
+        <translation>მაგალითი: qterminal
+ეს გამშვები ფაილის სახელია.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="860"/>
@@ -2314,7 +2323,9 @@ It is the name of the executable file.</source>
         <source>Example: -e
 It can be left empty if the terminal is already supported
 or does not have such an option; required otherwise.</source>
-        <translation type="unfinished"></translation>
+        <translation>მაგალითი: -e
+შეგიძლიათ, დატოვოთ ცარიელი, თუ ტერმინალი უკვე მხარდაჭერილია,
+ან არ აქვს ასეთი პარამეტრი.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="879"/>
@@ -2325,7 +2336,8 @@ or does not have such an option; required otherwise.</source>
         <location filename="../preferences.ui" line="886"/>
         <source>This is optional, depends on the terminal,
 and can be any group of custom options.</source>
-        <translation type="unfinished"></translation>
+        <translation>ეს არასავალდებულია, დამოკიდებულია ტერმინალზე
+და შეიძლება, მორგებული პარამეტრების ნებისმიერი ჯგუფი იყოს.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="964"/>
@@ -2345,7 +2357,7 @@ and can be any group of custom options.</source>
     <message>
         <location filename="../preferences.ui" line="1028"/>
         <source>Application restart is needed for changes to take effect.</source>
-        <translation type="unfinished"></translation>
+        <translation>ცვლილებების ძალაში შესასვლელად აპლიკაციის გადატვირთვაა საჭირო.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="136"/>
@@ -2355,12 +2367,12 @@ and can be any group of custom options.</source>
     <message>
         <location filename="../preferences.ui" line="129"/>
         <source>Show folder context menu with Ctrl + right click</source>
-        <translation type="unfinished"></translation>
+        <translation>საქაღალდის კონტექსტური მენიუს ჩვენება ღილაკებით Ctrl+მარჯვენა წკაპი</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="229"/>
         <source>Open folders in new tabs as far as possible</source>
-        <translation type="unfinished"></translation>
+        <translation>საქაღალდეების გახსნა ახალ ჩანართებში რაც შეიძლება, შორს</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="232"/>
@@ -2370,12 +2382,12 @@ and can be any group of custom options.</source>
     <message>
         <location filename="../preferences.ui" line="412"/>
         <source>Always show real file names</source>
-        <translation type="unfinished"></translation>
+        <translation>ყოველთვის ფაილის ნამდვილი სახელების ჩვენება</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="429"/>
         <source>Do not show file tooltips</source>
-        <translation type="unfinished"></translation>
+        <translation>ფაილის მინიშნებების არ-ჩვენება</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="436"/>
@@ -2395,32 +2407,32 @@ and can be any group of custom options.</source>
     <message>
         <location filename="../preferences.ui" line="760"/>
         <source>Mount mountable volumes automatically on program startup</source>
-        <translation type="unfinished"></translation>
+        <translation>მიმაგრებადი ტომების ავტომატური მიმაგრება პროგრამის გაშვებისას</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="767"/>
         <source>Mount removable media automatically when they are inserted</source>
-        <translation type="unfinished"></translation>
+        <translation>მოხსნადი მედიის ავტომატური მიმაგრება მათი მიერთებისას</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="774"/>
         <source>Show available options for removable media when they are inserted</source>
-        <translation type="unfinished"></translation>
+        <translation>ხელმისაწვდომი არჩევნების ჩვენება მოხსნადი მედიისთვის მათი მიერთებისას</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="784"/>
         <source>When removable medium unmounted:</source>
-        <translation type="unfinished"></translation>
+        <translation>როდის მოხდება მოხსნადი მედიის მოხსნა:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="790"/>
         <source>Close &amp;tab containing removable medium</source>
-        <translation type="unfinished"></translation>
+        <translation>მოხსნადი მედიის შემცველი ჩართის &amp;დახურვა</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="797"/>
         <source>Chan&amp;ge folder in the tab to home folder</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;ჩანართში გახსნილი საქაღალდის საწყის საქაღალდეზე გადართვა</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="824"/>
@@ -2436,7 +2448,8 @@ and can be any group of custom options.</source>
         <location filename="../preferences.ui" line="910"/>
         <source>Example:
 lxsudo dbus-run-session -- %s</source>
-        <translation type="unfinished"></translation>
+        <translation>მაგ:
+lxsudo dbus-run-session --%s</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="918"/>
@@ -2451,22 +2464,22 @@ lxsudo dbus-run-session -- %s</source>
     <message>
         <location filename="../preferences.ui" line="940"/>
         <source>Show only user defined templates in menu</source>
-        <translation type="unfinished"></translation>
+        <translation>მენიუში, მხოლოდ, მომხმარებლის ნიმუშების ჩვენება</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="947"/>
         <source>Show only one template for each MIME type</source>
-        <translation type="unfinished"></translation>
+        <translation>მხოლოდ ერთი ნიმუშის ჩვენება თითოეული MIME ტიპისთვის</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="954"/>
         <source>Run default application after creation from template</source>
-        <translation type="unfinished"></translation>
+        <translation>ნაგულისხმევი აპლიკაციის გაშვება ნიმუშიდან შექმნის შემდეგ</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="395"/>
         <source>Use SI decimal prefixes instead of IEC binary prefixes</source>
-        <translation type="unfinished"></translation>
+        <translation>სი ათობითი პრეფიქსების გამოყენება IEC ბინარული პრეფიქსების მაგიერ</translation>
     </message>
 </context>
 <context>
@@ -2501,17 +2514,17 @@ lxsudo dbus-run-session -- %s</source>
     <message>
         <location filename="../bulkrename.cpp" line="124"/>
         <source>No file could be renamed.</source>
-        <translation type="unfinished"></translation>
+        <translation>სახელი ვერც ერთ ფაილს ვერ გადაერქვა.</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="127"/>
         <source>Some files could not be renamed.</source>
-        <translation type="unfinished"></translation>
+        <translation>ზოგიერთი ფაილის სახელის გადარქმევა შეუძლებელია.</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="1143"/>
         <source>Cannot open as Admin.</source>
-        <translation type="unfinished"></translation>
+        <translation>ადმინისტრატორის სახელით გახსნა შეუძლებელია.</translation>
     </message>
 </context>
 </TS>
