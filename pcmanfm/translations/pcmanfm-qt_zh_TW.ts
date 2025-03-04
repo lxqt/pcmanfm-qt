@@ -216,9 +216,9 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
         <source>A short description or generic name, like &quot;Web Browser&quot; or &quot;Home Directory&quot;.
 
 It can be left empty.</source>
-        <translation>簡短的描述，或是像是「網路瀏覽器」及「家目錄」這種一般性的名字。
+        <translation>簡短描述或是通用名稱，像是 &quot;網路瀏覽器&quot; 或 &quot;家目錄&quot;。
 
-可以留空。</translation>
+可以留作空白。</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="77"/>
@@ -503,7 +503,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktop-preferences.ui" line="439"/>
         <source>Transform image based on EXIF data</source>
-        <translation>基於 EXIF 資訊自動調整圖片</translation>
+        <translation>基於 EXIF 資訊來變換圖片</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="446"/>
@@ -568,7 +568,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktop-preferences.ui" line="620"/>
         <source>Visible Shortcuts</source>
-        <translation>可見的快捷方式</translation>
+        <translation>可見的快速捷</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="626"/>
@@ -601,12 +601,12 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../shortcuts.ui" line="14"/>
         <source>Hidden Shortcuts</source>
-        <translation>隱藏的快捷鍵</translation>
+        <translation>隱藏的快速鍵</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="21"/>
         <source>Shortcut</source>
-        <translation>快捷鍵</translation>
+        <translation>快速鍵</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="26"/>
@@ -1138,7 +1138,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="994"/>
         <source>Hidden &amp;Shortcuts</source>
-        <translation>隱藏的快捷鍵 (&amp;S)</translation>
+        <translation>隱藏的快速鍵(&amp;S)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="999"/>
@@ -1405,7 +1405,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="804"/>
         <source>&amp;Find Files</source>
-        <translation>尋找檔案 (&amp;F)</translation>
+        <translation>尋找檔案(&amp;F)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="811"/>
@@ -1525,7 +1525,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../application.cpp" line="220"/>
         <source>Files or directories to open</source>
-        <translation>開啟檔案或目錄</translation>
+        <translation>要開啟的檔案或目錄</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="220"/>
@@ -2065,22 +2065,22 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferences.ui" line="328"/>
         <source>Size of big icons:</source>
-        <translation>大圖示尺寸:</translation>
+        <translation>大型圖示大小：</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="345"/>
         <source>Size of small icons:</source>
-        <translation>小圖示尺寸:</translation>
+        <translation>小型圖示大小：</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="362"/>
         <source>Size of thumbnails:</source>
-        <translation>縮圖尺寸:</translation>
+        <translation>縮圖大小：</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="376"/>
         <source>Size of side pane icons:</source>
-        <translation>側邊欄圖示尺寸:</translation>
+        <translation>側邊面板圖示大小：</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="412"/>
@@ -2463,7 +2463,7 @@ A value of -1 means that there is no limit for the file size (the default).</sou
     <message>
         <location filename="../preferences.ui" line="797"/>
         <source>Chan&amp;ge folder in the tab to home folder</source>
-        <translation>將分頁內容改為家目錄</translation>
+        <translation>將分頁中的資料夾變更作為家資料夾</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="824"/>
