@@ -2125,7 +2125,7 @@ It is the name of the executable file.</source>
 It can be left empty if the terminal is already supported
 or does not have such an option; required otherwise.</source>
         <translation>例如： -e
-如果終端機已有支持，可以留空
+若終端機已有支援，可以留下空白
 或沒有這樣的選項；需要其它的。</translation>
     </message>
     <message>
