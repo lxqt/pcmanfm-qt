@@ -48,7 +48,7 @@ public:
 
     // replacement
     bool getReplace() const {
-        return ui.relaceGroupBox->isChecked();
+        return ui.replaceGroupBox->isChecked();
     }
     QString getFindStr() const {
         return ui.findLineEdit->text();

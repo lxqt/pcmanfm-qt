@@ -33,7 +33,7 @@ BulkRenameDialog::BulkRenameDialog(QWidget* parent, Qt::WindowFlags flags) :
     ui.lineEdit->setFocus();
     connect(ui.buttonBox->button(QDialogButtonBox::Ok), &QAbstractButton::clicked, this, &QDialog::accept);
     connect(ui.buttonBox->button(QDialogButtonBox::Cancel), &QAbstractButton::clicked, this, &QDialog::reject);
-    connect(ui.relaceGroupBox, &QGroupBox::clicked, this, [this](bool checked) {
+    connect(ui.replaceGroupBox, &QGroupBox::clicked, this, [this](bool checked) {
         ui.mainLabel->setEnabled(!checked);
         ui.lineEdit->setEnabled(!checked);
         ui.startLabel->setEnabled(!checked);
@@ -49,7 +49,7 @@ BulkRenameDialog::BulkRenameDialog(QWidget* parent, Qt::WindowFlags flags) :
         ui.spinBox->setEnabled(!checked);
         ui.zeroBox->setEnabled(!checked);
         ui.localeBox->setEnabled(!checked);
-        ui.relaceGroupBox->setChecked(false);
+        ui.replaceGroupBox->setChecked(false);
     });
 
     resize(minimumSize());

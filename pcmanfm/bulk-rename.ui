@@ -90,7 +90,7 @@
     </spacer>
    </item>
    <item row="6" column="0" colspan="3">
-    <widget class="QGroupBox" name="relaceGroupBox">
+    <widget class="QGroupBox" name="replaceGroupBox">
      <property name="title">
       <string>Replacement</string>
      </property>
