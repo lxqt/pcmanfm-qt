@@ -2304,41 +2304,45 @@ Hodnota -1 určuje neobmedzenú veľkosť súboru na vytvorenie náhľadu (predv
     <message>
         <location filename="../preferences.ui" line="833"/>
         <source>Terminal emulator</source>
-        <translation type="unfinished"></translation>
+        <translation>Emulátor terminálu</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="842"/>
         <source>Command:</source>
-        <translation type="unfinished">Príkaz:</translation>
+        <translation>Príkaz:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="849"/>
         <source>Example: qterminal
 It is the name of the executable file.</source>
-        <translation type="unfinished"></translation>
+        <translation>Príklad: qterminal
+Je to názov spustiteľného súboru.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="860"/>
         <source>Execution option:</source>
-        <translation type="unfinished"></translation>
+        <translation>Prepínače:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="867"/>
         <source>Example: -e
 It can be left empty if the terminal is already supported
 or does not have such an option; required otherwise.</source>
-        <translation type="unfinished"></translation>
+        <translation>Príklad: -e
+Ak už je terminál podporovaný alebo nemá takúto možnosť
+môže zostať prázdny, inak je povinný.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="879"/>
         <source>Custom option(s):</source>
-        <translation type="unfinished"></translation>
+        <translation>Vlastné prepínače:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="886"/>
         <source>This is optional, depends on the terminal,
 and can be any group of custom options.</source>
-        <translation type="unfinished"></translation>
+        <translation>Toto je voliteľné, závisí od terminálu,
+a môže to byť akákoľvek skupina vlastných prepínačov.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="964"/>
@@ -2449,7 +2453,8 @@ and can be any group of custom options.</source>
         <location filename="../preferences.ui" line="910"/>
         <source>Example:
 lxsudo dbus-run-session -- %s</source>
-        <translation type="unfinished"></translation>
+        <translation>Príklad:
+lxsudo dbus-run-session -- %s</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="918"/>

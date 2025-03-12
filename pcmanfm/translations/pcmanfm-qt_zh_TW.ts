@@ -2045,7 +2045,7 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferences.ui" line="212"/>
         <source>Launch executable files without prompt</source>
-        <translation>啟動可執行檔時不提示</translation>
+        <translation>啟動可執行檔時不作提示</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="229"/>
@@ -2090,7 +2090,7 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferences.ui" line="429"/>
         <source>Do not show file tooltips</source>
-        <translation>不要顯示檔案的提示</translation>
+        <translation>不要顯示檔案提示</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="436"/>
@@ -2125,7 +2125,7 @@ It is the name of the executable file.</source>
 It can be left empty if the terminal is already supported
 or does not have such an option; required otherwise.</source>
         <translation>例如： -e
-如果終端機已有支持，可以留空
+若終端機已有支援，可以留下空白
 或沒有這樣的選項；需要其它的。</translation>
     </message>
     <message>
