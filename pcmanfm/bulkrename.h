@@ -32,6 +32,7 @@ Q_OBJECT
 public:
     explicit BulkRenameDialog(QWidget* parent = nullptr, Qt::WindowFlags flags = Qt::WindowFlags());
 
+    // renaming
     QString getBaseName() const {
         return ui.lineEdit->text();
     }
@@ -45,6 +46,31 @@ public:
         return ui.localeBox->isChecked();
     }
 
+    // replacement
+    bool getReplace() const {
+        return ui.relaceGroupBox->isChecked();
+    }
+    QString getFindStr() const {
+        return ui.findLineEdit->text();
+    }
+    QString getReplaceStr() const {
+        return ui.replaceLineEdit->text();
+    }
+    Qt::CaseSensitivity getCase() const {
+        return ui.caseBox->isChecked() ? Qt::CaseSensitive : Qt::CaseInsensitive;
+    }
+    bool getRegex() const {
+        return ui.regexBox->isChecked();
+    }
+
+    // case change
+    bool getCaseChange() const {
+        return ui.caseGroupBox->isChecked();
+    }
+    bool getUpperCase() const {
+        return ui.upperCaseButton->isChecked();
+    }
+
 protected:
     virtual void showEvent(QShowEvent* event) override;
 
@@ -56,6 +82,18 @@ class BulkRenamer {
 public:
     BulkRenamer(const Fm::FileInfoList& files, QWidget* parent = nullptr);
     ~BulkRenamer();
+
+private:
+    void rename(const Fm::FileInfoList& files,
+                QString& baseName, const QLocale& locale,
+                int start, bool zeroPadding, bool respectLocale,
+                QWidget* parent);
+    void renameByReplacing(const Fm::FileInfoList& files,
+                           const QString& findStr, const QString& replaceStr,
+                           Qt::CaseSensitivity cs, bool regex,
+                           QWidget* parent);
+    void renameByChangingCase(const Fm::FileInfoList& files, const QLocale& locale,
+                              bool toUpperCase, QWidget* parent);
 };
 
 }

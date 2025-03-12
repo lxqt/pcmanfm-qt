@@ -6,23 +6,8 @@
    <string>Bulk Rename</string>
   </property>
   <layout class="QGridLayout" name="gridLayout">
-   <property name="leftMargin">
-    <number>5</number>
-   </property>
-   <property name="topMargin">
-    <number>5</number>
-   </property>
-   <property name="rightMargin">
-    <number>5</number>
-   </property>
-   <property name="bottomMargin">
-    <number>5</number>
-   </property>
-   <property name="spacing">
-    <number>5</number>
-   </property>
    <item row="0" column="0" colspan="3">
-    <widget class="QLabel" name="label1">
+    <widget class="QLabel" name="mainLabel">
      <property name="text">
       <string>Rename selected files to:</string>
      </property>
@@ -42,7 +27,7 @@
     </widget>
    </item>
    <item row="2" column="0">
-    <widget class="QLabel" name="label2">
+    <widget class="QLabel" name="startLabel">
      <property name="text">
       <string># will be replaced by numbers starting with:</string>
      </property>
@@ -94,7 +79,7 @@
       <enum>Qt::Vertical</enum>
      </property>
      <property name="sizeType">
-      <enum>QSizePolicy::MinimumExpanding</enum>
+      <enum>QSizePolicy::Fixed</enum>
      </property>
      <property name="sizeHint" stdset="0">
       <size>
@@ -105,6 +90,103 @@
     </spacer>
    </item>
    <item row="6" column="0" colspan="3">
+    <widget class="QGroupBox" name="relaceGroupBox">
+     <property name="title">
+      <string>Replacement</string>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="checked">
+      <bool>false</bool>
+     </property>
+     <layout class="QFormLayout" name="formLayout">
+      <item row="0" column="0">
+       <widget class="QLabel" name="findLabel">
+        <property name="text">
+         <string>Find in names:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLineEdit" name="findLineEdit"/>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="replaceLabel">
+        <property name="text">
+         <string>Replace with:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QLineEdit" name="replaceLineEdit"/>
+      </item>
+      <item row="2" column="0" colspan="2">
+       <widget class="QCheckBox" name="caseBox">
+        <property name="text">
+         <string>Case-sensitive</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0" colspan="2">
+       <widget class="QCheckBox" name="regexBox">
+        <property name="text">
+         <string>Regular expression</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="7" column="0" colspan="3">
+    <widget class="QGroupBox" name="caseGroupBox">
+     <property name="title">
+      <string>Change Case</string>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="checked">
+      <bool>false</bool>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QRadioButton" name="upperCaseButton">
+        <property name="text">
+         <string>To upper case</string>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="lowerCaseButton">
+        <property name="text">
+         <string>To lower case</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="8" column="0">
+    <spacer name="verticalSpacer_2">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeType">
+      <enum>QSizePolicy::MinimumExpanding</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>5</width>
+       <height>5</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="9" column="0" colspan="3">
     <widget class="QDialogButtonBox" name="buttonBox">
      <property name="standardButtons">
       <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
