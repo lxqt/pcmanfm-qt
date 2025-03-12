@@ -52,5 +52,5 @@ SidePaneMode=0
 
 [Thumbnail]
 ShowThumbnails=true
-MaxThumbnailFileSize=4096
+MaxThumbnailFileSize=40960
 ThumbnailLocalFilesOnly=true
