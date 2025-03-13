@@ -118,27 +118,67 @@ Copyright (C) 2009 - 2014 洪任谕 (Hong Jen Yee)
         <translation>批量重命名</translation>
     </message>
     <message>
-        <location filename="../bulk-rename.ui" line="47"/>
+        <location filename="../bulk-rename.ui" line="32"/>
         <source># will be replaced by numbers starting with:</source>
         <translation># 会被替换为数字开始自:</translation>
     </message>
     <message>
-        <location filename="../bulk-rename.ui" line="80"/>
+        <location filename="../bulk-rename.ui" line="65"/>
         <source>Pad numbers with zero if possible</source>
         <translation>需要时补零</translation>
     </message>
     <message>
-        <location filename="../bulk-rename.ui" line="87"/>
+        <location filename="../bulk-rename.ui" line="72"/>
         <source>Use localized numbers</source>
         <translation>使用本地风格数字</translation>
     </message>
     <message>
-        <location filename="../bulk-rename.ui" line="27"/>
+        <location filename="../bulk-rename.ui" line="95"/>
+        <source>Replacement</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../bulk-rename.ui" line="107"/>
+        <source>Find in names:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../bulk-rename.ui" line="117"/>
+        <source>Replace with:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../bulk-rename.ui" line="127"/>
+        <source>Case-sensitive</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../bulk-rename.ui" line="134"/>
+        <source>Regular expression</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../bulk-rename.ui" line="144"/>
+        <source>Change Case</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../bulk-rename.ui" line="156"/>
+        <source>To upper case</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../bulk-rename.ui" line="166"/>
+        <source>To lower case</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../bulk-rename.ui" line="12"/>
         <source>Rename selected files to:</source>
         <translation>重命名已选定的文件至:</translation>
     </message>
     <message>
-        <location filename="../bulk-rename.ui" line="40"/>
+        <location filename="../bulk-rename.ui" line="25"/>
         <source>Name#</source>
         <translation>名称#</translation>
     </message>
@@ -1444,99 +1484,99 @@ are left clicked, even when it is not the default file manager.</source>
 <context>
     <name>PCManFM::Application</name>
     <message>
-        <location filename="../application.cpp" line="187"/>
+        <location filename="../application.cpp" line="189"/>
         <source>Name of configuration profile</source>
         <translation>配置文件名称</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="187"/>
+        <location filename="../application.cpp" line="189"/>
         <source>PROFILE</source>
         <translation>配置文件</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="190"/>
+        <location filename="../application.cpp" line="192"/>
         <source>Run PCManFM-Qt as a daemon</source>
         <translation>以 Daemon 模式运行 PCManFM-Qt</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="193"/>
+        <location filename="../application.cpp" line="195"/>
         <source>Quit PCManFM-Qt</source>
         <translation>退出 PCManFM-Qt</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="196"/>
+        <location filename="../application.cpp" line="198"/>
         <source>Launch desktop manager</source>
         <translation>运行桌面管理器</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="199"/>
+        <location filename="../application.cpp" line="201"/>
         <source>Turn off desktop manager if it&apos;s running</source>
         <translation>如桌面管理器正在运行，请关闭</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="202"/>
+        <location filename="../application.cpp" line="204"/>
         <source>Open desktop preference dialog on the page with the specified name</source>
         <translation>在此页面上以指定名称打开桌面偏好设定对话框</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="202"/>
-        <location filename="../application.cpp" line="217"/>
+        <location filename="../application.cpp" line="204"/>
+        <location filename="../application.cpp" line="219"/>
         <source>NAME</source>
         <translation>名称</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="205"/>
+        <location filename="../application.cpp" line="207"/>
         <source>Open new window</source>
         <translation>打开新窗口</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="208"/>
+        <location filename="../application.cpp" line="210"/>
         <source>Open Find Files utility</source>
         <translation>打开文件搜索实用程序</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="211"/>
+        <location filename="../application.cpp" line="213"/>
         <source>Set desktop wallpaper from image FILE</source>
         <translation>从图像文件设置桌面墙纸</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="211"/>
+        <location filename="../application.cpp" line="213"/>
         <source>FILE</source>
         <translation>文件</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="214"/>
+        <location filename="../application.cpp" line="216"/>
         <source>MODE</source>
         <translation>模式</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="214"/>
+        <location filename="../application.cpp" line="216"/>
         <source>Set mode of desktop wallpaper. MODE=(%1)</source>
         <translation>设置桌面墙纸的布局模式 模式=(%1)</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="217"/>
+        <location filename="../application.cpp" line="219"/>
         <source>Open Preferences dialog on the page with the specified name</source>
         <translation>在此页面上以指定名称打开偏好设定对话框</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="220"/>
+        <location filename="../application.cpp" line="222"/>
         <source>Files or directories to open</source>
         <translation>要打开的文件或目录</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="220"/>
+        <location filename="../application.cpp" line="222"/>
         <source>[FILE1, FILE2,...]</source>
         <translation>[文件1, 文件2,...]</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="658"/>
-        <location filename="../application.cpp" line="663"/>
+        <location filename="../application.cpp" line="660"/>
+        <location filename="../application.cpp" line="665"/>
         <source>Error</source>
         <translation>错误</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="663"/>
+        <location filename="../application.cpp" line="665"/>
         <source>Terminal emulator is not set.</source>
         <translation>终端模拟器未设置。</translation>
     </message>
@@ -1633,47 +1673,47 @@ are left clicked, even when it is not the default file manager.</source>
 <context>
     <name>PCManFM::DesktopPreferencesDialog</name>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="52"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="55"/>
         <source>Fill with background color only</source>
         <translation>仅以背景色填充</translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="53"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="56"/>
         <source>Stretch to fill the entire screen</source>
         <translation>拉伸图像以填充整个屏幕</translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="54"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="57"/>
         <source>Stretch to fit the screen</source>
         <translation>拉伸图像以适合屏幕</translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="55"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="58"/>
         <source>Center on the screen</source>
         <translation>在屏幕上居中</translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="56"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="59"/>
         <source>Tile the image to fill the entire screen</source>
         <translation>平铺图像以填充整个屏幕</translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="57"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="60"/>
         <source>Zoom the image to fill the entire screen</source>
         <translation>缩放图像以填充整个屏幕</translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="266"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="272"/>
         <source>Select Wallpaper</source>
         <translation>选择壁纸</translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="270"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="276"/>
         <source>Image Files</source>
         <translation>图像文件</translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="312"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="318"/>
         <source>Select Wallpaper Folder</source>
         <translation>选择壁纸文件夹</translation>
     </message>
@@ -1681,60 +1721,60 @@ are left clicked, even when it is not the default file manager.</source>
 <context>
     <name>PCManFM::DesktopWindow</name>
     <message>
-        <location filename="../desktopwindow.cpp" line="328"/>
+        <location filename="../desktopwindow.cpp" line="333"/>
         <source>Trash (One item)</source>
         <translation>回收站( 1 个项目)</translation>
     </message>
     <message numerus="yes">
-        <location filename="../desktopwindow.cpp" line="331"/>
+        <location filename="../desktopwindow.cpp" line="336"/>
         <source>Trash (%Ln items)</source>
         <translation>
             <numerusform>回收站( %Ln 个项目)</numerusform>
         </translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="335"/>
+        <location filename="../desktopwindow.cpp" line="340"/>
         <source>Trash (Empty)</source>
         <translation>回收站(空)</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="370"/>
+        <location filename="../desktopwindow.cpp" line="375"/>
         <source>Computer</source>
         <translation>计算机</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="384"/>
+        <location filename="../desktopwindow.cpp" line="389"/>
         <source>Network</source>
         <translation>网络</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1047"/>
+        <location filename="../desktopwindow.cpp" line="1052"/>
         <source>Open</source>
         <translation>打开</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1053"/>
-        <location filename="../desktopwindow.cpp" line="1093"/>
+        <location filename="../desktopwindow.cpp" line="1058"/>
+        <location filename="../desktopwindow.cpp" line="1098"/>
         <source>Stic&amp;k to Current Position</source>
         <translation>固定至当前位置(&amp;K)</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1061"/>
+        <location filename="../desktopwindow.cpp" line="1066"/>
         <source>Empty Trash</source>
         <translation>清空回收站</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1127"/>
+        <location filename="../desktopwindow.cpp" line="1132"/>
         <source>Hide Desktop Items</source>
         <translation>隐藏桌面项目</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1133"/>
+        <location filename="../desktopwindow.cpp" line="1138"/>
         <source>Create Launcher</source>
         <translation>创建启动器</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1136"/>
+        <location filename="../desktopwindow.cpp" line="1141"/>
         <source>Desktop Preferences</source>
         <translation>桌面偏好设置</translation>
     </message>
@@ -1758,60 +1798,60 @@ are left clicked, even when it is not the default file manager.</source>
 <context>
     <name>PCManFM::MainWindow</name>
     <message>
-        <location filename="../mainwindow.cpp" line="143"/>
+        <location filename="../mainwindow.cpp" line="142"/>
         <source>Root Instance</source>
         <translation>您正在使用 Root 用户实例</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="786"/>
+        <location filename="../mainwindow.cpp" line="776"/>
         <source>Hide menu bar</source>
         <translation>隐藏菜单栏</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="787"/>
+        <location filename="../mainwindow.cpp" line="777"/>
         <source>This will hide the menu bar completely, use Ctrl+M to show it again.</source>
         <translation>这将完全隐藏菜单栏，请使用 Ctrl+M 以恢复显示。</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1234"/>
+        <location filename="../mainwindow.cpp" line="1224"/>
         <source>Version: %1</source>
         <translation>版本: %1</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="176"/>
-        <location filename="../mainwindow.cpp" line="2203"/>
+        <location filename="../mainwindow.cpp" line="175"/>
+        <location filename="../mainwindow.cpp" line="2193"/>
         <source>&amp;Move to Trash</source>
         <translation>移至回收站(&amp;M)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="176"/>
-        <location filename="../mainwindow.cpp" line="2203"/>
+        <location filename="../mainwindow.cpp" line="175"/>
+        <location filename="../mainwindow.cpp" line="2193"/>
         <source>&amp;Delete</source>
         <translation>删除(&amp;D)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="2039"/>
+        <location filename="../mainwindow.cpp" line="2029"/>
         <source>Customized View Settings</source>
         <translation>自定义的视图设置</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="2310"/>
-        <location filename="../mainwindow.cpp" line="2318"/>
+        <location filename="../mainwindow.cpp" line="2300"/>
+        <location filename="../mainwindow.cpp" line="2308"/>
         <source>Error</source>
         <translation>错误</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="2318"/>
+        <location filename="../mainwindow.cpp" line="2308"/>
         <source>Switch user command is not set.</source>
         <translation>切换用户命令尚未设置。</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="2409"/>
+        <location filename="../mainwindow.cpp" line="2399"/>
         <source>Cleaning Folder Settings</source>
         <translation>清除文件夹设置</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="2410"/>
+        <location filename="../mainwindow.cpp" line="2400"/>
         <source>Do you want to remove settings of nonexistent folders?
 They might be useful if those folders are created again.</source>
         <translation>是否要删除不存在的文件夹的设置? 如果再次创建这些文件夹，它们可能会很有用。</translation>
@@ -1820,32 +1860,32 @@ They might be useful if those folders are created again.</source>
 <context>
     <name>PCManFM::PreferencesDialog</name>
     <message>
-        <location filename="../preferencesdialog.cpp" line="212"/>
+        <location filename="../preferencesdialog.cpp" line="215"/>
         <source>Icon View</source>
         <translation>图标视图</translation>
     </message>
     <message>
-        <location filename="../preferencesdialog.cpp" line="213"/>
+        <location filename="../preferencesdialog.cpp" line="216"/>
         <source>Compact View</source>
         <translation>列表视图</translation>
     </message>
     <message>
-        <location filename="../preferencesdialog.cpp" line="214"/>
+        <location filename="../preferencesdialog.cpp" line="217"/>
         <source>Thumbnail View</source>
         <translation>缩略图视图</translation>
     </message>
     <message>
-        <location filename="../preferencesdialog.cpp" line="215"/>
+        <location filename="../preferencesdialog.cpp" line="218"/>
         <source>Detailed List View</source>
         <translation>详细信息视图</translation>
     </message>
     <message>
-        <location filename="../preferencesdialog.cpp" line="308"/>
+        <location filename="../preferencesdialog.cpp" line="311"/>
         <source>Remove if added by user</source>
         <translation>如果由用户添加，则删除</translation>
     </message>
     <message>
-        <location filename="../preferencesdialog.cpp" line="332"/>
+        <location filename="../preferencesdialog.cpp" line="335"/>
         <source>Open user-defined list</source>
         <translation>打开用户定义列表</translation>
     </message>
@@ -1853,68 +1893,68 @@ They might be useful if those folders are created again.</source>
 <context>
     <name>PCManFM::TabPage</name>
     <message>
-        <location filename="../tabpage.cpp" line="446"/>
+        <location filename="../tabpage.cpp" line="452"/>
         <source>Search Results</source>
         <translation>搜索结果</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="449"/>
+        <location filename="../tabpage.cpp" line="455"/>
         <source>Applications</source>
         <translation>应用程序</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="453"/>
+        <location filename="../tabpage.cpp" line="459"/>
         <source>Computer</source>
         <translation>计算机</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="456"/>
+        <location filename="../tabpage.cpp" line="462"/>
         <source>Network</source>
         <translation>网络</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="459"/>
+        <location filename="../tabpage.cpp" line="465"/>
         <source>Trash</source>
         <translation>回收站</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="465"/>
+        <location filename="../tabpage.cpp" line="471"/>
         <source>Desktop</source>
         <translation>桌面</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="556"/>
+        <location filename="../tabpage.cpp" line="562"/>
         <source>Error</source>
         <translation>错误</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="565"/>
+        <location filename="../tabpage.cpp" line="571"/>
         <source>Free space: %1 (Total: %2)</source>
         <translation>可用空间: %1 (总容量: %2)</translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="582"/>
+        <location filename="../tabpage.cpp" line="588"/>
         <source>%n item(s)</source>
         <translation>
             <numerusform>%n 个项目</numerusform>
         </translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="584"/>
+        <location filename="../tabpage.cpp" line="590"/>
         <source> (%n hidden)</source>
         <translation>
             <numerusform> (%n 个隐藏)</numerusform>
         </translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="589"/>
-        <location filename="../tabpage.cpp" line="790"/>
-        <location filename="../tabpage.cpp" line="804"/>
+        <location filename="../tabpage.cpp" line="595"/>
+        <location filename="../tabpage.cpp" line="796"/>
+        <location filename="../tabpage.cpp" line="810"/>
         <source>Link to</source>
         <translation>链接至</translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="816"/>
+        <location filename="../tabpage.cpp" line="822"/>
         <source>%n item(s) selected</source>
         <translation>
             <numerusform>已选中 %n 个项目</numerusform>
@@ -2470,44 +2510,72 @@ lxsudo dbus-run-session -- %s</source>
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../bulkrename.cpp" line="89"/>
+        <location filename="../bulkrename.cpp" line="142"/>
+        <location filename="../bulkrename.cpp" line="202"/>
+        <location filename="../bulkrename.cpp" line="241"/>
         <source>Renaming files...</source>
         <translation>重命名文件...</translation>
     </message>
     <message>
-        <location filename="../bulkrename.cpp" line="89"/>
+        <location filename="../bulkrename.cpp" line="142"/>
+        <location filename="../bulkrename.cpp" line="202"/>
+        <location filename="../bulkrename.cpp" line="241"/>
         <source>Abort</source>
         <translation>忽略</translation>
     </message>
     <message>
-        <location filename="../bulkrename.cpp" line="98"/>
+        <location filename="../bulkrename.cpp" line="151"/>
+        <location filename="../bulkrename.cpp" line="209"/>
+        <location filename="../bulkrename.cpp" line="248"/>
         <source>Warning</source>
         <translation>警告</translation>
     </message>
     <message>
-        <location filename="../bulkrename.cpp" line="98"/>
+        <location filename="../bulkrename.cpp" line="151"/>
+        <location filename="../bulkrename.cpp" line="209"/>
+        <location filename="../bulkrename.cpp" line="248"/>
         <source>Renaming is aborted.</source>
         <translation>重命名已取消。</translation>
     </message>
     <message>
-        <location filename="../bulkrename.cpp" line="124"/>
-        <location filename="../bulkrename.cpp" line="127"/>
-        <location filename="../tabpage.cpp" line="1143"/>
+        <location filename="../bulkrename.cpp" line="177"/>
+        <location filename="../bulkrename.cpp" line="180"/>
+        <location filename="../bulkrename.cpp" line="189"/>
+        <location filename="../bulkrename.cpp" line="198"/>
+        <location filename="../bulkrename.cpp" line="232"/>
+        <location filename="../bulkrename.cpp" line="235"/>
+        <location filename="../bulkrename.cpp" line="271"/>
+        <location filename="../bulkrename.cpp" line="274"/>
+        <location filename="../tabpage.cpp" line="1149"/>
         <source>Error</source>
         <translation>错误</translation>
     </message>
     <message>
-        <location filename="../bulkrename.cpp" line="124"/>
+        <location filename="../bulkrename.cpp" line="177"/>
+        <location filename="../bulkrename.cpp" line="232"/>
+        <location filename="../bulkrename.cpp" line="271"/>
         <source>No file could be renamed.</source>
         <translation>没有文件可以被重命名。</translation>
     </message>
     <message>
-        <location filename="../bulkrename.cpp" line="127"/>
+        <location filename="../bulkrename.cpp" line="180"/>
+        <location filename="../bulkrename.cpp" line="235"/>
+        <location filename="../bulkrename.cpp" line="274"/>
         <source>Some files could not be renamed.</source>
         <translation>某些文件不能被重命名。</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="1143"/>
+        <location filename="../bulkrename.cpp" line="189"/>
+        <source>Nothing to find.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../bulkrename.cpp" line="198"/>
+        <source>Invalid regular expression.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../tabpage.cpp" line="1149"/>
         <source>Cannot open as Admin.</source>
         <translation>无法以管理员身份打开。</translation>
     </message>

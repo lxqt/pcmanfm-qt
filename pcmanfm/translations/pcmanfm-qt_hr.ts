@@ -121,27 +121,67 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.</translation
         <translation>Grupno preimenovanje</translation>
     </message>
     <message>
-        <location filename="../bulk-rename.ui" line="47"/>
+        <location filename="../bulk-rename.ui" line="32"/>
         <source># will be replaced by numbers starting with:</source>
         <translation># će se zamijeniti brojevima, počevši s:</translation>
     </message>
     <message>
-        <location filename="../bulk-rename.ui" line="80"/>
+        <location filename="../bulk-rename.ui" line="65"/>
         <source>Pad numbers with zero if possible</source>
         <translation>Ako je moguće, dopuni brojeve nulom</translation>
     </message>
     <message>
-        <location filename="../bulk-rename.ui" line="87"/>
+        <location filename="../bulk-rename.ui" line="72"/>
         <source>Use localized numbers</source>
         <translation>Koristi lokalizirane brojeve</translation>
     </message>
     <message>
-        <location filename="../bulk-rename.ui" line="27"/>
+        <location filename="../bulk-rename.ui" line="95"/>
+        <source>Replacement</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../bulk-rename.ui" line="107"/>
+        <source>Find in names:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../bulk-rename.ui" line="117"/>
+        <source>Replace with:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../bulk-rename.ui" line="127"/>
+        <source>Case-sensitive</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../bulk-rename.ui" line="134"/>
+        <source>Regular expression</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../bulk-rename.ui" line="144"/>
+        <source>Change Case</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../bulk-rename.ui" line="156"/>
+        <source>To upper case</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../bulk-rename.ui" line="166"/>
+        <source>To lower case</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../bulk-rename.ui" line="12"/>
         <source>Rename selected files to:</source>
         <translation>Preimenuj odabrane datoteke u:</translation>
     </message>
     <message>
-        <location filename="../bulk-rename.ui" line="40"/>
+        <location filename="../bulk-rename.ui" line="25"/>
         <source>Name#</source>
         <translation>Ime#</translation>
     </message>
@@ -1448,99 +1488,99 @@ upravljač datoteka.</translation>
 <context>
     <name>PCManFM::Application</name>
     <message>
-        <location filename="../application.cpp" line="187"/>
+        <location filename="../application.cpp" line="189"/>
         <source>Name of configuration profile</source>
         <translation>Ime profila konfiguracije</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="187"/>
+        <location filename="../application.cpp" line="189"/>
         <source>PROFILE</source>
         <translation>PROFIL</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="190"/>
+        <location filename="../application.cpp" line="192"/>
         <source>Run PCManFM-Qt as a daemon</source>
         <translation>Pokreni PCManFM-Qt kao demona</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="193"/>
+        <location filename="../application.cpp" line="195"/>
         <source>Quit PCManFM-Qt</source>
         <translation>Zatvori PCManFM-Qt</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="196"/>
+        <location filename="../application.cpp" line="198"/>
         <source>Launch desktop manager</source>
         <translation>Pokreni upravljač radne površine</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="199"/>
+        <location filename="../application.cpp" line="201"/>
         <source>Turn off desktop manager if it&apos;s running</source>
         <translation>Isključi upravljač radne površine, ako je pokrenut</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="202"/>
+        <location filename="../application.cpp" line="204"/>
         <source>Open desktop preference dialog on the page with the specified name</source>
         <translation>Otvori dijalog postavki radne površine na stranici s određenim imenom</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="202"/>
-        <location filename="../application.cpp" line="217"/>
+        <location filename="../application.cpp" line="204"/>
+        <location filename="../application.cpp" line="219"/>
         <source>NAME</source>
         <translation>IME</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="205"/>
+        <location filename="../application.cpp" line="207"/>
         <source>Open new window</source>
         <translation>Otvori novi prozor</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="208"/>
+        <location filename="../application.cpp" line="210"/>
         <source>Open Find Files utility</source>
         <translation>Otvori pomoćni program Pronađi datoteke</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="211"/>
+        <location filename="../application.cpp" line="213"/>
         <source>Set desktop wallpaper from image FILE</source>
         <translation>Postavi sliku pozadine radne površine iz slikovne DATOTEKE</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="211"/>
+        <location filename="../application.cpp" line="213"/>
         <source>FILE</source>
         <translation>DATOTEKA</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="214"/>
+        <location filename="../application.cpp" line="216"/>
         <source>MODE</source>
         <translation>MODUS</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="214"/>
+        <location filename="../application.cpp" line="216"/>
         <source>Set mode of desktop wallpaper. MODE=(%1)</source>
         <translation>Postavi modus slike pozadine radne površine. MODUS=(%1)</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="217"/>
+        <location filename="../application.cpp" line="219"/>
         <source>Open Preferences dialog on the page with the specified name</source>
         <translation>Otvori dijalog postavki na stranici s određenim imenom</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="220"/>
+        <location filename="../application.cpp" line="222"/>
         <source>Files or directories to open</source>
         <translation>Datoteke ili mape koje želiš otvoriti</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="220"/>
+        <location filename="../application.cpp" line="222"/>
         <source>[FILE1, FILE2,...]</source>
         <translation>[DATOTEKA1, DATOTEKA2, …]</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="658"/>
-        <location filename="../application.cpp" line="663"/>
+        <location filename="../application.cpp" line="660"/>
+        <location filename="../application.cpp" line="665"/>
         <source>Error</source>
         <translation>Greška</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="663"/>
+        <location filename="../application.cpp" line="665"/>
         <source>Terminal emulator is not set.</source>
         <translation>Emulator terminala nije postavljen.</translation>
     </message>
@@ -1637,47 +1677,47 @@ upravljač datoteka.</translation>
 <context>
     <name>PCManFM::DesktopPreferencesDialog</name>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="52"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="55"/>
         <source>Fill with background color only</source>
         <translation>Ispuni samo s bojom pozadine</translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="53"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="56"/>
         <source>Stretch to fill the entire screen</source>
         <translation>Razvuci</translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="54"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="57"/>
         <source>Stretch to fit the screen</source>
         <translation>Prilagodi</translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="55"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="58"/>
         <source>Center on the screen</source>
         <translation>Centriraj</translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="56"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="59"/>
         <source>Tile the image to fill the entire screen</source>
         <translation>Poploči</translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="57"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="60"/>
         <source>Zoom the image to fill the entire screen</source>
         <translation>Ispuni</translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="266"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="272"/>
         <source>Select Wallpaper</source>
         <translation>Odaberi sliku pozadine</translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="270"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="276"/>
         <source>Image Files</source>
         <translation>Slikovne datoteke</translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="312"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="318"/>
         <source>Select Wallpaper Folder</source>
         <translation>Odaberi mapu sa slikama pozadine</translation>
     </message>
@@ -1685,12 +1725,12 @@ upravljač datoteka.</translation>
 <context>
     <name>PCManFM::DesktopWindow</name>
     <message>
-        <location filename="../desktopwindow.cpp" line="328"/>
+        <location filename="../desktopwindow.cpp" line="333"/>
         <source>Trash (One item)</source>
         <translation>Smeće (jedan element)</translation>
     </message>
     <message numerus="yes">
-        <location filename="../desktopwindow.cpp" line="331"/>
+        <location filename="../desktopwindow.cpp" line="336"/>
         <source>Trash (%Ln items)</source>
         <translation>
             <numerusform>Smeće (%Ln element)</numerusform>
@@ -1699,48 +1739,48 @@ upravljač datoteka.</translation>
         </translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="335"/>
+        <location filename="../desktopwindow.cpp" line="340"/>
         <source>Trash (Empty)</source>
         <translation>Smeće (prazno)</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="370"/>
+        <location filename="../desktopwindow.cpp" line="375"/>
         <source>Computer</source>
         <translation>Računalo</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="384"/>
+        <location filename="../desktopwindow.cpp" line="389"/>
         <source>Network</source>
         <translation>Mreža</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1047"/>
+        <location filename="../desktopwindow.cpp" line="1052"/>
         <source>Open</source>
         <translation>Otvori</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1053"/>
-        <location filename="../desktopwindow.cpp" line="1093"/>
+        <location filename="../desktopwindow.cpp" line="1058"/>
+        <location filename="../desktopwindow.cpp" line="1098"/>
         <source>Stic&amp;k to Current Position</source>
         <translation>Fi&amp;ksiraj na trenutačnom položaju</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1061"/>
+        <location filename="../desktopwindow.cpp" line="1066"/>
         <source>Empty Trash</source>
         <translation>Isprazni smeće</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1127"/>
+        <location filename="../desktopwindow.cpp" line="1132"/>
         <source>Hide Desktop Items</source>
         <translation>Sakrij elemente radne površine</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1133"/>
+        <location filename="../desktopwindow.cpp" line="1138"/>
         <source>Create Launcher</source>
         <translation>Stvori pokretača</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1136"/>
+        <location filename="../desktopwindow.cpp" line="1141"/>
         <source>Desktop Preferences</source>
         <translation>Postavke radne površine</translation>
     </message>
@@ -1764,60 +1804,60 @@ upravljač datoteka.</translation>
 <context>
     <name>PCManFM::MainWindow</name>
     <message>
-        <location filename="../mainwindow.cpp" line="143"/>
+        <location filename="../mainwindow.cpp" line="142"/>
         <source>Root Instance</source>
         <translation>Administratorska instanca</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="786"/>
+        <location filename="../mainwindow.cpp" line="776"/>
         <source>Hide menu bar</source>
         <translation>Sakrij traku izbornika</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="787"/>
+        <location filename="../mainwindow.cpp" line="777"/>
         <source>This will hide the menu bar completely, use Ctrl+M to show it again.</source>
         <translation>Ovo će kompletno sakriti traku izbornika. Za ponovno prikazivanje, koristi Ctrl+M.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1234"/>
+        <location filename="../mainwindow.cpp" line="1224"/>
         <source>Version: %1</source>
         <translation>Verzija: %1</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="176"/>
-        <location filename="../mainwindow.cpp" line="2203"/>
+        <location filename="../mainwindow.cpp" line="175"/>
+        <location filename="../mainwindow.cpp" line="2193"/>
         <source>&amp;Move to Trash</source>
         <translation>Pre&amp;mjesti u smeće</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="176"/>
-        <location filename="../mainwindow.cpp" line="2203"/>
+        <location filename="../mainwindow.cpp" line="175"/>
+        <location filename="../mainwindow.cpp" line="2193"/>
         <source>&amp;Delete</source>
         <translation>&amp;Ukloni</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="2039"/>
+        <location filename="../mainwindow.cpp" line="2029"/>
         <source>Customized View Settings</source>
         <translation>Postavke prilagođenog prikaza</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="2310"/>
-        <location filename="../mainwindow.cpp" line="2318"/>
+        <location filename="../mainwindow.cpp" line="2300"/>
+        <location filename="../mainwindow.cpp" line="2308"/>
         <source>Error</source>
         <translation>Greška</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="2318"/>
+        <location filename="../mainwindow.cpp" line="2308"/>
         <source>Switch user command is not set.</source>
         <translation>Naredba za mijenjanje korisnika nije postavljena.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="2409"/>
+        <location filename="../mainwindow.cpp" line="2399"/>
         <source>Cleaning Folder Settings</source>
         <translation>Postavke čišćenja mape</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="2410"/>
+        <location filename="../mainwindow.cpp" line="2400"/>
         <source>Do you want to remove settings of nonexistent folders?
 They might be useful if those folders are created again.</source>
         <translation>Želiš li ukloniti postavke nepostojećih mapa?
@@ -1827,32 +1867,32 @@ Mogle bi biti korisne, ako se te mape ponovo kreiraju.</translation>
 <context>
     <name>PCManFM::PreferencesDialog</name>
     <message>
-        <location filename="../preferencesdialog.cpp" line="212"/>
+        <location filename="../preferencesdialog.cpp" line="215"/>
         <source>Icon View</source>
         <translation>Prikaz ikona</translation>
     </message>
     <message>
-        <location filename="../preferencesdialog.cpp" line="213"/>
+        <location filename="../preferencesdialog.cpp" line="216"/>
         <source>Compact View</source>
         <translation>Kompaktan prikaz</translation>
     </message>
     <message>
-        <location filename="../preferencesdialog.cpp" line="214"/>
+        <location filename="../preferencesdialog.cpp" line="217"/>
         <source>Thumbnail View</source>
         <translation>Prikaz sličica</translation>
     </message>
     <message>
-        <location filename="../preferencesdialog.cpp" line="215"/>
+        <location filename="../preferencesdialog.cpp" line="218"/>
         <source>Detailed List View</source>
         <translation>Detaljan popis</translation>
     </message>
     <message>
-        <location filename="../preferencesdialog.cpp" line="308"/>
+        <location filename="../preferencesdialog.cpp" line="311"/>
         <source>Remove if added by user</source>
         <translation>Ukloni ako je dodano od korisnika</translation>
     </message>
     <message>
-        <location filename="../preferencesdialog.cpp" line="332"/>
+        <location filename="../preferencesdialog.cpp" line="335"/>
         <source>Open user-defined list</source>
         <translation>Otvori korisnički određen popis</translation>
     </message>
@@ -1860,47 +1900,47 @@ Mogle bi biti korisne, ako se te mape ponovo kreiraju.</translation>
 <context>
     <name>PCManFM::TabPage</name>
     <message>
-        <location filename="../tabpage.cpp" line="446"/>
+        <location filename="../tabpage.cpp" line="452"/>
         <source>Search Results</source>
         <translation>Rezultati pretrage</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="449"/>
+        <location filename="../tabpage.cpp" line="455"/>
         <source>Applications</source>
         <translation>Programi</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="453"/>
+        <location filename="../tabpage.cpp" line="459"/>
         <source>Computer</source>
         <translation>Računalo</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="456"/>
+        <location filename="../tabpage.cpp" line="462"/>
         <source>Network</source>
         <translation>Mreža</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="459"/>
+        <location filename="../tabpage.cpp" line="465"/>
         <source>Trash</source>
         <translation>Smeće</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="465"/>
+        <location filename="../tabpage.cpp" line="471"/>
         <source>Desktop</source>
         <translation>Radna površina</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="556"/>
+        <location filename="../tabpage.cpp" line="562"/>
         <source>Error</source>
         <translation>Greška</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="565"/>
+        <location filename="../tabpage.cpp" line="571"/>
         <source>Free space: %1 (Total: %2)</source>
         <translation>Slobodno: %1 (ukupno: %2)</translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="582"/>
+        <location filename="../tabpage.cpp" line="588"/>
         <source>%n item(s)</source>
         <translation>
             <numerusform>%n element</numerusform>
@@ -1909,7 +1949,7 @@ Mogle bi biti korisne, ako se te mape ponovo kreiraju.</translation>
         </translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="584"/>
+        <location filename="../tabpage.cpp" line="590"/>
         <source> (%n hidden)</source>
         <translation>
             <numerusform> (%n skriven)</numerusform>
@@ -1918,14 +1958,14 @@ Mogle bi biti korisne, ako se te mape ponovo kreiraju.</translation>
         </translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="589"/>
-        <location filename="../tabpage.cpp" line="790"/>
-        <location filename="../tabpage.cpp" line="804"/>
+        <location filename="../tabpage.cpp" line="595"/>
+        <location filename="../tabpage.cpp" line="796"/>
+        <location filename="../tabpage.cpp" line="810"/>
         <source>Link to</source>
         <translation>Poveži s</translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="816"/>
+        <location filename="../tabpage.cpp" line="822"/>
         <source>%n item(s) selected</source>
         <translation>
             <numerusform>%n element odabran</numerusform>
@@ -2486,44 +2526,72 @@ lxsudo dbus-run-session -- %s</source>
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../bulkrename.cpp" line="89"/>
+        <location filename="../bulkrename.cpp" line="142"/>
+        <location filename="../bulkrename.cpp" line="202"/>
+        <location filename="../bulkrename.cpp" line="241"/>
         <source>Renaming files...</source>
         <translation>Preimenovanje datoteka …</translation>
     </message>
     <message>
-        <location filename="../bulkrename.cpp" line="89"/>
+        <location filename="../bulkrename.cpp" line="142"/>
+        <location filename="../bulkrename.cpp" line="202"/>
+        <location filename="../bulkrename.cpp" line="241"/>
         <source>Abort</source>
         <translation>Prekini</translation>
     </message>
     <message>
-        <location filename="../bulkrename.cpp" line="98"/>
+        <location filename="../bulkrename.cpp" line="151"/>
+        <location filename="../bulkrename.cpp" line="209"/>
+        <location filename="../bulkrename.cpp" line="248"/>
         <source>Warning</source>
         <translation>Upozorenje</translation>
     </message>
     <message>
-        <location filename="../bulkrename.cpp" line="98"/>
+        <location filename="../bulkrename.cpp" line="151"/>
+        <location filename="../bulkrename.cpp" line="209"/>
+        <location filename="../bulkrename.cpp" line="248"/>
         <source>Renaming is aborted.</source>
         <translation>Preimenovanje je prekinuto.</translation>
     </message>
     <message>
-        <location filename="../bulkrename.cpp" line="124"/>
-        <location filename="../bulkrename.cpp" line="127"/>
-        <location filename="../tabpage.cpp" line="1143"/>
+        <location filename="../bulkrename.cpp" line="177"/>
+        <location filename="../bulkrename.cpp" line="180"/>
+        <location filename="../bulkrename.cpp" line="189"/>
+        <location filename="../bulkrename.cpp" line="198"/>
+        <location filename="../bulkrename.cpp" line="232"/>
+        <location filename="../bulkrename.cpp" line="235"/>
+        <location filename="../bulkrename.cpp" line="271"/>
+        <location filename="../bulkrename.cpp" line="274"/>
+        <location filename="../tabpage.cpp" line="1149"/>
         <source>Error</source>
         <translation>Greška</translation>
     </message>
     <message>
-        <location filename="../bulkrename.cpp" line="124"/>
+        <location filename="../bulkrename.cpp" line="177"/>
+        <location filename="../bulkrename.cpp" line="232"/>
+        <location filename="../bulkrename.cpp" line="271"/>
         <source>No file could be renamed.</source>
         <translation>Nijednu datoteku nije bilo moguće preimenovati.</translation>
     </message>
     <message>
-        <location filename="../bulkrename.cpp" line="127"/>
+        <location filename="../bulkrename.cpp" line="180"/>
+        <location filename="../bulkrename.cpp" line="235"/>
+        <location filename="../bulkrename.cpp" line="274"/>
         <source>Some files could not be renamed.</source>
         <translation>Neke datoteke nije bilo moguće preimenovati.</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="1143"/>
+        <location filename="../bulkrename.cpp" line="189"/>
+        <source>Nothing to find.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../bulkrename.cpp" line="198"/>
+        <source>Invalid regular expression.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../tabpage.cpp" line="1149"/>
         <source>Cannot open as Admin.</source>
         <translation>Ne može se otvoriti kao administrator.</translation>
     </message>
