@@ -71,6 +71,12 @@ public:
         return ui.upperCaseButton->isChecked();
     }
 
+    void setState(const QString& baseName,
+                  const QString& findStr, const QString& replaceStr,
+                  bool replacement, bool caseChange,
+                  bool zeroPadding, bool respectLocale, bool regex, bool toUpperCase,
+                  int start, Qt::CaseSensitivity cs);
+
 protected:
     virtual void showEvent(QShowEvent* event) override;
 
@@ -84,15 +90,15 @@ public:
     ~BulkRenamer();
 
 private:
-    void rename(const Fm::FileInfoList& files,
+    bool rename(const Fm::FileInfoList& files,
                 QString& baseName, const QLocale& locale,
                 int start, bool zeroPadding, bool respectLocale,
                 QWidget* parent);
-    void renameByReplacing(const Fm::FileInfoList& files,
+    bool renameByReplacing(const Fm::FileInfoList& files,
                            const QString& findStr, const QString& replaceStr,
                            Qt::CaseSensitivity cs, bool regex,
                            QWidget* parent);
-    void renameByChangingCase(const Fm::FileInfoList& files, const QLocale& locale,
+    bool renameByChangingCase(const Fm::FileInfoList& files, const QLocale& locale,
                               bool toUpperCase, QWidget* parent);
 };
 
