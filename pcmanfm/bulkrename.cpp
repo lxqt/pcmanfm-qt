@@ -33,6 +33,25 @@ BulkRenameDialog::BulkRenameDialog(QWidget* parent, Qt::WindowFlags flags) :
     ui.lineEdit->setFocus();
     connect(ui.buttonBox->button(QDialogButtonBox::Ok), &QAbstractButton::clicked, this, &QDialog::accept);
     connect(ui.buttonBox->button(QDialogButtonBox::Cancel), &QAbstractButton::clicked, this, &QDialog::reject);
+    connect(ui.replaceGroupBox, &QGroupBox::clicked, this, [this](bool checked) {
+        ui.mainLabel->setEnabled(!checked);
+        ui.lineEdit->setEnabled(!checked);
+        ui.startLabel->setEnabled(!checked);
+        ui.spinBox->setEnabled(!checked);
+        ui.zeroBox->setEnabled(!checked);
+        ui.localeBox->setEnabled(!checked);
+        ui.caseGroupBox->setChecked(false);
+    });
+    connect(ui.caseGroupBox, &QGroupBox::clicked, this, [this](bool checked) {
+        ui.mainLabel->setEnabled(!checked);
+        ui.lineEdit->setEnabled(!checked);
+        ui.startLabel->setEnabled(!checked);
+        ui.spinBox->setEnabled(!checked);
+        ui.zeroBox->setEnabled(!checked);
+        ui.localeBox->setEnabled(!checked);
+        ui.replaceGroupBox->setChecked(false);
+    });
+
     resize(minimumSize());
     setMaximumHeight(minimumSizeHint().height()); // no vertical resizing
 }
@@ -50,30 +69,64 @@ BulkRenamer::BulkRenamer(const Fm::FileInfoList& files, QWidget* parent) {
     if(files.size() <= 1) { // no bulk rename with just one file
         return;
     }
-    QString baseName;
+    bool replacement = false;
+    bool caseChange = false;
+    QString baseName, findStr, replaceStr;
     int start = 0;
     bool zeroPadding = false;
     bool respectLocale = false;
+    bool regex = false;
+    bool toUpperCase = false;
+    Qt::CaseSensitivity cs = Qt::CaseInsensitive;
     QLocale locale;
     BulkRenameDialog dlg(parent);
     switch(dlg.exec()) {
     case QDialog::Accepted:
-        baseName = dlg.getBaseName();
-        start = dlg.getStart();
-        zeroPadding = dlg.getZeroPadding();
-        respectLocale = dlg.getRespectLocale();
-        locale = dlg.locale();
+        if(dlg.getReplace()) {
+            replacement = true;
+            findStr = dlg.getFindStr();
+            replaceStr = dlg.getReplaceStr();
+            cs = dlg.getCase();
+            regex = dlg.getRegex();
+        }
+        if(dlg.getCaseChange()) {
+            caseChange = true;
+            toUpperCase = dlg.getUpperCase();
+            locale = dlg.locale();
+        }
+        else {
+            baseName = dlg.getBaseName();
+            start = dlg.getStart();
+            zeroPadding = dlg.getZeroPadding();
+            respectLocale = dlg.getRespectLocale();
+            locale = dlg.locale();
+        }
         break;
     default:
         return;
     }
 
+    if(replacement) {
+        renameByReplacing(files, findStr, replaceStr, cs, regex, parent);
+    }
+    else if(caseChange) {
+        renameByChangingCase(files, locale, toUpperCase, parent);
+    }
+    else {
+        rename(files, baseName, locale, start, zeroPadding, respectLocale, parent);
+    }
+}
+
+void BulkRenamer::rename(const Fm::FileInfoList& files,
+                         QString& baseName, const QLocale& locale,
+                         int start, bool zeroPadding, bool respectLocale,
+                         QWidget* parent) {
     // maximum space taken by numbers (if needed)
     int numSpace = zeroPadding ? QString::number(start + files.size()).size() : 0;
     // used for filling the space (if needed)
     const QChar zero = respectLocale ? !locale.zeroDigit().isEmpty()
-                                     ? locale.zeroDigit().at(0)
-                                     : QLatin1Char('0')
+                                       ? locale.zeroDigit().at(0)
+                                       : QLatin1Char('0')
                                      : QLatin1Char('0');
     // used for changing numbers to strings
     const QString specifier = respectLocale ? QStringLiteral("%L1") : QStringLiteral("%1");
@@ -114,7 +167,101 @@ BulkRenamer::BulkRenamer(const Fm::FileInfoList& files, QWidget* parent) {
         }
 
         newName.replace(QLatin1Char('#'), specifier.arg(start + i, numSpace, 10, zero));
-        if (newName == fileName || !Fm::changeFileName(file->path(), newName, nullptr, false)) {
+        if(newName == fileName || !Fm::changeFileName(file->path(), newName, nullptr, false)) {
+            ++failed;
+        }
+        ++i;
+    }
+    progress.setValue(i);
+    if(failed == i) {
+        QMessageBox::critical(parent, QObject::tr("Error"), QObject::tr("No file could be renamed."));
+    }
+    else if(failed > 0) {
+        QMessageBox::critical(parent, QObject::tr("Error"), QObject::tr("Some files could not be renamed."));
+    }
+}
+
+void BulkRenamer::renameByReplacing(const Fm::FileInfoList& files,
+                                    const QString& findStr, const QString& replaceStr,
+                                    Qt::CaseSensitivity cs, bool regex,
+                                    QWidget* parent) {
+    if(findStr.isEmpty()) {
+        QMessageBox::critical(parent, QObject::tr("Error"), QObject::tr("Nothing to find."));
+        return;
+    }
+    QRegularExpression regexFind;
+    if(regex) {
+        regexFind = QRegularExpression(findStr, cs == Qt::CaseSensitive
+                                                  ? QRegularExpression::NoPatternOption
+                                                  : QRegularExpression::CaseInsensitiveOption);
+        if(!regexFind.isValid()) {
+            QMessageBox::critical(parent, QObject::tr("Error"), QObject::tr("Invalid regular expression."));
+            return;
+        }
+    }
+    QProgressDialog progress(QObject::tr("Renaming files..."), QObject::tr("Abort"), 0, files.size(), parent);
+    progress.setWindowModality(Qt::WindowModal);
+    int i = 0, failed = 0;
+    for(auto& file: files) {
+        progress.setValue(i);
+        if(progress.wasCanceled()) {
+            progress.close();
+            QMessageBox::warning(parent, QObject::tr("Warning"), QObject::tr("Renaming is aborted."));
+            return;
+        }
+        auto fileName = QString::fromUtf8(g_file_info_get_edit_name(file->gFileInfo().get()));
+        if(fileName.isEmpty()) {
+            fileName = QString::fromStdString(file->name());
+        }
+
+        QString newName = fileName;
+        if(regex) {
+            newName.replace(regexFind, replaceStr);
+        }
+        else {
+            newName.replace(findStr, replaceStr, cs);
+        }
+        if(newName.isEmpty() || newName == fileName
+           || !Fm::changeFileName(file->path(), newName, nullptr, false)) {
+            ++failed;
+        }
+        ++i;
+    }
+    progress.setValue(i);
+    if(failed == i) {
+        QMessageBox::critical(parent, QObject::tr("Error"), QObject::tr("No file could be renamed."));
+    }
+    else if(failed > 0) {
+        QMessageBox::critical(parent, QObject::tr("Error"), QObject::tr("Some files could not be renamed."));
+    }
+}
+
+void BulkRenamer::renameByChangingCase(const Fm::FileInfoList& files, const QLocale& locale,
+                                       bool toUpperCase, QWidget* parent) {
+    QProgressDialog progress(QObject::tr("Renaming files..."), QObject::tr("Abort"), 0, files.size(), parent);
+    progress.setWindowModality(Qt::WindowModal);
+    int i = 0, failed = 0;
+    for(auto& file: files) {
+        progress.setValue(i);
+        if(progress.wasCanceled()) {
+            progress.close();
+            QMessageBox::warning(parent, QObject::tr("Warning"), QObject::tr("Renaming is aborted."));
+            return;
+        }
+        auto fileName = QString::fromUtf8(g_file_info_get_edit_name(file->gFileInfo().get()));
+        if(fileName.isEmpty()) {
+            fileName = QString::fromStdString(file->name());
+        }
+
+        QString newName;
+        if(toUpperCase){
+            newName = locale.toUpper(fileName);
+        }
+        else {
+            newName = locale.toLower(fileName);
+        }
+        if(newName.isEmpty() || newName == fileName
+           || !Fm::changeFileName(file->path(), newName, nullptr, false)) {
             ++failed;
         }
         ++i;
