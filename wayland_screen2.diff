@@ -1,0 +1,226 @@
+diff -ruNp pcmanfm-qt-orig/pcmanfm/application.cpp pcmanfm-qt/pcmanfm/application.cpp
+--- pcmanfm-qt-orig/pcmanfm/application.cpp	2025-01-10 19:28:36.000000000 +0330
++++ pcmanfm-qt/pcmanfm/application.cpp	2025-01-22 15:22:56.903788920 +0330
+@@ -472,7 +472,7 @@ void Application::desktopManager(bool en
+                 int n = qMax(allScreens.size(), 1);
+                 desktopWindows_.reserve(n);
+                 for(int i = 0; i < n; ++i) {
+-                    DesktopWindow* window = createDesktopWindow(i);
++                    DesktopWindow* window = createDesktopWindow(i, !allScreens.isEmpty() && underWayland_ ? allScreens.at(i)->name() : QString());
+                     desktopWindows_.push_back(window);
+                 }
+             }
+@@ -812,8 +812,8 @@ void Application::onPropJobFinished() {
+     }
+ }
+ 
+-DesktopWindow* Application::createDesktopWindow(int screenNum) {
+-    DesktopWindow* window = new DesktopWindow(screenNum);
++DesktopWindow* Application::createDesktopWindow(int screenNum, const QString& screenName) {
++    DesktopWindow* window = new DesktopWindow(screenNum, screenName);
+ 
+     if(screenNum == -1) { // one large virtual desktop only
+         QRect rect = primaryScreen()->virtualGeometry();
+@@ -957,14 +957,14 @@ void Application::onScreenAdded(QScreen*
+             }
+         }
+         else { // a separate screen is added
+-            DesktopWindow* window = createDesktopWindow(desktopWindows_.size());
++            DesktopWindow* window = createDesktopWindow(desktopWindows_.size(), underWayland_ ? newScreen->name() : QString());
+             desktopWindows_.push_back(window);
+         }
+     }
+ }
+ 
+ void Application::onScreenRemoved(QScreen* oldScreen) {
+-    if(enableDesktopManager_){
++    if(enableDesktopManager_) {
+         disconnect(oldScreen, &QScreen::virtualGeometryChanged, this, &Application::onVirtualGeometryChanged);
+         disconnect(oldScreen, &QScreen::availableGeometryChanged, this, &Application::onAvailableGeometryChanged);
+         if(!underWayland_) {
+@@ -978,6 +978,9 @@ void Application::onScreenRemoved(QScree
+                 desktopWindows_.at(0)->setGeometry(primaryScreen()->virtualGeometry());
+                 if(primaryScreen()->virtualSiblings().size() == 1) {
+                     desktopWindows_.at(0)->setScreenNum(0); // there is no virtual desktop anymore
++                    if(underWayland_) {
++                        desktopWindows_.at(0)->setScreenName(primaryScreen()->name());
++                    }
+                 }
+             }
+             else if (screens().isEmpty()) { // for the sake of certainty
+@@ -1055,8 +1058,7 @@ void Application::onVirtualGeometryChang
+     // update desktop geometries
+     if(enableDesktopManager_) {
+         for(DesktopWindow* desktopWin : std::as_const(desktopWindows_)) {
+-            auto desktopScreen = desktopWin->getDesktopScreen();
+-            if(desktopScreen) {
++            if(auto desktopScreen = desktopWin->getDesktopScreen()) {
+                 desktopWin->setGeometry(desktopScreen->virtualGeometry());
+             }
+         }
+diff -ruNp pcmanfm-qt-orig/pcmanfm/application.h pcmanfm-qt/pcmanfm/application.h
+--- pcmanfm-qt-orig/pcmanfm/application.h	2024-12-28 19:43:47.000000000 +0330
++++ pcmanfm-qt/pcmanfm/application.h	2025-01-22 11:55:10.274909502 +0330
+@@ -130,7 +130,7 @@ protected Q_SLOTS:
+ protected:
+     //virtual bool eventFilter(QObject* watched, QEvent* event);
+     bool parseCommandLineArgs();
+-    DesktopWindow* createDesktopWindow(int screenNum);
++    DesktopWindow* createDesktopWindow(int screenNum, const QString& screenName = QString());
+     bool autoMountVolume(GVolume* volume, bool interactive = true);
+ 
+     static void onVolumeAdded(GVolumeMonitor* monitor, GVolume* volume, Application* pThis);
+diff -ruNp pcmanfm-qt-orig/pcmanfm/desktopwindow.cpp pcmanfm-qt/pcmanfm/desktopwindow.cpp
+--- pcmanfm-qt-orig/pcmanfm/desktopwindow.cpp	2024-12-28 19:43:47.000000000 +0330
++++ pcmanfm-qt/pcmanfm/desktopwindow.cpp	2025-01-22 15:33:56.602133415 +0330
+@@ -70,7 +70,7 @@
+ 
+ namespace PCManFM {
+ 
+-DesktopWindow::DesktopWindow(int screenNum):
++DesktopWindow::DesktopWindow(int screenNum, const QString& screenName):
+     View(Fm::FolderView::IconMode),
+     proxyModel_(nullptr),
+     model_(nullptr),
+@@ -81,6 +81,7 @@ DesktopWindow::DesktopWindow(int screenN
+     fileLauncher_(nullptr),
+     desktopHideItems_(false),
+     screenNum_(screenNum),
++    screenName_(screenName),
+     relayoutTimer_(nullptr),
+     selectionTimer_(nullptr),
+     trashUpdateTimer_(nullptr),
+@@ -116,7 +117,9 @@ DesktopWindow::DesktopWindow(int screenN
+     // In some older multihead setups, such as xinerama, every physical screen
+     // is treated as a separate desktop so many instances of DesktopWindow may be created.
+     // In this case we only want to show desktop icons on the primary screen.
+-    if((screenNum_ == 0 || qApp->primaryScreen()->virtualSiblings().size() > 1)) {
++    if(static_cast<Application*>(qApp)->underWayland()
++       || screenNum_ == 0
++       || qApp->primaryScreen()->virtualSiblings().size() > 1) {
+         loadItemPositions();
+ 
+         setShadowHidden(settings.shadowHidden());
+@@ -1535,7 +1538,11 @@ void DesktopWindow::loadItemPositions()
+     // load custom item positions from the config file and store them in the memory
+     customPosStorage_.clear();
+     Settings& settings = static_cast<Application*>(qApp)->settings();
+-    QString configFile = QStringLiteral("%1/desktop-items-%2.conf").arg(settings.profileDir(settings.profileName())).arg(screenNum_);
++    QString configFile;
++    if(static_cast<Application*>(qApp)->underWayland())
++        configFile = QStringLiteral("%1/desktop-items-%2.conf").arg(settings.profileDir(settings.profileName())).arg(screenName_);
++    else
++        configFile = QStringLiteral("%1/desktop-items-%2.conf").arg(settings.profileDir(settings.profileName())).arg(screenNum_);
+     QSettings file(configFile, QSettings::IniFormat);
+ 
+     const auto names = file.childGroups();
+@@ -1593,7 +1600,11 @@ void DesktopWindow::retrieveCustomPos()
+ void DesktopWindow::saveItemPositions() {
+     // write custom item positions to the config file
+     Settings& settings = static_cast<Application*>(qApp)->settings();
+-    QString configFile = QStringLiteral("%1/desktop-items-%2.conf").arg(settings.profileDir(settings.profileName())).arg(screenNum_);
++    QString configFile;
++    if(static_cast<Application*>(qApp)->underWayland())
++        configFile = QStringLiteral("%1/desktop-items-%2.conf").arg(settings.profileDir(settings.profileName())).arg(screenName_);
++    else
++        configFile = QStringLiteral("%1/desktop-items-%2.conf").arg(settings.profileDir(settings.profileName())).arg(screenNum_);
+     QSettings file(configFile, QSettings::IniFormat);
+     file.clear(); // remove all existing entries
+ 
+@@ -2428,26 +2439,50 @@ void DesktopWindow::paintEvent(QPaintEve
+     QWidget::paintEvent(event);
+ }
+ 
++// Only on X11.
+ void DesktopWindow::setScreenNum(int num) {
+     if(screenNum_ != num) {
+         screenNum_ = num;
+-        loadItemPositions(); // the config file is different
+-        queueRelayout();
++        if(!static_cast<Application*>(qApp)->underWayland()) {
++            loadItemPositions(); // the config file is different
++            queueRelayout();
++        }
++    }
++}
++
++// Only on Wayland.
++void DesktopWindow::setScreenName(const QString& name) {
++    if(screenName_ != name) {
++        screenName_ = name;
++        if(static_cast<Application*>(qApp)->underWayland()) {
++            loadItemPositions();
++            queueRelayout();
++        }
+     }
+ }
+ 
+ QScreen* DesktopWindow::getDesktopScreen() const {
+     QScreen* desktopScreen = nullptr;
+-    if(screenNum_ == -1) {
+-        desktopScreen = qApp->primaryScreen();
++    if(static_cast<Application*>(qApp)->underWayland()) {
++        const auto allScreens = qApp->screens();
++        for(const auto& screen : allScreens) {
++            if(screen->name() == screenName_) {
++                return screen;
++            }
++        }
+     }
+     else {
+-        const auto allScreens = qApp->screens();
+-        if(allScreens.size() > screenNum_) {
+-            desktopScreen = allScreens.at(screenNum_);
++        if(screenNum_ == -1) {
++            desktopScreen = qApp->primaryScreen();
+         }
+-        if(desktopScreen == nullptr && windowHandle()) {
+-            desktopScreen = windowHandle()->screen();
++        else {
++            const auto allScreens = qApp->screens();
++            if(allScreens.size() > screenNum_) {
++                desktopScreen = allScreens.at(screenNum_);
++            }
++            if(desktopScreen == nullptr && windowHandle()) {
++                desktopScreen = windowHandle()->screen();
++            }
+         }
+     }
+     return desktopScreen;
+diff -ruNp pcmanfm-qt-orig/pcmanfm/desktopwindow.h pcmanfm-qt/pcmanfm/desktopwindow.h
+--- pcmanfm-qt-orig/pcmanfm/desktopwindow.h	2024-12-28 19:43:47.000000000 +0330
++++ pcmanfm-qt/pcmanfm/desktopwindow.h	2025-01-22 15:12:12.928982571 +0330
+@@ -56,7 +56,7 @@ public:
+         WallpaperZoom
+     };
+ 
+-    explicit DesktopWindow(int screenNum);
++    explicit DesktopWindow(int screenNum, const QString& screenName = QString());
+     virtual ~DesktopWindow();
+ 
+     void setForeground(const QColor& color);
+@@ -81,9 +81,13 @@ public:
+     int screenNum() const {
+         return screenNum_;
+     }
+-
+     void setScreenNum(int num);
+ 
++    QString screenName() const {
++        return screenName_;
++    }
++    void setScreenName(const QString& name);
++
+     QScreen* getDesktopScreen() const;
+ 
+ protected:
+@@ -193,7 +197,8 @@ private:
+     Launcher fileLauncher_;
+     bool desktopHideItems_;
+ 
+-    int screenNum_;
++    int screenNum_; // for X11
++    QString screenName_; // for Wayland
+     std::unordered_map<std::string, QPoint> customItemPos_; // real custom positions
+     std::unordered_map<std::string, QPoint> customPosStorage_; // savable custom positions
+     QTimer* relayoutTimer_;

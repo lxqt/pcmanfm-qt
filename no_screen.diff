@@ -1,0 +1,19 @@
+diff -ruNp pcmanfm-qt-orig/pcmanfm/application.cpp pcmanfm-qt/pcmanfm/application.cpp
+--- pcmanfm-qt-orig/pcmanfm/application.cpp	2025-01-23 11:07:01.000000000 +0330
++++ pcmanfm-qt/pcmanfm/application.cpp	2025-01-23 19:23:37.862298879 +0330
+@@ -971,14 +971,11 @@ void Application::onScreenRemoved(QScree
+         if(desktopWindows_.isEmpty()) {
+             return;
+         }
+-        if(desktopWindows_.size() == 1) { // a single desktop is changed
++        if(!underWayland_ && desktopWindows_.size() == 1) { // a single desktop is changed
+             if(primaryScreen() != nullptr) {
+                 desktopWindows_.at(0)->setGeometry(primaryScreen()->virtualGeometry());
+                 if(primaryScreen()->virtualSiblings().size() == 1) {
+                     desktopWindows_.at(0)->setScreenNum(0); // there is no virtual desktop anymore
+-                    if(underWayland_) {
+-                        desktopWindows_.at(0)->setScreenName(primaryScreen()->name());
+-                    }
+                 }
+             }
+             else if (screens().isEmpty()) { // for the sake of certainty
