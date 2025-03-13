@@ -22,6 +22,7 @@
 #include <QPushButton>
 #include <QMessageBox>
 #include <QProgressDialog>
+#include <QButtonGroup>
 
 #include <libfm-qt6/utilities.h>
 
@@ -33,23 +34,16 @@ BulkRenameDialog::BulkRenameDialog(QWidget* parent, Qt::WindowFlags flags) :
     ui.lineEdit->setFocus();
     connect(ui.buttonBox->button(QDialogButtonBox::Ok), &QAbstractButton::clicked, this, &QDialog::accept);
     connect(ui.buttonBox->button(QDialogButtonBox::Cancel), &QAbstractButton::clicked, this, &QDialog::reject);
-    connect(ui.replaceGroupBox, &QGroupBox::clicked, this, [this](bool checked) {
-        ui.mainLabel->setEnabled(!checked);
-        ui.lineEdit->setEnabled(!checked);
-        ui.startLabel->setEnabled(!checked);
-        ui.spinBox->setEnabled(!checked);
-        ui.zeroBox->setEnabled(!checked);
-        ui.localeBox->setEnabled(!checked);
-        ui.caseGroupBox->setChecked(false);
-    });
-    connect(ui.caseGroupBox, &QGroupBox::clicked, this, [this](bool checked) {
-        ui.mainLabel->setEnabled(!checked);
-        ui.lineEdit->setEnabled(!checked);
-        ui.startLabel->setEnabled(!checked);
-        ui.spinBox->setEnabled(!checked);
-        ui.zeroBox->setEnabled(!checked);
-        ui.localeBox->setEnabled(!checked);
-        ui.replaceGroupBox->setChecked(false);
+
+    QButtonGroup* buttonGroup = new QButtonGroup(this);
+    buttonGroup->addButton(ui.renameRB);
+    buttonGroup->addButton(ui.replaceRB);
+    buttonGroup->addButton(ui.caseRB);
+    connect(buttonGroup, &QButtonGroup::buttonClicked, this, [this](QAbstractButton* button) {
+        QString objName = button->objectName();
+        ui.renameGroupBox->setEnabled(objName == QLatin1String("renameRB"));
+        ui.replaceGroupBox->setEnabled(objName == QLatin1String("replaceRB"));
+        ui.caseGroupBox->setEnabled(objName == QLatin1String("caseRB"));
     });
 
     resize(minimumSize());

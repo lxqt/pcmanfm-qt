@@ -5,101 +5,92 @@
   <property name="windowTitle">
    <string>Bulk Rename</string>
   </property>
-  <layout class="QGridLayout" name="gridLayout">
-   <item row="0" column="0" colspan="3">
-    <widget class="QLabel" name="mainLabel">
+  <layout class="QVBoxLayout" name="vboxLayout">
+   <item>
+    <widget class="QRadioButton" name="renameRB">
      <property name="text">
-      <string>Rename selected files to:</string>
-     </property>
-    </widget>
-   </item>
-   <item row="1" column="0" colspan="3">
-    <widget class="QLineEdit" name="lineEdit">
-     <property name="sizePolicy">
-      <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
-       <horstretch>0</horstretch>
-       <verstretch>0</verstretch>
-      </sizepolicy>
-     </property>
-     <property name="text">
-      <string>Name#</string>
-     </property>
-    </widget>
-   </item>
-   <item row="2" column="0">
-    <widget class="QLabel" name="startLabel">
-     <property name="text">
-      <string># will be replaced by numbers starting with:</string>
-     </property>
-    </widget>
-   </item>
-   <item row="2" column="1">
-    <widget class="QSpinBox" name="spinBox">
-     <property name="minimum">
-      <number>-1000</number>
-     </property>
-     <property name="maximum">
-      <number>1000</number>
-     </property>
-    </widget>
-   </item>
-   <item row="2" column="2">
-    <spacer name="horizontalSpacer">
-     <property name="orientation">
-      <enum>Qt::Horizontal</enum>
-     </property>
-     <property name="sizeType">
-      <enum>QSizePolicy::MinimumExpanding</enum>
-     </property>
-     <property name="sizeHint" stdset="0">
-      <size>
-       <width>5</width>
-       <height>5</height>
-      </size>
-     </property>
-    </spacer>
-   </item>
-   <item row="3" column="0" colspan="3">
-    <widget class="QCheckBox" name="zeroBox">
-     <property name="text">
-      <string>Pad numbers with zero if possible</string>
-     </property>
-    </widget>
-   </item>
-   <item row="4" column="0" colspan="3">
-    <widget class="QCheckBox" name="localeBox">
-     <property name="text">
-      <string>Use localized numbers</string>
-     </property>
-    </widget>
-   </item>
-   <item row="5" column="0">
-    <spacer name="verticalSpacer">
-     <property name="orientation">
-      <enum>Qt::Vertical</enum>
-     </property>
-     <property name="sizeType">
-      <enum>QSizePolicy::Fixed</enum>
-     </property>
-     <property name="sizeHint" stdset="0">
-      <size>
-       <width>5</width>
-       <height>5</height>
-      </size>
-     </property>
-    </spacer>
-   </item>
-   <item row="6" column="0" colspan="3">
-    <widget class="QGroupBox" name="replaceGroupBox">
-     <property name="title">
-      <string>Replacement</string>
-     </property>
-     <property name="checkable">
-      <bool>true</bool>
+      <string>Rename selected files</string>
      </property>
      <property name="checked">
-      <bool>false</bool>
+      <bool>true</bool>
      </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="renameGroupBox">
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="0" column="0" colspan="3">
+       <widget class="QLineEdit" name="lineEdit">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="text">
+         <string>Name#</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="startLabel">
+        <property name="text">
+         <string># will be replaced by numbers starting with:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QSpinBox" name="spinBox">
+        <property name="minimum">
+         <number>-1000</number>
+        </property>
+        <property name="maximum">
+         <number>1000</number>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="2">
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeType">
+         <enum>QSizePolicy::MinimumExpanding</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>5</width>
+          <height>5</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="2" column="0" colspan="3">
+       <widget class="QCheckBox" name="zeroBox">
+        <property name="text">
+         <string>Pad numbers with zero if possible</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0" colspan="3">
+       <widget class="QCheckBox" name="localeBox">
+        <property name="text">
+         <string>Use localized numbers</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QRadioButton" name="replaceRB">
+     <property name="text">
+      <string>Replacement</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="replaceGroupBox">
      <layout class="QFormLayout" name="formLayout">
       <item row="0" column="0">
        <widget class="QLabel" name="findLabel">
@@ -138,17 +129,15 @@
      </layout>
     </widget>
    </item>
-   <item row="7" column="0" colspan="3">
+   <item>
+    <widget class="QRadioButton" name="caseRB">
+     <property name="text">
+      <string>Change case</string>
+     </property>
+    </widget>
+   </item>
+   <item>
     <widget class="QGroupBox" name="caseGroupBox">
-     <property name="title">
-      <string>Change Case</string>
-     </property>
-     <property name="checkable">
-      <bool>true</bool>
-     </property>
-     <property name="checked">
-      <bool>false</bool>
-     </property>
      <layout class="QVBoxLayout" name="verticalLayout">
       <item>
        <widget class="QRadioButton" name="upperCaseButton">
@@ -170,7 +159,7 @@
      </layout>
     </widget>
    </item>
-   <item row="8" column="0">
+   <item>
     <spacer name="verticalSpacer_2">
      <property name="orientation">
       <enum>Qt::Vertical</enum>
@@ -186,7 +175,7 @@
      </property>
     </spacer>
    </item>
-   <item row="9" column="0" colspan="3">
+   <item>
     <widget class="QDialogButtonBox" name="buttonBox">
      <property name="standardButtons">
       <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>

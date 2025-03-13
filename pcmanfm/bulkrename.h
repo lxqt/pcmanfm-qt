@@ -48,7 +48,7 @@ public:
 
     // replacement
     bool getReplace() const {
-        return ui.replaceGroupBox->isChecked();
+        return ui.replaceRB->isChecked();
     }
     QString getFindStr() const {
         return ui.findLineEdit->text();
@@ -65,7 +65,7 @@ public:
 
     // case change
     bool getCaseChange() const {
-        return ui.caseGroupBox->isChecked();
+        return ui.caseRB->isChecked();
     }
     bool getUpperCase() const {
         return ui.upperCaseButton->isChecked();
