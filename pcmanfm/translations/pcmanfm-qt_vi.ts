@@ -121,67 +121,67 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
         <translation>Đổi tên hàng loạt</translation>
     </message>
     <message>
-        <location filename="../bulk-rename.ui" line="32"/>
+        <location filename="../bulk-rename.ui" line="12"/>
+        <source>Serial Renaming</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../bulk-rename.ui" line="36"/>
         <source># will be replaced by numbers starting with:</source>
         <translation># sẽ được thay thế bằng các số, bắt đầu với:</translation>
     </message>
     <message>
-        <location filename="../bulk-rename.ui" line="65"/>
+        <location filename="../bulk-rename.ui" line="68"/>
         <source>Pad numbers with zero if possible</source>
         <translation>Chèn thêm 0 vào số nếu có thể</translation>
     </message>
     <message>
-        <location filename="../bulk-rename.ui" line="72"/>
+        <location filename="../bulk-rename.ui" line="75"/>
         <source>Use localized numbers</source>
         <translation>Sử dụng số đã được bản địa hóa</translation>
     </message>
     <message>
-        <location filename="../bulk-rename.ui" line="95"/>
+        <location filename="../bulk-rename.ui" line="85"/>
         <source>Replacement</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../bulk-rename.ui" line="107"/>
+        <location filename="../bulk-rename.ui" line="97"/>
         <source>Find in names:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../bulk-rename.ui" line="117"/>
+        <location filename="../bulk-rename.ui" line="107"/>
         <source>Replace with:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../bulk-rename.ui" line="127"/>
+        <location filename="../bulk-rename.ui" line="117"/>
         <source>Case-sensitive</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../bulk-rename.ui" line="134"/>
+        <location filename="../bulk-rename.ui" line="124"/>
         <source>Regular expression</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../bulk-rename.ui" line="144"/>
+        <location filename="../bulk-rename.ui" line="134"/>
         <source>Change Case</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../bulk-rename.ui" line="156"/>
+        <location filename="../bulk-rename.ui" line="146"/>
         <source>To upper case</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../bulk-rename.ui" line="166"/>
+        <location filename="../bulk-rename.ui" line="156"/>
         <source>To lower case</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../bulk-rename.ui" line="12"/>
-        <source>Rename selected files to:</source>
-        <translation>Đổi tên các tập tin đã chọn thành:</translation>
-    </message>
-    <message>
-        <location filename="../bulk-rename.ui" line="25"/>
+        <location filename="../bulk-rename.ui" line="27"/>
         <source>Name#</source>
         <translation>Tên#</translation>
     </message>
@@ -2515,67 +2515,67 @@ lxsudo dbus-run-session -- %s</source>
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../bulkrename.cpp" line="142"/>
-        <location filename="../bulkrename.cpp" line="202"/>
-        <location filename="../bulkrename.cpp" line="241"/>
+        <location filename="../bulkrename.cpp" line="185"/>
+        <location filename="../bulkrename.cpp" line="247"/>
+        <location filename="../bulkrename.cpp" line="288"/>
         <source>Renaming files...</source>
         <translation>Đổi tên tệp...</translation>
     </message>
     <message>
-        <location filename="../bulkrename.cpp" line="142"/>
-        <location filename="../bulkrename.cpp" line="202"/>
-        <location filename="../bulkrename.cpp" line="241"/>
+        <location filename="../bulkrename.cpp" line="185"/>
+        <location filename="../bulkrename.cpp" line="247"/>
+        <location filename="../bulkrename.cpp" line="288"/>
         <source>Abort</source>
         <translation>Huỷ</translation>
     </message>
     <message>
-        <location filename="../bulkrename.cpp" line="151"/>
-        <location filename="../bulkrename.cpp" line="209"/>
-        <location filename="../bulkrename.cpp" line="248"/>
+        <location filename="../bulkrename.cpp" line="194"/>
+        <location filename="../bulkrename.cpp" line="254"/>
+        <location filename="../bulkrename.cpp" line="295"/>
         <source>Warning</source>
         <translation>Cảnh báo</translation>
     </message>
     <message>
-        <location filename="../bulkrename.cpp" line="151"/>
-        <location filename="../bulkrename.cpp" line="209"/>
-        <location filename="../bulkrename.cpp" line="248"/>
+        <location filename="../bulkrename.cpp" line="194"/>
+        <location filename="../bulkrename.cpp" line="254"/>
+        <location filename="../bulkrename.cpp" line="295"/>
         <source>Renaming is aborted.</source>
         <translation>Đổi tên bị hủy bỏ.</translation>
     </message>
     <message>
-        <location filename="../bulkrename.cpp" line="177"/>
-        <location filename="../bulkrename.cpp" line="180"/>
-        <location filename="../bulkrename.cpp" line="189"/>
-        <location filename="../bulkrename.cpp" line="198"/>
-        <location filename="../bulkrename.cpp" line="232"/>
-        <location filename="../bulkrename.cpp" line="235"/>
-        <location filename="../bulkrename.cpp" line="271"/>
-        <location filename="../bulkrename.cpp" line="274"/>
+        <location filename="../bulkrename.cpp" line="220"/>
+        <location filename="../bulkrename.cpp" line="224"/>
+        <location filename="../bulkrename.cpp" line="234"/>
+        <location filename="../bulkrename.cpp" line="243"/>
+        <location filename="../bulkrename.cpp" line="277"/>
+        <location filename="../bulkrename.cpp" line="281"/>
+        <location filename="../bulkrename.cpp" line="318"/>
+        <location filename="../bulkrename.cpp" line="322"/>
         <location filename="../tabpage.cpp" line="1149"/>
         <source>Error</source>
         <translation>Lỗi</translation>
     </message>
     <message>
-        <location filename="../bulkrename.cpp" line="177"/>
-        <location filename="../bulkrename.cpp" line="232"/>
-        <location filename="../bulkrename.cpp" line="271"/>
+        <location filename="../bulkrename.cpp" line="220"/>
+        <location filename="../bulkrename.cpp" line="277"/>
+        <location filename="../bulkrename.cpp" line="318"/>
         <source>No file could be renamed.</source>
         <translation>Không có tập tin có thể được đổi tên.</translation>
     </message>
     <message>
-        <location filename="../bulkrename.cpp" line="180"/>
-        <location filename="../bulkrename.cpp" line="235"/>
-        <location filename="../bulkrename.cpp" line="274"/>
+        <location filename="../bulkrename.cpp" line="224"/>
+        <location filename="../bulkrename.cpp" line="281"/>
+        <location filename="../bulkrename.cpp" line="322"/>
         <source>Some files could not be renamed.</source>
         <translation>Một số tập tin không thể đổi tên thành công.</translation>
     </message>
     <message>
-        <location filename="../bulkrename.cpp" line="189"/>
+        <location filename="../bulkrename.cpp" line="234"/>
         <source>Nothing to find.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../bulkrename.cpp" line="198"/>
+        <location filename="../bulkrename.cpp" line="243"/>
         <source>Invalid regular expression.</source>
         <translation type="unfinished"></translation>
     </message>

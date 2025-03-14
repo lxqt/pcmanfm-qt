@@ -122,67 +122,67 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
         <translation>अनेक नामकरण</translation>
     </message>
     <message>
-        <location filename="../bulk-rename.ui" line="32"/>
+        <location filename="../bulk-rename.ui" line="12"/>
+        <source>Serial Renaming</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../bulk-rename.ui" line="36"/>
         <source># will be replaced by numbers starting with:</source>
         <translation># को इनसे शुरू होने वाली संख्याओं से प्रतिस्थापित किया जाएगा :</translation>
     </message>
     <message>
-        <location filename="../bulk-rename.ui" line="65"/>
+        <location filename="../bulk-rename.ui" line="68"/>
         <source>Pad numbers with zero if possible</source>
         <translation>संभव हो तो संख्याओं को शून्य से पैडिंग करें</translation>
     </message>
     <message>
-        <location filename="../bulk-rename.ui" line="72"/>
+        <location filename="../bulk-rename.ui" line="75"/>
         <source>Use localized numbers</source>
         <translation>स्थानीयकृत संख्याओं का प्रयोग करें</translation>
     </message>
     <message>
-        <location filename="../bulk-rename.ui" line="95"/>
+        <location filename="../bulk-rename.ui" line="85"/>
         <source>Replacement</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../bulk-rename.ui" line="107"/>
+        <location filename="../bulk-rename.ui" line="97"/>
         <source>Find in names:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../bulk-rename.ui" line="117"/>
+        <location filename="../bulk-rename.ui" line="107"/>
         <source>Replace with:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../bulk-rename.ui" line="127"/>
+        <location filename="../bulk-rename.ui" line="117"/>
         <source>Case-sensitive</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../bulk-rename.ui" line="134"/>
+        <location filename="../bulk-rename.ui" line="124"/>
         <source>Regular expression</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../bulk-rename.ui" line="144"/>
+        <location filename="../bulk-rename.ui" line="134"/>
         <source>Change Case</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../bulk-rename.ui" line="156"/>
+        <location filename="../bulk-rename.ui" line="146"/>
         <source>To upper case</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../bulk-rename.ui" line="166"/>
+        <location filename="../bulk-rename.ui" line="156"/>
         <source>To lower case</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../bulk-rename.ui" line="12"/>
-        <source>Rename selected files to:</source>
-        <translation>चयनित फ़ाइलों का नाम बदलें :</translation>
-    </message>
-    <message>
-        <location filename="../bulk-rename.ui" line="25"/>
+        <location filename="../bulk-rename.ui" line="27"/>
         <source>Name#</source>
         <translation>नाम#</translation>
     </message>
@@ -2521,67 +2521,67 @@ lxsudo dbus-run-session -- %s</source>
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../bulkrename.cpp" line="142"/>
-        <location filename="../bulkrename.cpp" line="202"/>
-        <location filename="../bulkrename.cpp" line="241"/>
+        <location filename="../bulkrename.cpp" line="185"/>
+        <location filename="../bulkrename.cpp" line="247"/>
+        <location filename="../bulkrename.cpp" line="288"/>
         <source>Renaming files...</source>
         <translation>फ़ाइलों का नाम बदला जा रहा है...</translation>
     </message>
     <message>
-        <location filename="../bulkrename.cpp" line="142"/>
-        <location filename="../bulkrename.cpp" line="202"/>
-        <location filename="../bulkrename.cpp" line="241"/>
+        <location filename="../bulkrename.cpp" line="185"/>
+        <location filename="../bulkrename.cpp" line="247"/>
+        <location filename="../bulkrename.cpp" line="288"/>
         <source>Abort</source>
         <translation>निरस्त</translation>
     </message>
     <message>
-        <location filename="../bulkrename.cpp" line="151"/>
-        <location filename="../bulkrename.cpp" line="209"/>
-        <location filename="../bulkrename.cpp" line="248"/>
+        <location filename="../bulkrename.cpp" line="194"/>
+        <location filename="../bulkrename.cpp" line="254"/>
+        <location filename="../bulkrename.cpp" line="295"/>
         <source>Warning</source>
         <translation>चेतावनी</translation>
     </message>
     <message>
-        <location filename="../bulkrename.cpp" line="151"/>
-        <location filename="../bulkrename.cpp" line="209"/>
-        <location filename="../bulkrename.cpp" line="248"/>
+        <location filename="../bulkrename.cpp" line="194"/>
+        <location filename="../bulkrename.cpp" line="254"/>
+        <location filename="../bulkrename.cpp" line="295"/>
         <source>Renaming is aborted.</source>
         <translation>नाम बदलना निरस्त कर दिया गया है।</translation>
     </message>
     <message>
-        <location filename="../bulkrename.cpp" line="177"/>
-        <location filename="../bulkrename.cpp" line="180"/>
-        <location filename="../bulkrename.cpp" line="189"/>
-        <location filename="../bulkrename.cpp" line="198"/>
-        <location filename="../bulkrename.cpp" line="232"/>
-        <location filename="../bulkrename.cpp" line="235"/>
-        <location filename="../bulkrename.cpp" line="271"/>
-        <location filename="../bulkrename.cpp" line="274"/>
+        <location filename="../bulkrename.cpp" line="220"/>
+        <location filename="../bulkrename.cpp" line="224"/>
+        <location filename="../bulkrename.cpp" line="234"/>
+        <location filename="../bulkrename.cpp" line="243"/>
+        <location filename="../bulkrename.cpp" line="277"/>
+        <location filename="../bulkrename.cpp" line="281"/>
+        <location filename="../bulkrename.cpp" line="318"/>
+        <location filename="../bulkrename.cpp" line="322"/>
         <location filename="../tabpage.cpp" line="1149"/>
         <source>Error</source>
         <translation>त्रुटि</translation>
     </message>
     <message>
-        <location filename="../bulkrename.cpp" line="177"/>
-        <location filename="../bulkrename.cpp" line="232"/>
-        <location filename="../bulkrename.cpp" line="271"/>
+        <location filename="../bulkrename.cpp" line="220"/>
+        <location filename="../bulkrename.cpp" line="277"/>
+        <location filename="../bulkrename.cpp" line="318"/>
         <source>No file could be renamed.</source>
         <translation>किसी भी फ़ाइल का नाम नहीं बदला जा सका।</translation>
     </message>
     <message>
-        <location filename="../bulkrename.cpp" line="180"/>
-        <location filename="../bulkrename.cpp" line="235"/>
-        <location filename="../bulkrename.cpp" line="274"/>
+        <location filename="../bulkrename.cpp" line="224"/>
+        <location filename="../bulkrename.cpp" line="281"/>
+        <location filename="../bulkrename.cpp" line="322"/>
         <source>Some files could not be renamed.</source>
         <translation>कुछ फाइलों का नाम नहीं बदला जा सका।</translation>
     </message>
     <message>
-        <location filename="../bulkrename.cpp" line="189"/>
+        <location filename="../bulkrename.cpp" line="234"/>
         <source>Nothing to find.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../bulkrename.cpp" line="198"/>
+        <location filename="../bulkrename.cpp" line="243"/>
         <source>Invalid regular expression.</source>
         <translation type="unfinished"></translation>
     </message>
