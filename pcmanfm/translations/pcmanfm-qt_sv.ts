@@ -121,67 +121,67 @@ med detta program. Om inte, skriv till Free Software Foundation, Inc.,
         <translation>Massnamnbyte</translation>
     </message>
     <message>
-        <location filename="../bulk-rename.ui" line="32"/>
+        <location filename="../bulk-rename.ui" line="12"/>
+        <source>Serial Renaming</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../bulk-rename.ui" line="36"/>
         <source># will be replaced by numbers starting with:</source>
         <translation># kommer ersätta nummer som börjar med:</translation>
     </message>
     <message>
-        <location filename="../bulk-rename.ui" line="65"/>
+        <location filename="../bulk-rename.ui" line="68"/>
         <source>Pad numbers with zero if possible</source>
         <translation>Fyll siffror i med noll om möjligt</translation>
     </message>
     <message>
-        <location filename="../bulk-rename.ui" line="72"/>
+        <location filename="../bulk-rename.ui" line="75"/>
         <source>Use localized numbers</source>
         <translation>Använd lokaliserade siffror</translation>
     </message>
     <message>
-        <location filename="../bulk-rename.ui" line="95"/>
+        <location filename="../bulk-rename.ui" line="85"/>
         <source>Replacement</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../bulk-rename.ui" line="107"/>
+        <location filename="../bulk-rename.ui" line="97"/>
         <source>Find in names:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../bulk-rename.ui" line="117"/>
+        <location filename="../bulk-rename.ui" line="107"/>
         <source>Replace with:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../bulk-rename.ui" line="127"/>
+        <location filename="../bulk-rename.ui" line="117"/>
         <source>Case-sensitive</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../bulk-rename.ui" line="134"/>
+        <location filename="../bulk-rename.ui" line="124"/>
         <source>Regular expression</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../bulk-rename.ui" line="144"/>
+        <location filename="../bulk-rename.ui" line="134"/>
         <source>Change Case</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../bulk-rename.ui" line="156"/>
+        <location filename="../bulk-rename.ui" line="146"/>
         <source>To upper case</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../bulk-rename.ui" line="166"/>
+        <location filename="../bulk-rename.ui" line="156"/>
         <source>To lower case</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../bulk-rename.ui" line="12"/>
-        <source>Rename selected files to:</source>
-        <translation>Byt namn på vald fil till:</translation>
-    </message>
-    <message>
-        <location filename="../bulk-rename.ui" line="25"/>
+        <location filename="../bulk-rename.ui" line="27"/>
         <source>Name#</source>
         <translation>Namn#</translation>
     </message>
@@ -2525,67 +2525,67 @@ lxsudo dbus-run-session -- %s</translation>
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../bulkrename.cpp" line="142"/>
-        <location filename="../bulkrename.cpp" line="202"/>
-        <location filename="../bulkrename.cpp" line="241"/>
+        <location filename="../bulkrename.cpp" line="185"/>
+        <location filename="../bulkrename.cpp" line="247"/>
+        <location filename="../bulkrename.cpp" line="288"/>
         <source>Renaming files...</source>
         <translation>Byter namn på filer...</translation>
     </message>
     <message>
-        <location filename="../bulkrename.cpp" line="142"/>
-        <location filename="../bulkrename.cpp" line="202"/>
-        <location filename="../bulkrename.cpp" line="241"/>
+        <location filename="../bulkrename.cpp" line="185"/>
+        <location filename="../bulkrename.cpp" line="247"/>
+        <location filename="../bulkrename.cpp" line="288"/>
         <source>Abort</source>
         <translation>Avbryt</translation>
     </message>
     <message>
-        <location filename="../bulkrename.cpp" line="151"/>
-        <location filename="../bulkrename.cpp" line="209"/>
-        <location filename="../bulkrename.cpp" line="248"/>
+        <location filename="../bulkrename.cpp" line="194"/>
+        <location filename="../bulkrename.cpp" line="254"/>
+        <location filename="../bulkrename.cpp" line="295"/>
         <source>Warning</source>
         <translation>Varning</translation>
     </message>
     <message>
-        <location filename="../bulkrename.cpp" line="151"/>
-        <location filename="../bulkrename.cpp" line="209"/>
-        <location filename="../bulkrename.cpp" line="248"/>
+        <location filename="../bulkrename.cpp" line="194"/>
+        <location filename="../bulkrename.cpp" line="254"/>
+        <location filename="../bulkrename.cpp" line="295"/>
         <source>Renaming is aborted.</source>
         <translation>Namnbyte avbröts.</translation>
     </message>
     <message>
-        <location filename="../bulkrename.cpp" line="177"/>
-        <location filename="../bulkrename.cpp" line="180"/>
-        <location filename="../bulkrename.cpp" line="189"/>
-        <location filename="../bulkrename.cpp" line="198"/>
-        <location filename="../bulkrename.cpp" line="232"/>
-        <location filename="../bulkrename.cpp" line="235"/>
-        <location filename="../bulkrename.cpp" line="271"/>
-        <location filename="../bulkrename.cpp" line="274"/>
+        <location filename="../bulkrename.cpp" line="220"/>
+        <location filename="../bulkrename.cpp" line="224"/>
+        <location filename="../bulkrename.cpp" line="234"/>
+        <location filename="../bulkrename.cpp" line="243"/>
+        <location filename="../bulkrename.cpp" line="277"/>
+        <location filename="../bulkrename.cpp" line="281"/>
+        <location filename="../bulkrename.cpp" line="318"/>
+        <location filename="../bulkrename.cpp" line="322"/>
         <location filename="../tabpage.cpp" line="1149"/>
         <source>Error</source>
         <translation>Fel</translation>
     </message>
     <message>
-        <location filename="../bulkrename.cpp" line="177"/>
-        <location filename="../bulkrename.cpp" line="232"/>
-        <location filename="../bulkrename.cpp" line="271"/>
+        <location filename="../bulkrename.cpp" line="220"/>
+        <location filename="../bulkrename.cpp" line="277"/>
+        <location filename="../bulkrename.cpp" line="318"/>
         <source>No file could be renamed.</source>
         <translation>Ingen fil kunde döpas om.</translation>
     </message>
     <message>
-        <location filename="../bulkrename.cpp" line="180"/>
-        <location filename="../bulkrename.cpp" line="235"/>
-        <location filename="../bulkrename.cpp" line="274"/>
+        <location filename="../bulkrename.cpp" line="224"/>
+        <location filename="../bulkrename.cpp" line="281"/>
+        <location filename="../bulkrename.cpp" line="322"/>
         <source>Some files could not be renamed.</source>
         <translation>Vissa filer kunde inte döpas om.</translation>
     </message>
     <message>
-        <location filename="../bulkrename.cpp" line="189"/>
+        <location filename="../bulkrename.cpp" line="234"/>
         <source>Nothing to find.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../bulkrename.cpp" line="198"/>
+        <location filename="../bulkrename.cpp" line="243"/>
         <source>Invalid regular expression.</source>
         <translation type="unfinished"></translation>
     </message>
