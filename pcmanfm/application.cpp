@@ -774,7 +774,7 @@ void Application::ShowItems(const QStringList& uriList, const QString& startupId
     }
 
     for(const auto& folder : folders) {
-        window->openFolderAndSelectFles(groups[folder]);
+        window->openFolderAndSelectFiles(groups[folder]);
     }
 
     window->show();

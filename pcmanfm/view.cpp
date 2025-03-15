@@ -76,14 +76,25 @@ void View::onFileClicked(int type, const std::shared_ptr<const Fm::FileInfo>& fi
 
 void View::onNewWindow() {
     Fm::FileMenu* menu = static_cast<Fm::FileMenu*>(sender()->parent());
-    Application* app = static_cast<Application*>(qApp);
-    app->openFolders(menu->files());
+    auto files = menu->files();
+    if(files.size() == 1 && !files.front()->isDir()) {
+        openFolderAndSelectFile(files.front());
+    }
+    else {
+        Application* app = static_cast<Application*>(qApp);
+        app->openFolders(std::move(files));
+    }
 }
 
 void View::onNewTab() {
     Fm::FileMenu* menu = static_cast<Fm::FileMenu*>(sender()->parent());
     auto files = menu->files();
-    launchFiles(std::move(files), true);
+    if(files.size() == 1 && !files.front()->isDir()) {
+        openFolderAndSelectFile(files.front(), true);
+    }
+    else {
+        launchFiles(std::move(files), true);
+    }
 }
 
 void View::onOpenInTerminal() {
@@ -119,7 +130,7 @@ void View::prepareFileMenu(Fm::FileMenu* menu) {
     }
 
     if(all_directory) {
-        QAction* action = new QAction(QIcon::fromTheme(QStringLiteral("window-new")), tr("Open in New T&ab"), menu);
+        QAction* action = new QAction(QIcon::fromTheme(QStringLiteral("tab-new")), tr("Open in New T&ab"), menu);
         connect(action, &QAction::triggered, this, &View::onNewTab);
         menu->insertAction(menu->separator1(), action);
 
@@ -142,6 +153,17 @@ void View::prepareFileMenu(Fm::FileMenu* menu) {
         }
         if(menu->createAction()) {
             menu->createAction()->setVisible(false);
+        }
+
+        if(folder() && folder()->path().hasUriScheme("search")
+           && files.size() == 1 && !files.front()->isDir()) {
+            QAction* action = new QAction(QIcon::fromTheme(QStringLiteral("tab-new")), tr("Show in New T&ab"), menu);
+            connect(action, &QAction::triggered, this, &View::onNewTab);
+            menu->insertAction(menu->separator1(), action);
+
+            action = new QAction(QIcon::fromTheme(QStringLiteral("window-new")), tr("Show in New Win&dow"), menu);
+            connect(action, &QAction::triggered, this, &View::onNewWindow);
+            menu->insertAction(menu->separator1(), action);
         }
     }
 }
@@ -214,6 +236,14 @@ void View::launchFiles(Fm::FileInfoList files, bool inNewTabs) {
             }
         }
         fileLauncher()->launchFiles(nullptr, std::move(files));
+    }
+}
+
+void View::openFolderAndSelectFile(const std::shared_ptr<const Fm::FileInfo>& fileInfo, bool inNewTab) {
+    if(auto win = qobject_cast<MainWindow*>(window())) {
+        Fm::FilePathList paths;
+        paths.emplace_back(fileInfo->path());
+        win->openFolderAndSelectFiles(std::move(paths), inNewTab);
     }
 }
 
