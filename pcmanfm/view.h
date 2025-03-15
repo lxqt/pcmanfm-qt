@@ -63,6 +63,7 @@ protected:
 
 private:
     void launchFiles(Fm::FileInfoList files, bool inNewTabs = false);
+    void openFolderAndSelectFile(const std::shared_ptr<const Fm::FileInfo>& fileInfo, bool inNewTab = false);
 
 };
 

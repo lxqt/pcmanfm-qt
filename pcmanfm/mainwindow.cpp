@@ -2406,12 +2406,21 @@ void MainWindow::on_actionCleanPerFolderConfig_triggered() {
     }
 }
 
-void MainWindow::openFolderAndSelectFles(const Fm::FilePathList& files) {
+void MainWindow::openFolderAndSelectFiles(const Fm::FilePathList& files, bool inNewTab) {
     if(!files.empty()) {
         if(auto path = files.front().parent()) {
-            TabPage* newPage = new TabPage(this);
-            addTabWithPage(newPage, activeViewFrame_, std::move(path));
-            newPage->setFilesToSelect(files);
+            if(!inNewTab) {
+                auto win = new MainWindow(path);
+                win->show();
+                if(auto page = win->currentPage()) {
+                    page->setFilesToSelect(files);
+                }
+            }
+            else {
+                TabPage* newPage = new TabPage(this);
+                addTabWithPage(newPage, activeViewFrame_, std::move(path));
+                newPage->setFilesToSelect(files);
+            }
         }
     }
 }

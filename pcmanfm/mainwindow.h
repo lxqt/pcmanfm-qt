@@ -100,7 +100,7 @@ public:
         return lastActive_;
     }
 
-    void openFolderAndSelectFles(const Fm::FilePathList& files);
+    void openFolderAndSelectFiles(const Fm::FilePathList& files, bool inNewTab = true);
 
 protected Q_SLOTS:
 
