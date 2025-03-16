@@ -1982,20 +1982,30 @@ Ar putea fi utile dacă acele foldere sunt create din nou.</translation>
         </translation>
     </message>
     <message>
-        <location filename="../view.cpp" line="122"/>
+        <location filename="../view.cpp" line="133"/>
         <source>Open in New T&amp;ab</source>
         <translation>Deschide în Filă N&amp;ouă</translation>
     </message>
     <message>
-        <location filename="../view.cpp" line="126"/>
+        <location filename="../view.cpp" line="137"/>
         <source>Open in New Win&amp;dow</source>
         <translation>Deschide în fereastră No&amp;uă</translation>
     </message>
     <message>
-        <location filename="../view.cpp" line="134"/>
-        <location filename="../view.cpp" line="152"/>
+        <location filename="../view.cpp" line="145"/>
+        <location filename="../view.cpp" line="174"/>
         <source>Open in Termina&amp;l</source>
         <translation>Deschide în Termina&amp;l</translation>
+    </message>
+    <message>
+        <location filename="../view.cpp" line="160"/>
+        <source>Show in New T&amp;ab</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../view.cpp" line="164"/>
+        <source>Show in New Win&amp;dow</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

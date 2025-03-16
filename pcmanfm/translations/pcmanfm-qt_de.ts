@@ -1988,20 +1988,30 @@ Sie könnten nützlich sein, wenn diese Ordner erneut erstellt werden.</translat
         </translation>
     </message>
     <message>
-        <location filename="../view.cpp" line="122"/>
+        <location filename="../view.cpp" line="133"/>
         <source>Open in New T&amp;ab</source>
         <translation>Öffnen in neuem &amp;Reiter</translation>
     </message>
     <message>
-        <location filename="../view.cpp" line="126"/>
+        <location filename="../view.cpp" line="137"/>
         <source>Open in New Win&amp;dow</source>
         <translation>In neuem &amp;Fenster öffnen</translation>
     </message>
     <message>
-        <location filename="../view.cpp" line="134"/>
-        <location filename="../view.cpp" line="152"/>
+        <location filename="../view.cpp" line="145"/>
+        <location filename="../view.cpp" line="174"/>
         <source>Open in Termina&amp;l</source>
         <translation>Im Termina&amp;l öffnen</translation>
+    </message>
+    <message>
+        <location filename="../view.cpp" line="160"/>
+        <source>Show in New T&amp;ab</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../view.cpp" line="164"/>
+        <source>Show in New Win&amp;dow</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
