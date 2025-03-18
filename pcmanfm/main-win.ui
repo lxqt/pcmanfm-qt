@@ -432,6 +432,9 @@
    <property name="text">
     <string>&amp;Icon View</string>
    </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+1</string>
+   </property>
   </action>
   <action name="actionCompactView">
    <property name="checkable">
@@ -439,6 +442,9 @@
    </property>
    <property name="text">
     <string>&amp;Compact View</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+3</string>
    </property>
   </action>
   <action name="actionDetailedList">
@@ -448,6 +454,9 @@
    <property name="text">
     <string>&amp;Detailed List</string>
    </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+4</string>
+   </property>
   </action>
   <action name="actionThumbnailView">
    <property name="checkable">
@@ -455,6 +464,9 @@
    </property>
    <property name="text">
     <string>&amp;Thumbnail View</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+2</string>
    </property>
   </action>
   <action name="actionCut">
