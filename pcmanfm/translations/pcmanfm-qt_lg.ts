@@ -125,7 +125,7 @@ Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  021
     <message>
         <location filename="../bulk-rename.ui" line="12"/>
         <source>Serial Renaming</source>
-        <translation type="unfinished"></translation>
+        <translation>Tuuma Amannya Agagobereragana</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="36"/>
@@ -145,42 +145,42 @@ Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  021
     <message>
         <location filename="../bulk-rename.ui" line="85"/>
         <source>Replacement</source>
-        <translation type="unfinished"></translation>
+        <translation>Tuuma Mannaya Mapya</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="97"/>
         <source>Find in names:</source>
-        <translation type="unfinished"></translation>
+        <translation>Noonya amannya agali mu kino:</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="107"/>
         <source>Replace with:</source>
-        <translation type="unfinished"></translation>
+        <translation>Waddewo kino:</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="117"/>
         <source>Case-sensitive</source>
-        <translation type="unfinished"></translation>
+        <translation>Yawula mu nnukuta nnene n&apos;entono</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="124"/>
         <source>Regular expression</source>
-        <translation type="unfinished"></translation>
+        <translation>Emboozi enoonya</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="134"/>
         <source>Change Case</source>
-        <translation type="unfinished"></translation>
+        <translation>Wanyisa ennukuta nnene n&apos;entono</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="146"/>
         <source>To upper case</source>
-        <translation type="unfinished"></translation>
+        <translation>Entono efuuke ennene</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="156"/>
         <source>To lower case</source>
-        <translation type="unfinished"></translation>
+        <translation>Ennene efuuke entono</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="27"/>
@@ -2008,12 +2008,12 @@ Biyinza kuyamba ssinga amaterekero ago gaba gakomezedwawo.</translation>
     <message>
         <location filename="../view.cpp" line="160"/>
         <source>Show in New T&amp;ab</source>
-        <translation type="unfinished"></translation>
+        <translation>Yoleseza mu Lutimbe Olupy&amp;a</translation>
     </message>
     <message>
         <location filename="../view.cpp" line="164"/>
         <source>Show in New Win&amp;dow</source>
-        <translation type="unfinished"></translation>
+        <translation>Yoleseza mu D&amp;dirisa Ppya</translation>
     </message>
 </context>
 <context>
@@ -2624,12 +2624,12 @@ eyategekebwa okubikkula ez&apos;ekika kya yo</translation>
     <message>
         <location filename="../bulkrename.cpp" line="234"/>
         <source>Nothing to find.</source>
-        <translation type="unfinished"></translation>
+        <translation>Tewali kinaazuulibwa.</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="243"/>
         <source>Invalid regular expression.</source>
-        <translation type="unfinished"></translation>
+        <translation>Emboozi enoonya tekozeseka.</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="1149"/>

@@ -2021,12 +2021,12 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../view.cpp" line="160"/>
         <source>Show in New T&amp;ab</source>
-        <translation type="unfinished"></translation>
+        <translation>إظهار في علامة تبويب جديدة</translation>
     </message>
     <message>
         <location filename="../view.cpp" line="164"/>
         <source>Show in New Win&amp;dow</source>
-        <translation type="unfinished"></translation>
+        <translation>عرض في نافذة جديدة</translation>
     </message>
 </context>
 <context>
