@@ -149,7 +149,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../bulk-rename.ui" line="97"/>
         <source>Find in names:</source>
-        <translation type="unfinished"></translation>
+        <translation>नामों में खोजें:</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="107"/>

@@ -125,7 +125,7 @@ USA.</translation>
     <message>
         <location filename="../bulk-rename.ui" line="12"/>
         <source>Serial Renaming</source>
-        <translation type="unfinished"></translation>
+        <translation>Σειραϊκή μετονομασία</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="36"/>
@@ -145,7 +145,7 @@ USA.</translation>
     <message>
         <location filename="../bulk-rename.ui" line="85"/>
         <source>Replacement</source>
-        <translation type="unfinished"></translation>
+        <translation>Αντικατάσταση</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="97"/>
@@ -155,7 +155,7 @@ USA.</translation>
     <message>
         <location filename="../bulk-rename.ui" line="107"/>
         <source>Replace with:</source>
-        <translation type="unfinished"></translation>
+        <translation>Αντικατάσταση με:</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="117"/>
@@ -165,7 +165,7 @@ USA.</translation>
     <message>
         <location filename="../bulk-rename.ui" line="124"/>
         <source>Regular expression</source>
-        <translation type="unfinished"></translation>
+        <translation>Κανονική έκφραση</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="134"/>
@@ -829,7 +829,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="294"/>
         <source>Go Up</source>
-        <translation>Μετάβαση&#xa0;πάνω</translation>
+        <translation>Μετάβαση πάνω</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="297"/>
@@ -2004,12 +2004,12 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../view.cpp" line="160"/>
         <source>Show in New T&amp;ab</source>
-        <translation type="unfinished"></translation>
+        <translation>Εμφάνιση σε νέα &amp;καρτέλα</translation>
     </message>
     <message>
         <location filename="../view.cpp" line="164"/>
         <source>Show in New Win&amp;dow</source>
-        <translation type="unfinished"></translation>
+        <translation>Εμφάνιση σε νέο &amp;παράθυρο</translation>
     </message>
 </context>
 <context>
@@ -2387,7 +2387,7 @@ or does not have such an option; required otherwise.</source>
         <location filename="../preferences.ui" line="886"/>
         <source>This is optional, depends on the terminal,
 and can be any group of custom options.</source>
-        <translation>Είναι προαιρετικό και εξαρτάται από το τερματικό,&#x2028;και μπορεί να είναι οποιαδήποτε ομάδα προσαρμοσμένων ορισμάτων.</translation>
+        <translation>Είναι προαιρετικό και εξαρτάται από το τερματικό, και μπορεί να είναι οποιαδήποτε ομάδα προσαρμοσμένων ορισμάτων.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="964"/>
@@ -2597,7 +2597,7 @@ lxsudo dbus-run-session -- %s</translation>
     <message>
         <location filename="../bulkrename.cpp" line="243"/>
         <source>Invalid regular expression.</source>
-        <translation type="unfinished"></translation>
+        <translation>Μη έγκυρη κανονική έκφραση.</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="1149"/>

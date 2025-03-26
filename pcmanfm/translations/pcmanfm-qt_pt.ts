@@ -123,7 +123,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../bulk-rename.ui" line="12"/>
         <source>Serial Renaming</source>
-        <translation type="unfinished"></translation>
+        <translation>Renomeação em série</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="36"/>
@@ -143,42 +143,42 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../bulk-rename.ui" line="85"/>
         <source>Replacement</source>
-        <translation type="unfinished"></translation>
+        <translation>Substituição</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="97"/>
         <source>Find in names:</source>
-        <translation type="unfinished"></translation>
+        <translation>Localizar em nomes:</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="107"/>
         <source>Replace with:</source>
-        <translation type="unfinished"></translation>
+        <translation>Substituir por:</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="117"/>
         <source>Case-sensitive</source>
-        <translation type="unfinished"></translation>
+        <translation>Diferenciar maiúsculas de minúsculas</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="124"/>
         <source>Regular expression</source>
-        <translation type="unfinished"></translation>
+        <translation>Expressão regular</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="134"/>
         <source>Change Case</source>
-        <translation type="unfinished"></translation>
+        <translation>Mudar maiúsculas/minúsculas</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="146"/>
         <source>To upper case</source>
-        <translation type="unfinished"></translation>
+        <translation>Para maiúsculas</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="156"/>
         <source>To lower case</source>
-        <translation type="unfinished"></translation>
+        <translation>Para minúsculas</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="27"/>
@@ -1987,12 +1987,12 @@ Elas podem ser úteis se essas pastas forem criadas novamente.</translation>
     <message>
         <location filename="../view.cpp" line="133"/>
         <source>Open in New T&amp;ab</source>
-        <translation>Abrir em novo sep&amp;arador</translation>
+        <translation>Abrir num novo sep&amp;arador</translation>
     </message>
     <message>
         <location filename="../view.cpp" line="137"/>
         <source>Open in New Win&amp;dow</source>
-        <translation>Abrir em &amp;nova janela</translation>
+        <translation>Abrir numa &amp;nova janela</translation>
     </message>
     <message>
         <location filename="../view.cpp" line="145"/>
@@ -2003,12 +2003,12 @@ Elas podem ser úteis se essas pastas forem criadas novamente.</translation>
     <message>
         <location filename="../view.cpp" line="160"/>
         <source>Show in New T&amp;ab</source>
-        <translation type="unfinished"></translation>
+        <translation>Mostrar num novo sep&amp;arador</translation>
     </message>
     <message>
         <location filename="../view.cpp" line="164"/>
         <source>Show in New Win&amp;dow</source>
-        <translation type="unfinished"></translation>
+        <translation>Mostrar numa nova ja&amp;nela</translation>
     </message>
 </context>
 <context>
@@ -2021,7 +2021,7 @@ Elas podem ser úteis se essas pastas forem criadas novamente.</translation>
     <message>
         <location filename="../preferences.ui" line="45"/>
         <source>User Interface</source>
-        <translation>Interface</translation>
+        <translation>Interface do utilizador</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="35"/>
@@ -2037,7 +2037,7 @@ Elas podem ser úteis se essas pastas forem criadas novamente.</translation>
         <location filename="../preferences.ui" line="50"/>
         <location filename="../preferences.ui" line="642"/>
         <source>Thumbnail</source>
-        <translation>Miniaturas</translation>
+        <translation>Miniatura</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="55"/>
@@ -2053,7 +2053,7 @@ Elas podem ser úteis se essas pastas forem criadas novamente.</translation>
         <location filename="../preferences.ui" line="103"/>
         <location filename="../preferences.ui" line="116"/>
         <source>Set to zero to disable auto-selection.</source>
-        <translation>Definir para zero para desativar a auto-selecção.</translation>
+        <translation>Definir para zero para desativar a seleção automática.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="106"/>
@@ -2078,7 +2078,7 @@ Elas podem ser úteis se essas pastas forem criadas novamente.</translation>
     <message>
         <location filename="../preferences.ui" line="129"/>
         <source>Show folder context menu with Ctrl + right click</source>
-        <translation>Mostrar menu de contexto da pasta com Ctrl+clique direito</translation>
+        <translation>Mostrar o menu de contexto da pasta com Ctrl+clique direito</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="195"/>
@@ -2100,12 +2100,12 @@ Elas podem ser úteis se essas pastas forem criadas novamente.</translation>
     <message>
         <location filename="../preferences.ui" line="212"/>
         <source>Launch executable files without prompt</source>
-        <translation>Iniciar ficheiros executáveis (sem confirmação)</translation>
+        <translation>Iniciar ficheiros executáveis sem confirmação</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="229"/>
         <source>Open folders in new tabs as far as possible</source>
-        <translation>Se possível abrir pastas em separadores distintos</translation>
+        <translation>Abrir pastas em novos separadores, na medida do possível</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="232"/>
@@ -2160,12 +2160,12 @@ Elas podem ser úteis se essas pastas forem criadas novamente.</translation>
     <message>
         <location filename="../preferences.ui" line="559"/>
         <source>Always show the tab bar</source>
-        <translation>Mostrar sempre barra de separadores</translation>
+        <translation>Mostrar sempre a barra de separadores</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="566"/>
         <source>Show &apos;Close&apos; buttons on tabs	</source>
-        <translation>Mostrar botão &quot;Fechar&quot; nos separadoress	</translation>
+        <translation>Mostrar o botão &quot;Fechar&quot; nos separadores	</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="580"/>
@@ -2185,12 +2185,12 @@ Elas podem ser úteis se essas pastas forem criadas novamente.</translation>
     <message>
         <location filename="../preferences.ui" line="93"/>
         <source>Open files with single click</source>
-        <translation>Abrir ficheiros com um clique</translation>
+        <translation>Abrir ficheiros com um único clique</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="162"/>
         <source>Default view mode:</source>
-        <translation>Modo de visualização:</translation>
+        <translation>Modo de visualização predefinido:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="119"/>
@@ -2210,7 +2210,7 @@ Elas podem ser úteis se essas pastas forem criadas novamente.</translation>
     <message>
         <location filename="../preferences.ui" line="181"/>
         <source>Confirm before deleting files</source>
-        <translation>Confirmar antes de apagar</translation>
+        <translation>Confirmar antes de eliminar ficheiros</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="188"/>
@@ -2253,7 +2253,7 @@ Elas podem ser úteis se essas pastas forem criadas novamente.</translation>
     <message>
         <location filename="../preferences.ui" line="389"/>
         <source>User interface</source>
-        <translation>Interface</translation>
+        <translation>Interface do utilizador</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="402"/>
@@ -2295,7 +2295,7 @@ Elas podem ser úteis se essas pastas forem criadas novamente.</translation>
         <location filename="../preferences.ui" line="489"/>
         <source>3 px by default.
 A space is also reserved for 3 lines of text.</source>
-        <translation>3 pixeis por definição.
+        <translation>3 px por predefinição.
 Será reservado um espaço para 3 linhas de texto.</translation>
     </message>
     <message>
@@ -2308,17 +2308,17 @@ Será reservado um espaço para 3 linhas de texto.</translation>
         <source>When unchecked, the tab bar will be shown
 only if there are more than one tab.</source>
         <translation>Se desativar a opção, a barra de separadores apenas
-será mostrada se existir mais do que um separador.</translation>
+será exibida se existir mais do que um separador.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="573"/>
         <source>Switch to newly opened tab</source>
-        <translation>Trocar para o separador recém aberto</translation>
+        <translation>Trocar para o separador recém-aberto</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="615"/>
         <source>Reopen last window tabs in a new window</source>
-        <translation>Reabrir últimos separadores de uma janela em outra janela</translation>
+        <translation>Reabrir os separadores da última janela numa nova janela</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="665"/>
@@ -2328,7 +2328,7 @@ será mostrada se existir mais do que um separador.</translation>
 Usually, most image types are supported. The default size limit is 4 MiB.</source>
         <translation>O gerador de miniaturas nativo apenas cria as miniaturas que forem suportadas por Qt.
 
-Por norma, a maioria dos tipos de imagens são suportados. O tamanho padrão das miniaturas é 4 Mib.</translation>
+Por norma, a maioria dos tipos de imagens são suportados. O tamanho predefinido das miniaturas é 4 Mib.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="670"/>
@@ -2592,12 +2592,12 @@ lxsudo dbus-run-session -- %s</translation>
     <message>
         <location filename="../bulkrename.cpp" line="234"/>
         <source>Nothing to find.</source>
-        <translation type="unfinished"></translation>
+        <translation>Nada a encontrar.</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="243"/>
         <source>Invalid regular expression.</source>
-        <translation type="unfinished"></translation>
+        <translation>Expressão regular inválida.</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="1149"/>

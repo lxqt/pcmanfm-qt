@@ -90,12 +90,12 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../autorun.ui" line="14"/>
         <source>Removable medium is inserted</source>
-        <translation>插入可移除式裝置</translation>
+        <translation>可移除式裝置已經插入</translation>
     </message>
     <message>
         <location filename="../autorun.ui" line="33"/>
         <source>&lt;b&gt;Removable medium is inserted&lt;/b&gt;</source>
-        <translation>&lt;b&gt;插入可移除式裝置&lt;/b&gt;</translation>
+        <translation>&lt;b&gt;可移除式裝置已經插入&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../autorun.ui" line="40"/>
@@ -206,7 +206,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../connect.ui" line="29"/>
         <source>Specify remote folder to connect</source>
-        <translation>指定要連線的遠端目錄</translation>
+        <translation>指定要連線的遠端資料夾</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="36"/>
@@ -244,7 +244,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../desktopentrydialog.ui" line="45"/>
         <source>Specific name of this launcher.</source>
-        <translation>這個啟動器的名稱。</translation>
+        <translation>這個啟動器的特定名稱。</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="58"/>
@@ -293,7 +293,7 @@ It can be left empty.</source>
     <message>
         <location filename="../desktopentrydialog.ui" line="151"/>
         <source>Icon to display in file manager, menus, etc.</source>
-        <translation>在檔案管理程式、選單等之中顯示的圖示。</translation>
+        <translation>在檔案管理程式、選單等所顯示的圖示。</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="173"/>
@@ -366,7 +366,7 @@ Examples: AudioVideo, Audio, Video, Development, Education, Game, Graphics, Netw
     <message>
         <location filename="../desktop-folder.ui" line="14"/>
         <source>Form</source>
-        <translation>表單</translation>
+        <translation>型式</translation>
     </message>
     <message>
         <location filename="../desktop-folder.ui" line="23"/>
@@ -381,7 +381,7 @@ Examples: AudioVideo, Audio, Video, Development, Education, Game, Graphics, Netw
     <message>
         <location filename="../desktop-folder.ui" line="36"/>
         <source>Image file</source>
-        <translation>影像檔案</translation>
+        <translation>影像圖檔</translation>
     </message>
     <message>
         <location filename="../desktop-folder.ui" line="42"/>
@@ -465,7 +465,7 @@ Examples: AudioVideo, Audio, Video, Development, Education, Game, Graphics, Netw
     <message>
         <location filename="../desktop-preferences.ui" line="24"/>
         <source>General</source>
-        <translation>一般</translation>
+        <translation>通則</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="87"/>
@@ -517,7 +517,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../desktop-preferences.ui" line="230"/>
         <source>Margins of work area:</source>
-        <translation>工作區各邊界的距離：</translation>
+        <translation>工作區邊界距離：</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="303"/>
@@ -534,7 +534,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktop-preferences.ui" line="314"/>
         <source>Make all items stick to their positions</source>
-        <translation>使所有桌面圖示不被自動排列</translation>
+        <translation>將全部項目固定在自己的位置</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="373"/>
@@ -609,7 +609,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktop-preferences.ui" line="620"/>
         <source>Visible Shortcuts</source>
-        <translation>可見的快速捷</translation>
+        <translation>可見的快速鍵</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="626"/>
@@ -662,7 +662,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../shortcuts.ui" line="34"/>
         <source>Focus view, clear filter bar</source>
-        <translation>焦點移到主顯示區，並清除搜尋列</translation>
+        <translation>焦點檢視，清除篩選列</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="39"/>
@@ -766,7 +766,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../shortcuts.ui" line="130"/>
         <source>Paste into transient filter bar</source>
-        <translation>貼到臨時搜尋框</translation>
+        <translation>貼上至臨時篩選列</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="135"/>
@@ -824,7 +824,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="425"/>
         <source>Reload</source>
-        <translation>重新讀取</translation>
+        <translation>重新載入</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="321"/>
@@ -844,12 +844,12 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="150"/>
         <source>Path &amp;Bar</source>
-        <translation>路徑工具列(&amp;B)</translation>
+        <translation>路徑列(&amp;B)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="157"/>
         <source>&amp;Filtering</source>
-        <translation>篩選(&amp;F)</translation>
+        <translation>正在篩選(&amp;F)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="232"/>
@@ -889,7 +889,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="357"/>
         <source>&amp;New Window</source>
-        <translation>新視窗(&amp;N)</translation>
+        <translation>新建視窗(&amp;N)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="360"/>
@@ -934,7 +934,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="415"/>
         <source>&amp;Add to Bookmarks</source>
-        <translation>加入到書籤(&amp;A)</translation>
+        <translation>加入至書籤(&amp;A)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="420"/>
@@ -989,7 +989,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="550"/>
         <source>&amp;By File Name</source>
-        <translation>以檔案名稱( &amp;B)</translation>
+        <translation>依照檔案名稱(&amp;B)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="558"/>
@@ -1019,7 +1019,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="598"/>
         <source>By &amp;Group</source>
-        <translation>依照群組</translation>
+        <translation>依照群組(&amp;G)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="606"/>
@@ -1039,7 +1039,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="1015"/>
         <source>Preserve Settings Recursively from &amp;Here</source>
-        <translation>遞歸地保留＆Here的設定</translation>
+        <translation>從此處遞歸保留設定(&amp;H)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="1020"/>
@@ -1049,7 +1049,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="1025"/>
         <source>&amp;Remove Settings of Nonexistent Folders</source>
-        <translation>刪除不存在的資料夾的設定(&amp;R)</translation>
+        <translation>移除不存在的資料夾的設定(&amp;R)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="1033"/>
@@ -1064,7 +1064,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="700"/>
         <source>C&amp;lose Tab</source>
-        <translation>關閉(&amp;L)</translation>
+        <translation>關閉分頁(&amp;L)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="712"/>
@@ -1119,12 +1119,12 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="932"/>
         <source>&amp;Show/Focus Filter Bar</source>
-        <translation>顯示/聚焦篩選條(&amp;S)</translation>
+        <translation>顯示/焦點篩選列(&amp;S)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="935"/>
         <source>Show Filter Bar</source>
-        <translation>顯示篩選欄</translation>
+        <translation>顯示篩選列</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="938"/>
@@ -1134,12 +1134,12 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="946"/>
         <source>S&amp;plit View</source>
-        <translation>分割視圖(&amp;p)</translation>
+        <translation>分割檢視(&amp;P)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="949"/>
         <source>Split View</source>
-        <translation>分割視圖</translation>
+        <translation>分割檢視</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="952"/>
@@ -1184,7 +1184,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="999"/>
         <source>Open Tab in &amp;Admin Mode</source>
-        <translation>以管理員模式開啟分頁(&amp;A)</translation>
+        <translation>在管理模式中開啟分頁(&amp;A)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="1004"/>
@@ -1200,7 +1200,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="827"/>
         <source>&amp;Clear All Filters</source>
-        <translation>清空全部篩選條件(&amp;C)</translation>
+        <translation>清空全部篩選(&amp;C)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="830"/>
@@ -1250,7 +1250,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="819"/>
         <source>Permanent &amp;filter bar</source>
-        <translation>固定篩選欄(&amp;f)</translation>
+        <translation>常設篩選列(&amp;F)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="861"/>
@@ -1286,7 +1286,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="257"/>
         <source>Main Toolbar</source>
-        <translation>主選單列</translation>
+        <translation>主工具列</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="469"/>
@@ -1316,12 +1316,12 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="502"/>
         <source>Select &amp;All</source>
-        <translation>全選(&amp;A)</translation>
+        <translation>選取全部(&amp;A)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="518"/>
         <source>Pr&amp;eferences</source>
-        <translation>偏好設定(&amp;R)</translation>
+        <translation>偏好設定(&amp;E)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="664"/>
@@ -1351,12 +1351,12 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="623"/>
         <source>New &amp;Tab</source>
-        <translation>新分頁(&amp;T)</translation>
+        <translation>新建分頁(&amp;T)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="626"/>
         <source>New Tab</source>
-        <translation>新分頁</translation>
+        <translation>新建分頁</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="629"/>
@@ -1495,7 +1495,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../application.cpp" line="189"/>
         <source>PROFILE</source>
-        <translation>設定檔</translation>
+        <translation>設定資料檔</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="192"/>
@@ -1556,7 +1556,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../application.cpp" line="216"/>
         <source>Set mode of desktop wallpaper. MODE=(%1)</source>
-        <translation>設定桌布模式。模式=(%1)</translation>
+        <translation>設定桌面桌布模式。模式=(%1)</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="219"/>
@@ -1679,7 +1679,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="55"/>
         <source>Fill with background color only</source>
-        <translation>只以背景色填滿</translation>
+        <translation>僅以背景色填滿</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="56"/>
@@ -1689,7 +1689,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="57"/>
         <source>Stretch to fit the screen</source>
-        <translation>延展至符合螢幕大小</translation>
+        <translation>延展至符合螢幕</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="58"/>
@@ -1699,12 +1699,12 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="59"/>
         <source>Tile the image to fill the entire screen</source>
-        <translation>連續拼貼鋪滿整個螢幕</translation>
+        <translation>圖片平鋪填滿整個螢幕</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="60"/>
         <source>Zoom the image to fill the entire screen</source>
-        <translation>縮放影像填滿整個螢幕</translation>
+        <translation>縮放圖片填滿整個螢幕</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="272"/>
@@ -1804,7 +1804,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../mainwindow.cpp" line="142"/>
         <source>Root Instance</source>
-        <translation>Root 模式</translation>
+        <translation>Root 事例</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="776"/>
@@ -1858,8 +1858,8 @@ are left clicked, even when it is not the default file manager.</source>
         <location filename="../mainwindow.cpp" line="2400"/>
         <source>Do you want to remove settings of nonexistent folders?
 They might be useful if those folders are created again.</source>
-        <translation>請問您要刪除不存在資料夾的設定嗎？
-如果再度建立資料夾時，可能會有用。</translation>
+        <translation>確定要移除不存在資料夾的設定嗎？
+如果這些資料夾再度建立時，可能會有用。</translation>
     </message>
 </context>
 <context>
@@ -1887,7 +1887,7 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferencesdialog.cpp" line="311"/>
         <source>Remove if added by user</source>
-        <translation>移除，如果由使用者所新增</translation>
+        <translation>移除，若是由使用者所新增</translation>
     </message>
     <message>
         <location filename="../preferencesdialog.cpp" line="335"/>
@@ -1977,7 +1977,7 @@ They might be useful if those folders are created again.</source>
         <location filename="../view.cpp" line="60"/>
         <source>Do you want to open these %1 files?</source>
         <translation>
-            <numerusform>您要開啟這 %1 個檔案嗎？</numerusform>
+            <numerusform>確定要開啟這些 %1 個檔案嗎？</numerusform>
         </translation>
     </message>
     <message>
@@ -1999,12 +1999,12 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../view.cpp" line="160"/>
         <source>Show in New T&amp;ab</source>
-        <translation type="unfinished"></translation>
+        <translation>在新分頁中顯示(&amp;A)</translation>
     </message>
     <message>
         <location filename="../view.cpp" line="164"/>
         <source>Show in New Win&amp;dow</source>
-        <translation type="unfinished"></translation>
+        <translation>在新視窗中顯示(&amp;D)</translation>
     </message>
 </context>
 <context>
@@ -2038,7 +2038,7 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferences.ui" line="55"/>
         <source>Volume</source>
-        <translation>磁碟</translation>
+        <translation>容量</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="60"/>
@@ -2079,7 +2079,7 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferences.ui" line="195"/>
         <source>Erase files on removable media instead of &quot;trash can&quot; creation</source>
-        <translation>在可移除裝置上直接刪除檔案，而不移到垃圾桶</translation>
+        <translation>在可移除裝置上刪除檔案，取代使用垃圾桶</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="202"/>
@@ -2091,7 +2091,7 @@ They might be useful if those folders are created again.</source>
         <location filename="../preferences.ui" line="409"/>
         <location filename="../preferences.ui" line="419"/>
         <source>Requires application restart to take effect completely</source>
-        <translation>需要重新啟動應用程式才能完全生效</translation>
+        <translation>需要重新啟動應用程式才會完全生效</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="212"/>
@@ -2106,7 +2106,7 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferences.ui" line="232"/>
         <source>Single window mode</source>
-        <translation>單視窗模式</translation>
+        <translation>單一視窗模式</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="296"/>
@@ -2241,12 +2241,12 @@ lxsudo dbus-run-session -- %s</translation>
     <message>
         <location filename="../preferences.ui" line="559"/>
         <source>Always show the tab bar</source>
-        <translation>總是顯示標籤列</translation>
+        <translation>總是顯示分頁列</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="566"/>
         <source>Show &apos;Close&apos; buttons on tabs	</source>
-        <translation>在分頁標籤上顯示「關閉」按鈕	</translation>
+        <translation>在分頁列上顯示 &apos;關閉&apos; 按鈕	</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="580"/>
@@ -2266,7 +2266,7 @@ lxsudo dbus-run-session -- %s</translation>
     <message>
         <location filename="../preferences.ui" line="93"/>
         <source>Open files with single click</source>
-        <translation>單擊開啟檔案</translation>
+        <translation>單次點按開啟檔案</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="162"/>
@@ -2291,22 +2291,22 @@ lxsudo dbus-run-session -- %s</translation>
     <message>
         <location filename="../preferences.ui" line="181"/>
         <source>Confirm before deleting files</source>
-        <translation>刪除檔案前確認</translation>
+        <translation>刪除檔案前進行確認</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="188"/>
         <source>Move deleted files to &quot;trash bin&quot; instead of erasing from disk.</source>
-        <translation>將檔案移動到垃圾桶，而不直接刪除。</translation>
+        <translation>將已經刪除的檔案移至垃圾桶，取代由磁碟進行刪除。</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="219"/>
         <source>Renamed files will also be selected</source>
-        <translation>也會選取更名過的檔案</translation>
+        <translation>已經重新命名的檔案也會被選取</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="222"/>
         <source>Select newly created files</source>
-        <translation>選擇新建立的檔案</translation>
+        <translation>選擇新近建立的檔案</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="244"/>
@@ -2317,19 +2317,19 @@ lxsudo dbus-run-session -- %s</translation>
         <location filename="../preferences.ui" line="325"/>
         <location filename="../preferences.ui" line="335"/>
         <source>Used by Icon View</source>
-        <translation>由圖示檢視使用</translation>
+        <translation>依照圖示檢視使用</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="342"/>
         <location filename="../preferences.ui" line="352"/>
         <source>Used by Compact View and Detailed List View</source>
-        <translation>由簡易檢視和詳細清單列表使用</translation>
+        <translation>依照簡易檢視和詳細清單列表使用</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="359"/>
         <location filename="../preferences.ui" line="369"/>
         <source>Used by Thumbnail View</source>
-        <translation>縮圖檢視使用</translation>
+        <translation>依照縮圖檢視使用</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="389"/>
@@ -2349,7 +2349,7 @@ lxsudo dbus-run-session -- %s</translation>
     <message>
         <location filename="../preferences.ui" line="459"/>
         <source>Minimum item margins in icon view:</source>
-        <translation>圖示檢視項目邊緣留空：</translation>
+        <translation>圖示檢視中項目邊距最小化：</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="466"/>
@@ -2383,12 +2383,13 @@ A space is also reserved for 3 lines of text.</source>
         <location filename="../preferences.ui" line="555"/>
         <source>When unchecked, the tab bar will be shown
 only if there are more than one tab.</source>
-        <translation>若取消，分頁工具列只會在有多於一個分頁的時候顯示。</translation>
+        <translation>當未勾選，分頁列顯示
+僅在多於一個分頁的時候。</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="573"/>
         <source>Switch to newly opened tab</source>
-        <translation>切換到新分頁</translation>
+        <translation>切換至新近開啟的分頁</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="615"/>
@@ -2449,7 +2450,7 @@ A value of -1 means that there is no limit for the file size (the default).</sou
     <message>
         <location filename="../preferences.ui" line="934"/>
         <source>Templates</source>
-        <translation>模板</translation>
+        <translation>範本</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="940"/>
@@ -2479,12 +2480,12 @@ A value of -1 means that there is no limit for the file size (the default).</sou
     <message>
         <location filename="../preferences.ui" line="900"/>
         <source>Switch &amp;user command:</source>
-        <translation>切換使用者指令：</translation>
+        <translation>切換使用者指令(&amp;U)：</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="918"/>
         <source>Archiver in&amp;tegration:</source>
-        <translation>壓縮程式整合：</translation>
+        <translation>壓縮程式整合(&amp;T)：</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="754"/>
@@ -2509,12 +2510,12 @@ A value of -1 means that there is no limit for the file size (the default).</sou
     <message>
         <location filename="../preferences.ui" line="790"/>
         <source>Close &amp;tab containing removable medium</source>
-        <translation>關閉顯示可移除裝置的分頁</translation>
+        <translation>關閉包含可移除裝置的分頁(&amp;T)</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="797"/>
         <source>Chan&amp;ge folder in the tab to home folder</source>
-        <translation>將分頁中的資料夾變更作為家資料夾</translation>
+        <translation>將分頁中的資料夾變更為主資料夾(&amp;G)</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="824"/>
@@ -2524,7 +2525,7 @@ A value of -1 means that there is no limit for the file size (the default).</sou
     <message>
         <location filename="../preferences.ui" line="395"/>
         <source>Use SI decimal prefixes instead of IEC binary prefixes</source>
-        <translation>使用SI小數前綴代替IEC二進制前綴</translation>
+        <translation>使用 SI 小數前綴代替 IEC 二進制前綴</translation>
     </message>
 </context>
 <context>
