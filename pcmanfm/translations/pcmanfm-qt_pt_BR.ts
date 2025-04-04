@@ -123,7 +123,7 @@ Foundation: Inc., 51 Franklin Street, 5º Andar, Boston, MA  02110-1301, EUA.</t
     <message>
         <location filename="../bulk-rename.ui" line="12"/>
         <source>Serial Renaming</source>
-        <translation type="unfinished"></translation>
+        <translation>Renomear em série</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="36"/>
@@ -143,42 +143,42 @@ Foundation: Inc., 51 Franklin Street, 5º Andar, Boston, MA  02110-1301, EUA.</t
     <message>
         <location filename="../bulk-rename.ui" line="85"/>
         <source>Replacement</source>
-        <translation type="unfinished"></translation>
+        <translation>Substituição</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="97"/>
         <source>Find in names:</source>
-        <translation type="unfinished"></translation>
+        <translation>Localizar em nomes:</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="107"/>
         <source>Replace with:</source>
-        <translation type="unfinished"></translation>
+        <translation>Substituir por:</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="117"/>
         <source>Case-sensitive</source>
-        <translation type="unfinished"></translation>
+        <translation>Diferenciar maiúsculas e minúsculas</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="124"/>
         <source>Regular expression</source>
-        <translation type="unfinished"></translation>
+        <translation>Expressão regular</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="134"/>
         <source>Change Case</source>
-        <translation type="unfinished"></translation>
+        <translation>Trocar maiúsculas e minúsculas</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="146"/>
         <source>To upper case</source>
-        <translation type="unfinished"></translation>
+        <translation>Para maiúsculas</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="156"/>
         <source>To lower case</source>
-        <translation type="unfinished"></translation>
+        <translation>Para minúsculas</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="27"/>
@@ -1888,12 +1888,12 @@ Eles podem ser úteis se essas pastas forem criadas novamente.</translation>
     <message>
         <location filename="../preferencesdialog.cpp" line="311"/>
         <source>Remove if added by user</source>
-        <translation type="unfinished"></translation>
+        <translation>Remover se adicionado pelo usuário</translation>
     </message>
     <message>
         <location filename="../preferencesdialog.cpp" line="335"/>
         <source>Open user-defined list</source>
-        <translation type="unfinished"></translation>
+        <translation>Abrir lista definida pelo usuário</translation>
     </message>
 </context>
 <context>
@@ -2004,12 +2004,12 @@ Eles podem ser úteis se essas pastas forem criadas novamente.</translation>
     <message>
         <location filename="../view.cpp" line="160"/>
         <source>Show in New T&amp;ab</source>
-        <translation type="unfinished"></translation>
+        <translation>Mostrar em Nova &amp;Aba</translation>
     </message>
     <message>
         <location filename="../view.cpp" line="164"/>
         <source>Show in New Win&amp;dow</source>
-        <translation type="unfinished"></translation>
+        <translation>Mostrar em Nova &amp;Janela</translation>
     </message>
 </context>
 <context>
@@ -2406,7 +2406,8 @@ Um valor -1 significa que não há limite para o tamanho do arquivo (o padrão).
         <location filename="../preferences.ui" line="849"/>
         <source>Example: qterminal
 It is the name of the executable file.</source>
-        <translation type="unfinished"></translation>
+        <translation>Exemplo: qterminal
+É o nome do arquivo executável.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="860"/>
@@ -2418,18 +2419,21 @@ It is the name of the executable file.</source>
         <source>Example: -e
 It can be left empty if the terminal is already supported
 or does not have such an option; required otherwise.</source>
-        <translation type="unfinished"></translation>
+        <translation>Exemplo: -e
+Pode ser deixado em branco caso haja suporte para terminal
+ou se não possuir a opção; caso contrário é necessário.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="879"/>
         <source>Custom option(s):</source>
-        <translation type="unfinished"></translation>
+        <translation>Opção(ões) personalizada(s):</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="886"/>
         <source>This is optional, depends on the terminal,
 and can be any group of custom options.</source>
-        <translation type="unfinished"></translation>
+        <translation>Isto é opcional, depende do terminal,
+e pode ser qualquer grupo de opções personalizadas.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="910"/>
@@ -2589,12 +2593,12 @@ lxsudo dbus-run-session -- %s</translation>
     <message>
         <location filename="../bulkrename.cpp" line="234"/>
         <source>Nothing to find.</source>
-        <translation type="unfinished"></translation>
+        <translation>Nada para encontrar.</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="243"/>
         <source>Invalid regular expression.</source>
-        <translation type="unfinished"></translation>
+        <translation>Expressão regular inválida.</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="1149"/>
