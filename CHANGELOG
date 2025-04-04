@@ -1,3 +1,18 @@
+pcmanfm-qt-2.2.0 / 2025-04-17
+==============================
+ * Better drag-and-drop on Desktop, without displacing neighboring items as far as possible.
+ * Workaround for a case of wrong wallpaper size on Wayland.
+ * Support custom options for terminals.
+ * Better tab sizes, for preventing small tab texts from becoming elided as far as possible.
+ * Prevented going up when Backspace is kept pressed inside the transient filter-bar.
+ * Handled Wayland screens by using their names and stopped using "primary screen" on Wayland because Wayland doesn't have the concept of primary screen.
+ * Allow string replacement in bulk renaming, and show the bulk rename dialog again on failure.
+ * Added context menu items for opening the containing folder in search:///.
+ * Removed an old X11 workaround under Wayland.
+ * Replaced qMin,qMax,qBound and qRound with standard functions.
+ * Set fallback icons to support more icon sets.
+ * Added Ctrl+Shift+NUMBER as the shortcut for changing the view mode.
+
 pcmanfm-qt-2.1.0 / 2024-11-05
 ==============================
  * Add 8 menu icons.
