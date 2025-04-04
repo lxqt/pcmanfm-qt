@@ -160,7 +160,7 @@ USA.</translation>
     <message>
         <location filename="../bulk-rename.ui" line="117"/>
         <source>Case-sensitive</source>
-        <translation type="unfinished"></translation>
+        <translation>Διάκριση πεζών/κεφαλαίων</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="124"/>
@@ -170,17 +170,17 @@ USA.</translation>
     <message>
         <location filename="../bulk-rename.ui" line="134"/>
         <source>Change Case</source>
-        <translation type="unfinished"></translation>
+        <translation>Εναλλαγή πεζών-κεφαλαίων</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="146"/>
         <source>To upper case</source>
-        <translation type="unfinished"></translation>
+        <translation>Σε κεφαλαία</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="156"/>
         <source>To lower case</source>
-        <translation type="unfinished"></translation>
+        <translation>Σε πεζά</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="27"/>
