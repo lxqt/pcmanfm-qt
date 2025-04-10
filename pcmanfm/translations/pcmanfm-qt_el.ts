@@ -150,7 +150,7 @@ USA.</translation>
     <message>
         <location filename="../bulk-rename.ui" line="97"/>
         <source>Find in names:</source>
-        <translation type="unfinished"></translation>
+        <translation>Αναζήτηση στα ονόματα:</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="107"/>
@@ -2592,7 +2592,7 @@ lxsudo dbus-run-session -- %s</translation>
     <message>
         <location filename="../bulkrename.cpp" line="234"/>
         <source>Nothing to find.</source>
-        <translation type="unfinished"></translation>
+        <translation>Κανένα λήμμα προς αναζήτηση.</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="243"/>
