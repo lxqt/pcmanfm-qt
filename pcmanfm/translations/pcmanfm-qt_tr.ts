@@ -144,17 +144,17 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../bulk-rename.ui" line="85"/>
         <source>Replacement</source>
-        <translation type="unfinished"></translation>
+        <translation>Değiştirme</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="97"/>
         <source>Find in names:</source>
-        <translation type="unfinished"></translation>
+        <translation>İsimlerde bul:</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="107"/>
         <source>Replace with:</source>
-        <translation type="unfinished"></translation>
+        <translation>Şununla değiştir:</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="117"/>
@@ -164,7 +164,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../bulk-rename.ui" line="124"/>
         <source>Regular expression</source>
-        <translation type="unfinished"></translation>
+        <translation>Düzenli ifade</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="134"/>
@@ -174,12 +174,12 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../bulk-rename.ui" line="146"/>
         <source>To upper case</source>
-        <translation type="unfinished"></translation>
+        <translation>Büyük harfe</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="156"/>
         <source>To lower case</source>
-        <translation type="unfinished"></translation>
+        <translation>Küçük harfe</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="27"/>
@@ -1999,12 +1999,12 @@ Bu klasörler yeniden oluşturulursa faydalı olabilirler.</translation>
     <message>
         <location filename="../view.cpp" line="160"/>
         <source>Show in New T&amp;ab</source>
-        <translation type="unfinished"></translation>
+        <translation>Yeni S&amp;ekmede Göster</translation>
     </message>
     <message>
         <location filename="../view.cpp" line="164"/>
         <source>Show in New Win&amp;dow</source>
-        <translation type="unfinished"></translation>
+        <translation>Yeni Pen&amp;cerede Gönster</translation>
     </message>
 </context>
 <context>
@@ -2345,41 +2345,45 @@ A value of -1 means that there is no limit for the file size (the default).</sou
     <message>
         <location filename="../preferences.ui" line="833"/>
         <source>Terminal emulator</source>
-        <translation type="unfinished"></translation>
+        <translation>Uçbirim öykünücüsü</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="842"/>
         <source>Command:</source>
-        <translation type="unfinished">Komut:</translation>
+        <translation>Komut:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="849"/>
         <source>Example: qterminal
 It is the name of the executable file.</source>
-        <translation type="unfinished"></translation>
+        <translation>Örnek: qterminal
+Çalıştırılabilir dosyanın adıdır.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="860"/>
         <source>Execution option:</source>
-        <translation type="unfinished"></translation>
+        <translation>Çalıştırma seçeneği:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="867"/>
         <source>Example: -e
 It can be left empty if the terminal is already supported
 or does not have such an option; required otherwise.</source>
-        <translation type="unfinished"></translation>
+        <translation>Örnek: -e
+Terminal zaten destekleniyorsa veya böyle bir seçeneği
+yoksa boş bırakılabilir; aksi takdirde gereklidir.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="879"/>
         <source>Custom option(s):</source>
-        <translation type="unfinished"></translation>
+        <translation>Özel seçenek(ler):</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="886"/>
         <source>This is optional, depends on the terminal,
 and can be any group of custom options.</source>
-        <translation type="unfinished"></translation>
+        <translation>Bu isteğe bağlıdır, terminale bağlıdır
+ve herhangi bir özel seçenek grubu olabilir.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="964"/>
@@ -2490,7 +2494,8 @@ and can be any group of custom options.</source>
         <location filename="../preferences.ui" line="910"/>
         <source>Example:
 lxsudo dbus-run-session -- %s</source>
-        <translation type="unfinished"></translation>
+        <translation>Örnek:
+lxsudo dbus-run-session -- %s</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="918"/>
@@ -2583,12 +2588,12 @@ lxsudo dbus-run-session -- %s</source>
     <message>
         <location filename="../bulkrename.cpp" line="234"/>
         <source>Nothing to find.</source>
-        <translation type="unfinished"></translation>
+        <translation>Bulacak bir şey yok.</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="243"/>
         <source>Invalid regular expression.</source>
-        <translation type="unfinished"></translation>
+        <translation>Geçersiz düzenli ifade.</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="1149"/>

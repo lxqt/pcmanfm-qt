@@ -123,7 +123,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../bulk-rename.ui" line="12"/>
         <source>Serial Renaming</source>
-        <translation type="unfinished"></translation>
+        <translation>Nuoseklus pervadinimas</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="36"/>
@@ -143,42 +143,42 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../bulk-rename.ui" line="85"/>
         <source>Replacement</source>
-        <translation type="unfinished"></translation>
+        <translation>Pakeitimas</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="97"/>
         <source>Find in names:</source>
-        <translation type="unfinished"></translation>
+        <translation>Surasti pavadinimuose:</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="107"/>
         <source>Replace with:</source>
-        <translation type="unfinished"></translation>
+        <translation>Kuo pakeisti:</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="117"/>
         <source>Case-sensitive</source>
-        <translation type="unfinished"></translation>
+        <translation>Skirti didžiąsias ir mažąsias raides</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="124"/>
         <source>Regular expression</source>
-        <translation type="unfinished"></translation>
+        <translation>Reguliarusis reiškinys</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="134"/>
         <source>Change Case</source>
-        <translation type="unfinished"></translation>
+        <translation>Keisti raidžių lygį</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="146"/>
         <source>To upper case</source>
-        <translation type="unfinished"></translation>
+        <translation>Paversti didžiosiomis</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="156"/>
         <source>To lower case</source>
-        <translation type="unfinished"></translation>
+        <translation>Paversti mažosiomis</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="27"/>
@@ -2009,12 +2009,12 @@ Jie gali praversti tuo atveju, jeigu aplankai bus sukurti iš naujo.</translatio
     <message>
         <location filename="../view.cpp" line="160"/>
         <source>Show in New T&amp;ab</source>
-        <translation type="unfinished"></translation>
+        <translation>Rodyti naujoje &amp;kortelėje</translation>
     </message>
     <message>
         <location filename="../view.cpp" line="164"/>
         <source>Show in New Win&amp;dow</source>
-        <translation type="unfinished"></translation>
+        <translation>Rodyti naujame &amp;lange</translation>
     </message>
 </context>
 <context>
@@ -2599,12 +2599,12 @@ lxsudo dbus-run-session -- %s</translation>
     <message>
         <location filename="../bulkrename.cpp" line="234"/>
         <source>Nothing to find.</source>
-        <translation type="unfinished"></translation>
+        <translation>Nėra, ko ieškoti.</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="243"/>
         <source>Invalid regular expression.</source>
-        <translation type="unfinished"></translation>
+        <translation>Neteisingas reguliarusis reiškinys.</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="1149"/>
