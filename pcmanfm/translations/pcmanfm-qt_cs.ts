@@ -523,17 +523,17 @@ Je také vyhrazeno místo pro 3 řádky textu.</translation>
         <source>By default, desktop folders will be opened in PCManFM-Qt if they
 are left clicked, even when it is not the default file manager.</source>
         <translation>Ve výchozím nastavení se složky plochy otevřou v PCManFM-Qt, pokud na ně
-kliknete levým tlačítkem, i když to není výchozí správce souborů.</translation>
+klepnete levým tlačítkem, i když to není výchozí správce souborů.</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="307"/>
         <source>Open desktop folders in default file manager by left clicking</source>
-        <translation>Otevřít složky na ploše ve výchozím správci souborů kliknutím levým tlačítkem myši</translation>
+        <translation>Otevřít složky na ploše ve výchozím správci souborů klepnutím levým tlačítkem myši</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="314"/>
         <source>Make all items stick to their positions</source>
-        <translation>Připnout veškeré položky k jejich pozicím</translation>
+        <translation>Připnout veškeré položky k jejich polohám</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="373"/>
@@ -2142,7 +2142,7 @@ Mohly by se ještě hodit v případě znovuvytvoření těchto složek.</transl
     <message>
         <location filename="../preferences.ui" line="93"/>
         <source>Open files with single click</source>
-        <translation>Otevírat soubory jedním kliknutím</translation>
+        <translation>Otevírat soubory jedním klepnutím</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="162"/>
@@ -2198,7 +2198,7 @@ Mohly by se ještě hodit v případě znovuvytvoření těchto složek.</transl
     <message>
         <location filename="../preferences.ui" line="106"/>
         <source>Delay of auto-selection in single click mode:</source>
-        <translation>Zpoždění automatického výběru v režimu jednoho kliknutí:</translation>
+        <translation>Zpoždění automatického výběru v režimu jednoho klepnutí:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="144"/>
@@ -2218,7 +2218,7 @@ Mohly by se ještě hodit v případě znovuvytvoření těchto složek.</transl
     <message>
         <location filename="../preferences.ui" line="129"/>
         <source>Show folder context menu with Ctrl + right click</source>
-        <translation>Ukázat související nabídku ke složce pomocí Ctrl + kliknutí pravým tlačítkem myši</translation>
+        <translation>Ukázat související nabídku ke složce pomocí Ctrl + klepnutí pravým tlačítkem myši</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="195"/>
