@@ -829,7 +829,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="294"/>
         <source>Go Up</source>
-        <translation>Μετάβαση&#xa0;πάνω</translation>
+        <translation>Μετάβαση πάνω</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="297"/>
@@ -939,7 +939,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="436"/>
         <source>Ctrl+Shift+1</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+1</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="444"/>
@@ -949,7 +949,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="447"/>
         <source>Ctrl+Shift+3</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+3</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="455"/>
@@ -959,7 +959,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="458"/>
         <source>Ctrl+Shift+4</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+4</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="466"/>
@@ -969,7 +969,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="469"/>
         <source>Ctrl+Shift+2</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+2</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="478"/>
@@ -2407,7 +2407,7 @@ or does not have such an option; required otherwise.</source>
         <location filename="../preferences.ui" line="886"/>
         <source>This is optional, depends on the terminal,
 and can be any group of custom options.</source>
-        <translation>Είναι προαιρετικό και εξαρτάται από το τερματικό,&#x2028;και μπορεί να είναι οποιαδήποτε ομάδα προσαρμοσμένων ορισμάτων.</translation>
+        <translation>Είναι προαιρετικό και εξαρτάται από το τερματικό, και μπορεί να είναι οποιαδήποτε ομάδα προσαρμοσμένων ορισμάτων.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="964"/>
