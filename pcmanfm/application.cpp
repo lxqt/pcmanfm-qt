@@ -853,11 +853,15 @@ void Application::updateFromSettings() {
     }
 }
 
-void Application::updateDesktopsFromSettings(bool changeSlide) {
+void Application::updateDesktopsFromSettings(bool changeSlide, bool allowShortcutRemoval) {
+// Desktop shortcuts should be removed only explicitly (e.g., through the Preferences dialog)
+// and only for the first desktop, not when desktops are created or a general setting changes.
     QVector<DesktopWindow*>::iterator it;
     for(it = desktopWindows_.begin(); it != desktopWindows_.end(); ++it) {
         DesktopWindow* desktopWin = static_cast<DesktopWindow*>(*it);
-        desktopWin->updateFromSettings(settings_, changeSlide);
+        desktopWin->updateFromSettings(settings_,
+                                       changeSlide,
+                                       allowShortcutRemoval && it == desktopWindows_.begin());
     }
 }
 
