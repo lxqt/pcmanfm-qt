@@ -234,12 +234,14 @@ void DesktopPreferencesDialog::applySettings()
 void DesktopPreferencesDialog::onApplyClicked()
 {
   applySettings();
-  static_cast<Application*>(qApp)->updateDesktopsFromSettings();
+  static_cast<Application*>(qApp)->updateDesktopsFromSettings(true, // change slide
+                                                              true); // allow shortcut removal
 }
 
 void DesktopPreferencesDialog::accept() {
   applySettings();
-  static_cast<Application*>(qApp)->updateDesktopsFromSettings(false); // don't change slide wallpaper on clicking OK
+  static_cast<Application*>(qApp)->updateDesktopsFromSettings(false, // do not change slide
+                                                              true); // allow shortcut removal
   QDialog::accept();
 }
 

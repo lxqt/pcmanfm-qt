@@ -251,11 +251,7 @@ DesktopWindow::~DesktopWindow() {
     }
 }
 
-void DesktopWindow::updateShortcutsFromSettings(Settings& settings) {
-    // Shortcuts should be deleted only when the user removes them
-    // in the Preferences dialog, not when the desktop is created.
-    static bool firstCall = true;
-
+void DesktopWindow::updateShortcutsFromSettings(Settings& settings, bool allowShortcutRemoval) {
     const QStringList ds = settings.desktopShortcuts();
     Fm::FilePathList paths;
     // Trash
@@ -273,7 +269,7 @@ void DesktopWindow::updateShortcutsFromSettings(Settings& settings) {
             g_object_unref(trashMonitor_);
             trashMonitor_ = nullptr;
         }
-        if(!firstCall) {
+        if(allowShortcutRemoval) {
             QString trash = XdgDir::readDesktopDir() + QLatin1String("/trash-can.desktop");
             if(QFile::exists(trash)) {
                 paths.push_back(Fm::FilePath::fromLocalPath(trash.toStdString().c_str()));
@@ -284,7 +280,7 @@ void DesktopWindow::updateShortcutsFromSettings(Settings& settings) {
     if(ds.contains(QLatin1String("Home"))) {
         createHomeShortcut();
     }
-    else if(!firstCall) {
+    else if(allowShortcutRemoval) {
         QString home = XdgDir::readDesktopDir() + QLatin1String("/user-home.desktop");
         if(QFile::exists(home)) {
             paths.push_back(Fm::FilePath::fromLocalPath(home.toStdString().c_str()));
@@ -294,7 +290,7 @@ void DesktopWindow::updateShortcutsFromSettings(Settings& settings) {
     if(ds.contains(QLatin1String("Computer"))) {
         createComputerShortcut();
     }
-    else if(!firstCall) {
+    else if(allowShortcutRemoval) {
         QString computer = XdgDir::readDesktopDir() + QLatin1String("/computer.desktop");
         if(QFile::exists(computer)) {
             paths.push_back(Fm::FilePath::fromLocalPath(computer.toStdString().c_str()));
@@ -304,7 +300,7 @@ void DesktopWindow::updateShortcutsFromSettings(Settings& settings) {
     if(ds.contains(QLatin1String("Network"))) {
         createNetworkShortcut();
     }
-    else if(!firstCall) {
+    else if(allowShortcutRemoval) {
         QString network = XdgDir::readDesktopDir() + QLatin1String("/network.desktop");
         if(QFile::exists(network)) {
             paths.push_back(Fm::FilePath::fromLocalPath(network.toStdString().c_str()));
@@ -315,8 +311,6 @@ void DesktopWindow::updateShortcutsFromSettings(Settings& settings) {
     if(!paths.empty()) {
         Fm::FileOperation::deleteFiles(paths, false);
     }
-
-    firstCall = false; // desktop is created
 }
 
 void DesktopWindow::createTrashShortcut(int items) {
@@ -948,7 +942,7 @@ void DesktopWindow::nextWallpaper() {
     }
 }
 
-void DesktopWindow::updateFromSettings(Settings& settings, bool changeSlide) {
+void DesktopWindow::updateFromSettings(Settings& settings, bool changeSlide, bool allowShortcutRemoval) {
     // Resetting of the layout will be done after (re-)loading the desktop folder (see onFolderFinishLoading).
     listView_->setUpdatesEnabled(false); // prevent items from shaking
 
@@ -980,7 +974,7 @@ void DesktopWindow::updateFromSettings(Settings& settings, bool changeSlide) {
     setFont(settings.desktopFont());
     setIconSize(Fm::FolderView::IconMode, QSize(settings.desktopIconSize(), settings.desktopIconSize()));
     setMargins(settings.desktopCellMargins());
-    updateShortcutsFromSettings(settings);
+    updateShortcutsFromSettings(settings, allowShortcutRemoval);
     setForeground(settings.desktopFgColor());
     setBackground(settings.desktopBgColor());
     setShadow(settings.desktopShadowColor());
