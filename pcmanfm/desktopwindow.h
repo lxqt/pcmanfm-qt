@@ -74,7 +74,7 @@ public:
     void updateWallpaper(bool checkMTime = false);
     bool pickWallpaper();
     void nextWallpaper();
-    void updateFromSettings(Settings& settings, bool changeSlide = true);
+    void updateFromSettings(Settings& settings, bool changeSlide = true, bool allowShortcutRemoval = false);
 
     void queueRelayout(int delay = 0);
 
@@ -159,7 +159,7 @@ private:
                          const std::set<std::string>& draggedFiles = std::set<std::string>{});
     static void alignToGrid(QPoint& pos, const QPoint& topLeft, const QSize& grid, const int spacing);
 
-    void updateShortcutsFromSettings(Settings& settings);
+    void updateShortcutsFromSettings(Settings& settings, bool allowShortcutRemoval);
     void createTrashShortcut(int items);
     void createHomeShortcut();
     void createComputerShortcut();

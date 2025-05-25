@@ -98,7 +98,7 @@ public:
     }
 
     void updateFromSettings();
-    void updateDesktopsFromSettings(bool changeSlide = true);
+    void updateDesktopsFromSettings(bool changeSlide = true, bool allowShortcutRemoval = false);
 
     void openFolderInTerminal(Fm::FilePath path);
     void openFolders(Fm::FileInfoList files);
