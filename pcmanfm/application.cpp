@@ -992,7 +992,8 @@ void Application::onScreenRemoved(QScreen* oldScreen) {
             int n = desktopWindows_.size();
             for(int i = 0; i < n; ++i) {
                 DesktopWindow* window = desktopWindows_.at(i);
-                if(window->getDesktopScreen() == oldScreen) {
+                auto desktopScr = window->getDesktopScreen();
+                if(desktopScr == nullptr || desktopScr == oldScreen) {
                     desktopWindows_.remove(i);
                     delete window;
                     break;
