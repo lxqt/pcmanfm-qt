@@ -144,6 +144,8 @@ DesktopPreferencesDialog::DesktopPreferencesDialog(QWidget* parent, Qt::WindowFl
 
   ui.allSticky->setChecked(settings.allSticky());
 
+  ui.noItemTooltip->setChecked(settings.desktopNoTooltip());
+
   resize(sizeHint()); // show it compact
 }
 
@@ -227,6 +229,8 @@ void DesktopPreferencesDialog::applySettings()
   settings.setOpenWithDefaultFileManager(ui.defaultFileManager->isChecked());
 
   settings.setAllSticky(ui.allSticky->isChecked());
+
+  settings.setDesktopNoTooltip(ui.noItemTooltip->isChecked());
 
   settings.save();
 }

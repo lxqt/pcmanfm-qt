@@ -84,6 +84,7 @@ Settings::Settings():
     desktopSortColumn_(Fm::FolderModel::ColumnFileMTime),
     desktopSortFolderFirst_(true),
     desktopSortHiddenLast_(false),
+    desktopNoTooltip_(false),
     alwaysShowTabs_(true),
     showTabClose_(true),
     switchToNewTab_(false),
@@ -269,6 +270,7 @@ bool Settings::loadFile(QString filePath) {
     desktopSortColumn_ = sortColumnFromString(settings.value(QStringLiteral("SortColumn")).toString());
     desktopSortFolderFirst_ = settings.value(QStringLiteral("SortFolderFirst"), true).toBool();
     desktopSortHiddenLast_ = settings.value(QStringLiteral("SortHiddenLast"), false).toBool();
+    desktopNoTooltip_ = settings.value(QStringLiteral("NoItemTooltip"), false).toBool();
 
     desktopCellMargins_ = (settings.value(QStringLiteral("DesktopCellMargins"), QSize(3, 1)).toSize()
                            .expandedTo(QSize(0, 0))).boundedTo(QSize(48, 48));
@@ -427,6 +429,7 @@ bool Settings::saveFile(QString filePath) {
     settings.setValue(QStringLiteral("SortColumn"), QString::fromUtf8(sortColumnToString(desktopSortColumn_)));
     settings.setValue(QStringLiteral("SortFolderFirst"), desktopSortFolderFirst_);
     settings.setValue(QStringLiteral("SortHiddenLast"), desktopSortHiddenLast_);
+    settings.setValue(QStringLiteral("NoItemTooltip"), desktopNoTooltip_);
     settings.setValue(QStringLiteral("DesktopCellMargins"), desktopCellMargins_);
     QList<QVariant> l{workAreaMargins_.left(),
                       workAreaMargins_.top(),

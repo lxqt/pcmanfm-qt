@@ -439,6 +439,14 @@ public:
         desktopSortHiddenLast_ = desktopHiddenLast;
     }
 
+    bool desktopNoTooltip() const {
+        return desktopNoTooltip_;
+    }
+
+    void setDesktopNoTooltip(bool noTooltip) {
+        desktopNoTooltip_ = noTooltip;
+    }
+
     bool alwaysShowTabs() const {
         return alwaysShowTabs_;
     }
@@ -1100,6 +1108,7 @@ private:
     Fm::FolderModel::ColumnId desktopSortColumn_;
     bool desktopSortFolderFirst_;
     bool desktopSortHiddenLast_;
+    bool desktopNoTooltip_;
 
     bool alwaysShowTabs_;
     bool showTabClose_;

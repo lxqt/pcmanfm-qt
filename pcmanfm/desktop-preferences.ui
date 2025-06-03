@@ -664,6 +664,13 @@ are left clicked, even when it is not the default file manager.</string>
         </widget>
        </item>
        <item>
+        <widget class="QCheckBox" name="noItemTooltip">
+         <property name="text">
+          <string>Do not show file tooltips</string>
+         </property>
+        </widget>
+       </item>
+       <item>
         <spacer name="verticalSpacer">
          <property name="orientation">
           <enum>Qt::Vertical</enum>
