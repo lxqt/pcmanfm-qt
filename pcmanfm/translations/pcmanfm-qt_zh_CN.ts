@@ -120,7 +120,7 @@ Copyright (C) 2009 - 2014 洪任谕 (Hong Jen Yee)
     <message>
         <location filename="../bulk-rename.ui" line="12"/>
         <source>Serial Renaming</source>
-        <translation type="unfinished"></translation>
+        <translation>序列重命名中</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="36"/>
@@ -140,7 +140,7 @@ Copyright (C) 2009 - 2014 洪任谕 (Hong Jen Yee)
     <message>
         <location filename="../bulk-rename.ui" line="85"/>
         <source>Replacement</source>
-        <translation type="unfinished"></translation>
+        <translation>替换</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="97"/>
@@ -150,7 +150,7 @@ Copyright (C) 2009 - 2014 洪任谕 (Hong Jen Yee)
     <message>
         <location filename="../bulk-rename.ui" line="107"/>
         <source>Replace with:</source>
-        <translation type="unfinished"></translation>
+        <translation>替换为：</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="117"/>
@@ -165,7 +165,7 @@ Copyright (C) 2009 - 2014 洪任谕 (Hong Jen Yee)
     <message>
         <location filename="../bulk-rename.ui" line="134"/>
         <source>Change Case</source>
-        <translation type="unfinished"></translation>
+        <translation>更改大小写</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="146"/>
@@ -198,7 +198,7 @@ Copyright (C) 2009 - 2014 洪任谕 (Hong Jen Yee)
     <message>
         <location filename="../connect.ui" line="90"/>
         <source>Login as &amp;user:</source>
-        <translation>作为用户连接(&amp;S):</translation>
+        <translation>作为用户连接(&amp;U):</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="29"/>
@@ -1060,7 +1060,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="586"/>
         <source>By Deletio&amp;n Time</source>
-        <translation>按删除时间</translation>
+        <translation>按删除时间(&amp;N)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="594"/>
@@ -1105,7 +1105,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="1037"/>
         <source>&amp;Remove Settings of Nonexistent Folders</source>
-        <translation>（&amp;R）删除不存在文件夹的设置</translation>
+        <translation>删除不存在文件夹的设置(&amp;R)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="1045"/>
@@ -1322,7 +1322,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="164"/>
         <source>&amp;Customized View Settings</source>
-        <translation>（&amp;C）自定义视图设置</translation>
+        <translation>自定义视图设置(&amp;C)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="638"/>
@@ -2014,12 +2014,12 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../view.cpp" line="160"/>
         <source>Show in New T&amp;ab</source>
-        <translation type="unfinished"></translation>
+        <translation>在新标签页中显示(&amp;A)</translation>
     </message>
     <message>
         <location filename="../view.cpp" line="164"/>
         <source>Show in New Win&amp;dow</source>
-        <translation type="unfinished"></translation>
+        <translation>在新窗口中显示(&amp;D)</translation>
     </message>
 </context>
 <context>
@@ -2371,7 +2371,7 @@ A value of -1 means that there is no limit for the file size (the default).</sou
         <source>Example: qterminal
 It is the name of the executable file.</source>
         <translation>例如: qtermianl
-这里写可执行文件名</translation>
+这里写可执行文件名。</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="860"/>
