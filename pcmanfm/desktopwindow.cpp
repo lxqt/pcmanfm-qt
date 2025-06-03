@@ -1993,6 +1993,11 @@ bool DesktopWindow::eventFilter(QObject* watched, QEvent* event) {
             // remove the drop indicator on leaving the widget during DND
             dropRect_ = QRect();
             break;
+        case QEvent::ToolTip:
+            if(static_cast<Application*>(qApp)->settings().desktopNoTooltip()) {
+                return true;
+            }
+            break;
         default:
             break;
         }
