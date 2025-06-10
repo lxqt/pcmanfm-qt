@@ -18,7 +18,7 @@
         <source>Programming:
 * Hong Jen Yee (PCMan) &lt;pcman.tw@gmail.com&gt;
 </source>
-        <translation>Programmation&#xa0;:
+        <translation>Programmation :
 * Hong Jen Yee (PCMan) &lt;pcman.tw@gmail.com&gt;
 </translation>
     </message>
@@ -40,7 +40,7 @@
     <message>
         <location filename="../about.ui" line="74"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Wiki: &lt;a href=&quot;https://github.com/lxqt/pcmanfm-qt/wiki&quot;&gt;https://github.com/lxqt/pcmanfm-qt/wiki&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Wiki&#xa0;: &lt;a href=&quot;https://github.com/lxqt/pcmanfm-qt/wiki&quot;&gt;https://github.com/lxqt/pcmanfm-qt/wiki&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Wiki : &lt;a href=&quot;https://github.com/lxqt/pcmanfm-qt/wiki&quot;&gt;https://github.com/lxqt/pcmanfm-qt/wiki&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../about.ui" line="135"/>
@@ -100,7 +100,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../autorun.ui" line="40"/>
         <source>Type of medium:</source>
-        <translation>Type de média&#x202f;:</translation>
+        <translation>Type de média :</translation>
     </message>
     <message>
         <location filename="../autorun.ui" line="47"/>
@@ -211,12 +211,12 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../connect.ui" line="36"/>
         <source>Type:</source>
-        <translation>Type&#xa0;:</translation>
+        <translation>Type :</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="56"/>
         <source>Port:</source>
-        <translation>Port&#xa0;:</translation>
+        <translation>Port :</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="70"/>
@@ -249,7 +249,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../desktopentrydialog.ui" line="58"/>
         <source>Description:</source>
-        <translation>Description&#xa0;:</translation>
+        <translation>Description :</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="65"/>
@@ -263,7 +263,7 @@ Peut rester vide.</translation>
     <message>
         <location filename="../desktopentrydialog.ui" line="77"/>
         <source>Comment:</source>
-        <translation>Commentaire&#xa0;:</translation>
+        <translation>Commentaire :</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="84"/>
@@ -277,7 +277,7 @@ Peut rester vide.</translation>
     <message>
         <location filename="../desktopentrydialog.ui" line="117"/>
         <source>Command:</source>
-        <translation>Commande&#xa0;:</translation>
+        <translation>Commande :</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="133"/>
@@ -288,7 +288,7 @@ Peut rester vide.</translation>
     <message>
         <location filename="../desktopentrydialog.ui" line="142"/>
         <source>Icon:</source>
-        <translation>Icône&#xa0;:</translation>
+        <translation>Icône :</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="151"/>
@@ -419,7 +419,7 @@ Exemples : AudioVideo, Audio, Video, Development, Education, Game, Graphics, Net
     <message>
         <location filename="../desktop-preferences.ui" line="350"/>
         <source>Select background color:</source>
-        <translation>Sélection de la couleur de l&apos;arrière-plan&#xa0;:</translation>
+        <translation>Sélection de la couleur de l&apos;arrière-plan :</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="417"/>
@@ -454,12 +454,12 @@ Exemples : AudioVideo, Audio, Video, Development, Education, Game, Graphics, Net
     <message>
         <location filename="../desktop-preferences.ui" line="113"/>
         <source>Select shadow color:</source>
-        <translation>Sélection de la couleur de l&apos;ombre&#xa0;:</translation>
+        <translation>Sélection de la couleur de l&apos;ombre :</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="61"/>
         <source>Select font:</source>
-        <translation>Sélection de la police&#xa0;:</translation>
+        <translation>Sélection de la police :</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="24"/>
@@ -516,7 +516,7 @@ Un espace est également réservé pour 3 lignes de texte.</translation>
     <message>
         <location filename="../desktop-preferences.ui" line="230"/>
         <source>Margins of work area:</source>
-        <translation>Marges de la zone de travail&#xa0;:</translation>
+        <translation>Marges de la zone de travail :</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="303"/>
@@ -1168,7 +1168,7 @@ avec un clic gauche, même si aucun gestionnaire de fichiers n&apos;est défini 
     <message>
         <location filename="../main-win.ui" line="990"/>
         <source>Show Thumbnails</source>
-        <translation type="unfinished">Afficher les miniatures</translation>
+        <translation>Afficher les miniatures</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="998"/>
@@ -1878,7 +1878,7 @@ avec un clic gauche, même si aucun gestionnaire de fichiers n&apos;est défini 
         <location filename="../mainwindow.cpp" line="2400"/>
         <source>Do you want to remove settings of nonexistent folders?
 They might be useful if those folders are created again.</source>
-        <translation>Voulez-vous supprimer les paramètres des dossiers inexistants&#xa0;?
+        <translation>Voulez-vous supprimer les paramètres des dossiers inexistants ?
 Ils peuvent être utiles si ces dossiers sont à nouveau créés.</translation>
     </message>
 </context>
@@ -1955,7 +1955,7 @@ Ils peuvent être utiles si ces dossiers sont à nouveau créés.</translation>
     <message>
         <location filename="../tabpage.cpp" line="571"/>
         <source>Free space: %1 (Total: %2)</source>
-        <translation>Espace libre : %1 (total&#xa0;: %2)</translation>
+        <translation>Espace libre : %1 (total : %2)</translation>
     </message>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="588"/>
@@ -2077,17 +2077,17 @@ Ils peuvent être utiles si ces dossiers sont à nouveau créés.</translation>
     <message>
         <location filename="../preferences.ui" line="328"/>
         <source>Size of big icons:</source>
-        <translation>Taille des grandes icônes&#xa0;:</translation>
+        <translation>Taille des grandes icônes :</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="345"/>
         <source>Size of small icons:</source>
-        <translation>Taille des petites icônes&#xa0;:</translation>
+        <translation>Taille des petites icônes :</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="362"/>
         <source>Size of thumbnails:</source>
-        <translation>Taille des vignettes&#xa0;:</translation>
+        <translation>Taille des vignettes :</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="376"/>
@@ -2107,12 +2107,12 @@ Ils peuvent être utiles si ces dossiers sont à nouveau créés.</translation>
     <message>
         <location filename="../preferences.ui" line="587"/>
         <source>Default width of new windows:</source>
-        <translation>Largeur par défaut des nouvelles fenêtres&#xa0;:</translation>
+        <translation>Largeur par défaut des nouvelles fenêtres :</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="601"/>
         <source>Default height of new windows:</source>
-        <translation>Hauteur par défaut des nouvelles fenêtres&#xa0;:</translation>
+        <translation>Hauteur par défaut des nouvelles fenêtres :</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="559"/>
@@ -2142,7 +2142,7 @@ Ils peuvent être utiles si ces dossiers sont à nouveau créés.</translation>
     <message>
         <location filename="../preferences.ui" line="162"/>
         <source>Default view mode:</source>
-        <translation>Mode d&apos;affichage par défaut&#xa0;:</translation>
+        <translation>Mode d&apos;affichage par défaut :</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="119"/>
@@ -2255,7 +2255,7 @@ Ils peuvent être utiles si ces dossiers sont à nouveau créés.</translation>
     <message>
         <location filename="../preferences.ui" line="244"/>
         <source>Number of recent files:</source>
-        <translation>Nombre de fichiers récents&#xa0;:</translation>
+        <translation>Nombre de fichiers récents :</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="325"/>
@@ -2353,7 +2353,7 @@ Habituellement, la plupart des types d&apos;images sont pris en charge. La limit
     <message>
         <location filename="../preferences.ui" line="670"/>
         <source>Image size limit for built-in thumbnailer:</source>
-        <translation>Limite de taille d&apos;image pour la vignette intégrée&#xa0;:</translation>
+        <translation>Limite de taille d&apos;image pour la vignette intégrée :</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="682"/>
@@ -2374,7 +2374,7 @@ Une valeur de -1 signifie qu&apos;il n&apos;y a pas de limite pour la taille du 
     <message>
         <location filename="../preferences.ui" line="703"/>
         <source>File size limit for external thumbnailers:</source>
-        <translation>Limite de taille de fichier pour les miniatures externes&#x202f;:</translation>
+        <translation>Limite de taille de fichier pour les miniatures externes :</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="715"/>
@@ -2389,7 +2389,7 @@ Une valeur de -1 signifie qu&apos;il n&apos;y a pas de limite pour la taille du 
     <message>
         <location filename="../preferences.ui" line="979"/>
         <source>Maximum search history:</source>
-        <translation>Historique de recherche maximum&#xa0;:</translation>
+        <translation>Historique de recherche maximum :</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="993"/>
