@@ -14,7 +14,7 @@
    <string>File Manager</string>
   </property>
   <property name="windowIcon">
-   <iconset theme="folder">
+   <iconset theme="pcmanfm-qt">
     <normaloff>.</normaloff>.</iconset>
   </property>
   <widget class="QWidget" name="centralwidget">
