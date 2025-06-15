@@ -834,7 +834,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="297"/>
         <source>Alt+Up</source>
-        <translation>Alt+Πάνω</translation>
+        <translation>Alt+Up</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="306"/>

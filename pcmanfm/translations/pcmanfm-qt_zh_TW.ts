@@ -1306,7 +1306,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="257"/>
         <source>Main Toolbar</source>
-        <translation>主工具列</translation>
+        <translation>主要工具列</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="481"/>
