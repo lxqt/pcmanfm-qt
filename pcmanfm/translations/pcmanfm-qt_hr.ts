@@ -123,7 +123,7 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.</translation
     <message>
         <location filename="../bulk-rename.ui" line="12"/>
         <source>Serial Renaming</source>
-        <translation type="unfinished"></translation>
+        <translation>Serijsko preimenovanje</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="36"/>
@@ -143,42 +143,42 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.</translation
     <message>
         <location filename="../bulk-rename.ui" line="85"/>
         <source>Replacement</source>
-        <translation type="unfinished"></translation>
+        <translation>Zamjena</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="97"/>
         <source>Find in names:</source>
-        <translation type="unfinished"></translation>
+        <translation>Pronađi u imenima:</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="107"/>
         <source>Replace with:</source>
-        <translation type="unfinished"></translation>
+        <translation>Zamijeni sa:</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="117"/>
         <source>Case-sensitive</source>
-        <translation type="unfinished"></translation>
+        <translation>Razlikuj velika i mala slova</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="124"/>
         <source>Regular expression</source>
-        <translation type="unfinished"></translation>
+        <translation>Regularni izraz</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="134"/>
         <source>Change Case</source>
-        <translation type="unfinished"></translation>
+        <translation>Pretvori u velika/mala slova</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="146"/>
         <source>To upper case</source>
-        <translation type="unfinished"></translation>
+        <translation>U velika slova</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="156"/>
         <source>To lower case</source>
-        <translation type="unfinished"></translation>
+        <translation>U mala slova</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="27"/>
@@ -949,7 +949,7 @@ upravljač datoteka.</translation>
     <message>
         <location filename="../main-win.ui" line="436"/>
         <source>Ctrl+Shift+1</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+1</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="444"/>
@@ -959,7 +959,7 @@ upravljač datoteka.</translation>
     <message>
         <location filename="../main-win.ui" line="447"/>
         <source>Ctrl+Shift+3</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+3</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="455"/>
@@ -969,7 +969,7 @@ upravljač datoteka.</translation>
     <message>
         <location filename="../main-win.ui" line="458"/>
         <source>Ctrl+Shift+4</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+4</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="466"/>
@@ -979,7 +979,7 @@ upravljač datoteka.</translation>
     <message>
         <location filename="../main-win.ui" line="469"/>
         <source>Ctrl+Shift+2</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+2</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="478"/>
@@ -2029,12 +2029,12 @@ Mogle bi biti korisne, ako se te mape ponovo kreiraju.</translation>
     <message>
         <location filename="../view.cpp" line="160"/>
         <source>Show in New T&amp;ab</source>
-        <translation type="unfinished"></translation>
+        <translation>Otvori u novoj k&amp;artici</translation>
     </message>
     <message>
         <location filename="../view.cpp" line="164"/>
         <source>Show in New Win&amp;dow</source>
-        <translation type="unfinished"></translation>
+        <translation>Prikaži u novom pro&amp;zoru</translation>
     </message>
 </context>
 <context>
@@ -2375,41 +2375,45 @@ Vrijednost -1 znači da ne postoji ograničenje za veličinu datoteke (standardn
     <message>
         <location filename="../preferences.ui" line="833"/>
         <source>Terminal emulator</source>
-        <translation type="unfinished"></translation>
+        <translation>Emulator terminala</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="842"/>
         <source>Command:</source>
-        <translation type="unfinished">Naredba:</translation>
+        <translation>Naredba:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="849"/>
         <source>Example: qterminal
 It is the name of the executable file.</source>
-        <translation type="unfinished"></translation>
+        <translation>Primjer: qterminal
+To je ime izvršne datoteke.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="860"/>
         <source>Execution option:</source>
-        <translation type="unfinished"></translation>
+        <translation>Opcije izvršenja:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="867"/>
         <source>Example: -e
 It can be left empty if the terminal is already supported
 or does not have such an option; required otherwise.</source>
-        <translation type="unfinished"></translation>
+        <translation>Primjer: -e
+Može ostati prazno ako je terminal već podržan
+ili nema takvu opciju; inače je potrebno.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="879"/>
         <source>Custom option(s):</source>
-        <translation type="unfinished"></translation>
+        <translation>Prilagođene opcije:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="886"/>
         <source>This is optional, depends on the terminal,
 and can be any group of custom options.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ovo je opcionalno, ovisi o terminalu,
+i može biti bilo koja grupa prilagođenih opcija.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="964"/>
@@ -2520,7 +2524,8 @@ and can be any group of custom options.</source>
         <location filename="../preferences.ui" line="910"/>
         <source>Example:
 lxsudo dbus-run-session -- %s</source>
-        <translation type="unfinished"></translation>
+        <translation>Primjer:
+lxsudo dbus-run-session -- %s</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="918"/>
@@ -2613,12 +2618,12 @@ lxsudo dbus-run-session -- %s</source>
     <message>
         <location filename="../bulkrename.cpp" line="234"/>
         <source>Nothing to find.</source>
-        <translation type="unfinished"></translation>
+        <translation>Nema se što pronaći.</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="243"/>
         <source>Invalid regular expression.</source>
-        <translation type="unfinished"></translation>
+        <translation>Neispravan regularni izraz.</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="1149"/>
