@@ -123,7 +123,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../bulk-rename.ui" line="12"/>
         <source>Serial Renaming</source>
-        <translation type="unfinished"></translation>
+        <translation>Sériové premenovanie</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="36"/>
@@ -143,42 +143,42 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../bulk-rename.ui" line="85"/>
         <source>Replacement</source>
-        <translation type="unfinished"></translation>
+        <translation>Nahradenie</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="97"/>
         <source>Find in names:</source>
-        <translation type="unfinished"></translation>
+        <translation>Vyhľadať v názvoch:</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="107"/>
         <source>Replace with:</source>
-        <translation type="unfinished"></translation>
+        <translation>Nahradiť s:</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="117"/>
         <source>Case-sensitive</source>
-        <translation type="unfinished"></translation>
+        <translation>Rozlišovať veľkosť písmen</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="124"/>
         <source>Regular expression</source>
-        <translation type="unfinished"></translation>
+        <translation>Regulárny výraz</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="134"/>
         <source>Change Case</source>
-        <translation type="unfinished"></translation>
+        <translation>Zmeniť veľkosť písmen</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="146"/>
         <source>To upper case</source>
-        <translation type="unfinished"></translation>
+        <translation>Na veľké písmená</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="156"/>
         <source>To lower case</source>
-        <translation type="unfinished"></translation>
+        <translation>Na malé písmená</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="27"/>
@@ -949,7 +949,7 @@ kliknete ľavým tlačidlom myši, aj keď nejde o predvoleného správcu súbor
     <message>
         <location filename="../main-win.ui" line="436"/>
         <source>Ctrl+Shift+1</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+1</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="444"/>
@@ -959,7 +959,7 @@ kliknete ľavým tlačidlom myši, aj keď nejde o predvoleného správcu súbor
     <message>
         <location filename="../main-win.ui" line="447"/>
         <source>Ctrl+Shift+3</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+3</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="455"/>
@@ -969,7 +969,7 @@ kliknete ľavým tlačidlom myši, aj keď nejde o predvoleného správcu súbor
     <message>
         <location filename="../main-win.ui" line="458"/>
         <source>Ctrl+Shift+4</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+4</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="466"/>
@@ -979,7 +979,7 @@ kliknete ľavým tlačidlom myši, aj keď nejde o predvoleného správcu súbor
     <message>
         <location filename="../main-win.ui" line="469"/>
         <source>Ctrl+Shift+2</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+2</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="478"/>
@@ -2029,12 +2029,12 @@ Ak ich odstránite, nebudú sa dať použiť pri znovuvytvorení priečinkov.</t
     <message>
         <location filename="../view.cpp" line="160"/>
         <source>Show in New T&amp;ab</source>
-        <translation type="unfinished"></translation>
+        <translation>Zobraziť v novej karte</translation>
     </message>
     <message>
         <location filename="../view.cpp" line="164"/>
         <source>Show in New Win&amp;dow</source>
-        <translation type="unfinished"></translation>
+        <translation>Zobraziť v novom okne</translation>
     </message>
 </context>
 <context>
@@ -2617,12 +2617,12 @@ lxsudo dbus-run-session -- %s</translation>
     <message>
         <location filename="../bulkrename.cpp" line="234"/>
         <source>Nothing to find.</source>
-        <translation type="unfinished"></translation>
+        <translation>Nič sa nenašlo.</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="243"/>
         <source>Invalid regular expression.</source>
-        <translation type="unfinished"></translation>
+        <translation>Neplatný regulárny výraz.</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="1149"/>
