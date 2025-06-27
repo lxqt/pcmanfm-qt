@@ -244,7 +244,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../desktopentrydialog.ui" line="45"/>
         <source>Specific name of this launcher.</source>
-        <translation>這個啟動器的特定名稱。</translation>
+        <translation>此啟動器的特定名稱。</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="58"/>
