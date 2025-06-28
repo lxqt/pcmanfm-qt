@@ -28,6 +28,10 @@ find_package(fm-qt6 ${LIBFMQT_MINIMUM_VERSION} REQUIRED)
 find_package(lxqt2-build-tools ${LXQTBT_MINIMUM_VERSION} REQUIRED)
 find_package(LayerShellQt ${SHELLQT_MINIMUM_VERSION} REQUIRED)
 
+if (Qt6Gui_VERSION VERSION_GREATER_EQUAL "6.10.0")
+    find_package(Qt6GuiPrivate REQUIRED)
+endif()
+
 message(STATUS "Building ${PROJECT_NAME} with Qt ${Qt6Core_VERSION}")
 
 option(UPDATE_TRANSLATIONS "Update source translation translations/*.ts files" OFF)
