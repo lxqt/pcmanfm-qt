@@ -210,7 +210,7 @@ bool Application::parseCommandLineArgs() {
     QCommandLineOption findFilesOption(QStringList() << QStringLiteral("f") << QStringLiteral("find-files"), tr("Open Find Files utility"));
     parser.addOption(findFilesOption);
 
-    QCommandLineOption selectURIOption(QStringList() << QStringLiteral("s") << QStringLiteral("select"), tr("Select specified URI in parent folder"), tr("URI"));
+    QCommandLineOption selectURIOption(QStringList() << QStringLiteral("s") << QStringLiteral("select"), tr("Select specified URI in parent folder"));
     parser.addOption(selectURIOption);
 
     QCommandLineOption setWallpaperOption(QStringList() << QStringLiteral("w") << QStringLiteral("set-wallpaper"), tr("Set desktop wallpaper from image FILE"), tr("FILE"));
@@ -266,10 +266,7 @@ bool Application::parseCommandLineArgs() {
             keepRunning = true;
         }
         else if (parser.isSet(selectURIOption)) {
-            QStringList uriList = parser.values(selectURIOption);
-            if (parser.isSet(selectURIOption)) {
-                ShowItems(uriList, QString()); // empty startupId
-            }
+            ShowItems(parser.positionalArguments(), QString()); // empty startupId
             keepRunning = true;
         }
         else if(parser.isSet(showPrefOption)) { // preferences dialog
@@ -320,8 +317,7 @@ bool Application::parseCommandLineArgs() {
             iface.call(QStringLiteral("findFiles"), parser.positionalArguments());
         }
         else if (parser.isSet(selectURIOption)) {
-            QStringList uriList = parser.values(selectURIOption);
-            iface.call(QStringLiteral("ShowItems"), uriList, QString());
+            iface.call(QStringLiteral("ShowItems"), parser.positionalArguments(), QString());
         }
         else if(parser.isSet(showPrefOption)) { // preferences dialog
             iface.call(QStringLiteral("preferences"), parser.value(showPrefOption));
