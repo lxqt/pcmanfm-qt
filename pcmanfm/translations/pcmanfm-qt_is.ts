@@ -23,7 +23,9 @@
         <source>Programming:
 * Hong Jen Yee (PCMan) &lt;pcman.tw@gmail.com&gt;
 </source>
-        <translation type="unfinished"></translation>
+        <translation>Forritun:
+* Hong Jen Yee (PCMan) &lt;pcman.tw@gmail.com&gt;
+</translation>
     </message>
     <message>
         <location filename="../about.ui" line="144"/>
@@ -49,7 +51,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../about.ui" line="113"/>
         <source>Authors</source>
-        <translation type="unfinished"></translation>
+        <translation>Höfundar</translation>
     </message>
     <message>
         <location filename="../about.ui" line="58"/>
@@ -64,7 +66,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../about.ui" line="135"/>
         <source>License</source>
-        <translation type="unfinished"></translation>
+        <translation>Leyfi</translation>
     </message>
 </context>
 <context>
@@ -72,27 +74,27 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../autorun.ui" line="14"/>
         <source>Removable medium is inserted</source>
-        <translation type="unfinished"></translation>
+        <translation>Fjarlægjanlegur miðill tengdur</translation>
     </message>
     <message>
         <location filename="../autorun.ui" line="33"/>
         <source>&lt;b&gt;Removable medium is inserted&lt;/b&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;Fjarlægjanlegur miðill tengdur&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../autorun.ui" line="40"/>
         <source>Type of medium:</source>
-        <translation type="unfinished"></translation>
+        <translation>Tegund miðils:</translation>
     </message>
     <message>
         <location filename="../autorun.ui" line="47"/>
         <source>Detecting...</source>
-        <translation type="unfinished"></translation>
+        <translation>Rannsaka...</translation>
     </message>
     <message>
         <location filename="../autorun.ui" line="56"/>
         <source>Please select the action you want to perform:</source>
-        <translation type="unfinished"></translation>
+        <translation>Veldu þá aðgerð sem þú vilt framkvæma:</translation>
     </message>
 </context>
 <context>
@@ -100,72 +102,72 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../bulk-rename.ui" line="6"/>
         <source>Bulk Rename</source>
-        <translation type="unfinished"></translation>
+        <translation>Endurnefna margar skrár</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="12"/>
         <source>Serial Renaming</source>
-        <translation type="unfinished"></translation>
+        <translation>Raðendurnefning</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="36"/>
         <source># will be replaced by numbers starting with:</source>
-        <translation type="unfinished"></translation>
+        <translation># verður skipt út með tölum sem byrja á:</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="68"/>
         <source>Pad numbers with zero if possible</source>
-        <translation type="unfinished"></translation>
+        <translation>Fylla með núllum ef hægt er</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="75"/>
         <source>Use localized numbers</source>
-        <translation type="unfinished"></translation>
+        <translation>Nota staðbundið talnaform</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="85"/>
         <source>Replacement</source>
-        <translation type="unfinished"></translation>
+        <translation>Skifta  út</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="97"/>
         <source>Find in names:</source>
-        <translation type="unfinished"></translation>
+        <translation>Finna í nöfnum:</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="107"/>
         <source>Replace with:</source>
-        <translation type="unfinished"></translation>
+        <translation>Skipta út með:</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="117"/>
         <source>Case-sensitive</source>
-        <translation type="unfinished"></translation>
+        <translation>Stafastærð skiptir máli</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="124"/>
         <source>Regular expression</source>
-        <translation type="unfinished"></translation>
+        <translation>Regluleg segð</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="134"/>
         <source>Change Case</source>
-        <translation type="unfinished"></translation>
+        <translation>Breyta stafastærð</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="146"/>
         <source>To upper case</source>
-        <translation type="unfinished"></translation>
+        <translation>Í Stóra stafi</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="156"/>
         <source>To lower case</source>
-        <translation type="unfinished"></translation>
+        <translation>Í lágstafi</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="27"/>
         <source>Name#</source>
-        <translation type="unfinished"></translation>
+        <translation>Nafn#</translation>
     </message>
 </context>
 <context>
@@ -173,42 +175,42 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../connect.ui" line="14"/>
         <source>Connect to remote server</source>
-        <translation type="unfinished"></translation>
+        <translation>Tengjast fjarlægum miðlara</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="80"/>
         <source>Anonymous &amp;login</source>
-        <translation type="unfinished"></translation>
+        <translation>Sem óþekktur &amp;notandi</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="90"/>
         <source>Login as &amp;user:</source>
-        <translation type="unfinished"></translation>
+        <translation>Skrá inn sem &amp;notandi:</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="29"/>
         <source>Specify remote folder to connect</source>
-        <translation type="unfinished"></translation>
+        <translation>Hvaða möppu á að tengja</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="36"/>
         <source>Type:</source>
-        <translation type="unfinished"></translation>
+        <translation>Tegund:</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="56"/>
         <source>Port:</source>
-        <translation type="unfinished"></translation>
+        <translation>Port:</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="70"/>
         <source>Path:</source>
-        <translation type="unfinished"></translation>
+        <translation>Slóð:</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="46"/>
         <source>Host:</source>
-        <translation type="unfinished"></translation>
+        <translation>Miðlari:</translation>
     </message>
 </context>
 <context>
@@ -216,113 +218,117 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../desktopentrydialog.ui" line="14"/>
         <source>Create Launcher</source>
-        <translation type="unfinished"></translation>
+        <translation>Búa til tengil á Skjáborð</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="38"/>
         <source>Name:</source>
-        <translation type="unfinished"></translation>
+        <translation>Nafn:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="45"/>
         <source>Specific name of this launcher.</source>
-        <translation type="unfinished"></translation>
+        <translation>Einkvæmt nafn á þessum Ræsi</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="58"/>
         <source>Description:</source>
-        <translation type="unfinished"></translation>
+        <translation>Lýsing:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="65"/>
         <source>A short description or generic name, like &quot;Web Browser&quot; or &quot;Home Directory&quot;.
 
 It can be left empty.</source>
-        <translation type="unfinished"></translation>
+        <translation>Stutt lýsing eða almennt nafn, svo sem &quot;Vef-Vafri&quot; eða &quot;Heimamappa&quot;.
+
+Má vera autt.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="77"/>
         <source>Comment:</source>
-        <translation type="unfinished"></translation>
+        <translation>Stutt umsögn:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="84"/>
         <source>A short comment.
 
 It can be left empty.</source>
-        <translation type="unfinished"></translation>
+        <translation>Stutt umsögn.
+
+Má vera autt.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="117"/>
         <source>Command:</source>
-        <translation type="unfinished"></translation>
+        <translation>Skipun:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="133"/>
         <location filename="../desktopentrydialog.ui" line="164"/>
         <source>...</source>
-        <translation type="unfinished"></translation>
+        <translation>...</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="142"/>
         <source>Icon:</source>
-        <translation type="unfinished"></translation>
+        <translation>Táknmynd:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="151"/>
         <source>Icon to display in file manager, menus, etc.</source>
-        <translation type="unfinished"></translation>
+        <translation>Táknmynd til að sýna í skráastjóra, valmyndum, o.þ.h.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="173"/>
         <location filename="../desktopentrydialog.ui" line="183"/>
         <source>Run in terminal?</source>
-        <translation type="unfinished"></translation>
+        <translation>Keyra í textaskjá?</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="176"/>
         <source>Terminal:</source>
-        <translation type="unfinished"></translation>
+        <translation>Tekstaskjár:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="186"/>
         <source>Whether the launched program should run in a terminal window.</source>
-        <translation type="unfinished"></translation>
+        <translation>Hvort forritið ætti að vera ræst í textaskjá-glugga.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="190"/>
         <source>No</source>
-        <translation type="unfinished"></translation>
+        <translation>Nei</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="195"/>
         <source>Yes</source>
-        <translation type="unfinished"></translation>
+        <translation>Já</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="203"/>
         <source>Type:</source>
-        <translation type="unfinished"></translation>
+        <translation>Tegund:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="210"/>
         <source>Whether this is a link or executes a command.</source>
-        <translation type="unfinished"></translation>
+        <translation>Hvort þetta sé tengill eða ræsi forrit.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="214"/>
         <source>Application</source>
-        <translation type="unfinished"></translation>
+        <translation>Forrit</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="219"/>
         <source>Link</source>
-        <translation type="unfinished"></translation>
+        <translation>Tengill</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="96"/>
         <source>Categories:</source>
-        <translation type="unfinished"></translation>
+        <translation>Flokkur:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="103"/>
@@ -331,7 +337,11 @@ It can be left empty.</source>
 It is needed only when you want to use the created file in the main menu. Otherwise, you could leave it empty.
 
 Examples: AudioVideo, Audio, Video, Development, Education, Game, Graphics, Network, Office, Settings, System, Utility, Qt.</source>
-        <translation type="unfinished"></translation>
+        <translation>Listi flokka, aðskilinn með kommum, um hvar valmyndin ætti að vera sýnd ef hún er notuð af valmynd Skjáborðs (þ.e. ef sett inní ~/local/share/applications).
+
+Þetta er aðeins notað þegar þú vilt nota skrána í aðalvalmynd. Annars ættir þú að skilja það eftir autt
+
+Dæmi: AudioVideo, Audio, Video, Development, Education, Game, Graphics, Network, Office, Settings, System, Utility, Qt.</translation>
     </message>
 </context>
 <context>
@@ -339,32 +349,32 @@ Examples: AudioVideo, Audio, Video, Development, Education, Game, Graphics, Netw
     <message>
         <location filename="../desktop-folder.ui" line="14"/>
         <source>Form</source>
-        <translation type="unfinished"></translation>
+        <translation>Snið</translation>
     </message>
     <message>
         <location filename="../desktop-folder.ui" line="23"/>
         <source>Desktop</source>
-        <translation type="unfinished"></translation>
+        <translation>Skjáborð</translation>
     </message>
     <message>
         <location filename="../desktop-folder.ui" line="29"/>
         <source>Desktop folder:</source>
-        <translation type="unfinished"></translation>
+        <translation>Skjáborðsmappa:</translation>
     </message>
     <message>
         <location filename="../desktop-folder.ui" line="36"/>
         <source>Image file</source>
-        <translation type="unfinished"></translation>
+        <translation>Myndskrá</translation>
     </message>
     <message>
         <location filename="../desktop-folder.ui" line="42"/>
         <source>Folder path</source>
-        <translation type="unfinished"></translation>
+        <translation>Möppuslóð</translation>
     </message>
     <message>
         <location filename="../desktop-folder.ui" line="49"/>
         <source>&amp;Browse</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Vafra</translation>
     </message>
 </context>
 <context>
@@ -372,93 +382,93 @@ Examples: AudioVideo, Audio, Video, Development, Education, Game, Graphics, Netw
     <message>
         <location filename="../desktop-preferences.ui" line="14"/>
         <source>Desktop Preferences</source>
-        <translation type="unfinished"></translation>
+        <translation>Skjáborðsstillingar</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="338"/>
         <location filename="../desktop-preferences.ui" line="344"/>
         <source>Background</source>
-        <translation type="unfinished"></translation>
+        <translation>Bakgrunnur</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="385"/>
         <source>Wallpaper mode:</source>
-        <translation type="unfinished"></translation>
+        <translation>Veggfóðurstegund:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="408"/>
         <source>Wallpaper image file:</source>
-        <translation type="unfinished"></translation>
+        <translation>Veggfóðursmynd:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="350"/>
         <source>Select background color:</source>
-        <translation type="unfinished"></translation>
+        <translation>Velja bakgrunnslit:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="417"/>
         <source>Image file</source>
-        <translation type="unfinished"></translation>
+        <translation>Myndskrá</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="423"/>
         <source>Image file path</source>
-        <translation type="unfinished"></translation>
+        <translation>Slóð að myndskrá</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="430"/>
         <source>&amp;Browse</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Vafra</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="30"/>
         <source>Icons</source>
-        <translation type="unfinished"></translation>
+        <translation>Táknmyndir</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="36"/>
         <source>Icon size:</source>
-        <translation type="unfinished"></translation>
+        <translation>Stærð Táknmynda:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="49"/>
         <source>Label Text</source>
-        <translation type="unfinished"></translation>
+        <translation>Texti við tákn</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="113"/>
         <source>Select shadow color:</source>
-        <translation type="unfinished"></translation>
+        <translation>Velja lit skugga:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="61"/>
         <source>Select font:</source>
-        <translation type="unfinished"></translation>
+        <translation>Velja leturgerð:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="24"/>
         <source>General</source>
-        <translation type="unfinished"></translation>
+        <translation>Almennt</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="87"/>
         <source>Select text color:</source>
-        <translation type="unfinished"></translation>
+        <translation>Velja textalit:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="136"/>
         <source>Spacing</source>
-        <translation type="unfinished"></translation>
+        <translation>Bil</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="145"/>
         <source>Minimum item margins:</source>
-        <translation type="unfinished"></translation>
+        <translation>Minnsta bil:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="152"/>
         <source>3 px by default.</source>
-        <translation type="unfinished"></translation>
+        <translation>Sjálfgefið 3 px (skjáeindir).</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="155"/>
@@ -468,114 +478,116 @@ Examples: AudioVideo, Audio, Video, Development, Education, Game, Graphics, Netw
         <location filename="../desktop-preferences.ui" line="275"/>
         <location filename="../desktop-preferences.ui" line="287"/>
         <source> px</source>
-        <translation type="unfinished"></translation>
+        <translation> px (Skjáeindir)</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="168"/>
         <source>x</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">x</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="175"/>
         <source>1 px by default.
 A space is also reserved for 3 lines of text.</source>
-        <translation type="unfinished"></translation>
+        <translation>Sjálfgefið einn PX (Skjáeind)
+Bil er einnig frátekið fyrir 3 línu texta.</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="192"/>
         <source>Lock</source>
-        <translation type="unfinished"></translation>
+        <translation>Lás</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="230"/>
         <source>Margins of work area:</source>
-        <translation type="unfinished"></translation>
+        <translation>Spássiur fyrir skjáborðssvæði:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="303"/>
         <source>By default, desktop folders will be opened in PCManFM-Qt if they
 are left clicked, even when it is not the default file manager.</source>
-        <translation type="unfinished"></translation>
+        <translation>Sjálfgefið er að, skjáborðs-möppur verða opnaðar í PCManFM-Qt ef það er
+vinstrismellt á þær, jafnvel þegar hann er ekki sjálfgefinn skráastjóri.</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="307"/>
         <source>Open desktop folders in default file manager by left clicking</source>
-        <translation type="unfinished"></translation>
+        <translation>Opna skjáborðsmöppur í sjálfgefnum skráastjóra með vinstrismelli</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="314"/>
         <source>Make all items stick to their positions</source>
-        <translation type="unfinished"></translation>
+        <translation>Festa allar einingar á sínum stað</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="373"/>
         <source>Wallpaper</source>
-        <translation type="unfinished"></translation>
+        <translation>Veggfóður</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="439"/>
         <source>Transform image based on EXIF data</source>
-        <translation type="unfinished"></translation>
+        <translation>Snúa myndum byggt á EXIF lýsigögnum</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="446"/>
         <source>Individual wallpaper for each monitor</source>
-        <translation type="unfinished"></translation>
+        <translation>Sérstakt veggfóður fyrir hvern skjá</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="473"/>
         <source>Slide Show</source>
-        <translation type="unfinished"></translation>
+        <translation>Skyggnusýning</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="479"/>
         <source>Enable Slide Show</source>
-        <translation type="unfinished"></translation>
+        <translation>Virkja skyggnusýningu</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="491"/>
         <source>Wallpaper image folder:</source>
-        <translation type="unfinished"></translation>
+        <translation>Mappa veggfóðurs-mynda:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="505"/>
         <source>Browse</source>
-        <translation type="unfinished"></translation>
+        <translation>Vafra</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="512"/>
         <source> hour(s)</source>
-        <translation type="unfinished"></translation>
+        <translation> Klukkustundir</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="522"/>
         <source>and</source>
-        <translation type="unfinished"></translation>
+        <translation>og</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="535"/>
         <source>Intervals less than 5min will be ignored</source>
-        <translation type="unfinished"></translation>
+        <translation>Tímabil styttrri en 5 mínútur verða hunsuð</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="538"/>
         <source>Interval:</source>
-        <translation type="unfinished"></translation>
+        <translation>Bil:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="545"/>
         <source> minute(s)</source>
-        <translation type="unfinished"></translation>
+        <translation> Mínút(a/ur)</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="498"/>
         <source>Wallpaper folder</source>
-        <translation type="unfinished"></translation>
+        <translation>Mappa með sjkáborðsmyndum</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="587"/>
         <source>Randomize the slide show</source>
-        <translation type="unfinished"></translation>
+        <translation>Velja myndir af handahófi</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="620"/>
