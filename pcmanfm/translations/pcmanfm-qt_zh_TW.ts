@@ -244,7 +244,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../desktopentrydialog.ui" line="45"/>
         <source>Specific name of this launcher.</source>
-        <translation>這個啟動器的特定名稱。</translation>
+        <translation>此啟動器的特定名稱。</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="58"/>
@@ -2197,7 +2197,7 @@ It can be left empty if the terminal is already supported
 or does not have such an option; required otherwise.</source>
         <translation>例如： -e
 若終端機已有支援，可以留下空白
-或沒有這樣的選項；需要其它的。</translation>
+或沒有這樣的選項；需要其他的。</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="879"/>
