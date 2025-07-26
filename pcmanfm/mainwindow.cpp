@@ -801,17 +801,16 @@ void MainWindow::updateRecenMenu() {
     int w = 150 * metrics.horizontalAdvance(QLatin1Char(' ')); // for eliding long texts
     for(int i = 0; i < recentNumber; ++i) {
         if(i < recentSize) {
-            auto fileName = recentFiles.at(i);
-            actions.at(i)->setText(metrics.elidedText(fileName, Qt::ElideMiddle, w));
+            actions.at(i)->setText(metrics.elidedText(recentFiles.value(i).replace(QLatin1Char('&'), QLatin1String("&&")).replace(QLatin1Char('\t'), QLatin1Char(' ')), Qt::ElideMiddle, w));
             QIcon icon;
-            auto mimeType = Fm::MimeType::guessFromFileName(fileName.toLocal8Bit().constData());
+            auto mimeType = Fm::MimeType::guessFromFileName(recentFiles.at(i).toLocal8Bit().constData());
             if(!mimeType->isUnknownType()) {
                 if(auto icn = mimeType->icon()) {
                     icon = icn->qicon();
                 }
             }
             actions.at(i)->setIcon(icon);
-            actions.at(i)->setData(fileName);
+            actions.at(i)->setData(recentFiles.at(i));
             actions.at(i)->setVisible(true);
         }
         else {
