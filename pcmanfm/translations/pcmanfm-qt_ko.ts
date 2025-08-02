@@ -119,7 +119,7 @@ Fifth Floor, Boston, MA 02110-1301, USA 로 서면 문의하십시오.</translat
     <message>
         <location filename="../bulk-rename.ui" line="12"/>
         <source>Serial Renaming</source>
-        <translation type="unfinished"></translation>
+        <translation>직렬 이름 변경</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="36"/>
@@ -139,42 +139,42 @@ Fifth Floor, Boston, MA 02110-1301, USA 로 서면 문의하십시오.</translat
     <message>
         <location filename="../bulk-rename.ui" line="85"/>
         <source>Replacement</source>
-        <translation type="unfinished"></translation>
+        <translation>바꾸기</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="97"/>
         <source>Find in names:</source>
-        <translation type="unfinished"></translation>
+        <translation>이름에서 찾기:</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="107"/>
         <source>Replace with:</source>
-        <translation type="unfinished"></translation>
+        <translation>다음으로 교체:</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="117"/>
         <source>Case-sensitive</source>
-        <translation type="unfinished"></translation>
+        <translation>대/소문자 구분</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="124"/>
         <source>Regular expression</source>
-        <translation type="unfinished"></translation>
+        <translation>정규식</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="134"/>
         <source>Change Case</source>
-        <translation type="unfinished"></translation>
+        <translation>대소문자 변경</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="146"/>
         <source>To upper case</source>
-        <translation type="unfinished"></translation>
+        <translation>대문자로</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="156"/>
         <source>To lower case</source>
-        <translation type="unfinished"></translation>
+        <translation>소문자로</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="27"/>
@@ -946,7 +946,7 @@ PCManFM-Qt에서 열립니다.</translation>
     <message>
         <location filename="../main-win.ui" line="436"/>
         <source>Ctrl+Shift+1</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+1</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="444"/>
@@ -956,7 +956,7 @@ PCManFM-Qt에서 열립니다.</translation>
     <message>
         <location filename="../main-win.ui" line="447"/>
         <source>Ctrl+Shift+3</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+3</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="455"/>
@@ -966,7 +966,7 @@ PCManFM-Qt에서 열립니다.</translation>
     <message>
         <location filename="../main-win.ui" line="458"/>
         <source>Ctrl+Shift+4</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+4</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="466"/>
@@ -976,7 +976,7 @@ PCManFM-Qt에서 열립니다.</translation>
     <message>
         <location filename="../main-win.ui" line="469"/>
         <source>Ctrl+Shift+2</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+2</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="478"/>
@@ -1121,7 +1121,7 @@ PCManFM-Qt에서 열립니다.</translation>
     <message>
         <location filename="../main-win.ui" line="740"/>
         <source>&amp;Case Sensitive</source>
-        <translation>대/소문자 구별(&amp;C)</translation>
+        <translation>대소문자 구분(&amp;C)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="748"/>
@@ -2016,12 +2016,12 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../view.cpp" line="160"/>
         <source>Show in New T&amp;ab</source>
-        <translation type="unfinished"></translation>
+        <translation>새 탭에 표시하기(&amp;A)</translation>
     </message>
     <message>
         <location filename="../view.cpp" line="164"/>
         <source>Show in New Win&amp;dow</source>
-        <translation type="unfinished"></translation>
+        <translation>새 창에 표시하기(&amp;D)</translation>
     </message>
 </context>
 <context>
@@ -2605,12 +2605,12 @@ lxsudo dbus-run-session -- %s</translation>
     <message>
         <location filename="../bulkrename.cpp" line="234"/>
         <source>Nothing to find.</source>
-        <translation type="unfinished"></translation>
+        <translation>찾을 것이 없습니다.</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="243"/>
         <source>Invalid regular expression.</source>
-        <translation type="unfinished"></translation>
+        <translation>잘못된 정규식입니다.</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="1149"/>
