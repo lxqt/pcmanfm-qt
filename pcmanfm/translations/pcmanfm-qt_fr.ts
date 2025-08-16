@@ -70,15 +70,17 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
 
 Copyright (C) 2009 - 2014 洪任諭 (Hong Jen Yee)
 
+Ceci est une traduction non officielle de la licence publique générale GNU (GNU GPL) en français. Elle n&apos;a pas été publiée par la Free Software Foundation et n&apos;établit pas juridiquement les termes de distribution des logiciels qui utilisent la GNU GPL – seul le texte anglais original de la GNU GPL le fait. Cependant, nous espérons que cette traduction aidera les francophones à mieux comprendre la GNU GPL. 
+
 Ce programme est un logiciel libre ; vous pouvez le redistribuer et/ou
 le modifier selon les termes de la licence publique générale GNU
-telle que publiée par la Free Software Foundation ; soit la version 2
-de la licence, ou (à votre choix) toute version ultérieure.
+tel que publiée par la Free Software Foundation ; soit la version 2
+de la licence, soit (à votre choix) toute version ultérieure.
 
 Ce programme est distribué dans l’espoir qu’il sera utile,
 mais SANS AUCUNE GARANTIE ; sans même la garantie implicite de
-COMMERCIALISATION ou d&apos;ADAPTATION POUR UN USAGE PARTICULIER.
-Voir la licence publique générale GNU pour plus de détails.
+QUALITÉ MARCHANDE ou ADÉQUATION À UN USAGE PARTICULIER. Voir la
+licence publique générale GNU pour plus de détails.
 
 Vous devriez avoir reçu une copie de la licence publique générale GNU
 avec ce programme ; sinon écrivez à la Free Software
@@ -110,7 +112,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../autorun.ui" line="56"/>
         <source>Please select the action you want to perform:</source>
-        <translation>Choisissez l&apos;action que vous souhaitez faire :</translation>
+        <translation>Veuillez sélectionner l&apos;action que vous souhaitez effectuer :</translation>
     </message>
 </context>
 <context>
@@ -226,7 +228,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../connect.ui" line="46"/>
         <source>Host:</source>
-        <translation>Hôte :</translation>
+        <translation>Hôte :</translation>
     </message>
 </context>
 <context>
@@ -682,7 +684,7 @@ avec un clic gauche, même si aucun gestionnaire de fichiers n&apos;est défini 
         <location filename="../shortcuts.ui" line="50"/>
         <location filename="../shortcuts.ui" line="58"/>
         <source>Focus path entry</source>
-        <translation type="unfinished">Focus sur l&apos;entrée du chemin</translation>
+        <translation>Chemin de mise au point</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="55"/>
