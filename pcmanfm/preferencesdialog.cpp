@@ -21,6 +21,7 @@
 #include "preferencesdialog.h"
 #include "application.h"
 #include "settings.h"
+#include <QPushButton>
 #include <QMenu>
 #include <QDir>
 #include <QHash>
@@ -58,6 +59,8 @@ PreferencesDialog::PreferencesDialog(const QString& activePage, QWidget* parent)
 
     selectPage(activePage);
     adjustSize();
+
+    connect(ui.buttonBox->button(QDialogButtonBox::Apply), &QPushButton::clicked, this, &PreferencesDialog::applySettings);
 
     if(static_cast<Application*>(qApp)->underWayland()) {
         ui.suCommand->setEnabled(false);
