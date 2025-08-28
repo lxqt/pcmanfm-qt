@@ -124,7 +124,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../bulk-rename.ui" line="12"/>
         <source>Serial Renaming</source>
-        <translation type="unfinished"></translation>
+        <translation>Seri Yeniden Adlandırma</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="36"/>
@@ -159,7 +159,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../bulk-rename.ui" line="117"/>
         <source>Case-sensitive</source>
-        <translation type="unfinished"></translation>
+        <translation>Harfe Duyarlı</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="124"/>
@@ -169,7 +169,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../bulk-rename.ui" line="134"/>
         <source>Change Case</source>
-        <translation type="unfinished"></translation>
+        <translation>Harf Değiştir</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="146"/>
@@ -949,7 +949,7 @@ olarak seçilmese bile sol tıklandığında PCManFM-Qt&apos;de açılır.</tran
     <message>
         <location filename="../main-win.ui" line="436"/>
         <source>Ctrl+Shift+1</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+1</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="444"/>
@@ -959,7 +959,7 @@ olarak seçilmese bile sol tıklandığında PCManFM-Qt&apos;de açılır.</tran
     <message>
         <location filename="../main-win.ui" line="447"/>
         <source>Ctrl+Shift+3</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+3</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="455"/>
@@ -969,7 +969,7 @@ olarak seçilmese bile sol tıklandığında PCManFM-Qt&apos;de açılır.</tran
     <message>
         <location filename="../main-win.ui" line="458"/>
         <source>Ctrl+Shift+4</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+4</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="466"/>
@@ -979,7 +979,7 @@ olarak seçilmese bile sol tıklandığında PCManFM-Qt&apos;de açılır.</tran
     <message>
         <location filename="../main-win.ui" line="469"/>
         <source>Ctrl+Shift+2</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+2</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="478"/>
@@ -1998,6 +1998,7 @@ Bu klasörler yeniden oluşturulursa faydalı olabilirler.</translation>
         <source>Do you want to open these %1 files?</source>
         <translation>
             <numerusform>%1 dosyasını açmak istiyor musunuz?</numerusform>
+            <numerusform>%1 adet dosyayı açmak istiyor musunuz?</numerusform>
         </translation>
     </message>
     <message>
