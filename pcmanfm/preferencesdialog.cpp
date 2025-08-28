@@ -368,7 +368,7 @@ void PreferencesDialog::initFromSettings() {
     initVolumePage(settings);
     initAdvancedPage(settings);
 
-    connect(ui.clearSearchHistory, &QAbstractButton::clicked, [this, &settings] {
+    connect(ui.clearSearchHistory, &QAbstractButton::clicked, this, [&settings] {
         settings.clearSearchHistory();
     });
 }
