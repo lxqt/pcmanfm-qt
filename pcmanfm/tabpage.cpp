@@ -534,7 +534,7 @@ void TabPage::onFolderError(const Fm::GErrorPtr& err, Fm::Job::ErrorSeverity sev
             // Since "admin" is already handled by canOpenAdmin(), it can be safely excluded
             // here, as a workaround.
             if(!path.hasUriScheme("admin")) {
-                MountOperation* op = new MountOperation(true);
+                MountOperation* op = new MountOperation(true, this);
                 op->mountEnclosingVolume(path);
                 if(op->wait()) { // blocking event loop, wait for mount operation to finish.
                     // This will reload the folder, which generates a new "start-loading"
@@ -550,13 +550,14 @@ void TabPage::onFolderError(const Fm::GErrorPtr& err, Fm::Job::ErrorSeverity sev
             }
         }
     }
-    if(severity >= Fm::Job::ErrorSeverity::MODERATE) {
+    if(folder_ // the tab may have been closed when waiting for the mount operation above
+       && severity >= Fm::Job::ErrorSeverity::MODERATE) {
         /* Only show more severe errors to the users and
-          * ignore milder errors. Otherwise too many error
-          * message boxes can be annoying.
-          * This fixes bug #3411298- Show "Permission denied" when switching to super user mode.
-          * https://sourceforge.net/tracker/?func=detail&aid=3411298&group_id=156956&atid=801864
-          * */
+         * ignore milder errors. Otherwise too many error
+         * message boxes can be annoying.
+         * This fixes bug #3411298- Show "Permission denied" when switching to super user mode.
+         * https://sourceforge.net/tracker/?func=detail&aid=3411298&group_id=156956&atid=801864
+         * */
 
         // FIXME: consider replacing this modal dialog with an info bar to improve usability
         QMessageBox::critical(this, tr("Error"), err.message());
@@ -1141,12 +1142,14 @@ bool TabPage::canOpenAdmin() {
     if(Fm::uriExists(admin)) {
         return true;
     }
-    MountOperation* op = new MountOperation(false);
+    MountOperation* op = new MountOperation(false, this);
     op->mountEnclosingVolume(Fm::FilePath::fromUri(admin));
     if(op->wait() && Fm::uriExists(admin)) {
         return true;
     }
-    QMessageBox::critical(parentWidget()->window(), QObject::tr("Error"), QObject::tr("Cannot open as Admin."));
+    if(folder_) {
+        QMessageBox::critical(parentWidget()->window(), QObject::tr("Error"), QObject::tr("Cannot open as Admin."));
+    }
     return false;
 }
 
