@@ -254,7 +254,7 @@ private:
     void loadBookmarksMenu();
     void updateUIForCurrentPage(bool setFocus = true);
     void updateViewMenuForCurrentPage();
-    void updateEditSelectedActions();
+    void updateSelectedActions();
     void updateStatusBarForCurrentPage();
     void setRTLIcons(bool isRTL);
     void createPathBar(bool usePathButtons);

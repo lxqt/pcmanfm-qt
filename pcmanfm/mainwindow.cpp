@@ -1520,11 +1520,11 @@ void MainWindow::updateViewMenuForCurrentPage() {
     updatingViewMenu_ = false;
 }
 
-// Update the enabled state of Edit actions for selected files
-void MainWindow::updateEditSelectedActions() {
-    bool hasAccessible(false);
-    bool hasDeletable(false);
-    int renamable(0);
+// Update the enabled state of File and Edit actions for selected files
+void MainWindow::updateSelectedActions() {
+    bool hasAccessible = false;
+    bool hasDeletable = false;
+    int renamable = 0;
     if(TabPage* page = currentPage()) {
         auto files = page->selectedFiles();
         for(auto& file: files) {
@@ -1541,6 +1541,7 @@ void MainWindow::updateEditSelectedActions() {
                 break;
             }
         }
+        ui.actionFileProperties->setEnabled(files.size() > 0);
         ui.actionCopyFullPath->setEnabled(files.size() == 1);
     }
     ui.actionCopy->setEnabled(hasAccessible);
@@ -1592,8 +1593,8 @@ void MainWindow::updateUIForCurrentPage(bool setFocus) {
         updateStatusBarForCurrentPage();
     }
 
-    // also update the enabled state of Edit actions
-    updateEditSelectedActions();
+    // also update the enabled state of File and Edit actions
+    updateSelectedActions();
     bool isWritable(false);
     bool isNative(false);
     if(tabPage && tabPage->folder()) {
@@ -1714,7 +1715,7 @@ void MainWindow::onTabPageStatusChanged(int type, QString statusText) {
 
     // Since TabPage::statusChanged is always emitted after View::selChanged,
     // there is no need to connect a separate slot to the latter signal
-    updateEditSelectedActions();
+    updateSelectedActions();
 }
 
 void MainWindow::onTabPageSortFilterChanged() { // NOTE: This may be called from context menu too.
