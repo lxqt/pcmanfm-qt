@@ -1541,7 +1541,7 @@ void MainWindow::updateSelectedActions() {
                 break;
             }
         }
-        ui.actionFileProperties->setEnabled(files.size() != 0);
+        ui.actionFileProperties->setEnabled(files.size() > 0);
         ui.actionCopyFullPath->setEnabled(files.size() == 1);
     }
     ui.actionCopy->setEnabled(hasAccessible);
