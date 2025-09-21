@@ -883,7 +883,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="357"/>
         <source>&amp;New Window</source>
-        <translation>Cửa sổ mới (&amp;N)</translation>
+        <translation>Cửa Sổ Mới (&amp;N)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="360"/>
