@@ -526,6 +526,9 @@
    </property>
   </action>
   <action name="actionPreferences">
+   <property name="icon">
+    <iconset theme="configure"/>
+   </property>
    <property name="text">
     <string>Pr&amp;eferences</string>
    </property>

@@ -13,6 +13,9 @@
   <property name="windowTitle">
    <string>Desktop Preferences</string>
   </property>
+  <property name="windowIcon">
+   <iconset theme="user-desktop"/>
+  </property>
   <layout class="QVBoxLayout" name="verticalLayout">
    <item>
     <widget class="QTabWidget" name="tabWidget">
