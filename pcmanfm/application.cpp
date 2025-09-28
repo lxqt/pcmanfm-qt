@@ -933,7 +933,7 @@ bool Application::nativeEventFilter(const QByteArray& eventType, void* message, 
         // filter all native X11 events (xcb)
         xcb_generic_event_t* generic_event = reinterpret_cast<xcb_generic_event_t*>(message);
         // qDebug("XCB event: %d", generic_event->response_type & ~0x80);
-        for(DesktopWindow* window : desktopWindows_) {
+        Q_FOREACH(DesktopWindow* window, desktopWindows_) {
         }
     }
     return false;
