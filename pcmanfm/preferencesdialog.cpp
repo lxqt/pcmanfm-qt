@@ -534,10 +534,10 @@ void PreferencesDialog::lockMargins(bool lock) {
     ui.vMargin->setDisabled(lock);
     if(lock) {
         ui.vMargin->setValue(ui.hMargin->value());
-        connect(ui.hMargin, static_cast<void (QSpinBox::*)(int)>(&QSpinBox::valueChanged), ui.vMargin, &QSpinBox::setValue);
+        connect(ui.hMargin, &QSpinBox::valueChanged, ui.vMargin, &QSpinBox::setValue);
     }
     else {
-        disconnect(ui.hMargin, static_cast<void (QSpinBox::*)(int)>(&QSpinBox::valueChanged), ui.vMargin, &QSpinBox::setValue);
+        disconnect(ui.hMargin, &QSpinBox::valueChanged, ui.vMargin, &QSpinBox::setValue);
     }
 }
 
