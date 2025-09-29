@@ -16,8 +16,7 @@ ConnectServerDialog::ConnectServerDialog(QWidget *parent): QDialog(parent) {
 
   ui.setupUi(this);
 
-  connect(ui.serverType, static_cast<void(QComboBox::*)(int)>(&QComboBox::currentIndexChanged),
-          this, &ConnectServerDialog::onCurrentIndexChanged);
+  connect(ui.serverType, &QComboBox::currentIndexChanged, this, &ConnectServerDialog::onCurrentIndexChanged);
 
   connect(ui.host, &QLineEdit::textChanged, this, &ConnectServerDialog::checkInput);
   connect(ui.userName, &QLineEdit::textChanged, this, &ConnectServerDialog::checkInput);

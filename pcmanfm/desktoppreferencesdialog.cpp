@@ -51,7 +51,7 @@ DesktopPreferencesDialog::DesktopPreferencesDialog(QWidget* parent, Qt::WindowFl
   ui.setupUi(this);
 
   // setup wallpaper modes
-  connect(ui.wallpaperMode, static_cast<void (QComboBox::*)(int)>(&QComboBox::currentIndexChanged), this, &DesktopPreferencesDialog::onWallpaperModeChanged);
+  connect(ui.wallpaperMode, &QComboBox::currentIndexChanged, this, &DesktopPreferencesDialog::onWallpaperModeChanged);
   ui.wallpaperMode->addItem(tr("Fill with background color only"), DesktopWindow::WallpaperNone);
   ui.wallpaperMode->addItem(tr("Stretch to fill the entire screen"), DesktopWindow::WallpaperStretch);
   ui.wallpaperMode->addItem(tr("Stretch to fit the screen"), DesktopWindow::WallpaperFit);
@@ -171,10 +171,10 @@ void DesktopPreferencesDialog::lockMargins(bool lock) {
   ui.vMargin->setDisabled(lock);
   if(lock) {
     ui.vMargin->setValue(ui.hMargin->value());
-    connect(ui.hMargin, static_cast<void (QSpinBox::*)(int)>(&QSpinBox::valueChanged), ui.vMargin, &QSpinBox::setValue);
+    connect(ui.hMargin, &QSpinBox::valueChanged, ui.vMargin, &QSpinBox::setValue);
   }
   else
-    disconnect(ui.hMargin, static_cast<void (QSpinBox::*)(int)>(&QSpinBox::valueChanged), ui.vMargin, &QSpinBox::setValue);
+    disconnect(ui.hMargin, &QSpinBox::valueChanged, ui.vMargin, &QSpinBox::setValue);
 }
 
 void DesktopPreferencesDialog::applySettings()
