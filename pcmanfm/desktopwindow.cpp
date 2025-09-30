@@ -1733,7 +1733,7 @@ void DesktopWindow::onRenameActivated() {
     auto files = selectedFiles();
     if(!files.empty()) {
         for(auto& info: files) {
-            if(!Fm::renameFile(info, nullptr)) {
+            if(!Fm::renameFile(info, this)) {
                 break;
             }
         }
