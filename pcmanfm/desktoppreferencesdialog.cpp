@@ -317,7 +317,7 @@ void DesktopPreferencesDialog::onBrowseClicked() {
 }
 
 void DesktopPreferencesDialog::onFolderBrowseClicked() {
-  QFileDialog dlg;
+  QFileDialog dlg(this);
   dlg.setAcceptMode(QFileDialog::AcceptOpen);
   dlg.setFileMode(QFileDialog::Directory);
   dlg.setOption(QFileDialog::ShowDirsOnly);
@@ -343,7 +343,7 @@ void DesktopPreferencesDialog::onFolderBrowseClicked() {
 
 void DesktopPreferencesDialog::onBrowseDesktopFolderClicked()
 {
-  QFileDialog dlg;
+  QFileDialog dlg(this);
   dlg.setAcceptMode(QFileDialog::AcceptOpen);
   dlg.setAcceptMode(QFileDialog::AcceptOpen);
   dlg.setFileMode(QFileDialog::Directory);
