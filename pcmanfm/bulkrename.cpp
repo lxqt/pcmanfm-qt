@@ -120,6 +120,7 @@ BulkRenamer::BulkRenamer(const Fm::FileInfoList& files, QWidget* parent) {
     bool showDlg = true;
     while(showDlg) {
         BulkRenameDialog dlg(parent);
+        dlg.setWindowModality(Qt::WindowModal);
         dlg.setState(baseName,
                      findStr, replaceStr,
                      replacement, caseChange,

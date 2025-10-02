@@ -1226,6 +1226,7 @@ void MainWindow::on_actionAbout_triggered() {
         Ui::AboutDialog ui;
     };
     AboutDialog dialog(this);
+    dialog.setWindowModality(Qt::WindowModal);
     dialog.exec();
 }
 
@@ -1244,6 +1245,7 @@ void MainWindow::on_actionHiddenShortcuts_triggered() {
         Ui::HiddenShortcutsDialog ui;
     };
     HiddenShortcutsDialog dialog(this);
+    dialog.setWindowModality(Qt::WindowModal);
     dialog.exec();
 }
 

@@ -271,6 +271,7 @@ void DesktopPreferencesDialog::onBrowseClicked() {
 
   // use LXQt file dialog directly to set its view to thumbnail mode
   Fm::FileDialog dlg(this);
+  dlg.setWindowModality(Qt::WindowModal);
   dlg.resize(settings.wallpaperDialogSize());
   dlg.setSplitterPos(settings.wallpaperDialogSplitterPos());
   dlg.setAcceptMode(QFileDialog::AcceptOpen);
@@ -318,6 +319,7 @@ void DesktopPreferencesDialog::onBrowseClicked() {
 
 void DesktopPreferencesDialog::onFolderBrowseClicked() {
   QFileDialog dlg(this);
+  dlg.setWindowModality(Qt::WindowModal);
   dlg.setAcceptMode(QFileDialog::AcceptOpen);
   dlg.setFileMode(QFileDialog::Directory);
   dlg.setOption(QFileDialog::ShowDirsOnly);
@@ -344,7 +346,7 @@ void DesktopPreferencesDialog::onFolderBrowseClicked() {
 void DesktopPreferencesDialog::onBrowseDesktopFolderClicked()
 {
   QFileDialog dlg(this);
-  dlg.setAcceptMode(QFileDialog::AcceptOpen);
+  dlg.setWindowModality(Qt::WindowModal);
   dlg.setAcceptMode(QFileDialog::AcceptOpen);
   dlg.setFileMode(QFileDialog::Directory);
   dlg.setOption(QFileDialog::ShowDirsOnly);
