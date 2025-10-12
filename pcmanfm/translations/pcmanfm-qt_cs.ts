@@ -123,7 +123,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../bulk-rename.ui" line="12"/>
         <source>Serial Renaming</source>
-        <translation type="unfinished"></translation>
+        <translation>Posloupnostní přejmenovávání</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="36"/>
@@ -143,42 +143,42 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../bulk-rename.ui" line="85"/>
         <source>Replacement</source>
-        <translation type="unfinished"></translation>
+        <translation>Nahrazení</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="97"/>
         <source>Find in names:</source>
-        <translation type="unfinished"></translation>
+        <translation>Hledat v názvech:</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="107"/>
         <source>Replace with:</source>
-        <translation type="unfinished"></translation>
+        <translation>Nahradit čím:</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="117"/>
         <source>Case-sensitive</source>
-        <translation type="unfinished"></translation>
+        <translation>Rozlišovat malá-VELKÁ písmena</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="124"/>
         <source>Regular expression</source>
-        <translation type="unfinished"></translation>
+        <translation>Regulární výraz</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="134"/>
         <source>Change Case</source>
-        <translation type="unfinished"></translation>
+        <translation>Změnit velikost písmen</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="146"/>
         <source>To upper case</source>
-        <translation type="unfinished"></translation>
+        <translation>Na velká písmena</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="156"/>
         <source>To lower case</source>
-        <translation type="unfinished"></translation>
+        <translation>Na malá písmena</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="27"/>
@@ -449,7 +449,7 @@ Příklady: AudioVideo, Audio, Video, Development, Education, Game, Graphics, Ne
     <message>
         <location filename="../desktop-preferences.ui" line="49"/>
         <source>Label Text</source>
-        <translation>Text štítku</translation>
+        <translation>Text popisku</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="113"/>
@@ -523,12 +523,12 @@ Je také vyhrazeno místo pro 3 řádky textu.</translation>
         <source>By default, desktop folders will be opened in PCManFM-Qt if they
 are left clicked, even when it is not the default file manager.</source>
         <translation>Ve výchozím nastavení se složky plochy otevřou v PCManFM-Qt, pokud na ně
-klepnete levým tlačítkem, i když to není výchozí správce souborů.</translation>
+kliknete levým tlačítkem, i když to není výchozí správce souborů.</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="307"/>
         <source>Open desktop folders in default file manager by left clicking</source>
-        <translation>Otevřít složky na ploše ve výchozím správci souborů klepnutím levým tlačítkem myši</translation>
+        <translation>Otevřít složky na ploše ve výchozím správci souborů kliknutím levým tlačítkem myši</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="314"/>
@@ -682,7 +682,7 @@ klepnete levým tlačítkem, i když to není výchozí správce souborů.</tran
         <location filename="../shortcuts.ui" line="50"/>
         <location filename="../shortcuts.ui" line="58"/>
         <source>Focus path entry</source>
-        <translation>Zaměřit zadání cesty</translation>
+        <translation>Zaměřit zadání popisu umístění</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="55"/>
@@ -692,7 +692,7 @@ klepnete levým tlačítkem, i když to není výchozí správce souborů.</tran
     <message>
         <location filename="../shortcuts.ui" line="63"/>
         <source>Ctrl+Tab</source>
-        <translation>Ctrl+tabulátor</translation>
+        <translation>Ctrl+Tab</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="66"/>
@@ -703,7 +703,7 @@ klepnete levým tlačítkem, i když to není výchozí správce souborů.</tran
     <message>
         <location filename="../shortcuts.ui" line="71"/>
         <source>Ctrl+Shift+Tab</source>
-        <translation>Ctrl+Shift+tabulátor</translation>
+        <translation>Ctrl+Shift+Tab</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="74"/>
@@ -933,22 +933,22 @@ klepnete levým tlačítkem, i když to není výchozí správce souborů.</tran
     <message>
         <location filename="../main-win.ui" line="436"/>
         <source>Ctrl+Shift+1</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+1</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="447"/>
         <source>Ctrl+Shift+3</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+3</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="458"/>
         <source>Ctrl+Shift+4</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+4</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="469"/>
         <source>Ctrl+Shift+2</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+2</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="481"/>
@@ -2028,12 +2028,12 @@ Mohly by se ještě hodit v případě znovuvytvoření těchto složek.</transl
     <message>
         <location filename="../view.cpp" line="160"/>
         <source>Show in New T&amp;ab</source>
-        <translation type="unfinished"></translation>
+        <translation>Zobrazi&amp;t v novém panelu</translation>
     </message>
     <message>
         <location filename="../view.cpp" line="164"/>
         <source>Show in New Win&amp;dow</source>
-        <translation type="unfinished"></translation>
+        <translation>Zo&amp;brazit v novém okně</translation>
     </message>
 </context>
 <context>
@@ -2142,7 +2142,7 @@ Mohly by se ještě hodit v případě znovuvytvoření těchto složek.</transl
     <message>
         <location filename="../preferences.ui" line="93"/>
         <source>Open files with single click</source>
-        <translation>Otevírat soubory jedním klepnutím</translation>
+        <translation>Otevírat soubory jedním kliknutím</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="162"/>
@@ -2198,7 +2198,7 @@ Mohly by se ještě hodit v případě znovuvytvoření těchto složek.</transl
     <message>
         <location filename="../preferences.ui" line="106"/>
         <source>Delay of auto-selection in single click mode:</source>
-        <translation>Zpoždění automatického výběru v režimu jednoho klepnutí:</translation>
+        <translation>Zpoždění automatického výběru v režimu jednoho kliknutí:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="144"/>
@@ -2218,7 +2218,7 @@ Mohly by se ještě hodit v případě znovuvytvoření těchto složek.</transl
     <message>
         <location filename="../preferences.ui" line="129"/>
         <source>Show folder context menu with Ctrl + right click</source>
-        <translation>Ukázat související nabídku ke složce pomocí Ctrl + klepnutí pravým tlačítkem myši</translation>
+        <translation>Ukázat související nabídku ke složce pomocí Ctrl + kliknutím pravým tlačítkem myši</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="195"/>
@@ -2469,41 +2469,45 @@ Hodnota -1 znamená, že neexistuje žádný limit pro velikost souboru (výchoz
     <message>
         <location filename="../preferences.ui" line="833"/>
         <source>Terminal emulator</source>
-        <translation type="unfinished"></translation>
+        <translation>Emulátor terminálu</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="842"/>
         <source>Command:</source>
-        <translation type="unfinished">Příkaz:</translation>
+        <translation>Příkaz:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="849"/>
         <source>Example: qterminal
 It is the name of the executable file.</source>
-        <translation type="unfinished"></translation>
+        <translation>Příklad: qterminal
+Je názvem spustitelného souboru.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="860"/>
         <source>Execution option:</source>
-        <translation type="unfinished"></translation>
+        <translation>Parametry se kterými spustit:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="867"/>
         <source>Example: -e
 It can be left empty if the terminal is already supported
 or does not have such an option; required otherwise.</source>
-        <translation type="unfinished"></translation>
+        <translation>Příklad: -e
+Pokud je terminál už podporován nebo nemá takovou volbu,
+je možné nevyplnit – jinak ale potřebné.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="879"/>
         <source>Custom option(s):</source>
-        <translation type="unfinished"></translation>
+        <translation>Uživatelsky určené předvolby:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="886"/>
         <source>This is optional, depends on the terminal,
 and can be any group of custom options.</source>
-        <translation type="unfinished"></translation>
+        <translation>Toto je volitelné, v závislosti na terminálu a může být
+libovolná skupina uživatelsky určených předvoleb.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="900"/>
@@ -2514,7 +2518,8 @@ and can be any group of custom options.</source>
         <location filename="../preferences.ui" line="910"/>
         <source>Example:
 lxsudo dbus-run-session -- %s</source>
-        <translation type="unfinished"></translation>
+        <translation>Příklad:
+lxsudo dbus-run-session -- %s</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="918"/>
@@ -2612,12 +2617,12 @@ lxsudo dbus-run-session -- %s</source>
     <message>
         <location filename="../bulkrename.cpp" line="234"/>
         <source>Nothing to find.</source>
-        <translation type="unfinished"></translation>
+        <translation>Nic k hledání.</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="243"/>
         <source>Invalid regular expression.</source>
-        <translation type="unfinished"></translation>
+        <translation>Neplatný regulární výraz.</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="1149"/>
