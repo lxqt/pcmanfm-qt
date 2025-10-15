@@ -595,6 +595,11 @@ are left clicked, even when it is not the default file manager.</source>
         <translation> דקה/ות</translation>
     </message>
     <message>
+        <location filename="../desktop-preferences.ui" line="669"/>
+        <source>Do not show file tooltips</source>
+        <translation type="unfinished">לא להציג תיבות צצות בקבצים</translation>
+    </message>
+    <message>
         <location filename="../desktop-preferences.ui" line="498"/>
         <source>Wallpaper folder</source>
         <translation>תיקיית רקע</translation>
@@ -1507,99 +1512,99 @@ are left clicked, even when it is not the default file manager.</source>
 <context>
     <name>PCManFM::Application</name>
     <message>
-        <location filename="../application.cpp" line="189"/>
+        <location filename="../application.cpp" line="190"/>
         <source>Name of configuration profile</source>
         <translation>שם פרופיל התצורה</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="189"/>
+        <location filename="../application.cpp" line="190"/>
         <source>PROFILE</source>
         <translation>פרופיל</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="192"/>
+        <location filename="../application.cpp" line="193"/>
         <source>Run PCManFM-Qt as a daemon</source>
         <translation>הפעלת PCManFM-Qt כסוכן ברקע</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="195"/>
+        <location filename="../application.cpp" line="196"/>
         <source>Quit PCManFM-Qt</source>
         <translation>יציאה מ־PCManFM-Qt</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="198"/>
+        <location filename="../application.cpp" line="199"/>
         <source>Launch desktop manager</source>
         <translation>הפעלת מנהל שולחן עבודה</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="201"/>
+        <location filename="../application.cpp" line="202"/>
         <source>Turn off desktop manager if it&apos;s running</source>
         <translation>כיבוי מנהל שולחן עבודה אם הוא פעיל</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="204"/>
+        <location filename="../application.cpp" line="205"/>
         <source>Open desktop preference dialog on the page with the specified name</source>
         <translation>פתיחת דו־שיח העדפות שולחן עבודה בעמוד עם השם שמצוין</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="204"/>
-        <location filename="../application.cpp" line="219"/>
+        <location filename="../application.cpp" line="205"/>
+        <location filename="../application.cpp" line="220"/>
         <source>NAME</source>
         <translation>שם</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="207"/>
+        <location filename="../application.cpp" line="208"/>
         <source>Open new window</source>
         <translation>פתיחת חלון חדש</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="210"/>
+        <location filename="../application.cpp" line="211"/>
         <source>Open Find Files utility</source>
         <translation>פתיחת כלי חיפוש קבצים</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="213"/>
+        <location filename="../application.cpp" line="214"/>
         <source>Set desktop wallpaper from image FILE</source>
         <translation>הגדרת רקע שולחן עבודה מקובץ תמונה</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="213"/>
+        <location filename="../application.cpp" line="214"/>
         <source>FILE</source>
         <translation>קובץ</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="216"/>
+        <location filename="../application.cpp" line="217"/>
         <source>MODE</source>
         <translation>מצב</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="216"/>
+        <location filename="../application.cpp" line="217"/>
         <source>Set mode of desktop wallpaper. MODE=(%1)</source>
         <translation>הגדרת מצב רקע שולחן העבודה. מצב=(%1)</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="219"/>
+        <location filename="../application.cpp" line="220"/>
         <source>Open Preferences dialog on the page with the specified name</source>
         <translation>פתח את דו־שיח ההעדפות בעמוד עם השם שצויין</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="222"/>
+        <location filename="../application.cpp" line="223"/>
         <source>Files or directories to open</source>
         <translation>קבצים או תיקיות לפתיחה</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="222"/>
+        <location filename="../application.cpp" line="223"/>
         <source>[FILE1, FILE2,...]</source>
         <translation>[קובץ1, קובץ2,...]</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="660"/>
-        <location filename="../application.cpp" line="665"/>
+        <location filename="../application.cpp" line="661"/>
+        <location filename="../application.cpp" line="666"/>
         <source>Error</source>
         <translation>שגיאה</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="665"/>
+        <location filename="../application.cpp" line="666"/>
         <source>Terminal emulator is not set.</source>
         <translation>מדמה המסוף לא הוגדר.</translation>
     </message>
@@ -1726,17 +1731,17 @@ are left clicked, even when it is not the default file manager.</source>
         <translation>הגדלת התמונה על מנת למלא את כל המסך</translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="272"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="278"/>
         <source>Select Wallpaper</source>
         <translation>נא לבחור רקע</translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="276"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="282"/>
         <source>Image Files</source>
         <translation>קובצי תמונה</translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="318"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="324"/>
         <source>Select Wallpaper Folder</source>
         <translation>נא לבחור תיקיית רקעים</translation>
     </message>
@@ -1744,63 +1749,61 @@ are left clicked, even when it is not the default file manager.</source>
 <context>
     <name>PCManFM::DesktopWindow</name>
     <message>
-        <location filename="../desktopwindow.cpp" line="333"/>
+        <location filename="../desktopwindow.cpp" line="327"/>
         <source>Trash (One item)</source>
         <translation>אשפה (פריט אחד)</translation>
     </message>
     <message numerus="yes">
-        <location filename="../desktopwindow.cpp" line="336"/>
+        <location filename="../desktopwindow.cpp" line="330"/>
         <source>Trash (%Ln items)</source>
         <translation>
             <numerusform>אשפה (פריט אחד)</numerusform>
             <numerusform>אשפה (שני פריטים)</numerusform>
-            <numerusform>אשפה (%Ln פריטים)</numerusform>
-            <numerusform>אשפה (%Ln פריטים)</numerusform>
         </translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="340"/>
+        <location filename="../desktopwindow.cpp" line="334"/>
         <source>Trash (Empty)</source>
         <translation>אשפה (ריק)</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="375"/>
+        <location filename="../desktopwindow.cpp" line="369"/>
         <source>Computer</source>
         <translation>מחשב</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="389"/>
+        <location filename="../desktopwindow.cpp" line="383"/>
         <source>Network</source>
         <translation>רשת</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1052"/>
+        <location filename="../desktopwindow.cpp" line="1046"/>
         <source>Open</source>
         <translation>פתיחה</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1058"/>
-        <location filename="../desktopwindow.cpp" line="1098"/>
+        <location filename="../desktopwindow.cpp" line="1052"/>
+        <location filename="../desktopwindow.cpp" line="1092"/>
         <source>Stic&amp;k to Current Position</source>
         <translation>היצמדו&amp;ת לאזור הנוכחי</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1066"/>
+        <location filename="../desktopwindow.cpp" line="1060"/>
         <source>Empty Trash</source>
         <translation>ריקון האשפה</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1132"/>
+        <location filename="../desktopwindow.cpp" line="1126"/>
         <source>Hide Desktop Items</source>
         <translation>הסתרת פריטי שולחן העבודה</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1138"/>
+        <location filename="../desktopwindow.cpp" line="1132"/>
         <source>Create Launcher</source>
         <translation>יצירת משגר</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1141"/>
+        <location filename="../desktopwindow.cpp" line="1135"/>
         <source>Desktop Preferences</source>
         <translation>העדפות שולחן העבודה</translation>
     </message>
@@ -1839,7 +1842,7 @@ are left clicked, even when it is not the default file manager.</source>
         <translation>שורת התפריט תוסתר לגמרי, נא להשתמש במקשים Ctrl+M על מנת להציגה.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1224"/>
+        <location filename="../mainwindow.cpp" line="1223"/>
         <source>Version: %1</source>
         <translation>גרסה: %1</translation>
     </message>
@@ -1887,32 +1890,32 @@ They might be useful if those folders are created again.</source>
 <context>
     <name>PCManFM::PreferencesDialog</name>
     <message>
-        <location filename="../preferencesdialog.cpp" line="215"/>
+        <location filename="../preferencesdialog.cpp" line="218"/>
         <source>Icon View</source>
         <translation>תצוגת סמלים</translation>
     </message>
     <message>
-        <location filename="../preferencesdialog.cpp" line="216"/>
+        <location filename="../preferencesdialog.cpp" line="219"/>
         <source>Compact View</source>
         <translation>תצוגה חסכונית</translation>
     </message>
     <message>
-        <location filename="../preferencesdialog.cpp" line="217"/>
+        <location filename="../preferencesdialog.cpp" line="220"/>
         <source>Thumbnail View</source>
         <translation>תצוגת תמונות ממוזערות</translation>
     </message>
     <message>
-        <location filename="../preferencesdialog.cpp" line="218"/>
+        <location filename="../preferencesdialog.cpp" line="221"/>
         <source>Detailed List View</source>
         <translation>תצוגת רשימה מפורטת</translation>
     </message>
     <message>
-        <location filename="../preferencesdialog.cpp" line="311"/>
+        <location filename="../preferencesdialog.cpp" line="314"/>
         <source>Remove if added by user</source>
         <translation>להסיר אם נוסף על ידי המשתמש</translation>
     </message>
     <message>
-        <location filename="../preferencesdialog.cpp" line="335"/>
+        <location filename="../preferencesdialog.cpp" line="338"/>
         <source>Open user-defined list</source>
         <translation>פתיחת רשימה בהגדרת המשתמש</translation>
     </message>
@@ -1950,50 +1953,44 @@ They might be useful if those folders are created again.</source>
         <translation>שולחן עבודה</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="562"/>
+        <location filename="../tabpage.cpp" line="563"/>
         <source>Error</source>
         <translation>שגיאה</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="571"/>
+        <location filename="../tabpage.cpp" line="572"/>
         <source>Free space: %1 (Total: %2)</source>
         <translation>שטח פנוי: %1 (בסך הכול: %2)</translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="588"/>
+        <location filename="../tabpage.cpp" line="589"/>
         <source>%n item(s)</source>
         <translation>
             <numerusform>פריט אחד</numerusform>
             <numerusform>שני פריטים</numerusform>
-            <numerusform>%n פריטים</numerusform>
-            <numerusform>%n פריטים</numerusform>
         </translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="590"/>
+        <location filename="../tabpage.cpp" line="591"/>
         <source> (%n hidden)</source>
         <translation>
             <numerusform> (אחד מוסתר)</numerusform>
             <numerusform> (שניים מוסתרים)</numerusform>
-            <numerusform> (%n מוסתרים)</numerusform>
-            <numerusform> (%n מוסתרים)</numerusform>
         </translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="595"/>
-        <location filename="../tabpage.cpp" line="796"/>
-        <location filename="../tabpage.cpp" line="810"/>
+        <location filename="../tabpage.cpp" line="596"/>
+        <location filename="../tabpage.cpp" line="797"/>
+        <location filename="../tabpage.cpp" line="811"/>
         <source>Link to</source>
         <translation>קישור אל</translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="822"/>
+        <location filename="../tabpage.cpp" line="823"/>
         <source>%n item(s) selected</source>
         <translation>
             <numerusform>נבחר פריט אחד</numerusform>
             <numerusform>נבחרו שני פריטים</numerusform>
-            <numerusform>נבחרו %n פריטים</numerusform>
-            <numerusform>נבחרו %n פריטים</numerusform>
         </translation>
     </message>
 </context>
@@ -2010,8 +2007,6 @@ They might be useful if those folders are created again.</source>
         <translation>
             <numerusform>לפתוח את הקובץ הזה?</numerusform>
             <numerusform>לפתוח את שני הקבצים האלה?</numerusform>
-            <numerusform>לפתוח את %1 הקבצים האלה?</numerusform>
-            <numerusform>לפתוח את %1 הקבצים האלה?</numerusform>
         </translation>
     </message>
     <message>
@@ -2603,7 +2598,7 @@ lxsudo dbus-run-session -- %s</translation>
         <location filename="../bulkrename.cpp" line="281"/>
         <location filename="../bulkrename.cpp" line="318"/>
         <location filename="../bulkrename.cpp" line="322"/>
-        <location filename="../tabpage.cpp" line="1149"/>
+        <location filename="../tabpage.cpp" line="1151"/>
         <source>Error</source>
         <translation>שגיאה</translation>
     </message>
@@ -2632,7 +2627,7 @@ lxsudo dbus-run-session -- %s</translation>
         <translation>ביטוי רגולרי שגוי.</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="1149"/>
+        <location filename="../tabpage.cpp" line="1151"/>
         <source>Cannot open as Admin.</source>
         <translation>לא ניתן לפתוח במצב ניהול.</translation>
     </message>

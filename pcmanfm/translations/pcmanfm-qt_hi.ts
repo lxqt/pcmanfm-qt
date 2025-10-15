@@ -597,6 +597,11 @@ are left clicked, even when it is not the default file manager.</source>
         <translation> मिनट</translation>
     </message>
     <message>
+        <location filename="../desktop-preferences.ui" line="669"/>
+        <source>Do not show file tooltips</source>
+        <translation type="unfinished">फ़ाइल टूलटिप न दिखाएं</translation>
+    </message>
+    <message>
         <location filename="../desktop-preferences.ui" line="498"/>
         <source>Wallpaper folder</source>
         <translation>वॉलपेपर फ़ोल्डर</translation>
@@ -1508,99 +1513,99 @@ are left clicked, even when it is not the default file manager.</source>
 <context>
     <name>PCManFM::Application</name>
     <message>
-        <location filename="../application.cpp" line="189"/>
+        <location filename="../application.cpp" line="190"/>
         <source>Name of configuration profile</source>
         <translation>कॉन्फ़िगरेशन प्रोफ़ाइल का नाम</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="189"/>
+        <location filename="../application.cpp" line="190"/>
         <source>PROFILE</source>
         <translation>PROFILE</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="192"/>
+        <location filename="../application.cpp" line="193"/>
         <source>Run PCManFM-Qt as a daemon</source>
         <translation>PCManFM-Qt को डेमन के रूप में चलाएँ</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="195"/>
+        <location filename="../application.cpp" line="196"/>
         <source>Quit PCManFM-Qt</source>
         <translation>PCManFM-Qt से बाहर आएं</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="198"/>
+        <location filename="../application.cpp" line="199"/>
         <source>Launch desktop manager</source>
         <translation>डेस्कटॉप मैनेजर चलाएँ</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="201"/>
+        <location filename="../application.cpp" line="202"/>
         <source>Turn off desktop manager if it&apos;s running</source>
         <translation>यदि डेस्कटॉप मैनेजर चल रहा है उसे बंद करें</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="204"/>
+        <location filename="../application.cpp" line="205"/>
         <source>Open desktop preference dialog on the page with the specified name</source>
         <translation>निर्दिष्ट नाम वाले पृष्ठ पर डेस्कटॉप प्राथमिकता संवाद खोलें</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="204"/>
-        <location filename="../application.cpp" line="219"/>
+        <location filename="../application.cpp" line="205"/>
+        <location filename="../application.cpp" line="220"/>
         <source>NAME</source>
         <translation>NAME</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="207"/>
+        <location filename="../application.cpp" line="208"/>
         <source>Open new window</source>
         <translation>नई विंडो खोलें</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="210"/>
+        <location filename="../application.cpp" line="211"/>
         <source>Open Find Files utility</source>
         <translation>फ़ाइलें ढूँढें उपयोगिता खोलें</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="213"/>
+        <location filename="../application.cpp" line="214"/>
         <source>Set desktop wallpaper from image FILE</source>
         <translation>चित्र FILE से डेस्कटॉप वॉलपेपर सेट करें</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="213"/>
+        <location filename="../application.cpp" line="214"/>
         <source>FILE</source>
         <translation>FILE</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="216"/>
+        <location filename="../application.cpp" line="217"/>
         <source>MODE</source>
         <translation>MODE</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="216"/>
+        <location filename="../application.cpp" line="217"/>
         <source>Set mode of desktop wallpaper. MODE=(%1)</source>
         <translation>डेस्कटॉप वॉलपेपर का मोड सेट करें। MODE=(%1)</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="219"/>
+        <location filename="../application.cpp" line="220"/>
         <source>Open Preferences dialog on the page with the specified name</source>
         <translation>निर्दिष्ट नाम वाले पृष्ठ पर प्राथमिकताएँ संवाद खोलें</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="222"/>
+        <location filename="../application.cpp" line="223"/>
         <source>Files or directories to open</source>
         <translation>खोलने के लिए फ़ाइलें या डैरेक्टरियाँ</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="222"/>
+        <location filename="../application.cpp" line="223"/>
         <source>[FILE1, FILE2,...]</source>
         <translation>[FILE1, FILE2,...]</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="660"/>
-        <location filename="../application.cpp" line="665"/>
+        <location filename="../application.cpp" line="661"/>
+        <location filename="../application.cpp" line="666"/>
         <source>Error</source>
         <translation>त्रुटि</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="665"/>
+        <location filename="../application.cpp" line="666"/>
         <source>Terminal emulator is not set.</source>
         <translation>टर्मिनल एम्यूलेटर सेट नहीं है।</translation>
     </message>
@@ -1727,17 +1732,17 @@ are left clicked, even when it is not the default file manager.</source>
         <translation>चित्र को ज़ूम करके पूरी स्क्रीन भरें</translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="272"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="278"/>
         <source>Select Wallpaper</source>
         <translation>वॉलपेपर चुनें</translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="276"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="282"/>
         <source>Image Files</source>
         <translation>चित्र फ़ाइलें</translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="318"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="324"/>
         <source>Select Wallpaper Folder</source>
         <translation>वॉलपेपर फ़ोल्डर चुनें</translation>
     </message>
@@ -1745,12 +1750,12 @@ are left clicked, even when it is not the default file manager.</source>
 <context>
     <name>PCManFM::DesktopWindow</name>
     <message>
-        <location filename="../desktopwindow.cpp" line="333"/>
+        <location filename="../desktopwindow.cpp" line="327"/>
         <source>Trash (One item)</source>
         <translation>रद्दी (1 वस्तु)</translation>
     </message>
     <message numerus="yes">
-        <location filename="../desktopwindow.cpp" line="336"/>
+        <location filename="../desktopwindow.cpp" line="330"/>
         <source>Trash (%Ln items)</source>
         <translation>
             <numerusform>रद्दी (%Ln वस्तु)</numerusform>
@@ -1758,48 +1763,48 @@ are left clicked, even when it is not the default file manager.</source>
         </translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="340"/>
+        <location filename="../desktopwindow.cpp" line="334"/>
         <source>Trash (Empty)</source>
         <translation>रद्दी (खाली)</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="375"/>
+        <location filename="../desktopwindow.cpp" line="369"/>
         <source>Computer</source>
         <translation>कम्प्यूटर</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="389"/>
+        <location filename="../desktopwindow.cpp" line="383"/>
         <source>Network</source>
         <translation>नेटवर्क</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1052"/>
+        <location filename="../desktopwindow.cpp" line="1046"/>
         <source>Open</source>
         <translation>खोलें</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1058"/>
-        <location filename="../desktopwindow.cpp" line="1098"/>
+        <location filename="../desktopwindow.cpp" line="1052"/>
+        <location filename="../desktopwindow.cpp" line="1092"/>
         <source>Stic&amp;k to Current Position</source>
         <translation>वर्तमान स्थिति पर कायम रहें (&amp;K)</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1066"/>
+        <location filename="../desktopwindow.cpp" line="1060"/>
         <source>Empty Trash</source>
         <translation>रद्दी खाली करें</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1132"/>
+        <location filename="../desktopwindow.cpp" line="1126"/>
         <source>Hide Desktop Items</source>
         <translation>डेस्कटॉप के वस्तुएँ छिपाएँ</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1138"/>
+        <location filename="../desktopwindow.cpp" line="1132"/>
         <source>Create Launcher</source>
         <translation>लॉन्चर बनाएं</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1141"/>
+        <location filename="../desktopwindow.cpp" line="1135"/>
         <source>Desktop Preferences</source>
         <translation>डेस्कटॉप वरीयताएँ</translation>
     </message>
@@ -1838,7 +1843,7 @@ are left clicked, even when it is not the default file manager.</source>
         <translation>इससे मेनू बार पूरी तरह छिप जाएगा, इसे दोबारा दिखाने के लिए Ctrl+M का उपयोग करें।</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1224"/>
+        <location filename="../mainwindow.cpp" line="1223"/>
         <source>Version: %1</source>
         <translation>संस्करण : %1</translation>
     </message>
@@ -1886,32 +1891,32 @@ They might be useful if those folders are created again.</source>
 <context>
     <name>PCManFM::PreferencesDialog</name>
     <message>
-        <location filename="../preferencesdialog.cpp" line="215"/>
+        <location filename="../preferencesdialog.cpp" line="218"/>
         <source>Icon View</source>
         <translation>चिह्न दृश्य</translation>
     </message>
     <message>
-        <location filename="../preferencesdialog.cpp" line="216"/>
+        <location filename="../preferencesdialog.cpp" line="219"/>
         <source>Compact View</source>
         <translation>संक्षिप्त दृश्य</translation>
     </message>
     <message>
-        <location filename="../preferencesdialog.cpp" line="217"/>
+        <location filename="../preferencesdialog.cpp" line="220"/>
         <source>Thumbnail View</source>
         <translation>थंबनेल दृश्य</translation>
     </message>
     <message>
-        <location filename="../preferencesdialog.cpp" line="218"/>
+        <location filename="../preferencesdialog.cpp" line="221"/>
         <source>Detailed List View</source>
         <translation>विस्तृत सूची दृश्य</translation>
     </message>
     <message>
-        <location filename="../preferencesdialog.cpp" line="311"/>
+        <location filename="../preferencesdialog.cpp" line="314"/>
         <source>Remove if added by user</source>
         <translation>यदि उपयोगकर्ता द्वारा डाला गया है तो हटा दें</translation>
     </message>
     <message>
-        <location filename="../preferencesdialog.cpp" line="335"/>
+        <location filename="../preferencesdialog.cpp" line="338"/>
         <source>Open user-defined list</source>
         <translation>उपयोगकर्ता द्वारा परिभाषित सूची खोलें</translation>
     </message>
@@ -1949,17 +1954,17 @@ They might be useful if those folders are created again.</source>
         <translation>डेस्कटॉप</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="562"/>
+        <location filename="../tabpage.cpp" line="563"/>
         <source>Error</source>
         <translation>त्रुटि</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="571"/>
+        <location filename="../tabpage.cpp" line="572"/>
         <source>Free space: %1 (Total: %2)</source>
         <translation>खाली जगह : %1 (कुल : %2)</translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="588"/>
+        <location filename="../tabpage.cpp" line="589"/>
         <source>%n item(s)</source>
         <translation>
             <numerusform>%n वस्तु</numerusform>
@@ -1967,7 +1972,7 @@ They might be useful if those folders are created again.</source>
         </translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="590"/>
+        <location filename="../tabpage.cpp" line="591"/>
         <source> (%n hidden)</source>
         <translation>
             <numerusform> (%n छुपी)</numerusform>
@@ -1975,14 +1980,14 @@ They might be useful if those folders are created again.</source>
         </translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="595"/>
-        <location filename="../tabpage.cpp" line="796"/>
-        <location filename="../tabpage.cpp" line="810"/>
+        <location filename="../tabpage.cpp" line="596"/>
+        <location filename="../tabpage.cpp" line="797"/>
+        <location filename="../tabpage.cpp" line="811"/>
         <source>Link to</source>
         <translation>लिंक गंतव्य</translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="822"/>
+        <location filename="../tabpage.cpp" line="823"/>
         <source>%n item(s) selected</source>
         <translation>
             <numerusform>%n चयनित वस्तु</numerusform>
@@ -2587,7 +2592,7 @@ lxsudo dbus-run-session -- %s</source>
         <location filename="../bulkrename.cpp" line="281"/>
         <location filename="../bulkrename.cpp" line="318"/>
         <location filename="../bulkrename.cpp" line="322"/>
-        <location filename="../tabpage.cpp" line="1149"/>
+        <location filename="../tabpage.cpp" line="1151"/>
         <source>Error</source>
         <translation>त्रुटि</translation>
     </message>
@@ -2616,7 +2621,7 @@ lxsudo dbus-run-session -- %s</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="1149"/>
+        <location filename="../tabpage.cpp" line="1151"/>
         <source>Cannot open as Admin.</source>
         <translation>व्यवस्थापक के रूप में खोलने में असमर्थ।</translation>
     </message>

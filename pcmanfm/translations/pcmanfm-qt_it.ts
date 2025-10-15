@@ -596,6 +596,11 @@ sinistro anche se non è il gestore file predefinito.</translation>
         <translation> minuto/i</translation>
     </message>
     <message>
+        <location filename="../desktop-preferences.ui" line="669"/>
+        <source>Do not show file tooltips</source>
+        <translation type="unfinished">Non mostrare tooltip per i file</translation>
+    </message>
+    <message>
         <location filename="../desktop-preferences.ui" line="498"/>
         <source>Wallpaper folder</source>
         <translation>Cartella sfondi desktop</translation>
@@ -1507,100 +1512,100 @@ sinistro anche se non è il gestore file predefinito.</translation>
 <context>
     <name>PCManFM::Application</name>
     <message>
-        <location filename="../application.cpp" line="189"/>
+        <location filename="../application.cpp" line="190"/>
         <source>Name of configuration profile</source>
         <translation>Nome del profilo di configurazione</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="189"/>
+        <location filename="../application.cpp" line="190"/>
         <source>PROFILE</source>
         <translation>PROFILO</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="198"/>
+        <location filename="../application.cpp" line="199"/>
         <source>Launch desktop manager</source>
         <translation>Lancia il gestore della scrivania</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="201"/>
+        <location filename="../application.cpp" line="202"/>
         <source>Turn off desktop manager if it&apos;s running</source>
         <translation>Spegni il gestore della scrivania se è in esecuzione</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="204"/>
+        <location filename="../application.cpp" line="205"/>
         <source>Open desktop preference dialog on the page with the specified name</source>
         <translation>Apri le preferenze della scrivania alla pagina con il nome specificato</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="204"/>
-        <location filename="../application.cpp" line="219"/>
+        <location filename="../application.cpp" line="205"/>
+        <location filename="../application.cpp" line="220"/>
         <source>NAME</source>
         <translation>NOME</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="213"/>
+        <location filename="../application.cpp" line="214"/>
         <source>Set desktop wallpaper from image FILE</source>
         <translation>Imposta lo sfondo della scrivania con l&apos;immagine dal FILE</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="213"/>
+        <location filename="../application.cpp" line="214"/>
         <source>FILE</source>
         <translation>FILE</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="216"/>
+        <location filename="../application.cpp" line="217"/>
         <source>MODE</source>
         <translation>MODO</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="219"/>
+        <location filename="../application.cpp" line="220"/>
         <source>Open Preferences dialog on the page with the specified name</source>
         <translatorcomment>where is that?</translatorcomment>
         <translation>Apri le preferenze alla pagina con il nome specificato</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="207"/>
+        <location filename="../application.cpp" line="208"/>
         <source>Open new window</source>
         <translation>Apri una nuova finestra</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="192"/>
+        <location filename="../application.cpp" line="193"/>
         <source>Run PCManFM-Qt as a daemon</source>
         <translation>Esegui PcManFM-qt come demone</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="195"/>
+        <location filename="../application.cpp" line="196"/>
         <source>Quit PCManFM-Qt</source>
         <translation>Esci da PcManFm-qt</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="210"/>
+        <location filename="../application.cpp" line="211"/>
         <source>Open Find Files utility</source>
         <translation>Apri l&apos;utilità di ricerca file</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="216"/>
+        <location filename="../application.cpp" line="217"/>
         <source>Set mode of desktop wallpaper. MODE=(%1)</source>
         <translation>Scegli la modalità dello sfondo. MODE=(%1)</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="222"/>
+        <location filename="../application.cpp" line="223"/>
         <source>[FILE1, FILE2,...]</source>
         <translation>[FILE1, FILE2, ...]</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="222"/>
+        <location filename="../application.cpp" line="223"/>
         <source>Files or directories to open</source>
         <translation>File o cartelle da aprire</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="660"/>
-        <location filename="../application.cpp" line="665"/>
+        <location filename="../application.cpp" line="661"/>
+        <location filename="../application.cpp" line="666"/>
         <source>Error</source>
         <translation>Errore</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="665"/>
+        <location filename="../application.cpp" line="666"/>
         <source>Terminal emulator is not set.</source>
         <translation>L&apos;emulatore di terminale non è impostato.</translation>
     </message>
@@ -1727,17 +1732,17 @@ sinistro anche se non è il gestore file predefinito.</translation>
         <translation>Ingrandisci l&apos;immagine per riempire lo schermo</translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="272"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="278"/>
         <source>Select Wallpaper</source>
         <translation>Seleziona un immagini di sfondo</translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="276"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="282"/>
         <source>Image Files</source>
         <translation>File immagine</translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="318"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="324"/>
         <source>Select Wallpaper Folder</source>
         <translation>Seleziona cartella sfondi</translation>
     </message>
@@ -1745,12 +1750,12 @@ sinistro anche se non è il gestore file predefinito.</translation>
 <context>
     <name>PCManFM::DesktopWindow</name>
     <message>
-        <location filename="../desktopwindow.cpp" line="333"/>
+        <location filename="../desktopwindow.cpp" line="327"/>
         <source>Trash (One item)</source>
         <translation>Cestino (Un oggetto)</translation>
     </message>
     <message numerus="yes">
-        <location filename="../desktopwindow.cpp" line="336"/>
+        <location filename="../desktopwindow.cpp" line="330"/>
         <source>Trash (%Ln items)</source>
         <translation>
             <numerusform>Cestino (%Ln oggetto)</numerusform>
@@ -1758,48 +1763,48 @@ sinistro anche se non è il gestore file predefinito.</translation>
         </translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="340"/>
+        <location filename="../desktopwindow.cpp" line="334"/>
         <source>Trash (Empty)</source>
         <translation>Cestino (Vuoto)</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="375"/>
+        <location filename="../desktopwindow.cpp" line="369"/>
         <source>Computer</source>
         <translation>Computer</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="389"/>
+        <location filename="../desktopwindow.cpp" line="383"/>
         <source>Network</source>
         <translation>Rete</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1052"/>
+        <location filename="../desktopwindow.cpp" line="1046"/>
         <source>Open</source>
         <translation>Apri</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1058"/>
-        <location filename="../desktopwindow.cpp" line="1098"/>
+        <location filename="../desktopwindow.cpp" line="1052"/>
+        <location filename="../desktopwindow.cpp" line="1092"/>
         <source>Stic&amp;k to Current Position</source>
         <translation>Blo&amp;cca alla posizione attuale</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1066"/>
+        <location filename="../desktopwindow.cpp" line="1060"/>
         <source>Empty Trash</source>
         <translation>Svuota Cestino</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1132"/>
+        <location filename="../desktopwindow.cpp" line="1126"/>
         <source>Hide Desktop Items</source>
         <translation>Nascondi elementi del desktop</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1138"/>
+        <location filename="../desktopwindow.cpp" line="1132"/>
         <source>Create Launcher</source>
         <translation>Crea lanciatore</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1141"/>
+        <location filename="../desktopwindow.cpp" line="1135"/>
         <source>Desktop Preferences</source>
         <translation>Preferenze della scrivania</translation>
     </message>
@@ -1838,7 +1843,7 @@ sinistro anche se non è il gestore file predefinito.</translation>
         <translation>Questo nasconderà la barra del menu, usa Ctrl+M per visualizzarla nuovamente.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1224"/>
+        <location filename="../mainwindow.cpp" line="1223"/>
         <source>Version: %1</source>
         <translation>Versione:%1</translation>
     </message>
@@ -1886,32 +1891,32 @@ Potrebbero essere utili se le cartelle vengono ricreate.</translation>
 <context>
     <name>PCManFM::PreferencesDialog</name>
     <message>
-        <location filename="../preferencesdialog.cpp" line="215"/>
+        <location filename="../preferencesdialog.cpp" line="218"/>
         <source>Icon View</source>
         <translation>Vista icone</translation>
     </message>
     <message>
-        <location filename="../preferencesdialog.cpp" line="216"/>
+        <location filename="../preferencesdialog.cpp" line="219"/>
         <source>Compact View</source>
         <translation>Vista compatta</translation>
     </message>
     <message>
-        <location filename="../preferencesdialog.cpp" line="217"/>
+        <location filename="../preferencesdialog.cpp" line="220"/>
         <source>Thumbnail View</source>
         <translation>Vista miniature</translation>
     </message>
     <message>
-        <location filename="../preferencesdialog.cpp" line="218"/>
+        <location filename="../preferencesdialog.cpp" line="221"/>
         <source>Detailed List View</source>
         <translation>Vista elenco dettagliato</translation>
     </message>
     <message>
-        <location filename="../preferencesdialog.cpp" line="311"/>
+        <location filename="../preferencesdialog.cpp" line="314"/>
         <source>Remove if added by user</source>
         <translation>Rimuovi se aggiunto da utente</translation>
     </message>
     <message>
-        <location filename="../preferencesdialog.cpp" line="335"/>
+        <location filename="../preferencesdialog.cpp" line="338"/>
         <source>Open user-defined list</source>
         <translation>Apri lista definita dell&apos;utente</translation>
     </message>
@@ -1949,17 +1954,17 @@ Potrebbero essere utili se le cartelle vengono ricreate.</translation>
         <translation>Scrivania</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="562"/>
+        <location filename="../tabpage.cpp" line="563"/>
         <source>Error</source>
         <translation>Errore</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="571"/>
+        <location filename="../tabpage.cpp" line="572"/>
         <source>Free space: %1 (Total: %2)</source>
         <translation>Spazio libero: %1 (totale: %2)</translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="588"/>
+        <location filename="../tabpage.cpp" line="589"/>
         <source>%n item(s)</source>
         <translation>
             <numerusform>%n elemento</numerusform>
@@ -1967,7 +1972,7 @@ Potrebbero essere utili se le cartelle vengono ricreate.</translation>
         </translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="590"/>
+        <location filename="../tabpage.cpp" line="591"/>
         <source> (%n hidden)</source>
         <translation>
             <numerusform> (%n nascosto)</numerusform>
@@ -1975,15 +1980,15 @@ Potrebbero essere utili se le cartelle vengono ricreate.</translation>
         </translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="595"/>
-        <location filename="../tabpage.cpp" line="796"/>
-        <location filename="../tabpage.cpp" line="810"/>
+        <location filename="../tabpage.cpp" line="596"/>
+        <location filename="../tabpage.cpp" line="797"/>
+        <location filename="../tabpage.cpp" line="811"/>
         <source>Link to</source>
         <translatorcomment>no idea what this refers to</translatorcomment>
         <translation>Collegamento a</translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="822"/>
+        <location filename="../tabpage.cpp" line="823"/>
         <source>%n item(s) selected</source>
         <translation>
             <numerusform>%n elemento selezionato</numerusform>
@@ -2590,7 +2595,7 @@ lxsudo dbus-run-session -- %s</translation>
         <location filename="../bulkrename.cpp" line="281"/>
         <location filename="../bulkrename.cpp" line="318"/>
         <location filename="../bulkrename.cpp" line="322"/>
-        <location filename="../tabpage.cpp" line="1149"/>
+        <location filename="../tabpage.cpp" line="1151"/>
         <source>Error</source>
         <translation>Errore</translation>
     </message>
@@ -2619,7 +2624,7 @@ lxsudo dbus-run-session -- %s</translation>
         <translation>Espressione regolare non valida.</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="1149"/>
+        <location filename="../tabpage.cpp" line="1151"/>
         <source>Cannot open as Admin.</source>
         <translation>Impossibile di aprire come admin.</translation>
     </message>

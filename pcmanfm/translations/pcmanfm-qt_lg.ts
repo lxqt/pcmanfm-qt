@@ -598,6 +598,11 @@ are left clicked, even when it is not the default file manager.</source>
         <translation> dakiika</translation>
     </message>
     <message>
+        <location filename="../desktop-preferences.ui" line="669"/>
+        <source>Do not show file tooltips</source>
+        <translation type="unfinished">Tompanga magezi ku bya fayiro</translation>
+    </message>
+    <message>
         <location filename="../desktop-preferences.ui" line="498"/>
         <source>Wallpaper folder</source>
         <translation>Tterekero omuli ebifaananyi eby&apos;oku bwaliriro</translation>
@@ -1509,102 +1514,102 @@ are left clicked, even when it is not the default file manager.</source>
 <context>
     <name>PCManFM::Application</name>
     <message>
-        <location filename="../application.cpp" line="189"/>
+        <location filename="../application.cpp" line="190"/>
         <source>Name of configuration profile</source>
         <translation>Kino kituuma fayiro egendamu ebiteetateekedwa.
 Awali &lt;NTEEKATEEKA&gt; w&apos;owandika erinnya ly&apos;oyagala okutuuma fayiro eyo</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="189"/>
+        <location filename="../application.cpp" line="190"/>
         <source>PROFILE</source>
         <translation>NTEEKATEEKA</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="192"/>
+        <location filename="../application.cpp" line="193"/>
         <source>Run PCManFM-Qt as a daemon</source>
         <translation>Kino kitandika PCManFM-Qt n&apos;ekola nga dayimoni</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="195"/>
+        <location filename="../application.cpp" line="196"/>
         <source>Quit PCManFM-Qt</source>
         <translation>Kino kikomya PCManFM-Qt</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="198"/>
+        <location filename="../application.cpp" line="199"/>
         <source>Launch desktop manager</source>
         <translation>Kino kitandika PCManFM-Qt nga ekola ogw&apos;okuteekateeka awakolerwa, mu kifo eky&apos;okubeera ekiteekateekafayiro</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="201"/>
+        <location filename="../application.cpp" line="202"/>
         <source>Turn off desktop manager if it&apos;s running</source>
         <translation>Kano kakomya omulimu ogwa PCManFM-Qt ogubadde guteekateeka awakolerwa</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="204"/>
+        <location filename="../application.cpp" line="205"/>
         <source>Open desktop preference dialog on the page with the specified name</source>
         <translation>Kino kireeta akatimbe akateekateeka enkola ya PCManFM-Qt nga ekola ogw&apos;okuteekateeka awakolerwa.
 Awali &lt;LINNYA&gt; w&apos;owandika erinnya ery&apos;akatimbe k&apos;oyagala okuleetebwa</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="204"/>
-        <location filename="../application.cpp" line="219"/>
+        <location filename="../application.cpp" line="205"/>
+        <location filename="../application.cpp" line="220"/>
         <source>NAME</source>
         <translation>LINNYA</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="207"/>
+        <location filename="../application.cpp" line="208"/>
         <source>Open new window</source>
         <translation>Kino kireetawo ddirisa lya PCManFM-Qt eppya</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="210"/>
+        <location filename="../application.cpp" line="211"/>
         <source>Open Find Files utility</source>
         <translation>Kino kireeta akaboozi akakozesebwa okunoonya fayiro</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="213"/>
+        <location filename="../application.cpp" line="214"/>
         <source>Set desktop wallpaper from image FILE</source>
         <translation>Kino kiragira PCManFM-Qt okutegeka FAYIRO ebeere nga ye fayiro omuli ekifaananyi eky&apos;okuwaliriro</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="213"/>
+        <location filename="../application.cpp" line="214"/>
         <source>FILE</source>
         <translation>FAYIRO</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="216"/>
+        <location filename="../application.cpp" line="217"/>
         <source>MODE</source>
         <translation>ENTIMBA</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="216"/>
+        <location filename="../application.cpp" line="217"/>
         <source>Set mode of desktop wallpaper. MODE=(%1)</source>
         <translation>Kino kitegeka engeri ekifaananyi gye kinaatimbibwa ku bwaliriro. ENTIMBA=(%1)</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="219"/>
+        <location filename="../application.cpp" line="220"/>
         <source>Open Preferences dialog on the page with the specified name</source>
         <translation>Kino kireeta akaboozi akateekateeka enkola ya PCManFM-Qt nga ekola ng&apos;ekiteekateekafayiro.
 Awali &lt;LINNYA&gt; w&apos;owandika erinnya ery&apos;akaboozi k&apos;oyagala okuleetebwa</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="222"/>
+        <location filename="../application.cpp" line="223"/>
         <source>Files or directories to open</source>
         <translation>Zino ze fayiro oba materekero PCManFM-Qt by&apos;oyagala ebikkule</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="222"/>
+        <location filename="../application.cpp" line="223"/>
         <source>[FILE1, FILE2,...]</source>
         <translation>[FAYIRO1, FAYIRO2,...]</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="660"/>
-        <location filename="../application.cpp" line="665"/>
+        <location filename="../application.cpp" line="661"/>
+        <location filename="../application.cpp" line="666"/>
         <source>Error</source>
         <translation>Kiremya</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="665"/>
+        <location filename="../application.cpp" line="666"/>
         <source>Terminal emulator is not set.</source>
         <translation>Sooka kutegeka kika kya kiwandikiro.</translation>
     </message>
@@ -1731,17 +1736,17 @@ Awali &lt;LINNYA&gt; w&apos;owandika erinnya ery&apos;akaboozi k&apos;oyagala ok
         <translation>Ekifaananyi kizimbulukuse kimaleyo olutimbe</translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="272"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="278"/>
         <source>Select Wallpaper</source>
         <translation>Londa ekifaananyi eky&apos;okubwaliriro</translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="276"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="282"/>
         <source>Image Files</source>
         <translation>Fayiro ez&apos;ebifaananyi</translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="318"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="324"/>
         <source>Select Wallpaper Folder</source>
         <translation>Londa tterekero omuli ebifaananyi eby&apos;okubwaliriro</translation>
     </message>
@@ -1749,12 +1754,12 @@ Awali &lt;LINNYA&gt; w&apos;owandika erinnya ery&apos;akaboozi k&apos;oyagala ok
 <context>
     <name>PCManFM::DesktopWindow</name>
     <message>
-        <location filename="../desktopwindow.cpp" line="333"/>
+        <location filename="../desktopwindow.cpp" line="327"/>
         <source>Trash (One item)</source>
         <translation>Ebisuulidwa (Mulimu ekintu kimu)</translation>
     </message>
     <message numerus="yes">
-        <location filename="../desktopwindow.cpp" line="336"/>
+        <location filename="../desktopwindow.cpp" line="330"/>
         <source>Trash (%Ln items)</source>
         <translation>
             <numerusform>Ebisuulidwa (Mulimu ekintu %Ln)</numerusform>
@@ -1762,48 +1767,48 @@ Awali &lt;LINNYA&gt; w&apos;owandika erinnya ery&apos;akaboozi k&apos;oyagala ok
         </translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="340"/>
+        <location filename="../desktopwindow.cpp" line="334"/>
         <source>Trash (Empty)</source>
         <translation>Ebisuulidwa (Wakalu)</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="375"/>
+        <location filename="../desktopwindow.cpp" line="369"/>
         <source>Computer</source>
         <translation>Kompyuta</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="389"/>
+        <location filename="../desktopwindow.cpp" line="383"/>
         <source>Network</source>
         <translation>Kayungirizi</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1052"/>
+        <location filename="../desktopwindow.cpp" line="1046"/>
         <source>Open</source>
         <translation>Bikkula</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1058"/>
-        <location filename="../desktopwindow.cpp" line="1098"/>
+        <location filename="../desktopwindow.cpp" line="1052"/>
+        <location filename="../desktopwindow.cpp" line="1092"/>
         <source>Stic&amp;k to Current Position</source>
         <translation>&amp;Nywereza wano</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1066"/>
+        <location filename="../desktopwindow.cpp" line="1060"/>
         <source>Empty Trash</source>
         <translation>Kunkumula ebisuulidwa</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1132"/>
+        <location filename="../desktopwindow.cpp" line="1126"/>
         <source>Hide Desktop Items</source>
         <translation>Kisa ebiri awakolerwa</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1138"/>
+        <location filename="../desktopwindow.cpp" line="1132"/>
         <source>Create Launcher</source>
         <translation>Kolawo ttandikiro</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1141"/>
+        <location filename="../desktopwindow.cpp" line="1135"/>
         <source>Desktop Preferences</source>
         <translation>Entegeka y&apos;awakolerwa</translation>
     </message>
@@ -1842,7 +1847,7 @@ Awali &lt;LINNYA&gt; w&apos;owandika erinnya ery&apos;akaboozi k&apos;oyagala ok
         <translation>Kino kijjakuviiramu obutabeera ne menyu, okugikomyawo nyiga amapeesa Ctrl+M.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1224"/>
+        <location filename="../mainwindow.cpp" line="1223"/>
         <source>Version: %1</source>
         <translation>Oluwandika: %1</translation>
     </message>
@@ -1890,32 +1895,32 @@ Biyinza kuyamba ssinga amaterekero ago gaba gakomezedwawo.</translation>
 <context>
     <name>PCManFM::PreferencesDialog</name>
     <message>
-        <location filename="../preferencesdialog.cpp" line="215"/>
+        <location filename="../preferencesdialog.cpp" line="218"/>
         <source>Icon View</source>
         <translation>Fayiro zirage ng&apos;obufaananyi obuyunzi</translation>
     </message>
     <message>
-        <location filename="../preferencesdialog.cpp" line="216"/>
+        <location filename="../preferencesdialog.cpp" line="219"/>
         <source>Compact View</source>
         <translation>Fayiro ziragire mu bimpi</translation>
     </message>
     <message>
-        <location filename="../preferencesdialog.cpp" line="217"/>
+        <location filename="../preferencesdialog.cpp" line="220"/>
         <source>Thumbnail View</source>
         <translation>Fayiro zirage n&apos;akalozaako kazo</translation>
     </message>
     <message>
-        <location filename="../preferencesdialog.cpp" line="218"/>
+        <location filename="../preferencesdialog.cpp" line="221"/>
         <source>Detailed List View</source>
         <translation>Laga ebifa ku fayiro mu bujjuvu</translation>
     </message>
     <message>
-        <location filename="../preferencesdialog.cpp" line="311"/>
+        <location filename="../preferencesdialog.cpp" line="314"/>
         <source>Remove if added by user</source>
         <translation>Gyawo oba kyateekebwawo mukozesa</translation>
     </message>
     <message>
-        <location filename="../preferencesdialog.cpp" line="335"/>
+        <location filename="../preferencesdialog.cpp" line="338"/>
         <source>Open user-defined list</source>
         <translation>Bikkula olukalala olwakolebwa mukozesa</translation>
     </message>
@@ -1953,17 +1958,17 @@ Biyinza kuyamba ssinga amaterekero ago gaba gakomezedwawo.</translation>
         <translation>Awakolerwa</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="562"/>
+        <location filename="../tabpage.cpp" line="563"/>
         <source>Error</source>
         <translation>Kiremya</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="571"/>
+        <location filename="../tabpage.cpp" line="572"/>
         <source>Free space: %1 (Total: %2)</source>
         <translation>Ekifo ekisigadde mu kibondo: %1 (Kigendamu: %2)</translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="588"/>
+        <location filename="../tabpage.cpp" line="589"/>
         <source>%n item(s)</source>
         <translation>
             <numerusform>Ekintu %n</numerusform>
@@ -1971,7 +1976,7 @@ Biyinza kuyamba ssinga amaterekero ago gaba gakomezedwawo.</translation>
         </translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="590"/>
+        <location filename="../tabpage.cpp" line="591"/>
         <source> (%n hidden)</source>
         <translation>
             <numerusform> (n&apos;ekirala %n ekikise)</numerusform>
@@ -1979,14 +1984,14 @@ Biyinza kuyamba ssinga amaterekero ago gaba gakomezedwawo.</translation>
         </translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="595"/>
-        <location filename="../tabpage.cpp" line="796"/>
-        <location filename="../tabpage.cpp" line="810"/>
+        <location filename="../tabpage.cpp" line="596"/>
+        <location filename="../tabpage.cpp" line="797"/>
+        <location filename="../tabpage.cpp" line="811"/>
         <source>Link to</source>
         <translation>Eno nyunzi, egguka ku</translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="822"/>
+        <location filename="../tabpage.cpp" line="823"/>
         <source>%n item(s) selected</source>
         <translation>
             <numerusform>Ekintu %n kirondedwa</numerusform>
@@ -2623,7 +2628,7 @@ eyategekebwa okubikkula ez&apos;ekika kya yo</translation>
         <location filename="../bulkrename.cpp" line="281"/>
         <location filename="../bulkrename.cpp" line="318"/>
         <location filename="../bulkrename.cpp" line="322"/>
-        <location filename="../tabpage.cpp" line="1149"/>
+        <location filename="../tabpage.cpp" line="1151"/>
         <source>Error</source>
         <translation>Kiremya</translation>
     </message>
@@ -2652,7 +2657,7 @@ eyategekebwa okubikkula ez&apos;ekika kya yo</translation>
         <translation>Emboozi enoonya tekozeseka.</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="1149"/>
+        <location filename="../tabpage.cpp" line="1151"/>
         <source>Cannot open as Admin.</source>
         <translation>Tekisobose okubikkuza buyinza bwa muteesiteesi.</translation>
     </message>
