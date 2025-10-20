@@ -598,7 +598,7 @@ sinistro anche se non è il gestore file predefinito.</translation>
     <message>
         <location filename="../desktop-preferences.ui" line="669"/>
         <source>Do not show file tooltips</source>
-        <translation type="unfinished">Non mostrare tooltip per i file</translation>
+        <translation>Non mostrare tooltip per i file</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="498"/>
@@ -1796,7 +1796,7 @@ sinistro anche se non è il gestore file predefinito.</translation>
     <message>
         <location filename="../desktopwindow.cpp" line="1126"/>
         <source>Hide Desktop Items</source>
-        <translation>Nascondi elementi del desktop</translation>
+        <translation>Nascondi elementi della scrivania</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="1132"/>
