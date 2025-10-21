@@ -598,7 +598,7 @@ są klikane lewym przyciskiem, nawet jeśli nie jest to domyślny menedżer plik
     <message>
         <location filename="../desktop-preferences.ui" line="669"/>
         <source>Do not show file tooltips</source>
-        <translation type="unfinished">Nie pokazuj pasków narzędzi plików</translation>
+        <translation>Nie pokazuj podpowiedzi dotyczących plików</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="498"/>
@@ -2250,7 +2250,7 @@ Mogą się one przydać, jeśli te katalogi zostaną stworzone ponownie.</transl
     <message>
         <location filename="../preferences.ui" line="219"/>
         <source>Renamed files will also be selected</source>
-        <translation>Pliki ze zmienioną nazwą również zostaną&#xa0;wybrane</translation>
+        <translation>Pliki ze zmienioną nazwą również zostaną wybrane</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="229"/>
@@ -2424,7 +2424,7 @@ Wartość -1 oznacza, brak limitu dla rozmiaru pliku (ustawienie domyślne).</tr
     <message>
         <location filename="../preferences.ui" line="429"/>
         <source>Do not show file tooltips</source>
-        <translation>Nie pokazuj pasków narzędzi plików</translation>
+        <translation>Nie pokazuj podpowiedzi dotyczących plików</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="436"/>
@@ -2500,7 +2500,7 @@ It can be left empty if the terminal is already supported
 or does not have such an option; required otherwise.</source>
         <translation>Przykład: -e
 Można pozostawić puste, jeśli terminal jest już obsługiwany
-lub nie ma takiej opcji; w&#xa0;przeciwnym razie jest wymagane.</translation>
+lub nie ma takiej opcji; w przeciwnym razie jest wymagane.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="879"/>
@@ -2511,7 +2511,7 @@ lub nie ma takiej opcji; w&#xa0;przeciwnym razie jest wymagane.</translation>
         <location filename="../preferences.ui" line="886"/>
         <source>This is optional, depends on the terminal,
 and can be any group of custom options.</source>
-        <translation>Opcjonalne, zależy od terminala i&#xa0;może być
+        <translation>Opcjonalne, zależy od terminala i może być
 dowolną grupą niestandardowych opcji.</translation>
     </message>
     <message>

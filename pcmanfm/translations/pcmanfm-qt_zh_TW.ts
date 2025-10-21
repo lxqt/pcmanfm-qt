@@ -599,7 +599,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktop-preferences.ui" line="669"/>
         <source>Do not show file tooltips</source>
-        <translation type="unfinished">不要顯示檔案提示</translation>
+        <translation>不要顯示檔案工具提示</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="498"/>
@@ -2166,7 +2166,7 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferences.ui" line="429"/>
         <source>Do not show file tooltips</source>
-        <translation>不要顯示檔案提示</translation>
+        <translation>不要顯示檔案工具提示</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="436"/>

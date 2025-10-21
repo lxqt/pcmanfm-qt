@@ -596,7 +596,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktop-preferences.ui" line="669"/>
         <source>Do not show file tooltips</source>
-        <translation type="unfinished">لا تظهر تلميحات الملف</translation>
+        <translation>عدم إظهار تلميحات الملف</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="498"/>

@@ -309,7 +309,7 @@ Pode ser deixado vazio.</translation>
     <message>
         <location filename="../desktopentrydialog.ui" line="186"/>
         <source>Whether the launched program should run in a terminal window.</source>
-        <translation>Se o programa lançado deve ser executado em um terminal.</translation>
+        <translation>Se o programa iniciado deve ser executado em um terminal.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="190"/>

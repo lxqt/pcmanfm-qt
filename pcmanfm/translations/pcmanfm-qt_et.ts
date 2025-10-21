@@ -598,7 +598,7 @@ PCManFM-Qt rakendusega ka siis, kui ta pole vaikimisi failihaldur.</translation>
     <message>
         <location filename="../desktop-preferences.ui" line="669"/>
         <source>Do not show file tooltips</source>
-        <translation type="unfinished">Ära näita failide teabemulle</translation>
+        <translation>Ära näita failide teabemulle</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="498"/>
