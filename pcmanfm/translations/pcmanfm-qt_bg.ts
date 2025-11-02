@@ -136,7 +136,7 @@ Foundation, Inc., ул. Франклин 51, пети етаж, Бостън, М
     <message>
         <location filename="../bulk-rename.ui" line="75"/>
         <source>Use localized numbers</source>
-        <translation>Използвайте локализирани номера</translation>
+        <translation>Използване на локализирани номера</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="85"/>
@@ -254,7 +254,7 @@ Foundation, Inc., ул. Франклин 51, пети етаж, Бостън, М
         <source>A short description or generic name, like &quot;Web Browser&quot; or &quot;Home Directory&quot;.
 
 It can be left empty.</source>
-        <translation>Кратко описание или общо име, като „Уеб браузър“ или „Домашна папка“.
+        <translation>Кратко описание или общо име като „Уеб браузър“ или „Домашна папка“.
 
 Това може да се остави празно.</translation>
     </message>
@@ -531,7 +531,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktop-preferences.ui" line="314"/>
         <source>Make all items stick to their positions</source>
-        <translation>Накарайте всички елементи да се прикрепят към техните позиции</translation>
+        <translation>Всички елементи да се прикрепят към своите позиции</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="373"/>
@@ -733,7 +733,7 @@ are left clicked, even when it is not the default file manager.</source>
         <location filename="../shortcuts.ui" line="98"/>
         <location filename="../shortcuts.ui" line="106"/>
         <source>Jump to tab</source>
-        <translation>Отиди до раздел</translation>
+        <translation>Отиване в раздел</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="103"/>
@@ -871,7 +871,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="330"/>
         <source>Go</source>
-        <translation>Отиди</translation>
+        <translation>Навигация</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="339"/>
@@ -946,7 +946,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="433"/>
         <source>&amp;Icon View</source>
-        <translation>Изглед &amp;Икони</translation>
+        <translation>Изглед &amp;икони</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="436"/>
@@ -1086,12 +1086,12 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="618"/>
         <source>&amp;Folder First</source>
-        <translation>&amp;Директориите първо</translation>
+        <translation>&amp;Първо директориите</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="626"/>
         <source>&amp;Hidden Last</source>
-        <translation>Скритите накрая</translation>
+        <translation>&amp;Скритите елементи накрая</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="939"/>
@@ -1106,17 +1106,17 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="1032"/>
         <source>&amp;Go to Source of Inherited Settings</source>
-        <translation>&amp;Отидете до Източник на наследените настройки</translation>
+        <translation>&amp;Отиване до Източник на наследените настройки</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="1037"/>
         <source>&amp;Remove Settings of Nonexistent Folders</source>
-        <translation>&amp;Премахнете настройките на несъществуващите папки</translation>
+        <translation>&amp;Премахване на настройките на несъществуващи папки</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="1045"/>
         <source>&amp;Clear</source>
-        <translation>&amp;Свободно</translation>
+        <translation>&amp;Изчистване</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="679"/>
@@ -1226,12 +1226,12 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="1006"/>
         <source>Hidden &amp;Shortcuts</source>
-        <translation>Скриване &amp;Клавишни комбинации</translation>
+        <translation>Скрити &amp;клавишни комбинации</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="1011"/>
         <source>Open Tab in &amp;Admin Mode</source>
-        <translation>Отваряне на раздел в &amp;Администраторен режим</translation>
+        <translation>Отваряне на раздел в &amp;административен режим</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="1016"/>
@@ -1468,7 +1468,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="74"/>
         <source>C&amp;reate New</source>
-        <translation>Създаване на &amp;нови</translation>
+        <translation>Създаване &amp;на</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="102"/>
@@ -1499,7 +1499,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="215"/>
         <source>&amp;Go</source>
-        <translation>&amp;Отиди</translation>
+        <translation>Навига&amp;ция</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="257"/>
@@ -1741,7 +1741,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="324"/>
         <source>Select Wallpaper Folder</source>
-        <translation>Избиране папка за тапетите</translation>
+        <translation>Избиране на папка за тапетите</translation>
     </message>
 </context>
 <context>
@@ -2249,7 +2249,7 @@ They might be useful if those folders are created again.</source>
         <location filename="../preferences.ui" line="325"/>
         <location filename="../preferences.ui" line="335"/>
         <source>Used by Icon View</source>
-        <translation>Използван при Изглед Икони</translation>
+        <translation>Използван при Изглед икони</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="342"/>
@@ -2276,7 +2276,7 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferences.ui" line="422"/>
         <source>Show icons of hidden files shadowed</source>
-        <translation>Покажи иконите на скритите файлове засенчени</translation>
+        <translation>Показване на иконите на скритите файлове засенчени</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="459"/>
@@ -2334,7 +2334,7 @@ only if there are more than one tab.</source>
         <source>The built-in thumbnailer makes thumbnails of images that are supported by Qt.
 
 Usually, most image types are supported. The default size limit is 4 MiB.</source>
-        <translation>Вграденият създател на миниатюри създава миниатюри на изображения, които са поддържани от Qt.
+        <translation>Вграденият модул за създаване на миниатюри прави изображения, които са поддържани от Qt.
 Обикновено, повечето типове изображения са поддържани. Размерът по подразбиране е 4 MiB.</translation>
     </message>
     <message>
@@ -2366,7 +2366,7 @@ A value of -1 means that there is no limit for the file size (the default).</sou
     <message>
         <location filename="../preferences.ui" line="715"/>
         <source>No limit</source>
-        <translation>Без граница</translation>
+        <translation>Без ограничение</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="833"/>

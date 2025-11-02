@@ -597,7 +597,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktop-preferences.ui" line="669"/>
         <source>Do not show file tooltips</source>
-        <translation type="unfinished">לא להציג תיבות צצות בקבצים</translation>
+        <translation>לא להציג תיבות צצות לקבצים</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="498"/>
@@ -1759,6 +1759,8 @@ are left clicked, even when it is not the default file manager.</source>
         <translation>
             <numerusform>אשפה (פריט אחד)</numerusform>
             <numerusform>אשפה (שני פריטים)</numerusform>
+            <numerusform>אשפה (%Ln פריטים)</numerusform>
+            <numerusform>אשפה (%Ln פריטים)</numerusform>
         </translation>
     </message>
     <message>
@@ -1968,6 +1970,8 @@ They might be useful if those folders are created again.</source>
         <translation>
             <numerusform>פריט אחד</numerusform>
             <numerusform>שני פריטים</numerusform>
+            <numerusform>%n פריטים</numerusform>
+            <numerusform>%n פריטים</numerusform>
         </translation>
     </message>
     <message numerus="yes">
@@ -1976,6 +1980,8 @@ They might be useful if those folders are created again.</source>
         <translation>
             <numerusform> (אחד מוסתר)</numerusform>
             <numerusform> (שניים מוסתרים)</numerusform>
+            <numerusform> (%n מוסתרים)</numerusform>
+            <numerusform> (%n מוסתרים)</numerusform>
         </translation>
     </message>
     <message>
@@ -1991,6 +1997,8 @@ They might be useful if those folders are created again.</source>
         <translation>
             <numerusform>נבחר פריט אחד</numerusform>
             <numerusform>נבחרו שני פריטים</numerusform>
+            <numerusform>נבחרו %n פריטים</numerusform>
+            <numerusform>נבחרו %n פריטים</numerusform>
         </translation>
     </message>
 </context>
@@ -2007,6 +2015,8 @@ They might be useful if those folders are created again.</source>
         <translation>
             <numerusform>לפתוח את הקובץ הזה?</numerusform>
             <numerusform>לפתוח את שני הקבצים האלה?</numerusform>
+            <numerusform>לפתוח את %1 הקבצים האלה?</numerusform>
+            <numerusform>לפתוח את %1 הקבצים האלה?</numerusform>
         </translation>
     </message>
     <message>
