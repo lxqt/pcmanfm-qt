@@ -598,7 +598,7 @@ kliknete levým tlačítkem, i když to není výchozí správce souborů.</tran
     <message>
         <location filename="../desktop-preferences.ui" line="669"/>
         <source>Do not show file tooltips</source>
-        <translation type="unfinished">Neukazovat nástrojové rady k souborům</translation>
+        <translation>Neukazovat nástrojové rady k souborům</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="498"/>

@@ -123,7 +123,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../bulk-rename.ui" line="12"/>
         <source>Serial Renaming</source>
-        <translation type="unfinished"></translation>
+        <translation>Joukkouudelleennimeäminen</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="36"/>
@@ -143,42 +143,42 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../bulk-rename.ui" line="85"/>
         <source>Replacement</source>
-        <translation type="unfinished"></translation>
+        <translation>Korvaa</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="97"/>
         <source>Find in names:</source>
-        <translation type="unfinished"></translation>
+        <translation>Etsi nimen osa:</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="107"/>
         <source>Replace with:</source>
-        <translation type="unfinished"></translation>
+        <translation>Korvaa:</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="117"/>
         <source>Case-sensitive</source>
-        <translation type="unfinished"></translation>
+        <translation>Huomioi merkkikoko</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="124"/>
         <source>Regular expression</source>
-        <translation type="unfinished"></translation>
+        <translation>Säännöllinen lauseke</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="134"/>
         <source>Change Case</source>
-        <translation type="unfinished"></translation>
+        <translation>Muuta merkkikokoa</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="146"/>
         <source>To upper case</source>
-        <translation type="unfinished"></translation>
+        <translation>Suuraakkosiksi</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="156"/>
         <source>To lower case</source>
-        <translation type="unfinished"></translation>
+        <translation>Pienaakkosiksi</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="27"/>
@@ -365,7 +365,7 @@ Esimerkkejä: AudioVideo, Audio, Video, Development, Education, Game, Graphics, 
     <message>
         <location filename="../desktop-folder.ui" line="14"/>
         <source>Form</source>
-        <translation type="unfinished"></translation>
+        <translation>Muoto</translation>
     </message>
     <message>
         <location filename="../desktop-folder.ui" line="23"/>
@@ -598,7 +598,7 @@ klikattiin, vaikka se ei olisi oletustiedostonhallintaohjelma.</translation>
     <message>
         <location filename="../desktop-preferences.ui" line="669"/>
         <source>Do not show file tooltips</source>
-        <translation type="unfinished">Älä näytä työkaluvihjettä tiedostoille</translation>
+        <translation>Älä näytä työkaluvihjettä tiedostoille</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="498"/>
@@ -953,7 +953,7 @@ klikattiin, vaikka se ei olisi oletustiedostonhallintaohjelma.</translation>
     <message>
         <location filename="../main-win.ui" line="436"/>
         <source>Ctrl+Shift+1</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+1</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="444"/>
@@ -963,7 +963,7 @@ klikattiin, vaikka se ei olisi oletustiedostonhallintaohjelma.</translation>
     <message>
         <location filename="../main-win.ui" line="447"/>
         <source>Ctrl+Shift+3</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+3</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="455"/>
@@ -973,7 +973,7 @@ klikattiin, vaikka se ei olisi oletustiedostonhallintaohjelma.</translation>
     <message>
         <location filename="../main-win.ui" line="458"/>
         <source>Ctrl+Shift+4</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+4</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="466"/>
@@ -983,7 +983,7 @@ klikattiin, vaikka se ei olisi oletustiedostonhallintaohjelma.</translation>
     <message>
         <location filename="../main-win.ui" line="469"/>
         <source>Ctrl+Shift+2</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+2</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="478"/>
@@ -1028,7 +1028,7 @@ klikattiin, vaikka se ei olisi oletustiedostonhallintaohjelma.</translation>
     <message>
         <location filename="../main-win.ui" line="522"/>
         <source>De&amp;select All</source>
-        <translation>&amp;Epävalitse kaikki</translation>
+        <translation>Hylkää valinta</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="525"/>
@@ -2028,12 +2028,12 @@ Niistä voi olla hyötyä, jos kyseiset kansiot tulevat takaisin.</translation>
     <message>
         <location filename="../view.cpp" line="160"/>
         <source>Show in New T&amp;ab</source>
-        <translation type="unfinished"></translation>
+        <translation>Näytä uudess&amp;a välilehdessä</translation>
     </message>
     <message>
         <location filename="../view.cpp" line="164"/>
         <source>Show in New Win&amp;dow</source>
-        <translation type="unfinished"></translation>
+        <translation>Näytä uu&amp;dessa ikkunassa</translation>
     </message>
 </context>
 <context>
@@ -2283,7 +2283,7 @@ Niistä voi olla hyötyä, jos kyseiset kansiot tulevat takaisin.</translation>
     <message>
         <location filename="../preferences.ui" line="459"/>
         <source>Minimum item margins in icon view:</source>
-        <translation type="unfinished">Nimikkeiden vähimmäisreunukset kuvakenäkymässä:</translation>
+        <translation>Vähimmäisreunukset kuvakenäkymässä:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="466"/>
@@ -2311,7 +2311,7 @@ Tilaa varataan myös 3 tekstiriville.</translation>
     <message>
         <location filename="../preferences.ui" line="506"/>
         <source>Lock</source>
-        <translation type="unfinished">Lukitse</translation>
+        <translation>Lukitse</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="555"/>
@@ -2379,7 +2379,7 @@ Oletusarvo -1 poistaa kokorajoituksen käytöstä.</translation>
     <message>
         <location filename="../preferences.ui" line="842"/>
         <source>Command:</source>
-        <translation type="unfinished">Komento:</translation>
+        <translation>Komento:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="849"/>
@@ -2405,13 +2405,14 @@ tällaista vaihtoehtoa; vaaditaan muuten.</translation>
     <message>
         <location filename="../preferences.ui" line="879"/>
         <source>Custom option(s):</source>
-        <translation type="unfinished"></translation>
+        <translation>Mukautetut vaihtoehdot:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="886"/>
         <source>This is optional, depends on the terminal,
 and can be any group of custom options.</source>
-        <translation type="unfinished"></translation>
+        <translation>Tämä on vaihtoehtoinen, päätteestä riippuen,
+ja voi olla mikä tahansa mukautettujen vaihtoehtojen ryhmä.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="964"/>
@@ -2616,12 +2617,12 @@ lxsudo dbus-run-session -- %s</translation>
     <message>
         <location filename="../bulkrename.cpp" line="234"/>
         <source>Nothing to find.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ei hakutuloksia.</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="243"/>
         <source>Invalid regular expression.</source>
-        <translation type="unfinished"></translation>
+        <translation>Viallinen säännollinen lauseke.</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="1151"/>

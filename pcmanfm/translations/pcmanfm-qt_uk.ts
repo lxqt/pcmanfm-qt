@@ -598,7 +598,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktop-preferences.ui" line="669"/>
         <source>Do not show file tooltips</source>
-        <translation type="unfinished">Не показувати підказки до файлів</translation>
+        <translation>Не показувати підказки для файлів</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="498"/>

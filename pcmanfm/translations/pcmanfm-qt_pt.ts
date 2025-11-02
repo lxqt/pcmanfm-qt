@@ -598,7 +598,7 @@ se clicar com o botão esquerdo do rato - mesmo que este não seja o gestor de f
     <message>
         <location filename="../desktop-preferences.ui" line="669"/>
         <source>Do not show file tooltips</source>
-        <translation type="unfinished">Não mostrar dicas para ficheiros</translation>
+        <translation>Não mostrar dicas de ficheiros</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="498"/>

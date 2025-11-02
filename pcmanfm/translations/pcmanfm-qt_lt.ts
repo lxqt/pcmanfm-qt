@@ -599,7 +599,7 @@ numatytoji failų tvarkytuvė.</translation>
     <message>
         <location filename="../desktop-preferences.ui" line="669"/>
         <source>Do not show file tooltips</source>
-        <translation type="unfinished">Nerodyti failų paaiškinimų</translation>
+        <translation>Nerodyti failų paaiškinimų</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="498"/>
