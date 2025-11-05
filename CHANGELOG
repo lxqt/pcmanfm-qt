@@ -1,3 +1,17 @@
+pcmanfm-qt-2.3.0 / 2025-11-05
+==============================
+ * Fixed removal of shortcut items with multi-screen setups on Wayland.
+ * Prevented an imminent crash after removing a Wayland screen.
+ * Added an option to disable file tooltips on desktop.
+ * Fixed showing of ampersand in recent files menu.
+ * Added Apply button to Preferences.
+ * Silenced a Clang warning.
+ * Fixed a crash on mount failure after closing a tab.
+ * Disabled File Properties menu action with no file selection.
+ * Set windows icon.
+ * Code cleanup.
+ * Gave parent windows to some dialogs.
+
 pcmanfm-qt-2.2.0 / 2025-04-17
 ==============================
  * Better drag-and-drop on Desktop, without displacing neighboring items as far as possible.
