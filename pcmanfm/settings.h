@@ -399,12 +399,23 @@ public:
         desktopShowHidden_ = desktopShowHidden;
     }
 
-    bool desktopHideItems() const {
-        return desktopHideItems_;
+    bool desktopHideItems(const QString& screenName = QString()) const {
+        if(screenName.isEmpty()) { // X11
+            return desktopHideItems_;
+        }
+        return desktopHideItemsOnScreens_.value(screenName, false); // Wayland
     }
 
-    void setDesktopHideItems(bool hide) {
-        desktopHideItems_ = hide;
+    void setDesktopHideItems(bool hide, const QString& screenName = QString()) {
+        if(screenName.isEmpty()) { // X11
+            desktopHideItems_ = hide;
+        }
+        else { // Wayland
+            if(!screenNames_.contains(screenName)) {
+                screenNames_ << screenName;
+            }
+            desktopHideItemsOnScreens_.insert(screenName, hide);
+        }
     }
 
     Qt::SortOrder desktopSortOrder() const {
@@ -1104,6 +1115,7 @@ private:
 
     bool desktopShowHidden_;
     bool desktopHideItems_;
+    QHash<QString, bool> desktopHideItemsOnScreens_; // on Wayland
     Qt::SortOrder desktopSortOrder_;
     Fm::FolderModel::ColumnId desktopSortColumn_;
     bool desktopSortFolderFirst_;
@@ -1196,6 +1208,8 @@ private:
     // recent files
     int recentFilesNumber_;
     QStringList recentFiles_;
+
+    QStringList screenNames_; // on Wayland
 };
 
 }

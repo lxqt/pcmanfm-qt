@@ -979,7 +979,7 @@ void DesktopWindow::updateFromSettings(Settings& settings, bool changeSlide, boo
     setBackground(settings.desktopBgColor());
     setShadow(settings.desktopShadowColor());
     fileLauncher_.setOpenWithDefaultFileManager(settings.openWithDefaultFileManager());
-    desktopHideItems_ = settings.desktopHideItems();
+    desktopHideItems_ = settings.desktopHideItems(static_cast<Application*>(qApp)->underWayland() ? screenName_ : QString());
     if(desktopHideItems_) {
         // hide all items by hiding the list view and also
         // prevent the current item from being changed by arrow keys
@@ -1139,7 +1139,7 @@ void DesktopWindow::addDesktopActions(QMenu* menu) {
 void DesktopWindow::toggleDesktop() {
     desktopHideItems_ = !desktopHideItems_;
     Settings& settings = static_cast<Application*>(qApp)->settings();
-    settings.setDesktopHideItems(desktopHideItems_);
+    settings.setDesktopHideItems(desktopHideItems_, static_cast<Application*>(qApp)->underWayland() ? screenName_ : QString());
     listView_->setVisible(!desktopHideItems_);
     // a relayout is needed on showing the items for the first time
     // because the positions aren't updated while the view is hidden
