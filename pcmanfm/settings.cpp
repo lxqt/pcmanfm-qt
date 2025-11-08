@@ -242,6 +242,8 @@ bool Settings::loadFile(QString filePath) {
     settings.endGroup();
 
     settings.beginGroup(QStringLiteral("Desktop"));
+    screenNames_ = settings.value(QStringLiteral("ScreenNames")).toStringList();
+    screenNames_.removeDuplicates();
     wallpaperMode_ = wallpaperModeFromString(settings.value(QStringLiteral("WallpaperMode")).toString());
     wallpaper_ = settings.value(QStringLiteral("Wallpaper")).toString();
     wallpaperDialogSize_ = settings.value(QStringLiteral("WallpaperDialogSize"), QSize(700, 500)).toSize();
@@ -264,7 +266,13 @@ bool Settings::loadFile(QString filePath) {
     desktopIconSize_ = settings.value(QStringLiteral("DesktopIconSize"), 48).toInt();
     desktopShortcuts_ = settings.value(QStringLiteral("DesktopShortcuts")).toStringList();
     desktopShowHidden_ = settings.value(QStringLiteral("ShowHidden"), false).toBool();
+
+    // X11
     desktopHideItems_ = settings.value(QStringLiteral("HideItems"), false).toBool();
+    // Wayland
+    for(const auto& screenName : std::as_const(screenNames_)) {
+        desktopHideItemsOnScreens_.insert(screenName, settings.value(QStringLiteral("HideItems-%1").arg(screenName), false).toBool());
+    }
 
     desktopSortOrder_ = sortOrderFromString(settings.value(QStringLiteral("SortOrder")).toString());
     desktopSortColumn_ = sortColumnFromString(settings.value(QStringLiteral("SortColumn")).toString());
@@ -407,6 +415,7 @@ bool Settings::saveFile(QString filePath) {
     settings.endGroup();
 
     settings.beginGroup(QStringLiteral("Desktop"));
+    settings.setValue(QStringLiteral("ScreenNames"), screenNames_);
     settings.setValue(QStringLiteral("WallpaperMode"), QString::fromUtf8(wallpaperModeToString(wallpaperMode_)));
     settings.setValue(QStringLiteral("Wallpaper"), wallpaper_);
     settings.setValue(QStringLiteral("WallpaperDialogSize"), wallpaperDialogSize_);
@@ -424,7 +433,14 @@ bool Settings::saveFile(QString filePath) {
     settings.setValue(QStringLiteral("DesktopIconSize"), desktopIconSize_);
     settings.setValue(QStringLiteral("DesktopShortcuts"), desktopShortcuts_);
     settings.setValue(QStringLiteral("ShowHidden"), desktopShowHidden_);
+
+    // X11
     settings.setValue(QStringLiteral("HideItems"), desktopHideItems_);
+    // Wayland
+    for(const auto& screenName : std::as_const(screenNames_)) {
+        settings.setValue(QStringLiteral("HideItems-%1").arg(screenName), desktopHideItemsOnScreens_.value(screenName, false));
+    }
+
     settings.setValue(QStringLiteral("SortOrder"), QString::fromUtf8(sortOrderToString(desktopSortOrder_)));
     settings.setValue(QStringLiteral("SortColumn"), QString::fromUtf8(sortColumnToString(desktopSortColumn_)));
     settings.setValue(QStringLiteral("SortFolderFirst"), desktopSortFolderFirst_);
