@@ -242,32 +242,12 @@ Examples: AudioVideo, Audio, Video, Development, Education, Game, Graphics, Netw
    <signal>accepted()</signal>
    <receiver>DesktopEntryDialog</receiver>
    <slot>accept()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>199</x>
-     <y>290</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>199</x>
-     <y>155</y>
-    </hint>
-   </hints>
   </connection>
   <connection>
    <sender>buttonBox</sender>
    <signal>rejected()</signal>
    <receiver>DesktopEntryDialog</receiver>
    <slot>reject()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>199</x>
-     <y>290</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>199</x>
-     <y>155</y>
-    </hint>
-   </hints>
   </connection>
  </connections>
 </ui>

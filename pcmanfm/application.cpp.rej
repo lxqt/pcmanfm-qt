@@ -1,0 +1,9 @@
+diff a/pcmanfm/application.cpp b/pcmanfm/application.cpp	(rejected hunks)
+@@ -97,6 +97,7 @@ Application::Application(int& argc, char** argv):
+     argv_ = argv;
+ 
+     setApplicationVersion(QStringLiteral(PCMANFM_QT_VERSION));
++    setWindowIcon(QIcon::fromTheme(QStringLiteral("pcmanfm-qt")));
+ 
+     underWayland_ = QGuiApplication::platformName() == QStringLiteral("wayland");
+ 

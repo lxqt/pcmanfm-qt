@@ -1051,144 +1051,54 @@ lxsudo dbus-run-session -- %s</string>
    <signal>accepted()</signal>
    <receiver>PreferencesDialog</receiver>
    <slot>accept()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>261</x>
-     <y>487</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>157</x>
-     <y>274</y>
-    </hint>
-   </hints>
   </connection>
   <connection>
    <sender>buttonBox</sender>
    <signal>rejected()</signal>
    <receiver>PreferencesDialog</receiver>
    <slot>reject()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>329</x>
-     <y>487</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>286</x>
-     <y>274</y>
-    </hint>
-   </hints>
   </connection>
   <connection>
    <sender>listWidget</sender>
    <signal>currentRowChanged(int)</signal>
    <receiver>stackedWidget</receiver>
    <slot>setCurrentIndex(int)</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>94</x>
-     <y>157</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>359</x>
-     <y>145</y>
-    </hint>
-   </hints>
   </connection>
   <connection>
    <sender>singleClick</sender>
    <signal>toggled(bool)</signal>
    <receiver>label</receiver>
    <slot>setEnabled(bool)</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>237</x>
-     <y>39</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>237</x>
-     <y>39</y>
-    </hint>
-   </hints>
   </connection>
   <connection>
    <sender>rememberWindowSize</sender>
    <signal>toggled(bool)</signal>
    <receiver>fixedWindowWidth</receiver>
    <slot>setDisabled(bool)</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>506</x>
-     <y>351</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>462</x>
-     <y>386</y>
-    </hint>
-   </hints>
   </connection>
   <connection>
    <sender>singleClick</sender>
    <signal>toggled(bool)</signal>
    <receiver>autoSelectionDelay</receiver>
    <slot>setEnabled(bool)</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>237</x>
-     <y>39</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>237</x>
-     <y>39</y>
-    </hint>
-   </hints>
   </connection>
   <connection>
    <sender>rememberWindowSize</sender>
    <signal>toggled(bool)</signal>
    <receiver>fixedWindowHeight</receiver>
    <slot>setDisabled(bool)</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>549</x>
-     <y>351</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>462</x>
-     <y>421</y>
-    </hint>
-   </hints>
   </connection>
   <connection>
    <sender>rememberWindowSize</sender>
    <signal>toggled(bool)</signal>
    <receiver>label_12</receiver>
    <slot>setDisabled(bool)</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>211</x>
-     <y>342</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>211</x>
-     <y>374</y>
-    </hint>
-   </hints>
   </connection>
   <connection>
    <sender>rememberWindowSize</sender>
    <signal>toggled(bool)</signal>
    <receiver>label_13</receiver>
    <slot>setDisabled(bool)</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>183</x>
-     <y>338</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>187</x>
-     <y>404</y>
-    </hint>
-   </hints>
   </connection>
  </connections>
 </ui>
