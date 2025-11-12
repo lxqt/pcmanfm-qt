@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+   <id>io.github.lxqt.pcmanfm-qt</id>
+   <metadata_license>CC-BY-4.0</metadata_license>
+   <project_license>GPLv2</project_license>
+   <name>PCManFM-Qt</name>
+   <summary>Filemanager</summary>
+   <description>
+ <p>
+    Fast filemanager and desktop manager written in Qt. Among
+    its features are:
+    </p>
+    <ul>
+      <li>Split view</li>
+      <li>Filter items by typing</li>
+      <li>Full wayland compatible</li>
+      <li>Display options per folder</li>
+      <li>Connect to server</li>
+      <li>Admin mode fot tabs</li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+   </description>
+   <launchable type="desktop-id">pcmanfm-qt.desktop</launchable>
+   <url type="homepage">https://github.com/lxqt/pcmanfm-qt/</url>
+   <screenshots>
+      <screenshot type="default">
+         <image>https://github.com/lxqt/qps/blob/master/pcmanfm-qt.png</image>
+      </screenshot>
+   </screenshots>
+</component>
