@@ -594,7 +594,7 @@ PCManFM-Qt에서 열립니다.</translation>
     <message>
         <location filename="../desktop-preferences.ui" line="669"/>
         <source>Do not show file tooltips</source>
-        <translation type="unfinished">파일 툴팁 표시 안함</translation>
+        <translation>파일 툴팁 표시 안함</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="498"/>

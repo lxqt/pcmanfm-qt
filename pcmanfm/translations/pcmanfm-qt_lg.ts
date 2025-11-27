@@ -600,7 +600,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktop-preferences.ui" line="669"/>
         <source>Do not show file tooltips</source>
-        <translation type="unfinished">Tompanga magezi ku bya fayiro</translation>
+        <translation>Tompanga magezi ku bya fayiro</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="498"/>
