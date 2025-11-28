@@ -598,7 +598,7 @@ vänsterklickas, även när den inte är standard filhanterare.</translation>
     <message>
         <location filename="../desktop-preferences.ui" line="669"/>
         <source>Do not show file tooltips</source>
-        <translation type="unfinished">Visa inte filverktygstips</translation>
+        <translation>Visa inte filverktygstips</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="498"/>
