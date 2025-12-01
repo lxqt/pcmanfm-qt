@@ -150,7 +150,7 @@ Boston, MA  02110-1301, USA.</translation>
     <message>
         <location filename="../bulk-rename.ui" line="97"/>
         <source>Find in names:</source>
-        <translation type="unfinished"></translation>
+        <translation>In Namen suchen:</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="107"/>
@@ -2622,7 +2622,7 @@ lxsudo dbus-run-session -- %s</translation>
     <message>
         <location filename="../bulkrename.cpp" line="234"/>
         <source>Nothing to find.</source>
-        <translation type="unfinished"></translation>
+        <translation>Nichts zu finden.</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="243"/>
