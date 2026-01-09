@@ -1751,14 +1751,14 @@ PCManFM-Qt rakendusega ka siis, kui ta pole vaikimisi failihaldur.</translation>
     <message>
         <location filename="../desktopwindow.cpp" line="327"/>
         <source>Trash (One item)</source>
-        <translation>Prügikast (üks element)</translation>
+        <translation>Prügikast (üks objekt)</translation>
     </message>
     <message numerus="yes">
         <location filename="../desktopwindow.cpp" line="330"/>
         <source>Trash (%Ln items)</source>
         <translation>
-            <numerusform>Prügikast (% Ln element)</numerusform>
-            <numerusform>Prügikast (% Ln elementi)</numerusform>
+            <numerusform>Prügikast (% Ln objekt)</numerusform>
+            <numerusform>Prügikast (% Ln objekti)</numerusform>
         </translation>
     </message>
     <message>

@@ -599,7 +599,7 @@ upravljač datoteka.</translation>
     <message>
         <location filename="../desktop-preferences.ui" line="669"/>
         <source>Do not show file tooltips</source>
-        <translation type="unfinished">Ne prikazuj savjete u oblačiću</translation>
+        <translation>Ne prikazuj savjete u oblačiću</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="498"/>
@@ -849,7 +849,7 @@ upravljač datoteka.</translation>
     <message>
         <location filename="../main-win.ui" line="297"/>
         <source>Alt+Up</source>
-        <translation>Alt+Gore</translation>
+        <translation>Alt+Up</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="306"/>
@@ -1356,7 +1356,7 @@ upravljač datoteka.</translation>
     <message>
         <location filename="../main-win.ui" line="656"/>
         <source>Alt+Left</source>
-        <translation>Alt+Lijevo</translation>
+        <translation>Alt+Left</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="665"/>
@@ -1371,7 +1371,7 @@ upravljač datoteka.</translation>
     <message>
         <location filename="../main-win.ui" line="671"/>
         <source>Alt+Right</source>
-        <translation>Alt+Desno</translation>
+        <translation>Alt+Right</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="676"/>
