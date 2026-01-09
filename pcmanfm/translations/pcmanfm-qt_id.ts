@@ -1392,7 +1392,7 @@ jika folder tersebut diklik kiri, walaupun PCManFM-Qt bukan file manager standar
     <message>
         <location filename="../main-win.ui" line="703"/>
         <source>F2</source>
-        <translation>F2</translation>
+        <translation type="unfinished">F2</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="712"/>

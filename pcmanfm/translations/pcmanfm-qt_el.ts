@@ -1139,7 +1139,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="782"/>
         <source>Open Tab in &amp;Root Instance</source>
-        <translation>Άνοιγμα καρτέλας σε εκτέλεση &amp;διαχειριστή</translation>
+        <translation>Άνοιγμα καρτέλας σε στιγμιότυπο &amp;Root</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="796"/>
@@ -1830,7 +1830,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../mainwindow.cpp" line="142"/>
         <source>Root Instance</source>
-        <translation>Άνοιγμα ως διαχειριστής</translation>
+        <translation>Στιγμιότυπο Root</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="776"/>
