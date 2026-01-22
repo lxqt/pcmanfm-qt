@@ -870,7 +870,7 @@ sunt apăsate stânga, chiar și atunci când nu este managerul de fișiere impl
     <message>
         <location filename="../main-win.ui" line="339"/>
         <source>Quit</source>
-        <translation>Părăsiți</translation>
+        <translation>Ieșire</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="348"/>

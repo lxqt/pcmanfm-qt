@@ -78,7 +78,7 @@ Boston, MA  02110-1301, USA.</translation>
     <message>
         <location filename="../about.ui" line="74"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Wiki: &lt;a href=&quot;https://github.com/lxqt/pcmanfm-qt/wiki&quot;&gt;https://github.com/lxqt/pcmanfm-qt/wiki&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Wiki: &lt;a href=&quot;https://github.com/lxqt/pcmanfm-qt/wiki&quot;&gt;https://github.com/lxqt/pcmanfm-qt/wiki&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../about.ui" line="135"/>
@@ -124,7 +124,7 @@ Boston, MA  02110-1301, USA.</translation>
     <message>
         <location filename="../bulk-rename.ui" line="12"/>
         <source>Serial Renaming</source>
-        <translation type="unfinished"></translation>
+        <translation>Penggantian Nama Serial</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="36"/>
@@ -144,42 +144,42 @@ Boston, MA  02110-1301, USA.</translation>
     <message>
         <location filename="../bulk-rename.ui" line="85"/>
         <source>Replacement</source>
-        <translation type="unfinished"></translation>
+        <translation>Penggantian</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="97"/>
         <source>Find in names:</source>
-        <translation type="unfinished"></translation>
+        <translation>Cari dalam nama:</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="107"/>
         <source>Replace with:</source>
-        <translation type="unfinished"></translation>
+        <translation>Ganti dengan:</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="117"/>
         <source>Case-sensitive</source>
-        <translation type="unfinished"></translation>
+        <translation>Peka huruf besar-kecil</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="124"/>
         <source>Regular expression</source>
-        <translation type="unfinished"></translation>
+        <translation>Ekspresi reguler</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="134"/>
         <source>Change Case</source>
-        <translation type="unfinished"></translation>
+        <translation>Ubah Kapitalisasi</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="146"/>
         <source>To upper case</source>
-        <translation type="unfinished"></translation>
+        <translation>Ke huruf besar</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="156"/>
         <source>To lower case</source>
-        <translation type="unfinished"></translation>
+        <translation>Ke huruf kecil</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="27"/>
@@ -294,7 +294,7 @@ Dapat dibiarkan kosong.</translation>
     <message>
         <location filename="../desktopentrydialog.ui" line="151"/>
         <source>Icon to display in file manager, menus, etc.</source>
-        <translation>ikon untuk tampil di manajer dokumen, menu, dan lain-lain.</translation>
+        <translation>Ikon yang ditampilkan di pengelola file, menu, dan sebagainya.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="173"/>
@@ -354,7 +354,11 @@ Dapat dibiarkan kosong.</translation>
 It is needed only when you want to use the created file in the main menu. Otherwise, you could leave it empty.
 
 Examples: AudioVideo, Audio, Video, Development, Education, Game, Graphics, Network, Office, Settings, System, Utility, Qt.</source>
-        <translation type="unfinished"></translation>
+        <translation>Kategori yang dipisahkan dengan titik koma tempat entri harus ditampilkan jika digunakan oleh menu utama DE (mis., ketika diletakkan di dalam ~/.local/share/applications).
+
+Ini hanya diperlukan ketika Anda ingin menggunakan berkas yang dibuat di menu utama. Jika tidak, Anda dapat membiarkannya kosong.
+
+Contoh: AudioVideo, Audio, Video, Development, Education, Game, Graphics, Network, Office, Settings, System, Utility, Qt.</translation>
     </message>
 </context>
 <context>
@@ -513,7 +517,7 @@ Spasi juga disediakan untuk 3 baris teks.</translation>
     <message>
         <location filename="../desktop-preferences.ui" line="230"/>
         <source>Margins of work area:</source>
-        <translation type="unfinished"></translation>
+        <translation>Margin area kerja:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="303"/>
@@ -595,7 +599,7 @@ jika folder tersebut diklik kiri, walaupun PCManFM-Qt bukan file manager standar
     <message>
         <location filename="../desktop-preferences.ui" line="669"/>
         <source>Do not show file tooltips</source>
-        <translation type="unfinished">Jangan tampilkan tooltip berkas</translation>
+        <translation>Jangan tampilkan tooltip berkas</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="498"/>
@@ -772,17 +776,17 @@ jika folder tersebut diklik kiri, walaupun PCManFM-Qt bukan file manager standar
     <message>
         <location filename="../shortcuts.ui" line="135"/>
         <source>Drop+Shift</source>
-        <translation type="unfinished"></translation>
+        <translation>Drop+Shift</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="143"/>
         <source>Drop+Ctrl</source>
-        <translation type="unfinished"></translation>
+        <translation>Drop+Ctrl</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="151"/>
         <source>Drop+Shift+Ctrl</source>
-        <translation type="unfinished"></translation>
+        <translation>Drop+Shift+Ctrl</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="138"/>
@@ -950,7 +954,7 @@ jika folder tersebut diklik kiri, walaupun PCManFM-Qt bukan file manager standar
     <message>
         <location filename="../main-win.ui" line="436"/>
         <source>Ctrl+Shift+1</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+1</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="444"/>
@@ -960,7 +964,7 @@ jika folder tersebut diklik kiri, walaupun PCManFM-Qt bukan file manager standar
     <message>
         <location filename="../main-win.ui" line="447"/>
         <source>Ctrl+Shift+3</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+3</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="455"/>
@@ -970,7 +974,7 @@ jika folder tersebut diklik kiri, walaupun PCManFM-Qt bukan file manager standar
     <message>
         <location filename="../main-win.ui" line="458"/>
         <source>Ctrl+Shift+4</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+4</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="466"/>
@@ -980,7 +984,7 @@ jika folder tersebut diklik kiri, walaupun PCManFM-Qt bukan file manager standar
     <message>
         <location filename="../main-win.ui" line="469"/>
         <source>Ctrl+Shift+2</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+2</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="478"/>
@@ -1025,12 +1029,12 @@ jika folder tersebut diklik kiri, walaupun PCManFM-Qt bukan file manager standar
     <message>
         <location filename="../main-win.ui" line="522"/>
         <source>De&amp;select All</source>
-        <translation type="unfinished"></translation>
+        <translation>Batalkan Pilihan Semua</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="525"/>
         <source>Ctrl+D</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+D</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="530"/>
@@ -1095,7 +1099,7 @@ jika folder tersebut diklik kiri, walaupun PCManFM-Qt bukan file manager standar
     <message>
         <location filename="../main-win.ui" line="939"/>
         <source>Shift+F2</source>
-        <translation type="unfinished"></translation>
+        <translation>Shift+F2</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="1027"/>
@@ -1387,12 +1391,12 @@ jika folder tersebut diklik kiri, walaupun PCManFM-Qt bukan file manager standar
     <message>
         <location filename="../main-win.ui" line="696"/>
         <source>&amp;Rename</source>
-        <translation>Ubah Nama</translation>
+        <translation>Ganti Nama</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="703"/>
         <source>F2</source>
-        <translation type="unfinished">F2</translation>
+        <translation>F2</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="712"/>
@@ -1662,7 +1666,7 @@ jika folder tersebut diklik kiri, walaupun PCManFM-Qt bukan file manager standar
     <message>
         <location filename="../desktopentrydialog.cpp" line="36"/>
         <source>The command to execute.</source>
-        <translation type="unfinished"></translation>
+        <translation>Perintah yang akan dijalankan.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="39"/>
@@ -1672,7 +1676,7 @@ jika folder tersebut diklik kiri, walaupun PCManFM-Qt bukan file manager standar
     <message>
         <location filename="../desktopentrydialog.cpp" line="40"/>
         <source>The URL to access.</source>
-        <translation type="unfinished"></translation>
+        <translation>URL yang akan diakses.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="67"/>
@@ -1908,12 +1912,12 @@ Mereka mungkin berguna jika folder itu dibuat lagi.</translation>
     <message>
         <location filename="../preferencesdialog.cpp" line="314"/>
         <source>Remove if added by user</source>
-        <translation type="unfinished"></translation>
+        <translation>Hapus jika ditambahkan oleh pengguna</translation>
     </message>
     <message>
         <location filename="../preferencesdialog.cpp" line="338"/>
         <source>Open user-defined list</source>
-        <translation type="unfinished"></translation>
+        <translation>Buka daftar yang ditentukan pengguna</translation>
     </message>
 </context>
 <context>
@@ -1921,12 +1925,12 @@ Mereka mungkin berguna jika folder itu dibuat lagi.</translation>
     <message>
         <location filename="../tabpage.cpp" line="452"/>
         <source>Search Results</source>
-        <translation type="unfinished"></translation>
+        <translation>Hasil Pencarian</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="455"/>
         <source>Applications</source>
-        <translation type="unfinished"></translation>
+        <translation>Aplikasi</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="459"/>
@@ -2020,12 +2024,12 @@ Mereka mungkin berguna jika folder itu dibuat lagi.</translation>
     <message>
         <location filename="../view.cpp" line="160"/>
         <source>Show in New T&amp;ab</source>
-        <translation type="unfinished"></translation>
+        <translation>Tampilkan di Tab Baru</translation>
     </message>
     <message>
         <location filename="../view.cpp" line="164"/>
         <source>Show in New Win&amp;dow</source>
-        <translation type="unfinished"></translation>
+        <translation>Tampilkan di Jendela Baru</translation>
     </message>
 </context>
 <context>
@@ -2366,56 +2370,60 @@ Nilai -1 berarti tidak ada batasan untuk ukuran berkas (bawaan).</translation>
     <message>
         <location filename="../preferences.ui" line="833"/>
         <source>Terminal emulator</source>
-        <translation type="unfinished"></translation>
+        <translation>Emulator terminal</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="842"/>
         <source>Command:</source>
-        <translation type="unfinished">Perintah:</translation>
+        <translation>Perintah:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="849"/>
         <source>Example: qterminal
 It is the name of the executable file.</source>
-        <translation type="unfinished"></translation>
+        <translation>Contoh: qterminal
+Itu adalah nama berkas yang dapat dieksekusi.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="860"/>
         <source>Execution option:</source>
-        <translation type="unfinished"></translation>
+        <translation>Opsi eksekusi:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="867"/>
         <source>Example: -e
 It can be left empty if the terminal is already supported
 or does not have such an option; required otherwise.</source>
-        <translation type="unfinished"></translation>
+        <translation>Contoh: -e
+Boleh dibiarkan kosong jika terminal sudah didukung
+atau tidak memiliki opsi seperti itu; diperlukan jika tidak.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="879"/>
         <source>Custom option(s):</source>
-        <translation type="unfinished"></translation>
+        <translation>Opsi kustom:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="886"/>
         <source>This is optional, depends on the terminal,
 and can be any group of custom options.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ini opsional, tergantung pada terminal,
+dan dapat berupa kelompok opsi kustom apa pun.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="964"/>
         <source>Search</source>
-        <translation type="unfinished"></translation>
+        <translation>Cari</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="979"/>
         <source>Maximum search history:</source>
-        <translation type="unfinished"></translation>
+        <translation>Maksimum riwayat pencarian:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="993"/>
         <source>Clear search history</source>
-        <translation type="unfinished"></translation>
+        <translation>Hapus riwayat pencarian</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="1028"/>
@@ -2455,7 +2463,7 @@ and can be any group of custom options.</source>
     <message>
         <location filename="../preferences.ui" line="436"/>
         <source>Disable smooth scrolling</source>
-        <translation type="unfinished"></translation>
+        <translation>Nonaktifkan pengguliran halus</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="648"/>
@@ -2511,7 +2519,8 @@ and can be any group of custom options.</source>
         <location filename="../preferences.ui" line="910"/>
         <source>Example:
 lxsudo dbus-run-session -- %s</source>
-        <translation type="unfinished"></translation>
+        <translation>Contoh:
+lxsudo dbus-run-session -- %s</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="918"/>
@@ -2604,12 +2613,12 @@ lxsudo dbus-run-session -- %s</source>
     <message>
         <location filename="../bulkrename.cpp" line="234"/>
         <source>Nothing to find.</source>
-        <translation type="unfinished"></translation>
+        <translation>Tidak ada yang dicari.</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="243"/>
         <source>Invalid regular expression.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ekspresi reguler tidak valid.</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="1151"/>

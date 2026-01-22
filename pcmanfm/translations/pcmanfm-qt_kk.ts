@@ -123,7 +123,7 @@ GNU General Public License аясында еркін тарата немесе/�
     <message>
         <location filename="../bulk-rename.ui" line="12"/>
         <source>Serial Renaming</source>
-        <translation type="unfinished"></translation>
+        <translation>Реттік атын өзгерту</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="36"/>
@@ -143,42 +143,42 @@ GNU General Public License аясында еркін тарата немесе/�
     <message>
         <location filename="../bulk-rename.ui" line="85"/>
         <source>Replacement</source>
-        <translation type="unfinished"></translation>
+        <translation>Алмастыру</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="97"/>
         <source>Find in names:</source>
-        <translation type="unfinished"></translation>
+        <translation>Атаулардан табу:</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="107"/>
         <source>Replace with:</source>
-        <translation type="unfinished"></translation>
+        <translation>Мынаған алмастыру:</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="117"/>
         <source>Case-sensitive</source>
-        <translation type="unfinished"></translation>
+        <translation>Регистрді ескеру</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="124"/>
         <source>Regular expression</source>
-        <translation type="unfinished"></translation>
+        <translation>Тұрақты өрнек</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="134"/>
         <source>Change Case</source>
-        <translation type="unfinished"></translation>
+        <translation>Регистрді өзгерту</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="146"/>
         <source>To upper case</source>
-        <translation type="unfinished"></translation>
+        <translation>Бас әріптерге</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="156"/>
         <source>To lower case</source>
-        <translation type="unfinished"></translation>
+        <translation>Кіші әріптерге</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="27"/>
@@ -505,133 +505,135 @@ Examples: AudioVideo, Audio, Video, Development, Education, Game, Graphics, Netw
         <location filename="../desktop-preferences.ui" line="175"/>
         <source>1 px by default.
 A space is also reserved for 3 lines of text.</source>
-        <translation type="unfinished"></translation>
+        <translation>Әдетте 1 пиксель.
+Сондай-ақ 3 мәтін жолы үшін орын қалдырылған.</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="192"/>
         <source>Lock</source>
-        <translation type="unfinished"></translation>
+        <translation>Құлыптау</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="230"/>
         <source>Margins of work area:</source>
-        <translation type="unfinished"></translation>
+        <translation>Жұмыс аймағының шет өрістері:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="303"/>
         <source>By default, desktop folders will be opened in PCManFM-Qt if they
 are left clicked, even when it is not the default file manager.</source>
-        <translation type="unfinished"></translation>
+        <translation>Әдетте, жұмыс үстелі бумалары сол жақ батырмамен шертілгенде, PCManFM-Qt бағдарламасында ашылады,
+тіпті ол әдеттегі файл басқарушысы болмаса да.</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="307"/>
         <source>Open desktop folders in default file manager by left clicking</source>
-        <translation type="unfinished"></translation>
+        <translation>Жұмыс үстелі бумаларын сол жақ батырмамен шерту арқылы әдеттегі файл басқарушысында ашу</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="314"/>
         <source>Make all items stick to their positions</source>
-        <translation type="unfinished"></translation>
+        <translation>Барлық элементтерді өз орындарына бекіту</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="373"/>
         <source>Wallpaper</source>
-        <translation type="unfinished"></translation>
+        <translation>Тұсқағаз</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="439"/>
         <source>Transform image based on EXIF data</source>
-        <translation type="unfinished"></translation>
+        <translation>Суретті EXIF деректері негізінде түрлендіру</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="446"/>
         <source>Individual wallpaper for each monitor</source>
-        <translation type="unfinished"></translation>
+        <translation>Әр монитор үшін жеке тұсқағаз</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="473"/>
         <source>Slide Show</source>
-        <translation type="unfinished"></translation>
+        <translation>Слайдшоу</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="479"/>
         <source>Enable Slide Show</source>
-        <translation type="unfinished"></translation>
+        <translation>Слайдшоуды іске қосу</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="491"/>
         <source>Wallpaper image folder:</source>
-        <translation type="unfinished"></translation>
+        <translation>Тұсқағаз суреттерінің бумасы:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="505"/>
         <source>Browse</source>
-        <translation type="unfinished"></translation>
+        <translation>Шолу</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="512"/>
         <source> hour(s)</source>
-        <translation type="unfinished"></translation>
+        <translation> сағат</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="522"/>
         <source>and</source>
-        <translation type="unfinished"></translation>
+        <translation>және</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="535"/>
         <source>Intervals less than 5min will be ignored</source>
-        <translation type="unfinished"></translation>
+        <translation>5 минуттан аз аралықтар ескерілмейді</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="538"/>
         <source>Interval:</source>
-        <translation type="unfinished"></translation>
+        <translation>Аралық:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="545"/>
         <source> minute(s)</source>
-        <translation type="unfinished"></translation>
+        <translation> минут</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="669"/>
         <source>Do not show file tooltips</source>
-        <translation type="unfinished"></translation>
+        <translation>Файлдың қалқымалы нұсқауларын көрсетпеу</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="498"/>
         <source>Wallpaper folder</source>
-        <translation type="unfinished"></translation>
+        <translation>Тұсқағаз бумасы</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="587"/>
         <source>Randomize the slide show</source>
-        <translation type="unfinished"></translation>
+        <translation>Слайдшоуды кездейсоқ ретпен қою</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="620"/>
         <source>Visible Shortcuts</source>
-        <translation type="unfinished"></translation>
+        <translation>Көрінетін жарлықтар</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="626"/>
         <source>Home</source>
-        <translation type="unfinished"></translation>
+        <translation>Үй бумасы</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="637"/>
         <source>Trash</source>
-        <translation type="unfinished"></translation>
+        <translation>Қоқыс шелегі</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="648"/>
         <source>Computer</source>
-        <translation type="unfinished"></translation>
+        <translation>Компьютер</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="659"/>
         <source>Network</source>
-        <translation type="unfinished"></translation>
+        <translation>Желі</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="614"/>
@@ -644,58 +646,58 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../shortcuts.ui" line="14"/>
         <source>Hidden Shortcuts</source>
-        <translation type="unfinished"></translation>
+        <translation>Жасырын жарлықтар</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="21"/>
         <source>Shortcut</source>
-        <translation type="unfinished"></translation>
+        <translation>Жарлық</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="26"/>
         <source>Action</source>
-        <translation type="unfinished"></translation>
+        <translation>Әрекет</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="31"/>
         <source>Esc</source>
-        <translation type="unfinished"></translation>
+        <translation>Esc</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="34"/>
         <source>Focus view, clear filter bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Көрініске фокустау, сүзгі жолағын тазарту</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="39"/>
         <source>Ctrl+Esc</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Esc</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="42"/>
         <source>Focus side-pane</source>
-        <translation type="unfinished"></translation>
+        <translation>Бүйірлік панельге фокустау</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="47"/>
         <source>Ctrl+L</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+L</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="50"/>
         <location filename="../shortcuts.ui" line="58"/>
         <source>Focus path entry</source>
-        <translation type="unfinished"></translation>
+        <translation>Жол өрісіне фокустау</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="55"/>
         <source>Alt+D</source>
-        <translation type="unfinished"></translation>
+        <translation>Alt+D</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="63"/>
         <source>Ctrl+Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Tab</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="66"/>
@@ -768,37 +770,37 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../shortcuts.ui" line="130"/>
         <source>Paste into transient filter bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Уақытша сүзгі жолағына кірістіру</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="135"/>
         <source>Drop+Shift</source>
-        <translation type="unfinished"></translation>
+        <translation>Сүйреп әкелу+Shift</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="143"/>
         <source>Drop+Ctrl</source>
-        <translation type="unfinished"></translation>
+        <translation>Сүйреп әкелу+Ctrl</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="151"/>
         <source>Drop+Shift+Ctrl</source>
-        <translation type="unfinished"></translation>
+        <translation>Сүйреп әкелу+Shift+Ctrl</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="138"/>
         <source>Move file on dropping</source>
-        <translation type="unfinished"></translation>
+        <translation>Тастаған кезде файлды жылжыту</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="146"/>
         <source>Copy file on dropping</source>
-        <translation type="unfinished"></translation>
+        <translation>Тастаған кезде файлды көшіру</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="154"/>
         <source>Make a symlink on dropping</source>
-        <translation type="unfinished"></translation>
+        <translation>Тастаған кезде символдық сілтеме жасау</translation>
     </message>
 </context>
 <context>
@@ -806,62 +808,62 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="14"/>
         <source>File Manager</source>
-        <translation type="unfinished"></translation>
+        <translation>Файлдар басқарушысы</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="81"/>
         <source>Recent F&amp;iles</source>
-        <translation type="unfinished"></translation>
+        <translation>Соңғы фа&amp;йлдар</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="143"/>
         <source>&amp;Toolbars</source>
-        <translation type="unfinished"></translation>
+        <translation>Саймандар &amp;панельдері</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="150"/>
         <source>Path &amp;Bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Жол &amp;жолағы</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="157"/>
         <source>&amp;Filtering</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Сүзгілеу</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="232"/>
         <source>&amp;Tools</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Саймандар</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="291"/>
         <source>Go &amp;Up</source>
-        <translation type="unfinished"></translation>
+        <translation>Жоғары &amp;шығу</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="294"/>
         <source>Go Up</source>
-        <translation type="unfinished"></translation>
+        <translation>Жоғары шығу</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="297"/>
         <source>Alt+Up</source>
-        <translation type="unfinished"></translation>
+        <translation>Alt+Up</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="306"/>
         <source>&amp;Home</source>
-        <translation type="unfinished"></translation>
+        <translation>Ү&amp;й</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="309"/>
         <source>Alt+Home</source>
-        <translation type="unfinished"></translation>
+        <translation>Alt+Home</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="318"/>
         <source>&amp;Reload</source>
-        <translation type="unfinished"></translation>
+        <translation>Қайта &amp;жүктеу</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="321"/>
@@ -871,57 +873,57 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="330"/>
         <source>Go</source>
-        <translation type="unfinished"></translation>
+        <translation>Өту</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="339"/>
         <source>Quit</source>
-        <translation type="unfinished"></translation>
+        <translation>Шығу</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="348"/>
         <source>&amp;About</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Бағдарлама туралы</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="357"/>
         <source>&amp;New Window</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Жаңа терезе</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="360"/>
         <source>New Window</source>
-        <translation type="unfinished"></translation>
+        <translation>Жаңа терезе</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="363"/>
         <source>Ctrl+N</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+N</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="371"/>
         <source>Show &amp;Hidden</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Жасырынды көрсету</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="374"/>
         <source>Ctrl+H</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+H</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="383"/>
         <source>&amp;Computer</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Компьютер</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="392"/>
         <source>&amp;Trash</source>
-        <translation type="unfinished"></translation>
+        <translation>Қ&amp;оқыс шелегі</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="397"/>
         <source>&amp;Network</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Желі</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="406"/>
@@ -946,42 +948,42 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="433"/>
         <source>&amp;Icon View</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Таңбашалар көрінісі</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="436"/>
         <source>Ctrl+Shift+1</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+1</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="444"/>
         <source>&amp;Compact View</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Ықшам көрініс</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="447"/>
         <source>Ctrl+Shift+3</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+3</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="455"/>
         <source>&amp;Detailed List</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Толық тізім</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="458"/>
         <source>Ctrl+Shift+4</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+4</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="466"/>
         <source>&amp;Thumbnail View</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Нобайлар көрінісі</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="469"/>
         <source>Ctrl+Shift+2</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+2</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="478"/>
@@ -1026,12 +1028,12 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="522"/>
         <source>De&amp;select All</source>
-        <translation type="unfinished"></translation>
+        <translation>Барлығынан таңдауды а&amp;лып тастау</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="525"/>
         <source>Ctrl+D</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+D</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="530"/>
@@ -1071,27 +1073,27 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="594"/>
         <source>By File &amp;Type</source>
-        <translation type="unfinished"></translation>
+        <translation>Файл &amp;түрі бойынша</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="602"/>
         <source>By &amp;Owner</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Иесі бойынша</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="610"/>
         <source>By &amp;Group</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Топ бойынша</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="618"/>
         <source>&amp;Folder First</source>
-        <translation type="unfinished"></translation>
+        <translation>Алдымен &amp;бумалар</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="626"/>
         <source>&amp;Hidden Last</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Жасырын соңында</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="939"/>
@@ -1101,92 +1103,92 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="1027"/>
         <source>Preserve Settings Recursively from &amp;Here</source>
-        <translation type="unfinished"></translation>
+        <translation>Баптауларды &amp;осы жерден рекурсивті түрде сақтау</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="1032"/>
         <source>&amp;Go to Source of Inherited Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Мұраланған баптаулардың бастапқы көзіне өту</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="1037"/>
         <source>&amp;Remove Settings of Nonexistent Folders</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Жоқ бумалардың баптауларын өшіру</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="1045"/>
         <source>&amp;Clear</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Тазарту</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="679"/>
         <source>Ctrl+Shift+A</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+A</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="740"/>
         <source>&amp;Case Sensitive</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Регистрді ескеру</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="748"/>
         <source>By File &amp;Size</source>
-        <translation type="unfinished"></translation>
+        <translation>Файл өл&amp;шемі бойынша</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="757"/>
         <source>&amp;Close Window</source>
-        <translation type="unfinished"></translation>
+        <translation>Терезені &amp;жабу</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="760"/>
         <source>Ctrl+Q</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Q</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="782"/>
         <source>Open Tab in &amp;Root Instance</source>
-        <translation type="unfinished"></translation>
+        <translation>Бетті ә&amp;кімші атынан ашу</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="796"/>
         <source>&amp;Folder</source>
-        <translation type="unfinished"></translation>
+        <translation>Б&amp;ума</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="808"/>
         <source>&amp;Blank File</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Бос файл</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="899"/>
         <source>Preserve Settings for &amp;This Folder</source>
-        <translation type="unfinished"></translation>
+        <translation>Баптауларды &amp;осы бума үшін сақтау</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="944"/>
         <source>&amp;Show/Focus Filter Bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Сүзгілер жолағын &amp;көрсету/фокустау</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="947"/>
         <source>Show Filter Bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Сүзгілер жолағын көрсету</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="950"/>
         <source>Ctrl+I</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+I</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="958"/>
         <source>S&amp;plit View</source>
-        <translation type="unfinished"></translation>
+        <translation>Бө&amp;лінген көрініс</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="961"/>
         <source>Split View</source>
-        <translation type="unfinished"></translation>
+        <translation>Бөлінген көрініс</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="964"/>
@@ -1196,27 +1198,27 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="969"/>
         <source>&amp;Copy Full Path</source>
-        <translation type="unfinished"></translation>
+        <translation>Толық жолды &amp;көшіру</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="976"/>
         <source>Ctrl+Shift+C</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+C</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="987"/>
         <source>Show Thumb&amp;nails</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Нобайларды көрсету</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="990"/>
         <source>Show Thumbnails</source>
-        <translation type="unfinished"></translation>
+        <translation>Нобайларды көрсету</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="998"/>
         <source>S&amp;ide Pane</source>
-        <translation type="unfinished"></translation>
+        <translation>Бү&amp;йірлік панель</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="1001"/>
@@ -1226,12 +1228,12 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="1006"/>
         <source>Hidden &amp;Shortcuts</source>
-        <translation type="unfinished"></translation>
+        <translation>Жасырын &amp;жарлықтар</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="1011"/>
         <source>Open Tab in &amp;Admin Mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Бетті ә&amp;кімші режимінде ашу</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="1016"/>
@@ -1242,47 +1244,47 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="834"/>
         <source>Ctrl+B</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+B</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="839"/>
         <source>&amp;Clear All Filters</source>
-        <translation type="unfinished"></translation>
+        <translation>Барлық сүзгілерді та&amp;зарту</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="842"/>
         <source>Ctrl+Shift+K</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+K</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="851"/>
         <source>Close &amp;previous tabs</source>
-        <translation type="unfinished"></translation>
+        <translation>Ал&amp;дыңғы беттерді жабу</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="860"/>
         <source>Close &amp;next tabs</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Келесі беттерді жабу</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="908"/>
         <source>Connect to &amp;Server</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Серверге қосылу</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="916"/>
         <source>&amp;Location</source>
-        <translation type="unfinished"></translation>
+        <translation>Орна&amp;ласу</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="924"/>
         <source>&amp;Path Buttons</source>
-        <translation type="unfinished"></translation>
+        <translation>Ж&amp;ол батырмалары</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="929"/>
         <source>&amp;Bulk Rename</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Топтық атын өзгерту</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="936"/>
@@ -1292,12 +1294,12 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="865"/>
         <source>Close &amp;other tabs</source>
-        <translation type="unfinished"></translation>
+        <translation>Ба&amp;сқа беттерді жабу</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="831"/>
         <source>Permanent &amp;filter bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Тұрақты &amp;сүзгілер жолағы</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="873"/>
@@ -1328,27 +1330,27 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="164"/>
         <source>&amp;Customized View Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Бапталған көрініс баптаулары</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="638"/>
         <source>New Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Жаңа бет</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="641"/>
         <source>Ctrl+T</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+T</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="650"/>
         <source>Go &amp;Back</source>
-        <translation type="unfinished"></translation>
+        <translation>А&amp;ртқа өту</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="653"/>
         <source>Go Back</source>
-        <translation type="unfinished"></translation>
+        <translation>Артқа өту</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="656"/>
@@ -1358,37 +1360,37 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="665"/>
         <source>Go &amp;Forward</source>
-        <translation type="unfinished"></translation>
+        <translation>А&amp;лға өту</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="668"/>
         <source>Go Forward</source>
-        <translation type="unfinished"></translation>
+        <translation>Алға өту</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="671"/>
         <source>Alt+Right</source>
-        <translation type="unfinished"></translation>
+        <translation>Alt+Оң жақ</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="676"/>
         <source>&amp;Invert Selection</source>
-        <translation type="unfinished"></translation>
+        <translation>Ерекшелеуді те&amp;рістеу</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="688"/>
         <source>&amp;Delete</source>
-        <translation type="unfinished"></translation>
+        <translation>Ө&amp;шіру</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="691"/>
         <source>Del</source>
-        <translation type="unfinished"></translation>
+        <translation>Del</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="696"/>
         <source>&amp;Rename</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Атын өзгерту</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="703"/>
@@ -1398,12 +1400,12 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="712"/>
         <source>C&amp;lose Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Бетті &amp;жабу</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="715"/>
         <source>Ctrl+W</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+W</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="724"/>
@@ -1453,7 +1455,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="816"/>
         <source>&amp;Find Files</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Файлдарды табу</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="823"/>
@@ -1463,48 +1465,48 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="70"/>
         <source>&amp;File</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Файл</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="74"/>
         <source>C&amp;reate New</source>
-        <translation type="unfinished"></translation>
+        <translation>Жаңасын &amp;жасау</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="102"/>
         <source>&amp;Help</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Көмек</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="109"/>
         <location filename="../main-win.ui" line="133"/>
         <source>&amp;View</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Көрініс</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="113"/>
         <source>&amp;Sorting</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Сұрыптау</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="189"/>
         <source>&amp;Edit</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Түзету</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="208"/>
         <source>&amp;Bookmarks</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Бетбелгілер</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="215"/>
         <source>&amp;Go</source>
-        <translation type="unfinished"></translation>
+        <translation>Ө&amp;ту</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="257"/>
         <source>Main Toolbar</source>
-        <translation type="unfinished"></translation>
+        <translation>Негізгі сайман панелі</translation>
     </message>
 </context>
 <context>
@@ -1512,43 +1514,43 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../application.cpp" line="190"/>
         <source>Name of configuration profile</source>
-        <translation type="unfinished"></translation>
+        <translation>Баптау профилінің аты</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="190"/>
         <source>PROFILE</source>
-        <translation type="unfinished"></translation>
+        <translation>ПРОФИЛЬ</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="193"/>
         <source>Run PCManFM-Qt as a daemon</source>
-        <translation type="unfinished"></translation>
+        <translation>PCManFM-Qt бағдарламасын қызмет ретінде іске қосу</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="196"/>
         <source>Quit PCManFM-Qt</source>
-        <translation type="unfinished"></translation>
+        <translation>PCManFM-Qt бағдарламасынан шығу</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="199"/>
         <source>Launch desktop manager</source>
-        <translation type="unfinished"></translation>
+        <translation>Жұмыс үстелі басқарушысын іске қосу</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="202"/>
         <source>Turn off desktop manager if it&apos;s running</source>
-        <translation type="unfinished"></translation>
+        <translation>Жұмыс үстелі басқарушысы жұмыс істеп тұрса, оны сөндіру</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="205"/>
         <source>Open desktop preference dialog on the page with the specified name</source>
-        <translation type="unfinished"></translation>
+        <translation>Жұмыс үстелінің баптаулар сұхбат терезесін көрсетілген атауы бар бетте ашу</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="205"/>
         <location filename="../application.cpp" line="220"/>
         <source>NAME</source>
-        <translation type="unfinished"></translation>
+        <translation>АТАУЫ</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="208"/>
@@ -1558,42 +1560,42 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../application.cpp" line="211"/>
         <source>Open Find Files utility</source>
-        <translation type="unfinished"></translation>
+        <translation>Файлдарды іздеу утилитасын ашу</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="214"/>
         <source>Set desktop wallpaper from image FILE</source>
-        <translation type="unfinished"></translation>
+        <translation>Жұмыс үстелінің тұсқағазын сурет файлынан орнату</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="214"/>
         <source>FILE</source>
-        <translation type="unfinished"></translation>
+        <translation>ФАЙЛ</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="217"/>
         <source>MODE</source>
-        <translation type="unfinished"></translation>
+        <translation>РЕЖИМ</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="217"/>
         <source>Set mode of desktop wallpaper. MODE=(%1)</source>
-        <translation type="unfinished"></translation>
+        <translation>Жұмыс үстелі тұсқағазының режимін орнату. РЕЖИМ=(%1)</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="220"/>
         <source>Open Preferences dialog on the page with the specified name</source>
-        <translation type="unfinished"></translation>
+        <translation>Баптаулар сұхбат терезесін көрсетілген атауы бар бетте ашу</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="223"/>
         <source>Files or directories to open</source>
-        <translation type="unfinished"></translation>
+        <translation>Ашылатын файлдар немесе бумалар</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="223"/>
         <source>[FILE1, FILE2,...]</source>
-        <translation type="unfinished"></translation>
+        <translation>[ФАЙЛ1, ФАЙЛ2,...]</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="661"/>
@@ -1604,7 +1606,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../application.cpp" line="666"/>
         <source>Terminal emulator is not set.</source>
-        <translation type="unfinished"></translation>
+        <translation>Терминал эмуляторы орнатылмаған.</translation>
     </message>
 </context>
 <context>
@@ -1612,12 +1614,12 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../autorundialog.cpp" line="44"/>
         <source>Open in file manager</source>
-        <translation type="unfinished"></translation>
+        <translation>Файлдар басқарушысында ашу</translation>
     </message>
     <message>
         <location filename="../autorundialog.cpp" line="137"/>
         <source>Removable Disk</source>
-        <translation type="unfinished"></translation>
+        <translation>Ауыстырмалы диск</translation>
     </message>
 </context>
 <context>
@@ -1625,32 +1627,32 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../connectserverdialog.cpp" line="9"/>
         <source>SSH</source>
-        <translation type="unfinished"></translation>
+        <translation>SSH</translation>
     </message>
     <message>
         <location filename="../connectserverdialog.cpp" line="10"/>
         <source>FTP</source>
-        <translation type="unfinished"></translation>
+        <translation>FTP</translation>
     </message>
     <message>
         <location filename="../connectserverdialog.cpp" line="11"/>
         <source>WebDav</source>
-        <translation type="unfinished"></translation>
+        <translation>WebDav</translation>
     </message>
     <message>
         <location filename="../connectserverdialog.cpp" line="12"/>
         <source>Secure WebDav</source>
-        <translation type="unfinished"></translation>
+        <translation>Қауіпсіз WebDav</translation>
     </message>
     <message>
         <location filename="../connectserverdialog.cpp" line="13"/>
         <source>HTTP</source>
-        <translation type="unfinished"></translation>
+        <translation>HTTP</translation>
     </message>
     <message>
         <location filename="../connectserverdialog.cpp" line="14"/>
         <source>HTTPS</source>
-        <translation type="unfinished"></translation>
+        <translation>HTTPS</translation>
     </message>
 </context>
 <context>
@@ -1663,37 +1665,37 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktopentrydialog.cpp" line="36"/>
         <source>The command to execute.</source>
-        <translation type="unfinished"></translation>
+        <translation>Орындалатын команда.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="39"/>
         <source>URL:</source>
-        <translation type="unfinished"></translation>
+        <translation>URL:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="40"/>
         <source>The URL to access.</source>
-        <translation type="unfinished"></translation>
+        <translation>Қол жеткізілетін URL.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="67"/>
         <source>Select an icon</source>
-        <translation type="unfinished"></translation>
+        <translation>Таңбашаны таңдау</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="69"/>
         <source>Images (*.png *.xpm *.svg *.svgz )</source>
-        <translation type="unfinished"></translation>
+        <translation>Суреттер (*.png *.xpm *.svg *.svgz )</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="91"/>
         <source>Select an executable file</source>
-        <translation type="unfinished"></translation>
+        <translation>Орындалатын файлды таңдау</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="99"/>
         <source>Select a file</source>
-        <translation type="unfinished"></translation>
+        <translation>Файлды таңдау</translation>
     </message>
 </context>
 <context>
@@ -1701,47 +1703,47 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="55"/>
         <source>Fill with background color only</source>
-        <translation type="unfinished"></translation>
+        <translation>Тек фон түсімен толтыру</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="56"/>
         <source>Stretch to fill the entire screen</source>
-        <translation type="unfinished"></translation>
+        <translation>Бүкіл экранды толтыру үшін созу</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="57"/>
         <source>Stretch to fit the screen</source>
-        <translation type="unfinished"></translation>
+        <translation>Экранға сыйдыру үшін созу</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="58"/>
         <source>Center on the screen</source>
-        <translation type="unfinished"></translation>
+        <translation>Экран ортасына орналастыру</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="59"/>
         <source>Tile the image to fill the entire screen</source>
-        <translation type="unfinished"></translation>
+        <translation>Бүкіл экранды толтыру үшін суретті плиткамен толтыру</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="60"/>
         <source>Zoom the image to fill the entire screen</source>
-        <translation type="unfinished"></translation>
+        <translation>Бүкіл экранды толтыру үшін суретті масштабтау</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="278"/>
         <source>Select Wallpaper</source>
-        <translation type="unfinished"></translation>
+        <translation>Тұсқағазды таңдау</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="282"/>
         <source>Image Files</source>
-        <translation type="unfinished"></translation>
+        <translation>Сурет файлдары</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="324"/>
         <source>Select Wallpaper Folder</source>
-        <translation type="unfinished"></translation>
+        <translation>Тұсқағаз бумасын таңдау</translation>
     </message>
 </context>
 <context>
@@ -1749,51 +1751,51 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktopwindow.cpp" line="327"/>
         <source>Trash (One item)</source>
-        <translation type="unfinished"></translation>
+        <translation>Қоқыс жәшігі (Бір элемент)</translation>
     </message>
     <message numerus="yes">
         <location filename="../desktopwindow.cpp" line="330"/>
         <source>Trash (%Ln items)</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>Қоқыс шелегі (%Ln нәрсе)</numerusform>
+            <numerusform>Қоқыс шелегі (%Ln нәрсе)</numerusform>
         </translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="334"/>
         <source>Trash (Empty)</source>
-        <translation type="unfinished"></translation>
+        <translation>Қоқыс жәшігі (Бос)</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="369"/>
         <source>Computer</source>
-        <translation type="unfinished"></translation>
+        <translation>Компьютер</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="383"/>
         <source>Network</source>
-        <translation type="unfinished"></translation>
+        <translation>Желі</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="1046"/>
         <source>Open</source>
-        <translation type="unfinished"></translation>
+        <translation>Ашу</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="1052"/>
         <location filename="../desktopwindow.cpp" line="1092"/>
         <source>Stic&amp;k to Current Position</source>
-        <translation type="unfinished"></translation>
+        <translation>Ағымдағы орнына жабысты&amp;ру</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="1060"/>
         <source>Empty Trash</source>
-        <translation type="unfinished"></translation>
+        <translation>Қоқыс жәшігін тазарту</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="1126"/>
         <source>Hide Desktop Items</source>
-        <translation type="unfinished"></translation>
+        <translation>Жұмыс үстелі элементтерін жасыру</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="1132"/>
@@ -1811,7 +1813,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../tabpage.cpp" line="95"/>
         <source>Filter:</source>
-        <translation type="unfinished"></translation>
+        <translation>Сүзгі:</translation>
     </message>
 </context>
 <context>
@@ -1819,7 +1821,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../tabpage.cpp" line="65"/>
         <source>Clear text (Ctrl+K or Esc)</source>
-        <translation type="unfinished"></translation>
+        <translation>Мәтінді тазарту (Ctrl+K немесе Esc)</translation>
     </message>
 </context>
 <context>
@@ -1827,39 +1829,39 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../mainwindow.cpp" line="142"/>
         <source>Root Instance</source>
-        <translation type="unfinished"></translation>
+        <translation>Түбірлік дана</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="776"/>
         <source>Hide menu bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Мәзір жолағын жасыру</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="777"/>
         <source>This will hide the menu bar completely, use Ctrl+M to show it again.</source>
-        <translation type="unfinished"></translation>
+        <translation>Бұл мәзір жолағын толығымен жасырады, оны қайта көрсету үшін Ctrl+M пернесін қолданыңыз.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="1223"/>
         <source>Version: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Нұсқасы: %1</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="175"/>
         <location filename="../mainwindow.cpp" line="2193"/>
         <source>&amp;Move to Trash</source>
-        <translation type="unfinished"></translation>
+        <translation>Қ&amp;оқыс шелегіне жылжыту</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="175"/>
         <location filename="../mainwindow.cpp" line="2193"/>
         <source>&amp;Delete</source>
-        <translation type="unfinished"></translation>
+        <translation>Ө&amp;шіру</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="2029"/>
         <source>Customized View Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Бапталған көрініс баптаулары</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="2300"/>
@@ -1870,18 +1872,19 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../mainwindow.cpp" line="2308"/>
         <source>Switch user command is not set.</source>
-        <translation type="unfinished"></translation>
+        <translation>Пайдаланушыны ауыстыру командасы орнатылмаған.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="2399"/>
         <source>Cleaning Folder Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Бума баптауларын тазарту</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="2400"/>
         <source>Do you want to remove settings of nonexistent folders?
 They might be useful if those folders are created again.</source>
-        <translation type="unfinished"></translation>
+        <translation>Жоқ бумалардың баптауларын өшіруді қалайсыз ба?
+Олар сол бумалар қайта жасалғанда пайдалы болуы мүмкін.</translation>
     </message>
 </context>
 <context>
@@ -1909,12 +1912,12 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferencesdialog.cpp" line="314"/>
         <source>Remove if added by user</source>
-        <translation type="unfinished"></translation>
+        <translation>Пайдаланушы қосқан болса, өшіру</translation>
     </message>
     <message>
         <location filename="../preferencesdialog.cpp" line="338"/>
         <source>Open user-defined list</source>
-        <translation type="unfinished"></translation>
+        <translation>Пайдаланушы анықтаған тізімді ашу</translation>
     </message>
 </context>
 <context>
@@ -1927,22 +1930,22 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../tabpage.cpp" line="455"/>
         <source>Applications</source>
-        <translation type="unfinished"></translation>
+        <translation>Қолданбалар</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="459"/>
         <source>Computer</source>
-        <translation type="unfinished"></translation>
+        <translation>Компьютер</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="462"/>
         <source>Network</source>
-        <translation type="unfinished"></translation>
+        <translation>Желі</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="465"/>
         <source>Trash</source>
-        <translation type="unfinished"></translation>
+        <translation>Қоқыс шелегі</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="471"/>
@@ -2025,12 +2028,12 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../view.cpp" line="160"/>
         <source>Show in New T&amp;ab</source>
-        <translation type="unfinished"></translation>
+        <translation>Жаңа б&amp;етте көрсету</translation>
     </message>
     <message>
         <location filename="../view.cpp" line="164"/>
         <source>Show in New Win&amp;dow</source>
-        <translation type="unfinished"></translation>
+        <translation>Жаңа тере&amp;зеде көрсету</translation>
     </message>
 </context>
 <context>
@@ -2109,178 +2112,178 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferences.ui" line="559"/>
         <source>Always show the tab bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Беттер панелін әрқашан көрсету</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="566"/>
         <source>Show &apos;Close&apos; buttons on tabs	</source>
-        <translation type="unfinished"></translation>
+        <translation>Беттерде &apos;Жабу&apos; батырмаларын көрсету	</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="580"/>
         <source>Remember the size of the last closed window</source>
-        <translation type="unfinished"></translation>
+        <translation>Соңғы жабылған терезенің өлшемін есте сақтау</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="587"/>
         <source>Default width of new windows:</source>
-        <translation type="unfinished"></translation>
+        <translation>Жаңа терезелердің әдепкі ені:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="601"/>
         <source>Default height of new windows:</source>
-        <translation type="unfinished"></translation>
+        <translation>Жаңа терезелердің әдепкі биіктігі:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="81"/>
         <source>Browsing</source>
-        <translation type="unfinished"></translation>
+        <translation>Шолу</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="93"/>
         <source>Open files with single click</source>
-        <translation type="unfinished"></translation>
+        <translation>Файлдарды бір рет шертумен ашу</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="162"/>
         <source>Default view mode:</source>
-        <translation type="unfinished"></translation>
+        <translation>Әдепкі көрініс режимі:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="119"/>
         <source> sec</source>
-        <translation type="unfinished"></translation>
+        <translation> сек</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="175"/>
         <source>File Operations</source>
-        <translation type="unfinished"></translation>
+        <translation>Файл операциялары</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="181"/>
         <source>Confirm before deleting files</source>
-        <translation type="unfinished"></translation>
+        <translation>Файлдарды өшіру алдында растау</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="188"/>
         <source>Move deleted files to &quot;trash bin&quot; instead of erasing from disk.</source>
-        <translation type="unfinished"></translation>
+        <translation>Өшірілген файлдарды дискіден жоюдың орнына &quot;қоқыс шелегіне&quot; жылжыту.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="651"/>
         <source>Show thumbnails of files</source>
-        <translation type="unfinished"></translation>
+        <translation>Файлдардың кіші көріністерін көрсету</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="658"/>
         <source>Only show thumbnails for local files</source>
-        <translation type="unfinished"></translation>
+        <translation>Кіші көріністерді тек жергілікті файлдар үшін көрсету</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="40"/>
         <source>Display</source>
-        <translation type="unfinished"></translation>
+        <translation>Түрі</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="90"/>
         <source>If this is unchecked, the DE setting will be used.</source>
-        <translation type="unfinished"></translation>
+        <translation>Егер бұл белгіленбесе, жұмыс үстел ортасы баптауы қолданылады.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="103"/>
         <location filename="../preferences.ui" line="116"/>
         <source>Set to zero to disable auto-selection.</source>
-        <translation type="unfinished"></translation>
+        <translation>Автоматты түрде таңдауды сөндіру үшін нөлге орнатыңыз.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="106"/>
         <source>Delay of auto-selection in single click mode:</source>
-        <translation type="unfinished"></translation>
+        <translation>Бір рет шерту режиміндегі автоматты түрде таңдау кідірісі:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="144"/>
         <source>Open in current tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Ағымдағы бетте ашу</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="149"/>
         <source>Open in new tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Жаңа бетте ашу</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="154"/>
         <source>Open in new window</source>
-        <translation type="unfinished"></translation>
+        <translation>Жаңа терезеде ашу</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="195"/>
         <source>Erase files on removable media instead of &quot;trash can&quot; creation</source>
-        <translation type="unfinished"></translation>
+        <translation>Ауыстырмалы тасымалдағыштарда &quot;қоқыс шелегін&quot; жасаудың орнына файлдарды өшіру</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="202"/>
         <source>Confirm before moving files into &quot;trash can&quot;</source>
-        <translation type="unfinished"></translation>
+        <translation>Файлдарды &quot;қоқыс шелегіне&quot; тастау алдында растау</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="209"/>
         <location filename="../preferences.ui" line="409"/>
         <location filename="../preferences.ui" line="419"/>
         <source>Requires application restart to take effect completely</source>
-        <translation type="unfinished"></translation>
+        <translation>Толық күшіне енуі үшін қолданбаны қайта іске қосу керек</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="212"/>
         <source>Launch executable files without prompt</source>
-        <translation type="unfinished"></translation>
+        <translation>Орындалатын файлдарды растаусыз іске қосу</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="219"/>
         <source>Renamed files will also be selected</source>
-        <translation type="unfinished"></translation>
+        <translation>Аты өзгертілген файлдар да таңдалады</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="244"/>
         <source>Number of recent files:</source>
-        <translation type="unfinished"></translation>
+        <translation>Соңғы файлдар саны:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="325"/>
         <location filename="../preferences.ui" line="335"/>
         <source>Used by Icon View</source>
-        <translation type="unfinished"></translation>
+        <translation>Таңбашалар көрінісі қолданады</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="342"/>
         <location filename="../preferences.ui" line="352"/>
         <source>Used by Compact View and Detailed List View</source>
-        <translation type="unfinished"></translation>
+        <translation>Ықшам көрініс пен толық тізім көрінісі қолданады</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="359"/>
         <location filename="../preferences.ui" line="369"/>
         <source>Used by Thumbnail View</source>
-        <translation type="unfinished"></translation>
+        <translation>Нобайлар көрінісі қолданады</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="389"/>
         <source>User interface</source>
-        <translation type="unfinished"></translation>
+        <translation>Пайдаланушы интерфейсі</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="402"/>
         <source>Treat backup files as hidden</source>
-        <translation type="unfinished"></translation>
+        <translation>Резервтік файлдарды жасырын деп есептеу</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="422"/>
         <source>Show icons of hidden files shadowed</source>
-        <translation type="unfinished"></translation>
+        <translation>Жасырын файлдардың таңбашаларын көлеңкеленген түрде көрсету</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="459"/>
         <source>Minimum item margins in icon view:</source>
-        <translation type="unfinished"></translation>
+        <translation>Таңбашалар көрінісіндегі элементтердің минималды шет өрістері:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="466"/>
@@ -2302,28 +2305,30 @@ They might be useful if those folders are created again.</source>
         <location filename="../preferences.ui" line="489"/>
         <source>3 px by default.
 A space is also reserved for 3 lines of text.</source>
-        <translation type="unfinished"></translation>
+        <translation>Әдепкі бойынша 3 пикс.
+Мәтіннің 3 жолы үшін де орын қалдырылған.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="506"/>
         <source>Lock</source>
-        <translation type="unfinished"></translation>
+        <translation>Құлыптау</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="555"/>
         <source>When unchecked, the tab bar will be shown
 only if there are more than one tab.</source>
-        <translation type="unfinished"></translation>
+        <translation>Белгі алынған жағдайда, беттер панелі тек
+бірден көп бет болғанда ғана көрсетіледі.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="573"/>
         <source>Switch to newly opened tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Жаңадан ашылған бетке ауысу</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="615"/>
         <source>Reopen last window tabs in a new window</source>
-        <translation type="unfinished"></translation>
+        <translation>Соңғы терезе беттерін жаңа терезеде қайта ашу</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="665"/>
@@ -2331,18 +2336,20 @@ only if there are more than one tab.</source>
         <source>The built-in thumbnailer makes thumbnails of images that are supported by Qt.
 
 Usually, most image types are supported. The default size limit is 4 MiB.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ішкі нобай жасаушы Qt қолдайтын суреттердің нобайларын жасайды.
+
+Әдетте, суреттердің көптеген түрлеріне қолдау көрсетіледі. Әдепкі өлшем шегі — 4 МиБ.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="670"/>
         <source>Image size limit for built-in thumbnailer:</source>
-        <translation type="unfinished"></translation>
+        <translation>Ішкі нобай жасаушы үшін сурет өлшемінің шегі:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="682"/>
         <location filename="../preferences.ui" line="718"/>
         <source> MiB</source>
-        <translation type="unfinished"></translation>
+        <translation> МиБ</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="698"/>
@@ -2350,197 +2357,204 @@ Usually, most image types are supported. The default size limit is 4 MiB.</sourc
         <source>If existing, external thumbnailers are used for videos, PDF documents, etc.
 
 A value of -1 means that there is no limit for the file size (the default).</source>
-        <translation type="unfinished"></translation>
+        <translation>Егер бар болса, видеолар, PDF құжаттары және т.б. үшін сыртқы нобай жасаушылар қолданылады.
+
+-1 мәні файл өлшеміне шектеу жоқ екенін білдіреді (әдепкі).</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="703"/>
         <source>File size limit for external thumbnailers:</source>
-        <translation type="unfinished"></translation>
+        <translation>Сыртқы нобай жасаушылар үшін файл өлшемінің шегі:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="715"/>
         <source>No limit</source>
-        <translation type="unfinished"></translation>
+        <translation>Шектеусіз</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="833"/>
         <source>Terminal emulator</source>
-        <translation type="unfinished"></translation>
+        <translation>Терминал эмуляторы</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="842"/>
         <source>Command:</source>
-        <translation type="unfinished">Команда:</translation>
+        <translation>Команда:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="849"/>
         <source>Example: qterminal
 It is the name of the executable file.</source>
-        <translation type="unfinished"></translation>
+        <translation>Мысалы: qterminal
+Бұл орындалатын файлдың аты.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="860"/>
         <source>Execution option:</source>
-        <translation type="unfinished"></translation>
+        <translation>Орындау опциясы:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="867"/>
         <source>Example: -e
 It can be left empty if the terminal is already supported
 or does not have such an option; required otherwise.</source>
-        <translation type="unfinished"></translation>
+        <translation>Мысалы: -e
+Егер терминалға қолдау көрсетілген болса немесе ондай опция
+болмаса, оны бос қалдыруға болады; әйтпесе толтыру қажет.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="879"/>
         <source>Custom option(s):</source>
-        <translation type="unfinished"></translation>
+        <translation>Реттелетін опция(лар):</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="886"/>
         <source>This is optional, depends on the terminal,
 and can be any group of custom options.</source>
-        <translation type="unfinished"></translation>
+        <translation>Бұл міндетті емес, терминалға байланысты болады
+және кез келген таңдамалы опциялар тобы болуы мүмкін.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="964"/>
         <source>Search</source>
-        <translation type="unfinished"></translation>
+        <translation>Іздеу</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="979"/>
         <source>Maximum search history:</source>
-        <translation type="unfinished"></translation>
+        <translation>Іздеу журналының максималды саны:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="993"/>
         <source>Clear search history</source>
-        <translation type="unfinished"></translation>
+        <translation>Іздеу журналын тазарту</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="1028"/>
         <source>Application restart is needed for changes to take effect.</source>
-        <translation type="unfinished"></translation>
+        <translation>Өзгерістер күшіне енуі үшін қолданбаны қайта іске қосу керек.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="136"/>
         <source>Bookmarks menu:</source>
-        <translation type="unfinished"></translation>
+        <translation>Бетбелгілер мәзірі:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="129"/>
         <source>Show folder context menu with Ctrl + right click</source>
-        <translation type="unfinished"></translation>
+        <translation>Буманың контекстік мәзірін Ctrl + оң жақ шерту арқылы көрсету</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="229"/>
         <source>Open folders in new tabs as far as possible</source>
-        <translation type="unfinished"></translation>
+        <translation>Мүмкіндігінше бумаларды жаңа беттерде ашу</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="232"/>
         <source>Single window mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Бір терезелі режим</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="412"/>
         <source>Always show real file names</source>
-        <translation type="unfinished"></translation>
+        <translation>Әрқашан файлдардың нақты аттарын көрсету</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="429"/>
         <source>Do not show file tooltips</source>
-        <translation type="unfinished"></translation>
+        <translation>Файлдардың қалқымалы нұсқауларын көрсетпеу</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="436"/>
         <source>Disable smooth scrolling</source>
-        <translation type="unfinished"></translation>
+        <translation>Тегіс айналдыруды сөндіру</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="648"/>
         <source>Needs ffmpegthumbnailer</source>
-        <translation type="unfinished"></translation>
+        <translation>ffmpegthumbnailer қажет етеді</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="754"/>
         <source>Auto Mount</source>
-        <translation type="unfinished"></translation>
+        <translation>Автоматты тіркеу</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="760"/>
         <source>Mount mountable volumes automatically on program startup</source>
-        <translation type="unfinished"></translation>
+        <translation>Бағдарлама іске қосылғанда тіркелетін томдарды автоматты түрде тіркеу</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="767"/>
         <source>Mount removable media automatically when they are inserted</source>
-        <translation type="unfinished"></translation>
+        <translation>Алынатын тасушылар салынғанда оларды автоматты түрде тіркеу</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="774"/>
         <source>Show available options for removable media when they are inserted</source>
-        <translation type="unfinished"></translation>
+        <translation>Алынатын тасушылар салынғанда олар үшін қолжетімді опцияларды көрсету</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="784"/>
         <source>When removable medium unmounted:</source>
-        <translation type="unfinished"></translation>
+        <translation>Алынатын тасушы ажыратылғанда:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="790"/>
         <source>Close &amp;tab containing removable medium</source>
-        <translation type="unfinished"></translation>
+        <translation>Алынатын тасушысы бар &amp;бетті жабу</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="797"/>
         <source>Chan&amp;ge folder in the tab to home folder</source>
-        <translation type="unfinished"></translation>
+        <translation>Беттегі буманы үй бумасына өзге&amp;рту</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="824"/>
         <source>Programs</source>
-        <translation type="unfinished"></translation>
+        <translation>Бағдарламалар</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="900"/>
         <source>Switch &amp;user command:</source>
-        <translation type="unfinished"></translation>
+        <translation>Па&amp;йдаланушыны ауыстыру командасы:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="910"/>
         <source>Example:
 lxsudo dbus-run-session -- %s</source>
-        <translation type="unfinished"></translation>
+        <translation>Мысалы:
+lxsudo dbus-run-session -- %s</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="918"/>
         <source>Archiver in&amp;tegration:</source>
-        <translation type="unfinished"></translation>
+        <translation>Архивтеушімен і&amp;нтеграция:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="934"/>
         <source>Templates</source>
-        <translation type="unfinished"></translation>
+        <translation>Үлгілер</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="940"/>
         <source>Show only user defined templates in menu</source>
-        <translation type="unfinished"></translation>
+        <translation>Мәзірде тек пайдаланушы анықтаған үлгілерді көрсету</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="947"/>
         <source>Show only one template for each MIME type</source>
-        <translation type="unfinished"></translation>
+        <translation>Әр MIME түрі үшін тек бір үлгіні көрсету</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="954"/>
         <source>Run default application after creation from template</source>
-        <translation type="unfinished"></translation>
+        <translation>Үлгіден жасағаннан кейін әдепкі қолданбаны іске қосу</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="395"/>
         <source>Use SI decimal prefixes instead of IEC binary prefixes</source>
-        <translation type="unfinished"></translation>
+        <translation>IEC екілік префикстерінің орнына SI ондық префикстерін пайдалану</translation>
     </message>
 </context>
 <context>
@@ -2550,28 +2564,28 @@ lxsudo dbus-run-session -- %s</source>
         <location filename="../bulkrename.cpp" line="247"/>
         <location filename="../bulkrename.cpp" line="288"/>
         <source>Renaming files...</source>
-        <translation type="unfinished"></translation>
+        <translation>Файлдардың атын өзгерту...</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="185"/>
         <location filename="../bulkrename.cpp" line="247"/>
         <location filename="../bulkrename.cpp" line="288"/>
         <source>Abort</source>
-        <translation type="unfinished"></translation>
+        <translation>Тоқтату</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="194"/>
         <location filename="../bulkrename.cpp" line="254"/>
         <location filename="../bulkrename.cpp" line="295"/>
         <source>Warning</source>
-        <translation type="unfinished"></translation>
+        <translation>Ескерту</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="194"/>
         <location filename="../bulkrename.cpp" line="254"/>
         <location filename="../bulkrename.cpp" line="295"/>
         <source>Renaming is aborted.</source>
-        <translation type="unfinished"></translation>
+        <translation>Атын өзгерту тоқтатылды.</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="220"/>
@@ -2591,29 +2605,29 @@ lxsudo dbus-run-session -- %s</source>
         <location filename="../bulkrename.cpp" line="277"/>
         <location filename="../bulkrename.cpp" line="318"/>
         <source>No file could be renamed.</source>
-        <translation type="unfinished"></translation>
+        <translation>Бірде-бір файлдың атын өзгерту мүмкін болмады.</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="224"/>
         <location filename="../bulkrename.cpp" line="281"/>
         <location filename="../bulkrename.cpp" line="322"/>
         <source>Some files could not be renamed.</source>
-        <translation type="unfinished"></translation>
+        <translation>Кейбір файлдардың атын өзгерту мүмкін болмады.</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="234"/>
         <source>Nothing to find.</source>
-        <translation type="unfinished"></translation>
+        <translation>Табатын ештеңе жоқ.</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="243"/>
         <source>Invalid regular expression.</source>
-        <translation type="unfinished"></translation>
+        <translation>Тұрақты өрнек қате.</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="1151"/>
         <source>Cannot open as Admin.</source>
-        <translation type="unfinished"></translation>
+        <translation>Әкімші ретінде ашу мүмкін емес.</translation>
     </message>
 </context>
 </TS>
