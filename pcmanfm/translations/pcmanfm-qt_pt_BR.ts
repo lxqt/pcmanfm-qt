@@ -357,7 +357,7 @@ Examples: AudioVideo, Audio, Video, Development, Education, Game, Graphics, Netw
 
 Isso é necessário apenas quando você deseja usar o arquivo criado no menu principal. Caso contrário, você pode deixá-lo vazio.
 
-Exemplos: Áudio e Vídeo, Áudio, Vídeo, Desenvolvimento, Educação, Jogo, Gráficos, Rede, Escritório, Configurações, Sistema, Utilitário, Qt.</translation>
+Exemplos: AudioVideo, Audio, Video, Development, Education, Game, Graphics, Network, Office, Settings, System, Utility, Qt.</translation>
     </message>
 </context>
 <context>

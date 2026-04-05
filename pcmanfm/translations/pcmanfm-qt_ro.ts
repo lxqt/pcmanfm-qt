@@ -72,12 +72,12 @@ Foundation Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, SUA.</t
     <message>
         <location filename="../about.ui" line="58"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/lxqt/pcmanfm-qt&quot;&gt;https://github.com/lxqt/pcmanfm-qt&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/lxqt/pcmanfm-qt&quot;&gt;https://github.com/lxqt/pcmanfm-qt&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../about.ui" line="74"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Wiki: &lt;a href=&quot;https://github.com/lxqt/pcmanfm-qt/wiki&quot;&gt;https://github.com/lxqt/pcmanfm-qt/wiki&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Wiki: &lt;a href=&quot;https://github.com/lxqt/pcmanfm-qt/wiki&quot;&gt;https://github.com/lxqt/pcmanfm-qt/wiki&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../about.ui" line="135"/>
@@ -123,7 +123,7 @@ Foundation Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, SUA.</t
     <message>
         <location filename="../bulk-rename.ui" line="12"/>
         <source>Serial Renaming</source>
-        <translation type="unfinished"></translation>
+        <translation>Redenumire în serie</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="36"/>
@@ -133,27 +133,27 @@ Foundation Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, SUA.</t
     <message>
         <location filename="../bulk-rename.ui" line="68"/>
         <source>Pad numbers with zero if possible</source>
-        <translation type="unfinished"></translation>
+        <translation>Dacă este posibil, adaugă zerouri la începutul numerelor</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="75"/>
         <source>Use localized numbers</source>
-        <translation type="unfinished"></translation>
+        <translation>Folosește numere localizate</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="85"/>
         <source>Replacement</source>
-        <translation type="unfinished"></translation>
+        <translation>Substituire</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="97"/>
         <source>Find in names:</source>
-        <translation type="unfinished"></translation>
+        <translation>Caută în nume:</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="107"/>
         <source>Replace with:</source>
-        <translation type="unfinished"></translation>
+        <translation>Substituie cu:</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="117"/>
@@ -163,22 +163,22 @@ Foundation Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, SUA.</t
     <message>
         <location filename="../bulk-rename.ui" line="124"/>
         <source>Regular expression</source>
-        <translation type="unfinished"></translation>
+        <translation>Expresie regulată</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="134"/>
         <source>Change Case</source>
-        <translation type="unfinished"></translation>
+        <translation>Schimbă majuscule/minuscule</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="146"/>
         <source>To upper case</source>
-        <translation type="unfinished"></translation>
+        <translation>În majuscule</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="156"/>
         <source>To lower case</source>
-        <translation type="unfinished"></translation>
+        <translation>În minuscule</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="27"/>
@@ -244,7 +244,7 @@ Foundation Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, SUA.</t
     <message>
         <location filename="../desktopentrydialog.ui" line="45"/>
         <source>Specific name of this launcher.</source>
-        <translation type="unfinished"></translation>
+        <translation>Numele specific al acestui lansator.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="58"/>
@@ -256,7 +256,9 @@ Foundation Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, SUA.</t
         <source>A short description or generic name, like &quot;Web Browser&quot; or &quot;Home Directory&quot;.
 
 It can be left empty.</source>
-        <translation type="unfinished"></translation>
+        <translation>O descriere scurtă sau un nume generic, de exemplu „Browser Web” sau „Director Acasă”.
+
+Poate rămâne necompletat.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="77"/>
@@ -268,7 +270,9 @@ It can be left empty.</source>
         <source>A short comment.
 
 It can be left empty.</source>
-        <translation type="unfinished"></translation>
+        <translation>Un comentariu scurt.
+
+Poate rămâne necompletat.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="117"/>
@@ -289,7 +293,7 @@ It can be left empty.</source>
     <message>
         <location filename="../desktopentrydialog.ui" line="151"/>
         <source>Icon to display in file manager, menus, etc.</source>
-        <translation type="unfinished"></translation>
+        <translation>Pictograma afișată în managerul de fișiere, meniuri, etc.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="173"/>
@@ -305,7 +309,7 @@ It can be left empty.</source>
     <message>
         <location filename="../desktopentrydialog.ui" line="186"/>
         <source>Whether the launched program should run in a terminal window.</source>
-        <translation type="unfinished"></translation>
+        <translation>Dacă programul rulat ar trebui să ruleze într-o fereastră de terminal.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="190"/>
@@ -325,7 +329,7 @@ It can be left empty.</source>
     <message>
         <location filename="../desktopentrydialog.ui" line="210"/>
         <source>Whether this is a link or executes a command.</source>
-        <translation type="unfinished"></translation>
+        <translation>Dacă acesta este un link sau execută o comandă.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="214"/>
@@ -340,7 +344,7 @@ It can be left empty.</source>
     <message>
         <location filename="../desktopentrydialog.ui" line="96"/>
         <source>Categories:</source>
-        <translation type="unfinished"></translation>
+        <translation>Categorii:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="103"/>
@@ -349,7 +353,11 @@ It can be left empty.</source>
 It is needed only when you want to use the created file in the main menu. Otherwise, you could leave it empty.
 
 Examples: AudioVideo, Audio, Video, Development, Education, Game, Graphics, Network, Office, Settings, System, Utility, Qt.</source>
-        <translation type="unfinished"></translation>
+        <translation>Categoriile separate prin punct și virgulă în care lansatorul ar trebui să fie afișat dacă este utilizat de meniul principal al DE (de exemplu, când este introdus în ~/.local/share/applications).
+
+Este necesar doar atunci când doriți să utilizați fișierul creat în meniul principal. Altfel, ar putea fi lăsat necompletat.
+
+Exemple: AudioVideo, Audio, Video, Development, Education, Game, Graphics, Network, Office, Settings, System, Utility, Qt.</translation>
     </message>
 </context>
 <context>
@@ -508,7 +516,7 @@ Un spațiu este rezervat și pentru 3 rânduri de text.</translation>
     <message>
         <location filename="../desktop-preferences.ui" line="230"/>
         <source>Margins of work area:</source>
-        <translation type="unfinished"></translation>
+        <translation>Marginile spațiului de lucru:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="303"/>
@@ -525,7 +533,7 @@ sunt apăsate stânga, chiar și atunci când nu este managerul de fișiere impl
     <message>
         <location filename="../desktop-preferences.ui" line="314"/>
         <source>Make all items stick to their positions</source>
-        <translation type="unfinished"></translation>
+        <translation>Fixează toate elementele în pozițiile lor</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="373"/>
@@ -658,7 +666,7 @@ sunt apăsate stânga, chiar și atunci când nu este managerul de fișiere impl
     <message>
         <location filename="../shortcuts.ui" line="34"/>
         <source>Focus view, clear filter bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Șterge orice filtru, revino la afișarea inițială</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="39"/>
@@ -668,7 +676,7 @@ sunt apăsate stânga, chiar și atunci când nu este managerul de fișiere impl
     <message>
         <location filename="../shortcuts.ui" line="42"/>
         <source>Focus side-pane</source>
-        <translation type="unfinished"></translation>
+        <translation>Focalizează panoul lateral</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="47"/>
@@ -679,7 +687,7 @@ sunt apăsate stânga, chiar și atunci când nu este managerul de fișiere impl
         <location filename="../shortcuts.ui" line="50"/>
         <location filename="../shortcuts.ui" line="58"/>
         <source>Focus path entry</source>
-        <translation type="unfinished"></translation>
+        <translation>Focalizează bara de cale</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="55"/>
@@ -805,7 +813,7 @@ sunt apăsate stânga, chiar și atunci când nu este managerul de fișiere impl
     <message>
         <location filename="../main-win.ui" line="81"/>
         <source>Recent F&amp;iles</source>
-        <translation type="unfinished"></translation>
+        <translation>Fisiere recente</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="143"/>
@@ -815,7 +823,7 @@ sunt apăsate stânga, chiar și atunci când nu este managerul de fișiere impl
     <message>
         <location filename="../main-win.ui" line="150"/>
         <source>Path &amp;Bar</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Bară de cale</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="157"/>
@@ -945,7 +953,7 @@ sunt apăsate stânga, chiar și atunci când nu este managerul de fișiere impl
     <message>
         <location filename="../main-win.ui" line="436"/>
         <source>Ctrl+Shift+1</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+1</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="444"/>
@@ -955,7 +963,7 @@ sunt apăsate stânga, chiar și atunci când nu este managerul de fișiere impl
     <message>
         <location filename="../main-win.ui" line="447"/>
         <source>Ctrl+Shift+3</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+3</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="455"/>
@@ -965,7 +973,7 @@ sunt apăsate stânga, chiar și atunci când nu este managerul de fișiere impl
     <message>
         <location filename="../main-win.ui" line="458"/>
         <source>Ctrl+Shift+4</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+4</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="466"/>
@@ -975,7 +983,7 @@ sunt apăsate stânga, chiar și atunci când nu este managerul de fișiere impl
     <message>
         <location filename="../main-win.ui" line="469"/>
         <source>Ctrl+Shift+2</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+2</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="478"/>
@@ -1020,12 +1028,12 @@ sunt apăsate stânga, chiar și atunci când nu este managerul de fișiere impl
     <message>
         <location filename="../main-win.ui" line="522"/>
         <source>De&amp;select All</source>
-        <translation type="unfinished"></translation>
+        <translation>De&amp;selecteaza tot</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="525"/>
         <source>Ctrl+D</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+D</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="530"/>
@@ -1090,7 +1098,7 @@ sunt apăsate stânga, chiar și atunci când nu este managerul de fișiere impl
     <message>
         <location filename="../main-win.ui" line="939"/>
         <source>Shift+F2</source>
-        <translation type="unfinished"></translation>
+        <translation>Shift+F2</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="1027"/>
@@ -1100,7 +1108,7 @@ sunt apăsate stânga, chiar și atunci când nu este managerul de fișiere impl
     <message>
         <location filename="../main-win.ui" line="1032"/>
         <source>&amp;Go to Source of Inherited Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Du-te la Sursa Sirurilor Inheritate</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="1037"/>
@@ -1657,7 +1665,7 @@ sunt apăsate stânga, chiar și atunci când nu este managerul de fișiere impl
     <message>
         <location filename="../desktopentrydialog.cpp" line="36"/>
         <source>The command to execute.</source>
-        <translation type="unfinished"></translation>
+        <translation>Comanda de executat.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="39"/>
@@ -1667,7 +1675,7 @@ sunt apăsate stânga, chiar și atunci când nu este managerul de fișiere impl
     <message>
         <location filename="../desktopentrydialog.cpp" line="40"/>
         <source>The URL to access.</source>
-        <translation type="unfinished"></translation>
+        <translation>URL-ul de accesat.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="67"/>
@@ -1715,7 +1723,7 @@ sunt apăsate stânga, chiar și atunci când nu este managerul de fișiere impl
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="59"/>
         <source>Tile the image to fill the entire screen</source>
-        <translation type="unfinished"></translation>
+        <translation>Repetă imaginea pentru a umple întreg ecranul</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="60"/>
@@ -1905,12 +1913,12 @@ Ar putea fi utile dacă acele foldere sunt create din nou.</translation>
     <message>
         <location filename="../preferencesdialog.cpp" line="314"/>
         <source>Remove if added by user</source>
-        <translation type="unfinished"></translation>
+        <translation>Elimină dacă este adăugat de utilizator</translation>
     </message>
     <message>
         <location filename="../preferencesdialog.cpp" line="338"/>
         <source>Open user-defined list</source>
-        <translation type="unfinished"></translation>
+        <translation>Deschide lista definită de utilizator</translation>
     </message>
 </context>
 <context>
@@ -1918,12 +1926,12 @@ Ar putea fi utile dacă acele foldere sunt create din nou.</translation>
     <message>
         <location filename="../tabpage.cpp" line="452"/>
         <source>Search Results</source>
-        <translation type="unfinished"></translation>
+        <translation>Rezultatele căutarii</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="455"/>
         <source>Applications</source>
-        <translation type="unfinished"></translation>
+        <translation>Aplicații</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="459"/>
@@ -1968,9 +1976,9 @@ Ar putea fi utile dacă acele foldere sunt create din nou.</translation>
         <location filename="../tabpage.cpp" line="591"/>
         <source> (%n hidden)</source>
         <translation>
-            <numerusform> %n ascuns</numerusform>
-            <numerusform> %n ascunse</numerusform>
-            <numerusform> %n ascunse</numerusform>
+            <numerusform> (%n ascuns)</numerusform>
+            <numerusform> (%n ascunse)</numerusform>
+            <numerusform> (%n ascunse)</numerusform>
         </translation>
     </message>
     <message>
@@ -2001,20 +2009,20 @@ Ar putea fi utile dacă acele foldere sunt create din nou.</translation>
         <location filename="../view.cpp" line="60"/>
         <source>Do you want to open these %1 files?</source>
         <translation>
-            <numerusform>Doriși să deschideți acest %1 fișier?</numerusform>
-            <numerusform>Doriși să deschideți aceste %1 fișiere?</numerusform>
-            <numerusform>Doriși să deschideți aceste %1 fișiere?</numerusform>
+            <numerusform>Doriți să deschideți acest %1 fișier?</numerusform>
+            <numerusform>Doriți să deschideți aceste %1 fișiere?</numerusform>
+            <numerusform>Doriți să deschideți aceste %1 fișiere?</numerusform>
         </translation>
     </message>
     <message>
         <location filename="../view.cpp" line="133"/>
         <source>Open in New T&amp;ab</source>
-        <translation>Deschide în Filă N&amp;ouă</translation>
+        <translation>Deschide într-o filă n&amp;ouă</translation>
     </message>
     <message>
         <location filename="../view.cpp" line="137"/>
         <source>Open in New Win&amp;dow</source>
-        <translation>Deschide în fereastră No&amp;uă</translation>
+        <translation>Deschide într-o fereastră no&amp;uă</translation>
     </message>
     <message>
         <location filename="../view.cpp" line="145"/>
@@ -2025,12 +2033,12 @@ Ar putea fi utile dacă acele foldere sunt create din nou.</translation>
     <message>
         <location filename="../view.cpp" line="160"/>
         <source>Show in New T&amp;ab</source>
-        <translation type="unfinished"></translation>
+        <translation>Afișează într-o filă n&amp;ouă</translation>
     </message>
     <message>
         <location filename="../view.cpp" line="164"/>
         <source>Show in New Win&amp;dow</source>
-        <translation type="unfinished"></translation>
+        <translation>Afișează într-o fereastră no&amp;uă</translation>
     </message>
 </context>
 <context>
@@ -2089,128 +2097,128 @@ Ar putea fi utile dacă acele foldere sunt create din nou.</translation>
     <message>
         <location filename="../preferences.ui" line="362"/>
         <source>Size of thumbnails:</source>
-        <translation type="unfinished"></translation>
+        <translation>Mărimea miniaturilor:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="376"/>
         <source>Size of side pane icons:</source>
-        <translation type="unfinished"></translation>
+        <translation>Mărimea pictogramelor din panoul lateral:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="308"/>
         <source>Icon theme:</source>
-        <translation type="unfinished"></translation>
+        <translation>Tema pictogramelor:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="546"/>
         <source>Window</source>
-        <translation type="unfinished"></translation>
+        <translation>Fereastră</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="559"/>
         <source>Always show the tab bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Arată mereu bara de file</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="566"/>
         <source>Show &apos;Close&apos; buttons on tabs	</source>
-        <translation type="unfinished"></translation>
+        <translation>Arată butonul de închidere pe file	</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="580"/>
         <source>Remember the size of the last closed window</source>
-        <translation type="unfinished"></translation>
+        <translation>Reține mărimea ultimei ferestre închise</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="587"/>
         <source>Default width of new windows:</source>
-        <translation type="unfinished"></translation>
+        <translation>Lățimea implicită a ferestrelor noi:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="601"/>
         <source>Default height of new windows:</source>
-        <translation type="unfinished"></translation>
+        <translation>Înălțimea implicită a ferestrelor noi:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="81"/>
         <source>Browsing</source>
-        <translation type="unfinished"></translation>
+        <translation>Navigare</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="93"/>
         <source>Open files with single click</source>
-        <translation type="unfinished"></translation>
+        <translation>Deschide fișierele cu un singur click</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="162"/>
         <source>Default view mode:</source>
-        <translation type="unfinished"></translation>
+        <translation>Mod de vizualizare implicit:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="119"/>
         <source> sec</source>
-        <translation type="unfinished"></translation>
+        <translation> s</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="175"/>
         <source>File Operations</source>
-        <translation type="unfinished"></translation>
+        <translation>Operații cu fișiere</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="181"/>
         <source>Confirm before deleting files</source>
-        <translation type="unfinished"></translation>
+        <translation>Confirmă înaintea ștergerii fișierelor</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="188"/>
         <source>Move deleted files to &quot;trash bin&quot; instead of erasing from disk.</source>
-        <translation type="unfinished"></translation>
+        <translation>Mută fișierele șterse în „coșul de gunoi” în loc să le ștergi de pe disc.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="651"/>
         <source>Show thumbnails of files</source>
-        <translation type="unfinished"></translation>
+        <translation>Arată miniaturile fișierelor</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="658"/>
         <source>Only show thumbnails for local files</source>
-        <translation type="unfinished"></translation>
+        <translation>Arată miniaturile doar pentru fișierele locale</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="40"/>
         <source>Display</source>
-        <translation type="unfinished"></translation>
+        <translation>Afișare</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="90"/>
         <source>If this is unchecked, the DE setting will be used.</source>
-        <translation type="unfinished"></translation>
+        <translation>Dacă această casetă este debifată, va fi folosită setarea DE.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="103"/>
         <location filename="../preferences.ui" line="116"/>
         <source>Set to zero to disable auto-selection.</source>
-        <translation type="unfinished"></translation>
+        <translation>Setați la zero pentru a dezactiva selectarea automată.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="106"/>
         <source>Delay of auto-selection in single click mode:</source>
-        <translation type="unfinished"></translation>
+        <translation>Întârzierea selecției în modul cu un singur click:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="144"/>
         <source>Open in current tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Deschide în fila curentă</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="149"/>
         <source>Open in new tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Deschide într-o filă nouă</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="154"/>
         <source>Open in new window</source>
-        <translation type="unfinished"></translation>
+        <translation>Deschide într-o fereastră nouă</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="195"/>

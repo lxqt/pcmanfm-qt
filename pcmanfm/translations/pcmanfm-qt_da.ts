@@ -123,7 +123,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.</
     <message>
         <location filename="../bulk-rename.ui" line="12"/>
         <source>Serial Renaming</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Batch-omdøbning</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="36"/>
@@ -2376,7 +2376,7 @@ En værdi på -1 betyder, at der ikke er nogen grænse for filstørrelsen (stand
     <message>
         <location filename="../preferences.ui" line="833"/>
         <source>Terminal emulator</source>
-        <translation type="unfinished">Terminal emulator</translation>
+        <translation>Terminal emulator</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="842"/>
@@ -2400,7 +2400,7 @@ Det er navnet på den eksekverbare fil.</translation>
         <source>Example: -e
 It can be left empty if the terminal is already supported
 or does not have such an option; required otherwise.</source>
-        <translation type="unfinished">Eksempel: -e
+        <translation>Eksempel: -e
 Det kan stå tomt, hvis terminalen allerede understøttes
 eller ikke har en sådan mulighed; ellers kræves det.</translation>
     </message>

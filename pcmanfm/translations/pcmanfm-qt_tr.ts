@@ -358,7 +358,7 @@ Examples: AudioVideo, Audio, Video, Development, Education, Game, Graphics, Netw
 
  Yalnızca ana menüde oluşturulan dosyayı kullanmak istediğinizde gereklidir. Aksi takdirde boş bırakabilirsiniz.
 
- Örnekler: Sesli Video, Ses, Video, Geliştirme, Eğitim, Oyun, Grafik, İnternet, Ofis, Ayarlar, Sistem, Çeşitli, Qt.</translation>
+ Örnekler: AudioVideo, Audio, Video, Development, Education, Game, Graphics, Network, Office, Settings, System, Utility, Qt.</translation>
     </message>
 </context>
 <context>
