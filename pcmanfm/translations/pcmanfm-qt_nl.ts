@@ -356,7 +356,7 @@ Examples: AudioVideo, Audio, Video, Development, Education, Game, Graphics, Netw
 
 Let op: dit alléén nodig als je het item in het hoofdmenu wilt. Je mag het veld ook leeg laten..
 
-Voorbeelden: AudioVideo;Audio;Video;Ontwikkeling;Onderwijs;Spellen;Grafisch;Netwerk;Kantoor;Instellingen;Systeem;Hulpmiddelen;Qt.</translation>
+Voorbeelden: AudioVideo;Audio;Video;Development;Education;Game;Graphics;Network;Office;Settings;System;Utility;Qt.</translation>
     </message>
 </context>
 <context>
@@ -1959,7 +1959,7 @@ Ze kunnen van pas komen als u ze opnieuw aanmaakt.</translation>
     <message>
         <location filename="../tabpage.cpp" line="572"/>
         <source>Free space: %1 (Total: %2)</source>
-        <translation>Vrije ruimte: %1 (totaal&#xa0;: %2)</translation>
+        <translation>Vrije ruimte: %1 (totaal : %2)</translation>
     </message>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="589"/>

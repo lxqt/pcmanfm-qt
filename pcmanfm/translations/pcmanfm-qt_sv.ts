@@ -357,7 +357,7 @@ Examples: AudioVideo, Audio, Video, Development, Education, Game, Graphics, Netw
 
 Det behövs bara när du vill använda den skapade filen i huvudmenyn. Annars kan du lämna den tom.
 
-Exempel: Ljudvideo, Ljud, Video, Utveckling, Utbildning, Spel, Grafik, Nätverk, Kontor, Inställningar, System, Verktyg, Qt.</translation>
+Exempel: AudioVideo, Audio, Video, Development, Education, Game, Graphics, Network, Office, Settings, System, Utility, Qt.</translation>
     </message>
 </context>
 <context>
