@@ -1549,6 +1549,8 @@ numatytoji failų tvarkytuvė.</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="205"/>
+        <location filename="../application.cpp" line="205"/>
+        <location filename="../application.cpp" line="220"/>
         <location filename="../application.cpp" line="220"/>
         <source>NAME</source>
         <translation>PAVADINIMAS</translation>
@@ -1925,47 +1927,47 @@ Jie gali praversti tuo atveju, jeigu aplankai bus sukurti iš naujo.</translatio
 <context>
     <name>PCManFM::TabPage</name>
     <message>
-        <location filename="../tabpage.cpp" line="452"/>
+        <location filename="../tabpage.cpp" line="453"/>
         <source>Search Results</source>
         <translation>Paieškos rezultatai</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="455"/>
+        <location filename="../tabpage.cpp" line="456"/>
         <source>Applications</source>
         <translation>Programos</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="459"/>
+        <location filename="../tabpage.cpp" line="460"/>
         <source>Computer</source>
         <translation>Kompiuteris</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="462"/>
+        <location filename="../tabpage.cpp" line="463"/>
         <source>Network</source>
         <translation>Tinklas</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="465"/>
+        <location filename="../tabpage.cpp" line="466"/>
         <source>Trash</source>
         <translation>Šiukšlinė</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="471"/>
+        <location filename="../tabpage.cpp" line="472"/>
         <source>Desktop</source>
         <translation>Darbalaukis</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="563"/>
+        <location filename="../tabpage.cpp" line="564"/>
         <source>Error</source>
         <translation>Klaida</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="572"/>
+        <location filename="../tabpage.cpp" line="573"/>
         <source>Free space: %1 (Total: %2)</source>
         <translation>Laisva vieta: %1 (Viso: %2)</translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="589"/>
+        <location filename="../tabpage.cpp" line="590"/>
         <source>%n item(s)</source>
         <translation>
             <numerusform>%n elementas</numerusform>
@@ -1974,7 +1976,7 @@ Jie gali praversti tuo atveju, jeigu aplankai bus sukurti iš naujo.</translatio
         </translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="591"/>
+        <location filename="../tabpage.cpp" line="592"/>
         <source> (%n hidden)</source>
         <translation>
             <numerusform> (%n paslėptas)</numerusform>
@@ -1983,14 +1985,14 @@ Jie gali praversti tuo atveju, jeigu aplankai bus sukurti iš naujo.</translatio
         </translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="596"/>
-        <location filename="../tabpage.cpp" line="797"/>
-        <location filename="../tabpage.cpp" line="811"/>
+        <location filename="../tabpage.cpp" line="597"/>
+        <location filename="../tabpage.cpp" line="798"/>
+        <location filename="../tabpage.cpp" line="812"/>
         <source>Link to</source>
         <translation>Nuoroda į</translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="823"/>
+        <location filename="../tabpage.cpp" line="824"/>
         <source>%n item(s) selected</source>
         <translation>
             <numerusform>Pažymėtas %n elementas</numerusform>
@@ -2603,7 +2605,7 @@ lxsudo dbus-run-session -- %s</translation>
         <location filename="../bulkrename.cpp" line="281"/>
         <location filename="../bulkrename.cpp" line="318"/>
         <location filename="../bulkrename.cpp" line="322"/>
-        <location filename="../tabpage.cpp" line="1151"/>
+        <location filename="../tabpage.cpp" line="1152"/>
         <source>Error</source>
         <translation>Klaida</translation>
     </message>
@@ -2632,7 +2634,7 @@ lxsudo dbus-run-session -- %s</translation>
         <translation>Neteisingas reguliarusis reiškinys.</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="1151"/>
+        <location filename="../tabpage.cpp" line="1152"/>
         <source>Cannot open as Admin.</source>
         <translation>Nepavyko atverti administratoriaus teisėmis.</translation>
     </message>
