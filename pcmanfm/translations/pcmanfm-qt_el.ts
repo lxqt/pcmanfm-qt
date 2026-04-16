@@ -834,7 +834,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="294"/>
         <source>Go Up</source>
-        <translation>Μετάβαση πάνω</translation>
+        <translation>Μετάβαση&#xa0;πάνω</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="297"/>
@@ -1549,6 +1549,8 @@ are left clicked, even when it is not the default file manager.</source>
     </message>
     <message>
         <location filename="../application.cpp" line="205"/>
+        <location filename="../application.cpp" line="205"/>
+        <location filename="../application.cpp" line="220"/>
         <location filename="../application.cpp" line="220"/>
         <source>NAME</source>
         <translation>ΟΝΟΜΑ</translation>
@@ -1924,47 +1926,47 @@ They might be useful if those folders are created again.</source>
 <context>
     <name>PCManFM::TabPage</name>
     <message>
-        <location filename="../tabpage.cpp" line="452"/>
+        <location filename="../tabpage.cpp" line="453"/>
         <source>Search Results</source>
         <translation>Αποτελέσματα αναζήτησης</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="455"/>
+        <location filename="../tabpage.cpp" line="456"/>
         <source>Applications</source>
         <translation>Εφαρμογές</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="459"/>
+        <location filename="../tabpage.cpp" line="460"/>
         <source>Computer</source>
         <translation>Υπολογιστής</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="462"/>
+        <location filename="../tabpage.cpp" line="463"/>
         <source>Network</source>
         <translation>Δίκτυο</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="465"/>
+        <location filename="../tabpage.cpp" line="466"/>
         <source>Trash</source>
         <translation>Απορρίμματα</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="471"/>
+        <location filename="../tabpage.cpp" line="472"/>
         <source>Desktop</source>
         <translation>Επιφάνεια εργασίας</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="563"/>
+        <location filename="../tabpage.cpp" line="564"/>
         <source>Error</source>
         <translation>Σφάλμα</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="572"/>
+        <location filename="../tabpage.cpp" line="573"/>
         <source>Free space: %1 (Total: %2)</source>
         <translation>Ελεύθερος χώρος: %1 (Σύνολο: %2)</translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="589"/>
+        <location filename="../tabpage.cpp" line="590"/>
         <source>%n item(s)</source>
         <translation>
             <numerusform>%n αντικείμενο</numerusform>
@@ -1972,7 +1974,7 @@ They might be useful if those folders are created again.</source>
         </translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="591"/>
+        <location filename="../tabpage.cpp" line="592"/>
         <source> (%n hidden)</source>
         <translation>
             <numerusform> (%n κρυφό)</numerusform>
@@ -1980,14 +1982,14 @@ They might be useful if those folders are created again.</source>
         </translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="596"/>
-        <location filename="../tabpage.cpp" line="797"/>
-        <location filename="../tabpage.cpp" line="811"/>
+        <location filename="../tabpage.cpp" line="597"/>
+        <location filename="../tabpage.cpp" line="798"/>
+        <location filename="../tabpage.cpp" line="812"/>
         <source>Link to</source>
         <translation>Δεσμός σε</translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="823"/>
+        <location filename="../tabpage.cpp" line="824"/>
         <source>%n item(s) selected</source>
         <translation>
             <numerusform>%n επιλεγμένο αντικείμενο</numerusform>
@@ -2412,7 +2414,7 @@ or does not have such an option; required otherwise.</source>
         <location filename="../preferences.ui" line="886"/>
         <source>This is optional, depends on the terminal,
 and can be any group of custom options.</source>
-        <translation>Είναι προαιρετικό και εξαρτάται από το τερματικό, και μπορεί να είναι οποιαδήποτε ομάδα προσαρμοσμένων ορισμάτων.</translation>
+        <translation>Είναι προαιρετικό και εξαρτάται από το τερματικό,&#x2028;και μπορεί να είναι οποιαδήποτε ομάδα προσαρμοσμένων ορισμάτων.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="964"/>
@@ -2596,7 +2598,7 @@ lxsudo dbus-run-session -- %s</translation>
         <location filename="../bulkrename.cpp" line="281"/>
         <location filename="../bulkrename.cpp" line="318"/>
         <location filename="../bulkrename.cpp" line="322"/>
-        <location filename="../tabpage.cpp" line="1151"/>
+        <location filename="../tabpage.cpp" line="1152"/>
         <source>Error</source>
         <translation>Σφάλμα</translation>
     </message>
@@ -2625,7 +2627,7 @@ lxsudo dbus-run-session -- %s</translation>
         <translation>Μη έγκυρη κανονική έκφραση.</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="1151"/>
+        <location filename="../tabpage.cpp" line="1152"/>
         <source>Cannot open as Admin.</source>
         <translation>Αδυναμία ανοίγματος ως Διαχειριστής.</translation>
     </message>

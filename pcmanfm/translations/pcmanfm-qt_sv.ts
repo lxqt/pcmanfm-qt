@@ -1548,6 +1548,8 @@ vänsterklickas, även när den inte är standard filhanterare.</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="205"/>
+        <location filename="../application.cpp" line="205"/>
+        <location filename="../application.cpp" line="220"/>
         <location filename="../application.cpp" line="220"/>
         <source>NAME</source>
         <translation>NAMN</translation>
@@ -1923,47 +1925,47 @@ Det kan vara bra att behålla dom om mapparna återskapas.</translation>
 <context>
     <name>PCManFM::TabPage</name>
     <message>
-        <location filename="../tabpage.cpp" line="452"/>
+        <location filename="../tabpage.cpp" line="453"/>
         <source>Search Results</source>
         <translation>Sökresultat</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="455"/>
+        <location filename="../tabpage.cpp" line="456"/>
         <source>Applications</source>
         <translation>Program</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="459"/>
+        <location filename="../tabpage.cpp" line="460"/>
         <source>Computer</source>
         <translation>Dator</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="462"/>
+        <location filename="../tabpage.cpp" line="463"/>
         <source>Network</source>
         <translation>Nätverk</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="465"/>
+        <location filename="../tabpage.cpp" line="466"/>
         <source>Trash</source>
         <translation>Papperskorgen</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="471"/>
+        <location filename="../tabpage.cpp" line="472"/>
         <source>Desktop</source>
         <translation>Skrivbord</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="563"/>
+        <location filename="../tabpage.cpp" line="564"/>
         <source>Error</source>
         <translation>Fel</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="572"/>
+        <location filename="../tabpage.cpp" line="573"/>
         <source>Free space: %1 (Total: %2)</source>
         <translation>Ledigt utrymme: %1 (totalt:%2)</translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="589"/>
+        <location filename="../tabpage.cpp" line="590"/>
         <source>%n item(s)</source>
         <translation>
             <numerusform>%n objekt</numerusform>
@@ -1971,7 +1973,7 @@ Det kan vara bra att behålla dom om mapparna återskapas.</translation>
         </translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="591"/>
+        <location filename="../tabpage.cpp" line="592"/>
         <source> (%n hidden)</source>
         <translation>
             <numerusform> (%n dold)</numerusform>
@@ -1979,14 +1981,14 @@ Det kan vara bra att behålla dom om mapparna återskapas.</translation>
         </translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="596"/>
-        <location filename="../tabpage.cpp" line="797"/>
-        <location filename="../tabpage.cpp" line="811"/>
+        <location filename="../tabpage.cpp" line="597"/>
+        <location filename="../tabpage.cpp" line="798"/>
+        <location filename="../tabpage.cpp" line="812"/>
         <source>Link to</source>
         <translation>Länk till</translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="823"/>
+        <location filename="../tabpage.cpp" line="824"/>
         <source>%n item(s) selected</source>
         <translation>
             <numerusform>%n objekt vald</numerusform>
@@ -2596,7 +2598,7 @@ lxsudo dbus-run-session -- %s</translation>
         <location filename="../bulkrename.cpp" line="281"/>
         <location filename="../bulkrename.cpp" line="318"/>
         <location filename="../bulkrename.cpp" line="322"/>
-        <location filename="../tabpage.cpp" line="1151"/>
+        <location filename="../tabpage.cpp" line="1152"/>
         <source>Error</source>
         <translation>Fel</translation>
     </message>
@@ -2625,7 +2627,7 @@ lxsudo dbus-run-session -- %s</translation>
         <translation>Ogiltigt reguljärt uttryck.</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="1151"/>
+        <location filename="../tabpage.cpp" line="1152"/>
         <source>Cannot open as Admin.</source>
         <translation>Kunde inte öppna som Admin.</translation>
     </message>
