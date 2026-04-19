@@ -128,12 +128,14 @@ void TabBar::mouseReleaseEvent(QMouseEvent *event) {
         dragStartPosition_ = QPoint();
     }
 
+#if (QT_VERSION < QT_VERSION_CHECK(6,11,0))
     if (event->button() == Qt::MiddleButton) {
         int index = tabAt(event->pos());
         if (index != -1) {
             Q_EMIT tabCloseRequested(index);
         }
     }
+#endif
     QTabBar::mouseReleaseEvent(event);
 }
 
