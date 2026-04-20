@@ -4,3 +4,4 @@ Exec=pcmanfm-qt --desktop-pref=general
 Icon=user-desktop
 Categories=Settings;Qt;DesktopSettings;
 StartupNotify=true
+OnlyShowIn=LXQt;
