@@ -1,3 +1,10 @@
+pcmanfm-qt-2.4.0 / 2026-04-20
+-==============================
+ * Fixed closing tabs by middle clicking with Qt ≥ 6.11.
+ * Removed redundant spacing for filter bar.
+ * Removed redundant .ui <hints> tags.
+ * Consistent visibility of multi-screen desktop items on Wayland.
+
 pcmanfm-qt-2.3.0 / 2025-11-05
 ==============================
  * Fixed removal of shortcut items with multi-screen setups on Wayland.
