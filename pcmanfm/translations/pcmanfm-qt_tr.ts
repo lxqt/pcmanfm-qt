@@ -599,7 +599,7 @@ olarak seçilmese bile sol tıklandığında PCManFM-Qt&apos;de açılır.</tran
     <message>
         <location filename="../desktop-preferences.ui" line="669"/>
         <source>Do not show file tooltips</source>
-        <translation type="unfinished">Dosya araç ipuçlarını gösterme</translation>
+        <translation>Dosya araç ipuçlarını gösterme</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="498"/>

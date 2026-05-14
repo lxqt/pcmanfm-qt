@@ -2526,12 +2526,12 @@ lxsudo dbus-run-session -- %s</translation>
     <message>
         <location filename="../preferences.ui" line="767"/>
         <source>Mount removable media automatically when they are inserted</source>
-        <translation>リムーバブルメディアが接続された際に、自動的にマウントする</translation>
+        <translation>リムーバブルメディアが挿入されたら自動的にマウントする</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="774"/>
         <source>Show available options for removable media when they are inserted</source>
-        <translation>リムーバブルメディアが接続された際に、可能な処理を表示する</translation>
+        <translation>リムーバブルメディアが挿入されたら利用可能なオプションを表示する</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="790"/>

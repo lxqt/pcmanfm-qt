@@ -983,7 +983,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="469"/>
         <source>Ctrl+Shift+2</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+2</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="478"/>
@@ -2371,41 +2371,45 @@ Giá trị -1 có nghĩa là không có giới hạn cho kích thước tập ti
     <message>
         <location filename="../preferences.ui" line="833"/>
         <source>Terminal emulator</source>
-        <translation type="unfinished"></translation>
+        <translation>Trình giả lập giao diện dòng lệnh</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="842"/>
         <source>Command:</source>
-        <translation type="unfinished"></translation>
+        <translation>Câu lệnh:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="849"/>
         <source>Example: qterminal
 It is the name of the executable file.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ví dụ: qterminal
+Đây là tên của tệp tin thực thi.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="860"/>
         <source>Execution option:</source>
-        <translation type="unfinished"></translation>
+        <translation>Tùy chọn thực thi:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="867"/>
         <source>Example: -e
 It can be left empty if the terminal is already supported
 or does not have such an option; required otherwise.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ví dụ: -e
+Có thể để trống nếu như giao diện dòng lệnh đã hỗ trợ sẵn
+hoặc nếu như không có tùy chọn; hoặc có bắt buộc.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="879"/>
         <source>Custom option(s):</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">(Các) tùy chọn được tùy chỉnh:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="886"/>
         <source>This is optional, depends on the terminal,
 and can be any group of custom options.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Đây là tùy chọn thêm, phụ thuộc vào giao diện dòng lệnh,
+và có thể là bất kỳ nhóm của các tùy chọn được tùy chỉnh.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="964"/>
@@ -2516,7 +2520,8 @@ and can be any group of custom options.</source>
         <location filename="../preferences.ui" line="910"/>
         <source>Example:
 lxsudo dbus-run-session -- %s</source>
-        <translation type="unfinished"></translation>
+        <translation>Ví dụ:
+lxsudo dbus-run-session -- %s</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="918"/>
@@ -2609,12 +2614,12 @@ lxsudo dbus-run-session -- %s</source>
     <message>
         <location filename="../bulkrename.cpp" line="234"/>
         <source>Nothing to find.</source>
-        <translation type="unfinished"></translation>
+        <translation>Không có gì để kiếm.</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="243"/>
         <source>Invalid regular expression.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Biểu thức chính quy không hợp lệ.</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="1152"/>
