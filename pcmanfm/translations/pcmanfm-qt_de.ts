@@ -107,7 +107,7 @@ Boston, MA  02110-1301, USA.</translation>
     <message>
         <location filename="../autorun.ui" line="47"/>
         <source>Detecting...</source>
-        <translation>Erkennung läuft...</translation>
+        <translation>Erkennung läuft ...</translation>
     </message>
     <message>
         <location filename="../autorun.ui" line="56"/>
@@ -295,8 +295,7 @@ Kann leer gelassen werden.</translation>
     <message>
         <location filename="../desktopentrydialog.ui" line="151"/>
         <source>Icon to display in file manager, menus, etc.</source>
-        <translation>Icon to display in file manager, menus, etc.
-Symbol um Dateimanager, Menüs, etc. darzustellen.</translation>
+        <translation>Symbol zur Anzeige im Dateimanager, in Menüs usw.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="173"/>
@@ -525,13 +524,13 @@ Zusätzlich wird ein Abstand freigehalten, der drei Textzeilen entspricht.</tran
         <location filename="../desktop-preferences.ui" line="303"/>
         <source>By default, desktop folders will be opened in PCManFM-Qt if they
 are left clicked, even when it is not the default file manager.</source>
-        <translation>Desktopordner werden per Linksklink standardmäßig in PCManFM-Qt 
-geöffnet, selbst wenn dies nicht der Standard-Dateimanager ist.</translation>
+        <translation>Desktop-Ordner werden standardmäßig per Linksklick mit PCManFM-Qt 
+geöffnet, selbst wenn es nicht der Standard-Dateimanager ist.</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="307"/>
         <source>Open desktop folders in default file manager by left clicking</source>
-        <translation>Mit einem Linksklick können sie Desktopordner in ihrem Standard-Dateimanager öffnen</translation>
+        <translation>Desktop-Ordner im Standard-Dateimanager durch einen Linksklick öffnen</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="314"/>
@@ -556,12 +555,12 @@ geöffnet, selbst wenn dies nicht der Standard-Dateimanager ist.</translation>
     <message>
         <location filename="../desktop-preferences.ui" line="473"/>
         <source>Slide Show</source>
-        <translation>Diaschau</translation>
+        <translation>Diashow</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="479"/>
         <source>Enable Slide Show</source>
-        <translation>Diaschau aktivieren</translation>
+        <translation>Diashow aktivieren</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="491"/>
@@ -611,12 +610,12 @@ geöffnet, selbst wenn dies nicht der Standard-Dateimanager ist.</translation>
     <message>
         <location filename="../desktop-preferences.ui" line="587"/>
         <source>Randomize the slide show</source>
-        <translation>Zufällige Diaschau</translation>
+        <translation>Zufällige Diashow</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="620"/>
         <source>Visible Shortcuts</source>
-        <translation>Sichtbare Verknüfungen</translation>
+        <translation>Sichtbare Verknüpfungen</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="626"/>
@@ -753,7 +752,7 @@ geöffnet, selbst wenn dies nicht der Standard-Dateimanager ist.</translation>
     <message>
         <location filename="../shortcuts.ui" line="114"/>
         <source>Go up</source>
-        <translation>Gehe hinauf</translation>
+        <translation>Nach oben</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="119"/>
@@ -798,7 +797,7 @@ geöffnet, selbst wenn dies nicht der Standard-Dateimanager ist.</translation>
     <message>
         <location filename="../shortcuts.ui" line="146"/>
         <source>Copy file on dropping</source>
-        <translation>Datein beim Loslassen kopieren</translation>
+        <translation>Dateien beim Loslassen kopieren</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="154"/>
@@ -1171,7 +1170,7 @@ geöffnet, selbst wenn dies nicht der Standard-Dateimanager ist.</translation>
     <message>
         <location filename="../main-win.ui" line="976"/>
         <source>Ctrl+Shift+C</source>
-        <translation>Strg+Shift+C</translation>
+        <translation>Strg+Umschalt+C</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="987"/>
@@ -1227,12 +1226,12 @@ geöffnet, selbst wenn dies nicht der Standard-Dateimanager ist.</translation>
     <message>
         <location filename="../main-win.ui" line="851"/>
         <source>Close &amp;previous tabs</source>
-        <translation>Schließe &amp;bisherige Tabs</translation>
+        <translation>&amp;Bisherige Tabs schließen</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="860"/>
         <source>Close &amp;next tabs</source>
-        <translation>Schließe &amp;folgende Tabs</translation>
+        <translation>&amp;Folgende Tabs schließen</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="908"/>
@@ -1680,7 +1679,7 @@ geöffnet, selbst wenn dies nicht der Standard-Dateimanager ist.</translation>
     <message>
         <location filename="../desktopentrydialog.cpp" line="40"/>
         <source>The URL to access.</source>
-        <translation>Url, die abgerufen werden soll.</translation>
+        <translation>URL, die abgerufen werden soll.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="67"/>
@@ -1988,7 +1987,7 @@ Sie könnten nützlich sein, wenn diese Ordner erneut erstellt werden.</translat
         <location filename="../tabpage.cpp" line="798"/>
         <location filename="../tabpage.cpp" line="812"/>
         <source>Link to</source>
-        <translation>Verknüpfe mit</translation>
+        <translation>Verknüpfen mit</translation>
     </message>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="824"/>
@@ -2077,7 +2076,7 @@ Sie könnten nützlich sein, wenn diese Ordner erneut erstellt werden.</translat
     <message>
         <location filename="../preferences.ui" line="222"/>
         <source>Select newly created files</source>
-        <translation>Markiere neu erstellte Dateien</translation>
+        <translation>Neu erstellte Dateien auswählen</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="296"/>
@@ -2132,7 +2131,7 @@ Sie könnten nützlich sein, wenn diese Ordner erneut erstellt werden.</translat
     <message>
         <location filename="../preferences.ui" line="566"/>
         <source>Show &apos;Close&apos; buttons on tabs	</source>
-        <translation>&apos;Schließen&apos;-Knopf an Tabs zeigen</translation>
+        <translation>»Schließen«-Knopf auf Tabs zeigen	</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="580"/>
@@ -2172,7 +2171,7 @@ Sie könnten nützlich sein, wenn diese Ordner erneut erstellt werden.</translat
     <message>
         <location filename="../preferences.ui" line="188"/>
         <source>Move deleted files to &quot;trash bin&quot; instead of erasing from disk.</source>
-        <translation>Gelöschte Dateien in den &quot;Papierkorb&quot; verschieben anstatt sie von der Festplatte zu löschen.</translation>
+        <translation>Gelöschte Dateien in den »Papierkorb« verschieben anstatt sie von der Festplatte zu löschen.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="651"/>
@@ -2198,12 +2197,12 @@ Sie könnten nützlich sein, wenn diese Ordner erneut erstellt werden.</translat
         <location filename="../preferences.ui" line="103"/>
         <location filename="../preferences.ui" line="116"/>
         <source>Set to zero to disable auto-selection.</source>
-        <translation>Auf null setzen um automatische Auswahl zu deaktivieren.</translation>
+        <translation>Auf Null setzen, um automatische Auswahl zu deaktivieren.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="106"/>
         <source>Delay of auto-selection in single click mode:</source>
-        <translation>Verzögerung der automatischen Auswahl bei Einfach-Klicks:</translation>
+        <translation>Verzögerung der automatischen Auswahl bei Einzelklicks:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="144"/>
@@ -2255,7 +2254,7 @@ Sie könnten nützlich sein, wenn diese Ordner erneut erstellt werden.</translat
     <message>
         <location filename="../preferences.ui" line="229"/>
         <source>Open folders in new tabs as far as possible</source>
-        <translation>Verzeichnisse, wenn möglich, in neuen Reitern öffnen</translation>
+        <translation>Verzeichnisse in neuen Reitern öffnen, sofern möglich</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="232"/>
@@ -2277,7 +2276,7 @@ Sie könnten nützlich sein, wenn diese Ordner erneut erstellt werden.</translat
         <location filename="../preferences.ui" line="342"/>
         <location filename="../preferences.ui" line="352"/>
         <source>Used by Compact View and Detailed List View</source>
-        <translation>Wird in der Listen- und detaillierten Listenansicht verwendet</translation>
+        <translation>Wird in der Listenansicht und detaillierten Listenansicht verwendet</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="359"/>
@@ -2293,7 +2292,7 @@ Sie könnten nützlich sein, wenn diese Ordner erneut erstellt werden.</translat
     <message>
         <location filename="../preferences.ui" line="402"/>
         <source>Treat backup files as hidden</source>
-        <translation>Sicherungsdateien wie versteckte handhaben</translation>
+        <translation>Sicherungsdateien wie versteckte behandeln</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="422"/>
@@ -2358,7 +2357,7 @@ wenn mehr als einer geöffnet ist.</translation>
 Usually, most image types are supported. The default size limit is 4 MiB.</source>
         <translation>Die eingebaute Miniaturansicht erstellt Bildchen, die von Qt unterstützt werden.
 
-Es werden die meisten Bilddateien unterstützt, bis 4MiB Dateigröße.</translation>
+Es werden die meisten Bilddateien unterstützt, bis 4 MiB Dateigröße.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="670"/>
@@ -2377,7 +2376,7 @@ Es werden die meisten Bilddateien unterstützt, bis 4MiB Dateigröße.</translat
         <source>If existing, external thumbnailers are used for videos, PDF documents, etc.
 
 A value of -1 means that there is no limit for the file size (the default).</source>
-        <translation>Wenn externe Anzeigeprogramme verwendet werden für Videos, PDFs, usw.
+        <translation>Wenn externe Anzeigeprogramme für Videos, PDFs usw. verwendet werden.
 
 Wert -1 bedeutet ohne Größenbegrenzung (als Standard).</translation>
     </message>
@@ -2469,7 +2468,7 @@ Wert -1 bedeutet ohne Größenbegrenzung (als Standard).</translation>
     <message>
         <location filename="../preferences.ui" line="797"/>
         <source>Chan&amp;ge folder in the tab to home folder</source>
-        <translation>Registerkarten des Wechseldatenträgers zum Nutzerverzeichnis &amp;wechseln</translation>
+        <translation>Registerkarten des Wechseldatenträgers zum Benutzerverzeichnis &amp;wechseln</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="833"/>
