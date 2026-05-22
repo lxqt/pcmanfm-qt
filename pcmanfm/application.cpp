@@ -97,6 +97,7 @@ Application::Application(int& argc, char** argv):
     argv_ = argv;
 
     setApplicationVersion(QStringLiteral(PCMANFM_QT_VERSION));
+    setDesktopFileName(QStringLiteral("pcmanfm-qt"));
     setWindowIcon(QIcon::fromTheme(QStringLiteral("pcmanfm-qt")));
 
     underWayland_ = QGuiApplication::platformName() == QStringLiteral("wayland");
