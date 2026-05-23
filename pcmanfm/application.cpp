@@ -677,7 +677,9 @@ void Application::preferences(const QString& page) {
     else {
         preferencesDialog_.data()->selectPage(page);
     }
-    preferencesDialog_.data()->show();
+    QGuiApplication::setDesktopFileName(QStringLiteral("pcmanfm-qt-preferences"));
+	preferencesDialog_.data()->show();
+	QGuiApplication::setDesktopFileName(QStringLiteral("pcmanfm-qt"));
     preferencesDialog_.data()->raise();
     preferencesDialog_.data()->activateWindow();
 }
