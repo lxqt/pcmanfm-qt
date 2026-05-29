@@ -1036,7 +1036,7 @@ PCManFM-Qt에서 열립니다.</translation>
     <message>
         <location filename="../main-win.ui" line="530"/>
         <source>Pr&amp;eferences</source>
-        <translation>기본설정(&amp;E)</translation>
+        <translation>환경설정(&amp;E)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="538"/>
@@ -1542,7 +1542,7 @@ PCManFM-Qt에서 열립니다.</translation>
     <message>
         <location filename="../application.cpp" line="205"/>
         <source>Open desktop preference dialog on the page with the specified name</source>
-        <translation>지정된 이름으로 페이지에서 데스크톱 기본 설정 대화 상자 열기</translation>
+        <translation>지정된 이름으로 페이지에서 데스크톱 환경설정 대화상자 열기</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="205"/>
@@ -1585,7 +1585,7 @@ PCManFM-Qt에서 열립니다.</translation>
     <message>
         <location filename="../application.cpp" line="220"/>
         <source>Open Preferences dialog on the page with the specified name</source>
-        <translation>지정된 이름의 페이지에서 기본설정 대화상자 열기</translation>
+        <translation>지정된 이름의 페이지에서 환경설정 대화상자 열기</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="223"/>
@@ -1804,7 +1804,7 @@ PCManFM-Qt에서 열립니다.</translation>
     <message>
         <location filename="../desktopwindow.cpp" line="1135"/>
         <source>Desktop Preferences</source>
-        <translation>데스크톱 기본설정</translation>
+        <translation>데스크톱 환경설정</translation>
     </message>
 </context>
 <context>
@@ -2036,7 +2036,7 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferences.ui" line="14"/>
         <source>Preferences</source>
-        <translation>기본 설정</translation>
+        <translation>환경설정</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="45"/>
