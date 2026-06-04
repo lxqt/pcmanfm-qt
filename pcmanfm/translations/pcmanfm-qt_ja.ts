@@ -110,7 +110,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../autorun.ui" line="56"/>
         <source>Please select the action you want to perform:</source>
-        <translation>実行させる処理を選んで下さい:</translation>
+        <translation>実行したい処理を選んでください:</translation>
     </message>
 </context>
 <context>
@@ -206,7 +206,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../connect.ui" line="29"/>
         <source>Specify remote folder to connect</source>
-        <translation>接続するリモートフォルダーを指定して下さい</translation>
+        <translation>接続するリモートフォルダーを指定してください</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="36"/>
@@ -484,7 +484,7 @@ Examples: AudioVideo, Audio, Video, Development, Education, Game, Graphics, Netw
     <message>
         <location filename="../desktop-preferences.ui" line="152"/>
         <source>3 px by default.</source>
-        <translation>既定は 3 ピクセルです。</translation>
+        <translation>デフォルトは 3 ピクセルです。</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="155"/>
@@ -505,8 +505,8 @@ Examples: AudioVideo, Audio, Video, Development, Education, Game, Graphics, Netw
         <location filename="../desktop-preferences.ui" line="175"/>
         <source>1 px by default.
 A space is also reserved for 3 lines of text.</source>
-        <translation>既定は 1 ピクセルです。
-また 3 行分のテキストのために間隔が確保されます。</translation>
+        <translation>デフォルトは 1 ピクセルです。
+3 行分のテキストのためのスペースも確保されます。</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="192"/>
@@ -522,13 +522,13 @@ A space is also reserved for 3 lines of text.</source>
         <location filename="../desktop-preferences.ui" line="303"/>
         <source>By default, desktop folders will be opened in PCManFM-Qt if they
 are left clicked, even when it is not the default file manager.</source>
-        <translation>既定では、デスクトップ上のフォルダーは PCManFM-Qt が既定の
-ファイルマネージャーでなくても、左クリックすると PCManFM-Qt で開きます。</translation>
+        <translation>デフォルトでは、デスクトップフォルダーを左クリックすると、
+PCManFM-Qt がデフォルトのファイルマネージャーでなくても PCManFM-Qt で開きます。</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="307"/>
         <source>Open desktop folders in default file manager by left clicking</source>
-        <translation>デスクトップ上のフォルダーを左クリックで開く場合、既定のファイルマネージャーで開く</translation>
+        <translation>デスクトップフォルダーを左クリックするとデフォルトのファイルマネージャーで開く</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="314"/>
@@ -1840,7 +1840,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../mainwindow.cpp" line="777"/>
         <source>This will hide the menu bar completely, use Ctrl+M to show it again.</source>
-        <translation>メニューバーが完全に隠れますので、再表示するには Ctrl+M を使用して下さい。</translation>
+        <translation>メニューバーが完全に非表示になります。再び表示するには Ctrl+M を押してください。</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="1223"/>
@@ -2117,7 +2117,7 @@ They might be useful if those folders are created again.</source>
         <location filename="../preferences.ui" line="409"/>
         <location filename="../preferences.ui" line="419"/>
         <source>Requires application restart to take effect completely</source>
-        <translation>完全に有効にするためにアプリケーションを再起動して下さい</translation>
+        <translation>完全に反映させるにはアプリケーションの再起動が必要です</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="212"/>
@@ -2172,12 +2172,12 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferences.ui" line="587"/>
         <source>Default width of new windows:</source>
-        <translation>新しいウィンドウの既定の幅:</translation>
+        <translation>新しいウィンドウのデフォルトの幅:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="601"/>
         <source>Default height of new windows:</source>
-        <translation>新しいウィンドウの既定の高さ:</translation>
+        <translation>新しいウィンドウのデフォルトの高さ:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="559"/>
@@ -2212,7 +2212,7 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferences.ui" line="162"/>
         <source>Default view mode:</source>
-        <translation>既定の表示モード:</translation>
+        <translation>デフォルトの表示モード:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="119"/>
@@ -2300,7 +2300,7 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferences.ui" line="466"/>
         <source>3 px by default.</source>
-        <translation>既定は 3 ピクセルです。</translation>
+        <translation>デフォルトは 3 ピクセルです。</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="469"/>
@@ -2317,8 +2317,8 @@ They might be useful if those folders are created again.</source>
         <location filename="../preferences.ui" line="489"/>
         <source>3 px by default.
 A space is also reserved for 3 lines of text.</source>
-        <translation>既定は 3 ピクセルです。
-また文字のために 3 行分の間隔が確保されます。</translation>
+        <translation>デフォルトは 3 ピクセルです。
+3 行分のテキストのためのスペースも確保されます。</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="506"/>
@@ -2348,9 +2348,9 @@ only if there are more than one tab.</source>
         <source>The built-in thumbnailer makes thumbnails of images that are supported by Qt.
 
 Usually, most image types are supported. The default size limit is 4 MiB.</source>
-        <translation>内蔵サムネイル作成プログラムは Qt でサポートされている画像のサムネイルを作成します。
+        <translation>内蔵サムネイル作成機能は Qt でサポートされている画像のサムネイルを作成します。
 
-通常、ほとんどの画像タイプがサポートされています。既定のサイズ制限は 4 MiB です。</translation>
+通常、ほとんどの画像形式がサポートされています。デフォルトのサイズ制限は 4 MiB です。</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="670"/>
@@ -2369,9 +2369,9 @@ Usually, most image types are supported. The default size limit is 4 MiB.</sourc
         <source>If existing, external thumbnailers are used for videos, PDF documents, etc.
 
 A value of -1 means that there is no limit for the file size (the default).</source>
-        <translation>外部サムネイル作成プログラムが存在する場合は、外部サムネイルプログラムがビデオや PDF ドキュメント等に使用されます。
+        <translation>外部のサムネイル生成プログラムが存在する場合は、動画や PDF 文書などに使用されます。
 
--1 の値はファイルサイズに制限がないことを意味します。(既定値)</translation>
+値が -1 の場合は、ファイルサイズに制限がないことを意味します（デフォルト）。</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="703"/>
@@ -2481,7 +2481,7 @@ lxsudo dbus-run-session -- %s</translation>
     <message>
         <location filename="../preferences.ui" line="954"/>
         <source>Run default application after creation from template</source>
-        <translation>テンプレートから作成した後に既定のアプリケーションを実行する</translation>
+        <translation>テンプレートから作成した後にデフォルトのアプリケーションを実行する</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="658"/>
