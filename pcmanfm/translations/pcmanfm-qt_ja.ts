@@ -6,7 +6,7 @@
     <message>
         <location filename="../about.ui" line="14"/>
         <source>About</source>
-        <translation>このアプリケーションについて</translation>
+        <translation>About</translation>
     </message>
     <message>
         <location filename="../about.ui" line="25"/>
@@ -77,7 +77,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../about.ui" line="113"/>
         <source>Authors</source>
-        <translation>作者</translation>
+        <translation>開発者</translation>
     </message>
     <message>
         <location filename="../about.ui" line="135"/>
@@ -118,7 +118,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../bulk-rename.ui" line="6"/>
         <source>Bulk Rename</source>
-        <translation>名前の一括変更</translation>
+        <translation>名前を一括変更</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="12"/>
@@ -191,7 +191,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../connect.ui" line="14"/>
         <source>Connect to remote server</source>
-        <translation>リモートサーバーへの接続</translation>
+        <translation>リモートサーバーに接続</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="80"/>
@@ -234,7 +234,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../desktopentrydialog.ui" line="14"/>
         <source>Create Launcher</source>
-        <translation>ランチャーの作成</translation>
+        <translation>ランチャーを作成</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="38"/>
@@ -244,19 +244,19 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../desktopentrydialog.ui" line="45"/>
         <source>Specific name of this launcher.</source>
-        <translation>このランチャーの特定の名前です。</translation>
+        <translation>このランチャーの具体的な名前。</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="58"/>
         <source>Description:</source>
-        <translation>簡略説明:</translation>
+        <translation>説明:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="65"/>
         <source>A short description or generic name, like &quot;Web Browser&quot; or &quot;Home Directory&quot;.
 
 It can be left empty.</source>
-        <translation>「Web ブラウザー」や「ホームディレクトリ」のような短い説明または一般的な名前です。
+        <translation>「ウェブブラウザー」や「ホームディレクトリ」のような短い説明または一般的な名前です。
 
 空のままでもかまいません。</translation>
     </message>
@@ -299,17 +299,17 @@ It can be left empty.</source>
         <location filename="../desktopentrydialog.ui" line="173"/>
         <location filename="../desktopentrydialog.ui" line="183"/>
         <source>Run in terminal?</source>
-        <translation>端末内で実行しますか？</translation>
+        <translation>ターミナルで実行しますか？</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="176"/>
         <source>Terminal:</source>
-        <translation>端末:</translation>
+        <translation>ターミナル:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="186"/>
         <source>Whether the launched program should run in a terminal window.</source>
-        <translation>実行プログラムを端末のウィンドウ内で実行するかどうかです。</translation>
+        <translation>起動するプログラムをターミナルウィンドウで実行するかどうか。</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="190"/>
@@ -353,11 +353,11 @@ It can be left empty.</source>
 It is needed only when you want to use the created file in the main menu. Otherwise, you could leave it empty.
 
 Examples: AudioVideo, Audio, Video, Development, Education, Game, Graphics, Network, Office, Settings, System, Utility, Qt.</source>
-        <translation>エントリがデスクトップ環境のメインメニューで使用されている場合 (例、~/.local/share/applications の中に置かれた場合) に表示されるセミコロンで区切ったカテゴリです。
+        <translation>エントリがデスクトップ環境のメインメニューで使用される場合に表示されるカテゴリをセミコロンで区切って指定します（例: ~/.local/share/applications に置かれるとき）。
 
-作成したファイルをメインメニューで使いたい時だけ必要です。そうでなければ空のままにしておくこともできます。
+これは、作成したファイルをメインメニューで使いたいときだけ必要です。それ以外の場合は空欄のままにできます。
 
-例: AudioVideo, Audio, Video, Development, Education, Game, Graphics, Network, Office, Settings, System, Utility, Qt 。</translation>
+例: AudioVideo, Audio, Video, Development, Education, Game, Graphics, Network, Office, Settings, System, Utility, Qt。</translation>
     </message>
 </context>
 <context>
@@ -1068,7 +1068,7 @@ PCManFM-Qt がデフォルトのファイルマネージャーでなくても PC
     <message>
         <location filename="../main-win.ui" line="1032"/>
         <source>&amp;Go to Source of Inherited Settings</source>
-        <translation>継承された設定の元に移動(&amp;G)</translation>
+        <translation>継承された設定のソースに移動(&amp;G)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="1037"/>
@@ -1083,7 +1083,7 @@ PCManFM-Qt がデフォルトのファイルマネージャーでなくても PC
     <message>
         <location filename="../main-win.ui" line="676"/>
         <source>&amp;Invert Selection</source>
-        <translation>選択の反転(&amp;I)</translation>
+        <translation>選択を反転(&amp;I)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="679"/>
@@ -1098,7 +1098,7 @@ PCManFM-Qt がデフォルトのファイルマネージャーでなくても PC
     <message>
         <location filename="../main-win.ui" line="696"/>
         <source>&amp;Rename</source>
-        <translation>名前の変更(&amp;R)</translation>
+        <translation>名前を変更(&amp;R)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="740"/>
@@ -1128,12 +1128,12 @@ PCManFM-Qt がデフォルトのファイルマネージャーでなくても PC
     <message>
         <location filename="../main-win.ui" line="944"/>
         <source>&amp;Show/Focus Filter Bar</source>
-        <translation>フィルターバーの表示と入力(&amp;S)</translation>
+        <translation>フィルターバーを表示/フォーカス(&amp;S)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="947"/>
         <source>Show Filter Bar</source>
-        <translation>フィルターバーの表示</translation>
+        <translation>フィルターバーを表示</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="950"/>
@@ -1158,7 +1158,7 @@ PCManFM-Qt がデフォルトのファイルマネージャーでなくても PC
     <message>
         <location filename="../main-win.ui" line="969"/>
         <source>&amp;Copy Full Path</source>
-        <translation>名前のフルパスをコピー(&amp;C)</translation>
+        <translation>フルパスをコピー(&amp;C)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="976"/>
@@ -1168,12 +1168,12 @@ PCManFM-Qt がデフォルトのファイルマネージャーでなくても PC
     <message>
         <location filename="../main-win.ui" line="987"/>
         <source>Show Thumb&amp;nails</source>
-        <translation>サムネイルの表示(&amp;N)</translation>
+        <translation>サムネイルを表示(&amp;N)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="990"/>
         <source>Show Thumbnails</source>
-        <translation>サムネイルの表示</translation>
+        <translation>サムネイルを表示</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="998"/>
@@ -1199,7 +1199,7 @@ PCManFM-Qt がデフォルトのファイルマネージャーでなくても PC
         <location filename="../main-win.ui" line="1016"/>
         <location filename="../main-win.ui" line="1019"/>
         <source>Create Launcher</source>
-        <translation>ランチャーの作成</translation>
+        <translation>ランチャーを作成</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="834"/>
@@ -1229,7 +1229,7 @@ PCManFM-Qt がデフォルトのファイルマネージャーでなくても PC
     <message>
         <location filename="../main-win.ui" line="908"/>
         <source>Connect to &amp;Server</source>
-        <translation>サーバーへの接続(&amp;S)</translation>
+        <translation>サーバーに接続(&amp;S)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="916"/>
@@ -1244,12 +1244,12 @@ PCManFM-Qt がデフォルトのファイルマネージャーでなくても PC
     <message>
         <location filename="../main-win.ui" line="929"/>
         <source>&amp;Bulk Rename</source>
-        <translation>名前の一括変更(&amp;B)</translation>
+        <translation>名前を一括変更(&amp;B)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="936"/>
         <source>Bulk Rename</source>
-        <translation>名前の一括変更</translation>
+        <translation>名前を一括変更</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="865"/>
@@ -1290,7 +1290,7 @@ PCManFM-Qt がデフォルトのファイルマネージャーでなくても PC
     <message>
         <location filename="../main-win.ui" line="164"/>
         <source>&amp;Customized View Settings</source>
-        <translation>表示設定のカスタマイズ(&amp;C)</translation>
+        <translation>カスタマイズ表示の設定(&amp;C)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="291"/>
@@ -1440,12 +1440,12 @@ PCManFM-Qt がデフォルトのファイルマネージャーでなくても PC
     <message>
         <location filename="../main-win.ui" line="765"/>
         <source>Edit Bookmarks</source>
-        <translation>ブックマークの編集</translation>
+        <translation>ブックマークを編集</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="774"/>
         <source>Open &amp;Terminal</source>
-        <translation>ここを端末で開く(&amp;T)</translation>
+        <translation>ターミナルを開く(&amp;T)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="777"/>
@@ -1455,7 +1455,7 @@ PCManFM-Qt がデフォルトのファイルマネージャーでなくても PC
     <message>
         <location filename="../main-win.ui" line="787"/>
         <source>&amp;Edit Bookmarks</source>
-        <translation>ブックマークの編集(&amp;E)</translation>
+        <translation>ブックマークを編集(&amp;E)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="796"/>
@@ -1470,7 +1470,7 @@ PCManFM-Qt がデフォルトのファイルマネージャーでなくても PC
     <message>
         <location filename="../main-win.ui" line="816"/>
         <source>&amp;Find Files</source>
-        <translation>ファイルの検索(&amp;F)</translation>
+        <translation>ファイルを検索(&amp;F)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="823"/>
@@ -1608,7 +1608,7 @@ PCManFM-Qt がデフォルトのファイルマネージャーでなくても PC
     <message>
         <location filename="../application.cpp" line="666"/>
         <source>Terminal emulator is not set.</source>
-        <translation>端末エミュレーターを設定していません。</translation>
+        <translation>ターミナルエミュレーターが設定されていません。</translation>
     </message>
 </context>
 <context>
@@ -1801,7 +1801,7 @@ PCManFM-Qt がデフォルトのファイルマネージャーでなくても PC
     <message>
         <location filename="../desktopwindow.cpp" line="1132"/>
         <source>Create Launcher</source>
-        <translation>ランチャーの作成</translation>
+        <translation>ランチャーを作成</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="1135"/>
@@ -1862,7 +1862,7 @@ PCManFM-Qt がデフォルトのファイルマネージャーでなくても PC
     <message>
         <location filename="../mainwindow.cpp" line="2029"/>
         <source>Customized View Settings</source>
-        <translation>表示設定のカスタマイズ</translation>
+        <translation>カスタマイズ表示の設定</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="2300"/>
@@ -1873,7 +1873,7 @@ PCManFM-Qt がデフォルトのファイルマネージャーでなくても PC
     <message>
         <location filename="../mainwindow.cpp" line="2308"/>
         <source>Switch user command is not set.</source>
-        <translation>ユーザー切り替えのコマンドが設定されていません。</translation>
+        <translation>ユーザー切り替えコマンドが設定されていません。</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="2399"/>
@@ -2020,7 +2020,7 @@ They might be useful if those folders are created again.</source>
         <location filename="../view.cpp" line="145"/>
         <location filename="../view.cpp" line="174"/>
         <source>Open in Termina&amp;l</source>
-        <translation>端末内で開く(&amp;L)</translation>
+        <translation>ターミナルで開く(&amp;L)</translation>
     </message>
     <message>
         <location filename="../view.cpp" line="160"/>
@@ -2105,12 +2105,12 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferences.ui" line="195"/>
         <source>Erase files on removable media instead of &quot;trash can&quot; creation</source>
-        <translation>『ゴミ箱』を作らずに、リムーバブルメディア上のファイルを消去する</translation>
+        <translation>ゴミ箱を作らずにリムーバブルメディアのファイルを消去する</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="202"/>
         <source>Confirm before moving files into &quot;trash can&quot;</source>
-        <translation>『ゴミ箱』に移動する前に確認する</translation>
+        <translation>ファイルをゴミ箱に移動する前に確認する</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="209"/>
@@ -2187,7 +2187,7 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferences.ui" line="566"/>
         <source>Show &apos;Close&apos; buttons on tabs	</source>
-        <translation>[閉じる]ボタンをタブに表示する</translation>
+        <translation>タブに「閉じる」ボタンを表示する	</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="580"/>
@@ -2237,7 +2237,7 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferences.ui" line="188"/>
         <source>Move deleted files to &quot;trash bin&quot; instead of erasing from disk.</source>
-        <translation>ディスクから削除せずに『ゴミ箱』へ移動する</translation>
+        <translation>ファイルをディスクから消去せずゴミ箱に移動する</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="219"/>
@@ -2280,12 +2280,12 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferences.ui" line="402"/>
         <source>Treat backup files as hidden</source>
-        <translation>バックアップファイルを隠しファイルと同様に扱う</translation>
+        <translation>バックアップファイルを隠しとして扱う</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="422"/>
         <source>Show icons of hidden files shadowed</source>
-        <translation>隠しファイルのアイコンをグレー色にする</translation>
+        <translation>隠しファイルのアイコンを暗く表示する</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="429"/>
@@ -2306,7 +2306,7 @@ They might be useful if those folders are created again.</source>
         <location filename="../preferences.ui" line="469"/>
         <location filename="../preferences.ui" line="493"/>
         <source> px</source>
-        <translation> ピクセル</translation>
+        <translation> px</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="482"/>
@@ -2340,7 +2340,7 @@ only if there are more than one tab.</source>
     <message>
         <location filename="../preferences.ui" line="615"/>
         <source>Reopen last window tabs in a new window</source>
-        <translation>最後に開いていたウィンドウのタブを新しいウィンドウで開く</translation>
+        <translation>最後に開いたウィンドウのタブを新しいウィンドウで開く</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="665"/>
@@ -2396,7 +2396,7 @@ A value of -1 means that there is no limit for the file size (the default).</sou
     <message>
         <location filename="../preferences.ui" line="993"/>
         <source>Clear search history</source>
-        <translation>検索履歴をクリアする</translation>
+        <translation>検索履歴をクリア</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="1028"/>
@@ -2416,7 +2416,7 @@ A value of -1 means that there is no limit for the file size (the default).</sou
     <message>
         <location filename="../preferences.ui" line="833"/>
         <source>Terminal emulator</source>
-        <translation>端末エミュレーター</translation>
+        <translation>ターミナルエミュレーター</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="842"/>
@@ -2441,8 +2441,8 @@ It is the name of the executable file.</source>
 It can be left empty if the terminal is already supported
 or does not have such an option; required otherwise.</source>
         <translation>例: -e
-端末がすでにサポートされている場合や、そのようなオプションがない
-場合は空のままにすることができます。そうでない場合は必須です。</translation>
+ターミナルが既にサポートしている場合や、このようなオプションが
+ない場合は空のままにできます。それ以外の場合は必須です。</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="879"/>
@@ -2453,8 +2453,8 @@ or does not have such an option; required otherwise.</source>
         <location filename="../preferences.ui" line="886"/>
         <source>This is optional, depends on the terminal,
 and can be any group of custom options.</source>
-        <translation>これはオプションであり、端末によって異なり、
-カスタムオプションの任意のグループにできます。</translation>
+        <translation>これはオプションで、ターミナルによって異なり、任意の
+カスタムオプションを組み合わせることができます。</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="910"/>
@@ -2491,17 +2491,17 @@ lxsudo dbus-run-session -- %s</translation>
     <message>
         <location filename="../preferences.ui" line="784"/>
         <source>When removable medium unmounted:</source>
-        <translation>リムーバブルメディアをアンマウントする際に:</translation>
+        <translation>リムーバブルメディアがアンマウントされたとき:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="900"/>
         <source>Switch &amp;user command:</source>
-        <translation>ユーザー切り替えのコマンド(&amp;U):</translation>
+        <translation>ユーザー切り替えコマンド(&amp;U):</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="918"/>
         <source>Archiver in&amp;tegration:</source>
-        <translation>アーカイバーの統合(&amp;T):</translation>
+        <translation>アーカイバー統合(&amp;T):</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="412"/>
@@ -2511,7 +2511,7 @@ lxsudo dbus-run-session -- %s</translation>
     <message>
         <location filename="../preferences.ui" line="436"/>
         <source>Disable smooth scrolling</source>
-        <translation>スムーススクロールを無効にする</translation>
+        <translation>スムーズスクロールを無効にする</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="754"/>
@@ -2582,7 +2582,7 @@ lxsudo dbus-run-session -- %s</translation>
         <location filename="../bulkrename.cpp" line="254"/>
         <location filename="../bulkrename.cpp" line="295"/>
         <source>Renaming is aborted.</source>
-        <translation>名前の変更は中止されました。</translation>
+        <translation>名前変更は中止されました。</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="220"/>
