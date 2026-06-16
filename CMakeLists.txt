@@ -75,6 +75,9 @@ install(
     FILES icons/pcmanfm-qt.svg
     DESTINATION "${CMAKE_INSTALL_PREFIX}/share/icons/hicolor/scalable/apps"
 )
+# install appstream data
+install(FILES pcmanfm-qt.appdata.xml
+    DESTINATION "${CMAKE_INSTALL_DATADIR}/metainfo")
 
 add_subdirectory(autostart)
 add_subdirectory(config)
