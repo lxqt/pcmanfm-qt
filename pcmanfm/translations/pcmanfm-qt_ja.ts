@@ -123,22 +123,22 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../bulk-rename.ui" line="12"/>
         <source>Serial Renaming</source>
-        <translation>連続して名前を変更</translation>
+        <translation>連番で名前を変更</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="36"/>
         <source># will be replaced by numbers starting with:</source>
-        <translation># は 次で始まる数字に置き換えられます:</translation>
+        <translation># は次で始まる数字に置き換えられます:</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="68"/>
         <source>Pad numbers with zero if possible</source>
-        <translation>可能であれば 0 をつけた数字にする</translation>
+        <translation>可能ならゼロ埋めして桁を揃える</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="75"/>
         <source>Use localized numbers</source>
-        <translation>ローカライズされた数値を使用する</translation>
+        <translation>ローカライズされた数字を使用する</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="85"/>
@@ -148,7 +148,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../bulk-rename.ui" line="97"/>
         <source>Find in names:</source>
-        <translation>名前で検索:</translation>
+        <translation>名前内を検索:</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="107"/>
@@ -158,7 +158,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../bulk-rename.ui" line="117"/>
         <source>Case-sensitive</source>
-        <translation>大文字と小文字を区別</translation>
+        <translation>大文字小文字を区別する</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="124"/>
@@ -168,7 +168,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../bulk-rename.ui" line="134"/>
         <source>Change Case</source>
-        <translation>大文字と小文字の変更</translation>
+        <translation>大文字小文字を変更</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="146"/>
@@ -419,7 +419,7 @@ Examples: AudioVideo, Audio, Video, Development, Education, Game, Graphics, Netw
     <message>
         <location filename="../desktop-preferences.ui" line="350"/>
         <source>Select background color:</source>
-        <translation>背景色の選択:</translation>
+        <translation>背景色を選択:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="417"/>
@@ -459,7 +459,7 @@ Examples: AudioVideo, Audio, Video, Development, Education, Game, Graphics, Netw
     <message>
         <location filename="../desktop-preferences.ui" line="61"/>
         <source>Select font:</source>
-        <translation>フォントの選択:</translation>
+        <translation>フォントを選択:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="24"/>
@@ -469,7 +469,7 @@ Examples: AudioVideo, Audio, Video, Development, Education, Game, Graphics, Netw
     <message>
         <location filename="../desktop-preferences.ui" line="87"/>
         <source>Select text color:</source>
-        <translation>文字色の選択:</translation>
+        <translation>文字色を選択:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="136"/>
@@ -522,8 +522,8 @@ A space is also reserved for 3 lines of text.</source>
         <location filename="../desktop-preferences.ui" line="303"/>
         <source>By default, desktop folders will be opened in PCManFM-Qt if they
 are left clicked, even when it is not the default file manager.</source>
-        <translation>デフォルトでは、デスクトップフォルダーを左クリックすると、
-PCManFM-Qt がデフォルトのファイルマネージャーでなくても PCManFM-Qt で開きます。</translation>
+        <translation>デフォルトではデスクトップフォルダーを左クリックすると、
+デフォルトのファイルマネージャーでなくても PCManFM-Qt で開きます。</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="307"/>
@@ -548,7 +548,7 @@ PCManFM-Qt がデフォルトのファイルマネージャーでなくても PC
     <message>
         <location filename="../desktop-preferences.ui" line="446"/>
         <source>Individual wallpaper for each monitor</source>
-        <translation>各モニターにそれぞれの壁紙</translation>
+        <translation>モニターごとに個別の壁紙</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="473"/>
@@ -666,7 +666,7 @@ PCManFM-Qt がデフォルトのファイルマネージャーでなくても PC
     <message>
         <location filename="../shortcuts.ui" line="34"/>
         <source>Focus view, clear filter bar</source>
-        <translation>ビューにフォーカス、フィルタバーのクリア</translation>
+        <translation>ビューにフォーカス、フィルタバーをクリア</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="39"/>
@@ -898,7 +898,7 @@ PCManFM-Qt がデフォルトのファイルマネージャーでなくても PC
     <message>
         <location filename="../main-win.ui" line="371"/>
         <source>Show &amp;Hidden</source>
-        <translation>隠しファイルの表示(&amp;H)</translation>
+        <translation>隠しアイテムを表示(&amp;H)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="374"/>
@@ -1053,7 +1053,7 @@ PCManFM-Qt がデフォルトのファイルマネージャーでなくても PC
     <message>
         <location filename="../main-win.ui" line="626"/>
         <source>&amp;Hidden Last</source>
-        <translation>隠しファイルを最後に(&amp;H)</translation>
+        <translation>隠しアイテムを最後に(&amp;H)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="939"/>
@@ -1420,7 +1420,7 @@ PCManFM-Qt がデフォルトのファイルマネージャーでなくても PC
     <message>
         <location filename="../main-win.ui" line="113"/>
         <source>&amp;Sorting</source>
-        <translation>ソート(&amp;S)</translation>
+        <translation>並べ替え(&amp;S)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="257"/>
@@ -1682,7 +1682,7 @@ PCManFM-Qt がデフォルトのファイルマネージャーでなくても PC
     <message>
         <location filename="../desktopentrydialog.cpp" line="67"/>
         <source>Select an icon</source>
-        <translation>アイコンの選択</translation>
+        <translation>アイコンを選択</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="69"/>
@@ -1692,12 +1692,12 @@ PCManFM-Qt がデフォルトのファイルマネージャーでなくても PC
     <message>
         <location filename="../desktopentrydialog.cpp" line="91"/>
         <source>Select an executable file</source>
-        <translation>実行可能ファイルの選択</translation>
+        <translation>実行可能ファイルを選択</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="99"/>
         <source>Select a file</source>
-        <translation>ファイルの選択</translation>
+        <translation>ファイルを選択</translation>
     </message>
 </context>
 <context>
@@ -1735,7 +1735,7 @@ PCManFM-Qt がデフォルトのファイルマネージャーでなくても PC
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="278"/>
         <source>Select Wallpaper</source>
-        <translation>壁紙の選択</translation>
+        <translation>壁紙を選択</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="282"/>
@@ -1745,7 +1745,7 @@ PCManFM-Qt がデフォルトのファイルマネージャーでなくても PC
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="324"/>
         <source>Select Wallpaper Folder</source>
-        <translation>壁紙フォルダーの選択</translation>
+        <translation>壁紙フォルダーを選択</translation>
     </message>
 </context>
 <context>
@@ -1796,7 +1796,7 @@ PCManFM-Qt がデフォルトのファイルマネージャーでなくても PC
     <message>
         <location filename="../desktopwindow.cpp" line="1126"/>
         <source>Hide Desktop Items</source>
-        <translation>デスクトップのアイテムを非表示</translation>
+        <translation>デスクトップアイテムを隠す</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="1132"/>
@@ -2105,7 +2105,7 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferences.ui" line="195"/>
         <source>Erase files on removable media instead of &quot;trash can&quot; creation</source>
-        <translation>ゴミ箱を作らずにリムーバブルメディアのファイルを消去する</translation>
+        <translation>リムーバブルメディアのファイルはゴミ箱を作らずに消去する</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="202"/>
@@ -2122,7 +2122,7 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferences.ui" line="212"/>
         <source>Launch executable files without prompt</source>
-        <translation>確認なしで実行可能ファイルを起動する</translation>
+        <translation>実行可能ファイルを確認なしで起動する</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="229"/>
@@ -2280,7 +2280,7 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferences.ui" line="402"/>
         <source>Treat backup files as hidden</source>
-        <translation>バックアップファイルを隠しとして扱う</translation>
+        <translation>バックアップファイルを隠しアイテムとして扱う</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="422"/>
@@ -2471,7 +2471,7 @@ lxsudo dbus-run-session -- %s</translation>
     <message>
         <location filename="../preferences.ui" line="940"/>
         <source>Show only user defined templates in menu</source>
-        <translation>メニューにユーザー定義のテンプレートのみを表示する</translation>
+        <translation>メニューにユーザー定義テンプレートのみを表示する</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="947"/>
@@ -2551,7 +2551,7 @@ lxsudo dbus-run-session -- %s</translation>
     <message>
         <location filename="../preferences.ui" line="395"/>
         <source>Use SI decimal prefixes instead of IEC binary prefixes</source>
-        <translation>サイズ単位には IEC 二進接頭辞の代わりに SI 十進接頭辞を使用する</translation>
+        <translation>IEC 接頭辞（2進法）の代わりに SI 接頭辞（10進法）を使用する</translation>
     </message>
 </context>
 <context>
