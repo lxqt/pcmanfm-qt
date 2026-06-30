@@ -470,13 +470,13 @@ are left clicked, even when it is not the default file manager.</string>
      </widget>
      <widget class="QWidget" name="slidePage">
       <attribute name="title">
-       <string>Slide Show</string>
+       <string>Slideshow</string>
       </attribute>
       <layout class="QVBoxLayout" name="verticalLayout_4">
        <item>
         <widget class="QGroupBox" name="slideShow">
          <property name="title">
-          <string>Enable Slide Show</string>
+          <string>Enable Slideshow</string>
          </property>
          <property name="checkable">
           <bool>true</bool>
@@ -584,7 +584,7 @@ are left clicked, even when it is not the default file manager.</string>
           <item row="3" column="0" colspan="6">
            <widget class="QCheckBox" name="randomize">
             <property name="text">
-             <string>Randomize the slide show</string>
+             <string>Randomize the slideshow</string>
             </property>
            </widget>
           </item>
