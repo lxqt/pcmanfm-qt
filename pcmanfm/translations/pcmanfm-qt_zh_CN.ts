@@ -79,7 +79,7 @@ Copyright (C) 2009 - 2014 洪任谕 (Hong Jen Yee)
     <message>
         <location filename="../about.ui" line="135"/>
         <source>License</source>
-        <translation>许可</translation>
+        <translation>协议</translation>
     </message>
 </context>
 <context>
@@ -595,7 +595,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktop-preferences.ui" line="669"/>
         <source>Do not show file tooltips</source>
-        <translation type="unfinished">不要显示文件信息提示</translation>
+        <translation>不要显示文件信息提示</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="498"/>
@@ -890,7 +890,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="360"/>
         <source>New Window</source>
-        <translation>新建窗口</translation>
+        <translation>新窗口</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="363"/>
@@ -2034,7 +2034,7 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferences.ui" line="14"/>
         <source>Preferences</source>
-        <translation>偏好设置</translation>
+        <translation>首选项</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="45"/>
@@ -2287,7 +2287,7 @@ They might be useful if those folders are created again.</source>
         <location filename="../preferences.ui" line="469"/>
         <location filename="../preferences.ui" line="493"/>
         <source> px</source>
-        <translation></translation>
+        <translation> px</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="482"/>
