@@ -502,6 +502,10 @@ void Application::desktopManager(bool enabled) {
         }
     }
     enableDesktopManager_ = enabled;
+
+    if(underWayland_ && !daemonMode_) { // FIXME: This is a workaround. Remove it when not needed!
+        setQuitOnLastWindowClosed(!enableDesktopManager_);
+    }
 }
 
 void Application::desktopPrefrences(const QString& page) {
