@@ -503,7 +503,9 @@ void Application::desktopManager(bool enabled) {
     }
     enableDesktopManager_ = enabled;
 
-    if(underWayland_ && !daemonMode_) { // FIXME: This is a workaround. Remove it when not needed!
+    if(underWayland_ && !daemonMode_) {
+        // FIXME: This is a workaround for wlroots. Remove it when not needed.
+        // See https://gitlab.freedesktop.org/wlroots/wlroots/-/merge_requests/5127
         setQuitOnLastWindowClosed(!enableDesktopManager_);
     }
 }
