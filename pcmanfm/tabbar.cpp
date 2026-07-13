@@ -135,6 +135,13 @@ void TabBar::mouseReleaseEvent(QMouseEvent *event) {
             Q_EMIT tabCloseRequested(index);
         }
     }
+#else
+    if (!tabsClosable() && event->button() == Qt::MiddleButton) {
+        int index = tabAt(event->pos());
+        if (index != -1) {
+            Q_EMIT tabCloseRequested(index);
+        }
+    }
 #endif
     QTabBar::mouseReleaseEvent(event);
 }
