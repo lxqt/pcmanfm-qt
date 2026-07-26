@@ -139,7 +139,7 @@ Boston, MA  02110-1301, USA.</translation>
     <message>
         <location filename="../bulk-rename.ui" line="75"/>
         <source>Use localized numbers</source>
-        <translation>Menggunakan nomor lokal</translation>
+        <translation>Gunakan nomor terlokalisasi</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="85"/>
@@ -235,7 +235,7 @@ Boston, MA  02110-1301, USA.</translation>
     <message>
         <location filename="../desktopentrydialog.ui" line="14"/>
         <source>Create Launcher</source>
-        <translation>Ciptakan Peluncur</translation>
+        <translation>Buat Peluncur</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="38"/>
@@ -356,7 +356,7 @@ It is needed only when you want to use the created file in the main menu. Otherw
 Examples: AudioVideo, Audio, Video, Development, Education, Game, Graphics, Network, Office, Settings, System, Utility, Qt.</source>
         <translation>Kategori yang dipisahkan dengan titik koma tempat entri harus ditampilkan jika digunakan oleh menu utama DE (mis., ketika diletakkan di dalam ~/.local/share/applications).
 
-Ini hanya diperlukan ketika Anda ingin menggunakan berkas yang dibuat di menu utama. Jika tidak, Anda dapat membiarkannya kosong.
+Ini hanya diperlukan ketika Anda ingin menggunakan file yang dibuat di menu utama. Jika tidak, Anda dapat membiarkannya kosong.
 
 Contoh: AudioVideo, Audio, Video, Development, Education, Game, Graphics, Network, Office, Settings, System, Utility, Qt.</translation>
     </message>
@@ -1064,7 +1064,7 @@ jika folder tersebut diklik kiri, walaupun PCManFM-Qt bukan file manager standar
     <message>
         <location filename="../main-win.ui" line="578"/>
         <source>By C&amp;reation Time</source>
-        <translation>Berdasarkan Tanggal Pem&amp;buatan</translation>
+        <translation>Berdasarkan Waktu Pen&amp;ciptaan</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="586"/>
@@ -1074,7 +1074,7 @@ jika folder tersebut diklik kiri, walaupun PCManFM-Qt bukan file manager standar
     <message>
         <location filename="../main-win.ui" line="594"/>
         <source>By File &amp;Type</source>
-        <translation>Berdasarkan File &amp;Tipe</translation>
+        <translation>Berdasarkan Tipe &amp;File</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="602"/>
@@ -1154,7 +1154,7 @@ jika folder tersebut diklik kiri, walaupun PCManFM-Qt bukan file manager standar
     <message>
         <location filename="../main-win.ui" line="796"/>
         <source>&amp;Folder</source>
-        <translation>&amp;Folder</translation>
+        <translation>Ber&amp;kas</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="808"/>
@@ -1482,7 +1482,7 @@ jika folder tersebut diklik kiri, walaupun PCManFM-Qt bukan file manager standar
         <location filename="../main-win.ui" line="109"/>
         <location filename="../main-win.ui" line="133"/>
         <source>&amp;View</source>
-        <translation>Lihat</translation>
+        <translation>&amp;Lihat</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="113"/>
@@ -1668,7 +1668,7 @@ jika folder tersebut diklik kiri, walaupun PCManFM-Qt bukan file manager standar
     <message>
         <location filename="../desktopentrydialog.cpp" line="36"/>
         <source>The command to execute.</source>
-        <translation>Perintah yang akan dijalankan.</translation>
+        <translation>Perintah untuk menjalankan.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="39"/>
@@ -1678,7 +1678,7 @@ jika folder tersebut diklik kiri, walaupun PCManFM-Qt bukan file manager standar
     <message>
         <location filename="../desktopentrydialog.cpp" line="40"/>
         <source>The URL to access.</source>
-        <translation>URL yang akan diakses.</translation>
+        <translation>URL untuk mengakses.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="67"/>
