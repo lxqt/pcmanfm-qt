@@ -14,8 +14,7 @@
    <string>File Manager</string>
   </property>
   <property name="windowIcon">
-   <iconset theme="pcmanfm-qt">
-    <normaloff>.</normaloff>.</iconset>
+   <iconset theme="pcmanfm-qt"/>
   </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QVBoxLayout" name="verticalLayout">
@@ -81,8 +80,7 @@
       <string>Recent F&amp;iles</string>
      </property>
      <property name="icon">
-      <iconset theme="document-open-recent">
-       <normaloff>.</normaloff>.</iconset>
+      <iconset theme="document-open-recent"/>
      </property>
     </widget>
     <addaction name="actionNewTab"/>
@@ -284,8 +282,7 @@
   </widget>
   <action name="actionGoUp">
    <property name="icon">
-    <iconset theme="go-up">
-     <normaloff>.</normaloff>.</iconset>
+    <iconset theme="go-up"/>
    </property>
    <property name="text">
     <string>Go &amp;Up</string>
@@ -299,8 +296,7 @@
   </action>
   <action name="actionHome">
    <property name="icon">
-    <iconset theme="user-home">
-     <normaloff>.</normaloff>.</iconset>
+    <iconset theme="user-home"/>
    </property>
    <property name="text">
     <string>&amp;Home</string>
@@ -311,8 +307,7 @@
   </action>
   <action name="actionReload">
    <property name="icon">
-    <iconset theme="view-refresh">
-     <normaloff>.</normaloff>.</iconset>
+    <iconset theme="view-refresh"/>
    </property>
    <property name="text">
     <string>&amp;Reload</string>
@@ -323,8 +318,7 @@
   </action>
   <action name="actionGo">
    <property name="icon">
-    <iconset theme="go-jump">
-     <normaloff>.</normaloff>.</iconset>
+    <iconset theme="go-jump"/>
    </property>
    <property name="text">
     <string>Go</string>
@@ -332,8 +326,7 @@
   </action>
   <action name="actionQuit">
    <property name="icon">
-    <iconset theme="application-exit">
-     <normaloff>.</normaloff>.</iconset>
+    <iconset theme="application-exit"/>
    </property>
    <property name="text">
     <string>Quit</string>
@@ -341,8 +334,7 @@
   </action>
   <action name="actionAbout">
    <property name="icon">
-    <iconset theme="help-about">
-     <normaloff>.</normaloff>.</iconset>
+    <iconset theme="help-about"/>
    </property>
    <property name="text">
     <string>&amp;About</string>
@@ -350,8 +342,7 @@
   </action>
   <action name="actionNewWin">
    <property name="icon">
-    <iconset theme="window-new">
-     <normaloff>.</normaloff>.</iconset>
+    <iconset theme="window-new"/>
    </property>
    <property name="text">
     <string>&amp;New Window</string>
@@ -376,8 +367,7 @@
   </action>
   <action name="actionComputer">
    <property name="icon">
-    <iconset theme="computer">
-     <normaloff>.</normaloff>.</iconset>
+    <iconset theme="computer"/>
    </property>
    <property name="text">
     <string>&amp;Computer</string>
@@ -385,8 +375,7 @@
   </action>
   <action name="actionTrash">
    <property name="icon">
-    <iconset theme="user-trash">
-     <normaloff>.</normaloff>.</iconset>
+    <iconset theme="user-trash"/>
    </property>
    <property name="text">
     <string>&amp;Trash</string>
@@ -399,8 +388,7 @@
   </action>
   <action name="actionDesktop">
    <property name="icon">
-    <iconset theme="user-desktop">
-     <normaloff>.</normaloff>.</iconset>
+    <iconset theme="user-desktop"/>
    </property>
    <property name="text">
     <string>&amp;Desktop</string>
@@ -408,8 +396,7 @@
   </action>
   <action name="actionAddToBookmarks">
    <property name="icon">
-    <iconset theme="list-add">
-     <normaloff>.</normaloff>.</iconset>
+    <iconset theme="list-add"/>
    </property>
    <property name="text">
     <string>&amp;Add to Bookmarks</string>
@@ -471,8 +458,7 @@
   </action>
   <action name="actionCut">
    <property name="icon">
-    <iconset theme="edit-cut">
-     <normaloff>.</normaloff>.</iconset>
+    <iconset theme="edit-cut"/>
    </property>
    <property name="text">
     <string>Cu&amp;t</string>
@@ -483,8 +469,7 @@
   </action>
   <action name="actionCopy">
    <property name="icon">
-    <iconset theme="edit-copy">
-     <normaloff>.</normaloff>.</iconset>
+    <iconset theme="edit-copy"/>
    </property>
    <property name="text">
     <string>&amp;Copy</string>
@@ -495,8 +480,7 @@
   </action>
   <action name="actionPaste">
    <property name="icon">
-    <iconset theme="edit-paste">
-     <normaloff>.</normaloff>.</iconset>
+    <iconset theme="edit-paste"/>
    </property>
    <property name="text">
     <string>&amp;Paste</string>
@@ -507,8 +491,7 @@
   </action>
   <action name="actionSelectAll">
    <property name="icon">
-    <iconset theme="edit-select-all">
-     <normaloff>.</normaloff>.</iconset>
+    <iconset theme="edit-select-all"/>
    </property>
    <property name="text">
     <string>Select &amp;All</string>
@@ -538,8 +521,7 @@
     <string>&amp;Ascending</string>
    </property>
    <property name="icon">
-    <iconset theme="view-sort-ascending">
-     <normaloff>.</normaloff>.</iconset>
+    <iconset theme="view-sort-ascending"/>
    </property>
   </action>
   <action name="actionDescending">
@@ -550,8 +532,7 @@
     <string>&amp;Descending</string>
    </property>
    <property name="icon">
-    <iconset theme="view-sort-descending">
-     <normaloff>.</normaloff>.</iconset>
+    <iconset theme="view-sort-descending"/>
    </property>
   </action>
   <action name="actionByFileName">
@@ -628,8 +609,7 @@
   </action>
   <action name="actionNewTab">
    <property name="icon">
-    <iconset theme="tab-new">
-     <normaloff>.</normaloff>.</iconset>
+    <iconset theme="tab-new"/>
    </property>
    <property name="text">
     <string>New &amp;Tab</string>
@@ -643,8 +623,7 @@
   </action>
   <action name="actionGoBack">
    <property name="icon">
-    <iconset theme="go-previous">
-     <normaloff>.</normaloff>.</iconset>
+    <iconset theme="go-previous"/>
    </property>
    <property name="text">
     <string>Go &amp;Back</string>
@@ -658,8 +637,7 @@
   </action>
   <action name="actionGoForward">
    <property name="icon">
-    <iconset theme="go-next">
-     <normaloff>.</normaloff>.</iconset>
+    <iconset theme="go-next"/>
    </property>
    <property name="text">
     <string>Go &amp;Forward</string>
@@ -681,8 +659,7 @@
   </action>
   <action name="actionDelete">
    <property name="icon">
-    <iconset theme="edit-delete">
-     <normaloff>.</normaloff>.</iconset>
+    <iconset theme="edit-delete"/>
    </property>
    <property name="text">
     <string>&amp;Delete</string>
@@ -696,8 +673,7 @@
     <string>&amp;Rename</string>
    </property>
    <property name="icon">
-    <iconset theme="edit-rename">
-     <normaloff>.</normaloff>.</iconset>
+    <iconset theme="edit-rename"/>
    </property>
    <property name="shortcut">
     <string>F2</string>
@@ -705,8 +681,7 @@
   </action>
   <action name="actionCloseTab">
    <property name="icon">
-    <iconset theme="tab-close">
-     <normaloff>.</normaloff>.</iconset>
+    <iconset theme="tab-close"/>
    </property>
    <property name="text">
     <string>C&amp;lose Tab</string>
@@ -717,8 +692,7 @@
   </action>
   <action name="actionFileProperties">
    <property name="icon">
-    <iconset theme="document-properties">
-     <normaloff>.</normaloff>.</iconset>
+    <iconset theme="document-properties"/>
    </property>
    <property name="text">
     <string>File &amp;Properties</string>
@@ -750,8 +724,7 @@
   </action>
   <action name="actionCloseWindow">
    <property name="icon">
-    <iconset theme="window-close">
-     <normaloff>.</normaloff>.</iconset>
+    <iconset theme="window-close"/>
    </property>
    <property name="text">
     <string>&amp;Close Window</string>
@@ -767,8 +740,7 @@
   </action>
   <action name="actionOpenTerminal">
    <property name="icon">
-    <iconset theme="utilities-terminal">
-     <normaloff>.</normaloff>.</iconset>
+    <iconset theme="utilities-terminal"/>
    </property>
    <property name="text">
     <string>Open &amp;Terminal</string>
@@ -789,8 +761,7 @@
   </action>
   <action name="actionNewFolder">
    <property name="icon">
-    <iconset theme="folder-new">
-     <normaloff>.</normaloff>.</iconset>
+    <iconset theme="folder-new"/>
    </property>
    <property name="text">
     <string>&amp;Folder</string>
@@ -801,8 +772,7 @@
   </action>
   <action name="actionNewBlankFile">
    <property name="icon">
-    <iconset theme="document-new">
-     <normaloff>.</normaloff>.</iconset>
+    <iconset theme="document-new"/>
    </property>
    <property name="text">
     <string>&amp;Blank File</string>
@@ -816,8 +786,7 @@
     <string>&amp;Find Files</string>
    </property>
    <property name="icon">
-    <iconset theme="edit-find">
-     <normaloff>.</normaloff>.</iconset>
+    <iconset theme="edit-find"/>
    </property>
    <property name="shortcut">
     <string>F3</string>
@@ -844,8 +813,7 @@
   </action>
   <action name="actionCloseLeft">
    <property name="icon">
-    <iconset theme="go-previous">
-     <normaloff>.</normaloff>.</iconset>
+    <iconset theme="go-previous"/>
    </property>
    <property name="text">
     <string>Close &amp;previous tabs</string>
@@ -853,8 +821,7 @@
   </action>
   <action name="actionCloseRight">
    <property name="icon">
-    <iconset theme="go-next">
-     <normaloff>.</normaloff>.</iconset>
+    <iconset theme="go-next"/>
    </property>
    <property name="text">
     <string>Close &amp;next tabs</string>
@@ -881,8 +848,7 @@
   </action>
   <action name="actionMenu">
    <property name="icon">
-    <iconset theme="application-menu">
-     <normaloff>.</normaloff>.</iconset>
+    <iconset theme="application-menu"/>
    </property>
    <property name="text">
     <string>Menu</string>
@@ -901,8 +867,7 @@
   </action>
   <action name="actionConnectToServer">
    <property name="icon">
-    <iconset theme="network-server">
-     <normaloff>.</normaloff>.</iconset>
+    <iconset theme="network-server"/>
    </property>
    <property name="text">
     <string>Connect to &amp;Server</string>
@@ -929,8 +894,7 @@
     <string>&amp;Bulk Rename</string>
    </property>
    <property name="icon">
-    <iconset theme="edit-rename">
-     <normaloff>.</normaloff>.</iconset>
+    <iconset theme="edit-rename"/>
    </property>
    <property name="toolTip">
     <string>Bulk Rename</string>
@@ -969,8 +933,7 @@
     <string>&amp;Copy Full Path</string>
    </property>
    <property name="icon">
-    <iconset theme="edit-copy">
-     <normaloff>.</normaloff>.</iconset>
+    <iconset theme="edit-copy"/>
    </property>
    <property name="shortcut">
     <string>Ctrl+Shift+C</string>

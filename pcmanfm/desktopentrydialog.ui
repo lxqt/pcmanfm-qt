@@ -14,8 +14,7 @@
    <string>Create Launcher</string>
   </property>
   <property name="windowIcon">
-   <iconset theme="application-x-desktop">
-    <normaloff>.</normaloff>.</iconset>
+   <iconset theme="application-x-desktop"/>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout">
    <property name="leftMargin">

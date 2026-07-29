@@ -14,9 +14,7 @@
    <string>About</string>
   </property>
   <property name="windowIcon">
-   <iconset theme="help-about">
-    <normaloff/>
-   </iconset>
+   <iconset theme="help-about"/>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout">
    <item>

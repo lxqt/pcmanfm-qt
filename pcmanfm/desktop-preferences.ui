@@ -626,8 +626,7 @@ are left clicked, even when it is not the default file manager.</string>
              <string>Home</string>
             </property>
             <property name="icon">
-             <iconset theme="user-home">
-              <normaloff>.</normaloff>.</iconset>
+             <iconset theme="user-home"/>
             </property>
            </widget>
           </item>
@@ -637,8 +636,7 @@ are left clicked, even when it is not the default file manager.</string>
              <string>Trash</string>
             </property>
             <property name="icon">
-             <iconset theme="user-trash">
-              <normaloff>.</normaloff>.</iconset>
+             <iconset theme="user-trash"/>
             </property>
            </widget>
           </item>
@@ -648,8 +646,7 @@ are left clicked, even when it is not the default file manager.</string>
              <string>Computer</string>
             </property>
             <property name="icon">
-             <iconset theme="computer">
-              <normaloff>.</normaloff>.</iconset>
+             <iconset theme="computer"/>
             </property>
            </widget>
           </item>

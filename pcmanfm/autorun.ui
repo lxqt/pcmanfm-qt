@@ -14,8 +14,7 @@
    <string>Removable medium is inserted</string>
   </property>
   <property name="windowIcon">
-   <iconset theme="drive-removable-media">
-    <normaloff>../../../.designer/backup</normaloff>../../../.designer/backup</iconset>
+   <iconset theme="drive-removable-media"/>
   </property>
   <layout class="QFormLayout" name="formLayout_2">
    <item row="0" column="0">
