@@ -336,6 +336,7 @@ bool Settings::loadFile(QString filePath) {
     // detailed list columns
     customColumnWidths_ = settings.value(QStringLiteral("CustomColumnWidths")).toList();
     hiddenColumns_ = settings.value(QStringLiteral("HiddenColumns")).toList();
+    columnOrder_ = settings.value(QStringLiteral("ColumnOrder")).toList();
 
     settings.endGroup();
 
@@ -503,6 +504,7 @@ bool Settings::saveFile(QString filePath) {
         hiddenColumns << QVariant(columns.at(i));
     }
     settings.setValue(QStringLiteral("HiddenColumns"), hiddenColumns);
+    settings.setValue(QStringLiteral("ColumnOrder"), columnOrder_);
 
     settings.endGroup();
 

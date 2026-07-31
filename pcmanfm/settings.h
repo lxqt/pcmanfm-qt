@@ -1059,6 +1059,21 @@ public:
         }
     }
 
+    QList<int> getColumnOrder() const {
+        QList<int> order;
+        for(const auto& column : std::as_const(columnOrder_)) {
+            order << column.toInt();
+        }
+        return order;
+    }
+
+    void setColumnOrder(const QList<int>& order) {
+        columnOrder_.clear();
+        for(int column : order) {
+            columnOrder_ << QVariant(column);
+        }
+    }
+
     int getRecentFilesNumber() const {
         return recentFilesNumber_;
     }
@@ -1204,6 +1219,7 @@ private:
     // detailed list columns
     QList<QVariant> customColumnWidths_;
     QList<QVariant> hiddenColumns_;
+    QList<QVariant> columnOrder_;
 
     // recent files
     int recentFilesNumber_;

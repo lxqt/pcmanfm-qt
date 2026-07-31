@@ -29,8 +29,12 @@
 #include <QApplication>
 #include <QCursor>
 #include <QMessageBox>
+#include <QHeaderView>
 #include <QScrollBar>
+#include <QSet>
+#include <QSignalBlocker>
 #include <QToolButton>
+#include <QTreeView>
 #include <QLabel>
 #include <QToolTip>
 #include <QDir>
@@ -44,6 +48,74 @@
 using namespace Fm;
 
 namespace PCManFM {
+
+namespace {
+
+QList<int> currentColumnOrder(const QHeaderView* header) {
+    QList<int> order;
+    order.reserve(header->count());
+    for(int visualIndex = 0; visualIndex < header->count(); ++visualIndex) {
+        order << header->logicalIndex(visualIndex);
+    }
+    return order;
+}
+
+bool isValidColumnOrder(const QList<int>& order, int count) {
+    if(order.size() != count) {
+        return false;
+    }
+
+    QSet<int> sections;
+    for(int logicalIndex : order) {
+        if(logicalIndex < 0 || logicalIndex >= count || sections.contains(logicalIndex)) {
+            return false;
+        }
+        sections.insert(logicalIndex);
+    }
+    return true;
+}
+
+void setupColumnOrder(View* view, Settings& settings) {
+    if(view->viewMode() != Fm::FolderView::DetailedListMode) {
+        return;
+    }
+
+    QTreeView* treeView = qobject_cast<QTreeView*>(view->childView());
+    if(treeView == nullptr) {
+        return;
+    }
+
+    QHeaderView* header = treeView->header();
+    if(header->count() == 0) {
+        return;
+    }
+
+    const QList<int> savedOrder = settings.getColumnOrder();
+    if(isValidColumnOrder(savedOrder, header->count())) {
+        const QSignalBlocker blocker{header};
+        for(int newVisualIndex = 0; newVisualIndex < savedOrder.size(); ++newVisualIndex) {
+            const int oldVisualIndex = header->visualIndex(savedOrder.at(newVisualIndex));
+            if(oldVisualIndex >= 0 && oldVisualIndex != newVisualIndex) {
+                header->moveSection(oldVisualIndex, newVisualIndex);
+            }
+        }
+    }
+    else {
+        settings.setColumnOrder(currentColumnOrder(header));
+    }
+
+    static constexpr char connectedProperty[] = "_pcmanfm_column_order_connected";
+    if(!header->property(connectedProperty).toBool()) {
+        header->setProperty(connectedProperty, true);
+        Settings* settingsPtr = &settings;
+        QObject::connect(header, &QHeaderView::sectionMoved, view,
+                         [header, settingsPtr](int, int, int) {
+            settingsPtr->setColumnOrder(currentColumnOrder(header));
+        });
+    }
+}
+
+} // namespace
 
 bool ProxyFilter::filterAcceptsRow(const Fm::ProxyFolderModel* model, const std::shared_ptr<const Fm::FileInfo>& info) const {
     if(!model || !info) {
@@ -916,6 +988,7 @@ void TabPage::setViewMode(Fm::FolderView::ViewMode mode) {
     }
     Fm::FolderView::ViewMode prevMode = folderView_->viewMode();
     folderView_->setViewMode(mode);
+    setupColumnOrder(folderView_, settings);
     if(folderView_->isVisible()) { // in the current tab
         folderView_->childView()->setFocus();
     }
