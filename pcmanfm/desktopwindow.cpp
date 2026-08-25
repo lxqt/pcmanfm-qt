@@ -214,6 +214,16 @@ DesktopWindow::DesktopWindow(int screenNum, const QString& screenName):
                 layershell->setKeyboardInteractivity(LayerShellQt::Window::KeyboardInteractivityOnDemand);
                 layershell->setExclusiveZone(-1); // not moved to accommodate for other surfaces
                 layershell->setScope(QStringLiteral("desktop")); // just for distinguishing it
+
+                auto screen = getDesktopScreen();
+                if(screen != nullptr) {
+                    win->setScreen(screen);
+                    layershell->setWantsToBeOnActiveScreen(false);
+                    layershell->setScreen(nullptr);
+                }
+                else {
+                    layershell->setWantsToBeOnActiveScreen(true);
+                }
             }
         }
     }
