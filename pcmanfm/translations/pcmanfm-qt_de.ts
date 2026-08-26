@@ -150,7 +150,7 @@ Boston, MA  02110-1301, USA.</translation>
     <message>
         <location filename="../bulk-rename.ui" line="97"/>
         <source>Find in names:</source>
-        <translation>In Namen suchen:</translation>
+        <translation>Suchen in Namen:</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="107"/>
@@ -600,7 +600,7 @@ geöffnet, selbst wenn es nicht der Standard-Dateimanager ist.</translation>
     <message>
         <location filename="../desktop-preferences.ui" line="669"/>
         <source>Do not show file tooltips</source>
-        <translation type="unfinished">Keine Kurzinfo zu Dateien anzeigen</translation>
+        <translation>Keine Kurzinfo zu Dateien anzeigen</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="498"/>
@@ -825,7 +825,7 @@ geöffnet, selbst wenn es nicht der Standard-Dateimanager ist.</translation>
     <message>
         <location filename="../main-win.ui" line="309"/>
         <source>Alt+Home</source>
-        <translation>Alt+Pos1</translation>
+        <translation>Alt+Home</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="425"/>
@@ -2623,7 +2623,7 @@ lxsudo dbus-run-session -- %s</translation>
     <message>
         <location filename="../bulkrename.cpp" line="234"/>
         <source>Nothing to find.</source>
-        <translation>Nichts zu finden.</translation>
+        <translation>Nicht gefunden</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="243"/>
