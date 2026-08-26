@@ -1,5 +1,15 @@
+pcmanfm-qt-2.4.1 / 2026-08-26
+==============================
+ * Set desktop screen explicitly on Wayland.
+ * Close tabs without close buttons by middle clicking with Qt ≥ 6.11.
+ * Workaround for a bad behavior of wlroots.
+ * Removed the redundant translations CMake file.
+ * Set desktop file name.
+ * Removed `<normaloff>` from ui files.
+ * Updated fsf address.
+
 pcmanfm-qt-2.4.0 / 2026-04-20
--==============================
+==============================
  * Fixed closing tabs by middle clicking with Qt ≥ 6.11.
  * Removed redundant spacing for filter bar.
  * Removed redundant .ui <hints> tags.
