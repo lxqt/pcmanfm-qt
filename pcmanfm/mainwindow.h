@@ -31,6 +31,8 @@
 #include <QTabBar>
 #include <QStackedWidget>
 #include <QSplitter>
+#include <QProgressBar>
+#include <QToolButton>
 #include "launcher.h"
 #include "tabbar.h"
 #include <libfm-qt6/core/filepath.h>
@@ -84,8 +86,8 @@ public:
         chdir(path, activeViewFrame_);
     }
 
-    void addTab(Fm::FilePath path, ViewFrame* viewFrame);
-    void addTab(Fm::FilePath path);
+    void addTab(Fm::FilePath path, ViewFrame* viewFrame, bool forceSwitch = false);
+    void addTab(Fm::FilePath path, bool forceSwitch = false);
 
     TabPage* currentPage(ViewFrame* viewFrame) {
         return reinterpret_cast<TabPage*>(viewFrame->getStackedWidget()->currentWidget());
@@ -200,6 +202,7 @@ protected Q_SLOTS:
 
     void onTabPageTitleChanged();
     void onTabPageStatusChanged(int type, QString statusText);
+    void onTabPageSearchingChanged(bool searching);
     void onTabPageSortFilterChanged();
 
     void onSidePaneChdirRequested(int type, const Fm::FilePath &path);
@@ -256,11 +259,12 @@ private:
     void updateViewMenuForCurrentPage();
     void updateSelectedActions();
     void updateStatusBarForCurrentPage();
+    QString statusBarTextForPage(TabPage* tabPage) const;
     void setRTLIcons(bool isRTL);
     void createPathBar(bool usePathButtons);
     void addViewFrame(const Fm::FilePath& path);
     ViewFrame* viewFrameForTabPage(TabPage* page);
-    int addTabWithPage(TabPage* page, ViewFrame* viewFrame, Fm::FilePath path = Fm::FilePath());
+    int addTabWithPage(TabPage* page, ViewFrame* viewFrame, Fm::FilePath path = Fm::FilePath(), bool forceSwitch = false);
     void dropTab(QObject* source);
     void setTabIcon(TabPage* tabPage);
 
@@ -269,6 +273,9 @@ private:
     Fm::PathEdit* pathEntry_;
     Fm::PathBar* pathBar_;
     QLabel* fsInfoLabel_;
+    QLabel* searchingLabel_;
+    QProgressBar* searchBusyIndicator_;
+    QToolButton* searchStopButton_;
     std::shared_ptr<Fm::Bookmarks> bookmarks_;
     Launcher fileLauncher_;
     int rightClickIndex_;

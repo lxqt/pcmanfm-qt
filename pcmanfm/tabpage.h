@@ -24,6 +24,7 @@
 #include <QWidget>
 #include <QVBoxLayout>
 #include <QLineEdit>
+#include <QLabel>
 #include <libfm-qt6/browsehistory.h>
 #include "view.h"
 #include "settings.h"
@@ -214,6 +215,12 @@ public:
         return statusText_[type];
     }
 
+    bool isSearching() const {
+        return searching_;
+    }
+
+    void stopSearch();
+
     bool canBackward() {
         return history_.canBackward();
     }
@@ -292,6 +299,7 @@ public:
 Q_SIGNALS:
     void statusChanged(int type, QString statusText);
     void titleChanged();
+    void searchingChanged(bool searching);
     void sortFilterChanged();
     void forwardRequested();
     void backwardRequested();
@@ -308,6 +316,7 @@ protected Q_SLOTS:
     void onFilesAdded(const Fm::FileInfoList files);
     void onFilterStringChanged(QString str);
     void onLosingFilterBarFocus();
+    void onSearchModelRowsInserted();
 
 private:
     void freeFolder();
@@ -333,6 +342,8 @@ private:
     Fm::ProxyFolderModel* proxyModel_;
     ProxyFilter* proxyFilter_;
     QVBoxLayout* verticalLayout;
+    QLabel* searchStatusLabel_;
+    bool searching_;
     std::shared_ptr<Fm::Folder> folder_;
     QString title_;
     QString statusText_[StatusTextNum];

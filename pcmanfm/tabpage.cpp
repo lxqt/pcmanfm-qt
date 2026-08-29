@@ -19,7 +19,6 @@
 
 
 #include "tabpage.h"
-#include "launcher.h"
 #include <libfm-qt6/filemenu.h>
 #include <libfm-qt6/mountoperation.h>
 #include <libfm-qt6/proxyfoldermodel.h>
@@ -108,6 +107,8 @@ TabPage::TabPage(QWidget* parent):
     proxyModel_{nullptr},
     proxyFilter_{nullptr},
     verticalLayout{nullptr},
+    searchStatusLabel_{nullptr},
+    searching_(false),
     overrideCursor_(false),
     selectionTimer_(nullptr),
     filterBar_(nullptr),
@@ -120,6 +121,7 @@ TabPage::TabPage(QWidget* parent):
     proxyModel_->setShowHidden(settings.showHidden());
     proxyModel_->setBackupAsHidden(settings.backupAsHidden());
     proxyModel_->setShowThumbnails(settings.showThumbnails());
+    connect(proxyModel_, &QAbstractItemModel::rowsInserted, this, &TabPage::onSearchModelRowsInserted);
     connect(proxyModel_, &ProxyFolderModel::sortFilterChanged, this, [this] {
         QToolTip::showText(QPoint(), QString()); // remove the tooltip, if any
         if(!changingDir_) {
@@ -131,6 +133,12 @@ TabPage::TabPage(QWidget* parent):
     verticalLayout = new QVBoxLayout(this);
     verticalLayout->setContentsMargins(0, 0, 0, 0);
     verticalLayout->setSpacing(0);
+
+    searchStatusLabel_ = new QLabel(this);
+    searchStatusLabel_->setAlignment(Qt::AlignCenter);
+    searchStatusLabel_->setContentsMargins(6, 6, 6, 6);
+    searchStatusLabel_->hide();
+    verticalLayout->addWidget(searchStatusLabel_);
 
     folderView_ = new View(settings.viewMode(), this);
     folderView_->setMargins(settings.folderViewCellMargins());
@@ -304,6 +312,14 @@ void TabPage::freeFolder() {
         disconnect(folder_.get(), nullptr, this, nullptr); // disconnect from all signals
         folder_ = nullptr;
         filesToTrust_.clear();
+        if(searching_) {
+            // navigating away while a search is still running: since we're disconnecting from
+            // it above, onFolderFinishLoading() will never fire for it, so clean up here instead
+            searching_ = false;
+            searchStatusLabel_->hide();
+            folderView_->unsetCursor();
+            Q_EMIT searchingChanged(false);
+        }
     }
 }
 
@@ -311,7 +327,20 @@ void TabPage::onFolderStartLoading() {
     if(folderModel_){
         disconnect(folderModel_, &Fm::FolderModel::filesAdded, this, &TabPage::onFilesAdded);
     }
-    if(!overrideCursor_) {
+    bool wasSearching = searching_;
+    searching_ = folder_ && folder_->path().hasUriScheme("search");
+    searchStatusLabel_->hide(); // only shown again for the final "No files found." message
+    if(searching_ != wasSearching) {
+        Q_EMIT searchingChanged(searching_);
+    }
+    if(searching_) {
+        // a search can run for a long time and already has its own busy indicator and a Stop
+        // button in the status bar; a global wait cursor for its whole duration would make
+        // those (and everything else in the app) look unclickable. Scope the wait cursor to
+        // just the folder view instead of the near-instant-load global override below.
+        folderView_->setCursor(Qt::WaitCursor);
+    }
+    else if(!overrideCursor_) {
         // FIXME: sometimes FmFolder of libfm generates unpaired "start-loading" and
         // "finish-loading" signals of uncertain reasons. This should be a bug in libfm.
         // Until it's fixed in libfm, we need to workaround the problem here, not to
@@ -481,6 +510,21 @@ void TabPage::onFolderFinishLoading() {
         Q_EMIT titleChanged();
     }
 
+    if(folder_->path().hasUriScheme("search")) {
+        if(searching_) { // the search itself is done, regardless of the outcome
+            searching_ = false;
+            folderView_->unsetCursor();
+            Q_EMIT searchingChanged(false);
+        }
+        if(proxyModel_ && proxyModel_->rowCount() == 0) {
+            searchStatusLabel_->setText(tr("No files found."));
+            searchStatusLabel_->show();
+        }
+        else {
+            searchStatusLabel_->hide();
+        }
+    }
+
     folder_->queryFilesystemInfo(); // FIXME: is this needed?
 #if 0
     FmFolderView* fv = folder_view;
@@ -580,6 +624,16 @@ void TabPage::onFolderFsInfo() {
     Q_EMIT statusChanged(StatusTextFSInfo, msg);
 }
 
+void TabPage::onSearchModelRowsInserted() {
+    if(searching_) {
+        // reuse the exact same "N file(s) found" text/pipeline shown once the search finishes,
+        // so the live count in the status bar just keeps counting up rather than jumping to a
+        // different message when the search completes
+        statusText_[StatusTextNormal] = formatStatusText();
+        Q_EMIT statusChanged(StatusTextNormal, statusText_[StatusTextNormal]);
+    }
+}
+
 QString TabPage::formatStatusText() {
     if(proxyModel_ && folder_) {
         // FIXME: this is very inefficient
@@ -587,7 +641,8 @@ QString TabPage::formatStatusText() {
         int total_files = files.size();
         int shown_files = proxyModel_->rowCount();
         int hidden_files = total_files - shown_files;
-        QString text = tr("%n item(s)", "", shown_files);
+        QString text = folder_->path().hasUriScheme("search") ? tr("%n item(s) found", "", shown_files)
+                                                               : tr("%n item(s)", "", shown_files);
         if(hidden_files > 0) {
             text += tr(" (%n hidden)", "", hidden_files);
         }
@@ -773,6 +828,12 @@ void TabPage::reload() {
         item.setScrollPos(childView->verticalScrollBar()->value());
 
         folder_->reload();
+    }
+}
+
+void TabPage::stopSearch() {
+    if(searching_ && folder_) {
+        folder_->stopLoading();
     }
 }
 

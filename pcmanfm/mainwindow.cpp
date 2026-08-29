@@ -199,6 +199,30 @@ MainWindow::MainWindow(Fm::FilePath path):
     fsInfoLabel_ = new QLabel(ui.statusbar);
     ui.statusbar->addPermanentWidget(fsInfoLabel_);
 
+    // "Searching…" text + busy indicator, shown together in the status bar
+    // while the current tab is running a "search://" query
+    searchingLabel_ = new QLabel(tr("Searching…"), ui.statusbar);
+    searchingLabel_->hide();
+    ui.statusbar->addPermanentWidget(searchingLabel_);
+    searchBusyIndicator_ = new QProgressBar(ui.statusbar);
+    searchBusyIndicator_->setFixedWidth(150);
+    searchBusyIndicator_->setTextVisible(false);
+    searchBusyIndicator_->setRange(0, 0); // indeterminate/busy mode
+    searchBusyIndicator_->hide();
+    ui.statusbar->addPermanentWidget(searchBusyIndicator_);
+    searchStopButton_ = new QToolButton(ui.statusbar);
+    searchStopButton_->setAutoRaise(true);
+    searchStopButton_->setIcon(QIcon::fromTheme(QStringLiteral("process-stop"),
+                                                 style()->standardIcon(QStyle::SP_BrowserStop)));
+    searchStopButton_->setToolTip(tr("Stop searching"));
+    searchStopButton_->hide();
+    connect(searchStopButton_, &QToolButton::clicked, this, [this] {
+        if(TabPage* tabPage = currentPage()) {
+            tabPage->stopSearch();
+        }
+    });
+    ui.statusbar->addPermanentWidget(searchStopButton_);
+
     // setup the splitter
     ui.splitter->setStretchFactor(1, 1); // only the right pane can be stretched
     QList<int> sizes;
@@ -682,7 +706,7 @@ void MainWindow::createPathBar(bool usePathButtons) {
     }
 }
 
-int MainWindow::addTabWithPage(TabPage* page, ViewFrame* viewFrame, Fm::FilePath path) {
+int MainWindow::addTabWithPage(TabPage* page, ViewFrame* viewFrame, Fm::FilePath path, bool forceSwitch) {
     if(page == nullptr || viewFrame == nullptr) {
         return -1;
     }
@@ -690,6 +714,7 @@ int MainWindow::addTabWithPage(TabPage* page, ViewFrame* viewFrame, Fm::FilePath
     int index = viewFrame->getStackedWidget()->addWidget(page);
     connect(page, &TabPage::titleChanged, this, &MainWindow::onTabPageTitleChanged);
     connect(page, &TabPage::statusChanged, this, &MainWindow::onTabPageStatusChanged);
+    connect(page, &TabPage::searchingChanged, this, &MainWindow::onTabPageSearchingChanged);
     connect(page, &TabPage::sortFilterChanged, this, &MainWindow::onTabPageSortFilterChanged);
     connect(page, &TabPage::backwardRequested, this, &MainWindow::on_actionGoBack_triggered);
     connect(page, &TabPage::forwardRequested, this, &MainWindow::on_actionGoForward_triggered);
@@ -707,7 +732,7 @@ int MainWindow::addTabWithPage(TabPage* page, ViewFrame* viewFrame, Fm::FilePath
     viewFrame->getTabBar()->insertTab(index, tabText);
 
     Settings& settings = static_cast<Application*>(qApp)->settings();
-    if(settings.switchToNewTab()) {
+    if(settings.switchToNewTab() || forceSwitch) {
         viewFrame->getTabBar()->setCurrentIndex(index); // also focuses the view
         if (isMinimized()) {
             setWindowState((windowState() & ~Qt::WindowMinimized) | Qt::WindowActive);
@@ -725,12 +750,12 @@ int MainWindow::addTabWithPage(TabPage* page, ViewFrame* viewFrame, Fm::FilePath
 }
 
 // add a new tab
-void MainWindow::addTab(Fm::FilePath path, ViewFrame* viewFrame) {
+void MainWindow::addTab(Fm::FilePath path, ViewFrame* viewFrame, bool forceSwitch) {
     TabPage* newPage = new TabPage(this);
-    addTabWithPage(newPage, viewFrame, path);
+    addTabWithPage(newPage, viewFrame, path, forceSwitch);
 }
 
-void MainWindow::addTab(Fm::FilePath path) {
+void MainWindow::addTab(Fm::FilePath path, bool forceSwitch) {
     if(splitView_ && static_cast<Application*>(qApp)->openingLastTabs()) {
         int N = static_cast<Application*>(qApp)->settings().splitViewTabsNum();
         if(N > 0) {
@@ -746,14 +771,14 @@ void MainWindow::addTab(Fm::FilePath path) {
             if(!firstFrame || !secondFrame) { // unlikely but logical
                 static_cast<Application*>(qApp)->settings().setSplitViewTabsNum(0);
                 splitTabsNum_ = -1;
-                addTab(path, activeViewFrame_);
+                addTab(path, activeViewFrame_, forceSwitch);
             }
             else if(splitTabsNum_ > 0) {
                 --splitTabsNum_;
-                addTab(path, firstFrame);
+                addTab(path, firstFrame, forceSwitch);
             }
             else {
-                addTab(path, secondFrame);
+                addTab(path, secondFrame, forceSwitch);
                 // On reaching the single tab of the second frame, remove it after adding a tab.
                 if(splitTabsNum_ == 0 && secondFrame->getStackedWidget()->count() == 2) {
                     closeTab(0, secondFrame);
@@ -764,7 +789,7 @@ void MainWindow::addTab(Fm::FilePath path) {
         }
     }
     // add the tab to the active view frame
-    addTab(path, activeViewFrame_);
+    addTab(path, activeViewFrame_, forceSwitch);
 }
 
 void MainWindow::toggleMenuBar(bool /*checked*/) {
@@ -1424,17 +1449,33 @@ void MainWindow::onTabBarCurrentChanged(int index) {
     }
 }
 
+// Normally, having a selection replaces the item-count message entirely (there's no room to
+// show both without crowding the bar). But for search results, the "N found" count matters
+// even while items are selected -- e.g. the search may still be running -- so keep both, side by side.
+QString MainWindow::statusBarTextForPage(TabPage* tabPage) const {
+    QString normal = tabPage->statusText(TabPage::StatusTextNormal);
+    QString selected = tabPage->statusText(TabPage::StatusTextSelectedFiles);
+    if(selected.isEmpty()) {
+        return normal;
+    }
+    if(tabPage->path().hasUriScheme("search") && !normal.isEmpty()) {
+        return normal + QStringLiteral("  —  ") + selected;
+    }
+    return selected;
+}
+
 void MainWindow::updateStatusBarForCurrentPage() {
     TabPage* tabPage = currentPage();
-    QString text = tabPage->statusText(TabPage::StatusTextSelectedFiles);
-    if(text.isEmpty()) {
-        text = tabPage->statusText(TabPage::StatusTextNormal);
-    }
-    ui.statusbar->showMessage(text);
+    ui.statusbar->showMessage(statusBarTextForPage(tabPage));
 
-    text = tabPage->statusText(TabPage::StatusTextFSInfo);
+    QString text = tabPage->statusText(TabPage::StatusTextFSInfo);
     fsInfoLabel_->setText(text);
     fsInfoLabel_->setVisible(!text.isEmpty());
+
+    bool searching = tabPage->isSearching();
+    searchingLabel_->setVisible(searching);
+    searchBusyIndicator_->setVisible(searching);
+    searchStopButton_->setVisible(searching);
 }
 
 void MainWindow::updateViewMenuForCurrentPage() {
@@ -1697,13 +1738,7 @@ void MainWindow::onTabPageStatusChanged(int type, QString statusText) {
         case TabPage::StatusTextSelectedFiles: {
             // although the status text may change very frequently,
             // the text of PCManFM::StatusBar is updated with a delay
-            QString text = tabPage->statusText(TabPage::StatusTextSelectedFiles);
-            if(text.isEmpty()) {
-                ui.statusbar->showMessage(tabPage->statusText(TabPage::StatusTextNormal));
-            }
-            else {
-                ui.statusbar->showMessage(text);
-            }
+            ui.statusbar->showMessage(statusBarTextForPage(tabPage));
             break;
         }
         case TabPage::StatusTextFSInfo:
@@ -1716,6 +1751,15 @@ void MainWindow::onTabPageStatusChanged(int type, QString statusText) {
     // Since TabPage::statusChanged is always emitted after View::selChanged,
     // there is no need to connect a separate slot to the latter signal
     updateSelectedActions();
+}
+
+void MainWindow::onTabPageSearchingChanged(bool searching) {
+    TabPage* tabPage = static_cast<TabPage*>(sender());
+    if(tabPage == currentPage()) {
+        searchingLabel_->setVisible(searching);
+        searchBusyIndicator_->setVisible(searching);
+        searchStopButton_->setVisible(searching);
+    }
 }
 
 void MainWindow::onTabPageSortFilterChanged() { // NOTE: This may be called from context menu too.
