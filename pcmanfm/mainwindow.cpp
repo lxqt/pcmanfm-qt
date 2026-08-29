@@ -1629,6 +1629,9 @@ void MainWindow::updateUIForCurrentPage(bool setFocus) {
         ui.actionGoForward->setEnabled(tabPage->canForward());
 
         ui.actionOpenAsAdmin->setEnabled(tabPage->path() && tabPage->path().isNative());
+        // searching from a search results tab would default to "search://..." as the
+        // location to search, which isn't a real, searchable path
+        ui.actionFindFiles->setEnabled(!tabPage->path().hasUriScheme("search"));
 
         updateViewMenuForCurrentPage();
         updateStatusBarForCurrentPage();
