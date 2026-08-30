@@ -107,7 +107,6 @@ TabPage::TabPage(QWidget* parent):
     proxyModel_{nullptr},
     proxyFilter_{nullptr},
     verticalLayout{nullptr},
-    searchStatusLabel_{nullptr},
     searching_(false),
     overrideCursor_(false),
     selectionTimer_(nullptr),
@@ -133,12 +132,6 @@ TabPage::TabPage(QWidget* parent):
     verticalLayout = new QVBoxLayout(this);
     verticalLayout->setContentsMargins(0, 0, 0, 0);
     verticalLayout->setSpacing(0);
-
-    searchStatusLabel_ = new QLabel(this);
-    searchStatusLabel_->setAlignment(Qt::AlignCenter);
-    searchStatusLabel_->setContentsMargins(6, 6, 6, 6);
-    searchStatusLabel_->hide();
-    verticalLayout->addWidget(searchStatusLabel_);
 
     folderView_ = new View(settings.viewMode(), this);
     folderView_->setMargins(settings.folderViewCellMargins());
@@ -312,14 +305,6 @@ void TabPage::freeFolder() {
         disconnect(folder_.get(), nullptr, this, nullptr); // disconnect from all signals
         folder_ = nullptr;
         filesToTrust_.clear();
-        if(searching_) {
-            // navigating away while a search is still running: since we're disconnecting from
-            // it above, onFolderFinishLoading() will never fire for it, so clean up here instead
-            searching_ = false;
-            searchStatusLabel_->hide();
-            folderView_->unsetCursor();
-            Q_EMIT searchingChanged(false);
-        }
     }
 }
 
@@ -329,9 +314,14 @@ void TabPage::onFolderStartLoading() {
     }
     bool wasSearching = searching_;
     searching_ = folder_ && folder_->path().hasUriScheme("search");
-    searchStatusLabel_->hide(); // only shown again for the final "No items found." message
     if(searching_ != wasSearching) {
         Q_EMIT searchingChanged(searching_);
+    }
+    if(searching_) {
+        // the search replaces this tab's content in place, so whatever item count was shown
+        // for the previous folder is now stale and misleading until the first results arrive
+        statusText_[StatusTextNormal] = QString();
+        Q_EMIT statusChanged(StatusTextNormal, statusText_[StatusTextNormal]);
     }
     if(searching_) {
         // a search can run for a long time and already has its own busy indicator and a Stop
@@ -340,13 +330,18 @@ void TabPage::onFolderStartLoading() {
         // just the folder view instead of the near-instant-load global override below.
         folderView_->setCursor(Qt::WaitCursor);
     }
-    else if(!overrideCursor_) {
-        // FIXME: sometimes FmFolder of libfm generates unpaired "start-loading" and
-        // "finish-loading" signals of uncertain reasons. This should be a bug in libfm.
-        // Until it's fixed in libfm, we need to workaround the problem here, not to
-        // override the cursor twice.
-        QApplication::setOverrideCursor(QCursor(Qt::WaitCursor));
-        overrideCursor_ = true;
+    else {
+        // clear any local wait cursor left over from a previous search on this tab
+        // (e.g. one that was interrupted by navigating here before it finished)
+        folderView_->unsetCursor();
+        if(!overrideCursor_) {
+            // FIXME: sometimes FmFolder of libfm generates unpaired "start-loading" and
+            // "finish-loading" signals of uncertain reasons. This should be a bug in libfm.
+            // Until it's fixed in libfm, we need to workaround the problem here, not to
+            // override the cursor twice.
+            QApplication::setOverrideCursor(QCursor(Qt::WaitCursor));
+            overrideCursor_ = true;
+        }
     }
 #if 0
 #if FM_CHECK_VERSION(1, 0, 2) && 0 // disabled
@@ -510,19 +505,10 @@ void TabPage::onFolderFinishLoading() {
         Q_EMIT titleChanged();
     }
 
-    if(folder_->path().hasUriScheme("search")) {
-        if(searching_) { // the search itself is done, regardless of the outcome
-            searching_ = false;
-            folderView_->unsetCursor();
-            Q_EMIT searchingChanged(false);
-        }
-        if(proxyModel_ && proxyModel_->rowCount() == 0) {
-            searchStatusLabel_->setText(tr("No items found."));
-            searchStatusLabel_->show();
-        }
-        else {
-            searchStatusLabel_->hide();
-        }
+    if(folder_->path().hasUriScheme("search") && searching_) { // the search itself is done, regardless of the outcome
+        searching_ = false;
+        folderView_->unsetCursor();
+        Q_EMIT searchingChanged(false);
     }
 
     folder_->queryFilesystemInfo(); // FIXME: is this needed?

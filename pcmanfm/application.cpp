@@ -539,11 +539,7 @@ void Application::onFindFileAccepted() {
     Fm::FilePathList paths;
     paths.emplace_back(dlg->searchUri());
     MainWindow* window = MainWindow::lastActive();
-    Launcher launcher(window);
-    // keep the folder the user was browsing intact in its own tab, but still switch
-    // to the search results tab right away since that's the whole point of searching
-    launcher.openInNewTab(true);
-    launcher.launchPaths(nullptr, paths);
+    Launcher(window).launchPaths(nullptr, paths);
 }
 
 void Application::onConnectToServerAccepted() {

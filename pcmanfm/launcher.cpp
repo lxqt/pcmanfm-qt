@@ -30,7 +30,6 @@ Launcher::Launcher(PCManFM::MainWindow* mainWindow):
     Fm::FileLauncher(),
     mainWindow_(mainWindow),
     openInNewTab_(false),
-    forceSwitchToNewTab_(false),
     openWithDefaultFileManager_(false) {
 
     Application* app = static_cast<Application*>(qApp);
@@ -68,7 +67,7 @@ bool Launcher::openFolder(GAppLaunchContext* ctx, const Fm::FileInfoList& folder
     }
     else {
         if(openInNewTab_) {
-            mainWindow->addTab(std::move(path), forceSwitchToNewTab_);
+            mainWindow->addTab(std::move(path));
         }
         else {
             mainWindow->chdir(std::move(path));
@@ -86,7 +85,6 @@ bool Launcher::openFolder(GAppLaunchContext* ctx, const Fm::FileInfoList& folder
         mainWindow->activateWindow();
     }
     openInNewTab_ = false;
-    forceSwitchToNewTab_ = false;
     return true;
 }
 

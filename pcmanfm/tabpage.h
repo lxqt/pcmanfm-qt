@@ -24,7 +24,6 @@
 #include <QWidget>
 #include <QVBoxLayout>
 #include <QLineEdit>
-#include <QLabel>
 #include <libfm-qt6/browsehistory.h>
 #include "view.h"
 #include "settings.h"
@@ -342,7 +341,6 @@ private:
     Fm::ProxyFolderModel* proxyModel_;
     ProxyFilter* proxyFilter_;
     QVBoxLayout* verticalLayout;
-    QLabel* searchStatusLabel_;
     bool searching_;
     std::shared_ptr<Fm::Folder> folder_;
     QString title_;

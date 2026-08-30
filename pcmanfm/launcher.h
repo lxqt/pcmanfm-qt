@@ -36,11 +36,8 @@ public:
         return mainWindow_ != nullptr;
     }
 
-    // forceSwitchTo bypasses the "switch to new tab" setting, for cases where
-    // showing the new tab right away is the whole point (e.g. search results)
-    void openInNewTab(bool forceSwitchTo = false) {
+    void openInNewTab() {
         openInNewTab_ = true;
-        forceSwitchToNewTab_ = forceSwitchTo;
     }
 
     bool openWithDefaultFileManager() const {
@@ -58,7 +55,6 @@ protected:
 private:
     MainWindow* mainWindow_;
     bool openInNewTab_;
-    bool forceSwitchToNewTab_;
     bool openWithDefaultFileManager_;
 };
 

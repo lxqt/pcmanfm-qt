@@ -86,8 +86,8 @@ public:
         chdir(path, activeViewFrame_);
     }
 
-    void addTab(Fm::FilePath path, ViewFrame* viewFrame, bool forceSwitch = false);
-    void addTab(Fm::FilePath path, bool forceSwitch = false);
+    void addTab(Fm::FilePath path, ViewFrame* viewFrame);
+    void addTab(Fm::FilePath path);
 
     TabPage* currentPage(ViewFrame* viewFrame) {
         return reinterpret_cast<TabPage*>(viewFrame->getStackedWidget()->currentWidget());
@@ -259,12 +259,11 @@ private:
     void updateViewMenuForCurrentPage();
     void updateSelectedActions();
     void updateStatusBarForCurrentPage();
-    QString statusBarTextForPage(TabPage* tabPage) const;
     void setRTLIcons(bool isRTL);
     void createPathBar(bool usePathButtons);
     void addViewFrame(const Fm::FilePath& path);
     ViewFrame* viewFrameForTabPage(TabPage* page);
-    int addTabWithPage(TabPage* page, ViewFrame* viewFrame, Fm::FilePath path = Fm::FilePath(), bool forceSwitch = false);
+    int addTabWithPage(TabPage* page, ViewFrame* viewFrame, Fm::FilePath path = Fm::FilePath());
     void dropTab(QObject* source);
     void setTabIcon(TabPage* tabPage);
 
