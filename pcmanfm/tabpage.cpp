@@ -329,7 +329,7 @@ void TabPage::onFolderStartLoading() {
     }
     bool wasSearching = searching_;
     searching_ = folder_ && folder_->path().hasUriScheme("search");
-    searchStatusLabel_->hide(); // only shown again for the final "No files found." message
+    searchStatusLabel_->hide(); // only shown again for the final "No items found." message
     if(searching_ != wasSearching) {
         Q_EMIT searchingChanged(searching_);
     }
@@ -517,7 +517,7 @@ void TabPage::onFolderFinishLoading() {
             Q_EMIT searchingChanged(false);
         }
         if(proxyModel_ && proxyModel_->rowCount() == 0) {
-            searchStatusLabel_->setText(tr("No files found."));
+            searchStatusLabel_->setText(tr("No items found."));
             searchStatusLabel_->show();
         }
         else {
