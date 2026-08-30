@@ -200,18 +200,21 @@ MainWindow::MainWindow(Fm::FilePath path):
     ui.statusbar->addPermanentWidget(fsInfoLabel_);
 
     // "Searching…" text + busy indicator, shown together in the status bar
-    // while the current tab is running a "search://" query
+    // while the current tab is running a "search://" query.
+    const int statusBarRowHeight = ui.statusbar->fontMetrics().height();
     searchingLabel_ = new QLabel(tr("Searching…"), ui.statusbar);
     searchingLabel_->hide();
     ui.statusbar->addPermanentWidget(searchingLabel_);
     searchBusyIndicator_ = new QProgressBar(ui.statusbar);
     searchBusyIndicator_->setFixedWidth(150);
+    searchBusyIndicator_->setFixedHeight(statusBarRowHeight);
     searchBusyIndicator_->setTextVisible(false);
     searchBusyIndicator_->setRange(0, 0); // indeterminate/busy mode
     searchBusyIndicator_->hide();
     ui.statusbar->addPermanentWidget(searchBusyIndicator_);
     searchStopButton_ = new QToolButton(ui.statusbar);
     searchStopButton_->setAutoRaise(true);
+    searchStopButton_->setIconSize(QSize(statusBarRowHeight, statusBarRowHeight));
     searchStopButton_->setIcon(QIcon::fromTheme(QStringLiteral("process-stop"),
                                                  style()->standardIcon(QStyle::SP_BrowserStop)));
     searchStopButton_->setToolTip(tr("Stop searching"));

@@ -322,25 +322,14 @@ void TabPage::onFolderStartLoading() {
         // for the previous folder is now stale and misleading until the first results arrive
         statusText_[StatusTextNormal] = QString();
         Q_EMIT statusChanged(StatusTextNormal, statusText_[StatusTextNormal]);
-
-        // a search can run for a long time and already has its own busy indicator and a Stop
-        // button in the status bar; a global wait cursor for its whole duration would make
-        // those (and everything else in the app) look unclickable. Scope the wait cursor to
-        // just the folder view instead of the near-instant-load global override below.
-        folderView_->setCursor(Qt::WaitCursor);
     }
-    else {
-        // clear any local wait cursor left over from a previous search on this tab
-        // (e.g. one that was interrupted by navigating here before it finished)
-        folderView_->unsetCursor();
-        if(!overrideCursor_) {
-            // FIXME: sometimes FmFolder of libfm generates unpaired "start-loading" and
-            // "finish-loading" signals of uncertain reasons. This should be a bug in libfm.
-            // Until it's fixed in libfm, we need to workaround the problem here, not to
-            // override the cursor twice.
-            QApplication::setOverrideCursor(QCursor(Qt::WaitCursor));
-            overrideCursor_ = true;
-        }
+    if(!overrideCursor_) {
+        // FIXME: sometimes FmFolder of libfm generates unpaired "start-loading" and
+        // "finish-loading" signals of uncertain reasons. This should be a bug in libfm.
+        // Until it's fixed in libfm, we need to workaround the problem here, not to
+        // override the cursor twice.
+        QApplication::setOverrideCursor(QCursor(Qt::WaitCursor));
+        overrideCursor_ = true;
     }
 #if 0
 #if FM_CHECK_VERSION(1, 0, 2) && 0 // disabled
@@ -506,7 +495,6 @@ void TabPage::onFolderFinishLoading() {
 
     if(folder_->path().hasUriScheme("search") && searching_) { // the search itself is done, regardless of the outcome
         searching_ = false;
-        folderView_->unsetCursor();
         Q_EMIT searchingChanged(false);
     }
 
