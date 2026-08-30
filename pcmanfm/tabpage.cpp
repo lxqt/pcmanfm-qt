@@ -322,8 +322,7 @@ void TabPage::onFolderStartLoading() {
         // for the previous folder is now stale and misleading until the first results arrive
         statusText_[StatusTextNormal] = QString();
         Q_EMIT statusChanged(StatusTextNormal, statusText_[StatusTextNormal]);
-    }
-    if(searching_) {
+
         // a search can run for a long time and already has its own busy indicator and a Stop
         // button in the status bar; a global wait cursor for its whole duration would make
         // those (and everything else in the app) look unclickable. Scope the wait cursor to
