@@ -107,7 +107,7 @@ TabPage::TabPage(QWidget* parent):
     proxyModel_{nullptr},
     proxyFilter_{nullptr},
     verticalLayout{nullptr},
-    searching_(false),
+    incremental_search(false),
     overrideCursor_(false),
     selectionTimer_(nullptr),
     filterBar_(nullptr),
@@ -120,7 +120,7 @@ TabPage::TabPage(QWidget* parent):
     proxyModel_->setShowHidden(settings.showHidden());
     proxyModel_->setBackupAsHidden(settings.backupAsHidden());
     proxyModel_->setShowThumbnails(settings.showThumbnails());
-    connect(proxyModel_, &QAbstractItemModel::rowsInserted, this, &TabPage::onSearchModelRowsInserted);
+    connect(proxyModel_, &QAbstractItemModel::rowsInserted, this, &TabPage::onRowsInserted);
     connect(proxyModel_, &ProxyFolderModel::sortFilterChanged, this, [this] {
         QToolTip::showText(QPoint(), QString()); // remove the tooltip, if any
         if(!changingDir_) {
@@ -312,12 +312,12 @@ void TabPage::onFolderStartLoading() {
     if(folderModel_){
         disconnect(folderModel_, &Fm::FolderModel::filesAdded, this, &TabPage::onFilesAdded);
     }
-    bool wasSearching = searching_;
-    searching_ = folder_ && folder_->path().hasUriScheme("search");
-    if(searching_ != wasSearching) {
-        Q_EMIT searchingChanged(searching_);
+    bool wasSearching = incremental_search;
+    incremental_search = folder_ && folder_->isIncremental();
+    if(incremental_search != wasSearching) {
+        Q_EMIT searchingChanged(incremental_search);
     }
-    if(searching_) {
+    if(incremental_search) {
         // the search replaces this tab's content in place, so whatever item count was shown
         // for the previous folder is now stale and misleading until the first results arrive
         statusText_[StatusTextNormal] = QString();
@@ -493,8 +493,8 @@ void TabPage::onFolderFinishLoading() {
         Q_EMIT titleChanged();
     }
 
-    if(folder_->path().hasUriScheme("search") && searching_) { // the search itself is done, regardless of the outcome
-        searching_ = false;
+    if(incremental_search) { // the search itself is done, regardless of the outcome
+        incremental_search = false;
         Q_EMIT searchingChanged(false);
     }
 
@@ -597,8 +597,8 @@ void TabPage::onFolderFsInfo() {
     Q_EMIT statusChanged(StatusTextFSInfo, msg);
 }
 
-void TabPage::onSearchModelRowsInserted() {
-    if(searching_) {
+void TabPage::onRowsInserted() {
+    if(incremental_search) {
         // reuse the exact same "N file(s) found" text/pipeline shown once the search finishes,
         // so the live count in the status bar just keeps counting up rather than jumping to a
         // different message when the search completes
@@ -725,7 +725,14 @@ void TabPage::chdir(Fm::FilePath newPath, bool addHistory) {
     localizeTitle(newPath);
     Q_EMIT titleChanged();
 
-    folder_ = Fm::Folder::fromPath(newPath);
+    Settings& settings = static_cast<Application*>(qApp)->settings();
+    folderSettings_ = settings.loadFolderSettings(newPath);
+
+    // use incremental listing when searching
+    bool incremental = newPath.hasUriScheme("search")
+                       // detailed list mode is not compatible with incremental listing
+                       && folderSettings_.viewMode() != Fm::FolderView::DetailedListMode;
+    folder_ = Fm::Folder::fromPath(newPath, incremental);
     if(addHistory) {
         // add current path to browse history
         history_.add(path());
@@ -741,7 +748,6 @@ void TabPage::chdir(Fm::FilePath newPath, bool addHistory) {
     connect(folder_.get(), &Fm::Folder::unmount, this, &TabPage::onFolderUnmount);
     connect(folder_.get(), &Fm::Folder::contentChanged, this, &TabPage::onFolderContentChanged);
 
-    Settings& settings = static_cast<Application*>(qApp)->settings();
     folderModel_ = CachedFolderModel::modelFromFolder(folder_);
     // always show display names in special places because real names may be unusual
     // (e.g., real names of trashed files may contain trash path with backslash)
@@ -756,7 +762,6 @@ void TabPage::chdir(Fm::FilePath newPath, bool addHistory) {
         proxyFilter_->filterFullName(true);
     }
 
-    folderSettings_ = settings.loadFolderSettings(path());
     // set sorting
     proxyModel_->sort(folderSettings_.sortColumn(), folderSettings_.sortOrder());
     proxyModel_->setFolderFirst(folderSettings_.sortFolderFirst());
@@ -805,7 +810,7 @@ void TabPage::reload() {
 }
 
 void TabPage::stopSearch() {
-    if(searching_ && folder_) {
+    if(incremental_search && folder_) {
         folder_->stopLoading();
     }
 }

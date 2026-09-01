@@ -1464,10 +1464,10 @@ void MainWindow::updateStatusBarForCurrentPage() {
     fsInfoLabel_->setText(text);
     fsInfoLabel_->setVisible(!text.isEmpty());
 
-    bool searching = tabPage->isSearching();
-    searchingLabel_->setVisible(searching);
-    searchBusyIndicator_->setVisible(searching);
-    searchStopButton_->setVisible(searching);
+    bool incrementalSearch = tabPage->isIncrementalSearch();
+    searchingLabel_->setVisible(incrementalSearch);
+    searchBusyIndicator_->setVisible(incrementalSearch);
+    searchStopButton_->setVisible(incrementalSearch);
 }
 
 void MainWindow::updateViewMenuForCurrentPage() {

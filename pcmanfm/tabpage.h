@@ -214,8 +214,8 @@ public:
         return statusText_[type];
     }
 
-    bool isSearching() const {
-        return searching_;
+    bool isIncrementalSearch() const {
+        return incremental_search;
     }
 
     void stopSearch();
@@ -315,7 +315,7 @@ protected Q_SLOTS:
     void onFilesAdded(const Fm::FileInfoList files);
     void onFilterStringChanged(QString str);
     void onLosingFilterBarFocus();
-    void onSearchModelRowsInserted();
+    void onRowsInserted();
 
 private:
     void freeFolder();
@@ -341,7 +341,7 @@ private:
     Fm::ProxyFolderModel* proxyModel_;
     ProxyFilter* proxyFilter_;
     QVBoxLayout* verticalLayout;
-    bool searching_;
+    bool incremental_search;
     std::shared_ptr<Fm::Folder> folder_;
     QString title_;
     QString statusText_[StatusTextNum];
