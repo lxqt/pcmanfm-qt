@@ -994,6 +994,16 @@ lxsudo dbus-run-session -- %s</string>
               </property>
              </widget>
             </item>
+            <item row="2" column="0" colspan="2">
+             <widget class="QCheckBox" name="incrementalSearch">
+              <property name="toolTip">
+               <string>Does not work with the detailed list mode</string>
+              </property>
+              <property name="text">
+               <string>Use incremental listing when searching</string>
+              </property>
+             </widget>
+            </item>
            </layout>
           </widget>
          </item>

@@ -728,8 +728,9 @@ void TabPage::chdir(Fm::FilePath newPath, bool addHistory) {
     Settings& settings = static_cast<Application*>(qApp)->settings();
     folderSettings_ = settings.loadFolderSettings(newPath);
 
-    // use incremental listing when searching
-    bool incremental = newPath.hasUriScheme("search")
+    // use incremental listing when searching, if enabled in Preferences -> Advanced -> Search
+    bool incremental = settings.incrementalSearch()
+                       && newPath.hasUriScheme("search")
                        // detailed list mode is not compatible with incremental listing
                        && folderSettings_.viewMode() != Fm::FolderView::DetailedListMode;
     folder_ = Fm::Folder::fromPath(newPath, incremental);

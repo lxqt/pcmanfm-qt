@@ -1009,6 +1009,16 @@ public:
         searchhHidden_ = hidden;
     }
 
+    // incremental listing takes more CPU time, sometimes much more, and doesn't work
+    // with the detailed list view mode, so it's opt-in and off by default
+    bool incrementalSearch() const {
+        return incrementalSearch_;
+    }
+
+    void setIncrementalSearch(bool incremental) {
+        incrementalSearch_ = incremental;
+    }
+
     int maxSearchHistory() const {
         return maxSearchHistory_;
     }
@@ -1197,6 +1207,7 @@ private:
     bool searchContentRegexp_;
     bool searchRecursive_;
     bool searchhHidden_;
+    bool incrementalSearch_;
     int maxSearchHistory_;
     QStringList namePatterns_;
     QStringList contentPatterns_;

@@ -357,6 +357,7 @@ void PreferencesDialog::initAdvancedPage(Settings& settings) {
     ui.templateRunApp->hide();
 
     ui.maxSearchHistory->setValue(settings.maxSearchHistory());
+    ui.incrementalSearch->setChecked(settings.incrementalSearch());
 }
 
 void PreferencesDialog::initFromSettings() {
@@ -497,6 +498,7 @@ void PreferencesDialog::applyAdvancedPage(Settings& settings) {
     settings.setTemplateRunApp(ui.templateRunApp->isChecked());
 
     settings.setMaxSearchHistory(ui.maxSearchHistory->value());
+    settings.setIncrementalSearch(ui.incrementalSearch->isChecked());
 }
 
 

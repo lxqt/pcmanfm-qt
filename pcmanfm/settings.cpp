@@ -146,6 +146,7 @@ Settings::Settings():
     searchContentRegexp_(true),
     searchRecursive_(false),
     searchhHidden_(false),
+    incrementalSearch_(false),
     maxSearchHistory_(0),
     recentFilesNumber_(0) {
 }
@@ -372,6 +373,7 @@ bool Settings::loadFile(QString filePath) {
     searchContentRegexp_ = settings.value(QStringLiteral("searchContentRegexp"), true).toBool();
     searchRecursive_ = settings.value(QStringLiteral("searchRecursive"), false).toBool();
     searchhHidden_ = settings.value(QStringLiteral("searchhHidden"), false).toBool();
+    incrementalSearch_ = settings.value(QStringLiteral("IncrementalSearch"), false).toBool();
     maxSearchHistory_ = std::clamp(settings.value(QStringLiteral("MaxSearchHistory"), 0).toInt(), 0, 50);
     namePatterns_ = settings.value(QStringLiteral("NamePatterns")).toStringList();
     namePatterns_.removeDuplicates();
@@ -542,6 +544,7 @@ bool Settings::saveFile(QString filePath) {
     settings.setValue(QStringLiteral("searchContentRegexp"), searchContentRegexp_);
     settings.setValue(QStringLiteral("searchRecursive"), searchRecursive_);
     settings.setValue(QStringLiteral("searchhHidden"), searchhHidden_);
+    settings.setValue(QStringLiteral("IncrementalSearch"), incrementalSearch_);
     settings.setValue(QStringLiteral("MaxSearchHistory"), maxSearchHistory_);
     settings.setValue(QStringLiteral("NamePatterns"), namePatterns_);
     settings.setValue(QStringLiteral("ContentPatterns"), contentPatterns_);
