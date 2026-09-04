@@ -2185,7 +2185,7 @@ Ze kunnen van pas komen als u ze opnieuw aanmaakt.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="188"/>
-        <source>Move deleted files to &quot;trash bin&quot; instead of erasing from disk.</source>
+        <source>Move deleted files to Trash instead of erasing from disk</source>
         <translation>Verwijderde bestanden verplaatsen naar prullenbak in plaats van permanent verwijderen</translation>
     </message>
     <message>
@@ -2236,12 +2236,12 @@ Ze kunnen van pas komen als u ze opnieuw aanmaakt.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="195"/>
-        <source>Erase files on removable media instead of &quot;trash can&quot; creation</source>
+        <source>Erase files on removable media instead of Trash creation</source>
         <translation>Bestanden op verwijderbare media verwijderen in plaats van prullenbak aan te maken</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="202"/>
-        <source>Confirm before moving files into &quot;trash can&quot;</source>
+        <source>Confirm before moving files into Trash</source>
         <translation>Vragen om bevestiging alvorens bestanden te verplaatsen naar prullenbak</translation>
     </message>
     <message>

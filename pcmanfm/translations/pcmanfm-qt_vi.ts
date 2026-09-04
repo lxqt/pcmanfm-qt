@@ -2180,7 +2180,7 @@ Chúng có thể hữu ích nếu những thư mục đó được tạo lại.<
     </message>
     <message>
         <location filename="../preferences.ui" line="188"/>
-        <source>Move deleted files to &quot;trash bin&quot; instead of erasing from disk.</source>
+        <source>Move deleted files to Trash instead of erasing from disk</source>
         <translation>Di chuyển các tập tin đã xóa vào &quot;thùng rác&quot; thay vì xóa khỏi đĩa.</translation>
     </message>
     <message>
@@ -2231,12 +2231,12 @@ Chúng có thể hữu ích nếu những thư mục đó được tạo lại.<
     </message>
     <message>
         <location filename="../preferences.ui" line="195"/>
-        <source>Erase files on removable media instead of &quot;trash can&quot; creation</source>
+        <source>Erase files on removable media instead of Trash creation</source>
         <translation>Xóa tập tin trên phương tiện lưu trữ di động thay vì tạo &quot;thùng rác&quot;</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="202"/>
-        <source>Confirm before moving files into &quot;trash can&quot;</source>
+        <source>Confirm before moving files into Trash</source>
         <translation>Xác nhận trước khi di chuyển tập tin vào &quot;thùng rác&quot;</translation>
     </message>
     <message>

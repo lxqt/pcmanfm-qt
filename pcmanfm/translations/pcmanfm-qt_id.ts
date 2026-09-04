@@ -2181,7 +2181,7 @@ Mereka mungkin berguna jika folder itu dibuat lagi.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="188"/>
-        <source>Move deleted files to &quot;trash bin&quot; instead of erasing from disk.</source>
+        <source>Move deleted files to Trash instead of erasing from disk</source>
         <translation>Pindahkan berkas yang dihapus ke &quot;tempat sampah&quot; alih-alih menghapusnya dari disk.</translation>
     </message>
     <message>
@@ -2232,12 +2232,12 @@ Mereka mungkin berguna jika folder itu dibuat lagi.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="195"/>
-        <source>Erase files on removable media instead of &quot;trash can&quot; creation</source>
+        <source>Erase files on removable media instead of Trash creation</source>
         <translation>Hapus berkas di media yang dapat dilepas alih-alih memindahkannya ke tempat sampah</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="202"/>
-        <source>Confirm before moving files into &quot;trash can&quot;</source>
+        <source>Confirm before moving files into Trash</source>
         <translation>Konfirmasi sebelum memindahkan kedalam &quot;tempat sampah&quot;</translation>
     </message>
     <message>

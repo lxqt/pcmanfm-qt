@@ -2187,7 +2187,7 @@ Podrían ser útiles si esas carpetas se crean de nuevo.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="188"/>
-        <source>Move deleted files to &quot;trash bin&quot; instead of erasing from disk.</source>
+        <source>Move deleted files to Trash instead of erasing from disk</source>
         <translation>Mover los archivos a la papelera en lugar de eliminarlos del disco.</translation>
     </message>
     <message>
@@ -2243,12 +2243,12 @@ Podrían ser útiles si esas carpetas se crean de nuevo.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="195"/>
-        <source>Erase files on removable media instead of &quot;trash can&quot; creation</source>
+        <source>Erase files on removable media instead of Trash creation</source>
         <translation>Borrar los archivos de soportes extraíbles en vez de crear papeleras</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="202"/>
-        <source>Confirm before moving files into &quot;trash can&quot;</source>
+        <source>Confirm before moving files into Trash</source>
         <translation>Pedir confirmación antes de mover archivos a la papelera</translation>
     </message>
     <message>

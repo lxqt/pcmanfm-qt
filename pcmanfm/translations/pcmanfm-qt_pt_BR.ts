@@ -2128,12 +2128,12 @@ Eles podem ser úteis se essas pastas forem criadas novamente.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="195"/>
-        <source>Erase files on removable media instead of &quot;trash can&quot; creation</source>
+        <source>Erase files on removable media instead of Trash creation</source>
         <translation>Excluir arquivos em mídias removíveis diretamente em vez de criar uma &quot;lixeira&quot;</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="202"/>
-        <source>Confirm before moving files into &quot;trash can&quot;</source>
+        <source>Confirm before moving files into Trash</source>
         <translation>Pedir confirmação antes de mover arquivos para a &quot;lixeira&quot;</translation>
     </message>
     <message>
@@ -2260,7 +2260,7 @@ Eles podem ser úteis se essas pastas forem criadas novamente.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="188"/>
-        <source>Move deleted files to &quot;trash bin&quot; instead of erasing from disk.</source>
+        <source>Move deleted files to Trash instead of erasing from disk</source>
         <translation>Mover os arquivos excluídos para &quot;lixeira&quot; em vez de apagar do disco.</translation>
     </message>
     <message>

@@ -2186,7 +2186,7 @@ De kan være nyttige hvis disse mappene opprettes igjen.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="188"/>
-        <source>Move deleted files to &quot;trash bin&quot; instead of erasing from disk.</source>
+        <source>Move deleted files to Trash instead of erasing from disk</source>
         <translation>Flytt slettede filer til papirkurven i stedet for å for å slette dem fra disken.</translation>
     </message>
     <message>
@@ -2237,12 +2237,12 @@ De kan være nyttige hvis disse mappene opprettes igjen.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="195"/>
-        <source>Erase files on removable media instead of &quot;trash can&quot; creation</source>
+        <source>Erase files on removable media instead of Trash creation</source>
         <translation>Slett filer på flyttbare medier i stedet for å legge dem i papirkurven</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="202"/>
-        <source>Confirm before moving files into &quot;trash can&quot;</source>
+        <source>Confirm before moving files into Trash</source>
         <translation>Bekreft flytting av filer til papirkurven</translation>
     </message>
     <message>

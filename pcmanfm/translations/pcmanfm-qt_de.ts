@@ -2188,7 +2188,7 @@ Sie könnten nützlich sein, wenn diese Ordner erneut erstellt werden.</translat
     </message>
     <message>
         <location filename="../preferences.ui" line="188"/>
-        <source>Move deleted files to &quot;trash bin&quot; instead of erasing from disk.</source>
+        <source>Move deleted files to Trash instead of erasing from disk</source>
         <translation>Gelöschte Dateien in den »Papierkorb« verschieben anstatt sie von der Festplatte zu löschen.</translation>
     </message>
     <message>
@@ -2244,12 +2244,12 @@ Sie könnten nützlich sein, wenn diese Ordner erneut erstellt werden.</translat
     </message>
     <message>
         <location filename="../preferences.ui" line="195"/>
-        <source>Erase files on removable media instead of &quot;trash can&quot; creation</source>
+        <source>Erase files on removable media instead of Trash creation</source>
         <translation>Dateien auf Wechseldatenträgern löschen anstatt sie in den Papierkorb zu verschieben</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="202"/>
-        <source>Confirm before moving files into &quot;trash can&quot;</source>
+        <source>Confirm before moving files into Trash</source>
         <translation>Bestätigung vor Verschieben in den Papierkorb</translation>
     </message>
     <message>

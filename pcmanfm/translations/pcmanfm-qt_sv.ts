@@ -2186,7 +2186,7 @@ Det kan vara bra att behålla dom om mapparna återskapas.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="188"/>
-        <source>Move deleted files to &quot;trash bin&quot; instead of erasing from disk.</source>
+        <source>Move deleted files to Trash instead of erasing from disk</source>
         <translation>Flytta raderade filer till &quot;papperskorg&quot; istället för att radera från disk.</translation>
     </message>
     <message>
@@ -2237,12 +2237,12 @@ Det kan vara bra att behålla dom om mapparna återskapas.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="195"/>
-        <source>Erase files on removable media instead of &quot;trash can&quot; creation</source>
+        <source>Erase files on removable media instead of Trash creation</source>
         <translation>Radera filer på flyttbara medier istället för att skapa &quot;papperskorg&quot;</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="202"/>
-        <source>Confirm before moving files into &quot;trash can&quot;</source>
+        <source>Confirm before moving files into Trash</source>
         <translation>Bekräfta innan du flyttar filer till &quot;papperskorg&quot;</translation>
     </message>
     <message>

@@ -2178,7 +2178,7 @@ They might be useful if those folders are created again.</source>
     </message>
     <message>
         <location filename="../preferences.ui" line="188"/>
-        <source>Move deleted files to &quot;trash bin&quot; instead of erasing from disk.</source>
+        <source>Move deleted files to Trash instead of erasing from disk</source>
         <translation>삭제된 파일을 디스크에서 지우는 대신 &quot;휴지통&quot;으로 이동합니다.</translation>
     </message>
     <message>
@@ -2229,12 +2229,12 @@ They might be useful if those folders are created again.</source>
     </message>
     <message>
         <location filename="../preferences.ui" line="195"/>
-        <source>Erase files on removable media instead of &quot;trash can&quot; creation</source>
+        <source>Erase files on removable media instead of Trash creation</source>
         <translation>&quot;휴지통&quot; 생성 대신 이동식 미디어의 파일 지우기</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="202"/>
-        <source>Confirm before moving files into &quot;trash can&quot;</source>
+        <source>Confirm before moving files into Trash</source>
         <translation>&quot;휴지통&quot;으로 파일을 이동하기 전에 확인하기</translation>
     </message>
     <message>

@@ -2190,7 +2190,7 @@ Pot ser útil si es tornen a crear aquestes carpetes.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="188"/>
-        <source>Move deleted files to &quot;trash bin&quot; instead of erasing from disk.</source>
+        <source>Move deleted files to Trash instead of erasing from disk</source>
         <translation>Mou els fitxers suprimits a la &quot;paperera&quot; en lloc d&apos;eliminar-los del disc.</translation>
     </message>
     <message>
@@ -2241,12 +2241,12 @@ Pot ser útil si es tornen a crear aquestes carpetes.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="195"/>
-        <source>Erase files on removable media instead of &quot;trash can&quot; creation</source>
+        <source>Erase files on removable media instead of Trash creation</source>
         <translation>Elimina els fitxers en el mitjà extraïble en lloc de la creació de la &quot;paperera&quot;</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="202"/>
-        <source>Confirm before moving files into &quot;trash can&quot;</source>
+        <source>Confirm before moving files into Trash</source>
         <translation>Confirmació abans de moure fitxers a la &quot;paperera&quot;</translation>
     </message>
     <message>

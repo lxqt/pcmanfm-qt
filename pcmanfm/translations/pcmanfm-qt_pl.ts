@@ -2192,7 +2192,7 @@ Mogą się one przydać, jeśli te katalogi zostaną stworzone ponownie.</transl
     </message>
     <message>
         <location filename="../preferences.ui" line="188"/>
-        <source>Move deleted files to &quot;trash bin&quot; instead of erasing from disk.</source>
+        <source>Move deleted files to Trash instead of erasing from disk</source>
         <translation>Przenoś pliki do &quot;Kosza&quot; zamiast usuwać z dysku.</translation>
     </message>
     <message>
@@ -2248,12 +2248,12 @@ Mogą się one przydać, jeśli te katalogi zostaną stworzone ponownie.</transl
     </message>
     <message>
         <location filename="../preferences.ui" line="195"/>
-        <source>Erase files on removable media instead of &quot;trash can&quot; creation</source>
+        <source>Erase files on removable media instead of Trash creation</source>
         <translation>Usuwaj pliki na urządzeniach wymiennych zamiast przenosić je do kosza</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="202"/>
-        <source>Confirm before moving files into &quot;trash can&quot;</source>
+        <source>Confirm before moving files into Trash</source>
         <translation>Potwierdź przed przeniesieniem plików do &quot;Kosza&quot;</translation>
     </message>
     <message>
