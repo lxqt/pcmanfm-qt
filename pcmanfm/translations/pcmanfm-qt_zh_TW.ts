@@ -1863,12 +1863,12 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../mainwindow.cpp" line="205"/>
         <source>Searching…</source>
-        <translation type="unfinished"></translation>
+        <translation>搜尋中…</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="220"/>
         <source>Stop searching</source>
-        <translation type="unfinished"></translation>
+        <translation>停止搜尋</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="2074"/>
@@ -1977,8 +1977,8 @@ They might be useful if those folders are created again.</source>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="617"/>
         <source>%n item(s) found</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>%n 個項目找到</numerusform>
         </translation>
     </message>
     <message numerus="yes">
@@ -2260,12 +2260,12 @@ lxsudo dbus-run-session -- %s</translation>
     <message>
         <location filename="../preferences.ui" line="1000"/>
         <source>Does not work with the detailed list mode</source>
-        <translation type="unfinished"></translation>
+        <translation>無法作用於詳細清單模式</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="1003"/>
         <source>Use incremental listing when searching</source>
-        <translation type="unfinished"></translation>
+        <translation>使用增量清單，當搜尋之時</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="1038"/>

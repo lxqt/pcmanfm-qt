@@ -1862,12 +1862,12 @@ zelfs als dat niet de standaard bestandsbeheerder is.</translation>
     <message>
         <location filename="../mainwindow.cpp" line="205"/>
         <source>Searching…</source>
-        <translation type="unfinished"></translation>
+        <translation>Bezig met zoeken…</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="220"/>
         <source>Stop searching</source>
-        <translation type="unfinished"></translation>
+        <translation>Stoppen met zoeken</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="2074"/>
@@ -1971,14 +1971,14 @@ Ze kunnen van pas komen als u ze opnieuw aanmaakt.</translation>
     <message>
         <location filename="../tabpage.cpp" line="590"/>
         <source>Free space: %1 (Total: %2)</source>
-        <translation>Vrije ruimte: %1 (totaal&#xa0;: %2)</translation>
+        <translation>Vrije ruimte: %1 (totaal : %2)</translation>
     </message>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="617"/>
         <source>%n item(s) found</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>%n item gevonden</numerusform>
+            <numerusform>%n items gevonden</numerusform>
         </translation>
     </message>
     <message numerus="yes">
@@ -2451,12 +2451,12 @@ Iedere reeks acties is toegestaan.</translation>
     <message>
         <location filename="../preferences.ui" line="1000"/>
         <source>Does not work with the detailed list mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Dit werkt niet in de gedetailleerde lijstmodus</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="1003"/>
         <source>Use incremental listing when searching</source>
-        <translation type="unfinished"></translation>
+        <translation>Incrementele oplijsting gebruiken tijdens het zoeken</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="1038"/>

@@ -1862,12 +1862,12 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../mainwindow.cpp" line="205"/>
         <source>Searching…</source>
-        <translation type="unfinished"></translation>
+        <translation>検索中…</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="220"/>
         <source>Stop searching</source>
-        <translation type="unfinished"></translation>
+        <translation>検索を停止</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="2074"/>
@@ -1976,8 +1976,8 @@ They might be useful if those folders are created again.</source>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="617"/>
         <source>%n item(s) found</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>%n 個のアイテムが見つかりました</numerusform>
         </translation>
     </message>
     <message numerus="yes">
@@ -2254,7 +2254,7 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferences.ui" line="188"/>
         <source>Move deleted files to Trash instead of erasing from disk</source>
-        <translation>ファイルをディスクから消去せずゴミ箱に移動する</translation>
+        <translation>削除したファイルをディスクから消去するのではなく「ゴミ箱」に移動します。</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="219"/>
@@ -2418,12 +2418,12 @@ A value of -1 means that there is no limit for the file size (the default).</sou
     <message>
         <location filename="../preferences.ui" line="1000"/>
         <source>Does not work with the detailed list mode</source>
-        <translation type="unfinished"></translation>
+        <translation>詳細リストモードでは動作しません</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="1003"/>
         <source>Use incremental listing when searching</source>
-        <translation type="unfinished"></translation>
+        <translation>検索時にインクリメンタルリスティングを使用する</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="1038"/>

@@ -1863,12 +1863,12 @@ vänsterklickas, även när den inte är standard filhanterare.</translation>
     <message>
         <location filename="../mainwindow.cpp" line="205"/>
         <source>Searching…</source>
-        <translation type="unfinished"></translation>
+        <translation>Söker…</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="220"/>
         <source>Stop searching</source>
-        <translation type="unfinished"></translation>
+        <translation>Sluta söka</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="2074"/>
@@ -1977,9 +1977,9 @@ Det kan vara bra att behålla dom om mapparna återskapas.</translation>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="617"/>
         <source>%n item(s) found</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>%n objekt hittades</numerusform>
+            <numerusform>%n objekt hittades</numerusform>
         </translation>
     </message>
     <message numerus="yes">
@@ -2452,12 +2452,12 @@ och kan vara vilken grupp av anpassade alternativ som helst.</translation>
     <message>
         <location filename="../preferences.ui" line="1000"/>
         <source>Does not work with the detailed list mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Fungerar inte med detaljerat listläge</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="1003"/>
         <source>Use incremental listing when searching</source>
-        <translation type="unfinished"></translation>
+        <translation>Använd inkrementell listning vid sökning</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="1038"/>

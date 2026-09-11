@@ -1864,12 +1864,12 @@ sinistro anche se non è il gestore file predefinito.</translation>
     <message>
         <location filename="../mainwindow.cpp" line="205"/>
         <source>Searching…</source>
-        <translation type="unfinished"></translation>
+        <translation>Cercando…</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="220"/>
         <source>Stop searching</source>
-        <translation type="unfinished"></translation>
+        <translation>Interrompi ricerca</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="2074"/>
@@ -1978,9 +1978,9 @@ Potrebbero essere utili se le cartelle vengono ricreate.</translation>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="617"/>
         <source>%n item(s) found</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>%n file trovati</numerusform>
+            <numerusform>%n files trovati</numerusform>
         </translation>
     </message>
     <message numerus="yes">
@@ -2204,7 +2204,7 @@ Potrebbero essere utili se le cartelle vengono ricreate.</translation>
     <message>
         <location filename="../preferences.ui" line="40"/>
         <source>Display</source>
-        <translation>Visualizzazione</translation>
+        <translation type="unfinished">Mostra</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="90"/>
@@ -2423,12 +2423,12 @@ Un valore di -1 significa nessun limite (predefinito).</translation>
     <message>
         <location filename="../preferences.ui" line="1000"/>
         <source>Does not work with the detailed list mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Non funziona con la modalità lista dettagliata</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="1003"/>
         <source>Use incremental listing when searching</source>
-        <translation type="unfinished"></translation>
+        <translation>Utilizza l&apos;elenco incrementale durante la ricerca</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="1038"/>

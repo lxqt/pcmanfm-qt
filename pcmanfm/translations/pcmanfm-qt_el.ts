@@ -834,7 +834,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="291"/>
         <source>Go Up</source>
-        <translation>Μετάβαση&#xa0;πάνω</translation>
+        <translation>Μετάβαση πάνω</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="294"/>
@@ -1864,12 +1864,12 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../mainwindow.cpp" line="205"/>
         <source>Searching…</source>
-        <translation type="unfinished"></translation>
+        <translation>Αναζήτηση…</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="220"/>
         <source>Stop searching</source>
-        <translation type="unfinished"></translation>
+        <translation>Διακοπή αναζήτησης</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="2074"/>
@@ -1978,9 +1978,9 @@ They might be useful if those folders are created again.</source>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="617"/>
         <source>%n item(s) found</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>Βρέθηκε %n αντικείμενο</numerusform>
+            <numerusform>Βρέθηκαν %n αντικείμενα</numerusform>
         </translation>
     </message>
     <message numerus="yes">
@@ -2432,7 +2432,7 @@ or does not have such an option; required otherwise.</source>
         <location filename="../preferences.ui" line="886"/>
         <source>This is optional, depends on the terminal,
 and can be any group of custom options.</source>
-        <translation>Είναι προαιρετικό και εξαρτάται από το τερματικό,&#x2028;και μπορεί να είναι οποιαδήποτε ομάδα προσαρμοσμένων ορισμάτων.</translation>
+        <translation>Είναι προαιρετικό και εξαρτάται από το τερματικό, και μπορεί να είναι οποιαδήποτε ομάδα προσαρμοσμένων ορισμάτων.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="964"/>
@@ -2452,12 +2452,12 @@ and can be any group of custom options.</source>
     <message>
         <location filename="../preferences.ui" line="1000"/>
         <source>Does not work with the detailed list mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Δεν λειτουργεί στην προβολή λεπτομερούς λίστας</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="1003"/>
         <source>Use incremental listing when searching</source>
-        <translation type="unfinished"></translation>
+        <translation>Προοδευτική εμφάνιση των αποτελεσμάτων κατά την αναζήτηση</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="1038"/>

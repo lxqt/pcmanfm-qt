@@ -1793,7 +1793,7 @@ są klikane lewym przyciskiem, nawet jeśli nie jest to domyślny menedżer plik
     <message>
         <location filename="../desktopwindow.cpp" line="1070"/>
         <source>Empty Trash</source>
-        <translation>Pusty kosz</translation>
+        <translation>Opróżnij kosz</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="1136"/>
@@ -1864,12 +1864,12 @@ są klikane lewym przyciskiem, nawet jeśli nie jest to domyślny menedżer plik
     <message>
         <location filename="../mainwindow.cpp" line="205"/>
         <source>Searching…</source>
-        <translation type="unfinished"></translation>
+        <translation>Szukanie…</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="220"/>
         <source>Stop searching</source>
-        <translation type="unfinished"></translation>
+        <translation>Zatrzymaj wyszukiwanie</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="2074"/>
@@ -1978,10 +1978,10 @@ Mogą się one przydać, jeśli te katalogi zostaną stworzone ponownie.</transl
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="617"/>
         <source>%n item(s) found</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>Znaleziono %n element</numerusform>
+            <numerusform>Znaleziono %n elementy</numerusform>
+            <numerusform>Znaleziono %n elementów</numerusform>
         </translation>
     </message>
     <message numerus="yes">
@@ -2271,7 +2271,7 @@ Mogą się one przydać, jeśli te katalogi zostaną stworzone ponownie.</transl
     <message>
         <location filename="../preferences.ui" line="219"/>
         <source>Renamed files will also be selected</source>
-        <translation>Pliki ze zmienioną nazwą również zostaną&#xa0;wybrane</translation>
+        <translation>Pliki ze zmienioną nazwą również zostaną wybrane</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="229"/>
@@ -2430,12 +2430,12 @@ Wartość -1 oznacza, brak limitu dla rozmiaru pliku (ustawienie domyślne).</tr
     <message>
         <location filename="../preferences.ui" line="1000"/>
         <source>Does not work with the detailed list mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Nie działa w trybie listy szczegółowej</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="1003"/>
         <source>Use incremental listing when searching</source>
-        <translation type="unfinished"></translation>
+        <translation>Użyj listy przyrostowej podczas wyszukiwania</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="1038"/>
@@ -2531,7 +2531,7 @@ It can be left empty if the terminal is already supported
 or does not have such an option; required otherwise.</source>
         <translation>Przykład: -e
 Można pozostawić puste, jeśli terminal jest już obsługiwany
-lub nie ma takiej opcji; w&#xa0;przeciwnym razie jest wymagane.</translation>
+lub nie ma takiej opcji; w przeciwnym razie jest wymagane.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="879"/>
@@ -2542,7 +2542,7 @@ lub nie ma takiej opcji; w&#xa0;przeciwnym razie jest wymagane.</translation>
         <location filename="../preferences.ui" line="886"/>
         <source>This is optional, depends on the terminal,
 and can be any group of custom options.</source>
-        <translation>Opcjonalne, zależy od terminala i&#xa0;może być
+        <translation>Opcjonalne, zależy od terminala i może być
 dowolną grupą niestandardowych opcji.</translation>
     </message>
     <message>

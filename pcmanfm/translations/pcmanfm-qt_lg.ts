@@ -1868,12 +1868,12 @@ Awali &lt;LINNYA&gt; w&apos;owandika erinnya ery&apos;akaboozi k&apos;oyagala ok
     <message>
         <location filename="../mainwindow.cpp" line="205"/>
         <source>Searching…</source>
-        <translation type="unfinished"></translation>
+        <translation>Nnoonya…</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="220"/>
         <source>Stop searching</source>
-        <translation type="unfinished"></translation>
+        <translation>Komya okunoonya</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="2074"/>
@@ -1982,9 +1982,9 @@ Biyinza kuyamba ssinga amaterekero ago gaba gakomezedwawo.</translation>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="617"/>
         <source>%n item(s) found</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>Nzuddeyo ekintu %n</numerusform>
+            <numerusform>Nzuddeyo ebintu %n</numerusform>
         </translation>
     </message>
     <message numerus="yes">
@@ -2478,12 +2478,12 @@ egeegeenya kiwandikiro.</translation>
     <message>
         <location filename="../preferences.ui" line="1000"/>
         <source>Does not work with the detailed list mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Kino tekikola nga ebintu biragibwa mu bujjuvu</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="1003"/>
         <source>Use incremental listing when searching</source>
-        <translation type="unfinished"></translation>
+        <translation>Puloguramu etandikirawo okunoonyesa bye wakawandikawo</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="1038"/>
