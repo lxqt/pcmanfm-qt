@@ -1863,12 +1863,12 @@ se clicar com o botão esquerdo do rato - mesmo que este não seja o gestor de f
     <message>
         <location filename="../mainwindow.cpp" line="205"/>
         <source>Searching…</source>
-        <translation type="unfinished"></translation>
+        <translation>A pesquisar…</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="220"/>
         <source>Stop searching</source>
-        <translation type="unfinished"></translation>
+        <translation>Parar de pesquisar</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="2074"/>
@@ -1977,9 +1977,9 @@ Elas podem ser úteis se essas pastas forem criadas novamente.</translation>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="617"/>
         <source>%n item(s) found</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>%n item encontrado</numerusform>
+            <numerusform>%n itens encontrados</numerusform>
         </translation>
     </message>
     <message numerus="yes">
@@ -2260,7 +2260,7 @@ Elas podem ser úteis se essas pastas forem criadas novamente.</translation>
     <message>
         <location filename="../preferences.ui" line="188"/>
         <source>Move deleted files to Trash instead of erasing from disk</source>
-        <translation>Mover ficheiros para o lixo em vez de os eliminar do disco.</translation>
+        <translation>Mover ficheiros para o lixo em vez de os eliminar do disco</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="219"/>
@@ -2424,12 +2424,12 @@ O valor -1 implica que não existirá limite para o tamanho dos ficheiros (padr�
     <message>
         <location filename="../preferences.ui" line="1000"/>
         <source>Does not work with the detailed list mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Não funciona no modo de lista detalhada</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="1003"/>
         <source>Use incremental listing when searching</source>
-        <translation type="unfinished"></translation>
+        <translation>Utilizar a listagem incremental ao efetuar pesquisas</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="1038"/>
