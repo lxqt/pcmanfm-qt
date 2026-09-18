@@ -167,7 +167,7 @@ public:
     bool save(QString profile = QString());
 
     static QString xdgUserConfigDir();
-    static const QList<int> & iconSizes(IconType type);
+    static const QList<int>& iconSizes(IconType type);
     static int wallpaperModeFromString(const QString str);
 
     QString profileDir(QString profile, bool useFallback = false);

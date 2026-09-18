@@ -648,7 +648,7 @@ void Settings::addContentPattern(const QString& pattern) {
     }
 }
 
-const QList<int> & Settings::iconSizes(IconType type) {
+const QList<int>& Settings::iconSizes(IconType type) {
     static const QList<int> sizes_big = {96, 72, 64, 48, 32};
     static const QList<int> sizes_thumbnail = {256, 224, 192, 160, 128, 96, 64};
     static const QList<int> sizes_small = {48, 32, 24, 22, 16};
@@ -667,8 +667,8 @@ const QList<int> & Settings::iconSizes(IconType type) {
 }
 
 int Settings::toIconSize(int size, IconType type) const {
-    const QList<int> & sizes = iconSizes(type);
-    for (const auto & s : sizes) {
+    const QList<int>& sizes = iconSizes(type);
+    for (const auto& s : sizes) {
         if(size >= s) {
             return s;
         }

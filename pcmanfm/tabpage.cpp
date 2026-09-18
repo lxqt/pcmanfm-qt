@@ -166,7 +166,7 @@ TabPage::TabPage(QWidget* parent):
     // filter-bar and its settings
     filterBar_ = new FilterBar();
     verticalLayout->addWidget(filterBar_);
-    if(!settings.showFilter()){
+    if(!settings.showFilter()) {
         transientFilterBar(true);
     }
     connect(filterBar_, &FilterBar::textChanged, this, &TabPage::onFilterStringChanged);
@@ -309,7 +309,7 @@ void TabPage::freeFolder() {
 }
 
 void TabPage::onFolderStartLoading() {
-    if(folderModel_){
+    if(folderModel_) {
         disconnect(folderModel_, &Fm::FolderModel::filesAdded, this, &TabPage::onFilesAdded);
     }
     bool wasSearching = incremental_search;
@@ -678,7 +678,7 @@ QString TabPage::pathName() {
 
 void TabPage::chdir(Fm::FilePath newPath, bool addHistory) {
     // qDebug() << "TABPAGE CHDIR:" << newPath.toString().get();
-    if(filterBar_){
+    if(filterBar_) {
         filterBar_->clear();
     }
     if(folder_) {

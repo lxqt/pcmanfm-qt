@@ -301,12 +301,13 @@ bool BulkRenamer::renameByChangingCase(const Fm::FileInfoList& files, const QLoc
         }
 
         QString newName;
-        if(toUpperCase){
+        if(toUpperCase) {
             newName = locale.toUpper(fileName);
         }
         else {
             newName = locale.toLower(fileName);
         }
+
         if(newName.isEmpty() || newName == fileName
            || !Fm::changeFileName(file->path(), newName, nullptr, false)) {
             ++failed;
