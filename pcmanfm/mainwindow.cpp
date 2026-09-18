@@ -2114,7 +2114,7 @@ void MainWindow::focusPathEntry() {
             pathEntry->selectAll();
         }
     }
-    else{
+    else {
         if(pathEntry_ != nullptr) {
             pathEntry_->setFocus();
             pathEntry_->selectAll();
