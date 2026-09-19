@@ -1864,12 +1864,12 @@ kliknete levým tlačítkem, i když to není výchozí správce souborů.</tran
     <message>
         <location filename="../mainwindow.cpp" line="205"/>
         <source>Searching…</source>
-        <translation type="unfinished"></translation>
+        <translation>Hledání…</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="220"/>
         <source>Stop searching</source>
-        <translation type="unfinished"></translation>
+        <translation>Zastavit hledání</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="2074"/>
@@ -1978,10 +1978,10 @@ Mohly by se ještě hodit v případě znovuvytvoření těchto složek.</transl
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="617"/>
         <source>%n item(s) found</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>Nalezena %n položka</numerusform>
+            <numerusform>Nalezeny %n položky</numerusform>
+            <numerusform>Nalezeno %n položek</numerusform>
         </translation>
     </message>
     <message numerus="yes">
@@ -2430,12 +2430,12 @@ Hodnota -1 znamená, že neexistuje žádný limit pro velikost souboru (výchoz
     <message>
         <location filename="../preferences.ui" line="1000"/>
         <source>Does not work with the detailed list mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Nefunguje v případě režimu seznamu s podrobnostmi</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="1003"/>
         <source>Use incremental listing when searching</source>
-        <translation type="unfinished"></translation>
+        <translation>Při hledání použijte přírůstkové vypisování v seznamu</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="1038"/>
