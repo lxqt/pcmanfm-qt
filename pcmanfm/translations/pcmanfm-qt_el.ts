@@ -2188,7 +2188,7 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferences.ui" line="188"/>
         <source>Move deleted files to Trash instead of erasing from disk</source>
-        <translation>Μετακίνηση των διαγραμμένων αρχείων στον κάδο απορριμμάτων αντί για διαγραφή από τον δίσκο.</translation>
+        <translation>Μετακίνηση των αρχείων που διαγράφονται στα απορρίμματα αντί για οριστική διαγραφή από τον δίσκο</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="651"/>
