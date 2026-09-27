@@ -95,6 +95,7 @@ DesktopPreferencesDialog::DesktopPreferencesDialog(QWidget* parent, Qt::WindowFl
   connect(ui.browse, &QPushButton::clicked, this, &DesktopPreferencesDialog::onBrowseClicked);
   qDebug("wallpaper: %s", settings.wallpaper().toUtf8().data());
   ui.imageFile->setText(settings.wallpaper());
+  ui.noCache->setChecked(settings.noWallpaperCache());
   ui.transformImage->setChecked(settings.transformWallpaper());
   ui.perScreenWallpaper->setChecked(settings.perScreenWallpaper());
 
@@ -185,6 +186,7 @@ void DesktopPreferencesDialog::applySettings()
       XdgDir::setDesktopDir(uiDesktopFolder.desktopFolder->text());
 
   settings.setWallpaper(ui.imageFile->text());
+  settings.setNoWallpaperCache(ui.noCache->isChecked());
   settings.setTransformWallpaper(ui.transformImage->isChecked());
   settings.setPerScreenWallpaper(ui.perScreenWallpaper->isChecked());
   int mode = ui.wallpaperMode->itemData(ui.wallpaperMode->currentIndex()).toInt();
@@ -255,6 +257,7 @@ void DesktopPreferencesDialog::onWallpaperModeChanged(int index) {
   bool enable = (mode != DesktopWindow::WallpaperNone);
   ui.imageFile->setEnabled(enable);
   ui.browse->setEnabled(enable);
+  ui.noCache->setEnabled(enable);
   ui.transformImage->setEnabled(enable);
 
   if (mode == DesktopWindow::WallpaperStretch || mode == DesktopWindow::WallpaperCenter

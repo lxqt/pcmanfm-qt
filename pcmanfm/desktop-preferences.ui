@@ -434,13 +434,20 @@ are left clicked, even when it is not the default file manager.</string>
            </layout>
           </item>
           <item row="3" column="0" colspan="2">
+           <widget class="QCheckBox" name="noCache">
+            <property name="text">
+             <string>Do not use wallpaper cache</string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="0" colspan="2">
            <widget class="QCheckBox" name="transformImage">
             <property name="text">
              <string>Transform image based on EXIF data</string>
             </property>
            </widget>
           </item>
-          <item row="4" column="0" colspan="2">
+          <item row="5" column="0" colspan="2">
            <widget class="QCheckBox" name="perScreenWallpaper">
             <property name="text">
              <string>Individual wallpaper for each monitor</string>

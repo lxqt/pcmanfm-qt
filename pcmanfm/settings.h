@@ -327,6 +327,15 @@ public:
         wallpaperRandomize_ = randomize;
     }
 
+
+    bool noWallpaperCache() const {
+       return noWallpaperCache_;
+    }
+
+    void setNoWallpaperCache(bool nwc) {
+        noWallpaperCache_ = nwc;
+    }
+
     bool transformWallpaper() const {
        return transformWallpaper_;
     }
@@ -339,8 +348,8 @@ public:
        return perScreenWallpaper_;
     }
 
-    void setPerScreenWallpaper(bool tr) {
-        perScreenWallpaper_ = tr;
+    void setPerScreenWallpaper(bool psw) {
+        perScreenWallpaper_ = psw;
     }
 
     const QColor& desktopBgColor() const {
@@ -1114,6 +1123,7 @@ private:
     QString wallpaperDir_;
     int slideShowInterval_;
     bool wallpaperRandomize_;
+    bool noWallpaperCache_;
     bool transformWallpaper_;
     bool perScreenWallpaper_;
     QColor desktopBgColor_;
