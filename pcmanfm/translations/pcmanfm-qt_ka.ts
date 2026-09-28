@@ -1863,12 +1863,12 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../mainwindow.cpp" line="205"/>
         <source>Searching…</source>
-        <translation type="unfinished"></translation>
+        <translation>ძებნა…</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="220"/>
         <source>Stop searching</source>
-        <translation type="unfinished"></translation>
+        <translation>ძებნის გაჩერება</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="2074"/>
@@ -1977,9 +1977,9 @@ They might be useful if those folders are created again.</source>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="617"/>
         <source>%n item(s) found</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>აღმოჩენილია %n ელემენტი</numerusform>
+            <numerusform>აღმოჩენილია %n ელემენტი</numerusform>
         </translation>
     </message>
     <message numerus="yes">
@@ -2187,7 +2187,7 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferences.ui" line="188"/>
         <source>Move deleted files to Trash instead of erasing from disk</source>
-        <translation>წაშლილი ფაილების &quot;ნაგვის ყუთში&quot; გადატანა მათი რეალური წაშლის მაგიერ.</translation>
+        <translation>წაშლილი ფაილების &quot;ნაგვის ყუთში&quot; გადატანა მათი რეალური წაშლის მაგიერ</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="651"/>
@@ -2452,12 +2452,12 @@ and can be any group of custom options.</source>
     <message>
         <location filename="../preferences.ui" line="1000"/>
         <source>Does not work with the detailed list mode</source>
-        <translation type="unfinished"></translation>
+        <translation>არ მუშაობს დეტალური სიის რეჟიმში</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="1003"/>
         <source>Use incremental listing when searching</source>
-        <translation type="unfinished"></translation>
+        <translation>ზრდადი სიის გამოყენება ძებნისას</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="1038"/>

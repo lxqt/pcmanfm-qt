@@ -968,7 +968,7 @@ PCManFM-Qt rakendusega ka siis, kui ta pole vaikimisi failihaldur.</translation>
     <message>
         <location filename="../main-win.ui" line="442"/>
         <source>&amp;Detailed List</source>
-        <translation>&amp;Üksikasjalik nimekiri</translation>
+        <translation>&amp;Üksikasjalik loend</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="445"/>
@@ -1863,12 +1863,12 @@ PCManFM-Qt rakendusega ka siis, kui ta pole vaikimisi failihaldur.</translation>
     <message>
         <location filename="../mainwindow.cpp" line="205"/>
         <source>Searching…</source>
-        <translation type="unfinished"></translation>
+        <translation>Otsin…</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="220"/>
         <source>Stop searching</source>
-        <translation type="unfinished"></translation>
+        <translation>Lõpeta otsing</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="2074"/>
@@ -1919,7 +1919,7 @@ Kui need kaustad hiljem uuesti tekivad, siis võib-olla pole mõtet seda teha.</
     <message>
         <location filename="../preferencesdialog.cpp" line="221"/>
         <source>Detailed List View</source>
-        <translation>Üksikasjalik nimekiri</translation>
+        <translation>Üksikasjalik loend</translation>
     </message>
     <message>
         <location filename="../preferencesdialog.cpp" line="314"/>
@@ -1977,9 +1977,9 @@ Kui need kaustad hiljem uuesti tekivad, siis võib-olla pole mõtet seda teha.</
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="617"/>
         <source>%n item(s) found</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>Leidus %n objekt</numerusform>
+            <numerusform>Leidus %n objekti</numerusform>
         </translation>
     </message>
     <message numerus="yes">
@@ -2187,7 +2187,7 @@ Kui need kaustad hiljem uuesti tekivad, siis võib-olla pole mõtet seda teha.</
     <message>
         <location filename="../preferences.ui" line="188"/>
         <source>Move deleted files to Trash instead of erasing from disk</source>
-        <translation>Liiguta kustutatud failid prügikasti nende kettalt eemaldamise asemel.</translation>
+        <translation>Andmekandjalt kustutamise asemel viska kustutatud failid prügikasti</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="651"/>
@@ -2277,7 +2277,7 @@ Kui need kaustad hiljem uuesti tekivad, siis võib-olla pole mõtet seda teha.</
         <location filename="../preferences.ui" line="342"/>
         <location filename="../preferences.ui" line="352"/>
         <source>Used by Compact View and Detailed List View</source>
-        <translation>Kasutatakse kompaktses ja üksikasjaliku nimekirja vaates</translation>
+        <translation>Kasutatakse kompaktses ja üksikasjalikus loendivaates</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="359"/>
@@ -2451,12 +2451,12 @@ ja siin võib olla erisuguseid sinu soovitud tingimusi.</translation>
     <message>
         <location filename="../preferences.ui" line="1000"/>
         <source>Does not work with the detailed list mode</source>
-        <translation type="unfinished"></translation>
+        <translation>See ei toimi üksikasjalikus loendivaates</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="1003"/>
         <source>Use incremental listing when searching</source>
-        <translation type="unfinished"></translation>
+        <translation>Kasuta otsimisel järkjärgulist loendivaatet</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="1038"/>

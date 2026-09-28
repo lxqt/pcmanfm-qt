@@ -899,7 +899,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="351"/>
         <source>New Window</source>
-        <translation>新視窗</translation>
+        <translation>新開視窗</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="354"/>
@@ -2350,7 +2350,7 @@ lxsudo dbus-run-session -- %s</translation>
     <message>
         <location filename="../preferences.ui" line="188"/>
         <source>Move deleted files to Trash instead of erasing from disk</source>
-        <translation>將已經刪除的檔案移至垃圾桶，取代由磁碟進行刪除。</translation>
+        <translation>將已經刪除的檔案移至垃圾桶，取代由磁碟進行刪除</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="219"/>
@@ -2414,7 +2414,7 @@ lxsudo dbus-run-session -- %s</translation>
         <location filename="../preferences.ui" line="469"/>
         <location filename="../preferences.ui" line="493"/>
         <source> px</source>
-        <translation> 像素</translation>
+        <translation> px</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="482"/>
