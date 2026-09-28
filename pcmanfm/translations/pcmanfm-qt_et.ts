@@ -542,101 +542,111 @@ PCManFM-Qt rakendusega ka siis, kui ta pole vaikimisi failihaldur.</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="439"/>
+        <source>Cache may reduce the quality of displayed image as a trade-off.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../desktop-preferences.ui" line="442"/>
+        <source>Do not use wallpaper cache</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../desktop-preferences.ui" line="449"/>
         <source>Transform image based on EXIF data</source>
         <translation>Teisenda pilt EXIF-andmete põhjal</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="446"/>
+        <location filename="../desktop-preferences.ui" line="456"/>
         <source>Individual wallpaper for each monitor</source>
         <translation>Eraldi taustapilt iga monitori jaoks</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="473"/>
+        <location filename="../desktop-preferences.ui" line="483"/>
         <source>Slide Show</source>
         <translation>Slaidiseanss</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="479"/>
+        <location filename="../desktop-preferences.ui" line="489"/>
         <source>Enable Slide Show</source>
         <translation>Luba slaidiseanss</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="491"/>
+        <location filename="../desktop-preferences.ui" line="501"/>
         <source>Wallpaper image folder:</source>
         <translation>Taustapildi kaust:</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="505"/>
+        <location filename="../desktop-preferences.ui" line="515"/>
         <source>Browse</source>
         <translation>Sirvi</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="512"/>
+        <location filename="../desktop-preferences.ui" line="522"/>
         <source> hour(s)</source>
         <translation> tund(i)</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="522"/>
+        <location filename="../desktop-preferences.ui" line="532"/>
         <source>and</source>
         <translation>ja</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="535"/>
+        <location filename="../desktop-preferences.ui" line="545"/>
         <source>Intervals less than 5min will be ignored</source>
         <translation>Alla 5 min intervalle eiratakse</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="538"/>
+        <location filename="../desktop-preferences.ui" line="548"/>
         <source>Interval:</source>
         <translation>Intervall:</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="545"/>
+        <location filename="../desktop-preferences.ui" line="555"/>
         <source> minute(s)</source>
         <translation> minut(it)</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="666"/>
+        <location filename="../desktop-preferences.ui" line="676"/>
         <source>Do not show file tooltips</source>
         <translation>Ära näita failide teabemulle</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="498"/>
+        <location filename="../desktop-preferences.ui" line="508"/>
         <source>Wallpaper folder</source>
         <translation>Taustapildi kaust</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="587"/>
+        <location filename="../desktop-preferences.ui" line="597"/>
         <source>Randomize the slide show</source>
         <translation>Juhuslik slaidiseanss</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="620"/>
+        <location filename="../desktop-preferences.ui" line="630"/>
         <source>Visible Shortcuts</source>
         <translation>Nähtavad otseteed</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="626"/>
+        <location filename="../desktop-preferences.ui" line="636"/>
         <source>Home</source>
         <translation>Avaleht</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="636"/>
+        <location filename="../desktop-preferences.ui" line="646"/>
         <source>Trash</source>
         <translation>Prügikast</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="646"/>
+        <location filename="../desktop-preferences.ui" line="656"/>
         <source>Computer</source>
         <translation>Arvuti</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="656"/>
+        <location filename="../desktop-preferences.ui" line="666"/>
         <source>Network</source>
         <translation>Võrk</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="614"/>
+        <location filename="../desktop-preferences.ui" line="624"/>
         <source>Advanced</source>
         <translation>Lisaseadistused</translation>
     </message>
@@ -1733,17 +1743,17 @@ PCManFM-Qt rakendusega ka siis, kui ta pole vaikimisi failihaldur.</translation>
         <translation>Suurenda pilti täitmaks kogu ekraani</translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="278"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="281"/>
         <source>Select Wallpaper</source>
         <translation>Vali taustapilt</translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="282"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="285"/>
         <source>Image Files</source>
         <translation>Pildifailid</translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="324"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="327"/>
         <source>Select Wallpaper Folder</source>
         <translation>Vali taustapiltide kaust</translation>
     </message>
@@ -1779,33 +1789,33 @@ PCManFM-Qt rakendusega ka siis, kui ta pole vaikimisi failihaldur.</translation>
         <translation>Võrk</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1056"/>
+        <location filename="../desktopwindow.cpp" line="1057"/>
         <source>Open</source>
         <translation>Ava</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1062"/>
-        <location filename="../desktopwindow.cpp" line="1102"/>
+        <location filename="../desktopwindow.cpp" line="1063"/>
+        <location filename="../desktopwindow.cpp" line="1103"/>
         <source>Stic&amp;k to Current Position</source>
         <translation>Jäta&amp; praegusele asukohale</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1070"/>
+        <location filename="../desktopwindow.cpp" line="1071"/>
         <source>Empty Trash</source>
         <translation>Tühjenda prügikast</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1136"/>
+        <location filename="../desktopwindow.cpp" line="1137"/>
         <source>Hide Desktop Items</source>
         <translation>Peida töölauakirjed</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1142"/>
+        <location filename="../desktopwindow.cpp" line="1143"/>
         <source>Create Launcher</source>
         <translation>Loo käivitaja</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1145"/>
+        <location filename="../desktopwindow.cpp" line="1146"/>
         <source>Desktop Preferences</source>
         <translation>Töölaua eelistused</translation>
     </message>
@@ -2623,8 +2633,8 @@ lxsudo dbus-run-session -- %s</translation>
         <location filename="../bulkrename.cpp" line="243"/>
         <location filename="../bulkrename.cpp" line="277"/>
         <location filename="../bulkrename.cpp" line="281"/>
-        <location filename="../bulkrename.cpp" line="318"/>
-        <location filename="../bulkrename.cpp" line="322"/>
+        <location filename="../bulkrename.cpp" line="319"/>
+        <location filename="../bulkrename.cpp" line="323"/>
         <location filename="../tabpage.cpp" line="1192"/>
         <source>Error</source>
         <translation>Viga</translation>
@@ -2632,14 +2642,14 @@ lxsudo dbus-run-session -- %s</translation>
     <message>
         <location filename="../bulkrename.cpp" line="220"/>
         <location filename="../bulkrename.cpp" line="277"/>
-        <location filename="../bulkrename.cpp" line="318"/>
+        <location filename="../bulkrename.cpp" line="319"/>
         <source>No file could be renamed.</source>
         <translation>Ühtki faili ei nimetatud ümber.</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="224"/>
         <location filename="../bulkrename.cpp" line="281"/>
-        <location filename="../bulkrename.cpp" line="322"/>
+        <location filename="../bulkrename.cpp" line="323"/>
         <source>Some files could not be renamed.</source>
         <translation>Mõningaid faile ei saanud ümber nimetada.</translation>
     </message>
