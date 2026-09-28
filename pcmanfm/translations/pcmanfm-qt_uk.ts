@@ -2208,7 +2208,7 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferences.ui" line="40"/>
         <source>Display</source>
-        <translation>Дисплей</translation>
+        <translation>Показ</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="90"/>

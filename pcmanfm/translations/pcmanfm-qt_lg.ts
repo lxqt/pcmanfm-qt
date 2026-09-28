@@ -2192,7 +2192,7 @@ Biyinza kuyamba ssinga amaterekero ago gaba gakomezedwawo.</translation>
     <message>
         <location filename="../preferences.ui" line="188"/>
         <source>Move deleted files to Trash instead of erasing from disk</source>
-        <translation>Fayiro ezigyidwawo zigendenga mu &quot;bisuulidwa&quot; mu kifo eky&apos;okuzisiimulira ddala okuva ku disiki.</translation>
+        <translation>Fayiro ezigyidwawo zigendenga mu &quot;bisuulidwa&quot; mu kifo eky&apos;okuzisiimulira ddala okuva ku disiki</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="651"/>
