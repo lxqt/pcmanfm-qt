@@ -72,6 +72,7 @@ Settings::Settings():
     wallpaperDir_(),
     slideShowInterval_(0),
     wallpaperRandomize_(false),
+    noWallpaperCache_(false),
     transformWallpaper_(false),
     perScreenWallpaper_(false),
     desktopBgColor_(),
@@ -253,6 +254,7 @@ bool Settings::loadFile(QString filePath) {
     wallpaperDir_ = settings.value(QStringLiteral("WallpaperDirectory")).toString();
     slideShowInterval_ = settings.value(QStringLiteral("SlideShowInterval"), 0).toInt();
     wallpaperRandomize_ = settings.value(QStringLiteral("WallpaperRandomize")).toBool();
+    noWallpaperCache_ = settings.value(QStringLiteral("NoWallpaperCache")).toBool();
     transformWallpaper_ = settings.value(QStringLiteral("TransformWallpaper")).toBool();
     perScreenWallpaper_ = settings.value(QStringLiteral("PerScreenWallpaper")).toBool();
     desktopBgColor_ = QColor::fromString(settings.value(QStringLiteral("BgColor"), QStringLiteral("#000000")).toString());
@@ -426,6 +428,7 @@ bool Settings::saveFile(QString filePath) {
     settings.setValue(QStringLiteral("WallpaperDirectory"), wallpaperDir_);
     settings.setValue(QStringLiteral("SlideShowInterval"), slideShowInterval_);
     settings.setValue(QStringLiteral("WallpaperRandomize"), wallpaperRandomize_);
+    settings.setValue(QStringLiteral("NoWallpaperCache"), noWallpaperCache_);
     settings.setValue(QStringLiteral("TransformWallpaper"), transformWallpaper_);
     settings.setValue(QStringLiteral("PerScreenWallpaper"), perScreenWallpaper_);
     settings.setValue(QStringLiteral("BgColor"), desktopBgColor_.name());

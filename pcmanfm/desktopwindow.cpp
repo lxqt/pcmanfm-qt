@@ -606,7 +606,8 @@ QImage DesktopWindow::getWallpaperImage() const {
 QImage DesktopWindow::loadWallpaperFile(QSize requiredSize, bool checkMTime) {
    static const QString timeFormat(QLatin1String("yyyy-MM-dd-hh:mm:ss.zzz"));
     // NOTE: for ease of programming, we only use the cache for the primary screen.
-    bool useCache = (screenNum_ == -1 || screenNum_ == 0);
+    bool useCache = !static_cast<Application* >(qApp)->settings().noWallpaperCache()
+                    && (screenNum_ == -1 || screenNum_ == 0);
     QFile info;
     QString cacheFileName;
     if(useCache) {
