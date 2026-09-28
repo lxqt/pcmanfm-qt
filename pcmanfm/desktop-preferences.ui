@@ -435,6 +435,9 @@ are left clicked, even when it is not the default file manager.</string>
           </item>
           <item row="3" column="0" colspan="2">
            <widget class="QCheckBox" name="noCache">
+            <property name="toolTip">
+             <string>Cache may reduce the quality of displayed image as a trade-off.</string>
+            </property>
             <property name="text">
              <string>Do not use wallpaper cache</string>
             </property>
