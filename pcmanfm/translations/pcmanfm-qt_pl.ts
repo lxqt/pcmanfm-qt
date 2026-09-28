@@ -542,101 +542,111 @@ są klikane lewym przyciskiem, nawet jeśli nie jest to domyślny menedżer plik
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="439"/>
+        <source>Cache may reduce the quality of displayed image as a trade-off.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../desktop-preferences.ui" line="442"/>
+        <source>Do not use wallpaper cache</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../desktop-preferences.ui" line="449"/>
         <source>Transform image based on EXIF data</source>
         <translation>Przetwórz obraz na podstawie danych EXIF</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="446"/>
+        <location filename="../desktop-preferences.ui" line="456"/>
         <source>Individual wallpaper for each monitor</source>
         <translation>Inna tapeta dla każdego monitora</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="473"/>
+        <location filename="../desktop-preferences.ui" line="483"/>
         <source>Slide Show</source>
         <translation>Pokaz slajdów</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="479"/>
+        <location filename="../desktop-preferences.ui" line="489"/>
         <source>Enable Slide Show</source>
         <translation>Włącz pokaz slajdów</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="491"/>
+        <location filename="../desktop-preferences.ui" line="501"/>
         <source>Wallpaper image folder:</source>
         <translation>Katalog z tapetami pulpitu:</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="505"/>
+        <location filename="../desktop-preferences.ui" line="515"/>
         <source>Browse</source>
         <translation>Przeglądaj</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="512"/>
+        <location filename="../desktop-preferences.ui" line="522"/>
         <source> hour(s)</source>
         <translation> godzin</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="522"/>
+        <location filename="../desktop-preferences.ui" line="532"/>
         <source>and</source>
         <translation>i</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="535"/>
+        <location filename="../desktop-preferences.ui" line="545"/>
         <source>Intervals less than 5min will be ignored</source>
         <translation>Odstępy mniejsze niż 5 minut będą ignorowane</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="538"/>
+        <location filename="../desktop-preferences.ui" line="548"/>
         <source>Interval:</source>
         <translation>Odstęp czasu:</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="545"/>
+        <location filename="../desktop-preferences.ui" line="555"/>
         <source> minute(s)</source>
         <translation> minut</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="666"/>
+        <location filename="../desktop-preferences.ui" line="676"/>
         <source>Do not show file tooltips</source>
         <translation>Nie pokazuj podpowiedzi dotyczących plików</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="498"/>
+        <location filename="../desktop-preferences.ui" line="508"/>
         <source>Wallpaper folder</source>
         <translation>Katalog z tapetami pulpitu</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="587"/>
+        <location filename="../desktop-preferences.ui" line="597"/>
         <source>Randomize the slide show</source>
         <translation>Kolejność losowa</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="620"/>
+        <location filename="../desktop-preferences.ui" line="630"/>
         <source>Visible Shortcuts</source>
         <translation>Widoczne skróty</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="626"/>
+        <location filename="../desktop-preferences.ui" line="636"/>
         <source>Home</source>
         <translation>Katalog domowy</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="636"/>
+        <location filename="../desktop-preferences.ui" line="646"/>
         <source>Trash</source>
         <translation>Kosz</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="646"/>
+        <location filename="../desktop-preferences.ui" line="656"/>
         <source>Computer</source>
         <translation>Komputer</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="656"/>
+        <location filename="../desktop-preferences.ui" line="666"/>
         <source>Network</source>
         <translation>Sieć</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="614"/>
+        <location filename="../desktop-preferences.ui" line="624"/>
         <source>Advanced</source>
         <translation>Zaawansowane</translation>
     </message>
@@ -1733,17 +1743,17 @@ są klikane lewym przyciskiem, nawet jeśli nie jest to domyślny menedżer plik
         <translation>Powiększ obraz, aby wypełnił ekran</translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="278"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="281"/>
         <source>Select Wallpaper</source>
         <translation>Wybierz tapetę</translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="282"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="285"/>
         <source>Image Files</source>
         <translation>Pliki obrazów</translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="324"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="327"/>
         <source>Select Wallpaper Folder</source>
         <translation>Wybierz katalog tapety</translation>
     </message>
@@ -1780,33 +1790,33 @@ są klikane lewym przyciskiem, nawet jeśli nie jest to domyślny menedżer plik
         <translation>Sieć</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1056"/>
+        <location filename="../desktopwindow.cpp" line="1057"/>
         <source>Open</source>
         <translation>Otwórz</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1062"/>
-        <location filename="../desktopwindow.cpp" line="1102"/>
+        <location filename="../desktopwindow.cpp" line="1063"/>
+        <location filename="../desktopwindow.cpp" line="1103"/>
         <source>Stic&amp;k to Current Position</source>
         <translation>Przyp&amp;nij do aktualnej pozycji</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1070"/>
+        <location filename="../desktopwindow.cpp" line="1071"/>
         <source>Empty Trash</source>
         <translation>Opróżnij kosz</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1136"/>
+        <location filename="../desktopwindow.cpp" line="1137"/>
         <source>Hide Desktop Items</source>
         <translation>Ukryj ikony pulpitu</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1142"/>
+        <location filename="../desktopwindow.cpp" line="1143"/>
         <source>Create Launcher</source>
         <translation>Utwórz aktywator</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1145"/>
+        <location filename="../desktopwindow.cpp" line="1146"/>
         <source>Desktop Preferences</source>
         <translation>Ustawienia pulpitu</translation>
     </message>
@@ -2271,7 +2281,7 @@ Mogą się one przydać, jeśli te katalogi zostaną stworzone ponownie.</transl
     <message>
         <location filename="../preferences.ui" line="219"/>
         <source>Renamed files will also be selected</source>
-        <translation>Pliki ze zmienioną nazwą również zostaną wybrane</translation>
+        <translation>Pliki ze zmienioną nazwą również zostaną&#xa0;wybrane</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="229"/>
@@ -2531,7 +2541,7 @@ It can be left empty if the terminal is already supported
 or does not have such an option; required otherwise.</source>
         <translation>Przykład: -e
 Można pozostawić puste, jeśli terminal jest już obsługiwany
-lub nie ma takiej opcji; w przeciwnym razie jest wymagane.</translation>
+lub nie ma takiej opcji; w&#xa0;przeciwnym razie jest wymagane.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="879"/>
@@ -2542,7 +2552,7 @@ lub nie ma takiej opcji; w przeciwnym razie jest wymagane.</translation>
         <location filename="../preferences.ui" line="886"/>
         <source>This is optional, depends on the terminal,
 and can be any group of custom options.</source>
-        <translation>Opcjonalne, zależy od terminala i może być
+        <translation>Opcjonalne, zależy od terminala i&#xa0;może być
 dowolną grupą niestandardowych opcji.</translation>
     </message>
     <message>
@@ -2630,8 +2640,8 @@ lxsudo dbus-run-session -- %s</translation>
         <location filename="../bulkrename.cpp" line="243"/>
         <location filename="../bulkrename.cpp" line="277"/>
         <location filename="../bulkrename.cpp" line="281"/>
-        <location filename="../bulkrename.cpp" line="318"/>
-        <location filename="../bulkrename.cpp" line="322"/>
+        <location filename="../bulkrename.cpp" line="319"/>
+        <location filename="../bulkrename.cpp" line="323"/>
         <location filename="../tabpage.cpp" line="1192"/>
         <source>Error</source>
         <translation>Błąd</translation>
@@ -2639,14 +2649,14 @@ lxsudo dbus-run-session -- %s</translation>
     <message>
         <location filename="../bulkrename.cpp" line="220"/>
         <location filename="../bulkrename.cpp" line="277"/>
-        <location filename="../bulkrename.cpp" line="318"/>
+        <location filename="../bulkrename.cpp" line="319"/>
         <source>No file could be renamed.</source>
         <translation>Nie udało się zmienić nazw wszystkich plików.</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="224"/>
         <location filename="../bulkrename.cpp" line="281"/>
-        <location filename="../bulkrename.cpp" line="322"/>
+        <location filename="../bulkrename.cpp" line="323"/>
         <source>Some files could not be renamed.</source>
         <translation>Nie udało się zmienić nazw niektórych plików.</translation>
     </message>

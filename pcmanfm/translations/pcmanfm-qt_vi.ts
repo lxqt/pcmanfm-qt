@@ -542,101 +542,111 @@ are left clicked, even when it is not the default file manager.</source>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="439"/>
+        <source>Cache may reduce the quality of displayed image as a trade-off.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../desktop-preferences.ui" line="442"/>
+        <source>Do not use wallpaper cache</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../desktop-preferences.ui" line="449"/>
         <source>Transform image based on EXIF data</source>
         <translation>Chuyển đổi hình ảnh dựa trên dữ liệu EXIF</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="446"/>
+        <location filename="../desktop-preferences.ui" line="456"/>
         <source>Individual wallpaper for each monitor</source>
         <translation>Hình nền riêng cho từng màn hình</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="473"/>
+        <location filename="../desktop-preferences.ui" line="483"/>
         <source>Slide Show</source>
         <translation>Trình chiếu</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="479"/>
+        <location filename="../desktop-preferences.ui" line="489"/>
         <source>Enable Slide Show</source>
         <translation>Bật Trình chiếu</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="491"/>
+        <location filename="../desktop-preferences.ui" line="501"/>
         <source>Wallpaper image folder:</source>
         <translation>Thư mục hình nền:</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="505"/>
+        <location filename="../desktop-preferences.ui" line="515"/>
         <source>Browse</source>
         <translation>Duyệt</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="512"/>
+        <location filename="../desktop-preferences.ui" line="522"/>
         <source> hour(s)</source>
         <translation> giờ</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="522"/>
+        <location filename="../desktop-preferences.ui" line="532"/>
         <source>and</source>
         <translation>và</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="535"/>
+        <location filename="../desktop-preferences.ui" line="545"/>
         <source>Intervals less than 5min will be ignored</source>
         <translation>Khoảng thời gian ít hơn 5 phút sẽ bị bỏ qua</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="538"/>
+        <location filename="../desktop-preferences.ui" line="548"/>
         <source>Interval:</source>
         <translation>Khoảng thời gian:</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="545"/>
+        <location filename="../desktop-preferences.ui" line="555"/>
         <source> minute(s)</source>
         <translation> phút</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="666"/>
+        <location filename="../desktop-preferences.ui" line="676"/>
         <source>Do not show file tooltips</source>
         <translation type="unfinished">Không hiển thị chú giải cho tập tin</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="498"/>
+        <location filename="../desktop-preferences.ui" line="508"/>
         <source>Wallpaper folder</source>
         <translation>Thư mục hình nền</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="587"/>
+        <location filename="../desktop-preferences.ui" line="597"/>
         <source>Randomize the slide show</source>
         <translation>Trình chiếu ngẫu nhiên</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="620"/>
+        <location filename="../desktop-preferences.ui" line="630"/>
         <source>Visible Shortcuts</source>
         <translation>Lối tắt có thể nhìn thấy</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="626"/>
+        <location filename="../desktop-preferences.ui" line="636"/>
         <source>Home</source>
         <translation>Thư mục gốc</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="636"/>
+        <location filename="../desktop-preferences.ui" line="646"/>
         <source>Trash</source>
         <translation>Thùng rác</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="646"/>
+        <location filename="../desktop-preferences.ui" line="656"/>
         <source>Computer</source>
         <translation>Máy tính</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="656"/>
+        <location filename="../desktop-preferences.ui" line="666"/>
         <source>Network</source>
         <translation>Mạng</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="614"/>
+        <location filename="../desktop-preferences.ui" line="624"/>
         <source>Advanced</source>
         <translation>Nâng cao</translation>
     </message>
@@ -1733,17 +1743,17 @@ are left clicked, even when it is not the default file manager.</source>
         <translation>Thu phóng hình ảnh để lấp đầy toàn bộ màn hình</translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="278"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="281"/>
         <source>Select Wallpaper</source>
         <translation>Chọn hình nền</translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="282"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="285"/>
         <source>Image Files</source>
         <translation>Tệp hình ảnh</translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="324"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="327"/>
         <source>Select Wallpaper Folder</source>
         <translation>Chọn thư mục hình nền</translation>
     </message>
@@ -1778,33 +1788,33 @@ are left clicked, even when it is not the default file manager.</source>
         <translation>Mạng</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1056"/>
+        <location filename="../desktopwindow.cpp" line="1057"/>
         <source>Open</source>
         <translation>Mở</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1062"/>
-        <location filename="../desktopwindow.cpp" line="1102"/>
+        <location filename="../desktopwindow.cpp" line="1063"/>
+        <location filename="../desktopwindow.cpp" line="1103"/>
         <source>Stic&amp;k to Current Position</source>
         <translation>Giữ nguyên vị trí hiện tại (&amp;K)</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1070"/>
+        <location filename="../desktopwindow.cpp" line="1071"/>
         <source>Empty Trash</source>
         <translation>Dọn sạch thùng rác</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1136"/>
+        <location filename="../desktopwindow.cpp" line="1137"/>
         <source>Hide Desktop Items</source>
         <translation>Ẩn các mục trên màn hình nền</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1142"/>
+        <location filename="../desktopwindow.cpp" line="1143"/>
         <source>Create Launcher</source>
         <translation>Tạo Trình khởi chạy</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1145"/>
+        <location filename="../desktopwindow.cpp" line="1146"/>
         <source>Desktop Preferences</source>
         <translation>Tùy chọn màn hình nền</translation>
     </message>
@@ -2618,8 +2628,8 @@ lxsudo dbus-run-session -- %s</translation>
         <location filename="../bulkrename.cpp" line="243"/>
         <location filename="../bulkrename.cpp" line="277"/>
         <location filename="../bulkrename.cpp" line="281"/>
-        <location filename="../bulkrename.cpp" line="318"/>
-        <location filename="../bulkrename.cpp" line="322"/>
+        <location filename="../bulkrename.cpp" line="319"/>
+        <location filename="../bulkrename.cpp" line="323"/>
         <location filename="../tabpage.cpp" line="1192"/>
         <source>Error</source>
         <translation>Lỗi</translation>
@@ -2627,14 +2637,14 @@ lxsudo dbus-run-session -- %s</translation>
     <message>
         <location filename="../bulkrename.cpp" line="220"/>
         <location filename="../bulkrename.cpp" line="277"/>
-        <location filename="../bulkrename.cpp" line="318"/>
+        <location filename="../bulkrename.cpp" line="319"/>
         <source>No file could be renamed.</source>
         <translation>Không có tập tin có thể được đổi tên.</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="224"/>
         <location filename="../bulkrename.cpp" line="281"/>
-        <location filename="../bulkrename.cpp" line="322"/>
+        <location filename="../bulkrename.cpp" line="323"/>
         <source>Some files could not be renamed.</source>
         <translation>Một số tập tin không thể đổi tên thành công.</translation>
     </message>

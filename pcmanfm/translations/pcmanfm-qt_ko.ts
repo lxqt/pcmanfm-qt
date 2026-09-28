@@ -538,101 +538,111 @@ PCManFM-Qt에서 열립니다.</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="439"/>
+        <source>Cache may reduce the quality of displayed image as a trade-off.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../desktop-preferences.ui" line="442"/>
+        <source>Do not use wallpaper cache</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../desktop-preferences.ui" line="449"/>
         <source>Transform image based on EXIF data</source>
         <translation>EXIF 정보에 기반하여 이미지 변환</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="446"/>
+        <location filename="../desktop-preferences.ui" line="456"/>
         <source>Individual wallpaper for each monitor</source>
         <translation>각 모니터 마다 각각의 배경화면</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="473"/>
+        <location filename="../desktop-preferences.ui" line="483"/>
         <source>Slide Show</source>
         <translation>슬라이드 쇼</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="479"/>
+        <location filename="../desktop-preferences.ui" line="489"/>
         <source>Enable Slide Show</source>
         <translation>슬라이드 쇼 활성화</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="491"/>
+        <location filename="../desktop-preferences.ui" line="501"/>
         <source>Wallpaper image folder:</source>
         <translation>배경화면 이미지 폴더:</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="505"/>
+        <location filename="../desktop-preferences.ui" line="515"/>
         <source>Browse</source>
         <translation>찾아보기</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="512"/>
+        <location filename="../desktop-preferences.ui" line="522"/>
         <source> hour(s)</source>
         <translation> 시간</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="522"/>
+        <location filename="../desktop-preferences.ui" line="532"/>
         <source>and</source>
         <translation>:</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="535"/>
+        <location filename="../desktop-preferences.ui" line="545"/>
         <source>Intervals less than 5min will be ignored</source>
         <translation>5분 미만의 간격은 무시됩니다</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="538"/>
+        <location filename="../desktop-preferences.ui" line="548"/>
         <source>Interval:</source>
         <translation>간격:</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="545"/>
+        <location filename="../desktop-preferences.ui" line="555"/>
         <source> minute(s)</source>
         <translation> 분</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="666"/>
+        <location filename="../desktop-preferences.ui" line="676"/>
         <source>Do not show file tooltips</source>
         <translation>파일 툴팁 표시 안함</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="498"/>
+        <location filename="../desktop-preferences.ui" line="508"/>
         <source>Wallpaper folder</source>
         <translation>배경화면 폴더</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="587"/>
+        <location filename="../desktop-preferences.ui" line="597"/>
         <source>Randomize the slide show</source>
         <translation>슬라이드 쇼 임의 재생</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="620"/>
+        <location filename="../desktop-preferences.ui" line="630"/>
         <source>Visible Shortcuts</source>
         <translation>바로가기 보기</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="626"/>
+        <location filename="../desktop-preferences.ui" line="636"/>
         <source>Home</source>
         <translation>홈</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="636"/>
+        <location filename="../desktop-preferences.ui" line="646"/>
         <source>Trash</source>
         <translation>휴지통</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="646"/>
+        <location filename="../desktop-preferences.ui" line="656"/>
         <source>Computer</source>
         <translation>컴퓨터</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="656"/>
+        <location filename="../desktop-preferences.ui" line="666"/>
         <source>Network</source>
         <translation>네트워크</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="614"/>
+        <location filename="../desktop-preferences.ui" line="624"/>
         <source>Advanced</source>
         <translation>고급</translation>
     </message>
@@ -1731,17 +1741,17 @@ PCManFM-Qt에서 열립니다.</translation>
         <translation>전체 화면이 채워지도록 이미지를 확대</translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="278"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="281"/>
         <source>Select Wallpaper</source>
         <translation>배경화면 선택하기</translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="282"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="285"/>
         <source>Image Files</source>
         <translation>이미지 파일</translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="324"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="327"/>
         <source>Select Wallpaper Folder</source>
         <translation>배경화면 폴더 선택하기</translation>
     </message>
@@ -1776,33 +1786,33 @@ PCManFM-Qt에서 열립니다.</translation>
         <translation>네트워크</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1056"/>
+        <location filename="../desktopwindow.cpp" line="1057"/>
         <source>Open</source>
         <translation>열기</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1062"/>
-        <location filename="../desktopwindow.cpp" line="1102"/>
+        <location filename="../desktopwindow.cpp" line="1063"/>
+        <location filename="../desktopwindow.cpp" line="1103"/>
         <source>Stic&amp;k to Current Position</source>
         <translation>현재 위치 유지(&amp;K)</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1070"/>
+        <location filename="../desktopwindow.cpp" line="1071"/>
         <source>Empty Trash</source>
         <translation>휴지통 비우기</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1136"/>
+        <location filename="../desktopwindow.cpp" line="1137"/>
         <source>Hide Desktop Items</source>
         <translation>데스크톱 항목 숨기기</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1142"/>
+        <location filename="../desktopwindow.cpp" line="1143"/>
         <source>Create Launcher</source>
         <translation>실행 프로그램 만들기</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1145"/>
+        <location filename="../desktopwindow.cpp" line="1146"/>
         <source>Desktop Preferences</source>
         <translation>데스크톱 환경설정</translation>
     </message>
@@ -2616,8 +2626,8 @@ lxsudo dbus-run-session -- %s</translation>
         <location filename="../bulkrename.cpp" line="243"/>
         <location filename="../bulkrename.cpp" line="277"/>
         <location filename="../bulkrename.cpp" line="281"/>
-        <location filename="../bulkrename.cpp" line="318"/>
-        <location filename="../bulkrename.cpp" line="322"/>
+        <location filename="../bulkrename.cpp" line="319"/>
+        <location filename="../bulkrename.cpp" line="323"/>
         <location filename="../tabpage.cpp" line="1192"/>
         <source>Error</source>
         <translation>오류</translation>
@@ -2625,14 +2635,14 @@ lxsudo dbus-run-session -- %s</translation>
     <message>
         <location filename="../bulkrename.cpp" line="220"/>
         <location filename="../bulkrename.cpp" line="277"/>
-        <location filename="../bulkrename.cpp" line="318"/>
+        <location filename="../bulkrename.cpp" line="319"/>
         <source>No file could be renamed.</source>
         <translation>아무 파일도 이름이 바뀌지 않았습니다.</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="224"/>
         <location filename="../bulkrename.cpp" line="281"/>
-        <location filename="../bulkrename.cpp" line="322"/>
+        <location filename="../bulkrename.cpp" line="323"/>
         <source>Some files could not be renamed.</source>
         <translation>일부 파일의 이름을 바꾸지 못했습니다.</translation>
     </message>
