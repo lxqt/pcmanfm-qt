@@ -25,7 +25,7 @@
 #include "settings.h"
 #include <libfm-qt6/libfmqt.h>
 #include <libfm-qt6/editbookmarksdialog.h>
-#include <QVector>
+#include <QList>
 #include <QPointer>
 #include <QProxyStyle>
 #include <QTranslator>
@@ -149,7 +149,7 @@ private:
     QString profileName_;
     bool daemonMode_;
     bool enableDesktopManager_;
-    QVector<DesktopWindow*> desktopWindows_;
+    QList<DesktopWindow*> desktopWindows_;
     QPointer<PreferencesDialog> preferencesDialog_;
     QPointer<DesktopPreferencesDialog> desktopPreferencesDialog_;
     QPointer<Fm::EditBookmarksDialog> editBookmarksialog_;

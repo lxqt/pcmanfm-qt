@@ -25,7 +25,7 @@
 #include <QDBusConnectionInterface>
 #include <QDBusInterface>
 #include <QDir>
-#include <QVector>
+#include <QList>
 #include <QLocale>
 #include <QLibraryInfo>
 #include <QFile>
@@ -864,7 +864,7 @@ void Application::updateFromSettings() {
 void Application::updateDesktopsFromSettings(bool changeSlide, bool allowShortcutRemoval) {
 // Desktop shortcuts should be removed only explicitly (e.g., through the Preferences dialog)
 // and only for the first desktop, not when desktops are created or a general setting changes.
-    QVector<DesktopWindow*>::iterator it;
+    QList<DesktopWindow*>::iterator it;
     for(it = desktopWindows_.begin(); it != desktopWindows_.end(); ++it) {
         DesktopWindow* desktopWin = static_cast<DesktopWindow*>(*it);
         desktopWin->updateFromSettings(settings_,
