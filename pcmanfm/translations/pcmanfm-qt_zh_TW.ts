@@ -544,12 +544,12 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktop-preferences.ui" line="439"/>
         <source>Cache may reduce the quality of displayed image as a trade-off.</source>
-        <translation type="unfinished"></translation>
+        <translation>快取可能會降低顯示圖片的品質，以作為權衡。</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="442"/>
         <source>Do not use wallpaper cache</source>
-        <translation type="unfinished"></translation>
+        <translation>不要使用桌布快取</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="449"/>

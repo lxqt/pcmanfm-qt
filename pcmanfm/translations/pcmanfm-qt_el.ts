@@ -544,12 +544,12 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktop-preferences.ui" line="439"/>
         <source>Cache may reduce the quality of displayed image as a trade-off.</source>
-        <translation type="unfinished"></translation>
+        <translation>Η χρήση της κρυφής μνήμης ενδέχεται να έχει ως τίμημα τη μείωση της ποιότητας της εμφανιζόμενης εικόνας.</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="442"/>
         <source>Do not use wallpaper cache</source>
-        <translation type="unfinished"></translation>
+        <translation>Να μη χρησιμοποιείται η κρυφή μνήμη ταπετσαρίας</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="449"/>
@@ -844,7 +844,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="291"/>
         <source>Go Up</source>
-        <translation>Μετάβαση&#xa0;πάνω</translation>
+        <translation>Μετάβαση πάνω</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="294"/>
@@ -2442,7 +2442,7 @@ or does not have such an option; required otherwise.</source>
         <location filename="../preferences.ui" line="886"/>
         <source>This is optional, depends on the terminal,
 and can be any group of custom options.</source>
-        <translation>Είναι προαιρετικό και εξαρτάται από το τερματικό,&#x2028;και μπορεί να είναι οποιαδήποτε ομάδα προσαρμοσμένων ορισμάτων.</translation>
+        <translation>Είναι προαιρετικό και εξαρτάται από το τερματικό, και μπορεί να είναι οποιαδήποτε ομάδα προσαρμοσμένων ορισμάτων.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="964"/>
