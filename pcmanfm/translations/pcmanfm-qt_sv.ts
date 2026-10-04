@@ -543,12 +543,12 @@ vänsterklickas, även när den inte är standard filhanterare.</translation>
     <message>
         <location filename="../desktop-preferences.ui" line="439"/>
         <source>Cache may reduce the quality of displayed image as a trade-off.</source>
-        <translation type="unfinished"></translation>
+        <translation>Cache kan som en kompromiss minska kvaliteten på den visade bilden.</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="442"/>
         <source>Do not use wallpaper cache</source>
-        <translation type="unfinished"></translation>
+        <translation>Använd inte bakgrundsbildscache</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="449"/>
