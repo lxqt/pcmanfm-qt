@@ -543,12 +543,12 @@ kliknete levým tlačítkem, i když to není výchozí správce souborů.</tran
     <message>
         <location filename="../desktop-preferences.ui" line="439"/>
         <source>Cache may reduce the quality of displayed image as a trade-off.</source>
-        <translation type="unfinished"></translation>
+        <translation>Mezipaměť může snižovat kvalitu zobrazení obrázků (daň za optimalizaci).</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="442"/>
         <source>Do not use wallpaper cache</source>
-        <translation type="unfinished"></translation>
+        <translation>Nepoužívat mezipaměť tapet plochy</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="449"/>
