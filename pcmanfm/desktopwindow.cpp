@@ -202,6 +202,9 @@ DesktopWindow::DesktopWindow(int screenNum, const QString& screenName):
     // under Wayland, set the layer and anchors as well as window transparency
     if(static_cast<Application*>(qApp)->underWayland()) {
         setAttribute(Qt::WA_TranslucentBackground);
+        if(QScreen* scr = getDesktopScreen()) {
+            setGeometry(scr->geometry());
+        }
         winId();
         if(QWindow* win = windowHandle()) {
             if(LayerShellQt::Window* layershell = LayerShellQt::Window::get(win)) {
