@@ -1,6 +1,6 @@
 pcmanfm-qt-2.5.0 / 2026-11-05
 ==============================
- * Enhanced the search by adding a stop button to status-bar.
+ * Incremental search is supported by adding an optional stop button to status-bar (disabled by default).
  * Added an option for no wallpaper cache.
  * CMake maintenance.
  * Code cleanup and update.
