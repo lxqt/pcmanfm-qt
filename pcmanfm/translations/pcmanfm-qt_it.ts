@@ -543,12 +543,12 @@ sinistro anche se non è il gestore file predefinito.</translation>
     <message>
         <location filename="../desktop-preferences.ui" line="439"/>
         <source>Cache may reduce the quality of displayed image as a trade-off.</source>
-        <translation type="unfinished"></translation>
+        <translation>L&apos;uso della cache può comportare una riduzione della qualità dell&apos;immagine visualizzata.</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="442"/>
         <source>Do not use wallpaper cache</source>
-        <translation type="unfinished"></translation>
+        <translation>Non usare la cache per lo sfondo desktop</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="449"/>
@@ -2214,7 +2214,7 @@ Potrebbero essere utili se le cartelle vengono ricreate.</translation>
     <message>
         <location filename="../preferences.ui" line="40"/>
         <source>Display</source>
-        <translation type="unfinished">Mostra</translation>
+        <translation>Visualizzazione</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="90"/>

@@ -543,12 +543,12 @@ są klikane lewym przyciskiem, nawet jeśli nie jest to domyślny menedżer plik
     <message>
         <location filename="../desktop-preferences.ui" line="439"/>
         <source>Cache may reduce the quality of displayed image as a trade-off.</source>
-        <translation type="unfinished"></translation>
+        <translation>Pamięć podręczna może pogorszyć jakość wyświetlanego obrazu – jest to pewien kompromis.</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="442"/>
         <source>Do not use wallpaper cache</source>
-        <translation type="unfinished"></translation>
+        <translation>Nie używaj pamięci podręcznej tapet</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="449"/>
@@ -2281,7 +2281,7 @@ Mogą się one przydać, jeśli te katalogi zostaną stworzone ponownie.</transl
     <message>
         <location filename="../preferences.ui" line="219"/>
         <source>Renamed files will also be selected</source>
-        <translation>Pliki ze zmienioną nazwą również zostaną&#xa0;wybrane</translation>
+        <translation>Pliki ze zmienioną nazwą również zostaną wybrane</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="229"/>
@@ -2541,7 +2541,7 @@ It can be left empty if the terminal is already supported
 or does not have such an option; required otherwise.</source>
         <translation>Przykład: -e
 Można pozostawić puste, jeśli terminal jest już obsługiwany
-lub nie ma takiej opcji; w&#xa0;przeciwnym razie jest wymagane.</translation>
+lub nie ma takiej opcji; w przeciwnym razie jest wymagane.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="879"/>
@@ -2552,7 +2552,7 @@ lub nie ma takiej opcji; w&#xa0;przeciwnym razie jest wymagane.</translation>
         <location filename="../preferences.ui" line="886"/>
         <source>This is optional, depends on the terminal,
 and can be any group of custom options.</source>
-        <translation>Opcjonalne, zależy od terminala i&#xa0;może być
+        <translation>Opcjonalne, zależy od terminala i może być
 dowolną grupą niestandardowych opcji.</translation>
     </message>
     <message>
