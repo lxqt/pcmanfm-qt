@@ -543,12 +543,12 @@ se clicar com o botão esquerdo do rato - mesmo que este não seja o gestor de f
     <message>
         <location filename="../desktop-preferences.ui" line="439"/>
         <source>Cache may reduce the quality of displayed image as a trade-off.</source>
-        <translation type="unfinished"></translation>
+        <translation>O cache pode reduzir a qualidade da imagem apresentada, como contrapartida.</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="442"/>
         <source>Do not use wallpaper cache</source>
-        <translation type="unfinished"></translation>
+        <translation>Não utilize a cache de papéis de parede</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="449"/>
