@@ -350,6 +350,14 @@ void Application::init() {
 
 int Application::exec() {
 
+    // Take the volume monitor before the desktop is made, and keep it, as below. The desktop
+    // replaces its folder as it starts, which can drop libfm-qt's last reference to the
+    // monitor while one of its job threads gets a new one; GLib's mount monitor can then
+    // deadlock in g_context_specific_group_request_state, and the desktop never draws.
+    if(isPrimaryInstance) {
+        volumeMonitor_ = g_volume_monitor_get();
+    }
+
     if(!parseCommandLineArgs()) {
         return 0;
     }
@@ -358,7 +366,9 @@ int Application::exec() {
         setQuitOnLastWindowClosed(false);
     }
 
-    volumeMonitor_ = g_volume_monitor_get();
+    if(!volumeMonitor_) {
+        volumeMonitor_ = g_volume_monitor_get();
+    }
     // delay the volume manager a little because in newer versions of glib/gio there's a problem.
     // when the first volume monitor object is created, it discovers volumes asynchronously.
     // g_volume_monitor_get() immediately returns while the monitor is still discovering devices.
