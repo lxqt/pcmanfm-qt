@@ -667,6 +667,16 @@ are left clicked, even when it is not the default file manager.</string>
             </property>
            </widget>
           </item>
+          <item>
+           <widget class="QCheckBox" name="volumesBox">
+            <property name="text">
+             <string>Volumes</string>
+            </property>
+            <property name="icon">
+             <iconset theme="drive-removable-media"/>
+            </property>
+           </widget>
+          </item>
          </layout>
         </widget>
        </item>

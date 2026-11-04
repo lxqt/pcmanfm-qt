@@ -58,6 +58,8 @@
 #include <libfm-qt6/fileoperation.h>
 #include <libfm-qt6/filepropsdialog.h>
 #include <libfm-qt6/utilities.h>
+#include <libfm-qt6/mountoperation.h>
+#include <libfm-qt6/volumelistmodel.h>
 #include <libfm-qt6/core/fileinfo.h>
 #include "xdgdir.h"
 #include "bulkrename.h"
@@ -151,6 +153,7 @@ DesktopWindow::DesktopWindow(int screenNum, const QString& screenName):
 
         connect(this, &Fm::FolderView::inlineRenamed, this, &DesktopWindow::onInlineRenaming);
         connect(this, &Fm::FolderView::dropIsDecided, this, &DesktopWindow::onDecidingDrop);
+        connect(this, &Fm::FolderView::volumeClicked, this, &DesktopWindow::onVolumeClicked);
     }
 
     // remove frame
@@ -251,6 +254,9 @@ DesktopWindow::~DesktopWindow() {
         delete wallpaperTimer_;
     }
 
+    // the volumes view model must not outlive proxyModel_ (see Fm::FolderView::setShowVolumes())
+    setShowVolumes(false);
+
     if(proxyModel_) {
         delete proxyModel_;
     }
@@ -264,6 +270,17 @@ DesktopWindow::~DesktopWindow() {
 void DesktopWindow::updateShortcutsFromSettings(Settings& settings, bool allowShortcutRemoval) {
     const QStringList ds = settings.desktopShortcuts();
     Fm::FilePathList paths;
+    const bool showVols = ds.contains(QLatin1String("Volumes"));
+    if(showVols != showVolumes()) {
+        setShowVolumes(showVols);
+        // proxyModel_'s row signals don't cover volume rows, so also relayout
+        // when a volume is plugged in or removed
+        if(QAbstractItemModel* viewModel = listView_->model(); viewModel && viewModel != proxyModel_) {
+            connect(viewModel, &QAbstractItemModel::rowsInserted, this, &DesktopWindow::onRowsInserted, Qt::UniqueConnection);
+            connect(viewModel, &QAbstractItemModel::rowsRemoved, this, &DesktopWindow::onRowsInserted, Qt::UniqueConnection);
+        }
+        queueRelayout();
+    }
     // Trash
     if(ds.contains(QLatin1String("Trash")) && settings.useTrash()) {
         createTrash();
@@ -1095,6 +1112,88 @@ void DesktopWindow::onFileClicked(int type, const std::shared_ptr<const Fm::File
     }
 }
 
+std::string DesktopWindow::itemKey(const QModelIndex& index) const {
+    if(auto file = fileInfoFromIndex(index)) {
+        return file->name();
+    }
+    if(auto vol = index.data(Fm::VolumeListModel::VolumeRole).value<std::shared_ptr<const Fm::Volume>>()) {
+        Fm::CStrPtr id = vol->uuid(); // the name alone isn't unique (e.g. "16 GB Volume")
+        if(!id) {
+            id = vol->name();
+        }
+        std::string key = "volume:" + std::string(id ? id.get() : "");
+        std::replace(key.begin(), key.end(), '/', '_'); // a '/' would split the QSettings group
+        return key;
+    }
+    return std::string();
+}
+
+bool DesktopWindow::isVolumeKey(const std::string& key) {
+    return key.rfind("volume:", 0) == 0;
+}
+
+void DesktopWindow::openVolume(const Fm::Volume& volume) {
+    if(auto gmount = volume.mount()) { // already mounted -- just open it
+        Fm::Mount mnt{gmount};
+        if(auto path = mnt.defaultLocation()) {
+            static_cast<Application*>(qApp)->launchFiles(QString(), QStringList{QString::fromUtf8(path.toString().get())}, false, false);
+        }
+        return;
+    }
+    // not mounted yet -- mount it first, then open (mirrors PlacesView::activateRow())
+    auto* op = new Fm::MountOperation(true, this);
+    op->mount(volume.get());
+    Fm::Volume volCopy = volume; // keep a ref-counted handle alive for the async callback
+    QTimer::singleShot(0, op, [op, volCopy] {
+        if(op->wait()) {
+            if(auto gmount = volCopy.mount()) {
+                Fm::Mount mnt{gmount};
+                if(auto path = mnt.defaultLocation()) {
+                    static_cast<Application*>(qApp)->launchFiles(QString(), QStringList{QString::fromUtf8(path.toString().get())}, false, false);
+                }
+            }
+        }
+    });
+}
+
+void DesktopWindow::onVolumeClicked(int type, const Fm::Volume& volume) {
+    if(type == Fm::FolderView::ContextMenuClick) {
+        QMenu* menu = new QMenu(this);
+        QAction* action = menu->addAction(tr("Open"));
+        Fm::Volume volCopy = volume;
+        connect(action, &QAction::triggered, this, [this, volCopy] {
+            openVolume(volCopy);
+        });
+        if(!static_cast<Application*>(qApp)->settings().allSticky()) {
+            // acts on the selection, which the right click has just made
+            action = menu->addAction(tr("Stic&k to Current Position"));
+            action->setCheckable(true);
+            const auto sel = selectedIndexes();
+            action->setChecked(!sel.isEmpty() && customItemPos_.find(itemKey(sel.first())) != customItemPos_.cend());
+            connect(action, &QAction::toggled, this, &DesktopWindow::onStickToCurrentPos);
+        }
+        if(volume.canEject()) {
+            menu->addSeparator();
+            action = menu->addAction(QIcon::fromTheme(QStringLiteral("media-eject")), tr("Eject"));
+            connect(action, &QAction::triggered, this, [this, volCopy] {
+                (new Fm::MountOperation(true, this))->eject(volCopy.get());
+            });
+        }
+        else if(volume.mount()) {
+            menu->addSeparator();
+            action = menu->addAction(tr("Unmount"));
+            connect(action, &QAction::triggered, this, [this, volCopy] {
+                (new Fm::MountOperation(true, this))->unmount(volCopy.get());
+            });
+        }
+        menu->exec(QCursor::pos());
+        delete menu;
+    }
+    else if(type == Fm::FolderView::ActivatedClick) {
+        openVolume(volume);
+    }
+}
+
 void DesktopWindow::prepareFileMenu(Fm::FileMenu* menu) {
     // qDebug("DesktopWindow::prepareFileMenu");
     PCManFM::View::prepareFileMenu(menu);
@@ -1217,7 +1316,7 @@ void DesktopWindow::onRowsAboutToBeRemoved(const QModelIndex& parent, int start,
         desktopDir += QLatin1Char('/');
         for(auto it = customItemPos_.cbegin(); it != customItemPos_.cend();) {
             auto& name = it->first;
-            if(!QFile::exists(desktopDir + QString::fromStdString(name))) {
+            if(!isVolumeKey(name) && !QFile::exists(desktopDir + QString::fromStdString(name))) {
                 it = customItemPos_.erase(it);
                 changed = true;
             }
@@ -1441,7 +1540,11 @@ void DesktopWindow::relayoutItems() {
     bool allSticky = static_cast<Application*>(qApp)->settings().allSticky();
 
     int row = 0;
-    int rowCount = proxyModel_->rowCount();
+    // listView_'s actual model may be a volumes-concatenated view model rather
+    // than proxyModel_ itself (see Fm::FolderView::setShowVolumes()); iterate
+    // that instead so volume rows get laid out too, not just real files.
+    QAbstractItemModel* viewModel = listView_->model();
+    int rowCount = viewModel->rowCount();
 
     auto delegate = static_cast<Fm::FolderItemDelegate*>(listView_->itemDelegateForColumn(0));
     auto itemSize = delegate->itemSize();
@@ -1450,7 +1553,7 @@ void DesktopWindow::relayoutItems() {
 
     QPoint pos = workArea.topLeft();
     for(; row < rowCount; ++row) {
-        QModelIndex index = proxyModel_->index(row, 0);
+        QModelIndex index = viewModel->index(row, 0);
         int itemWidth;
         QVariant sizeVariant = index.data(Qt::SizeHintRole);
         if(sizeVariant.isValid()) {
@@ -1459,17 +1562,23 @@ void DesktopWindow::relayoutItems() {
         else {
             itemWidth = delegate->itemSize().width();
         }
-        auto file = proxyModel_->fileInfoFromIndex(index);
-        if(file == nullptr) {
-            continue;
+        auto file = fileInfoFromIndex(index);
+        std::string name;
+        if(file) {
+            name = file->name();
+            if(filesToTrust_.contains(QString::fromStdString(name))) {
+                file->setTrustable(true);
+                filesToTrust_.removeAll(QString::fromStdString(name));
+            }
+            else if(file->isDesktopEntry()) {
+                trustOurDesktopShortcut(file);
+            }
         }
-        auto name = file->name();
-        if(filesToTrust_.contains(QString::fromStdString(name))) {
-            file->setTrustable(true);
-            filesToTrust_.removeAll(QString::fromStdString(name));
-        }
-        else if(file->isDesktopEntry()) {
-            trustOurDesktopShortcut(file);
+        else {
+            name = itemKey(index); // a volume row
+            if(name.empty()) {
+                continue;
+            }
         }
         auto find_it = customItemPos_.find(name);
         if(find_it != customItemPos_.cend()) { // the item has a custom position
@@ -1576,7 +1685,7 @@ void DesktopWindow::retrieveCustomPos() {
 
     for(auto it = customPosStorage_.cbegin(); it != customPosStorage_.cend(); ++it) {
         auto& name = it->first;
-        if(!QFile::exists(desktopDir + QString::fromStdString(name))) {
+        if(!isVolumeKey(name) && !QFile::exists(desktopDir + QString::fromStdString(name))) {
             continue;
         }
         auto customPos = it->second;
@@ -1636,8 +1745,8 @@ void DesktopWindow::onStickToCurrentPos(bool toggled) {
         bool relayout(false);
         QModelIndexList::const_iterator it;
         for(it = indexes.constBegin(); it != indexes.constEnd(); ++it) {
-            if(auto file = proxyModel_->fileInfoFromIndex(*it)) {
-                auto name = file->name();
+            auto name = itemKey(*it);
+            if(!name.empty()) {
                 if(toggled) { // remember the current custom position
                     QRect itemRect = listView_->rectForIndex(*it);
                     customItemPos_[name] = itemRect.topLeft();
@@ -2043,7 +2152,7 @@ void DesktopWindow::childDragMoveEvent(QDragMoveEvent* e) { // see DesktopWindow
             else if(dropIndex.model()) {
                 QVariant data = dropIndex.model()->data(dropIndex, Fm::FolderModel::Role::FileInfoRole);
                 auto info = data.value<std::shared_ptr<const Fm::FileInfo>>();
-                if(info && info->isDir()) {
+                if((info && info->isDir()) || dropIndex.data(Fm::VolumeListModel::VolumeRole).isValid()) {
                     dropRect_ = listView_->rectForIndex(dropIndex);
                 }
             }
@@ -2084,7 +2193,7 @@ void DesktopWindow::childDropEvent(QDropEvent* e) {
             QModelIndex dropIndex = indexForPos(&isTrash, e->position().toPoint(), workArea, grid);
             if(dropIndex.isValid() // drop on an item
                && curIndx.isValid() && curIndx != dropIndex) { // not a drop on self
-                if(auto file = proxyModel_->fileInfoFromIndex(dropIndex)) {
+                if(auto file = fileInfoFromIndex(dropIndex)) {
                     if(!file->isDir()) { // drop on a non-directory file
                         // if the files are dropped on our Trash shortcut cell,
                         // move them to Trash instead of moving them on desktop
@@ -2126,14 +2235,15 @@ void DesktopWindow::childDropEvent(QDropEvent* e) {
             std::set<std::string> draggedFiles;
 
             for(const QModelIndex& indx : std::as_const(selected)) {
-                if (auto selFile = proxyModel_->fileInfoFromIndex(indx)) {
-                    draggedFiles.insert(selFile->name());
+                auto key = itemKey(indx);
+                if(!key.empty()) {
+                    draggedFiles.insert(key);
                 }
             }
 
             // First move the current item to the drop position.
-            auto file = proxyModel_->fileInfoFromIndex(curIndx);
-            if(file) {
+            auto key = itemKey(curIndx);
+            if(!key.empty()) {
                 QPoint pos = dropPos;
 
                 // NOTE: DND always reports the drop position in the usual (LTR) coordinates.
@@ -2143,13 +2253,13 @@ void DesktopWindow::childDropEvent(QDropEvent* e) {
                     pos.setX(width() - pos.x());
                 }
 
-                draggedFiles.erase(file->name());
-                reachedLastCell = stickToPosition(file->name(), pos,
+                draggedFiles.erase(key);
+                reachedLastCell = stickToPosition(key, pos,
                                                   workArea, grid,
                                                   reachedLastCell,
                                                   droppedFiles, draggedFiles);
                 nxtPos = pos;
-                droppedFiles.insert(file->name());
+                droppedFiles.insert(key);
             }
 
             // Then move the other items so that their relative positions are preserved.
@@ -2164,8 +2274,8 @@ void DesktopWindow::childDropEvent(QDropEvent* e) {
                 if(indx == curIndx) {
                     continue;
                 }
-                file = proxyModel_->fileInfoFromIndex(indx);
-                if(file) {
+                key = itemKey(indx);
+                if(!key.empty()) {
                     QPoint nxtDropPos = dropPos + listView_->visualRect(indx).topLeft() - curPoint;
 
                     if(rtl) { // like above
@@ -2177,13 +2287,13 @@ void DesktopWindow::childDropEvent(QDropEvent* e) {
                         // keeping relative positions and choose the next position
                         nxtDropPos = nxtPos;
                     }
-                    draggedFiles.erase(file->name());
-                    reachedLastCell = stickToPosition(file->name(), nxtDropPos,
+                    draggedFiles.erase(key);
+                    reachedLastCell = stickToPosition(key, nxtDropPos,
                                                        workArea, grid,
                                                        reachedLastCell,
                                                        droppedFiles, draggedFiles);
                     nxtPos = nxtDropPos;
-                    droppedFiles.insert(file->name());
+                    droppedFiles.insert(key);
                 }
             }
         }
@@ -2227,11 +2337,14 @@ void DesktopWindow::childDropEvent(QDropEvent* e) {
         dropRect_ = QRect();
         listView_->viewport()->update();
 
-        // do not proceed if items are dropped on a directory
-        if(auto file = proxyModel_->fileInfoFromIndex(dropIndex)) {
+        // do not proceed if items are dropped on a directory or a volume
+        if(auto file = fileInfoFromIndex(dropIndex)) {
             if(file->isDir()) {
                 return;
             }
+        }
+        else if(dropIndex.data(Fm::VolumeListModel::VolumeRole).isValid()) {
+            return;
         }
 
         // Reserve successive positions for dropped items, starting with the drop rectangle.

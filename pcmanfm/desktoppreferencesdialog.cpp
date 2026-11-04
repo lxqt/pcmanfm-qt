@@ -125,6 +125,7 @@ DesktopPreferencesDialog::DesktopPreferencesDialog(QWidget* parent, Qt::WindowFl
   ui.trashBox->setChecked(ds.contains(QLatin1String("Trash")));
   ui.computerBox->setChecked(ds.contains(QLatin1String("Computer")));
   ui.networkBox->setChecked(ds.contains(QLatin1String("Network")));
+  ui.volumesBox->setChecked(ds.contains(QLatin1String("Volumes")));
 
   // set fallback icon here (cannot be done in .ui)
   ui.networkBox->setIcon(QIcon::fromTheme(QStringLiteral("network"), QIcon::fromTheme(QStringLiteral("folder-network"))));
@@ -218,6 +219,9 @@ void DesktopPreferencesDialog::applySettings()
   }
   if(ui.networkBox->isChecked()) {
       ds << QLatin1String("Network");
+  }
+  if(ui.volumesBox->isChecked()) {
+      ds << QLatin1String("Volumes");
   }
   settings.setDesktopShortcuts(ds);
 
