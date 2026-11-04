@@ -124,6 +124,7 @@ protected Q_SLOTS:
     void onFolderStartLoading();
     void onFolderFinishLoading();
     void onFilesAdded(const Fm::FileInfoList files);
+    void onVolumeClicked(int type, const Fm::Volume& volume);
 
     void relayoutItems();
     void onStickToCurrentPos(bool toggled);
@@ -175,6 +176,12 @@ private:
     QModelIndex navigateWithKey(int key, Qt::KeyboardModifiers modifiers, const QModelIndex& start = QModelIndex());
 
     QModelIndex indexForPos(bool* isTrash, const QPoint& pos, const QRect& workArea, const QSize& grid) const;
+
+    void openVolume(const Fm::Volume& volume);
+
+    // key of an item in customItemPos_: its file name, or "volume:<uuid or name>"
+    std::string itemKey(const QModelIndex& index) const;
+    static bool isVolumeKey(const std::string& key);
 
 private:
     Fm::ProxyFolderModel* proxyModel_;
