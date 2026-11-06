@@ -2219,7 +2219,7 @@ Jie gali praversti tuo atveju, jeigu aplankai bus sukurti iš naujo.</translatio
     <message>
         <location filename="../preferences.ui" line="40"/>
         <source>Display</source>
-        <translation>Rodymas</translation>
+        <translation>Atvaizdavimas</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="90"/>
@@ -2331,7 +2331,7 @@ Jie gali praversti tuo atveju, jeigu aplankai bus sukurti iš naujo.</translatio
         <location filename="../preferences.ui" line="469"/>
         <location filename="../preferences.ui" line="493"/>
         <source> px</source>
-        <translation> piks</translation>
+        <translation> piks.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="482"/>

@@ -544,12 +544,12 @@ olarak seçilmese bile sol tıklandığında PCManFM-Qt&apos;de açılır.</tran
     <message>
         <location filename="../desktop-preferences.ui" line="439"/>
         <source>Cache may reduce the quality of displayed image as a trade-off.</source>
-        <translation type="unfinished"></translation>
+        <translation>Önbellek, bunun karşılığında görüntülenen resmin kalitesini düşürebilir.</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="442"/>
         <source>Do not use wallpaper cache</source>
-        <translation type="unfinished"></translation>
+        <translation>Duvar kağıdı önbelleğini kullanmayın</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="449"/>
@@ -1873,12 +1873,12 @@ olarak seçilmese bile sol tıklandığında PCManFM-Qt&apos;de açılır.</tran
     <message>
         <location filename="../mainwindow.cpp" line="205"/>
         <source>Searching…</source>
-        <translation type="unfinished"></translation>
+        <translation>Aranıyor…</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="220"/>
         <source>Stop searching</source>
-        <translation type="unfinished"></translation>
+        <translation>Aramayı durdur</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="2074"/>
@@ -1987,8 +1987,9 @@ Bu klasörler yeniden oluşturulursa faydalı olabilirler.</translation>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="617"/>
         <source>%n item(s) found</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>%n öğe bulundu</numerusform>
+            <numerusform>%n öğeler bulundu</numerusform>
         </translation>
     </message>
     <message numerus="yes">
@@ -2457,12 +2458,12 @@ ve herhangi bir özel seçenek grubu olabilir.</translation>
     <message>
         <location filename="../preferences.ui" line="1000"/>
         <source>Does not work with the detailed list mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Ayrıntılı liste modunda çalışmaz</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="1003"/>
         <source>Use incremental listing when searching</source>
-        <translation type="unfinished"></translation>
+        <translation>Arama yaparken aşamalı listelemeyi kullanın</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="1038"/>
