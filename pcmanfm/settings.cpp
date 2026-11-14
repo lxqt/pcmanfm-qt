@@ -171,10 +171,9 @@ QString Settings::profileDir(QString profile, bool useFallback) {
     // try user-specific config file first
     QString dirName = QStandardPaths::writableLocation(QStandardPaths::ConfigLocation)
                       + QStringLiteral("/pcmanfm-qt/") + profile;
-    QDir dir(dirName);
 
-    // if user config dir does not exist, try system-wide config dirs instead
-    if(!dir.exists() && useFallback) {
+    // if "settings.conf" does not exist in user config dir, try system-wide configs instead
+    if(useFallback && !QFile::exists(dirName + QStringLiteral("/settings.conf"))) {
         QString fallbackDir;
         const QStringList confList = QStandardPaths::standardLocations(QStandardPaths::ConfigLocation);
         for(const auto &thisConf : confList) {
@@ -182,8 +181,7 @@ QString Settings::profileDir(QString profile, bool useFallback) {
             if(fallbackDir == dirName) {
                 continue;
             }
-            dir.setPath(fallbackDir);
-            if(dir.exists()) {
+            if(QFile::exists(fallbackDir + QStringLiteral("/settings.conf"))) {
                 dirName = fallbackDir;
                 break;
             }
