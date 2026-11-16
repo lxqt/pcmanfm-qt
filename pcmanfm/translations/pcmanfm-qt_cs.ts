@@ -6,7 +6,7 @@
     <message>
         <location filename="../about.ui" line="14"/>
         <source>About</source>
-        <translation>O aplikaci</translation>
+        <translation>O programu</translation>
     </message>
     <message>
         <location filename="../about.ui" line="46"/>

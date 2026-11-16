@@ -543,12 +543,12 @@ clicadas com o botão esquerdo, mesmo quando não for o gerenciador de arquivos 
     <message>
         <location filename="../desktop-preferences.ui" line="439"/>
         <source>Cache may reduce the quality of displayed image as a trade-off.</source>
-        <translation type="unfinished"></translation>
+        <translation>O cache pode reduzir a qualidade da imagem exibida, como uma contrapartida.</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="442"/>
         <source>Do not use wallpaper cache</source>
-        <translation type="unfinished"></translation>
+        <translation>Não usar cache de papel de parede</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="449"/>
@@ -1874,12 +1874,12 @@ clicadas com o botão esquerdo, mesmo quando não for o gerenciador de arquivos 
     <message>
         <location filename="../mainwindow.cpp" line="205"/>
         <source>Searching…</source>
-        <translation type="unfinished"></translation>
+        <translation>Procurando…</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="220"/>
         <source>Stop searching</source>
-        <translation type="unfinished"></translation>
+        <translation>Parar de procurar</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="2074"/>
@@ -1988,9 +1988,9 @@ Eles podem ser úteis se essas pastas forem criadas novamente.</translation>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="617"/>
         <source>%n item(s) found</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>%n item encontrado</numerusform>
+            <numerusform>%n itens encontrados</numerusform>
         </translation>
     </message>
     <message numerus="yes">
@@ -2271,7 +2271,7 @@ Eles podem ser úteis se essas pastas forem criadas novamente.</translation>
     <message>
         <location filename="../preferences.ui" line="188"/>
         <source>Move deleted files to Trash instead of erasing from disk</source>
-        <translation>Mover os arquivos excluídos para &quot;lixeira&quot; em vez de apagar do disco.</translation>
+        <translation>Mover os arquivos excluídos para &quot;lixeira&quot; em vez de apagar do disco</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="219"/>
@@ -2435,12 +2435,12 @@ Um valor -1 significa que não há limite para o tamanho do arquivo (o padrão).
     <message>
         <location filename="../preferences.ui" line="1000"/>
         <source>Does not work with the detailed list mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Não funciona com o modo de lista detalhada</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="1003"/>
         <source>Use incremental listing when searching</source>
-        <translation type="unfinished"></translation>
+        <translation>Usar listagem incremental ao pesquisar</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="1038"/>
