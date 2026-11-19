@@ -35,6 +35,7 @@
 #include <QScreen>
 #include <QWindow>
 #include <QFileSystemWatcher>
+#include <QMenu>
 
 #include <algorithm>
 
@@ -839,6 +840,66 @@ DesktopWindow* Application::createDesktopWindow(int screenNum, const QString& sc
     window->show();
     window->queueRelayout(); // for some reason, sometimes needed with Qt6
     return window;
+}
+
+const QHash<QString, Application::ShortcutDescription>& Application::defaultShortcuts() {
+    if(defaultShortcuts_.isEmpty()) {
+        // read the defaults from a pristine UI because Preferences may be shown without any window
+        QMainWindow window;
+        Ui::MainWindow ui;
+        ui.setupUi(&window);
+        const auto actions = window.findChildren<QAction*>();
+        for(const auto action : actions) {
+            // unused actions and those added only to context menus are excluded
+            const auto objects = action->associatedObjects();
+            if(!action->objectName().startsWith(QLatin1String("action")) || action->text().isEmpty()
+               || objects.isEmpty()) {
+                continue;
+            }
+            // prefix the text with the title of the menu, e.g., "Create New › Folder"
+            QString text = action->text().remove(QLatin1Char('&'));
+            for(const auto object : objects) {
+                if(auto menu = qobject_cast<QMenu*>(object)) {
+                    //: The text of an action in the shortcut editor; %1 is a menu title and %2 an action text
+                    text = tr("%1 › %2").arg(menu->title().remove(QLatin1Char('&')), text);
+                    break;
+                }
+            }
+            defaultShortcuts_.insert(action->objectName(), {text, action->shortcut()});
+        }
+    }
+    return defaultShortcuts_;
+}
+
+const QSet<int>& Application::reservedShortcuts() {
+    static const QSet<int> reserved = [] {
+        QSet<int> keys;
+        // the hard-coded shortcuts of MainWindow (most of them are listed in the Hidden Shortcuts dialog)
+        for(const QKeyCombination k : std::initializer_list<QKeyCombination>{Qt::Key_Escape, Qt::CTRL | Qt::Key_Escape, Qt::CTRL | Qt::Key_L, Qt::ALT | Qt::Key_D,
+                            Qt::CTRL | Qt::Key_Tab, Qt::CTRL | Qt::SHIFT | Qt::Key_Tab,
+                            Qt::CTRL | Qt::Key_PageDown, Qt::CTRL | Qt::Key_PageUp,
+                            Qt::Key_Backspace, Qt::CTRL | Qt::Key_F, Qt::SHIFT | Qt::Key_Insert,
+                            Qt::SHIFT | Qt::Key_Delete, Qt::ALT | Qt::Key_Enter}) {
+            keys << k.toCombined();
+        }
+        for(int i = 0; i < 10; ++i) {
+            keys << QKeyCombination(Qt::CTRL, Qt::Key(Qt::Key_0 + i)).toCombined()
+                 << QKeyCombination(Qt::ALT, Qt::Key(Qt::Key_0 + i)).toCombined();
+        }
+        // handling items inside the view
+        for(const auto k : {Qt::Key_Up, Qt::Key_Down, Qt::Key_Left, Qt::Key_Right,
+                            Qt::Key_PageUp, Qt::Key_PageDown, Qt::Key_Home, Qt::Key_End}) {
+            for(const Qt::KeyboardModifiers m : std::initializer_list<Qt::KeyboardModifiers>{Qt::NoModifier, Qt::ShiftModifier, Qt::ControlModifier, Qt::ControlModifier | Qt::ShiftModifier}) {
+                keys << QKeyCombination(m, k).toCombined();
+            }
+        }
+        for(const QKeyCombination k : std::initializer_list<QKeyCombination>{Qt::Key_Space, Qt::CTRL | Qt::Key_Space, Qt::SHIFT | Qt::Key_Space,
+                            Qt::Key_Return, Qt::Key_Enter, Qt::Key_Tab, Qt::SHIFT | Qt::Key_Backtab}) {
+            keys << k.toCombined();
+        }
+        return keys;
+    }();
+    return reserved;
 }
 
 // called when Settings is changed to update UI

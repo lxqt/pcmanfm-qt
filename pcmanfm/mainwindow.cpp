@@ -377,6 +377,8 @@ MainWindow::MainWindow(Fm::FilePath path):
     shortcut = new QShortcut(Qt::ALT | Qt::Key_Enter, this);
     connect(shortcut, &QShortcut::activated, this, &MainWindow::on_actionFileProperties_triggered);
 
+    setShortcuts();
+
     addViewFrame(path);
     if(splitView_) {
         // put the menu button on the right (there's no path bar/entry on the toolbar)
@@ -2231,8 +2233,49 @@ void MainWindow::setTabIcon(TabPage* tabPage) {
     }
 }
 
+void MainWindow::setShortcuts() {
+    Application* app = static_cast<Application*>(qApp);
+    const auto& defaults = app->defaultShortcuts();
+    const auto& reserved = Application::reservedShortcuts();
+    const auto custom = app->settings().customShortcuts();
+    QSet<int> used; // keys of the shortcuts that are set
+    QMap<QString, QAction*> customActions; // sorted by object names to have the same result at each start
+    const auto actions = findChildren<QAction*>();
+    for(const auto action : actions) {
+        const QString name = action->objectName();
+        if(!defaults.contains(name)) {
+            continue;
+        }
+        if(custom.contains(name)) {
+            customActions.insert(name, action);
+            continue;
+        }
+        action->setShortcut(defaults.value(name).shortcut);
+        if(!action->shortcut().isEmpty()) {
+            used << action->shortcut()[0].toCombined();
+        }
+    }
+
+    // NOTE: Ambiguous or reserved shortcuts may have been added manually to the config file.
+    // Prevent them as far as possible by falling back to the default shortcuts.
+    for(auto it = customActions.constBegin(); it != customActions.constEnd(); ++it) {
+        QKeySequence seq(custom.value(it.key()), QKeySequence::PortableText);
+        if(!seq.isEmpty()) {
+            const int key = seq[0].toCombined();
+            if(reserved.contains(key) || used.contains(key)) {
+                seq = defaults.value(it.key()).shortcut;
+            }
+            if(!seq.isEmpty()) {
+                used << seq[0].toCombined();
+            }
+        }
+        it.value()->setShortcut(seq);
+    }
+}
+
 void MainWindow::updateFromSettings(Settings& settings) {
     // apply settings
+    setShortcuts();
 
     // menu
     ui.actionDelete->setText(settings.useTrash() ? tr("&Move to Trash") : tr("&Delete"));

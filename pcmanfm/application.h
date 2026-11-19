@@ -26,6 +26,9 @@
 #include <libfm-qt6/libfmqt.h>
 #include <libfm-qt6/editbookmarksdialog.h>
 #include <QList>
+#include <QHash>
+#include <QSet>
+#include <QKeySequence>
 #include <QPointer>
 #include <QProxyStyle>
 #include <QTranslator>
@@ -67,6 +70,16 @@ public:
     Settings& settings() {
         return settings_;
     }
+
+    // the text and default shortcut of a main window action
+    struct ShortcutDescription {
+        QString displayText;
+        QKeySequence shortcut;
+    };
+    // the actions of the main window that can have custom shortcuts, by object name
+    const QHash<QString, ShortcutDescription>& defaultShortcuts();
+    // the keys that cannot be used by custom shortcuts
+    static const QSet<int>& reservedShortcuts();
 
     Fm::LibFmQt& libFm() {
         return libFm_;
@@ -146,6 +159,7 @@ private:
     bool isPrimaryInstance;
     Fm::LibFmQt libFm_;
     Settings settings_;
+    QHash<QString, ShortcutDescription> defaultShortcuts_;
     QString profileName_;
     bool daemonMode_;
     bool enableDesktopManager_;

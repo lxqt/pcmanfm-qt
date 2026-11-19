@@ -266,6 +266,7 @@ private:
     int addTabWithPage(TabPage* page, ViewFrame* viewFrame, Fm::FilePath path = Fm::FilePath());
     void dropTab(QObject* source);
     void setTabIcon(TabPage* tabPage);
+    void setShortcuts();
 
 private:
     Ui::MainWindow ui;
