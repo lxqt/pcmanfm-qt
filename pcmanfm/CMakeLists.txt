@@ -82,11 +82,6 @@ target_compile_definitions(pcmanfm-qt
         LIBFM_DATA_DIR="${PKG_FM_PREFIX}/share/libfm"
 )
 
-target_include_directories(pcmanfm-qt
-    PRIVATE
-        "${Qt6Gui_PRIVATE_INCLUDE_DIRS}"
-)
-
 target_link_libraries(pcmanfm-qt
     Qt6::Widgets
     Qt6::DBus
