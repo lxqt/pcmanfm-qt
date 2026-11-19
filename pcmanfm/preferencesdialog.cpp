@@ -594,6 +594,7 @@ void PreferencesDialog::initShortcutsPage() {
     int row = 0;
     for(auto it = defaults.constBegin(); it != defaults.constEnd(); ++it, ++row) {
         auto item = new QTableWidgetItem(it->displayText);
+        item->setToolTip(it->displayText); // the text may be elided
         item->setData(Qt::UserRole, it.key());
         item->setFlags(item->flags() & ~Qt::ItemIsEditable);
         table->setItem(row, 0, item);
@@ -613,7 +614,12 @@ void PreferencesDialog::initShortcutsPage() {
     }
     table->setSortingEnabled(true);
     table->sortItems(0);
-    table->resizeColumnsToContents();
+    // no horizontal scrollbar: long action texts are elided instead
+    table->setWordWrap(false); // otherwise, wrapped lines are elided separately
+    table->setTextElideMode(Qt::ElideMiddle);
+    table->horizontalHeader()->setSectionResizeMode(0, QHeaderView::Stretch);
+    table->horizontalHeader()->setSectionResizeMode(1, QHeaderView::ResizeToContents);
+    table->horizontalHeader()->setSectionResizeMode(2, QHeaderView::ResizeToContents);
     ui.shortcutWarning->hide();
     updateShortcutsState(); // ambiguous shortcuts might have been added manually to the config file
 
