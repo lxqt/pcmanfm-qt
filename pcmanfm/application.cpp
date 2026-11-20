@@ -879,7 +879,8 @@ const QSet<int>& Application::reservedShortcuts() {
                             Qt::CTRL | Qt::Key_Tab, Qt::CTRL | Qt::SHIFT | Qt::Key_Tab,
                             Qt::CTRL | Qt::Key_PageDown, Qt::CTRL | Qt::Key_PageUp,
                             Qt::Key_Backspace, Qt::CTRL | Qt::Key_F, Qt::SHIFT | Qt::Key_Insert,
-                            Qt::SHIFT | Qt::Key_Delete, Qt::ALT | Qt::Key_Enter}) {
+                            Qt::SHIFT | Qt::Key_Delete, Qt::ALT | Qt::Key_Enter,
+                            Qt::CTRL | Qt::Key_K}) { // Ctrl+K is used by the filter-bar
             keys << k.toCombined();
         }
         for(int i = 0; i < 10; ++i) {
@@ -900,6 +901,45 @@ const QSet<int>& Application::reservedShortcuts() {
         return keys;
     }();
     return reserved;
+}
+
+QHash<QString, QKeySequence> Application::shortcuts() {
+    const auto& defaults = defaultShortcuts();
+    const auto& reserved = reservedShortcuts();
+    const auto custom = settings_.customShortcuts();
+    QHash<QString, QKeySequence> result;
+    QSet<int> used; // keys of the shortcuts that are set
+    for(auto it = defaults.constBegin(); it != defaults.constEnd(); ++it) {
+        if(!custom.contains(it.key())) {
+            result.insert(it.key(), it->shortcut);
+            if(!it->shortcut.isEmpty()) {
+                used << it->shortcut[0].toCombined();
+            }
+        }
+    }
+
+    // NOTE: Ambiguous or reserved shortcuts may have been added manually to the config file.
+    // Prevent them as far as possible by falling back to the default shortcuts.
+    QStringList names = custom.keys();
+    names.sort(); // to have the same result at each start
+    for(const auto& name : std::as_const(names)) {
+        auto def = defaults.constFind(name);
+        if(def == defaults.constEnd()) {
+            continue;
+        }
+        QKeySequence seq(custom.value(name), QKeySequence::PortableText);
+        if(!seq.isEmpty()) {
+            const int key = seq[0].toCombined();
+            if(reserved.contains(key) || used.contains(key)) {
+                seq = def->shortcut;
+            }
+            if(!seq.isEmpty()) {
+                used << seq[0].toCombined();
+            }
+        }
+        result.insert(name, seq);
+    }
+    return result;
 }
 
 // called when Settings is changed to update UI

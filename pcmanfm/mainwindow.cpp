@@ -2234,42 +2234,13 @@ void MainWindow::setTabIcon(TabPage* tabPage) {
 }
 
 void MainWindow::setShortcuts() {
-    Application* app = static_cast<Application*>(qApp);
-    const auto& defaults = app->defaultShortcuts();
-    const auto& reserved = Application::reservedShortcuts();
-    const auto custom = app->settings().customShortcuts();
-    QSet<int> used; // keys of the shortcuts that are set
-    QMap<QString, QAction*> customActions; // sorted by object names to have the same result at each start
+    const auto shortcuts = static_cast<Application*>(qApp)->shortcuts();
     const auto actions = findChildren<QAction*>();
     for(const auto action : actions) {
-        const QString name = action->objectName();
-        if(!defaults.contains(name)) {
-            continue;
+        auto it = shortcuts.constFind(action->objectName());
+        if(it != shortcuts.constEnd()) {
+            action->setShortcut(it.value());
         }
-        if(custom.contains(name)) {
-            customActions.insert(name, action);
-            continue;
-        }
-        action->setShortcut(defaults.value(name).shortcut);
-        if(!action->shortcut().isEmpty()) {
-            used << action->shortcut()[0].toCombined();
-        }
-    }
-
-    // NOTE: Ambiguous or reserved shortcuts may have been added manually to the config file.
-    // Prevent them as far as possible by falling back to the default shortcuts.
-    for(auto it = customActions.constBegin(); it != customActions.constEnd(); ++it) {
-        QKeySequence seq(custom.value(it.key()), QKeySequence::PortableText);
-        if(!seq.isEmpty()) {
-            const int key = seq[0].toCombined();
-            if(reserved.contains(key) || used.contains(key)) {
-                seq = defaults.value(it.key()).shortcut;
-            }
-            if(!seq.isEmpty()) {
-                used << seq[0].toCombined();
-            }
-        }
-        it.value()->setShortcut(seq);
     }
 }
 

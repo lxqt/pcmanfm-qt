@@ -26,6 +26,7 @@
 #include <string>
 
 #include <QHash>
+#include <QShortcut>
 #include <QPoint>
 #include <QByteArray>
 #include <QScreen>
@@ -159,6 +160,7 @@ private:
                          const std::set<std::string>& draggedFiles = std::set<std::string>{});
     static void alignToGrid(QPoint& pos, const QPoint& topLeft, const QSize& grid, const int spacing);
 
+    void setShortcuts(); // keyboard shortcuts
     void updateShortcutsFromSettings(Settings& settings, bool allowShortcutRemoval);
     void createTrashShortcut(int items);
     void createHomeShortcut();
@@ -181,6 +183,7 @@ private:
     Fm::FolderModel* model_;
     std::shared_ptr<Fm::Folder> folder_;
     Fm::FolderViewListView* listView_;
+    QHash<QString, QShortcut*> actionShortcuts_; // keyboard shortcuts of main window actions, by action names
 
     QColor fgColor_;
     QColor bgColor_;

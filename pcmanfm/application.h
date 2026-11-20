@@ -80,6 +80,8 @@ public:
     const QHash<QString, ShortcutDescription>& defaultShortcuts();
     // the keys that cannot be used by custom shortcuts
     static const QSet<int>& reservedShortcuts();
+    // the shortcuts of main window actions to use (custom ones if possible), by object name
+    QHash<QString, QKeySequence> shortcuts();
 
     Fm::LibFmQt& libFm() {
         return libFm_;
