@@ -543,12 +543,12 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktop-preferences.ui" line="439"/>
         <source>Cache may reduce the quality of displayed image as a trade-off.</source>
-        <translation type="unfinished"></translation>
+        <translation>კეშმა, სამაგიეროდ, შეიძლება, ნაჩვენები გამოსახულების ხარისხი შეამციროს.</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="442"/>
         <source>Do not use wallpaper cache</source>
-        <translation type="unfinished"></translation>
+        <translation>ფონის სურათების კეშის არგამოყენება</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="449"/>
