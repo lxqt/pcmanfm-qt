@@ -1083,6 +1083,14 @@ public:
     }
     void setRecentFilesNumber(int n);
 
+    // action object names and their custom shortcuts in the PortableText format
+    QHash<QString, QString> customShortcuts() const {
+        return customShortcuts_;
+    }
+    void setCustomShortcuts(const QHash<QString, QString>& shortcuts) {
+        customShortcuts_ = shortcuts;
+    }
+
     QStringList getRecentFiles() const {
         return recentFiles_;
     }
@@ -1192,6 +1200,8 @@ private:
     bool scrollPerPixel_;
 
     QSet<QString> hiddenPlaces_;
+
+    QHash<QString, QString> customShortcuts_;
 
     int bigIconSize_;
     int smallIconSize_;

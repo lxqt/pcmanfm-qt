@@ -28,6 +28,9 @@
 #include <QStringBuilder>
 #include <QSettings>
 #include <QStandardPaths>
+#include <QKeyEvent>
+#include <QKeySequenceEdit>
+#include <QStyledItemDelegate>
 
 #include <cmath>
 #include <algorithm>
@@ -37,6 +40,65 @@
 #include <libfm-qt6/core/archiver.h>
 
 namespace PCManFM {
+
+namespace {
+
+class KeySequenceEdit : public QKeySequenceEdit {
+public:
+    using QKeySequenceEdit::QKeySequenceEdit;
+
+protected:
+    void keyPressEvent(QKeyEvent* event) override {
+        // by not allowing multiple shortcuts,
+        // the Qt bug that makes Meta a non-modifier is worked around
+        clear();
+        const int k = event->key();
+        if(event->modifiers() & (Qt::ControlModifier | Qt::AltModifier | Qt::MetaModifier)) {
+            if(k == Qt::Key_Super_L || k == Qt::Key_Super_R) {
+                return;
+            }
+        }
+        // keys without modifiers (or only with Shift) are used by the view, except for Fx keys and Delete
+        else if((k < Qt::Key_F1 || k > Qt::Key_F35) && k != Qt::Key_Delete) {
+            return;
+        }
+        QKeySequenceEdit::keyPressEvent(event);
+    }
+};
+
+class ShortcutDelegate : public QStyledItemDelegate {
+public:
+    using QStyledItemDelegate::QStyledItemDelegate;
+
+    QWidget* createEditor(QWidget* parent, const QStyleOptionViewItem& /*option*/, const QModelIndex& /*index*/) const override {
+        return new KeySequenceEdit(parent);
+    }
+    void setEditorData(QWidget* editor, const QModelIndex& index) const override {
+        static_cast<KeySequenceEdit*>(editor)->setKeySequence(QKeySequence(index.data().toString(), QKeySequence::NativeText));
+    }
+    void setModelData(QWidget* editor, QAbstractItemModel* model, const QModelIndex& index) const override {
+        model->setData(index, static_cast<KeySequenceEdit*>(editor)->keySequence().toString(QKeySequence::NativeText));
+    }
+
+protected:
+    bool eventFilter(QObject* object, QEvent* event) override {
+        QWidget* editor = qobject_cast<QWidget*>(object);
+        if(editor && event->type() == QEvent::KeyPress) {
+            QKeyEvent* ke = static_cast<QKeyEvent*>(event);
+            int k = ke->key();
+            // with modifiers, Return and Enter are recorded (e.g., Alt+Return)
+            if((k == Qt::Key_Return || k == Qt::Key_Enter)
+               && (ke->modifiers() & ~Qt::KeypadModifier) == Qt::NoModifier) {
+                Q_EMIT commitData(editor);
+                Q_EMIT closeEditor(editor);
+                return true;
+            }
+        }
+        return QStyledItemDelegate::eventFilter(object, event);
+    }
+};
+
+} // namespace
 
 PreferencesDialog::PreferencesDialog(const QString& activePage, QWidget* parent):
     QDialog(parent) {
@@ -56,6 +118,7 @@ PreferencesDialog::PreferencesDialog(const QString& activePage, QWidget* parent)
     ui.terminal->setInsertPolicy(QComboBox::NoInsert);
 
     initFromSettings();
+    initShortcutsPage();
 
     selectPage(activePage);
     adjustSize();
@@ -510,11 +573,140 @@ void PreferencesDialog::applySettings() {
     applyThumbnailPage(settings);
     applyVolumePage(settings);
     applyAdvancedPage(settings);
+    applyShortcutsPage(settings);
 
     settings.save();
 
     Application* app = static_cast<Application*>(qApp);
     app->updateFromSettings();
+}
+
+// Column 0: action (its object name as user data), 1: shortcut (its last accepted text as user data), 2: default.
+// Shortcuts are shown in the NativeText format and saved in the PortableText format.
+void PreferencesDialog::initShortcutsPage() {
+    Application* app = static_cast<Application*>(qApp);
+    const auto& defaults = app->defaultShortcuts();
+    const auto custom = app->settings().customShortcuts();
+    QTableWidget* table = ui.shortcutsTable;
+    table->setItemDelegateForColumn(1, new ShortcutDelegate(table));
+    table->setSortingEnabled(false);
+    table->setRowCount(defaults.size());
+    int row = 0;
+    for(auto it = defaults.constBegin(); it != defaults.constEnd(); ++it, ++row) {
+        auto item = new QTableWidgetItem(it->displayText);
+        item->setToolTip(it->displayText); // the text may be elided
+        item->setData(Qt::UserRole, it.key());
+        item->setFlags(item->flags() & ~Qt::ItemIsEditable);
+        table->setItem(row, 0, item);
+
+        const QString def = it->shortcut.toString(QKeySequence::NativeText);
+        const QString cur = custom.contains(it.key())
+            ? QKeySequence(custom.value(it.key()), QKeySequence::PortableText).toString(QKeySequence::NativeText)
+            : def;
+        item = new QTableWidgetItem(cur);
+        item->setData(Qt::UserRole, cur);
+        table->setItem(row, 1, item);
+
+        item = new QTableWidgetItem(def);
+        item->setFlags(item->flags() & ~Qt::ItemIsEditable);
+        table->setItem(row, 2, item);
+        updateShortcutFont(row);
+    }
+    table->setSortingEnabled(true);
+    table->sortItems(0);
+    // no horizontal scrollbar: long action texts are elided instead
+    table->setWordWrap(false); // otherwise, wrapped lines are elided separately
+    table->setTextElideMode(Qt::ElideMiddle);
+    table->horizontalHeader()->setSectionResizeMode(0, QHeaderView::Stretch);
+    table->horizontalHeader()->setSectionResizeMode(1, QHeaderView::ResizeToContents);
+    table->horizontalHeader()->setSectionResizeMode(2, QHeaderView::ResizeToContents);
+    ui.shortcutWarning->hide();
+    updateShortcutsState(); // ambiguous shortcuts might have been added manually to the config file
+
+    connect(table, &QTableWidget::itemChanged, this, &PreferencesDialog::onShortcutChanged);
+    connect(ui.shortcutFilter, &QLineEdit::textChanged, table, [table](const QString& text) {
+        for(int i = 0; i < table->rowCount(); ++i) {
+            table->setRowHidden(i, !table->item(i, 0)->text().contains(text, Qt::CaseInsensitive)
+                                   && !table->item(i, 1)->text().contains(text, Qt::CaseInsensitive));
+        }
+    });
+    connect(ui.defaultShortcuts, &QAbstractButton::clicked, this, [this] {
+        QTableWidget* table = ui.shortcutsTable;
+        table->blockSignals(true);
+        table->setSortingEnabled(false); // otherwise, rows may move while being restored
+        for(int i = 0; i < table->rowCount(); ++i) {
+            const QString def = table->item(i, 2)->text();
+            table->item(i, 1)->setText(def);
+            table->item(i, 1)->setData(Qt::UserRole, def);
+            updateShortcutFont(i);
+        }
+        table->setSortingEnabled(true);
+        table->blockSignals(false);
+        updateShortcutsState();
+    });
+}
+
+void PreferencesDialog::onShortcutChanged(QTableWidgetItem* item) {
+    if(item->column() != 1) {
+        return;
+    }
+    QTableWidget* table = ui.shortcutsTable;
+    const QString text = item->text();
+    if(!text.isEmpty() && text != table->item(item->row(), 2)->text() // a default shortcut is never reserved
+       && Application::reservedShortcuts().contains(QKeySequence(text, QKeySequence::NativeText)[0].toCombined())) {
+        ui.shortcutWarning->setText(tr("The typed shortcut was reserved."));
+        ui.shortcutWarning->show();
+        QSignalBlocker blocker(table);
+        item->setText(item->data(Qt::UserRole).toString()); // restore the previous shortcut
+        return;
+    }
+    {
+        QSignalBlocker blocker(table);
+        item->setData(Qt::UserRole, text);
+    }
+    updateShortcutFont(item->row());
+    updateShortcutsState();
+}
+
+// warns about ambiguous shortcuts and enables the Default button if a shortcut is changed
+void PreferencesDialog::updateShortcutsState() {
+    const QTableWidget* table = ui.shortcutsTable;
+    QSet<QString> shortcuts;
+    bool ambiguous = false;
+    bool changed = false;
+    for(int i = 0; i < table->rowCount(); ++i) {
+        const QString text = table->item(i, 1)->text();
+        changed = changed || text != table->item(i, 2)->text();
+        if(!text.isEmpty()) {
+            ambiguous = ambiguous || shortcuts.contains(text);
+            shortcuts << text;
+        }
+    }
+    ui.shortcutWarning->setText(tr("<b>Warning: Ambiguous shortcut detected!</b>"));
+    ui.shortcutWarning->setVisible(ambiguous);
+    ui.defaultShortcuts->setEnabled(changed);
+}
+
+void PreferencesDialog::updateShortcutFont(int row) {
+    QTableWidget* table = ui.shortcutsTable;
+    QFont font = table->font();
+    font.setBold(table->item(row, 1)->text() != table->item(row, 2)->text());
+    QSignalBlocker blocker(table);
+    table->item(row, 0)->setFont(font);
+    table->item(row, 1)->setFont(font);
+}
+
+void PreferencesDialog::applyShortcutsPage(Settings& settings) {
+    QHash<QString, QString> custom;
+    const QTableWidget* table = ui.shortcutsTable;
+    for(int i = 0; i < table->rowCount(); ++i) {
+        const QString cur = table->item(i, 1)->text();
+        if(cur != table->item(i, 2)->text()) {
+            custom.insert(table->item(i, 0)->data(Qt::UserRole).toString(),
+                          QKeySequence(cur, QKeySequence::NativeText).toString(QKeySequence::PortableText));
+        }
+    }
+    settings.setCustomShortcuts(custom);
 }
 
 void PreferencesDialog::accept() {

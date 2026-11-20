@@ -377,6 +377,8 @@ MainWindow::MainWindow(Fm::FilePath path):
     shortcut = new QShortcut(Qt::ALT | Qt::Key_Enter, this);
     connect(shortcut, &QShortcut::activated, this, &MainWindow::on_actionFileProperties_triggered);
 
+    setShortcuts();
+
     addViewFrame(path);
     if(splitView_) {
         // put the menu button on the right (there's no path bar/entry on the toolbar)
@@ -2231,8 +2233,20 @@ void MainWindow::setTabIcon(TabPage* tabPage) {
     }
 }
 
+void MainWindow::setShortcuts() {
+    const auto shortcuts = static_cast<Application*>(qApp)->shortcuts();
+    const auto actions = findChildren<QAction*>();
+    for(const auto action : actions) {
+        auto it = shortcuts.constFind(action->objectName());
+        if(it != shortcuts.constEnd()) {
+            action->setShortcut(it.value());
+        }
+    }
+}
+
 void MainWindow::updateFromSettings(Settings& settings) {
     // apply settings
+    setShortcuts();
 
     // menu
     ui.actionDelete->setText(settings.useTrash() ? tr("&Move to Trash") : tr("&Delete"));

@@ -163,41 +163,49 @@ DesktopWindow::DesktopWindow(int screenNum, const QString& screenName):
     listView_->viewport()->installEventFilter(this);
 
     // setup shortcuts
+    // those of main window actions get their keys in setShortcuts(), so that custom shortcuts are used
+    auto addShortcut = [this](const QString& actionName) {
+        QShortcut* s = new QShortcut(this);
+        actionShortcuts_.insert(actionName, s);
+        return s;
+    };
     QShortcut* shortcut;
-    shortcut = new QShortcut(QKeySequence(Qt::CTRL | Qt::Key_X), this); // cut
+    shortcut = addShortcut(QStringLiteral("actionCut")); // cut
     connect(shortcut, &QShortcut::activated, this, &DesktopWindow::onCutActivated);
 
-    shortcut = new QShortcut(QKeySequence(Qt::CTRL | Qt::Key_C), this); // copy
+    shortcut = addShortcut(QStringLiteral("actionCopy")); // copy
     connect(shortcut, &QShortcut::activated, this, &DesktopWindow::onCopyActivated);
 
-    shortcut = new QShortcut(QKeySequence(Qt::CTRL | Qt::SHIFT | Qt::Key_C), this); // copy full path
+    shortcut = addShortcut(QStringLiteral("actionCopyFullPath")); // copy full path
     connect(shortcut, &QShortcut::activated, this, &DesktopWindow::onCopyFullPathActivated);
 
-    shortcut = new QShortcut(QKeySequence(Qt::CTRL | Qt::Key_V), this); // paste
+    shortcut = addShortcut(QStringLiteral("actionPaste")); // paste
     connect(shortcut, &QShortcut::activated, this, &DesktopWindow::onPasteActivated);
 
-    shortcut = new QShortcut(QKeySequence(Qt::CTRL | Qt::Key_A), this); // select all
+    shortcut = addShortcut(QStringLiteral("actionSelectAll")); // select all
     connect(shortcut, &QShortcut::activated, this, &DesktopWindow::selectAll);
 
-    shortcut = new QShortcut(QKeySequence(Qt::CTRL | Qt::SHIFT | Qt::Key_A), this); // invert selection
+    shortcut = addShortcut(QStringLiteral("actionInvertSelection")); // invert selection
     connect(shortcut, &QShortcut::activated, this, &DesktopWindow::invertSelection);
 
-    shortcut = new QShortcut(QKeySequence(Qt::Key_Delete), this); // delete
+    shortcut = addShortcut(QStringLiteral("actionDelete")); // delete
     connect(shortcut, &QShortcut::activated, this, &DesktopWindow::onDeleteActivated);
 
-    shortcut = new QShortcut(QKeySequence(Qt::Key_F2), this); // rename
+    shortcut = addShortcut(QStringLiteral("actionRename")); // rename
     connect(shortcut, &QShortcut::activated, this, &DesktopWindow::onRenameActivated);
 
-    shortcut = new QShortcut(QKeySequence(Qt::SHIFT | Qt::Key_F2), this); // bulk rename
+    shortcut = addShortcut(QStringLiteral("actionBulkRename")); // bulk rename
     connect(shortcut, &QShortcut::activated, this, &DesktopWindow::onBulkRenameActivated);
 
-    shortcut = new QShortcut(QKeySequence(Qt::ALT | Qt::Key_Return), this); // properties
+    shortcut = addShortcut(QStringLiteral("actionFileProperties")); // properties
     connect(shortcut, &QShortcut::activated, this, &DesktopWindow::onFilePropertiesActivated);
     shortcut = new QShortcut(QKeySequence(Qt::ALT | Qt::Key_Enter), this); // properties
     connect(shortcut, &QShortcut::activated, this, &DesktopWindow::onFilePropertiesActivated);
 
     shortcut = new QShortcut(QKeySequence(Qt::SHIFT | Qt::Key_Delete), this); // force delete
     connect(shortcut, &QShortcut::activated, this, &DesktopWindow::onDeleteActivated);
+
+    setShortcuts();
 
     // under Wayland, set the layer and anchors as well as window transparency
     if(static_cast<Application*>(qApp)->underWayland()) {
@@ -953,7 +961,16 @@ void DesktopWindow::nextWallpaper() {
     }
 }
 
+void DesktopWindow::setShortcuts() {
+    const auto shortcuts = static_cast<Application*>(qApp)->shortcuts();
+    for(auto it = actionShortcuts_.constBegin(); it != actionShortcuts_.constEnd(); ++it) {
+        it.value()->setKey(shortcuts.value(it.key()));
+    }
+}
+
 void DesktopWindow::updateFromSettings(Settings& settings, bool changeSlide, bool allowShortcutRemoval) {
+    setShortcuts();
+
     // Resetting of the layout will be done after (re-)loading the desktop folder (see onFolderFinishLoading).
     listView_->setUpdatesEnabled(false); // prevent items from shaking
 

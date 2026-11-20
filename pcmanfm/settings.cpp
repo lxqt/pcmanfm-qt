@@ -381,6 +381,15 @@ bool Settings::loadFile(QString filePath) {
     contentPatterns_.removeDuplicates();
     settings.endGroup();
 
+    // only custom shortcuts are saved, in the PortableText format
+    customShortcuts_.clear();
+    settings.beginGroup(QStringLiteral("Shortcuts"));
+    const QStringList actions = settings.childKeys();
+    for(const auto& action : actions) {
+        customShortcuts_.insert(action, settings.value(action).toString());
+    }
+    settings.endGroup();
+
     return true;
 }
 
@@ -549,6 +558,13 @@ bool Settings::saveFile(QString filePath) {
     settings.setValue(QStringLiteral("MaxSearchHistory"), maxSearchHistory_);
     settings.setValue(QStringLiteral("NamePatterns"), namePatterns_);
     settings.setValue(QStringLiteral("ContentPatterns"), contentPatterns_);
+    settings.endGroup();
+
+    settings.beginGroup(QStringLiteral("Shortcuts"));
+    settings.remove(QString()); // remove the shortcuts that are restored to defaults
+    for(auto it = customShortcuts_.constBegin(); it != customShortcuts_.constEnd(); ++it) {
+        settings.setValue(it.key(), it.value());
+    }
     settings.endGroup();
 
     return true;

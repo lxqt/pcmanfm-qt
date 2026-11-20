@@ -60,6 +60,11 @@
          <string>Advanced</string>
         </property>
        </item>
+       <item>
+        <property name="text">
+         <string>Shortcuts</string>
+        </property>
+       </item>
       </widget>
      </item>
      <item>
@@ -1019,6 +1024,92 @@ lxsudo dbus-run-session -- %s</string>
             </size>
            </property>
           </spacer>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="shortcutsPage">
+        <layout class="QVBoxLayout" name="shortcutsLayout">
+         <item>
+          <widget class="QLineEdit" name="shortcutFilter">
+           <property name="placeholderText">
+            <string>Filter...</string>
+           </property>
+           <property name="clearButtonEnabled">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QTableWidget" name="shortcutsTable">
+           <property name="toolTip">
+            <string>Double click a shortcut to change it.
+Use a modifier key to clear a shortcut in the editing mode.</string>
+           </property>
+           <property name="editTriggers">
+            <set>QAbstractItemView::DoubleClicked|QAbstractItemView::EditKeyPressed</set>
+           </property>
+           <property name="selectionMode">
+            <enum>QAbstractItemView::SingleSelection</enum>
+           </property>
+           <property name="selectionBehavior">
+            <enum>QAbstractItemView::SelectRows</enum>
+           </property>
+           <property name="sortingEnabled">
+            <bool>true</bool>
+           </property>
+           <attribute name="verticalHeaderVisible">
+            <bool>false</bool>
+           </attribute>
+           <column>
+            <property name="text">
+             <string>Action</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Shortcut</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Default</string>
+            </property>
+           </column>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="shortcutWarning">
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="shortcutButtonsLayout">
+           <item>
+            <spacer name="shortcutButtonsSpacer">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>0</width>
+               <height>0</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QPushButton" name="defaultShortcuts">
+             <property name="toolTip">
+              <string>Restore default shortcuts</string>
+             </property>
+             <property name="text">
+              <string>Default</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
          </item>
         </layout>
        </widget>

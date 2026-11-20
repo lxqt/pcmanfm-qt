@@ -67,6 +67,12 @@ private:
     void applyVolumePage(Settings& settings);
     void applyAdvancedPage(Settings& settings);
 
+    void initShortcutsPage();
+    void applyShortcutsPage(Settings& settings);
+    void onShortcutChanged(QTableWidgetItem* item);
+    void updateShortcutsState();
+    void updateShortcutFont(int row);
+
     void initFromSettings();
 
     void restartWarning(bool warn);
