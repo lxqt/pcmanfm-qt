@@ -1622,7 +1622,7 @@ are left clicked, even when it is not the default file manager.</source>
         <location filename="../application.cpp" line="864"/>
         <source>%1 › %2</source>
         <extracomment>The text of an action in the shortcut editor; %1 is a menu title and %2 an action text</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>%1 › %2</translation>
     </message>
 </context>
 <context>
@@ -1952,12 +1952,12 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferencesdialog.cpp" line="657"/>
         <source>The typed shortcut was reserved.</source>
-        <translation type="unfinished"></translation>
+        <translation>الاختصار الذي أدخلته محجوز.</translation>
     </message>
     <message>
         <location filename="../preferencesdialog.cpp" line="685"/>
         <source>&lt;b&gt;Warning: Ambiguous shortcut detected!&lt;/b&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;تحذير: تم اكتشاف اختصار متعارض!&lt;/b&gt;</translation>
     </message>
 </context>
 <context>
@@ -2255,7 +2255,7 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferences.ui" line="65"/>
         <source>Shortcuts</source>
-        <translation type="unfinished"></translation>
+        <translation>الاختصارات</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="95"/>
@@ -2513,34 +2513,35 @@ and can be any group of custom options.</source>
     <message>
         <location filename="../preferences.ui" line="1035"/>
         <source>Filter...</source>
-        <translation type="unfinished"></translation>
+        <translation>تصفية...</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="1045"/>
         <source>Double click a shortcut to change it.
 Use a modifier key to clear a shortcut in the editing mode.</source>
-        <translation type="unfinished"></translation>
+        <translation>انقر نقرًا مزدوجًا على الاختصار لتغييره.
+لمسح الاختصار أثناء تحريره، اضغط على أحد مفاتيح التعديل.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="1065"/>
         <source>Action</source>
-        <translation type="unfinished">العمل</translation>
+        <translation>الإجراء</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="1070"/>
         <source>Shortcut</source>
-        <translation type="unfinished">إختصار</translation>
+        <translation>الاختصار</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="1075"/>
         <location filename="../preferences.ui" line="1108"/>
         <source>Default</source>
-        <translation type="unfinished"></translation>
+        <translation>الافتراضي</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="1105"/>
         <source>Restore default shortcuts</source>
-        <translation type="unfinished"></translation>
+        <translation>استعادة الاختصارات الافتراضية</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="1129"/>

@@ -1623,7 +1623,7 @@ zelfs als dat niet de standaard bestandsbeheerder is.</translation>
         <location filename="../application.cpp" line="864"/>
         <source>%1 › %2</source>
         <extracomment>The text of an action in the shortcut editor; %1 is a menu title and %2 an action text</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>%1 → %2</translation>
     </message>
 </context>
 <context>
@@ -1949,12 +1949,12 @@ Ze kunnen van pas komen als u ze opnieuw aanmaakt.</translation>
     <message>
         <location filename="../preferencesdialog.cpp" line="657"/>
         <source>The typed shortcut was reserved.</source>
-        <translation type="unfinished"></translation>
+        <translation>De ingevoerde sneltoets is gereserveerd voor andere doeleinden.</translation>
     </message>
     <message>
         <location filename="../preferencesdialog.cpp" line="685"/>
         <source>&lt;b&gt;Warning: Ambiguous shortcut detected!&lt;/b&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;Waarschuwing: dubbelzinnige sneltoets aangetroffen!&lt;/b&gt;</translation>
     </message>
 </context>
 <context>
@@ -1997,7 +1997,7 @@ Ze kunnen van pas komen als u ze opnieuw aanmaakt.</translation>
     <message>
         <location filename="../tabpage.cpp" line="590"/>
         <source>Free space: %1 (Total: %2)</source>
-        <translation>Vrije ruimte: %1 (totaal&#xa0;: %2)</translation>
+        <translation>Vrije ruimte: %1 (totaal : %2)</translation>
     </message>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="617"/>
@@ -2232,7 +2232,7 @@ Ze kunnen van pas komen als u ze opnieuw aanmaakt.</translation>
     <message>
         <location filename="../preferences.ui" line="65"/>
         <source>Shortcuts</source>
-        <translation type="unfinished"></translation>
+        <translation>Sneltoetsen</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="95"/>
@@ -2492,34 +2492,35 @@ Iedere reeks acties is toegestaan.</translation>
     <message>
         <location filename="../preferences.ui" line="1035"/>
         <source>Filter...</source>
-        <translation type="unfinished"></translation>
+        <translation>Filteren…</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="1045"/>
         <source>Double click a shortcut to change it.
 Use a modifier key to clear a shortcut in the editing mode.</source>
-        <translation type="unfinished"></translation>
+        <translation>Dubbelklik op een sneltoets om deze te wĳzigen.
+Druk op de Ctrl- of Alttoets om de sneltoets te wissen.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="1065"/>
         <source>Action</source>
-        <translation type="unfinished">Actie</translation>
+        <translation>Actie</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="1070"/>
         <source>Shortcut</source>
-        <translation type="unfinished">Sneltoets</translation>
+        <translation>Sneltoets</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="1075"/>
         <location filename="../preferences.ui" line="1108"/>
         <source>Default</source>
-        <translation type="unfinished"></translation>
+        <translation>Standaard</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="1105"/>
         <source>Restore default shortcuts</source>
-        <translation type="unfinished"></translation>
+        <translation>Standaardwaarden herstellen</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="1129"/>

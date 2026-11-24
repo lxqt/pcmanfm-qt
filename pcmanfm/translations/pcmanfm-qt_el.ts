@@ -844,7 +844,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="291"/>
         <source>Go Up</source>
-        <translation>Μετάβαση&#xa0;πάνω</translation>
+        <translation>Μετάβαση πάνω</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="294"/>
@@ -1625,7 +1625,7 @@ are left clicked, even when it is not the default file manager.</source>
         <location filename="../application.cpp" line="864"/>
         <source>%1 › %2</source>
         <extracomment>The text of an action in the shortcut editor; %1 is a menu title and %2 an action text</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>%1 › %2</translation>
     </message>
 </context>
 <context>
@@ -1951,12 +1951,12 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferencesdialog.cpp" line="657"/>
         <source>The typed shortcut was reserved.</source>
-        <translation type="unfinished"></translation>
+        <translation>Η συντόμευση που πληκτρολογήθηκε είναι δεσμευμένη.</translation>
     </message>
     <message>
         <location filename="../preferencesdialog.cpp" line="685"/>
         <source>&lt;b&gt;Warning: Ambiguous shortcut detected!&lt;/b&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;Προσοχή: Εντοπίστηκε ασαφής συντόμευση!&lt;/b&gt;</translation>
     </message>
 </context>
 <context>
@@ -2234,7 +2234,7 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferences.ui" line="65"/>
         <source>Shortcuts</source>
-        <translation type="unfinished"></translation>
+        <translation>Συντομεύσεις</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="95"/>
@@ -2463,7 +2463,7 @@ or does not have such an option; required otherwise.</source>
         <location filename="../preferences.ui" line="891"/>
         <source>This is optional, depends on the terminal,
 and can be any group of custom options.</source>
-        <translation>Είναι προαιρετικό και εξαρτάται από το τερματικό,&#x2028;και μπορεί να είναι οποιαδήποτε ομάδα προσαρμοσμένων ορισμάτων.</translation>
+        <translation>Είναι προαιρετικό και εξαρτάται από το τερματικό, και μπορεί να είναι οποιαδήποτε ομάδα προσαρμοσμένων ορισμάτων.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="969"/>
@@ -2493,34 +2493,35 @@ and can be any group of custom options.</source>
     <message>
         <location filename="../preferences.ui" line="1035"/>
         <source>Filter...</source>
-        <translation type="unfinished"></translation>
+        <translation>Φιλτράρισμα...</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="1045"/>
         <source>Double click a shortcut to change it.
 Use a modifier key to clear a shortcut in the editing mode.</source>
-        <translation type="unfinished"></translation>
+        <translation>Κάντε διπλό κλικ σε μια συντόμευση για να την αλλάξετε.
+Χρησιμοποιήστε ένα πλήκτρο τροποποίησης για την εκκαθάριση μιας συντόμευσης στη λειτουργία επεξεργασίας.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="1065"/>
         <source>Action</source>
-        <translation type="unfinished">Ενέργεια</translation>
+        <translation>Ενέργεια</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="1070"/>
         <source>Shortcut</source>
-        <translation type="unfinished">Συντόμευση</translation>
+        <translation>Συντόμευση</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="1075"/>
         <location filename="../preferences.ui" line="1108"/>
         <source>Default</source>
-        <translation type="unfinished"></translation>
+        <translation>Προεπιλογή</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="1105"/>
         <source>Restore default shortcuts</source>
-        <translation type="unfinished"></translation>
+        <translation>Επαναφορά των προκαθορισμένων συντομεύσεων</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="1129"/>

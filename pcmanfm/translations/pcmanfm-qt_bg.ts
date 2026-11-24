@@ -1622,7 +1622,7 @@ are left clicked, even when it is not the default file manager.</source>
         <location filename="../application.cpp" line="864"/>
         <source>%1 › %2</source>
         <extracomment>The text of an action in the shortcut editor; %1 is a menu title and %2 an action text</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>%1 › %2</translation>
     </message>
 </context>
 <context>
@@ -1948,12 +1948,12 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferencesdialog.cpp" line="657"/>
         <source>The typed shortcut was reserved.</source>
-        <translation type="unfinished"></translation>
+        <translation>Въведената клавишна комбинация е запазена.</translation>
     </message>
     <message>
         <location filename="../preferencesdialog.cpp" line="685"/>
         <source>&lt;b&gt;Warning: Ambiguous shortcut detected!&lt;/b&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;Предупреждение: Открита е двусмислена клавишна комбинация!&lt;/b&gt;</translation>
     </message>
 </context>
 <context>
@@ -2231,7 +2231,7 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferences.ui" line="65"/>
         <source>Shortcuts</source>
-        <translation type="unfinished"></translation>
+        <translation>Клавишна комбинация</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="95"/>
@@ -2490,34 +2490,35 @@ and can be any group of custom options.</source>
     <message>
         <location filename="../preferences.ui" line="1035"/>
         <source>Filter...</source>
-        <translation type="unfinished"></translation>
+        <translation>Филтър...</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="1045"/>
         <source>Double click a shortcut to change it.
 Use a modifier key to clear a shortcut in the editing mode.</source>
-        <translation type="unfinished"></translation>
+        <translation>Кликнете два пъти върху дадена комбинация, за да я промените.
+Използвайте клавиш-модификатор, за да изчистите клавишната комбинация в режим на редактиране.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="1065"/>
         <source>Action</source>
-        <translation type="unfinished">Действие</translation>
+        <translation>Действие</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="1070"/>
         <source>Shortcut</source>
-        <translation type="unfinished">Клавишна комбинация</translation>
+        <translation>Клавишна комбинация</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="1075"/>
         <location filename="../preferences.ui" line="1108"/>
         <source>Default</source>
-        <translation type="unfinished"></translation>
+        <translation>По подразбиране</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="1105"/>
         <source>Restore default shortcuts</source>
-        <translation type="unfinished"></translation>
+        <translation>Възстановяване на стандартната комбинация</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="1129"/>

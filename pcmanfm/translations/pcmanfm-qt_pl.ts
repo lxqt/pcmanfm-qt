@@ -110,7 +110,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../autorun.ui" line="55"/>
         <source>Please select the action you want to perform:</source>
-        <translation>Wybierz działanie, które chcesz wykonać:</translation>
+        <translation>Wybierz czynność, którą chcesz wykonać:</translation>
     </message>
 </context>
 <context>
@@ -666,7 +666,7 @@ są klikane lewym przyciskiem, nawet jeśli nie jest to domyślny menedżer plik
     <message>
         <location filename="../shortcuts.ui" line="26"/>
         <source>Action</source>
-        <translation>Akcja</translation>
+        <translation>Czynność</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="31"/>
@@ -1624,7 +1624,7 @@ są klikane lewym przyciskiem, nawet jeśli nie jest to domyślny menedżer plik
         <location filename="../application.cpp" line="864"/>
         <source>%1 › %2</source>
         <extracomment>The text of an action in the shortcut editor; %1 is a menu title and %2 an action text</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>%1 › %2</translation>
     </message>
 </context>
 <context>
@@ -1951,12 +1951,12 @@ Mogą się one przydać, jeśli te katalogi zostaną stworzone ponownie.</transl
     <message>
         <location filename="../preferencesdialog.cpp" line="657"/>
         <source>The typed shortcut was reserved.</source>
-        <translation type="unfinished"></translation>
+        <translation>Wpisany skrót został zarezerwowany.</translation>
     </message>
     <message>
         <location filename="../preferencesdialog.cpp" line="685"/>
         <source>&lt;b&gt;Warning: Ambiguous shortcut detected!&lt;/b&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;Ostrzeżenie: wykryto niejednoznaczny skrót!&lt;/b&gt;</translation>
     </message>
 </context>
 <context>
@@ -2275,7 +2275,7 @@ Mogą się one przydać, jeśli te katalogi zostaną stworzone ponownie.</transl
     <message>
         <location filename="../preferences.ui" line="65"/>
         <source>Shortcuts</source>
-        <translation type="unfinished"></translation>
+        <translation>Skróty</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="200"/>
@@ -2302,7 +2302,7 @@ Mogą się one przydać, jeśli te katalogi zostaną stworzone ponownie.</transl
     <message>
         <location filename="../preferences.ui" line="224"/>
         <source>Renamed files will also be selected</source>
-        <translation>Pliki ze zmienioną nazwą również zostaną&#xa0;wybrane</translation>
+        <translation>Pliki ze zmienioną nazwą również zostaną wybrane</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="234"/>
@@ -2471,34 +2471,35 @@ Wartość -1 oznacza, brak limitu dla rozmiaru pliku (ustawienie domyślne).</tr
     <message>
         <location filename="../preferences.ui" line="1035"/>
         <source>Filter...</source>
-        <translation type="unfinished"></translation>
+        <translation>Filtr...</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="1045"/>
         <source>Double click a shortcut to change it.
 Use a modifier key to clear a shortcut in the editing mode.</source>
-        <translation type="unfinished"></translation>
+        <translation>Kliknij dwukrotnie skrót, aby go zmienić.
+Użyj klawisza modyfikującego, aby wyczyścić skrót w trybie edycji.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="1065"/>
         <source>Action</source>
-        <translation type="unfinished">Akcja</translation>
+        <translation>Czynność</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="1070"/>
         <source>Shortcut</source>
-        <translation type="unfinished">Skrót</translation>
+        <translation>Skrót</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="1075"/>
         <location filename="../preferences.ui" line="1108"/>
         <source>Default</source>
-        <translation type="unfinished"></translation>
+        <translation>Domyślne</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="1105"/>
         <source>Restore default shortcuts</source>
-        <translation type="unfinished"></translation>
+        <translation>Przywróć domyślne skróty</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="1129"/>
@@ -2594,7 +2595,7 @@ It can be left empty if the terminal is already supported
 or does not have such an option; required otherwise.</source>
         <translation>Przykład: -e
 Można pozostawić puste, jeśli terminal jest już obsługiwany
-lub nie ma takiej opcji; w&#xa0;przeciwnym razie jest wymagane.</translation>
+lub nie ma takiej opcji; w przeciwnym razie jest wymagane.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="884"/>
@@ -2605,7 +2606,7 @@ lub nie ma takiej opcji; w&#xa0;przeciwnym razie jest wymagane.</translation>
         <location filename="../preferences.ui" line="891"/>
         <source>This is optional, depends on the terminal,
 and can be any group of custom options.</source>
-        <translation>Opcjonalne, zależy od terminala i&#xa0;może być
+        <translation>Opcjonalne, zależy od terminala i może być
 dowolną grupą niestandardowych opcji.</translation>
     </message>
     <message>
