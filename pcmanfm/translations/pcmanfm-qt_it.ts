@@ -1579,7 +1579,7 @@ sinistro anche se non è il gestore file predefinito.</translation>
         <location filename="../application.cpp" line="864"/>
         <source>%1 › %2</source>
         <extracomment>The text of an action in the shortcut editor; %1 is a menu title and %2 an action text</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>%1 › %2</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="210"/>
@@ -1951,12 +1951,12 @@ Potrebbero essere utili se le cartelle vengono ricreate.</translation>
     <message>
         <location filename="../preferencesdialog.cpp" line="657"/>
         <source>The typed shortcut was reserved.</source>
-        <translation type="unfinished"></translation>
+        <translation>La scorciatoia inserita è riservata.</translation>
     </message>
     <message>
         <location filename="../preferencesdialog.cpp" line="685"/>
         <source>&lt;b&gt;Warning: Ambiguous shortcut detected!&lt;/b&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;Attenzione: rilevata scorciatoia ambigua!&lt;/b&gt;</translation>
     </message>
 </context>
 <context>
@@ -2271,7 +2271,7 @@ Potrebbero essere utili se le cartelle vengono ricreate.</translation>
     <message>
         <location filename="../preferences.ui" line="65"/>
         <source>Shortcuts</source>
-        <translation type="unfinished"></translation>
+        <translation>Scorciatoie</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="200"/>
@@ -2464,34 +2464,35 @@ Un valore di -1 significa nessun limite (predefinito).</translation>
     <message>
         <location filename="../preferences.ui" line="1035"/>
         <source>Filter...</source>
-        <translation type="unfinished"></translation>
+        <translation>Filtra...</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="1045"/>
         <source>Double click a shortcut to change it.
 Use a modifier key to clear a shortcut in the editing mode.</source>
-        <translation type="unfinished"></translation>
+        <translation>Cliccare due volte una scorciatoia per modificarla.
+Utilizzare un tasto modificatore per cancellare una scorciatoia in modalità modifica.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="1065"/>
         <source>Action</source>
-        <translation type="unfinished">Azione</translation>
+        <translation>Azione</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="1070"/>
         <source>Shortcut</source>
-        <translation type="unfinished">Scorciatoia</translation>
+        <translation>Scorciatoia</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="1075"/>
         <location filename="../preferences.ui" line="1108"/>
         <source>Default</source>
-        <translation type="unfinished"></translation>
+        <translation>Predefinita</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="1105"/>
         <source>Restore default shortcuts</source>
-        <translation type="unfinished"></translation>
+        <translation>Ripristina scorciatoie predefiniti</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="1129"/>

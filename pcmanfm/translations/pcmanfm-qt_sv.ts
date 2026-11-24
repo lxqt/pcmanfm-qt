@@ -1624,7 +1624,7 @@ vänsterklickas, även när den inte är standard filhanterare.</translation>
         <location filename="../application.cpp" line="864"/>
         <source>%1 › %2</source>
         <extracomment>The text of an action in the shortcut editor; %1 is a menu title and %2 an action text</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>%1 › %2</translation>
     </message>
 </context>
 <context>
@@ -1950,12 +1950,12 @@ Det kan vara bra att behålla dom om mapparna återskapas.</translation>
     <message>
         <location filename="../preferencesdialog.cpp" line="657"/>
         <source>The typed shortcut was reserved.</source>
-        <translation type="unfinished"></translation>
+        <translation>Den inskrivna genvägen var reserverad.</translation>
     </message>
     <message>
         <location filename="../preferencesdialog.cpp" line="685"/>
         <source>&lt;b&gt;Warning: Ambiguous shortcut detected!&lt;/b&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;Varning: Tvetydig genväg upptäckt!&lt;/b&gt;</translation>
     </message>
 </context>
 <context>
@@ -2233,7 +2233,7 @@ Det kan vara bra att behålla dom om mapparna återskapas.</translation>
     <message>
         <location filename="../preferences.ui" line="65"/>
         <source>Shortcuts</source>
-        <translation type="unfinished"></translation>
+        <translation>Genvägar</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="95"/>
@@ -2493,34 +2493,35 @@ och kan vara vilken grupp av anpassade alternativ som helst.</translation>
     <message>
         <location filename="../preferences.ui" line="1035"/>
         <source>Filter...</source>
-        <translation type="unfinished"></translation>
+        <translation>Filter...</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="1045"/>
         <source>Double click a shortcut to change it.
 Use a modifier key to clear a shortcut in the editing mode.</source>
-        <translation type="unfinished"></translation>
+        <translation>Dubbelklicka på en genväg för att ändra den.
+Använd en modifieringstangent för att rensa ett kortkommando i redigeringsläget.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="1065"/>
         <source>Action</source>
-        <translation type="unfinished">Handling</translation>
+        <translation>Åtgärd</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="1070"/>
         <source>Shortcut</source>
-        <translation type="unfinished">Genväg</translation>
+        <translation>Genväg</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="1075"/>
         <location filename="../preferences.ui" line="1108"/>
         <source>Default</source>
-        <translation type="unfinished"></translation>
+        <translation>Standard</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="1105"/>
         <source>Restore default shortcuts</source>
-        <translation type="unfinished"></translation>
+        <translation>Återställ standardgenvägar</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="1129"/>

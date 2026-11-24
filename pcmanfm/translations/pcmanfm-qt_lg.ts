@@ -1629,7 +1629,7 @@ Awali &lt;LINNYA&gt; w&apos;owandika erinnya ery&apos;akaboozi k&apos;oyagala ok
         <location filename="../application.cpp" line="864"/>
         <source>%1 › %2</source>
         <extracomment>The text of an action in the shortcut editor; %1 is a menu title and %2 an action text</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>%1 › %2</translation>
     </message>
 </context>
 <context>
@@ -1955,12 +1955,12 @@ Biyinza kuyamba ssinga amaterekero ago gaba gakomezedwawo.</translation>
     <message>
         <location filename="../preferencesdialog.cpp" line="657"/>
         <source>The typed shortcut was reserved.</source>
-        <translation type="unfinished"></translation>
+        <translation>By&apos;ova okutegeka bikazzidwa.</translation>
     </message>
     <message>
         <location filename="../preferencesdialog.cpp" line="685"/>
         <source>&lt;b&gt;Warning: Ambiguous shortcut detected!&lt;/b&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;Kulabula: Waliwo ebitegekedwa okwanguyisa ebiyinza okubuzabuza sisitemu!&lt;/b&gt;</translation>
     </message>
 </context>
 <context>
@@ -2238,7 +2238,7 @@ Biyinza kuyamba ssinga amaterekero ago gaba gakomezedwawo.</translation>
     <message>
         <location filename="../preferences.ui" line="65"/>
         <source>Shortcuts</source>
-        <translation type="unfinished"></translation>
+        <translation>Ebyanguyisa</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="95"/>
@@ -2519,34 +2519,35 @@ egeegeenya kiwandikiro.</translation>
     <message>
         <location filename="../preferences.ui" line="1035"/>
         <source>Filter...</source>
-        <translation type="unfinished"></translation>
+        <translation>Sunsula...</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="1045"/>
         <source>Double click a shortcut to change it.
 Use a modifier key to clear a shortcut in the editing mode.</source>
-        <translation type="unfinished"></translation>
+        <translation>Okukyusa ebitegekedwa okuba ekyanguyisa nyigirirawo ebiri.
+Ekiddako nyiga erimu ku mapeesa amafuuzi ebitegekedwa bivewo oryoke oteekewo by&apos;oyagala.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="1065"/>
         <source>Action</source>
-        <translation type="unfinished">Kikolwa</translation>
+        <translation>Kikolwa</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="1070"/>
         <source>Shortcut</source>
-        <translation type="unfinished">Mapeesa</translation>
+        <translation>Mapeesa</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="1075"/>
         <location filename="../preferences.ui" line="1108"/>
         <source>Default</source>
-        <translation type="unfinished"></translation>
+        <translation>Aga bulijjo</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="1105"/>
         <source>Restore default shortcuts</source>
-        <translation type="unfinished"></translation>
+        <translation>Zzawo amapeesa aganguyisa aga bulijjo</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="1129"/>
